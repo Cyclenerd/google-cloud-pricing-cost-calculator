@@ -19,25 +19,38 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
 
+      # gcosts Version
+      - name: 💡 Version
+        run: perl gcosts.pl --version
+
       # Export SKUs
       - name: 📥 Export SKUs
         env:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd build || exit 9
-          perl skus.pl -csv="/tmp/skus_compute.csv"     -id="6F81-5844-456A" && \
-          perl skus.pl -csv="/tmp/skus_storage.csv"     -id="95FF-2EF5-5EA1" && \
-          perl skus.pl -csv="/tmp/skus_stackdriver.csv" -id="58CD-E7C3-72CA" && \
-          perl skus.pl -csv="/tmp/skus_sql.csv"         -id="9662-B51E-5089"
+          perl skus.pl -csv="skus_compute.csv"     -id="6F81-5844-456A" && \
+          perl skus.pl -csv="skus_storage.csv"     -id="95FF-2EF5-5EA1" && \
+          perl skus.pl -csv="skus_stackdriver.csv" -id="58CD-E7C3-72CA" && \
+          perl skus.pl -csv="skus_sql.csv"         -id="9662-B51E-5089"
 
       # Merge SKU files
       - name: 📚 Merge SKUs to skus.csv
         run: |
-          cat "/tmp/skus_compute.csv"      > "/tmp/skus.csv" && \
-          cat "/tmp/skus_storage.csv"     >> "/tmp/skus.csv" && \
-          cat "/tmp/skus_stackdriver.csv" >> "/tmp/skus.csv" && \
-          cat "/tmp/skus_sql.csv"         >> "/tmp/skus.csv"
+          cd build || exit 9
+          cat "skus_compute.csv"      > "skus.csv" && \
+          cat "skus_storage.csv"     >> "skus.csv" && \
+          cat "skus_stackdriver.csv" >> "skus.csv" && \
+          cat "skus_sql.csv"         >> "skus.csv"
 
       # Add custom mapping IDs to SKUs
-      - name: 🔦 Custom Mapping
-        run: perl ./build/mapping.pl -sku="/tmp/skus.csv" -mapping=./build/mapping.csv
+      - name: 🔦 Add Mapping
+        run: cd build && perl mapping.pl
+
+      # Generate pricing informations
+      - name: ⏳ Generate Pricing
+        run: cd build && perl pricing.pl
+
+      # Test pricing
+      - name: 🌡️ Test
+        run: cd t && bash gcosts.sh && bash test.sh
