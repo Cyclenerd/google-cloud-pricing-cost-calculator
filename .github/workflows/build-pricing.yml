@@ -8,6 +8,10 @@ jobs:
     name: Build pricing information file
     runs-on: ubuntu-latest
     steps:
+      - shell: bash
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+
       - name: 🔧 Install dependencies
         run: |
           sudo apt-get install  \
