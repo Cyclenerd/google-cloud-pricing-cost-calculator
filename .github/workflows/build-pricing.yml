@@ -1,0 +1,36 @@
+name: "Build Pricing"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-pricing:
+    name: Build pricing information file
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔧 Install dependencies
+        run: |
+          sudo apt-get install  \
+            libapp-options-perl \
+            libwww-perl \
+            libjson-xs-perl \
+            libdbd-csv-perl
+
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+
+      # Export SKUs
+      - name: 📂 Change Directory
+        run: cd build || exit 9
+      - name: 📥 Export Compute Engine SKUs
+        run: perl skus.pl -csv="/tmp/skus_compute.csv" -id="6F81-5844-456A" && cat "/tmp/skus_compute.csv" > "/tmp/skus.csv"
+      - name: 📥 Export Cloud Storage SKUs
+        run: perl skus.pl -csv="/tmp/skus_storage.csv" -id="95FF-2EF5-5EA1" && cat "/tmp/skus_storage.csv" >> "/tmp/skus.csv"
+      - name: 📥 Export Stackdriver Monitoring SKUs
+        run: perl skus.pl -csv="/tmp/skus_stackdriver.csv" -id="58CD-E7C3-72CA" && cat "/tmp/skus_stackdriver.csv" >> "/tmp/skus.csv"
+      - name: 📥 Export Cloud SQL SKUs
+        run: perl skus.pl -csv="/tmp/skus_sql.csv" -id="9662-B51E-5089" && cat "/tmp/skus_sql.csv" >> "/tmp/skus.csv"
+
+      # Add custom mapping IDs to SKUs
+      - name: 🔦 Custom Mapping
+        run: perl mapping.pl -sku="/tmp/skus.csv"

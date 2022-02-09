@@ -12,3 +12,5 @@ usage/customers/**
 !build/mapping.csv
 # Test
 !t/*.yml
+# GitHub Actions
+!.github/workflows/*.yml
