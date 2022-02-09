@@ -1,0 +1,14 @@
+.~lock*
+usage/customers/**
+**.conf
+**.yml
+**.csv
+**.log
+# Google Cloud Platform master data
+!build/gcp.yml
+# Prepared and tested price information file
+!./pricing.yml
+# Mapping
+!build/mapping.csv
+# Test
+!t/*.yml

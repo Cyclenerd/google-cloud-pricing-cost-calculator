@@ -1,0 +1,81 @@
+region: europe-west4
+
+traffic:
+  - name: traffic-world
+    world: 1025
+
+load-balancers:
+  - name: load-balancer-1
+    rules: 1
+    data: 0
+  - name: load-balancer-5
+    rules: 5
+    data: 0
+  - name: load-balancer-6
+    rules: 6
+    data: 0
+  - name: load-balancer-6-50
+    rules: 6
+    data: 500
+
+monitoring:
+  - name: stackdriver
+    data: 6000 # mebibyte!
+
+instances:
+
+  - name: a2-highgpu-8g
+    type: a2-highgpu-8g
+  - name: a2-highgpu-8g-1y
+    type: a2-highgpu-8g
+    commitment: 1
+  - name: a2-highgpu-8g-3y
+    type: a2-highgpu-8g
+    commitment: 3
+
+  - name: n1-standard-8
+    type: n1-standard-8
+  - name: n1-standard-8-1y
+    type: n1-standard-8
+    commitment: 1
+  - name: n1-standard-8-3y
+    type: n1-standard-8
+    commitment: 3
+
+  - name: m1-ultramem-80
+    type: m1-ultramem-80
+  - name: m1-ultramem-80-1y
+    type: m1-ultramem-80
+    commitment: 1
+  - name: m1-ultramem-80-3y
+    type: m1-ultramem-80
+    commitment: 3
+
+  - name: m2-ultramem-416
+    type: m2-ultramem-416
+  - name: m2-ultramem-416-1y
+    type: m2-ultramem-416
+    commitment: 1
+  - name: m2-ultramem-416-3y
+    type: m2-ultramem-416
+    commitment: 3
+
+buckets:
+  - name: bucket-standard
+    class: standard
+    data: 50
+  - name: bucket-standard-multi
+    class: standard-multi
+    region: europe-multi
+    data: 50
+  - name: bucket-standard-dual
+    class: standard-dual
+    region: eur4
+    data: 50
+
+disks:
+  - name: disk-ssd
+    data: 1024
+    type: ssd
+  - name: disk-hdd
+    data: 2048

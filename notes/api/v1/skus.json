@@ -1,0 +1,110 @@
+{
+  "skus": [
+    {
+        "name": "[SKU_NAME]",
+        "skuId": "[SKU_ID]",
+        "description": "[SKU_DESCRIPTION]",
+        "category": {
+            "serviceDisplayName": "[SVC_DISPLAY_NAME]",
+            "resourceFamily": "[FAMILY]",
+            "resourceGroup": "[GROUP]",
+            "usageType": "[USAGE]",
+        },
+        "serviceRegions": [
+          "[REGION]"
+        ],
+        "pricingInfo": [
+          {
+              "effectiveTime": "[TIME]",
+              "summary": "[SUMMARY]",
+              "pricingExpression": {
+                  "usageUnit": "[UNIT]",
+                  "usageUnitDescription": "[UNIT_DESCRIPTION]",
+                  "displayQuantity": [DISPLAY_QUANTITY],
+                  "tieredRates": [
+                    {
+                        "startUsageAmount": [START_AMOUNT],
+                        "unitPrice": {
+                            "currencyCode": "[CURRENCY_CODE]",
+                            "units": [UNITS],
+                            "nanos": [NANOS],
+                        },
+                    }
+                  ],
+              },
+              "aggregationInfo": {
+                  "aggregationLevel": enum("[AGGREGATION_LEVEL]"),
+                  "aggregationInterval": enum("[AGGREGATION_INTERVAL]"),
+                  "aggregationCount": [AGGREGATION_COUNT],
+              },
+              "currencyConversionRate": [CONVERSION_RATE],
+          }
+        ],
+        "serviceProviderName": "[SERVICE_PROVIDER]",
+    },
+    {
+      "name": "services/6F81-5844-456A/skus/02EE-77CE-ACCD",
+      "skuId": "02EE-77CE-ACCD",
+      "description": "Network Vpn Internet Egress from Americas to Africa",
+      "category": {
+        "serviceDisplayName": "Compute Engine",
+        "resourceFamily": "Network",
+        "resourceGroup": "VPNInternetEgress",
+        "usageType": "OnDemand"
+      },
+      "serviceRegions": [
+        "us-central1",
+        "us-east1",
+        "us-west1"
+      ],
+      "pricingInfo": [
+        {
+          "summary": "",
+          "pricingExpression": {
+            "usageUnit": "GiBy",
+            "usageUnitDescription": "gibibyte",
+            "baseUnit": "By",
+            "baseUnitDescription": "byte",
+            "baseUnitConversionFactor": 1073741824,
+            "displayQuantity": 1,
+            "tieredRates": [
+              {
+                "startUsageAmount": 0,
+                "unitPrice": {
+                  "currencyCode": "USD",
+                  "units": "0",
+                  "nanos": 120000000
+                }
+              },
+              {
+                "startUsageAmount": 1024,
+                "unitPrice": {
+                  "currencyCode": "USD",
+                  "units": "0",
+                  "nanos": 110000000
+                }
+              },
+              {
+                "startUsageAmount": 10240,
+                "unitPrice": {
+                  "currencyCode": "USD",
+                  "units": "0",
+                  "nanos": 80000000
+                }
+              }
+            ]
+          },
+          "aggregationInfo": {
+            "aggregationLevel": "ACCOUNT",
+            "aggregationInterval": "MONTHLY",
+            "aggregationCount": 1
+          },
+          "currencyConversionRate": 1,
+          "effectiveTime": "2021-11-26T10:50:40.206Z"
+        }
+      ],
+      "serviceProviderName": "Google"
+    }
+  ],
+  "nextPageToken": "[NEXT_PAGE_TOKEN]"
+}

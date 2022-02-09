@@ -1,0 +1,12 @@
+{
+	"services": [
+	  {
+		"name": "[SERVICE_NAME]",
+		"serviceId": "[SERVICE_ID]",
+		"displayName": "[DISPLAY_NAME]",
+	  },
+	  [...]
+	],
+	"nextPageToken": "[NEXT_PAGE_TOKEN]"
+  }
+  

@@ -1,0 +1,24 @@
+
+instances:
+  - name: n1-standard-16-sles-sap
+    type: n1-standard-16
+    os: sles-sap
+    commitment: 3
+    disks:
+      - name: disk-n1-standard-16-sles-sap-boot
+        type: ssd
+        data: 75
+      - name: snapshot-n1-standard-16-sles-sap-boot
+        type: snapshot
+        data: 100
+      - name: disk-n1-standard-16-sles-sap-data
+        type: ssd
+        data: 150
+      - name: snapshot-n1-standard-16-sles-sap-data
+        type: snapshot
+        data: 200
+    buckets:
+      - name: bucket-n1-standard-16-sles-sap
+        class: nearline-dual
+        region: eur4
+        data: 1024
