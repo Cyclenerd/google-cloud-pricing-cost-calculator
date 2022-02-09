@@ -7,7 +7,7 @@ usage/customers/**
 # Google Cloud Platform master data
 !build/gcp.yml
 # Prepared and tested price information file
-!./pricing.yml
+!/pricing.yml
 # Mapping
 !build/mapping.csv
 # Test
