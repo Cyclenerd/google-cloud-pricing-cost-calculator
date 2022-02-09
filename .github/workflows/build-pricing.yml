@@ -49,7 +49,7 @@ jobs:
 
       # Generate pricing informations
       - name: ⏳ Generate Pricing
-        run: cd build && perl pricing.pl
+        run: cd build && perl pricing.pl -details=0
 
       # Test pricing
       - name: 🌡️ Test
