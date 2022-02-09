@@ -4,6 +4,10 @@
 # Update mapping
 #
 
+BEGIN {
+	$VERSION = "1.0.0";
+}
+
 use strict;
 use DBI;
 use App::Options (
