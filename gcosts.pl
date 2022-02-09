@@ -18,6 +18,10 @@
 # Calculate and save the costs of Google Cloud Platform products and resources.
 #
 
+BEGIN {
+	$VERSION = "1.0.0";
+}
+
 use strict;
 use YAML::XS qw(LoadFile);
 use App::Options (

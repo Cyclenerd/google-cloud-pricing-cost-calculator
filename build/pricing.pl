@@ -18,6 +18,10 @@
 # Generate the YML file with the Google Cloud Platform pricing information
 #
 
+BEGIN {
+	$VERSION = "1.0.0";
+}
+
 use strict;
 use DBI;
 use YAML::XS qw(LoadFile Dump);
