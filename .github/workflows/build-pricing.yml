@@ -10,10 +10,11 @@ jobs:
     steps:
       - name: 🔧 Install dependencies
         run: |
-          sudo apt-get install  \
-            libapp-options-perl \
-            libwww-perl         \
-            libjson-xs-perl     \
+          sudo apt-get install   \
+            libapp-options-perl  \
+            libwww-perl          \
+            libjson-xs-perl      \
+            libyaml-libyaml-perl \
             libdbd-csv-perl
 
       - name: 🛎️ Checkout

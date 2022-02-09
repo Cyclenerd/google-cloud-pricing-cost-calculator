@@ -133,6 +133,7 @@ sudo apt install \
 	libapp-options-perl \
 	libwww-perl \
 	libjson-xs-perl \
+	libyaml-libyaml-perl \
 	libdbd-csv-perl
 ```
 
