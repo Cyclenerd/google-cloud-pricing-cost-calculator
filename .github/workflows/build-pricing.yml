@@ -8,30 +8,35 @@ jobs:
     name: Build pricing information file
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-
       - name: 🔧 Install dependencies
         run: |
           sudo apt-get install  \
             libapp-options-perl \
-            libwww-perl \
-            libjson-xs-perl \
+            libwww-perl         \
+            libjson-xs-perl     \
             libdbd-csv-perl
 
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
 
       # Export SKUs
-      - name: 📥 Export Compute Engine SKUs
-        run: perl ./build/skus.pl -csv="/tmp/skus_compute.csv" -id="6F81-5844-456A" && cat "/tmp/skus_compute.csv" > "/tmp/skus.csv"
-      - name: 📥 Export Cloud Storage SKUs
-        run: perl ./build/skus.pl -csv="/tmp/skus_storage.csv" -id="95FF-2EF5-5EA1" && cat "/tmp/skus_storage.csv" >> "/tmp/skus.csv"
-      - name: 📥 Export Stackdriver Monitoring SKUs
-        run: perl ./build/skus.pl -csv="/tmp/skus_stackdriver.csv" -id="58CD-E7C3-72CA" && cat "/tmp/skus_stackdriver.csv" >> "/tmp/skus.csv"
-      - name: 📥 Export Cloud SQL SKUs
-        run: perl ./build/skus.pl -csv="/tmp/skus_sql.csv" -id="9662-B51E-5089" && cat "/tmp/skus_sql.csv" >> "/tmp/skus.csv"
+      - name: 📥 Export SKUs
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd build || exit 9
+          perl skus.pl -csv="/tmp/skus_compute.csv"     -id="6F81-5844-456A" && \
+          perl skus.pl -csv="/tmp/skus_storage.csv"     -id="95FF-2EF5-5EA1" && \
+          perl skus.pl -csv="/tmp/skus_stackdriver.csv" -id="58CD-E7C3-72CA" && \
+          perl skus.pl -csv="/tmp/skus_sql.csv"         -id="9662-B51E-5089"
+
+      # Merge SKU files
+      - name: 📚 Merge SKUs to skus.csv
+        run: |
+          cat "/tmp/skus_compute.csv"      > "/tmp/skus.csv" && \
+          cat "/tmp/skus_storage.csv"     >> "/tmp/skus.csv" && \
+          cat "/tmp/skus_stackdriver.csv" >> "/tmp/skus.csv" && \
+          cat "/tmp/skus_sql.csv"         >> "/tmp/skus.csv"
 
       # Add custom mapping IDs to SKUs
       - name: 🔦 Custom Mapping
