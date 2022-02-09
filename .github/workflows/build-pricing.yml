@@ -54,4 +54,17 @@ jobs:
 
       # Test pricing
       - name: 🌡️ Test
-        run: cd t && bash gcosts.sh && bash test.sh
+        run: |
+          cd t && \
+          bash gcosts.sh && \
+          bash test.sh
+      
+      # Release new pricing.yml
+      - name: 🤝 Release
+        run: cd build && mv pricing.yml ../pricing.yml
+      # Push
+      - name: ✨ Push
+        uses: EndBug/add-and-commit@v8
+        with:
+          message: '🤖 Pricing information updated'
+          add: 'pricing.yml'
