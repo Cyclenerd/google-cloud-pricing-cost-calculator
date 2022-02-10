@@ -13,13 +13,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 #
 # Calculate and save the costs of Google Cloud Platform products and resources.
 #
+# Help: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 
 BEGIN {
-	$VERSION = "1.0.1";
+	$VERSION = "1.0.2";
 }
 
 use strict;
