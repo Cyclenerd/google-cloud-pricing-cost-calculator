@@ -18,6 +18,10 @@
 # Get and save bucket object size
 #
 
+BEGIN {
+	$VERSION = "0.9.0";
+}
+
 use strict;
 use YAML::XS qw(LoadFile);
 use App::Options (
