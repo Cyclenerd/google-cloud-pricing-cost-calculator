@@ -1,0 +1,55 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    name: Compile and release
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔧 Install dependencies
+        run: |
+          sudo apt-get install   \
+            libapp-options-perl  \
+            libwww-perl          \
+            libjson-xs-perl      \
+            libyaml-libyaml-perl \
+            libdbd-csv-perl      \
+            libpar-packer-perl
+
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+
+      # Test pricing
+      - name: 🌡️ Test gcosts.pl
+        run: |
+          perl gcosts.pl --version && \
+          cd t && \
+          perl ../gcosts.pl -pricing=../pricing.yml && \
+          bash test.sh && \
+          rm *.csv
+
+      # Pack 'gcosts.pl' into executable 'gcosts'
+      - name: ⏳ Compile gcosts
+        run: |
+          pp -vvv -o gcosts gcosts.pl
+
+      # Test pricing
+      - name: 🌡️ Test gcosts
+        run: |
+          ./gcosts --version && \
+          cd t && \
+          ../gcosts -pricing=../pricing.yml && \
+          bash test.sh && \
+          rm *.csv
+
+      - name: ✨ Release
+        uses: softprops/action-gh-release@v1
+        with:
+          prerelease: true
+          files: |
+            gcosts
+            pricing.yml
