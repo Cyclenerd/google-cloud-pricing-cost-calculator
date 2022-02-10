@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "1.0.0";
+	$VERSION = "1.0.1";
 }
 
 use strict;
@@ -51,14 +51,16 @@ my $pricing = LoadFile("$pricing_file") or die "ERROR: Cannot open YML file '$pr
 
 # Get usage files
 my @usage_files;
+my $count_usage_files = 0;
 opendir(DIR, '.') or die "ERROR: Cannot open directory to import usage files!\n";
 while (my $filename = readdir(DIR)) {
 	if (-r $filename && $filename =~ /\.yml$/ && $filename !~ /^pricing/) {
 		push (@usage_files, $filename);
+		$count_usage_files++;
 	}
 }
 closedir(DIR);
-unless ($#usage_files) {
+unless ($count_usage_files) {
 	die "ERROR: No YML usage file found!\n";
 }
 
