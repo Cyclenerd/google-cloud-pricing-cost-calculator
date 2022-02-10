@@ -1,0 +1,56 @@
+name: Test
+
+on:
+  push:
+    paths:
+      - 'gcosts.pl'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: CI/CD Test
+    # Same OS as in release.yml
+    runs-on: ubuntu-18.04
+    steps:
+      - name: 🔧 Install dependencies
+        run: |
+          sudo apt-get install   \
+            libapp-options-perl  \
+            libwww-perl          \
+            libjson-xs-perl      \
+            libyaml-libyaml-perl \
+            libdbd-csv-perl      \
+            libpar-packer-perl
+
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+
+      # Test pricing
+      - name: 🌡️ Test gcosts.pl
+        run: |
+          perl gcosts.pl --version && \
+          cd t && \
+          perl ../gcosts.pl -pricing=../pricing.yml && \
+          bash test.sh && \
+          rm *.csv
+
+      # Pack 'gcosts.pl' into executable 'gcosts'
+      - name: ⏳ Compile gcosts
+        run: |
+          pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
+
+      # Test pricing
+      - name: 🌡️ Test gcosts
+        run: |
+          ./gcosts --version && \
+          cd t && \
+          ../gcosts -pricing=../pricing.yml && \
+          bash test.sh && \
+          rm *.csv
+
+      # Test version
+      - name: 🌡️ Test Debian 10
+        run: |
+          docker pull debian:10
+          docker run -v $PWD:/temp/test debian:10 /temp/test/gcosts --version
