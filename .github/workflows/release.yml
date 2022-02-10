@@ -8,7 +8,16 @@ on:
 jobs:
   build:
     name: Compile and release
-    runs-on: ubuntu-latest
+    # Ubuntu          Debian
+    # 20.04  focal    bullseye/ sid - 11
+    # 18.04  bionic   buster  / sid - 10 (Google Cloud Shell)
+    #
+    # pp on Ubuntu 20.04 and run on Debian 10
+    # /tmp/par-6e696c73/cache[...]/gcosts: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.29' not found (required by /tmp/par-6e696c73/cache-[...]/libperl.so.5.30)
+    # /tmp/par-6e696c73/cache-[...]/gcosts: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.28' not found (required by /tmp/par-6e696c73/cache-[...]/libperl.so.5.30)
+    #
+    # Therefore use an older Ubuntu release
+    runs-on: ubuntu-18.04
     steps:
       - name: 🔧 Install dependencies
         run: |
