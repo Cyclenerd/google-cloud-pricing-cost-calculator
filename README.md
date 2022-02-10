@@ -129,6 +129,7 @@ For MS Windows you can download and install [Strawberry Perl](https://strawberry
 	* [App::Options](https://metacpan.org/pod/App::Options)
 	* [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
 	* [JSON::XS](https://metacpan.org/pod/JSON::XS)
+	* [YAML::XS](https://metacpan.org/pod/YAML::XS) (and `libyaml`)
 	* [DBD::CSV](https://metacpan.org/pod/DBD::CSV)
 
 Debian/Ubuntu:
@@ -159,7 +160,7 @@ sudo apt install libpar-packer-perl
 
 Pack `gcosts.pl` into executable `gcosts` (or `gcosts.exe` on Win32):
 ```shell
-pp -o gcosts gcosts.pl
+pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
 ```
 
 ## ❤️ Contributing

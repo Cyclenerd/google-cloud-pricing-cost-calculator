@@ -44,7 +44,7 @@ jobs:
       # Pack 'gcosts.pl' into executable 'gcosts'
       - name: ⏳ Compile gcosts
         run: |
-          pp -vvv -o gcosts gcosts.pl
+          pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
 
       # Test pricing
       - name: 🌡️ Test gcosts
