@@ -1,0 +1,35 @@
+region: europe-west4
+project: my-first-project
+vpn-tunnels:
+  - name: vpn-tunnel-cloud-to-home
+nat-gateways:
+  - name: gateway-internet
+    data: 300
+traffic:
+  - name : vpn-traffic-egrees
+    world: 100
+  - name : internet-traffic-egrees
+    world: 150
+
+instances:
+  - name: app-server
+    type: n1-standard-8
+    os: rhel
+    commitment: 3
+    disks:
+      - name: disk-boot
+        type: ssd
+        data: 75
+      - name: disk-boot-snaphot
+        type: snapshot
+        data: 10
+        region: europe-multi
+      - name: disk-data
+        type: hdd
+        data: 1000
+
+buckets:
+  - name: app-server-bucket-dualregion
+    class: nearline-dual
+    data: 1000
+    region: eur4
