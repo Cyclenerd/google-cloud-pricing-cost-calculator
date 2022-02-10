@@ -6,7 +6,9 @@ Price information is read from a local file.
 No dependence to external or third-party services.
 No need to access any API or even an internet connection for the calculation.
 
-All tested in large Google Cloud migration projects and checked against the actual invoice.
+Everything tested and matched against the actual invoice in large Google Cloud migration projects.
+
+![Screenshot: Cloud Shell with gcosts](img/cloud_shell-gcosts.png)
 
 ## ☁️ Supported resources
 
@@ -64,20 +66,21 @@ The following services are not currently supported, but are on the TODO list:
 
 ### 1. Get `gcosts` program
 
-Download the already compiled and executable `gcosts` program.
+Download the executable `gcosts` program.
 
-Linux (x86):
+Linux (x86_64) / Cloud Shell:
 ```shell
-curl TODO
+curl -OL "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts" && \
+chmod +x gcosts
 ```
 
 ### 2. Download price information
 
-Download the prepared and tested price information file `pricing.yml`.
+Download the latest and tested price information file `pricing.yml`.
 
-Linux:
+Linux / Cloud Shell:
 ```shell
-curl TODO
+curl -OL "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml"
 ```
 
 ### 3. Run it
@@ -99,8 +102,10 @@ instances:
 
 Run the program:
 ```shell
-gcosts
+./gcosts
 ```
+
+All YML files of the current directory are processed.
 
 ### 4. Get familiar
 
