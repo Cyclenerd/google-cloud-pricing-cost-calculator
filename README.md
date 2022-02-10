@@ -108,6 +108,11 @@ Run the program:
 
 All YML files of the current directory are processed.
 
+Two CSV files with the costs are created:
+
+1. `COSTS.csv`  : Costs for the resources
+1. `TOTALS.csv` : Total costs per name, resource, project, region and file.
+
 ### 4. Get familiar
 
 Continue to familiarize yourself with the options. The following documentations are prepared for this purpose:
