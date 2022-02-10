@@ -66,17 +66,18 @@ The following services are not currently supported, but are on the TODO list:
 
 ### 1. Get `gcosts` program
 
-Download the executable `gcosts` program.
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts` program.
 
 Linux (x86_64) / Cloud Shell:
 ```shell
 curl -OL "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts" && \
-chmod +x gcosts
+chmod +x gcosts && \
+./gcosts --help
 ```
 
 ### 2. Download price information
 
-Download the latest and tested price information file `pricing.yml`.
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`.
 
 Linux / Cloud Shell:
 ```shell
