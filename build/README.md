@@ -1,5 +1,7 @@
 # Build pricing information file
 
+> The build is done regularly and automatically via [GitHub Action](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml).
+
 Configuration and scripts to generate YML file `pricing.yml` with Google Cloud Platform pricing informations.
 
 Files:
