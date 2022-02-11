@@ -121,6 +121,17 @@ Continue to familiarize yourself with the options. The following documentations 
 * [Create usage files](usage/)
 * [Build pricing information file](build/)
 
+**🤓 Pro Tip**
+
+Add gcosts to your Bash aliases with absolute pathnames. You can then execute `gcosts` anywhere.
+
+Alias (`~/.bash_aliases`):
+```shell
+alias gcosts='/your-pathname/gcosts -pricing=/your-pathname/pricing.yml'
+```
+
+
+
 ## 🧑‍💻 Development
 
 If you want to modify the Perl scripts or prefer to run the uncomplicated Perl scripts (`gcosts.pl`, `skus.pl`, `mapping.pl`, `pricing.pl`) and create the price information yourself,
