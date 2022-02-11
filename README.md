@@ -69,8 +69,9 @@ The following services are not currently supported, but are on the TODO list:
 [Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts` program.
 
 Linux (x86_64) / Cloud Shell:
+<!-- https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts -->
 ```shell
-curl -OL "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts" && \
+curl -OL "https://bit.ly/gcosts" && \
 chmod +x gcosts && \
 ./gcosts --help
 ```
@@ -81,7 +82,7 @@ chmod +x gcosts && \
 
 Linux / Cloud Shell:
 ```shell
-curl -OL "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml"
+curl -OL "https://bit.ly/pricing_yml"
 ```
 
 ### 3. Run it
