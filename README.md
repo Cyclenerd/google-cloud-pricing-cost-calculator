@@ -82,7 +82,8 @@ chmod +x gcosts && \
 
 Linux / Cloud Shell:
 ```shell
-curl -OL "https://bit.ly/pricing_yml"
+curl -L "https://bit.ly/pricing_yml" \
+     -o "pricing.yml"
 ```
 
 ### 3. Run it
