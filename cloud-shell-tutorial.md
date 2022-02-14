@@ -38,7 +38,7 @@ curl -L "https://bit.ly/pricing_yml" \
 
 Add `gcosts` to your Bash aliases with absolute pathnames:
 ```bash
-echo "alias gcosts='~/gcosts -pricing=~/pricing.yml'" >> ~/.bash_aliases
+echo "alias gcosts='$HOME/gcosts -pricing=$HOME/pricing.yml'" >> ~/.bash_aliases
 ```
 
 Reload the current terminal:
@@ -66,7 +66,7 @@ Edit the file `example.yml`:
 edit example.yml
 ```
 
-<walkthrough-editor-open-file filePath="example.yml">Edit example.yml</walkthrough-editor-open-file>
+<walkthrough-editor-open-file filePath="cloudshell_open/google-cloud-pricing-cost-calculator/usage/example.yml">Edit example.yml</walkthrough-editor-open-file>
 
 ## Run it
 
@@ -97,5 +97,5 @@ You can import the CSV files with MS Excel, LibreOffice or Google Sheets.
 Continue to familiarize yourself with the options.
 The following documentations are prepared for this purpose:
 
-* [Create usage files](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/usage/)
-* [Build pricing information file](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/build/)
+* [Create usage files](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/tree/master/usage)
+* [Build pricing information file](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/tree/master/build)
