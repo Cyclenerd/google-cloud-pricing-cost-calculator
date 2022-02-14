@@ -2,10 +2,9 @@
 
 Calculate estimated monthly costs of Google Cloud Platform products and resources.
 Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront.
+Mapping of resource usage is done in easy to learn YML files.
 Price information is read from a local file.
-No dependence to external or third-party services.
-No need to access any API or even an internet connection for the calculation.
-
+Full control and no disclosure of any information and costs to third parties.
 Everything tested and matched against the actual invoice in large Google Cloud migration projects.
 
 ![Screenshot: Cloud Shell with gcosts](img/cloud_shell-gcosts.png)
