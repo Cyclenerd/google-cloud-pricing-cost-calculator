@@ -13,7 +13,7 @@ Everything tested and matched against the actual invoice in large Google Cloud m
 
 The cost of a resource is calculated by multiplying its price by its usage.
 
-| :information_source: Google Cloud Free Program |
+| 💡 Google Cloud Free Program |
 |------------------------------------------------|
 | Free tiers and free trial (90-day, $300), which are usually not a significant part of cloud costs, are ignored. For example: 1x free non-preemptible `e2-micro` VM instance per month, free NAT for 32 VMs, 30 GB-months standard persistent disk, 1 GB network egress and everything [else](https://cloud.google.com/free/docs/gcp-free-tier/#compute) are not taken into account. |
 
