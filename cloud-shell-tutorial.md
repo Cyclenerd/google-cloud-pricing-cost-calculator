@@ -41,9 +41,9 @@ Add `gcosts` to your Bash aliases with absolute pathnames:
 echo "alias gcosts='$HOME/gcosts -pricing=$HOME/pricing.yml'" >> ~/.bash_aliases
 ```
 
-Reload the current terminal:
+Reload aliases:
 ```bash
-source ~/.bashrc
+source ~/.bash_aliases
 ```
 
 You can then execute `gcosts`:
