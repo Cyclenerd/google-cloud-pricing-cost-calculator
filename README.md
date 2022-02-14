@@ -60,6 +60,12 @@ The following services are not currently supported, but are on the TODO list:
 * BigQuery
 * Cloud SQL
 
+## 🧑‍🏫 Start the interactive tutorial
+
+This guide is available as an interactive Cloud Shell tutorial.
+To get started, please click the following button:
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator&cloudshell_git_branch=master&cloudshell_tutorial=cloud-shell-tutorial.md)
 
 ## 🏃 Quick start
 
@@ -114,6 +120,8 @@ Two CSV files with the costs are created:
 1. `COSTS.csv`  : Costs for the resources
 1. `TOTALS.csv` : Total costs per name, resource, project, region and file.
 
+You can import the CSV files with MS Excel, LibreOffice or Google Sheets.
+
 ### 4. Get familiar
 
 Continue to familiarize yourself with the options. The following documentations are prepared for this purpose:
@@ -123,7 +131,7 @@ Continue to familiarize yourself with the options. The following documentations 
 
 **🤓 Pro Tip**
 
-Add gcosts to your Bash aliases with absolute pathnames. You can then execute `gcosts` anywhere.
+Add `gcosts` to your Bash aliases with absolute pathnames. You can then execute `gcosts` anywhere.
 
 Alias (`~/.bash_aliases`):
 ```shell
