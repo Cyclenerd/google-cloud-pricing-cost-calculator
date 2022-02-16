@@ -123,6 +123,27 @@ instances:
     type: n2-standard-96
   - name: n2-standard-128
     type: n2-standard-128
+# N2 high-memory machine types
+  - name: n2-highmem-2
+    type: n2-highmem-2
+  - name: n2-highmem-4
+    type: n2-highmem-4
+  - name: n2-highmem-8
+    type: n2-highmem-8
+  - name: n2-highmem-16
+    type: n2-highmem-16
+  - name: n2-highmem-32
+    type: n2-highmem-32
+  - name: n2-highmem-48
+    type: n2-highmem-48
+  - name: n2-highmem-64
+    type: n2-highmem-64
+  - name: n2-highmem-80
+    type: n2-highmem-80
+  - name: n2-highmem-96
+    type: n2-highmem-96
+  - name: n2-highmem-128
+    type: n2-highmem-128
 
 buckets:
   - name: bucket-standard
