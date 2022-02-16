@@ -461,11 +461,13 @@ foreach my $region (@regions) {
 		# F1 Predefined
 		elsif ($type eq 'f1') {
 			$mappings{'gce.compute.cpu.f1'} = $cpu;
+			%sustained_use_discount = %sustained_use_discount_n1;
 			# RAM incl.
 		}
 		# G1 Predefined
 		elsif ($type eq 'g1') {
 			$mappings{'gce.compute.cpu.g1'} = $cpu;
+			%sustained_use_discount = %sustained_use_discount_n1;
 			# RAM incl.
 		}
 		# N1 Predefined

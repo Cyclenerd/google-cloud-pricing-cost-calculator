@@ -61,6 +61,10 @@ MY_CHECKS=(
 	'europe-west4;vm;e2-highcpu-8;159'
 	'europe-west4;vm;e2-highcpu-16;318'
 	'europe-west4;vm;e2-highcpu-32;636'
+	# E2 shared-core machine types
+	'europe-west4;vm;e2-micro;6.73'
+	'europe-west4;vm;e2-small;13.46'
+	'europe-west4;vm;e2-medium;26.9'
 	# N2 standard machine types
 	'europe-west4;vm;n2-standard-2;62'
 	'europe-west4;vm;n2-standard-4;124'
@@ -181,6 +185,9 @@ MY_CHECKS=(
 	'europe-west4;vm;n1-highcpu-32;637'
 	'europe-west4;vm;n1-highcpu-64;1275'
 	'europe-west4;vm;n1-highcpu-96;1913'
+	# N1 shared-core machine types
+	'europe-west4;vm;f1-micro;4.29'
+	'europe-west4;vm;g1-small;14.46'
 	#
 	# Compute-optimized machine type family
 	# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types

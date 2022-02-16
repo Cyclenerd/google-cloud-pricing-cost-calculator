@@ -36,3 +36,10 @@ instances:
     type: e2-highcpu-16
   - name: e2-highcpu-32
     type: e2-highcpu-32
+# E2 shared-core machine types
+  - name: e2-micro
+    type: e2-micro
+  - name: e2-small
+    type: e2-small
+  - name: e2-medium
+    type: e2-medium

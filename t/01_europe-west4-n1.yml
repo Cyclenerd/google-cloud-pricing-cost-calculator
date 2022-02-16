@@ -59,3 +59,8 @@ instances:
     type: n1-highcpu-64
   - name: n1-highcpu-96
     type: n1-highcpu-96
+# N1 shared-core machine types
+  - name: f1-micro
+    type: f1-micro
+  - name: g1-small
+    type: g1-small
