@@ -69,6 +69,19 @@ instances:
     type: m2-ultramem-416
     commitment: 3
 
+# General-purpose machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
+  - name: e2-standard-2
+    type: e2-standard-2
+  - name: e2-standard-4
+    type: e2-standard-4
+  - name: e2-standard-8
+    type: e2-standard-8
+  - name: e2-standard-16
+    type: e2-standard-16
+  - name: e2-standard-32
+    type: e2-standard-32
+
 buckets:
   - name: bucket-standard
     class: standard

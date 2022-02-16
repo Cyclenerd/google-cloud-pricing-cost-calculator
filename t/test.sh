@@ -37,6 +37,12 @@ MY_CHECKS=(
 	'europe-west4;vm;m2-ultramem-416-1y;389'
 	# Known bug > Google Cloud Pricing Calculator: 22371 vs 22374
 	'europe-west4;vm;m2-ultramem-416-3y;223'
+	# General-purpose machine type family
+	'europe-west4;vm;e2-standard-2;53'
+	'europe-west4;vm;e2-standard-4;107'
+	'europe-west4;vm;e2-standard-8;215'
+	'europe-west4;vm;e2-standard-16;430'
+	'europe-west4;vm;e2-standard-32;861'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'
