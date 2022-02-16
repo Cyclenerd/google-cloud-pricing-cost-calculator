@@ -99,6 +99,46 @@ MY_CHECKS=(
 	'europe-west4;vm;n2-highcpu-64;1475'
 	'europe-west4;vm;n2-highcpu-80;1844'
 	'europe-west4;vm;n2-highcpu-96;2213'
+	# N2D standard machine types
+	'europe-west4;vm;n2d-standard-2;54'
+	'europe-west4;vm;n2d-standard-4;108'
+	'europe-west4;vm;n2d-standard-8;217'
+	'europe-west4;vm;n2d-standard-16;434'
+	'europe-west4;vm;n2d-standard-32;869'
+	# n2d-standard-48 ... 224: Tested with Google Cloud Pricing Calcuator
+	#                          Price differs slightly from the price list
+	'europe-west4;vm;n2d-standard-48;1304'
+	'europe-west4;vm;n2d-standard-64;1738'
+	'europe-west4;vm;n2d-standard-80;2173'
+	'europe-west4;vm;n2d-standard-96;2608'
+	'europe-west4;vm;n2d-standard-128;3477'
+	'europe-west4;vm;n2d-standard-224;6085'
+	# N2D high-memory machine types
+	'europe-west4;vm;n2d-highmem-2;73'
+	'europe-west4;vm;n2d-highmem-4;146'
+	'europe-west4;vm;n2d-highmem-8;293'
+	'europe-west4;vm;n2d-highmem-16;586'
+	'europe-west4;vm;n2d-highmem-32;1172'
+	# n2d-highmem-48 ... 96: Tested with Google Cloud Pricing Calcuator
+	#                        Price differs slightly from the price list
+	'europe-west4;vm;n2d-highmem-48;1759'
+	'europe-west4;vm;n2d-highmem-64;2345'
+	'europe-west4;vm;n2d-highmem-80;2932'
+	# TODO: FIX 'europe-west4;vm;n2d-highmem-96;3518'
+	# N2D high-CPU machine types
+	'europe-west4;vm;n2d-highcpu-2;40'
+	'europe-west4;vm;n2d-highcpu-4;80'
+	'europe-west4;vm;n2d-highcpu-8;160'
+	'europe-west4;vm;n2d-highcpu-16;320'
+	'europe-west4;vm;n2d-highcpu-32;641'
+	'europe-west4;vm;n2d-highcpu-48;962'
+	'europe-west4;vm;n2d-highcpu-64;1283'
+	'europe-west4;vm;n2d-highcpu-80;1604'
+	'europe-west4;vm;n2d-highcpu-96;1925'
+	# n2d-highcpu-128 ... 224: Tested with Google Cloud Pricing Calcuator
+	#                          Price differs slightly from the price list
+	'europe-west4;vm;n2d-highcpu-128;2567'
+	'europe-west4;vm;n2d-highcpu-224;4492'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'

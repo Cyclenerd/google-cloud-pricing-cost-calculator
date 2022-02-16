@@ -1,0 +1,72 @@
+region: europe-west4
+project: gcp-gce-n2d
+
+# General-purpose machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
+
+instances:
+# N2D standard machine types
+  - name: n2d-standard-2
+    type: n2d-standard-2
+  - name: n2d-standard-4
+    type: n2d-standard-4
+  - name: n2d-standard-8
+    type: n2d-standard-8
+  - name: n2d-standard-16
+    type: n2d-standard-16
+  - name: n2d-standard-32
+    type: n2d-standard-32
+  - name: n2d-standard-48
+    type: n2d-standard-48
+  - name: n2d-standard-64
+    type: n2d-standard-64
+  - name: n2d-standard-80
+    type: n2d-standard-80
+  - name: n2d-standard-96
+    type: n2d-standard-96
+  - name: n2d-standard-128
+    type: n2d-standard-128
+  - name: n2d-standard-224
+    type: n2d-standard-224
+# N2D high-memory machine types
+  - name: n2d-highmem-2
+    type: n2d-highmem-2
+  - name: n2d-highmem-4
+    type: n2d-highmem-4
+  - name: n2d-highmem-8
+    type: n2d-highmem-8
+  - name: n2d-highmem-16
+    type: n2d-highmem-16
+  - name: n2d-highmem-32
+    type: n2d-highmem-32
+  - name: n2d-highmem-48
+    type: n2d-highmem-48
+  - name: n2d-highmem-64
+    type: n2d-highmem-64
+  - name: n2d-highmem-80
+    type: n2d-highmem-80
+  - name: n2d-highmem-96
+    type: n2d-highmem-96
+# N2D high-CPU machine types
+  - name: n2d-highcpu-2
+    type: n2d-highcpu-2
+  - name: n2d-highcpu-4
+    type: n2d-highcpu-4
+  - name: n2d-highcpu-8
+    type: n2d-highcpu-8
+  - name: n2d-highcpu-16
+    type: n2d-highcpu-16
+  - name: n2d-highcpu-32
+    type: n2d-highcpu-32
+  - name: n2d-highcpu-48
+    type: n2d-highcpu-48
+  - name: n2d-highcpu-64
+    type: n2d-highcpu-64
+  - name: n2d-highcpu-80
+    type: n2d-highcpu-80
+  - name: n2d-highcpu-96
+    type: n2d-highcpu-96
+  - name: n2d-highcpu-128
+    type: n2d-highcpu-128
+  - name: n2d-highcpu-224
+    type: n2d-highcpu-224
