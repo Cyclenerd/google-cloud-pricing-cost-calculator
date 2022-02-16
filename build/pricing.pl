@@ -518,6 +518,15 @@ foreach my $region (@regions) {
 			$mappings_3y{'gce.compute.ram.compute.optimized.3y'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n2;
 		}
+		# C2D Predefined
+		elsif ($type eq 'c2d') {
+			$mappings{   'gce.compute.cpu.c2d'   } = $cpu;
+			$mappings_1y{'gce.compute.cpu.c2d.1y'} = $cpu;
+			$mappings_3y{'gce.compute.cpu.c2d.3y'} = $cpu;
+			$mappings{   'gce.compute.ram.c2d'   } = $ram;
+			$mappings_1y{'gce.compute.ram.c2d.1y'} = $ram;
+			$mappings_3y{'gce.compute.ram.c2d.3y'} = $ram;
+		}
 		# M1
 		elsif ($type eq 'm1') {
 			$mappings{   'gce.compute.cpu.memory.optimized'   } = $cpu;

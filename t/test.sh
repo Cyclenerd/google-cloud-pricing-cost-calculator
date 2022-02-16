@@ -22,6 +22,10 @@ MY_CHECKS=(
 	'europe-west4;vm;n1-standard-8;213'
 	'europe-west4;vm;n1-standard-8-1y;192'
 	'europe-west4;vm;n1-standard-8-3y;137'
+	# » c2d-standard-8
+	'europe-west4;vm;c2d-standard-8;291'
+	'europe-west4;vm;c2d-standard-8-1y;183'
+	'europe-west4;vm;c2d-standard-8-3y;131'
 	# » m1-ultramem-80
 	'europe-west4;vm;m1-ultramem-80;6762'
 	'europe-west4;vm;m1-ultramem-80-1y;5692'

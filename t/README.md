@@ -45,6 +45,10 @@ Calculated values are checked against values calculated with the official [Googl
 	* Month:     45224.32
 	* Month 1Y:  38915.02
 	* Month 3Y: [22371.46](https://cloud.google.com/products/calculator/#id=b19741aa-7ebe-4e1c-8cfb-e384f377afad)
+* c2d-standard-8
+	* Month:     291.92
+	* Month 1Y:  183.91
+	* Month 3Y: [131.36](https://cloud.google.com/products/calculator/#id=2603d29c-e5bd-4e82-9905-8b0d25f23dcc)
 
 ### Disks
 

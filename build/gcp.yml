@@ -888,6 +888,117 @@ compute:
       ram: 240
       bandwidth: 32
 
+    # C2D:
+    # » Compute-optimized machine family
+    # » Run on the third generation AMD EPYC Milan processor
+    # » Do not offer sustained-use discounts
+    # » Do not support GPUs or nested virtualization
+    c2d-highcpu-112:
+      type: c2d
+      cpu: 112
+      ram: 224
+      bandwidth: 32
+    c2d-highcpu-16:
+      type: c2d
+      cpu: 16
+      ram: 32
+      bandwidth: 32
+    c2d-highcpu-2:
+      type: c2d
+      cpu: 2
+      ram: 4
+      bandwidth: 32
+    c2d-highcpu-32:
+      type: c2d
+      cpu: 32
+      ram: 64
+      bandwidth: 32
+    c2d-highcpu-4:
+      type: c2d
+      cpu: 4
+      ram: 8
+      bandwidth: 32
+    c2d-highcpu-56:
+      type: c2d
+      cpu: 56
+      ram: 112
+      bandwidth: 32
+    c2d-highcpu-8:
+      type: c2d
+      cpu: 8
+      ram: 16
+      bandwidth: 32
+    c2d-highmem-112:
+      type: c2d
+      cpu: 112
+      ram: 896
+      bandwidth: 32
+    c2d-highmem-16:
+      type: c2d
+      cpu: 16
+      ram: 128
+      bandwidth: 32
+    c2d-highmem-2:
+      type: c2d
+      cpu: 2
+      ram: 16
+      bandwidth: 32
+    c2d-highmem-32:
+      type: c2d
+      cpu: 32
+      ram: 256
+      bandwidth: 32
+    c2d-highmem-4:
+      type: c2d
+      cpu: 4
+      ram: 32
+      bandwidth: 32
+    c2d-highmem-56:
+      type: c2d
+      cpu: 56
+      ram: 448
+      bandwidth: 32
+    c2d-highmem-8:
+      type: c2d
+      cpu: 8
+      ram: 64
+      bandwidth: 32
+    c2d-standard-112:
+      type: c2d
+      cpu: 112
+      ram: 448
+      bandwidth: 32
+    c2d-standard-16:
+      type: c2d
+      cpu: 16
+      ram: 64
+      bandwidth: 32
+    c2d-standard-2:
+      type: c2d
+      cpu: 2
+      ram: 8
+      bandwidth: 32
+    c2d-standard-32:
+      type: c2d
+      cpu: 32
+      ram: 128
+      bandwidth: 32
+    c2d-standard-4:
+      type: c2d
+      cpu: 4
+      ram: 16
+      bandwidth: 32
+    c2d-standard-56:
+      type: c2d
+      cpu: 56
+      ram: 224
+      bandwidth: 32
+    c2d-standard-8:
+      type: c2d
+      cpu: 8
+      ram: 32
+      bandwidth: 32
+
     # M1:
     # » Memory-optimized VMs that offer 14.9 to 24 GB of memory per vCPU
     # » Do not support GPUs
