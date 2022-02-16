@@ -139,6 +139,15 @@ MY_CHECKS=(
 	#                          Price differs slightly from the price list
 	'europe-west4;vm;n2d-highcpu-128;2567'
 	'europe-west4;vm;n2d-highcpu-224;4492'
+	# Tau T2D standard machine types
+	'europe-west4;vm;t2d-standard-1;33'
+	'europe-west4;vm;t2d-standard-2;67'
+	'europe-west4;vm;t2d-standard-4;135'
+	'europe-west4;vm;t2d-standard-8;271'
+	'europe-west4;vm;t2d-standard-16;543'
+	'europe-west4;vm;t2d-standard-32;1086'
+	'europe-west4;vm;t2d-standard-48;1629'
+	'europe-west4;vm;t2d-standard-60;2037'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'
