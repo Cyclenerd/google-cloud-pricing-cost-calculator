@@ -422,12 +422,12 @@ foreach my $region (@regions) {
 
 		# E2 Predefined
 		if ($type eq 'e2') {
-			$mappings{   'gce.compute.cpu.e2'} = $cpu;
+			$mappings{   'gce.compute.cpu.e2'}    = $cpu;
 			$mappings_1y{'gce.compute.cpu.e2.1y'} = $cpu;
 			$mappings_3y{'gce.compute.cpu.e2.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.e2'} = $ram;
-			$mappings_1y{'gce.compute.ram.e2.1y'} = $cpu;
-			$mappings_3y{'gce.compute.ram.e2.3y'} = $cpu;
+			$mappings{   'gce.compute.ram.e2'}    = $ram;
+			$mappings_1y{'gce.compute.ram.e2.1y'} = $ram;
+			$mappings_3y{'gce.compute.ram.e2.3y'} = $ram;
 		}
 		# N2 Predefined
 		elsif ($type eq 'n2') {
