@@ -33,15 +33,6 @@ instances:
     type: a2-highgpu-8g
     commitment: 3
 
-  - name: m1-ultramem-80
-    type: m1-ultramem-80
-  - name: m1-ultramem-80-1y
-    type: m1-ultramem-80
-    commitment: 1
-  - name: m1-ultramem-80-3y
-    type: m1-ultramem-80
-    commitment: 3
-
 buckets:
   - name: bucket-standard
     class: standard

@@ -215,7 +215,23 @@ MY_CHECKS=(
 	'europe-west4;vm;m2-megamem-416;27014'     # Google Cloud Pricing Calculator: $27000.81, Price List: $27012.99
 	'europe-west4;vm;m2-megamem-416-1y;23237'  # Google Cloud Pricing Calculator: $23236.07, Price List: $23237.36
 	'europe-west4;vm;m2-megamem-416-3y;13356'  # Google Cloud Pricing Calculator: $13354.79, Price List: $13356.08
-
+	# M1 machine types
+	# » m1-ultramem-40
+	'europe-west4;vm;m1-ultramem-40;3381' # Google Cloud Pricing Calculator: $3381.02, Price List: $3380.776
+	'europe-west4;vm;m1-ultramem-40-1y;2846'
+	'europe-west4;vm;m1-ultramem-40-3y;1449'
+	# » m1-ultramem-80
+	'europe-west4;vm;m1-ultramem-80;6762'
+	'europe-west4;vm;m1-ultramem-80-1y;5692'
+	'europe-west4;vm;m1-ultramem-80-3y;2898'
+	# » m1-ultramem-160
+	'europe-west4;vm;m1-ultramem-160;13524'
+	'europe-west4;vm;m1-ultramem-160-1y;11385'
+	'europe-west4;vm;m1-ultramem-160-3y;5797'
+	# » m1-megamem-96
+	'europe-west4;vm;m1-megamem-96;5722'
+	'europe-west4;vm;m1-megamem-96-1y;4817'
+	'europe-west4;vm;m1-megamem-96-3y;2452'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'
