@@ -187,6 +187,7 @@ compute:
       increment: 1
 
   # Virtual machine instances
+  # VM instance pricing : https://cloud.google.com/compute/vm-instance-pricing
   instance:
     # bandwidth: Maximum egress bandwidth (Gbps)
     # https://cloud.google.com/compute/docs/general-purpose-machines
