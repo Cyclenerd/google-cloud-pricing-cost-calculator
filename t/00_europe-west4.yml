@@ -91,6 +91,17 @@ instances:
     type: e2-highmem-8
   - name: e2-highmem-16
     type: e2-highmem-16
+# E2 high-CPU machine types
+  - name: e2-highcpu-2
+    type: e2-highcpu-2
+  - name: e2-highcpu-4
+    type: e2-highcpu-4
+  - name: e2-highcpu-8
+    type: e2-highcpu-8
+  - name: e2-highcpu-16
+    type: e2-highcpu-16
+  - name: e2-highcpu-32
+    type: e2-highcpu-32
 
 buckets:
   - name: bucket-standard

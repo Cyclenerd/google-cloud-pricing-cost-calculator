@@ -49,6 +49,12 @@ MY_CHECKS=(
 	'europe-west4;vm;e2-highmem-4;145'
 	'europe-west4;vm;e2-highmem-8;290'
 	'europe-west4;vm;e2-highmem-16;581'
+	# E2 high-CPU machine types
+	'europe-west4;vm;e2-highcpu-2;39'
+	'europe-west4;vm;e2-highcpu-4;79'
+	'europe-west4;vm;e2-highcpu-8;159'
+	'europe-west4;vm;e2-highcpu-16;318'
+	'europe-west4;vm;e2-highcpu-32;636'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'
