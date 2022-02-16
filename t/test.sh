@@ -129,7 +129,7 @@ MY_CHECKS=(
 	'europe-west4;vm;n2d-highmem-48;1759'
 	'europe-west4;vm;n2d-highmem-64;2345'
 	'europe-west4;vm;n2d-highmem-80;2932'
-	# TODO: FIX 'europe-west4;vm;n2d-highmem-96;3518'
+	'europe-west4;vm;n2d-highmem-96;3518'
 	# N2D high-CPU machine types
 	'europe-west4;vm;n2d-highcpu-2;40'
 	'europe-west4;vm;n2d-highcpu-4;80'
