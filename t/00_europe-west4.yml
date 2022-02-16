@@ -71,6 +71,7 @@ instances:
 
 # General-purpose machine type family
 # https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
+# E2 standard machine types
   - name: e2-standard-2
     type: e2-standard-2
   - name: e2-standard-4
@@ -81,6 +82,15 @@ instances:
     type: e2-standard-16
   - name: e2-standard-32
     type: e2-standard-32
+# E2 high-memory machine types
+  - name: e2-highmem-2
+    type: e2-highmem-2
+  - name: e2-highmem-4
+    type: e2-highmem-4
+  - name: e2-highmem-8
+    type: e2-highmem-8
+  - name: e2-highmem-16
+    type: e2-highmem-16
 
 buckets:
   - name: bucket-standard
