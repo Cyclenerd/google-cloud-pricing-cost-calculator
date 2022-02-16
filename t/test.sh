@@ -148,6 +148,35 @@ MY_CHECKS=(
 	'europe-west4;vm;t2d-standard-32;1086'
 	'europe-west4;vm;t2d-standard-48;1629'
 	'europe-west4;vm;t2d-standard-60;2037'
+	# N1 standard machine types
+	'europe-west4;vm;n1-standard-1;26'
+	'europe-west4;vm;n1-standard-2;53'
+	'europe-west4;vm;n1-standard-4;106'
+	'europe-west4;vm;n1-standard-8;213'
+	'europe-west4;vm;n1-standard-16;427'
+	'europe-west4;vm;n1-standard-32;855'
+	'europe-west4;vm;n1-standard-64;1710'
+	'europe-west4;vm;n1-standard-96;2565'
+	# N1 high-memory machine types
+	'europe-west4;vm;n1-highmem-2;66'
+	'europe-west4;vm;n1-highmem-4;133'
+	'europe-west4;vm;n1-highmem-8;266'
+	'europe-west4;vm;n1-highmem-16;532'
+	# n1-highmem-32 ... 96: Tested with Google Cloud Pricing Calcuator
+	#                       Price differs slightly from the price list
+	'europe-west4;vm;n1-highmem-32;1064'
+	'europe-west4;vm;n1-highmem-64;2129'
+	'europe-west4;vm;n1-highmem-96;3194'
+	# N1 high-CPU machine types
+	'europe-west4;vm;n1-highcpu-2;39'
+	'europe-west4;vm;n1-highcpu-4;79'
+	'europe-west4;vm;n1-highcpu-8;159'
+	# n1-highcpu-16 ... 96: Tested with Google Cloud Pricing Calcuator
+	#                       Price differs slightly from the price list
+	'europe-west4;vm;n1-highcpu-16;318'
+	'europe-west4;vm;n1-highcpu-32;637'
+	'europe-west4;vm;n1-highcpu-64;1275'
+	'europe-west4;vm;n1-highcpu-96;1913'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'

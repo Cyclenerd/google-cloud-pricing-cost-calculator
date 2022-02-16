@@ -1,0 +1,54 @@
+region: europe-west4
+project: gcp-gce-n1
+
+# General-purpose machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
+
+instances:
+# N1 standard machine types
+  - name: n1-standard-1
+    type: n1-standard-1
+  - name: n1-standard-2
+    type: n1-standard-2
+  - name: n1-standard-4
+    type: n1-standard-4
+  - name: n1-standard-8
+    type: n1-standard-8
+  - name: n1-standard-16
+    type: n1-standard-16
+  - name: n1-standard-32
+    type: n1-standard-32
+  - name: n1-standard-64
+    type: n1-standard-64
+  - name: n1-standard-96
+    type: n1-standard-96
+# N1 high-memory machine types
+  - name: n1-highmem-2
+    type: n1-highmem-2
+  - name: n1-highmem-4
+    type: n1-highmem-4
+  - name: n1-highmem-8
+    type: n1-highmem-8
+  - name: n1-highmem-16
+    type: n1-highmem-16
+  - name: n1-highmem-32
+    type: n1-highmem-32
+  - name: n1-highmem-64
+    type: n1-highmem-64
+  - name: n1-highmem-96
+    type: n1-highmem-96
+# N1 high-CPU machine types
+  - name: n1-highcpu-2
+    type: n1-highcpu-2
+  - name: n1-highcpu-4
+    type: n1-highcpu-4
+  - name: n1-highcpu-8
+    type: n1-highcpu-8
+  - name: n1-highcpu-16
+    type: n1-highcpu-16
+  - name: n1-highcpu-32
+    type: n1-highcpu-32
+  - name: n1-highcpu-64
+    type: n1-highcpu-64
+  - name: n1-highcpu-96
+    type: n1-highcpu-96
