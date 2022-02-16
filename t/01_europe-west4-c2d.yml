@@ -1,0 +1,59 @@
+region: europe-west4
+project: gcp-gce-c2d
+
+# Compute-optimized machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types
+
+instances:
+# C2D Standard machine types
+  - name: c2d-standard-2
+    type: c2d-standard-2
+  - name: c2d-standard-4
+    type: c2d-standard-4
+  - name: c2d-standard-8
+    type: c2d-standard-8
+  - name: c2d-standard-16
+    type: c2d-standard-16
+  - name: c2d-standard-32
+    type: c2d-standard-32
+  - name: c2d-standard-56
+    type: c2d-standard-56
+  - name: c2d-standard-112
+    type: c2d-standard-112
+# Commitment (CUD)
+  - name: c2d-standard-8-1y
+    type: c2d-standard-8
+    commitment: 1
+  - name: c2d-standard-8-3y
+    type: c2d-standard-8
+    commitment: 3
+# C2D Highmem machine types
+  - name: c2d-highmem-2
+    type: c2d-highmem-2
+  - name: c2d-highmem-4
+    type: c2d-highmem-4
+  - name: c2d-highmem-8
+    type: c2d-highmem-8
+  - name: c2d-highmem-16
+    type: c2d-highmem-16
+  - name: c2d-highmem-32
+    type: c2d-highmem-32
+  - name: c2d-highmem-56
+    type: c2d-highmem-56
+  - name: c2d-highmem-112
+    type: c2d-highmem-112
+# C2D Highcpu machine types
+  - name: c2d-highcpu-2
+    type: c2d-highcpu-2
+  - name: c2d-highcpu-4
+    type: c2d-highcpu-4
+  - name: c2d-highcpu-8
+    type: c2d-highcpu-8
+  - name: c2d-highcpu-16
+    type: c2d-highcpu-16
+  - name: c2d-highcpu-32
+    type: c2d-highcpu-32
+  - name: c2d-highcpu-56
+    type: c2d-highcpu-56
+  - name: c2d-highcpu-112
+    type: c2d-highcpu-112

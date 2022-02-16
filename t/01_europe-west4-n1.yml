@@ -22,6 +22,13 @@ instances:
     type: n1-standard-64
   - name: n1-standard-96
     type: n1-standard-96
+# Commitment (CUD)
+  - name: n1-standard-8-1y
+    type: n1-standard-8
+    commitment: 1
+  - name: n1-standard-8-3y
+    type: n1-standard-8
+    commitment: 3
 # N1 high-memory machine types
   - name: n1-highmem-2
     type: n1-highmem-2

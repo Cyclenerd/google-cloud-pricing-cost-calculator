@@ -33,24 +33,6 @@ instances:
     type: a2-highgpu-8g
     commitment: 3
 
-  - name: n1-standard-8
-    type: n1-standard-8
-  - name: n1-standard-8-1y
-    type: n1-standard-8
-    commitment: 1
-  - name: n1-standard-8-3y
-    type: n1-standard-8
-    commitment: 3
-
-  - name: c2d-standard-8
-    type: c2d-standard-8
-  - name: c2d-standard-8-1y
-    type: c2d-standard-8
-    commitment: 1
-  - name: c2d-standard-8-3y
-    type: c2d-standard-8
-    commitment: 3
-
   - name: m1-ultramem-80
     type: m1-ultramem-80
   - name: m1-ultramem-80-1y

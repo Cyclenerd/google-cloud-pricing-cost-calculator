@@ -22,10 +22,6 @@ MY_CHECKS=(
 	'europe-west4;vm;n1-standard-8;213'
 	'europe-west4;vm;n1-standard-8-1y;192'
 	'europe-west4;vm;n1-standard-8-3y;137'
-	# » c2d-standard-8
-	'europe-west4;vm;c2d-standard-8;291'
-	'europe-west4;vm;c2d-standard-8-1y;183'
-	'europe-west4;vm;c2d-standard-8-3y;131'
 	# » m1-ultramem-80
 	'europe-west4;vm;m1-ultramem-80;6762'
 	'europe-west4;vm;m1-ultramem-80-1y;5692'
@@ -190,6 +186,29 @@ MY_CHECKS=(
 	'europe-west4;vm;c2-standard-16;537'
 	'europe-west4;vm;c2-standard-30;1007'
 	'europe-west4;vm;c2-standard-60;2014'
+	# C2D Standard machine types
+	'europe-west4;vm;c2d-standard-2;72'
+	'europe-west4;vm;c2d-standard-4;145'
+	'europe-west4;vm;c2d-standard-8;291'
+	'europe-west4;vm;c2d-standard-16;583'
+	# c2d-standard-32 ... 112: Tested with Google Cloud Pricing Calcuator
+	#                          Price differs slightly from the price list
+	'europe-west4;vm;c2d-standard-32;1167'
+	'europe-west4;vm;c2d-standard-56;2043'
+	'europe-west4;vm;c2d-standard-112;4086'
+	# C2D Commitment (CUD)
+	'europe-west4;vm;c2d-standard-8-1y;183'
+	'europe-west4;vm;c2d-standard-8-3y;131'
+	# C2D Highmem machine types
+	'europe-west4;vm;c2d-highmem-2;98'
+	'europe-west4;vm;c2d-highmem-4;196'
+	'europe-west4;vm;c2d-highmem-8;393'
+	# c2d-highmem-16 ... 112: Tested with Google Cloud Pricing Calcuator
+	#                         Price differs slightly from the price list
+	'europe-west4;vm;c2d-highmem-16;787'
+	'europe-west4;vm;c2d-highmem-32;1575'
+	'europe-west4;vm;c2d-highmem-56;2756'
+	'europe-west4;vm;c2d-highmem-112;5512'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'
