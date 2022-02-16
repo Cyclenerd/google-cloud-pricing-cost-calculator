@@ -582,7 +582,7 @@ compute:
     n2d-highmem-96:
       type: n2d
       cpu: 96
-      ram: 786
+      ram: 768
       bandwidth: 32
       tier1: 50
     # N2D high-cpu
