@@ -55,12 +55,17 @@ use App::Options (
 			required    => 0,
 			description => "Export only this region [DEFAULT: All regions]"
 		},
+		hours => {
+			required    => 1,
+			default     => '730',
+			type        => '/^\d{1,3}$/',
+			description => "Hours per month [DEFAULT: 730, same as Google Cloud Pricing Calculator]"
+		},
 	},
 );
 
 # Configuration
-my $hours_month = 730;
-
+my $hours_month = $App::options{hours};
 
 # Details
 my $export_details = $App::options{details};
