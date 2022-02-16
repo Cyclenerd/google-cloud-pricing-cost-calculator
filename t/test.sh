@@ -22,17 +22,6 @@ MY_CHECKS=(
 	'europe-west4;vm;n1-standard-8;213'
 	'europe-west4;vm;n1-standard-8-1y;192'
 	'europe-west4;vm;n1-standard-8-3y;137'
-	# » m1-ultramem-80
-	'europe-west4;vm;m1-ultramem-80;6762'
-	'europe-west4;vm;m1-ultramem-80-1y;5692'
-	'europe-west4;vm;m1-ultramem-80-3y;2898'
-	# » m2-ultramem-416
-	# Known bug > Google Cloud Pricing Calculator: 45224 vs 45251
-	'europe-west4;vm;m2-ultramem-416;452'
-	# Known bug > Google Cloud Pricing Calculator: 38915 vs 38918
-	'europe-west4;vm;m2-ultramem-416-1y;389'
-	# Known bug > Google Cloud Pricing Calculator: 22371 vs 22374
-	'europe-west4;vm;m2-ultramem-416-3y;223'
 	#
 	# Test VM instance pricing
 	# Price list: https://cloud.google.com/compute/vm-instance-pricing
@@ -209,6 +198,24 @@ MY_CHECKS=(
 	'europe-west4;vm;c2d-highmem-32;1575'
 	'europe-west4;vm;c2d-highmem-56;2756'
 	'europe-west4;vm;c2d-highmem-112;5512'
+	#
+	# Memory-optimized machine type family
+	# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types
+	#
+	# M2 machine types
+	# » m2-ultramem-208
+	'europe-west4;vm;m2-ultramem-208;22625'    # Google Cloud Pricing Calculator: $22612.16, Price List: $22624.53
+	'europe-west4;vm;m2-ultramem-208-1y;19459' # Google Cloud Pricing Calculator: $19457.51, Price List: $19458.88
+	'europe-west4;vm;m2-ultramem-208-3y;11187' # Google Cloud Pricing Calculator: $11185.73, Price List: $11187.25
+	# » m2-ultramem-416
+	'europe-west4;vm;m2-ultramem-416;45251'    # Google Cloud Pricing Calculator: $45224.32, Price List: $45249.05
+	'europe-west4;vm;m2-ultramem-416-1y;38918' # Google Cloud Pricing Calculator: $38915.02, Price List: $38917.76
+	'europe-west4;vm;m2-ultramem-416-3y;22374' # Google Cloud Pricing Calculator: $22371.46, Price List: $22374.5
+	# » m2-megamem-416
+	'europe-west4;vm;m2-megamem-416;27014'     # Google Cloud Pricing Calculator: $27000.81, Price List: $27012.99
+	'europe-west4;vm;m2-megamem-416-1y;23237'  # Google Cloud Pricing Calculator: $23236.07, Price List: $23237.36
+	'europe-west4;vm;m2-megamem-416-3y;13356'  # Google Cloud Pricing Calculator: $13354.79, Price List: $13356.08
+
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'

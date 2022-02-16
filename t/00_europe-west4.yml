@@ -42,15 +42,6 @@ instances:
     type: m1-ultramem-80
     commitment: 3
 
-  - name: m2-ultramem-416
-    type: m2-ultramem-416
-  - name: m2-ultramem-416-1y
-    type: m2-ultramem-416
-    commitment: 1
-  - name: m2-ultramem-416-3y
-    type: m2-ultramem-416
-    commitment: 3
-
 buckets:
   - name: bucket-standard
     class: standard
