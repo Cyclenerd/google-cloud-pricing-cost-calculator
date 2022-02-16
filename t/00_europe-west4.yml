@@ -22,17 +22,6 @@ monitoring:
   - name: stackdriver
     data: 6000 # mebibyte!
 
-instances:
-
-  - name: a2-highgpu-8g
-    type: a2-highgpu-8g
-  - name: a2-highgpu-8g-1y
-    type: a2-highgpu-8g
-    commitment: 1
-  - name: a2-highgpu-8g-3y
-    type: a2-highgpu-8g
-    commitment: 3
-
 buckets:
   - name: bucket-standard
     class: standard

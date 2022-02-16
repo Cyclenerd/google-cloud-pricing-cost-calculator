@@ -1,0 +1,25 @@
+region: europe-west4
+project: gcp-gce-a2
+
+# Accelerator-optimized machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#accelerator-optimized
+
+instances:
+# A2 standard machine types (total cost)
+  - name: a2-highgpu-1g
+    type: a2-highgpu-1g
+  - name: a2-highgpu-2g
+    type: a2-highgpu-2g
+  - name: a2-highgpu-4g
+    type: a2-highgpu-4g
+  - name: a2-highgpu-8g
+    type: a2-highgpu-8g
+  - name: a2-megagpu-16g
+    type: a2-megagpu-16g
+# Commitment (CUD)
+  - name: a2-highgpu-8g-1y
+    type: a2-highgpu-8g
+    commitment: 1
+  - name: a2-highgpu-8g-3y
+    type: a2-highgpu-8g
+    commitment: 3

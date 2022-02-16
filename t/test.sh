@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
 MY_CHECKS=(
-	# HEADE
+	# HEADER
 	'PROJECT;REGION;RESOURCE;NAME;COST;TYPE;DATA;CLASS;RULES;COMMITMENT;DISCOUNT;FILE'
+	
+	#
 	# 00_europe-west4.yml
+	#
 	# Monitoring
 	'monitoring;stackdriver;1548'
 	# Traffic
@@ -13,15 +16,27 @@ MY_CHECKS=(
 	'europe-west4;load-balancer;load-balancer-5;20'
 	'europe-west4;load-balancer;load-balancer-6;28'
 	'europe-west4;load-balancer;load-balancer-6-50;32'
-	# Instances
-	# » a2-highgpu-8g
-	'europe-west4;vm;a2-highgpu-8g;21888'
-	'europe-west4;vm;a2-highgpu-8g-1y;13789'
-	'europe-west4;vm;a2-highgpu-8g-3y;7661'
-	# » n1-standard-8
-	'europe-west4;vm;n1-standard-8;213'
-	'europe-west4;vm;n1-standard-8-1y;192'
-	'europe-west4;vm;n1-standard-8-3y;137'
+	# Standard storage
+	'europe-west4;bucket;bucket-standard;1.0'
+	'europe-multi;bucket;bucket-standard-multi;1.3'
+	'eur4;bucket;bucket-standard-dual;1.8'
+	# Disk
+	'europe-west4;disk;disk-ssd;191'
+	'europe-west4;disk;disk-hdd;90'
+
+	#
+	# 01_europe-west4-sap.yml
+	#
+	'europe-west4;vm;n1-standard-16-sles-sap;274'
+	'europe-west4;vm-os;n1-standard-16-sles-sap;107'
+	'europe-west4;disk;disk-n1-standard-16-sles-sap-boot;14'
+	'europe-west4;disk;disk-n1-standard-16-sles-sap-data;28'
+	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-boot;2.9'
+	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-data;5.8'
+	'eur4;bucket;bucket-n1-standard-16-sles-sap;20'
+
+	#
+	# 01_europe-west4...
 	#
 	# Test VM instance pricing
 	# Price list: https://cloud.google.com/compute/vm-instance-pricing
@@ -143,6 +158,9 @@ MY_CHECKS=(
 	'europe-west4;vm;n1-standard-32;855'
 	'europe-west4;vm;n1-standard-64;1710'
 	'europe-west4;vm;n1-standard-96;2565'
+	# N1 Commitment (CUD)
+	'europe-west4;vm;n1-standard-8-1y;192'
+	'europe-west4;vm;n1-standard-8-3y;137'
 	# N1 high-memory machine types
 	'europe-west4;vm;n1-highmem-2;66'
 	'europe-west4;vm;n1-highmem-4;133'
@@ -232,21 +250,19 @@ MY_CHECKS=(
 	'europe-west4;vm;m1-megamem-96;5722'
 	'europe-west4;vm;m1-megamem-96-1y;4817'
 	'europe-west4;vm;m1-megamem-96-3y;2452'
-	# Standard storage
-	'europe-west4;bucket;bucket-standard;1.0'
-	'europe-multi;bucket;bucket-standard-multi;1.3'
-	'eur4;bucket;bucket-standard-dual;1.8'
-	# Disk
-	'europe-west4;disk;disk-ssd;191'
-	'europe-west4;disk;disk-hdd;90'
-	# 01_europe-west4-sap.yml
-	'europe-west4;vm;n1-standard-16-sles-sap;274'
-	'europe-west4;vm-os;n1-standard-16-sles-sap;107'
-	'europe-west4;disk;disk-n1-standard-16-sles-sap-boot;14'
-	'europe-west4;disk;disk-n1-standard-16-sles-sap-data;28'
-	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-boot;2.9'
-	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-data;5.8'
-	'eur4;bucket;bucket-n1-standard-16-sles-sap;20'
+	#
+	# Accelerator-optimized machine type family
+	# https://cloud.google.com/compute/vm-instance-pricing#accelerator-optimized
+	#
+	# A2 standard machine types (total cost)
+	'europe-west4;vm;a2-highgpu-1g;2736'   # Google Cloud Pricing Calculator: $2736.02, Price List: $2739.74
+	'europe-west4;vm;a2-highgpu-2g;5472'   # Google Cloud Pricing Calculator: $5472.04 , Price List: $5479.47
+	'europe-west4;vm;a2-highgpu-4g;10944'  # Google Cloud Pricing Calculator: $10944.08, Price List: $10958.95
+	'europe-west4;vm;a2-highgpu-8g;21888'  # Google Cloud Pricing Calculator: $21888.16, Price List: $21917.89
+	'europe-west4;vm;a2-megagpu-16g;41337' # Google Cloud Pricing Calculator: $41337.39, Price List: $41396.86
+	# A2 Commitment (CUD)
+	'europe-west4;vm;a2-highgpu-8g-1y;13789'  # Google Cloud Pricing Calculator: $13789.38, Price List: $13787.27
+	'europe-west4;vm;a2-highgpu-8g-3y;7661'  # Google Cloud Pricing Calculator: $7661.01, Price List: $7661.79
 )
 
 MY_ERROR=0
