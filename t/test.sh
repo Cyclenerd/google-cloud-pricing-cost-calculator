@@ -86,6 +86,19 @@ MY_CHECKS=(
 	'europe-west4;vm;n2-highmem-80;3370'
 	'europe-west4;vm;n2-highmem-96;4044'
 	'europe-west4;vm;n2-highmem-128;4956'
+	# N2 high-CPU machine types
+	'europe-west4;vm;n2-highcpu-2;46'
+	'europe-west4;vm;n2-highcpu-4;92'
+	'europe-west4;vm;n2-highmem-8;337'
+	'europe-west4;vm;n2-highcpu-8;184'
+	'europe-west4;vm;n2-highcpu-16;368'
+	# n2-highcpu-32 ... 128: Tested with Google Cloud Pricing Calcuator
+	#                        Price differs slightly from the price list
+	'europe-west4;vm;n2-highcpu-32;737'
+	'europe-west4;vm;n2-highcpu-48;1106'
+	'europe-west4;vm;n2-highcpu-64;1475'
+	'europe-west4;vm;n2-highcpu-80;1844'
+	'europe-west4;vm;n2-highcpu-96;2213'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'
