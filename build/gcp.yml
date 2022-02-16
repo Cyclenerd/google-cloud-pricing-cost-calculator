@@ -937,7 +937,7 @@ compute:
     a2-highgpu-1g:
       type: a2
       cpu: 12
-      ram: 58
+      ram: 85
       a100: 1
       bandwidth: 24
     a2-highgpu-2g:
