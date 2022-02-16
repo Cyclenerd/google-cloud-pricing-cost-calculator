@@ -43,6 +43,7 @@ MY_CHECKS=(
 	#
 	# General-purpose machine type family
 	# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
+	#
 	# E2 standard machine types
 	'europe-west4;vm;e2-standard-2;53'
 	'europe-west4;vm;e2-standard-4;107'
@@ -177,6 +178,18 @@ MY_CHECKS=(
 	'europe-west4;vm;n1-highcpu-32;637'
 	'europe-west4;vm;n1-highcpu-64;1275'
 	'europe-west4;vm;n1-highcpu-96;1913'
+	#
+	# Compute-optimized machine type family
+	# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types
+	#
+	# C2 machine types
+	'europe-west4;vm;c2-standard-4;134'
+	'europe-west4;vm;c2-standard-8;268'
+	# c2-standard-16 ... 60: Tested with Google Cloud Pricing Calcuator
+	#                        Price differs slightly from the price list
+	'europe-west4;vm;c2-standard-16;537'
+	'europe-west4;vm;c2-standard-30;1007'
+	'europe-west4;vm;c2-standard-60;2014'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'

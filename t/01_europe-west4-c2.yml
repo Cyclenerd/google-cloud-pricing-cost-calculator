@@ -1,0 +1,18 @@
+region: europe-west4
+project: gcp-gce-c2
+
+# Compute-optimized machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types
+
+instances:
+# C2 standard machine types
+  - name: c2-standard-4
+    type: c2-standard-4
+  - name: c2-standard-8
+    type: c2-standard-8
+  - name: c2-standard-16
+    type: c2-standard-16
+  - name: c2-standard-30
+    type: c2-standard-30
+  - name: c2-standard-60
+    type: c2-standard-60
