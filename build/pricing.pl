@@ -61,11 +61,18 @@ use App::Options (
 			type        => '/^\d{1,3}$/',
 			description => "Hours per month [DEFAULT: 730, same as Google Cloud Pricing Calculator]"
 		},
+		sud => {
+			required    => 1,
+			default     => 1,
+			type        => 'boolean',
+			description => "Add Sustained Use Discount (SUD) [DEFAULT: 1 = yes]"
+		},
 	},
 );
 
 # Configuration
 my $hours_month = $App::options{hours};
+my $add_sud     = $App::options{sud};
 
 # Details
 my $export_details = $App::options{details};
@@ -442,7 +449,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.n2'   } = $ram;
 			$mappings_1y{'gce.compute.ram.n2.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.n2.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n2;
+			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# N2D Predefined
 		elsif ($type eq 'n2d') {
@@ -452,7 +459,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.n2d'   } = $ram;
 			$mappings_1y{'gce.compute.ram.n2d.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.n2d.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n2;
+			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# T2D Predefined
 		elsif ($type eq 't2d') {
@@ -466,13 +473,13 @@ foreach my $region (@regions) {
 		# F1 Predefined
 		elsif ($type eq 'f1') {
 			$mappings{'gce.compute.cpu.f1'} = $cpu;
-			%sustained_use_discount = %sustained_use_discount_n1;
+			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 			# RAM incl.
 		}
 		# G1 Predefined
 		elsif ($type eq 'g1') {
 			$mappings{'gce.compute.cpu.g1'} = $cpu;
-			%sustained_use_discount = %sustained_use_discount_n1;
+			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 			# RAM incl.
 		}
 		# N1 Predefined
@@ -483,7 +490,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.n1'} = $ram;
 			$mappings_1y{'gce.compute.ram.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n1;
+			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 		}
 		# N1 Custom
 		elsif ($type eq 'n1-custom') {
@@ -493,7 +500,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.custom'} = $ram;
 			$mappings_1y{'gce.compute.ram.1y'    } = $ram;
 			$mappings_3y{'gce.compute.ram.3y'    } = $ram;
-			%sustained_use_discount = %sustained_use_discount_n1;
+			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 		}
 		# N2 Custom
 		elsif ($type eq 'n2-custom') {
@@ -503,7 +510,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.n2.custom'} = $ram;
 			$mappings_1y{'gce.compute.ram.n2.1y'    } = $ram;
 			$mappings_3y{'gce.compute.ram.n2.3y'    } = $ram;
-			%sustained_use_discount = %sustained_use_discount_n2;
+			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# N2D Custom
 		elsif ($type eq 'n2d-custom') {
@@ -513,7 +520,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.n2d.custom'} = $ram;
 			$mappings_1y{'gce.compute.ram.n2d.1y'    } = $ram;
 			$mappings_3y{'gce.compute.ram.n2d.3y'    } = $ram;
-			%sustained_use_discount = %sustained_use_discount_n2;
+			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# C2
 		elsif ($type eq 'c2') {
@@ -523,7 +530,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.compute.optimized'   } = $ram;
 			$mappings_1y{'gce.compute.ram.compute.optimized.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.compute.optimized.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n2;
+			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# C2D Predefined
 		elsif ($type eq 'c2d') {
@@ -542,7 +549,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.memory.optimized'   } = $ram;
 			$mappings_1y{'gce.compute.ram.memory.optimized.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.memory.optimized.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n1;
+			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 		}
 		# M2
 		elsif ($type eq 'm2') {
@@ -555,7 +562,7 @@ foreach my $region (@regions) {
 			# M2 upgrade
 			$mapping_upgrades{'gce.compute.cpu.memory.optimized.premium.upgrade'} = $cpu;
 			$mapping_upgrades{'gce.compute.ram.memory.optimized.premium.upgrade'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n1;
+			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 		}
 		# A2
 		elsif ($type eq 'a2') {
