@@ -102,6 +102,27 @@ instances:
     type: e2-highcpu-16
   - name: e2-highcpu-32
     type: e2-highcpu-32
+# N2 standard machine types
+  - name: n2-standard-2
+    type: n2-standard-2
+  - name: n2-standard-4
+    type: n2-standard-4
+  - name: n2-standard-8
+    type: n2-standard-8
+  - name: n2-standard-16
+    type: n2-standard-16
+  - name: n2-standard-32
+    type: n2-standard-32
+  - name: n2-standard-48
+    type: n2-standard-48
+  - name: n2-standard-64
+    type: n2-standard-64
+  - name: n2-standard-80
+    type: n2-standard-80
+  - name: n2-standard-96
+    type: n2-standard-96
+  - name: n2-standard-128
+    type: n2-standard-128
 
 buckets:
   - name: bucket-standard
