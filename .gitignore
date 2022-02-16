@@ -13,6 +13,11 @@ usage/customers/**
 !build/mapping.csv
 # Test
 !t/*.yml
+# Tools
+!tools/disk_types.csv
+!tools/machine_types.csv
+!tools/regions.csv
+!tools/zones.csv
 # Example
 !/usage/example.yml
 # GitHub Actions
