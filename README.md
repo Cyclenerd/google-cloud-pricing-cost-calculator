@@ -27,12 +27,12 @@ Resources that `gcosts` supports, and Google charges for:
 		* Memory-optimized (`M1`, `M2`)
 		* Compute optimized (`C2`, `C2D`)
 		* Accelerator optimized (`A2`)
-	* Sustained use discounts are applied to monthly costs
-	* 1 year and 3 year commitments are supported	
+	* Sustained use discounts (SUD) are applied to monthly costs
+	* 1 year and 3 year committed use discounts (CUD) are supported
 	* Paid "premium" operating system licenses (paid images) are supported
 		* SUSE Linux Enterprise Server
 		* SLES for SAP
-			* 1y and 3y commitments is also supported
+			* 1y and 3y committed use discounts (CUD) are also supported
 		* Red Hat Enterprise Linux
 		* RHEL for SAP
 		* Windows Server
@@ -115,10 +115,10 @@ Run the program:
 
 All YML files of the current directory are processed.
 
-Two CSV files with the costs are created:
+Two CSV (Semicolon) files with the costs are created:
 
-1. `COSTS.csv`  : Costs for the resources
-1. `TOTALS.csv` : Total costs per name, resource, project, region and file.
+1. `COSTS.csv`  : Costs for resources
+1. `TOTALS.csv` : Total costs per name, resource, project, region and file
 
 You can import the CSV files with MS Excel, LibreOffice or Google Sheets.
 
