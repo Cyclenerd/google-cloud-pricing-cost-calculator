@@ -16,3 +16,10 @@ instances:
     type: c2-standard-30
   - name: c2-standard-60
     type: c2-standard-60
+# Commitment (CUD)
+  - name: c2-standard-8-1y
+    type: c2-standard-8
+    commitment: 1
+  - name: c2-standard-8-3y
+    type: c2-standard-8
+    commitment: 3
