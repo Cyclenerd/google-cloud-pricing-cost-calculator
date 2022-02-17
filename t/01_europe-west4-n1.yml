@@ -64,3 +64,10 @@ instances:
     type: f1-micro
   - name: g1-small
     type: g1-small
+# Commitment (CUD)
+  - name: f1-micro-1y
+    type: f1-micro
+    commitment: 1
+  - name: f1-micro-3y
+    type: f1-micro
+    commitment: 3

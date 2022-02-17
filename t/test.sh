@@ -191,6 +191,9 @@ MY_CHECKS=(
 	# N1 shared-core machine types
 	'europe-west4;vm;f1-micro;4.29'
 	'europe-west4;vm;g1-small;14.46'
+	# N1 shared-core commitment does not exist. Price must therefore be the same as with SUD.
+	'europe-west4;vm;f1-micro-1y;4.29'
+	'europe-west4;vm;f1-micro-3y;4.29'
 	#
 	# Compute-optimized machine type family
 	# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types
