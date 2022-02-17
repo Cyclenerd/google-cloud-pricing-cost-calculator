@@ -28,6 +28,13 @@ instances:
     type: n2d-standard-128
   - name: n2d-standard-224
     type: n2d-standard-224
+# Commitment (CUD)
+  - name: n2d-standard-8-1y
+    type: n2d-standard-8
+    commitment: 1
+  - name: n2d-standard-8-3y
+    type: n2d-standard-8
+    commitment: 3
 # N2D high-memory machine types
   - name: n2d-highmem-2
     type: n2d-highmem-2
