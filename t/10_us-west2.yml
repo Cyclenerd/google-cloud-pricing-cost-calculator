@@ -1,0 +1,6 @@
+region: us-west2
+project: us-west2
+
+instances:
+  - name: n2-standard-8
+    type: n2-standard-8

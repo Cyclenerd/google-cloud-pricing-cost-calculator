@@ -286,8 +286,27 @@ MY_CHECKS=(
 	'europe-west4;vm;a2-highgpu-8g;21888'  # Google Cloud Pricing Calculator: $21888.16, Price List: $21917.89
 	'europe-west4;vm;a2-megagpu-16g;41337' # Google Cloud Pricing Calculator: $41337.39, Price List: $41396.86
 	# A2 Commitment (CUD)
-	'europe-west4;vm;a2-highgpu-8g-1y;13789'  # Google Cloud Pricing Calculator: $13789.38, Price List: $13787.27
+	'europe-west4;vm;a2-highgpu-8g-1y;13789' # Google Cloud Pricing Calculator: $13789.38, Price List: $13787.27
 	'europe-west4;vm;a2-highgpu-8g-3y;7661'  # Google Cloud Pricing Calculator: $7661.01, Price List: $7661.79
+	#
+	# Regions
+	#
+	# US
+	'us-central1;vm;n2-standard-8;226' # Google Cloud Pricing Calculator: $226.92
+	'us-east1;vm;n2-standard-8;226'    # Google Cloud Pricing Calculator: $226.92
+	'us-east4;vm;n2-standard-8;255'    # Google Cloud Pricing Calculator: $255.57
+	'us-west1;vm;n2-standard-8;226'    # Google Cloud Pricing Calculator: $226.92
+	'us-west2;vm;n2-standard-8;272'    # Google Cloud Pricing Calculator: $272.57
+	'us-west3;vm;n2-standard-8;272'    # Google Cloud Pricing Calculator: $272.57
+	'us-west4;vm;n2-standard-8;279'    # Google Cloud Pricing Calculator: $279.52
+	# Europe
+	'europe-central2;vm;n2-standard-8;292' # Google Cloud Pricing Calculator: $292.36
+	'europe-north1;vm;n2-standard-8;249'   # Google Cloud Pricing Calculator: $249.84
+	'europe-west1;vm;n2-standard-8;249'    # Google Cloud Pricing Calculator: $249.63
+	'europe-west2;vm;n2-standard-8;292'    # Google Cloud Pricing Calculator: $292.36
+	'europe-west3;vm;n2-standard-8;292'    # Google Cloud Pricing Calculator: $292.36
+	'europe-west6;vm;n2-standard-8;317'    # Google Cloud Pricing Calculator: $317.44
+
 )
 
 MY_ERROR=0

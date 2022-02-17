@@ -1,0 +1,6 @@
+region: us-central1
+project: us-central1
+
+instances:
+  - name: n2-standard-8
+    type: n2-standard-8

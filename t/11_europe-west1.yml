@@ -1,0 +1,6 @@
+region: europe-west1
+project: europe-west1
+
+instances:
+  - name: n2-standard-8
+    type: n2-standard-8

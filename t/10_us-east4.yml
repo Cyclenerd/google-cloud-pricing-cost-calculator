@@ -1,0 +1,6 @@
+region: us-east4
+project: us-east4
+
+instances:
+  - name: n2-standard-8
+    type: n2-standard-8
