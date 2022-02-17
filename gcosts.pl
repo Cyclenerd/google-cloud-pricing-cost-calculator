@@ -19,7 +19,7 @@
 # Help: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 
 BEGIN {
-	$VERSION = "1.0.2";
+	$VERSION = "1.0.3";
 }
 
 use strict;
@@ -70,6 +70,7 @@ open my $fh, q{>}, "$costs_file" or die "ERROR: Cannot open CSV file '$costs_fil
 # Totals
 my $sum_total;
 my (%sum_services, %sum_names, %sum_regions, %sum_projects, %sum_files);
+my $sum_warnings;
 
 # Open CSV totals file
 open my $fh_totals, q{>}, "$totals_file" or die "ERROR: Cannot open CSV file '$totals_file' for sum totals export!\n";
@@ -102,6 +103,7 @@ my %icons = (
 	'china'      => '🌏',
 	'australia'  => '🌏',
 	'total'      => '☁️',
+	'warning'    => '⚠️',
 );
 
 sub line {
@@ -238,6 +240,7 @@ sub check_commitment_cost {
 		return $commitment_cost;
 	} else {
 		warn "WARNING: '$commitment' commitment cost for $commitment_cost in region '$region' not found! Apply standard cost: '$cost'.\n";
+		$sum_warnings++;
 		return $cost;
 	}
 }
@@ -879,6 +882,11 @@ foreach my $key (sort keys %sum_projects) {
 
 print "\n";
 &line();
+if ($sum_warnings) {
+	print "$icons{'warning'} warnings: $sum_warnings\n";
+}
 &total('total', 'total', $sum_total);
+
+
 
 close $fh_totals;
