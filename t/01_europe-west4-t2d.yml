@@ -22,3 +22,10 @@ instances:
     type: t2d-standard-48
   - name: t2d-standard-60
     type: t2d-standard-60
+# Commitment (CUD)
+  - name: t2d-standard-8-1y
+    type: t2d-standard-8
+    commitment: 1
+  - name: t2d-standard-8-3y
+    type: t2d-standard-8
+    commitment: 3

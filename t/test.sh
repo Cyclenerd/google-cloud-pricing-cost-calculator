@@ -162,6 +162,9 @@ MY_CHECKS=(
 	'europe-west4;vm;t2d-standard-32;1086'
 	'europe-west4;vm;t2d-standard-48;1629'
 	'europe-west4;vm;t2d-standard-60;2037'
+	# T2D Commitment (CUD)
+	'europe-west4;vm;t2d-standard-8-1y;171' # Google Cloud Pricing Calculator: $171.11
+	'europe-west4;vm;t2d-standard-8-3y;122' # Google Cloud Pricing Calculator: $122.23
 	# N1 standard machine types
 	'europe-west4;vm;n1-standard-1;26'
 	'europe-west4;vm;n1-standard-2;53'
