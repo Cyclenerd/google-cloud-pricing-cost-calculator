@@ -75,7 +75,7 @@ gce.compute.cpu.f1;Compute Engine;Compute;F1Micro;Micro Instance with burstable 
 gce.compute.cpu.g1;Compute Engine;Compute;G1Small;Small Instance with 1 VCPU%;
 gce.compute.cpu.e2;Compute Engine;Compute;CPU;E2 Instance%;
 gce.compute.cpu.e2.1y;Compute Engine;Compute;CPU;Commitment v1: E2%1 Year;
-gce.compute.cpu.e2.3.y;Compute Engine;Compute;CPU;Commitment v1: E2%3 Year;
+gce.compute.cpu.e2.3y;Compute Engine;Compute;CPU;Commitment v1: E2%3 Year;
 gce.compute.cpu.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Core%;CPU and RAM are in the same group
 gce.compute.cpu.custom;Compute Engine;Compute;CPU;Custom Instance%;
 gce.compute.cpu.1y;Compute Engine;Compute;CPU;Commitment v1: Cpu%1 Year;
@@ -121,7 +121,7 @@ gce.compute.ram.a2.1y;Compute Engine;Compute;RAM;Commitment v1: A2%1 Year;
 gce.compute.ram.a2.3y;Compute Engine;Compute;RAM;Commitment v1: A2%3 Year;
 gce.compute.ram.e2;Compute Engine;Compute;RAM;E2 Instance%;
 gce.compute.ram.e2.1y;Compute Engine;Compute;RAM;Commitment v1: E2%1 Year;
-gce.compute.ram.e2.3.y;Compute Engine;Compute;RAM;Commitment v1: E2%3 Year;
+gce.compute.ram.e2.3y;Compute Engine;Compute;RAM;Commitment v1: E2%3 Year;
 gce.compute.ram.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Ram%;CPU and RAM are in the same group
 gce.compute.ram.custom;Compute Engine;Compute;RAM;Custom Instance%;
 gce.compute.ram.custom.extended;Compute Engine;Compute;RAM;Custom Extended Instance%;

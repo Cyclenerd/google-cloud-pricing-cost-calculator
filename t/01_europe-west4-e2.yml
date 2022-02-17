@@ -16,6 +16,13 @@ instances:
     type: e2-standard-16
   - name: e2-standard-32
     type: e2-standard-32
+# Commitment (CUD)
+  - name: e2-standard-8-1y
+    type: e2-standard-8
+    commitment: 1
+  - name: e2-standard-8-3y
+    type: e2-standard-8
+    commitment: 3
 # E2 high-memory machine types
   - name: e2-highmem-2
     type: e2-highmem-2

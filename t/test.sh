@@ -50,6 +50,9 @@ MY_CHECKS=(
 	'europe-west4;vm;e2-standard-8;215'
 	'europe-west4;vm;e2-standard-16;430'
 	'europe-west4;vm;e2-standard-32;861'
+	# E2 Commitment (CUD)
+	'europe-west4;vm;e2-standard-8-1y;135' # Google Cloud Pricing Calculator: $135.71
+	'europe-west4;vm;e2-standard-8-3y;96'  # Google Cloud Pricing Calculator: $96.94
 	# E2 high-memory machine types
 	'europe-west4;vm;e2-highmem-2;72'
 	'europe-west4;vm;e2-highmem-4;145'
