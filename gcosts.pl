@@ -30,6 +30,18 @@ use App::Options (
 			required    => 1,
 			default     => 'pricing.yml',
 			description => "YML file with GCP pricing information (read)"
+		},
+		costs => {
+			required    => 1,
+			default     => 'COSTS.csv',
+			type        => '/^[A-Za-z0-9_]+\.csv$/',
+			description => "CSV file with costs for resources (write)"
+		},
+		totals => {
+			required    => 1,
+			default     => 'TOTALS.csv',
+			type        => '/^[A-Za-z0-9_]+\.csv$/',
+			description => "CSV file with total costs per name, resource, project, region and file (write)"
 		}
 	},
 );
@@ -37,11 +49,10 @@ use App::Options (
 # Debug?
 my $debug = $App::options{debug_options};
 
-# Input
+# Input / Output
 my $pricing_file = $App::options{pricing};
-# Output
-my $costs_file = 'COSTS.csv';
-my $totals_file = 'TOTALS.csv';
+my $costs_file   = $App::options{costs};
+my $totals_file  = $App::options{totals};
 
 # Open pricing file
 unless (-r "$pricing_file") {
