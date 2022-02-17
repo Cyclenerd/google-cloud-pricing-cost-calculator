@@ -81,6 +81,9 @@ MY_CHECKS=(
 	'europe-west4;vm;n2-standard-80;2498'
 	'europe-west4;vm;n2-standard-96;2997'
 	'europe-west4;vm;n2-standard-128;3997'
+	# N2 Commitment (CUD)
+	'europe-west4;vm;n2-standard-8-1y;196' # Google Cloud Pricing Calculator: $196.67
+	'europe-west4;vm;n2-standard-8-3y;140' # Google Cloud Pricing Calculator: $140.49
 	# N2 high-memory machine types
 	'europe-west4;vm;n2-highmem-2;84'
 	'europe-west4;vm;n2-highmem-4;168'
