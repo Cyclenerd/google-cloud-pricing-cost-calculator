@@ -6,7 +6,6 @@ A few notes that help in understanding the API and cost information.
 
 * Google Cloud Pricing Calculator : <https://cloud.google.com/products/calculator>
 * Google Cloud Platform SKUs : <https://cloud.google.com/skus/>
-* Networking pricing: <https://cloud.google.com/vpc/network-pricing>
 
 ## Documentation
 
@@ -18,6 +17,18 @@ Helpful documentation:
 	* <https://cloud.google.com/billing/docs/how-to/pricing-table#columns_in_the_pricing_table>
 * Legacy IDs
 	* <https://cloud.google.com/skus/legacy-ids>
+
+## Pricing
+
+» [Price list](https://cloud.google.com/pricing/list)
+
+* 🖥️ [Compute Engine Instances](https://cloud.google.com/compute/all-pricing)
+	* [Sustained use discounts (SUD)](https://cloud.google.com/compute/docs/sustained-use-discounts)
+	* [Committed use discounts (CUD)](https://cloud.google.com/compute/docs/instances/signing-up-committed-use-discounts)
+* 💾 [Compute Engine Disks](https://cloud.google.com/compute/disks-image-pricing)
+* 🪣 [Cloud Storage](https://cloud.google.com/storage/pricing)
+* 🚦 [Cloud Monitoring](https://cloud.google.com/monitoring#pricing)
+* 🕸️ [Networking](https://cloud.google.com/vpc/network-pricing)
 
 ## Nano
 
