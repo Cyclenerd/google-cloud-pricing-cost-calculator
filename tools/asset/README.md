@@ -32,7 +32,7 @@ Google Cloud Documentation:
 
 ## Bucket object size
 
-Create a separate YML file `buckets.yml` with the buckets and size.
+Create a separate YAML file `buckets.yml` with the buckets and size.
 
 ```shell
 gsutil ls
@@ -41,7 +41,7 @@ perl buckets.pl
 
 ## Create usage files
 
-Create a separate YML file for each project `PROJECT_ID.yml`.
+Create a separate YAML file for each project `PROJECT_ID.yml`.
 Bucket object size file `buckets.yml` is used by default.
 Files are overwritten without any warning.
 

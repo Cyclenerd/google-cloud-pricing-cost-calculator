@@ -2,7 +2,7 @@
 
 Calculate estimated monthly costs of Google Cloud Platform products and resources.
 Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront.
-Mapping of resource usage is done in easy to learn YML files.
+Mapping of resource usage is done in easy to learn YAML files.
 Price information is read from a local file.
 Full control and no disclosure of any information and costs to third parties.
 Everything tested and matched against the actual invoice in large Google Cloud migration projects.
@@ -93,7 +93,7 @@ curl -L "https://bit.ly/pricing_yml" \
 
 ### 3. Run it
 
-Create your first usage file (`usage.yml`):
+Create your first YAML usage file (`usage.yml`):
 ```yml
 region: europe-west4
 project: my-first-project
@@ -113,9 +113,9 @@ Run the program:
 ./gcosts
 ```
 
-All YML files of the current directory are processed.
+All YAML usage files (`*.yml`) of the current directory are imported and the costs of the resources are calculated:
 
-Two CSV (Semicolon) files with the costs are created:
+Two CSV (semicolon) files with the costs are created:
 
 1. `COSTS.csv`  : Costs for resources
 1. `TOTALS.csv` : Total costs per name, resource, project, region and file
@@ -137,8 +137,6 @@ Alias (`~/.bash_aliases`):
 ```shell
 alias gcosts='/your-pathname/gcosts -pricing=/your-pathname/pricing.yml'
 ```
-
-
 
 ## 🧑‍💻 Development
 

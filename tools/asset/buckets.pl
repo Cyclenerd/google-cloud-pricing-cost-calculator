@@ -29,12 +29,12 @@ use App::Options (
 		assets => {
 			required    => 1,
 			default     => 'assets.yml',
-			description => "YML file with GCP asset information export (read)"
+			description => "YAML file with GCP asset information export (read)"
 		},
 		buckets => {
 			required    => 1,
 			default     => 'buckets.yml',
-			description => "YML file for bucket object size usage export (write)"
+			description => "YAML file for bucket object size usage export (write)"
 		}
 	},
 );
@@ -48,11 +48,11 @@ my $bucket_file  = $App::options{buckets};
 
 # Open asset file
 unless (-r "$asset_file") {
-	die "ERROR: Cannot read YML file '$asset_file' with GCP asset informations!\n";
+	die "ERROR: Cannot read YAML file '$asset_file' with GCP asset informations!\n";
 }
-my @inventory_assets = LoadFile("$asset_file") or die "ERROR: Cannot open YML file '$asset_file' to read GCP asset informations!\n";
+my @inventory_assets = LoadFile("$asset_file") or die "ERROR: Cannot open YAML file '$asset_file' to read GCP asset informations!\n";
 
-open my $fh, q{>}, "$bucket_file" or die "ERROR: Cannot open YML file '$bucket_file' for bucket object size export!\n";
+open my $fh, q{>}, "$bucket_file" or die "ERROR: Cannot open YAML file '$bucket_file' for bucket object size export!\n";
 foreach my $asset (@inventory_assets) {
 	my $name = $asset->{'displayName'};
 	# storage.googleapis.com/Bucket

@@ -29,7 +29,7 @@ use App::Options (
 		pricing => {
 			required    => 1,
 			default     => 'pricing.yml',
-			description => "YML file with GCP pricing information (read)"
+			description => "YAML file with GCP pricing information (read)"
 		},
 		costs => {
 			required    => 1,
@@ -56,9 +56,9 @@ my $totals_file  = $App::options{totals};
 
 # Open pricing file
 unless (-r "$pricing_file") {
-	die "ERROR: Cannot read YML file '$pricing_file' with GCP pricing information!\n";
+	die "ERROR: Cannot read YAML file '$pricing_file' with GCP pricing information!\n";
 }
-my $pricing = LoadFile("$pricing_file") or die "ERROR: Cannot open YML file '$pricing_file' to read GCP pricing information!\n";
+my $pricing = LoadFile("$pricing_file") or die "ERROR: Cannot open YAML file '$pricing_file' to read GCP pricing information!\n";
 
 # Get usage files
 my @usage_files;
@@ -72,11 +72,11 @@ while (my $filename = readdir(DIR)) {
 }
 closedir(DIR);
 unless ($count_usage_files) {
-	die "ERROR: No YML usage file found!\n";
+	die "ERROR: No YAML usage file (*.yml) found!\n";
 }
 
 # Open CSV cost file
-open my $fh, q{>}, "$costs_file" or die "ERROR: Cannot open CSV file '$costs_file' for cost export!\n";
+open my $fh, q{>}, "$costs_file" or die "ERROR: Cannot open CSV file '$costs_file' for costs export!\n";
 
 # Totals
 my $sum_total;
@@ -84,7 +84,7 @@ my (%sum_services, %sum_names, %sum_regions, %sum_projects, %sum_files);
 my $sum_warnings;
 
 # Open CSV totals file
-open my $fh_totals, q{>}, "$totals_file" or die "ERROR: Cannot open CSV file '$totals_file' for sum totals export!\n";
+open my $fh_totals, q{>}, "$totals_file" or die "ERROR: Cannot open CSV file '$totals_file' for totals export!\n";
 
 
 #
@@ -786,8 +786,8 @@ print "COSTS\n";
 foreach my $usage_file (sort @usage_files) {
 	print "$icons{'file'} file : $usage_file\n";
 	&line();
-	# Open YML usage file
-	my $usage = LoadFile("$usage_file") or die "ERROR: Cannot open YML file '$usage_file' to read Google Cloud Platform resources!\n";
+	# Open YAML usage file
+	my $usage = LoadFile("$usage_file") or die "ERROR: Cannot open YAML file '$usage_file' to read Google Cloud Platform resources!\n";
 	# Read usage
 	$usage->{'project'}  = &check_name($usage->{'project'}             || $default_project);
 	$usage->{'region'}   = &check_region($pricing, $usage->{'region'}  || $default_region);

@@ -53,7 +53,7 @@ gcosts --help
 
 ## First usage file
 
-Create your first YML usage file.
+Create your first YAML usage file.
 To make it easier for you, you can use the prepared example.
 
 Change to the directory `usage`:
@@ -71,14 +71,14 @@ edit example.yml
 ## Run it
 
 Run `gcosts` in the current folder.
-All YML files of the folder are scanned and the costs of the resources are calculated:
+All YAML usage files (`*.yml`) of the current directory are imported and the costs of the resources are calculated:
 ```bash
 gcosts
 ```
 
 ## Download
 
-Two CSV files with the costs are created:
+Two CSV (semicolon) files with the costs are created:
 
 1. `COSTS.csv`  : Costs for the resources
 1. `TOTALS.csv` : Total costs per name, resource, project, region and file.

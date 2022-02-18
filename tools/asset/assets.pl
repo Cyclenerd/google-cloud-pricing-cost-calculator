@@ -29,12 +29,12 @@ use App::Options (
 		assets => {
 			required    => 1,
 			default     => 'assets.yml',
-			description => "YML file with GCP asset information export (read)"
+			description => "YAML file with GCP asset information export (read)"
 		},
 		buckets => {
 			required    => 1,
 			default     => 'buckets.yml',
-			description => "YML file with bucket object size usage export (read)"
+			description => "YAML file with bucket object size usage export (read)"
 		}
 	},
 );
@@ -46,15 +46,15 @@ my $debug = $App::options{debug_options};
 # Open asset file
 my $asset_file  = $App::options{assets};
 unless (-r "$asset_file") {
-	die "ERROR: Cannot read YML file '$asset_file' with GCP asset informations!\n";
+	die "ERROR: Cannot read YAML file '$asset_file' with GCP asset informations!\n";
 }
-my @inventory_assets  = LoadFile("$asset_file")  or die "ERROR: Cannot open YML file '$asset_file' to read GCP asset informations!\n";
+my @inventory_assets  = LoadFile("$asset_file")  or die "ERROR: Cannot open YAML file '$asset_file' to read GCP asset informations!\n";
 # Open bucket file
 my $bucket_file = $App::options{buckets};
 unless (-r "$bucket_file") {
-	die "ERROR: Cannot read YML file '$bucket_file' with bucket object size usage!\n";
+	die "ERROR: Cannot read YAML file '$bucket_file' with bucket object size usage!\n";
 }
-my $bucket_data = LoadFile("$bucket_file") or die "ERROR: Cannot open YML file '$bucket_file' to read bucket object size usage!\n";
+my $bucket_data = LoadFile("$bucket_file") or die "ERROR: Cannot open YAML file '$bucket_file' to read bucket object size usage!\n";
 
 # Config
 my %supported_asset_types = (
@@ -271,10 +271,10 @@ foreach my $i (@resources) {
 	}
 }
 
-# Create YML usage files
+# Create YAML usage files
 foreach my $project (sort keys %projects) {
 	my $file_name = "$project.yml";
-	open my $fh, q{>}, "$file_name" or die "ERROR: Cannot open YML file '$file_name' for export!\n";
+	open my $fh, q{>}, "$file_name" or die "ERROR: Cannot open YAML file '$file_name' for export!\n";
 
 	print $fh "project: $project\n";
 	print $fh "\ninstances:\n";

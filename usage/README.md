@@ -1,8 +1,8 @@
 # Usage file
 
-The configuration of the required resources is done in YML files.
+The configuration of the required resources is done in YAML files.
 
-The `gcosts` program always imports all `*.yml` files of the current directory.
+The `gcosts` program always imports all YAML usage files (`*.yml`) of the current directory.
 
 The files are read in sorted order. You can therefore use the file names for an order.
 

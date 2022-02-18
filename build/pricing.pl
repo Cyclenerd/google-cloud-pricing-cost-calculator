@@ -15,7 +15,7 @@
 # limitations under the License.
 
 #
-# Generate the YML file with the Google Cloud Platform pricing information
+# Generate the YAML file with the Google Cloud Platform pricing information
 #
 
 BEGIN {
@@ -37,13 +37,13 @@ use App::Options (
 			required    => 1,
 			default     => 'gcp.yml',
 			type        => '/^[a-z0-9_]+\.yml$/',
-			description => "YML file with GCP information (read)"
+			description => "YAML file with GCP information (read)"
 		},
 		export => {
 			required    => 1,
 			default     => 'pricing.yml',
 			type        => '/^[a-z0-9_]+\.yml$/',
-			description => "YML file for pricing information export (write)"
+			description => "YAML file for pricing information export (write)"
 		},
 		details => {
 			required    => 0,
@@ -89,12 +89,12 @@ if (-r "$csv_skus") { # write
 }
 my $yml_import = $App::options{gcp};
 unless (-r "$yml_import") { # read
-	die "ERROR: Cannot open YML file '$yml_import' for GCP information import!\n";
+	die "ERROR: Cannot open YAML file '$yml_import' for GCP information import!\n";
 }
 
 my $yml_export = $App::options{export};
-# Open YML file for export
-open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YML file '$yml_export' for export!\n";
+# Open YAML file for export
+open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YAML file '$yml_export' for export!\n";
 
 # Load CSV SKU file
 my $gcp = LoadFile("$yml_import");
@@ -1269,7 +1269,7 @@ foreach my $region (@regions) {
 	$sth->finish;
 }
 
-# Export YML with costs
+# Export YAML with costs
 my $yaml = Dump($gcp);
 print $fh $yaml;
 close $fh;

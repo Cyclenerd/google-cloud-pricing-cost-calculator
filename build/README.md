@@ -2,16 +2,16 @@
 
 > The build is done regularly and automatically via [GitHub Action](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml).
 
-Configuration and scripts to generate YML file `pricing.yml` with Google Cloud Platform pricing informations.
+Configuration and scripts to generate YAML file `pricing.yml` with Google Cloud Platform pricing informations.
 
 Files:
 
-* `pricing.yml` : YML file with calculated pricing information.
+* `pricing.yml` : YAML file with calculated pricing information.
 * `pricing.pl`  : Script to calculate and generate pricing information file `costs.yml`.
-* `gcp.yml`     : YML file with Google Cloud Platform information. Is read by the script `costs.pl` to calculate and generate pricing information file (`costs.yml`).
-* `mapping.csv` : CSV file with custom mapping IDs. Is read by the script `mapping.pl` to add the custom mapping IDs to the SKUs (`skus.csv`).
+* `gcp.yml`     : YAML file with Google Cloud Platform information. Is read by the script `costs.pl` to calculate and generate pricing information file (`costs.yml`).
+* `mapping.csv` : CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.pl` to add the custom mapping IDs to the SKUs (`skus.csv`).
 * `mapping.pl`  : Script to add the custom mapping IDs from `mapping.csv` to the CSV file with the SKUs (`skus.csv`).
-* `skus.csv`    : CSV file with SKU pricing and information exported from the Google Cloud Billing API.
+* `skus.csv`    : CSV (semicolon) file with SKU pricing and information exported from the Google Cloud Billing API.
 * `skus.conf`   : Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`.
 * `skus.pl`     : Script to export SKUs from the Google Cloud Billing API.
 
@@ -116,7 +116,7 @@ perl mapping.pl -sku="skus.csv"
 
 ## Generate pricing information file (`pricing.pl`)
 
-Generate the YML file with the Google Cloud Platform pricing informations for all regions:
+Generate the YAML file with the Google Cloud Platform pricing informations for all regions:
 ```shell
 perl pricing.pl -sku="skus.csv"
 ```
@@ -186,7 +186,7 @@ perl pricing.pl -sku="skus.csv" \
 		1. `09A6-C688-1278`
 		1. `7BDA-424A-1067` (cheaper = skipped)
 
-Time to generate the YML file with all cost informations for all regions takes a long time:
+Time to generate the YAML file with all cost informations for all regions takes a long time:
 
 ```
 real    84m23.914s
