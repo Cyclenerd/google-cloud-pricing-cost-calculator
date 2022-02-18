@@ -19,7 +19,7 @@
 # Help: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 
 BEGIN {
-	$VERSION = "1.0.3";
+	$VERSION = "1.0.4";
 }
 
 use strict;
@@ -739,10 +739,13 @@ sub cost_instances {
 				$cost_os = '0';
 				$resource_os = 'vm-os-terminated';
 			}
-			if ($commitment == '1') {
-				$cost_os = &check_commitment_cost($pricing->{'compute'}->{'license'}->{$type}->{'cost'}->{$os}->{'month_1y'}||"compute > license > type '$type' > os '$os'", '1 year', $cost_os, $region);
-			} elsif ($commitment == '3') {
-				$cost_os = &check_commitment_cost($pricing->{'compute'}->{'license'}->{$type}->{'cost'}->{$os}->{'month_3y'}||"compute > license > type '$type' > os '$os'", '3 year', $cost_os, $region);
+			# 2022/02/18: 1y and 3y committed use discounts (CUD) only for SUSE Linux Enterprise Server for SAP (sles-sap)
+			if ($os eq 'sles-sap') {
+				if ($commitment == '1') {
+					$cost_os = &check_commitment_cost($pricing->{'compute'}->{'license'}->{$type}->{'cost'}->{$os}->{'month_1y'}||"compute > license > type '$type' > os '$os'", '1 year', $cost_os, $region);
+				} elsif ($commitment == '3') {
+					$cost_os = &check_commitment_cost($pricing->{'compute'}->{'license'}->{$type}->{'cost'}->{$os}->{'month_3y'}||"compute > license > type '$type' > os '$os'", '3 year', $cost_os, $region);
+				}
 			}
 			$cost_os = &add_discount($cost_os, $discount);
 			&cost(

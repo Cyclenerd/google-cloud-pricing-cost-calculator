@@ -23,3 +23,19 @@ instances:
         class: nearline-dual
         region: eur4
         data: 1024
+  - name: n1-standard-16-rhel-sap
+    type: n1-standard-16
+    os: rhel-sap
+    commitment: 3
+    disks:
+      - name: disk-n1-standard-16-shel-sap-boot
+        type: ssd
+        data: 75
+  - name: n1-standard-16-windows
+    type: n1-standard-16
+    os: windows
+    commitment: 3
+    disks:
+      - name: disk-n1-standard-16-windows-boot
+        type: ssd
+        data: 75

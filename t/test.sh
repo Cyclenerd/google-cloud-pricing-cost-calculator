@@ -27,6 +27,7 @@ MY_CHECKS=(
 	#
 	# 01_europe-west4-sap.yml
 	#
+	# SLES for SAP (https://cloud.google.com/products/calculator/#id=9a410d62-97b7-4ae0-baba-2f83ba9e625d)
 	'europe-west4;vm;n1-standard-16-sles-sap;274'
 	'europe-west4;vm-os;n1-standard-16-sles-sap;107'
 	'europe-west4;disk;disk-n1-standard-16-sles-sap-boot;14'
@@ -34,6 +35,12 @@ MY_CHECKS=(
 	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-boot;2.9'
 	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-data;5.8'
 	'eur4;bucket;bucket-n1-standard-16-sles-sap;20'
+	# RHEL for SAP (https://cloud.google.com/products/calculator/#id=a41b2496-c124-4db8-9e30-0a5fcfbe9466)
+	'europe-west4;vm;n1-standard-16-rhel-sap;274'
+	'europe-west4;vm-os;n1-standard-16-rhel-sap;164'
+	# Windows (https://cloud.google.com/products/calculator/#id=e23e3861-35f2-4550-9ce4-74585f3d23c1)
+	'europe-west4;vm;n1-standard-16-windows;274'
+	'europe-west4;vm-os;n1-standard-16-windows;537'
 
 	#
 	# 01_europe-west4...
