@@ -1,13 +1,17 @@
 # Google Cloud Platform Pricing and Cost Calculator
 
 Calculate estimated monthly costs of Google Cloud Platform products and resources.
-Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront.
-Mapping of resource usage is done in easy to learn YAML files.
-Price information is read from a local file.
+Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront:
+
+* Mapping of resource usage is done in easy to learn **YAML** usage files
+* Price information is read from a local file
+* Calculation is done via `gcosts` **Linux command line (CLI)** program
+* Calculated costs are saved in **CSV** files
+
 Full control and no disclosure of any information and costs to third parties.
 Everything tested and matched against the actual invoice in large Google Cloud migration projects.
 
-![Screenshot: Cloud Shell with gcosts](img/cloud_shell-gcosts.png)
+![Screenshot: YAML usage file, gcosts and CSV costs file](img/gcosts-usage-costs.jpg?v1)
 
 ## ☁️ Supported resources
 
@@ -71,7 +75,7 @@ To get started, please click the following button:
 
 ### 1. Get `gcosts` program
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts` program.
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts` Linux CLI program.
 
 Linux (x86_64) / Cloud Shell:
 <!-- https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts -->
@@ -108,7 +112,7 @@ instances:
         data: 75
 ```
 
-Run the program:
+Run the CLI program:
 ```shell
 ./gcosts
 ```
@@ -175,7 +179,7 @@ cpanm --installdeps .
 
 ### Packager
 
-Create the standalone executables `gcosts` program.
+Create the standalone executables `gcosts` CLI program.
 
 Requirement:
 ```shell

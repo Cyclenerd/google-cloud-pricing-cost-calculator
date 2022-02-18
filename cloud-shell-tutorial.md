@@ -10,7 +10,7 @@ Click the **Start** button to move to the next step.
 
 ## Get `gcosts` program
 
-Download the executable `gcosts` program and save it to your home folder:
+Download the executable `gcosts` Linux CLI program and save it to your home folder:
 ```bash
 curl -L "https://bit.ly/gcosts" \
      -o ~/gcosts
