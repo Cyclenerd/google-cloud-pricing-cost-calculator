@@ -23,46 +23,63 @@ The cost of a resource is calculated by multiplying its price by its usage.
 
 Resources that `gcosts` supports, and Google charges for:
 
-* 🖥️ Compute Engine Instances
-	* All machine types are supported
-		* Cost-optimized (`E2`, `F1`, `G1`)
-		* Balanced (`N1`, `N2`, `N2D`)
-		* Scale-out optimized (Tau `T2D`)
-		* Memory-optimized (`M1`, `M2`)
-		* Compute optimized (`C2`, `C2D`)
-		* Accelerator optimized (`A2`)
-	* Sustained use discounts (SUD) are applied to monthly costs
-	* 1 year and 3 year committed use discounts (CUD) are supported
-	* Paid "premium" operating system licenses (paid images) are supported
-		* SUSE Linux Enterprise Server
-		* SLES for SAP
-			* 1y and 3y committed use discounts (CUD) are also supported
-		* Red Hat Enterprise Linux
-		* RHEL for SAP
-		* Windows Server
-	* Custom machine types are supported (have to be created manually)
-	* Spot and sole-tenant VMs are not supported
-* 💾 Compute Engine Disks
-	* All persistent disk (PD) types are supported
-		* Zonal persistent disk
-		* Regional persistent disk
-		* Local SSD
-* 🪣 Cloud Storage
-	* All storage classes and location types are supported
-		* region
-		* dual-region
-		* multi-region
-* 🚇 Cloud VPN
-* 🔗 Cloud NAT
-* 🤹 Cloud Load Balancing
-* 🚦 Cloud Monitoring (Operations Suite)
-	* Monitoring data
-* 🕸️ Network 
+🖥️ **Compute Engine Instances**
+- [x] All machine types are supported
+	- [x] Cost-optimized (`E2`, `F1`, `G1`)
+	- [x] Balanced (`N1`, `N2`, `N2D`)
+	- [x] Scale-out optimized (Tau `T2D`)
+	- [x] Memory-optimized (`M1`, `M2`)
+	- [x] Compute optimized (`C2`, `C2D`)
+	- [x] Accelerator optimized (`A2`)
+- [x] Sustained use discounts (SUD) are applied to monthly costs
+- [x] 1 year and 3 year committed use discounts (CUD) are supported
+- [x] Paid "premium" operating system licenses (paid images) are supported
+	- [x] SUSE Linux Enterprise Server
+	- [x] SLES for SAP (1y and 3y committed use discounts (CUD) are also supported)
+	- [x] Red Hat Enterprise Linux
+	- [x] RHEL for SAP
+	- [x] Windows Server
+- [x] Custom machine types are supported (have to be created manually)
+- [ ] Spot and sole-tenant VMs are not supported
+
+💾 **Compute Engine Disks**
+- [x] All persistent disk (PD) types are supported
+	- [x] Zonal persistent disk
+	- [x] Regional persistent disk
+	- [x] Local SSD
+
+🪣 **Cloud Storage**
+- [x] All storage classes and location types are supported
+	- [x] region
+	- [x] dual-region
+	- [x] multi-region
+
+🚇 **Cloud VPN**
+- [x] VPN tunnel
+
+🔗 **Cloud NAT**
+- [x] NAT gateway
+- [x] Data processing (both egress and ingress)
+
+🤹 **Cloud Load Balancing**
+- [x] Forwarding rules
+- [x] Ingress data processed by load balancer
+
+🚦 **Cloud Monitoring (Operations Suite)**
+- [x] Monitoring data
+
+🕸️ **Network**
+- [x] Premium Tier internet egress
+	- [x] Worldwide destinations (excluding China & Australia, but including Hong Kong)
+	- [x] China destinations (excluding Hong Kong)
+	- [x] Australia destinations
 
 The following services are not currently supported, but are on the TODO list:
 
-* BigQuery
-* Cloud SQL
+- [ ] BigQuery
+- [ ] Cloud SQL
+
+Please suggest other resources worth covering by upvoting existing issue or opening new issue.
 
 ## 🧑‍🏫 Start the interactive tutorial
 
