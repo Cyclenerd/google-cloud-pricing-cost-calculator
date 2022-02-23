@@ -48,7 +48,7 @@ project: PROJECT-NAME
 
 ### 🈹 Discount
 
-If Goolge gives you a discount on resources, you can set it like this:
+If Goolge gives you a discount on all resources (SKUs), you can set the discount:
 
 ```yml
 discount: DISCOUNT-AS-FLOAT
