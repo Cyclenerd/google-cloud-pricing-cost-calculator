@@ -141,7 +141,7 @@ Two CSV (semicolon) files with the costs are created:
 1. `COSTS.csv`  : Costs for resources
 1. `TOTALS.csv` : Total costs per name, resource, project, region and file
 
-You can import the CSV files with MS Excel, LibreOffice or Google Sheets.
+You can import the CSV files with MS Excel, [LibreOffice](usage/libreoffice.md) or [Google Sheets](usage/google_sheets.md).
 
 ### 4. Get familiar
 
