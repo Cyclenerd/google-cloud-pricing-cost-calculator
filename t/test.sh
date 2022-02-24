@@ -313,6 +313,8 @@ MY_CHECKS=(
 	'europe-west2;vm;n2-standard-8;292'    # Google Cloud Pricing Calculator: $292.36
 	'europe-west3;vm;n2-standard-8;292'    # Google Cloud Pricing Calculator: $292.36
 	'europe-west6;vm;n2-standard-8;317'    # Google Cloud Pricing Calculator: $317.44
+	# Santiago
+	'southamerica-west1;vm;n2-standard-8;324' # Google Cloud Pricing Calculator: $324.50
 
 )
 

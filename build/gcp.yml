@@ -48,8 +48,8 @@ region:
   southamerica-east1:
     location: São Paulo
   # 2021-12-14: No compute services
-  #southamerica-west1:
-  # location: Santiago
+  southamerica-west1:
+    location: Santiago
   us-central1:
     location: Iowa
   us-east1:
