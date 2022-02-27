@@ -99,6 +99,26 @@ open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YAML file '$yml_expo
 # Load CSV SKU file
 my $gcp = LoadFile("$yml_import");
 
+# Add copyright information
+$gcp->{'about'}->{'copyright'} = qq ~
+Copyright 2022 Nils Knieling. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+~;
+$gcp->{'about'}->{'generated'} = gmtime();
+$gcp->{'about'}->{'timestamp'} = time();
+$gcp->{'about'}->{'url'}       = 'https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator';
+
 # &mapping_found($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description)
 sub mapping_found {
 	my ($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description) = @_;
