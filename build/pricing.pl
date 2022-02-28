@@ -80,26 +80,26 @@ my $export_details = $App::options{details};
 # Export only one region
 my $filter_region = $App::options{region};
 
-# CSV files
+# Open CSV file with SKU information for import (skus.csv)
 my $csv_skus = $App::options{sku};
 if (-r "$csv_skus") { # write
 	$csv_skus =~ s/\.csv$//;
 } else {
 	die "ERROR: Cannot read CSV file '$csv_skus' with SKUs!\n";
 }
+
+# Open YAML file with GCP information for import (gcp.yml)
 my $yml_import = $App::options{gcp};
 unless (-r "$yml_import") { # read
 	die "ERROR: Cannot open YAML file '$yml_import' for GCP information import!\n";
 }
-
-my $yml_export = $App::options{export};
-# Open YAML file for export
-open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YAML file '$yml_export' for export!\n";
-
-# Load CSV SKU file
 my $gcp = LoadFile("$yml_import");
 
-# Add copyright information
+# Open YAML file for pricing export (pricing.yml)
+my $yml_export = $App::options{export};
+open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YAML file '$yml_export' for export!\n";
+
+# Add copyright information to YAML pricing export
 $gcp->{'about'}->{'copyright'} = qq ~
 Copyright 2022 Nils Knieling. All Rights Reserved.
 
