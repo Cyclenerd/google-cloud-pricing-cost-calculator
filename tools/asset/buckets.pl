@@ -60,7 +60,6 @@ foreach my $asset (@inventory_assets) {
 		next; # skip
 	}
 	print "\n» $name : ";
-	# # gsutil du -s -0 gs://sap-bw-dev-backup-dualregion
 	my $data = 0;
 	my $gsutil_du_bucket = `gsutil du -s -0 "gs://$name"`;
 	if ($gsutil_du_bucket =~ /^(\d+)/) {
