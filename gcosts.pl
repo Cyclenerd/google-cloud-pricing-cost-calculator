@@ -19,7 +19,7 @@
 # Help: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 
 BEGIN {
-	$VERSION = "1.0.4";
+	$VERSION = "1.0.5";
 }
 
 use strict;
@@ -54,6 +54,11 @@ my $pricing_file = $App::options{pricing};
 my $costs_file   = $App::options{costs};
 my $totals_file  = $App::options{totals};
 
+
+###############################################################################
+# FILES
+###############################################################################
+
 # Open pricing file
 unless (-r "$pricing_file") {
 	die "ERROR: Cannot read YAML file '$pricing_file' with GCP pricing information!\n";
@@ -78,18 +83,13 @@ unless ($count_usage_files) {
 # Open CSV cost file
 open my $fh, q{>}, "$costs_file" or die "ERROR: Cannot open CSV file '$costs_file' for costs export!\n";
 
-# Totals
-my $sum_total;
-my (%sum_services, %sum_names, %sum_regions, %sum_projects, %sum_files);
-my $sum_warnings;
-
 # Open CSV totals file
 open my $fh_totals, q{>}, "$totals_file" or die "ERROR: Cannot open CSV file '$totals_file' for totals export!\n";
 
 
-#
+###############################################################################
 # HELPER
-#
+###############################################################################
 
 my %icons = (
 	'name'       => '➡️',
@@ -125,9 +125,10 @@ sub double_line {
 	print "═"x60 . "\n";
 }
 
-#
+
+###############################################################################
 # CHECK FUNCTIONS
-#
+###############################################################################
 
 # &check_region($pricing, $region)
 sub check_region {
@@ -203,6 +204,7 @@ sub check_name {
 	$name =~ s/\;//g;
 	return $name;
 }
+
 # &check_state($state)
 sub check_state {
 	my ($state) = @_;
@@ -214,6 +216,7 @@ sub check_state {
 		die "ERROR: State '$state' not valid!\n";
 	}
 }
+
 # &check_float($float)
 sub check_float {
 	my ($float) = @_;
@@ -226,6 +229,7 @@ sub check_float {
 		die "ERROR: '$float' is not a floating-point number!\n";
 	}
 }
+
 # &check_int($int)
 sub check_int {
 	my ($int) = @_;
@@ -235,6 +239,7 @@ sub check_int {
 		die "ERROR: '$int' is not a number!\n";
 	}
 }
+
 # &check_cost($cost, $region)
 sub check_cost {
 	my ($cost, $region) = @_;
@@ -244,7 +249,9 @@ sub check_cost {
 		die "ERROR: Cost for $cost in region '$region' not found!\n";
 	}
 }
+
 # &check_commitment_cost($commitment_cost, $commitment, $cost, $region)
+my $sum_warnings = 0;
 sub check_commitment_cost {
 	my ($commitment_cost, $commitment, $cost, $region) = @_;
 	if ($commitment_cost =~ /^[+-]?([0-9]*[.])?[0-9]+$/) {
@@ -256,9 +263,10 @@ sub check_commitment_cost {
 	}
 }
 
-#
+
+###############################################################################
 # CALCULATION FUNCTIONS for bulk prices
-#
+###############################################################################
 
 # &calc_monitoring_data_cost($data, $cost_1, $cost_2, $cost_3)
 sub calc_monitoring_data_cost {
@@ -321,6 +329,11 @@ sub calc_traffic_egress_cost {
 	return $cost;
 }
 
+
+###############################################################################
+# COST FUNCTIONS
+###############################################################################
+
 # &add_discount($cost, $discount)
 sub add_discount {
 	my ($cost, $discount) = @_;
@@ -330,28 +343,9 @@ sub add_discount {
 	return $cost;
 }
 
-#
-# COST FUNCTIONS
-#
-
-sub cost_header {
-	print $fh join(";", (
-		'PROJECT',
-		'REGION',
-		'RESOURCE',
-		'NAME',
-		'COST',
-		'TYPE',
-		'DATA',
-		'CLASS',
-		'RULES',
-		'COMMITMENT',
-		'DISCOUNT',
-		'FILE'
-	))."\n";
-}
-
 # &cost($fh, %values)
+my $sum_total;
+my (%sum_services, %sum_names, %sum_regions, %sum_projects, %sum_files);
 sub cost {
 	my (%values)   = @_;
 	my $project    = $values{'project'};
@@ -535,6 +529,7 @@ sub cost_traffic_world {
 		);
 	}
 }
+
 # &cost_traffic_china($usage, $pricing)
 sub cost_traffic_china {
 	my ($usage, $pricing) = @_;
@@ -563,6 +558,7 @@ sub cost_traffic_china {
 		);
 	}
 }
+
 # &cost_traffic_australia($usage, $pricing)
 sub cost_traffic_australia {
 	my ($usage, $pricing) = @_;
@@ -769,21 +765,31 @@ sub cost_instances {
 	}
 }
 
-#
-# GLOBAL DEFAULTS
-#
+
+###############################################################################
+# CALCULATE USAGE COSTS
+###############################################################################
 
 my $default_region   = &check_region($pricing, 'us-central1');
 my $default_project  = &check_name('gcp-calculator');
 my $default_discount = &check_float('1.0');
 
-#
-# CALCULATE USAGE COSTS
-#
-
 print "COSTS\n";
 &double_line();
-&cost_header();
+print $fh join(";", (
+	'PROJECT',
+	'REGION',
+	'RESOURCE',
+	'NAME',
+	'COST',
+	'TYPE',
+	'DATA',
+	'CLASS',
+	'RULES',
+	'COMMITMENT',
+	'DISCOUNT',
+	'FILE'
+))."\n";
 
 # Open usage files
 foreach my $usage_file (sort @usage_files) {
@@ -830,9 +836,10 @@ foreach my $usage_file (sort @usage_files) {
 
 close $fh;
 
-#
-# TOTALS FUNCTIONS
-#
+
+###############################################################################
+# TOTALS
+###############################################################################
 
 # &total_header()
 sub total_header {
@@ -842,7 +849,6 @@ sub total_header {
 		'COST',
 	))."\n";
 }
-
 
 # &total($type, $name, $cost)
 sub total {
@@ -854,10 +860,6 @@ sub total {
 		sprintf("%.3f", $cost)
 	))."\n";
 }
-
-#
-# SUM TOTALS
-#
 
 print "TOTALS\n";
 &double_line();
@@ -900,7 +902,6 @@ if ($sum_warnings) {
 	print "$icons{'warning'} warnings: $sum_warnings\n";
 }
 &total('total', 'total', $sum_total);
-
 
 
 close $fh_totals;

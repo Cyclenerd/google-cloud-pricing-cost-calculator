@@ -71,22 +71,9 @@ use App::Options (
 );
 
 # Configuration
-my $hours_month = $App::options{hours};
-my $add_sud     = $App::options{sud};
-
-# Details
+my $hours_month    = $App::options{hours};
+my $add_sud        = $App::options{sud};
 my $export_details = $App::options{details};
-
-# Export only one region
-my $filter_region = $App::options{region};
-
-# Open CSV file with SKU information for import (skus.csv)
-my $csv_skus = $App::options{sku};
-if (-r "$csv_skus") { # write
-	$csv_skus =~ s/\.csv$//;
-} else {
-	die "ERROR: Cannot read CSV file '$csv_skus' with SKUs!\n";
-}
 
 # Open YAML file with GCP information for import (gcp.yml)
 my $yml_import = $App::options{gcp};
@@ -99,56 +86,20 @@ my $gcp = LoadFile("$yml_import");
 my $yml_export = $App::options{export};
 open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YAML file '$yml_export' for export!\n";
 
-# Add copyright information to YAML pricing export
-$gcp->{'about'}->{'copyright'} = qq ~
-Copyright 2022 Nils Knieling. All Rights Reserved.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+###############################################################################
+# SKUS
+###############################################################################
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-~;
-$gcp->{'about'}->{'generated'} = gmtime();
-$gcp->{'about'}->{'timestamp'} = time();
-$gcp->{'about'}->{'url'}       = 'https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator';
-
-# &mapping_found($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description)
-sub mapping_found {
-	my ($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description) = @_;
-	print "» mapping : $mapping, region = $region, value = $value, nanos = $nanos, units = $units, sku_id = $sku_id, unit_description = $unit_description, sku_description = $sku_description\n";
-}
-# &calc_cost($value, $units, $nanos)
-sub calc_cost {
-	my ($value, $units, $nanos) = @_;
-	if ($nanos =~ /\,/) {
-		my @bulk_nanos = split(',', $nanos);
-		print "INFO: Bulk nanos!\n";
-		foreach my $i (@bulk_nanos) {
-			print "* $i\n";
-		}
-		$nanos = $bulk_nanos[-1]; # last
-	}
-	if ($units =~ /\,/) {
-		my @bulk_units = split(',', $units);
-		print "INFO: Bulk units!\n";
-		foreach my $i (@bulk_units) {
-			print "* $i\n";
-		}
-		$units = $bulk_units[-1]; # last
-	}
-	my $cost = $value * ( $units+($nanos*0.000000001) );
-	print "OK: cost = $cost, value = $value, units = $units, nanos = $nanos\n";
-	return $cost;
+# Open CSV file with SKU information for import (skus.csv)
+my $csv_skus = $App::options{sku};
+if (-r "$csv_skus") { # write
+	$csv_skus =~ s/\.csv$//;
+} else {
+	die "ERROR: Cannot read CSV file '$csv_skus' with SKUs!\n";
 }
 
-# Copy CSV to SQLite
+# Copy SKUs with mapping from CSV to SQLite in-memory database
 my $csv = DBI->connect("dbi:CSV:", undef, undef, {
 	f_ext        => ".csv/r",
 	csv_sep_char => ";",
@@ -156,7 +107,7 @@ my $csv = DBI->connect("dbi:CSV:", undef, undef, {
 	RaiseError   => 1,
 }) or die "ERROR: Cannot connect to CSV $DBI::errstr\n";
 
-my $dbname = ':memory:'; # SQLite in-memory database, https://sqlite.org/inmemorydb.html
+my $dbname = ':memory:'; # https://sqlite.org/inmemorydb.html
 my $dbh = DBI->connect("dbi:SQLite:dbname=$dbname","","") or die "ERROR: Cannot connect to in-memory SQLite database $DBI::errstr\n";
 $dbh->do("DROP TABLE IF EXISTS skus");
 my $create_table = qq ~
@@ -189,21 +140,60 @@ $insert .= join(",", @values);
 $insert .= ";\n";
 $dbh->do($insert) or die "ERROR: Cannot insert $DBI::errstr\n";
 
-# Select mapping
+
+###############################################################################
+# SEARCH MAPPING
+###############################################################################
+
 my $sth = $dbh->prepare ("SELECT NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION FROM skus WHERE MAPPING = ? AND REGIONS LIKE ?");
 $sth->bind_columns (\my ($nanos, $units, $unit_description, $sku_id, $sku_description));
 
-# Regions
-my @regions       = keys %{ $gcp->{'region'} };
-my @dual_regions  = keys %{ $gcp->{'dual-region'} };
-my @multi_regions = keys %{ $gcp->{'multi-region'} };
-# Filter?
-if ($filter_region) {
-	@regions = ( "$filter_region" );
+# &mapping_found($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description)
+sub mapping_found {
+	my ($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description) = @_;
+	print "» mapping : $mapping, region = $region, value = $value, nanos = $nanos, units = $units, sku_id = $sku_id, unit_description = $unit_description, sku_description = $sku_description\n";
+}
+# &calc_cost($value, $units, $nanos)
+sub calc_cost {
+	my ($value, $units, $nanos) = @_;
+	if ($nanos =~ /\,/) {
+		my @bulk_nanos = split(',', $nanos);
+		print "INFO: Bulk nanos!\n";
+		foreach my $i (@bulk_nanos) {
+			print "* $i\n";
+		}
+		$nanos = $bulk_nanos[-1]; # last
+	}
+	if ($units =~ /\,/) {
+		my @bulk_units = split(',', $units);
+		print "INFO: Bulk units!\n";
+		foreach my $i (@bulk_units) {
+			print "* $i\n";
+		}
+		$units = $bulk_units[-1]; # last
+	}
+	my $cost = $value * ( $units+($nanos*0.000000001) );
+	print "OK: cost = $cost, value = $value, units = $units, nanos = $nanos\n";
+	return $cost;
 }
 
 
-# Stackdriver Monitoring
+###############################################################################
+# REGIONS
+###############################################################################
+
+my @regions       = keys %{ $gcp->{'region'} };
+my @dual_regions  = keys %{ $gcp->{'dual-region'} };
+my @multi_regions = keys %{ $gcp->{'multi-region'} };
+# Export only one region
+my $filter_region = $App::options{region} || '';
+@regions = ( "$filter_region" ) if ($filter_region);
+
+
+###############################################################################
+# STACKDRIVER MONITORING
+###############################################################################
+
 # &add_gcp_monitoring_data_add_cost($usage, $region, $cost)
 sub add_gcp_monitoring_data_add_cost {
 	my ($usage, $region, $cost) = @_;
@@ -254,7 +244,11 @@ foreach my $region (@regions) {
 	$sth->finish;
 }
 
-# Bucket storage GB per month
+
+###############################################################################
+# BUCKET STORAGE GB PER MONTH
+###############################################################################
+
 # &add_gcp_storage_bucket_cost($what, $bucket, $region, $cost)
 sub add_gcp_storage_bucket_cost {
 	my ($what, $bucket, $region, $cost) = @_;
@@ -318,7 +312,11 @@ foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 	}
 }
 
-# Disk storage GB per month
+
+###############################################################################
+# DISK STORAGE GB PER MONTH
+###############################################################################
+
 # &add_gcp_compute_storage_cost($what, $disk, $region, $cost)
 sub add_gcp_compute_storage_cost {
 	my ($what, $disk, $region, $cost) = @_;
@@ -428,7 +426,11 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 	}
 }
 
-# Instances
+
+###############################################################################
+# INSTANCES
+###############################################################################
+
 # &add_gcp_compute_instance_cost($what, $machine, $region, $cost)
 sub add_gcp_compute_instance_cost {
 	my ($what, $machine, $region, $cost) = @_;
@@ -807,7 +809,11 @@ foreach my $region (@regions) {
 	}
 }
 
-# Licenses
+
+###############################################################################
+# LICENSES
+###############################################################################
+
 # &add_gcp_compute_license_cost($what, $machine, $os, $cost)
 sub add_gcp_compute_license_cost {
 	my ($what, $machine, $os, $cost) = @_;
@@ -946,7 +952,11 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	}
 }
 
-# Network
+
+###############################################################################
+# NETWORK
+###############################################################################
+
 # &add_gcp_compute_ip_unused_cost($what, $region, $cost)
 sub add_gcp_compute_ip_unused_cost {
 	my ($what, $region, $cost) = @_;
@@ -1327,6 +1337,26 @@ foreach my $region (@regions) {
 	}
 	$sth->finish;
 }
+
+# Add copyright information to YAML pricing export
+$gcp->{'about'}->{'copyright'} = qq ~
+Copyright 2022 Nils Knieling. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+~;
+$gcp->{'about'}->{'generated'} = gmtime();
+$gcp->{'about'}->{'timestamp'} = time();
+$gcp->{'about'}->{'url'}       = 'https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator';
 
 # Export YAML with costs
 my $yaml = Dump($gcp);
