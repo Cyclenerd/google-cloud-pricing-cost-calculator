@@ -17,10 +17,7 @@ jobs:
         run: |
           sudo apt-get install   \
             libapp-options-perl  \
-            libwww-perl          \
-            libjson-xs-perl      \
             libyaml-libyaml-perl \
-            libdbd-csv-perl      \
             libpar-packer-perl
 
       - name: 🛎️ Checkout
