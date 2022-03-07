@@ -185,14 +185,6 @@ perl pricing.pl -sku="skus.csv" \
 		1. `09A6-C688-1278`
 		1. `7BDA-424A-1067` (cheaper = skipped)
 
-Time to generate the YAML file with all cost informations for all regions takes a long time:
-
-```
-real    84m23.914s
-user    81m47.547s
-sys     1m41.969s
-```
-
 ## Custom machine types
 
 Own machine types can be defined as type `n1-custom`, `n2-custom` and `n2d-custom` in `gcp.yml`.
