@@ -15,7 +15,8 @@ jobs:
             libwww-perl          \
             libjson-xs-perl      \
             libyaml-libyaml-perl \
-            libdbd-csv-perl
+            libdbd-csv-perl      \
+            libdbd-sqlite3-perl
 
       - name: 🛎️ Checkout
         uses: actions/checkout@v2

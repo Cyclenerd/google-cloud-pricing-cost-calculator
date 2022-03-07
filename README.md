@@ -176,6 +176,7 @@ For MS Windows you can download and install [Strawberry Perl](https://strawberry
 	* [JSON::XS](https://metacpan.org/pod/JSON::XS)
 	* [YAML::XS](https://metacpan.org/pod/YAML::XS) (and `libyaml`)
 	* [DBD::CSV](https://metacpan.org/pod/DBD::CSV)
+	* [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)
 
 Debian/Ubuntu:
 ```shell
@@ -185,7 +186,8 @@ sudo apt install \
 	libwww-perl \
 	libjson-xs-perl \
 	libyaml-libyaml-perl \
-	libdbd-csv-perl
+	libdbd-csv-perl \
+	libdbd-sqlite3-perl
 ```
 
 Or install Perl modules with cpanminus:

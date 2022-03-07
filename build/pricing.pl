@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "1.0.0";
+	$VERSION = "2.0.0";
 }
 
 use strict;
@@ -148,15 +148,49 @@ sub calc_cost {
 	return $cost;
 }
 
-
-my $dbh = DBI->connect("dbi:CSV:", undef, undef, {
+# Copy CSV to SQLite
+my $csv = DBI->connect("dbi:CSV:", undef, undef, {
 	f_ext        => ".csv/r",
 	csv_sep_char => ";",
 	csv_class    => "Text::CSV_XS",
 	RaiseError   => 1,
-}) or die "ERROR: Cannot connect $DBI::errstr\n";
+}) or die "ERROR: Cannot connect to CSV $DBI::errstr\n";
 
-my $sth = $dbh->prepare ("SELECT NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION FROM $csv_skus WHERE MAPPING = ? AND REGIONS LIKE ?");
+my $dbname = ':memory:'; # SQLite in-memory database, https://sqlite.org/inmemorydb.html
+my $dbh = DBI->connect("dbi:SQLite:dbname=$dbname","","") or die "ERROR: Cannot connect to in-memory SQLite database $DBI::errstr\n";
+$dbh->do("DROP TABLE IF EXISTS skus");
+my $create_table = qq ~
+	CREATE TABLE skus(
+		ID               INTEGER,
+		MAPPING          TEXT,
+		REGIONS          TEXT,
+		NANOS            TEXT,
+		UNITS            TEXT,
+		UNIT_DESCRIPTION TEXT,
+		SKU_ID           TEXT,
+		SKU_DESCRIPTION  TEXT,
+		PRIMARY KEY('ID' AUTOINCREMENT)
+	)
+~;
+$dbh->do($create_table);
+# Copy only necessary data
+my $select_csv = $csv->prepare("SELECT MAPPING, REGIONS, NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION FROM $csv_skus");
+$select_csv->execute;
+$select_csv->bind_columns (\my ($mapping, $regions, $nanos, $units, $unit_description, $sku_id, $sku_description));
+my @values = ();
+while ($select_csv->fetch) {
+	next if $mapping eq 'TODO'; # skip TODO mapping
+	my $value = "('$mapping', '$regions', '$nanos', '$units', '$unit_description', '$sku_id', '$sku_description')";
+	push(@values, $value);
+}
+# Insert data to SQLite database table
+my $insert = "INSERT INTO skus (MAPPING, REGIONS, NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION) VALUES";
+$insert .= join(",", @values);
+$insert .= ";\n";
+$dbh->do($insert) or die "ERROR: Cannot insert $DBI::errstr\n";
+
+# Select mapping
+my $sth = $dbh->prepare ("SELECT NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION FROM skus WHERE MAPPING = ? AND REGIONS LIKE ?");
 $sth->bind_columns (\my ($nanos, $units, $unit_description, $sku_id, $sku_description));
 
 # Regions
