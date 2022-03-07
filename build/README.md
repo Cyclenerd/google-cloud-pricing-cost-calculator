@@ -1,19 +1,23 @@
 # Build pricing information file
 
-> The build is done regularly and automatically via [GitHub Action](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml).
+**The process of calculating and generation is done regularly and automatically via  [GitHub Actions](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml)!**
 
-Configuration and scripts to generate YAML file `pricing.yml` with Google Cloud Platform pricing informations.
+[![Build Pricing](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml)
 
-Files:
+## Files
 
-* `pricing.yml` : YAML file with calculated pricing information.
-* `pricing.pl`  : Script to calculate and generate pricing information file `costs.yml`.
-* `gcp.yml`     : YAML file with Google Cloud Platform information. Is read by the script `costs.pl` to calculate and generate pricing information file (`costs.yml`).
-* `mapping.csv` : CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.pl` to add the custom mapping IDs to the SKUs (`skus.csv`).
-* `mapping.pl`  : Script to add the custom mapping IDs from `mapping.csv` to the CSV file with the SKUs (`skus.csv`).
-* `skus.csv`    : CSV (semicolon) file with SKU pricing and information exported from the Google Cloud Billing API.
-* `skus.conf`   : Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`.
-* `skus.pl`     : Script to export SKUs from the Google Cloud Billing API.
+Configuration files and scripts for generating the YAML file `pricing.yml` with calculated Google Cloud Platform pricing information:
+
+| File | Short Description |
+|------|-------------------|
+| `skus.pl`     | Script to export SKUs from the Google Cloud Billing API. |
+| `skus.conf`   | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
+| `skus.csv`    | CSV (semicolon) file with SKU pricing and information exported from the Google Cloud Billing API. |
+| `mapping.pl`  | Script to add the custom mapping IDs from `mapping.csv` to the CSV file with the SKUs (`skus.csv`). |
+| `mapping.csv` | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.pl` to add the custom mapping IDs to the SKUs (`skus.csv`). |
+| `pricing.pl`  | Script to calculate and generate pricing information file `pricing.yml`. |
+| `pricing.yml` | YAML file with calculated pricing information. |
+| `gcp.yml`     | YAML file with Google Cloud Platform information. Is read by the script `pricing.pl` to calculate and generate pricing information file (`pricing.yml`). |
 
 ## Workflow
 
@@ -50,7 +54,7 @@ Files:
                 +-------------------------------+
 ```
 
-## Enable Google Cloud Billing API
+### 1️⃣  Enable Google Cloud Billing API
 
 More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 
@@ -60,7 +64,7 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 	1. Select **Create credentials**, then select **API key** from the dropdown menu.
 	1. Copy your key and keep it secure.
 
-## Export SKUs (`skus.pl`)
+### 2️⃣  Export SKUs (`skus.pl`)
 
 Export the SKU information of the Google Cloud Billing API to a more readable CSV file.
 You can get all service IDs with the script `servies.pl` in the tool directory.
@@ -107,14 +111,14 @@ Merge CSV files:
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#getting_the_list_of_skus_for_a_service)
 
-## Add custom mapping IDs to SKUs (`mapping.pl`)
+### 3️⃣  Add custom mapping IDs to SKUs (`mapping.pl`)
 
 To make it easier to find the SKUs we add our own mapping (IDs):
 ```shell
 perl mapping.pl -sku="skus.csv"
 ```
 
-## Generate pricing information file (`pricing.pl`)
+### 4️⃣  Generate pricing information file (`pricing.pl`)
 
 Generate the YAML file with the Google Cloud Platform pricing informations for all regions:
 ```shell
@@ -129,7 +133,7 @@ perl pricing.pl -sku="skus.csv" \
   -export="pricing_europe_west4.yml"
 ```
 
-### Special curls
+## Special curls
 
 * Region `europe-west6` (Zurich) has no compute optimized instances.
 * Region `us-east4` is called 'Northern Virginia' and 'Virginia' in SKU descriptions.
