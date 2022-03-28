@@ -14,8 +14,10 @@ usage/customers/**
 # Test
 !t/*.yml
 # Tools
-!tools/disk_types.csv
-!tools/machine_types.csv
+!tools/disktypes.csv
+!tools/machinetyperegion.csv
+!tools/machinetypes.csv
+!tools/machinetypezone.csv
 !tools/regions.csv
 !tools/zones.csv
 # Example
