@@ -4,10 +4,13 @@
 # Export all Google Compute Engine regions to a CSV file
 #
 
-# File for CSV export
-APP_CSV=${APP_CSV:-"regions.csv"}
+source "config.sh" || exit 9
 
-echo "NAME;STATUS;TURNDOWN_DATE" > "$APP_CSV";
+echo "Get regions... Please wait..."
+
+echo "NAME;STATUS;TURNDOWN_DATE" > "$CSV_GCLOUD_REGIONS" || exit 9
 gcloud compute regions list \
 	--quiet \
-	--format="csv[no-heading,separator=';'](NAME,STATUS,TURNDOWN_DATE)" >> "$APP_CSV"
+	--format="csv[no-heading,separator=';'](NAME,STATUS,TURNDOWN_DATE)" >> "$CSV_GCLOUD_REGIONS" || exit 9
+
+echo "DONE"

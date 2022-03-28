@@ -46,22 +46,22 @@ bash zones.sh
 
 The zones are not currently required by any other script and are for informative use only.
 
-## Export GCE machine types (`machine_types.sh`)
+## Export GCE machine types (`machinetypes.sh`)
 
 Export all Google Compute Engine machine types to a CSV file:
 ```shell
-bash machine_types.sh
+bash machinetypes.sh
 ```
 
 The machine types are needed to calculate the costs for the machine type.
 The machine types are required in the `gcp.yml` file in the build folder.
 New machine types must be added manually to the `gcp.yml` file.
 
-## Export GCE disk types (`disk_types.sh`)
+## Export GCE disk types (`disktypes.sh`)
 
 Export all Google Compute Engine disk types to a CSV file:
 ```shell
-bash disk_types.sh
+bash disktypes.sh
 ```
 
 The disk types are needed to calculate the costs for the disk type.

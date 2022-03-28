@@ -4,10 +4,13 @@
 # Export all Google Compute Engine zones to a CSV file
 #
 
-# File for CSV export
-APP_CSV=${APP_CSV:-"zones.csv"}
+source "config.sh" || exit 9
 
-echo "NAME;REGION;STATUS;NEXT_MAINTENANCE;TURNDOWN_DATE" > "$APP_CSV";
+echo "Get zones... Please wait..."
+
+echo "NAME;REGION;STATUS;NEXT_MAINTENANCE;TURNDOWN_DATE" > "$CSV_GCLOUD_ZONES" || exit 9
 gcloud compute zones list \
 	--quiet \
-	--format="csv[no-heading,separator=';'](NAME,REGION,STATUS,NEXT_MAINTENANCE,TURNDOWN_DATE)" >> "$APP_CSV"
+	--format="csv[no-heading,separator=';'](NAME,REGION,STATUS,NEXT_MAINTENANCE,TURNDOWN_DATE)" >> "$CSV_GCLOUD_ZONES" || exit 9
+
+echo "DONE"

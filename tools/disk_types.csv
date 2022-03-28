@@ -1,6 +1,0 @@
-NAME;VALID_DISK_SIZES,DESCRIPTION
-local-ssd;375GB-375GB;Local SSD
-pd-balanced;10GB-65536GB;Balanced Persistent Disk
-pd-extreme;500GB-65536GB;Extreme Persistent Disk
-pd-ssd;10GB-65536GB;SSD Persistent Disk
-pd-standard;10GB-65536GB;Standard Persistent Disk
