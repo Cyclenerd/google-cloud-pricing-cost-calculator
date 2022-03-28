@@ -2,6 +2,9 @@ name: "Build Pricing"
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '45 3 * * 4' # At 03:45 on Thursday
+
 
 jobs:
   build-pricing:
