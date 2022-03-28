@@ -93,6 +93,7 @@ instances:
 
 * Supported machine types `type`:
     * Please see `instance` in [gcp.yml](../build/gcp.yml).
+    * An overview and comparison of all [machine types](https://gcloud-compute.com/instances.html) can be found on the website: [https://gcloud-compute.com](https://gcloud-compute.com/)
 * Commitment `commitment`:
     * `1` : 1 year
     * `3` : 3 years
