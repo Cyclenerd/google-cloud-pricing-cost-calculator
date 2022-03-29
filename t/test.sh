@@ -297,6 +297,7 @@ MY_CHECKS=(
 	'europe-west4;vm;a2-highgpu-8g-3y;7661'  # Google Cloud Pricing Calculator: $7661.01, Price List: $7661.79
 	#
 	# Regions
+	# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
 	#
 	# US
 	'us-central1;vm;n2-standard-8;226' # Google Cloud Pricing Calculator: $226.92
@@ -305,7 +306,7 @@ MY_CHECKS=(
 	'us-west1;vm;n2-standard-8;226'    # Google Cloud Pricing Calculator: $226.92
 	'us-west2;vm;n2-standard-8;272'    # Google Cloud Pricing Calculator: $272.57
 	'us-west3;vm;n2-standard-8;272'    # Google Cloud Pricing Calculator: $272.57
-	'us-west4;vm;n2-standard-8;279'    # Google Cloud Pricing Calculator: $279.52
+	'us-west4;vm;n2-standard-8;255'    # Google Cloud Pricing Calculator: $279.52, Price List: $255.5 (2022-03-29)
 	# Europe
 	'europe-central2;vm;n2-standard-8;292' # Google Cloud Pricing Calculator: $292.36
 	'europe-north1;vm;n2-standard-8;249'   # Google Cloud Pricing Calculator: $249.84

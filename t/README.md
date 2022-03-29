@@ -1,6 +1,6 @@
 # Tests
 
-Calculated values are checked against values calculated with the official [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator/).
+Calculated values are checked against values calculated with the official [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator/) or official [VM instance pricing website](https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family).
 
 ## Google Cloud Pricing Calculator
 
