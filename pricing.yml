@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Mon Mar  7 21:47:34 2022
-  timestamp: 1646689654
+  generated: Tue Mar 29 18:12:34 2022
+  timestamp: 1648577554
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -113,7 +113,7 @@ compute:
           hour: 4.806819442
           month: 3508.97819266
           month_1y: 2193.10615949
-          month_3y: 264.37799428
+          month_3y: 1201.42172943
         northamerica-northeast1:
           hour: 3.915623926
           month: 2858.40546598
@@ -265,7 +265,7 @@ compute:
           hour: 9.613638884
           month: 7017.95638532
           month_1y: 4386.21231898
-          month_3y: 528.75598856
+          month_3y: 2402.84345886
         northamerica-northeast1:
           hour: 7.831247852
           month: 5716.81093196
@@ -417,7 +417,7 @@ compute:
           hour: 19.227277768
           month: 14035.91277064
           month_1y: 8772.42463796
-          month_3y: 1057.51197712
+          month_3y: 4805.68691772
         northamerica-northeast1:
           hour: 15.662495704
           month: 11433.62186392
@@ -569,7 +569,7 @@ compute:
           hour: 38.454555536
           month: 28071.82554128
           month_1y: 17544.84927592
-          month_3y: 2115.02395424
+          month_3y: 9611.37383544
         northamerica-northeast1:
           hour: 31.324991408
           month: 22867.24372784
@@ -721,7 +721,7 @@ compute:
           hour: 72.662935072
           month: 53043.94260256
           month_1y: 33136.87730384
-          month_3y: 3145.14727744
+          month_3y: 18137.84703984
         northamerica-northeast1:
           hour: 59.308990816
           month: 43295.56329568
@@ -801,12 +801,12 @@ compute:
         asia-northeast2:
           hour: 1.071424
           month: 625.868043904
-          month_1y: 321.30512
+          month_1y: 493.4216
           month_3y: 312.86048
         asia-northeast3:
           hour: 1.071424
           month: 625.868043904
-          month_1y: 321.30512
+          month_1y: 493.4216
           month_3y: 312.86048
         asia-south1:
           hour: 1.003168
@@ -899,10 +899,10 @@ compute:
           month_1y: 384.0968
           month_3y: 243.89008
         us-east4:
-          hour: 1.028816
-          month: 600.978751136
+          hour: 0.940576
+          month: 549.433708096
           month_1y: 410.98416
-          month_3y: 300.43296
+          month_3y: 274.69024
         us-west1:
           hour: 0.835232
           month: 487.897431872
@@ -919,10 +919,10 @@ compute:
           month_1y: 461.34832
           month_3y: 292.92272
         us-west4:
-          hour: 1.028816
-          month: 600.978751136
+          hour: 0.940576
+          month: 549.433708096
           month_1y: 410.98416
-          month_3y: 300.43296
+          month_3y: 274.69024
       cpu: 16
       ram: 64
       type: c2
@@ -947,12 +947,12 @@ compute:
         asia-northeast2:
           hour: 2.00892
           month: 1173.50258232
-          month_1y: 602.4471
+          month_1y: 925.1655
           month_3y: 586.6134
         asia-northeast3:
           hour: 2.00892
           month: 1173.50258232
-          month_1y: 602.4471
+          month_1y: 925.1655
           month_3y: 586.6134
         asia-south1:
           hour: 1.88094
@@ -1045,10 +1045,10 @@ compute:
           month_1y: 720.1815
           month_3y: 457.2939
         us-east4:
-          hour: 1.92903
-          month: 1126.83515838
+          hour: 1.76358
+          month: 1030.18820268
           month_1y: 770.5953
-          month_3y: 563.3118
+          month_3y: 515.0442
         us-west1:
           hour: 1.56606
           month: 914.80768476
@@ -1065,10 +1065,10 @@ compute:
           month_1y: 865.0281
           month_3y: 549.2301
         us-west4:
-          hour: 1.92903
-          month: 1126.83515838
+          hour: 1.76358
+          month: 1030.18820268
           month_1y: 770.5953
-          month_3y: 563.3118
+          month_3y: 515.0442
       cpu: 30
       ram: 120
       type: c2
@@ -1093,12 +1093,12 @@ compute:
         asia-northeast2:
           hour: 0.267856
           month: 156.467010976
-          month_1y: 80.32628
+          month_1y: 123.3554
           month_3y: 78.21512
         asia-northeast3:
           hour: 0.267856
           month: 156.467010976
-          month_1y: 80.32628
+          month_1y: 123.3554
           month_3y: 78.21512
         asia-south1:
           hour: 0.250792
@@ -1191,10 +1191,10 @@ compute:
           month_1y: 96.0242
           month_3y: 60.97252
         us-east4:
-          hour: 0.257204
-          month: 150.244687784
+          hour: 0.235144
+          month: 137.358427024
           month_1y: 102.74604
-          month_3y: 75.10824
+          month_3y: 68.67256
         us-west1:
           hour: 0.208808
           month: 121.974357968
@@ -1211,10 +1211,10 @@ compute:
           month_1y: 115.33708
           month_3y: 73.23068
         us-west4:
-          hour: 0.257204
-          month: 150.244687784
+          hour: 0.235144
+          month: 137.358427024
           month_1y: 102.74604
-          month_3y: 75.10824
+          month_3y: 68.67256
       cpu: 4
       ram: 16
       type: c2
@@ -1239,12 +1239,12 @@ compute:
         asia-northeast2:
           hour: 4.01784
           month: 2347.00516464
-          month_1y: 1204.8942
+          month_1y: 1850.331
           month_3y: 1173.2268
         asia-northeast3:
           hour: 4.01784
           month: 2347.00516464
-          month_1y: 1204.8942
+          month_1y: 1850.331
           month_3y: 1173.2268
         asia-south1:
           hour: 3.76188
@@ -1337,10 +1337,10 @@ compute:
           month_1y: 1440.363
           month_3y: 914.5878
         us-east4:
-          hour: 3.85806
-          month: 2253.67031676
+          hour: 3.52716
+          month: 2060.37640536
           month_1y: 1541.1906
-          month_3y: 1126.6236
+          month_3y: 1030.0884
         us-west1:
           hour: 3.13212
           month: 1829.61536952
@@ -1357,10 +1357,10 @@ compute:
           month_1y: 1730.0562
           month_3y: 1098.4602
         us-west4:
-          hour: 3.85806
-          month: 2253.67031676
+          hour: 3.52716
+          month: 2060.37640536
           month_1y: 1541.1906
-          month_3y: 1126.6236
+          month_3y: 1030.0884
       cpu: 60
       ram: 240
       type: c2
@@ -1385,12 +1385,12 @@ compute:
         asia-northeast2:
           hour: 0.535712
           month: 312.934021952
-          month_1y: 160.65256
+          month_1y: 246.7108
           month_3y: 156.43024
         asia-northeast3:
           hour: 0.535712
           month: 312.934021952
-          month_1y: 160.65256
+          month_1y: 246.7108
           month_3y: 156.43024
         asia-south1:
           hour: 0.501584
@@ -1483,10 +1483,10 @@ compute:
           month_1y: 192.0484
           month_3y: 121.94504
         us-east4:
-          hour: 0.514408
-          month: 300.489375568
+          hour: 0.470288
+          month: 274.716854048
           month_1y: 205.49208
-          month_3y: 150.21648
+          month_3y: 137.34512
         us-west1:
           hour: 0.417616
           month: 243.948715936
@@ -1503,10 +1503,10 @@ compute:
           month_1y: 230.67416
           month_3y: 146.46136
         us-west4:
-          hour: 0.514408
-          month: 300.489375568
+          hour: 0.470288
+          month: 274.716854048
           month_1y: 205.49208
-          month_3y: 150.21648
+          month_3y: 137.34512
       cpu: 8
       ram: 32
       type: c2
@@ -12526,8 +12526,8 @@ compute:
           month_1y: 316.84336
           month_3y: 226.32336
         us-west4:
-          hour: 0.728016
-          month: 425.267634336
+          hour: 0.645984
+          month: 377.348969664
           month_1y: 282.2472
           month_3y: 201.60848
       cpu: 16
@@ -12677,8 +12677,8 @@ compute:
           month_1y: 39.60542
           month_3y: 28.29042
         us-west4:
-          hour: 0.091002
-          month: 53.158454292
+          hour: 0.080748
+          month: 47.168621208
           month_1y: 35.2809
           month_3y: 25.20106
       cpu: 2
@@ -12828,8 +12828,8 @@ compute:
           month_1y: 633.68672
           month_3y: 452.64672
         us-west4:
-          hour: 1.456032
-          month: 850.535268672
+          hour: 1.291968
+          month: 754.697939328
           month_1y: 564.4944
           month_3y: 403.21696
       cpu: 32
@@ -12980,8 +12980,8 @@ compute:
           month_1y: 79.21084
           month_3y: 56.58084
         us-west4:
-          hour: 0.182004
-          month: 106.316908584
+          hour: 0.161496
+          month: 94.337242416
           month_1y: 70.5618
           month_3y: 50.40212
       cpu: 4
@@ -13131,8 +13131,8 @@ compute:
           month_1y: 950.53008
           month_3y: 678.97008
         us-west4:
-          hour: 2.184048
-          month: 1275.802903008
+          hour: 1.937952
+          month: 1132.046908992
           month_1y: 846.7416
           month_3y: 604.82544
       cpu: 48
@@ -13283,8 +13283,8 @@ compute:
           month_1y: 1267.37344
           month_3y: 905.29344
         us-west4:
-          hour: 2.912064
-          month: 1701.070537344
+          hour: 2.583936
+          month: 1509.395878656
           month_1y: 1128.9888
           month_3y: 806.43392
       cpu: 64
@@ -13435,8 +13435,8 @@ compute:
           month_1y: 158.42168
           month_3y: 113.16168
         us-west4:
-          hour: 0.364008
-          month: 212.633817168
+          hour: 0.322992
+          month: 188.674484832
           month_1y: 141.1236
           month_3y: 100.80424
       cpu: 8
@@ -13586,8 +13586,8 @@ compute:
           month_1y: 1584.2168
           month_3y: 1131.6168
         us-west4:
-          hour: 3.64008
-          month: 2126.33817168
+          hour: 3.22992
+          month: 1886.74484832
           month_1y: 1411.236
           month_3y: 1008.0424
       cpu: 80
@@ -13738,8 +13738,8 @@ compute:
           month_1y: 1901.06016
           month_3y: 1357.94016
         us-west4:
-          hour: 4.368096
-          month: 2551.605806016
+          hour: 3.875904
+          month: 2264.093817984
           month_1y: 1693.4832
           month_3y: 1209.65088
       cpu: 96
@@ -13890,8 +13890,8 @@ compute:
           month_1y: 4257.26656
           month_3y: 3040.95808
         us-west4:
-          hour: 9.335584
-          month: 5453.344051264
+          hour: 8.679328
+          month: 5069.994733888
           month_1y: 3792.44928
           month_3y: 2708.91904
       cpu: 128
@@ -14042,8 +14042,8 @@ compute:
           month_1y: 578.96592
           month_3y: 413.55376
         us-west4:
-          hour: 1.262368
-          month: 737.407217728
+          hour: 1.180336
+          month: 689.488553056
           month_1y: 515.75376
           month_3y: 368.39888
       cpu: 16
@@ -14193,8 +14193,8 @@ compute:
           month_1y: 72.37074
           month_3y: 51.69422
         us-west4:
-          hour: 0.157796
-          month: 92.175902216
+          hour: 0.147542
+          month: 86.186069132
           month_1y: 64.46922
           month_3y: 46.04986
       cpu: 2
@@ -14344,8 +14344,8 @@ compute:
           month_1y: 1157.93184
           month_3y: 827.10752
         us-west4:
-          hour: 2.524736
-          month: 1474.814435456
+          hour: 2.360672
+          month: 1378.977106112
           month_1y: 1031.50752
           month_3y: 736.79776
       cpu: 32
@@ -14496,8 +14496,8 @@ compute:
           month_1y: 144.74148
           month_3y: 103.38844
         us-west4:
-          hour: 0.315592
-          month: 184.351804432
+          hour: 0.295084
+          month: 172.372138264
           month_1y: 128.93844
           month_3y: 92.09972
       cpu: 4
@@ -14647,8 +14647,8 @@ compute:
           month_1y: 1736.89776
           month_3y: 1240.66128
         us-west4:
-          hour: 3.787104
-          month: 2212.221653184
+          hour: 3.541008
+          month: 2068.465659168
           month_1y: 1547.26128
           month_3y: 1105.19664
       cpu: 48
@@ -14799,8 +14799,8 @@ compute:
           month_1y: 2315.86368
           month_3y: 1654.21504
         us-west4:
-          hour: 5.049472
-          month: 2949.628870912
+          hour: 4.721344
+          month: 2757.954212224
           month_1y: 2063.01504
           month_3y: 1473.59552
       cpu: 64
@@ -14951,8 +14951,8 @@ compute:
           month_1y: 289.48296
           month_3y: 206.77688
         us-west4:
-          hour: 0.631184
-          month: 368.703608864
+          hour: 0.590168
+          month: 344.744276528
           month_1y: 257.87688
           month_3y: 184.19944
       cpu: 8
@@ -15102,8 +15102,8 @@ compute:
           month_1y: 2894.8296
           month_3y: 2067.7688
         us-west4:
-          hour: 6.31184
-          month: 3687.03608864
+          hour: 5.90168
+          month: 3447.44276528
           month_1y: 2578.7688
           month_3y: 1841.9944
       cpu: 80
@@ -15254,8 +15254,8 @@ compute:
           month_1y: 3473.79552
           month_3y: 2481.32256
         us-west4:
-          hour: 7.574208
-          month: 4424.443306368
+          hour: 7.082016
+          month: 4136.931318336
           month_1y: 3094.52256
           month_3y: 2210.39328
       cpu: 96
@@ -15406,8 +15406,8 @@ compute:
           month_1y: 3433.4528
           month_3y: 2452.51968
         us-west4:
-          hour: 7.656192
-          month: 4472.333932032
+          hour: 6.999936
+          month: 4088.984614656
           month_1y: 3058.57152
           month_3y: 2184.72064
       cpu: 128
@@ -15558,8 +15558,8 @@ compute:
           month_1y: 429.1816
           month_3y: 306.56496
         us-west4:
-          hour: 0.957024
-          month: 559.041741504
+          hour: 0.874992
+          month: 511.123076832
           month_1y: 382.32144
           month_3y: 273.09008
       cpu: 16
@@ -15709,8 +15709,8 @@ compute:
           month_1y: 53.6477
           month_3y: 38.32062
         us-west4:
-          hour: 0.119628
-          month: 69.880217688
+          hour: 0.109374
+          month: 63.890384604
           month_1y: 47.79018
           month_3y: 34.13626
       cpu: 2
@@ -15860,8 +15860,8 @@ compute:
           month_1y: 858.3632
           month_3y: 613.12992
         us-west4:
-          hour: 1.914048
-          month: 1118.083483008
+          hour: 1.749984
+          month: 1022.246153664
           month_1y: 764.64288
           month_3y: 546.18016
       cpu: 32
@@ -16012,8 +16012,8 @@ compute:
           month_1y: 107.2954
           month_3y: 76.64124
         us-west4:
-          hour: 0.239256
-          month: 139.760435376
+          hour: 0.218748
+          month: 127.780769208
           month_1y: 95.58036
           month_3y: 68.27252
       cpu: 4
@@ -16163,8 +16163,8 @@ compute:
           month_1y: 1287.5448
           month_3y: 919.69488
         us-west4:
-          hour: 2.871072
-          month: 1677.125224512
+          hour: 2.624976
+          month: 1533.369230496
           month_1y: 1146.96432
           month_3y: 819.27024
       cpu: 48
@@ -16315,8 +16315,8 @@ compute:
           month_1y: 1716.7264
           month_3y: 1226.25984
         us-west4:
-          hour: 3.828096
-          month: 2236.166966016
+          hour: 3.499968
+          month: 2044.492307328
           month_1y: 1529.28576
           month_3y: 1092.36032
       cpu: 64
@@ -16467,8 +16467,8 @@ compute:
           month_1y: 214.5908
           month_3y: 153.28248
         us-west4:
-          hour: 0.478512
-          month: 279.520870752
+          hour: 0.437496
+          month: 255.561538416
           month_1y: 191.16072
           month_3y: 136.54504
       cpu: 8
@@ -16618,8 +16618,8 @@ compute:
           month_1y: 2145.908
           month_3y: 1532.8248
         us-west4:
-          hour: 4.78512
-          month: 2795.20870752
+          hour: 4.37496
+          month: 2555.61538416
           month_1y: 1911.6072
           month_3y: 1365.4504
       cpu: 80
@@ -16770,8 +16770,8 @@ compute:
           month_1y: 2575.0896
           month_3y: 1839.38976
         us-west4:
-          hour: 5.742144
-          month: 3354.250449024
+          hour: 5.249952
+          month: 3066.738460992
           month_1y: 2293.92864
           month_3y: 1638.54048
       cpu: 96
