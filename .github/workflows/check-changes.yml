@@ -2,6 +2,8 @@ name: "Check GCE Changes"
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '12 2 * * *' # Daily at 02:12
 
 jobs:
   check-changes:
