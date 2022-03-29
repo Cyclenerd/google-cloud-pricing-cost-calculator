@@ -6,10 +6,13 @@
 
 source "config.sh" || exit 9
 
-git config user.name "github-actions[bot]"
-git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
 MY_CHANGES=0
+
+# GitHub Action runner
+if [ -v GITHUB_RUN_ID ]; then
+	git config user.name "github-actions[bot]"
+	git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+fi
 
 # Region
 if ! git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
@@ -64,7 +67,7 @@ if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPES"; then
 fi
 
 # Commit and push
-if [ $MY_CHANGES -ge 1 ]; then
+if [ "$MY_CHANGES" -ge 1 ]; then
 	echo "Commit and push to repo..."
 	git commit -m "GCE changes" || exit 9
 	git push || exit 9
