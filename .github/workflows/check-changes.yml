@@ -1,4 +1,4 @@
-name: "Check GCE changes"
+name: "Check GCE Changes"
 
 on:
   workflow_dispatch:
@@ -18,8 +18,7 @@ jobs:
           GOOGLE_CLOUD_PROJECT_ID: ${{ secrets.GOOGLE_CLOUD_PROJECT_ID }}
         run: |
           echo "$GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY" > "/tmp/service_account_key.json" && \
-          gcloud auth activate-service-account --key-file="/tmp/service_account_key.json" && \
-          gcloud config set project "$GOOGLE_CLOUD_PROJECT_ID"
+          gcloud auth activate-service-account --key-file="/tmp/service_account_key.json" || exit 9
 
       - name: 📥 Google Compute Engine API
         run: |
