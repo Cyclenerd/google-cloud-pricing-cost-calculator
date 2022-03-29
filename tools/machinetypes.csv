@@ -48,6 +48,7 @@ e2-standard-32;32;False;128.00;Efficient Instance, 32 vCPUs, 128 GB RAM;;
 e2-standard-4;4;False;16.00;Efficient Instance, 4 vCPUs, 16 GB RAM;;
 e2-standard-8;8;False;32.00;Efficient Instance, 8 vCPUs, 32 GB RAM;;
 f1-micro;1;True;0.60;1 vCPU (shared physical core) and 0.6 GB RAM;;
+g1-small;1;True;1.70;1 vCPU (shared physical core) and 1.7 GB RAM;;
 m1-megamem-96;96;False;1433.60;96 vCPUs, 1.4 TB RAM;;
 m1-ultramem-160;160;False;3844.00;160 vCPUs, 3844 GB RAM;;
 m1-ultramem-40;40;False;961.00;40 vCPUs, 961 GB RAM;;
