@@ -10,6 +10,7 @@ MY_CHANGES=0
 
 # GitHub Action runner
 if [ -v GITHUB_RUN_ID ]; then
+	echo "» Set git username and email"
 	git config user.name "github-actions[bot]"
 	git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 fi
