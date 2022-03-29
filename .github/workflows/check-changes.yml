@@ -1,0 +1,35 @@
+name: "Check GCE changes"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-changes:
+    name: Check Google Compute Engine API changes
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Google Cloud SDK
+        env:
+          GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY }}
+          GOOGLE_CLOUD_PROJECT_ID: ${{ secrets.GOOGLE_CLOUD_PROJECT_ID }}
+        run: |
+          echo "$GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY" > "/tmp/service_account_key.json" && \
+          gcloud auth activate-service-account --key-file="/tmp/service_account_key.json" && \
+          gcloud config set project "$GOOGLE_CLOUD_PROJECT_ID"
+
+      - name: 📥 Google Compute Engine API
+        run: |
+          cd tools || exit 9
+          bash regions.sh      && \
+          bash zones.sh        && \
+          bash disktypes.sh    && \
+          bash machinetypes.sh || exit 9
+
+      - name: 🌡️ Check changes
+        run: |
+          cd tools || exit 9
+          bash check.sh || exit 9

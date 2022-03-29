@@ -12,7 +12,7 @@ git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 MY_CHANGES=0
 
 # Region
-if git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
+if ! git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
 	echo "'$CSV_GCLOUD_REGIONS' changed!"
 	echo "» Create a new incident to notify $GITHUB_ISSUE_ASSIGNEE."
 	git diff "$CSV_GCLOUD_REGIONS" | gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Regions" --body-file -
@@ -21,7 +21,7 @@ if git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
 	git add "$CSV_GCLOUD_REGIONS"
 	((MY_CHANGES++));
 fi
-if git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_REGION"; then
+if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_REGION"; then
 	echo "'$CSV_GCLOUD_MACHINE_TYPE_REGION' changed!"
 	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_REGION'."
 	git diff "$CSV_GCLOUD_MACHINE_TYPE_REGION" | gh issue comment "$GITHUB_ISSUE_ID_REGION" --body-file -
@@ -30,14 +30,14 @@ if git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_REGION"; then
 fi
 
 # Zones
-if git diff --exit-code "$CSV_GCLOUD_ZONES"; then
+if ! git diff --exit-code "$CSV_GCLOUD_ZONES"; then
 	echo "'$CSV_GCLOUD_ZONES' changed!"
 	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_ZONE'."
 	git diff "$CSV_GCLOUD_ZONES" | gh issue comment "$GITHUB_ISSUE_ID_ZONE" --body-file -
 	git add "$CSV_GCLOUD_ZONES"
 	((MY_CHANGES++));
 fi
-if git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_ZONE"; then
+if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_ZONE"; then
 	echo "'$CSV_GCLOUD_MACHINE_TYPE_ZONE' changed!"
 	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_ZONE'."
 	git diff "$CSV_GCLOUD_MACHINE_TYPE_ZONE" | gh issue comment "$GITHUB_ISSUE_ID_ZONE" --body-file -
@@ -46,7 +46,7 @@ if git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_ZONE"; then
 fi
 
 # Disk types
-if git diff --exit-code "$CSV_GCLOUD_DISK_TYPES"; then
+if ! git diff --exit-code "$CSV_GCLOUD_DISK_TYPES"; then
 	echo "'$CSV_GCLOUD_DISK_TYPES' changed!"
 	echo "»  Create a new incident to notify $GITHUB_ISSUE_ASSIGNEE."
 	git diff "$CSV_GCLOUD_DISK_TYPES" | gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Disk types" --body-file -
@@ -55,7 +55,7 @@ if git diff --exit-code "$CSV_GCLOUD_DISK_TYPES"; then
 fi
 
 # Machine types
-if git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPES"; then
+if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPES"; then
 	echo "'$CSV_GCLOUD_MACHINE_TYPES' changed!"
 	echo "» Create a new incident to notify $GITHUB_ISSUE_ASSIGNEE."
 	git diff "$CSV_GCLOUD_MACHINE_TYPES" | gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Machine types" --body-file -
@@ -65,6 +65,9 @@ fi
 
 # Commit and push
 if [ $MY_CHANGES -ge 1 ]; then
-	git commit -am "GCE changes" || exit 9
+	echo "Commit and push to repo..."
+	git commit -m "GCE changes" || exit 9
 	git push || exit 9
 fi
+
+echo "DONE"
