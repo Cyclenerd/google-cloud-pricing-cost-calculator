@@ -12,7 +12,7 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Google Cloud SDK
+      - name: 🔧 Setup Google Cloud SDK
         env:
           GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY }}
           GOOGLE_CLOUD_PROJECT_ID: ${{ secrets.GOOGLE_CLOUD_PROJECT_ID }}
@@ -30,6 +30,8 @@ jobs:
           bash machinetypes.sh || exit 9
 
       - name: 🌡️ Check changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd tools || exit 9
           bash check.sh || exit 9
