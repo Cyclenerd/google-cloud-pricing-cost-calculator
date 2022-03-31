@@ -6217,6 +6217,7 @@ n2-highcpu-8;8;False;8.00;8 vCPUs 8 GB RAM;;us-west3-c
 n2-highcpu-8;8;False;8.00;8 vCPUs 8 GB RAM;;us-west4-a
 n2-highcpu-8;8;False;8.00;8 vCPUs 8 GB RAM;;us-west4-b
 n2-highcpu-8;8;False;8.00;8 vCPUs 8 GB RAM;;us-west4-c
+n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;asia-northeast1-c
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;asia-southeast1-a
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;asia-southeast1-b
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;asia-southeast1-c
@@ -6224,6 +6225,7 @@ n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west1-b
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west1-c
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west1-d
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west2-b
+n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west2-c
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west3-b
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west4-a
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;europe-west4-b
@@ -6236,6 +6238,7 @@ n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;us-central1-f
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;us-east4-b
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;us-east4-c
 n2-highcpu-96;96;False;96.00;96 vCPUs 96 GB RAM;;us-west1-b
+n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;asia-northeast1-c
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;asia-southeast1-a
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;asia-southeast1-b
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;asia-southeast1-c
@@ -6243,6 +6246,7 @@ n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west1-b
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west1-c
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west1-d
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west2-b
+n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west2-c
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west3-b
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west4-a
 n2-highmem-128;128;False;864.00;128 vCPUs 864 GB RAM;;europe-west4-b
@@ -6605,6 +6609,7 @@ n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;europe-west6-c
 n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;europe-west8-a
 n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;europe-west8-b
 n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;europe-west8-c
+n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;europe-west9-c
 n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;northamerica-northeast1-a
 n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;northamerica-northeast1-b
 n2-highmem-48;48;False;384.00;48 vCPUs 384 GB RAM;;northamerica-northeast1-c
@@ -6798,6 +6803,7 @@ n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;europe-west6-c
 n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;europe-west8-a
 n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;europe-west8-b
 n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;europe-west8-c
+n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;europe-west9-c
 n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;northamerica-northeast1-a
 n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;northamerica-northeast1-b
 n2-highmem-64;64;False;512.00;64 vCPUs 512 GB RAM;;northamerica-northeast1-c
@@ -6893,6 +6899,7 @@ n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;europe-west6-c
 n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;europe-west8-a
 n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;europe-west8-b
 n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;europe-west8-c
+n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;europe-west9-c
 n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;northamerica-northeast1-a
 n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;northamerica-northeast1-b
 n2-highmem-80;80;False;640.00;80 vCPUs 640 GB RAM;;northamerica-northeast1-c
@@ -7029,6 +7036,7 @@ n2-highmem-8;8;False;64.00;8 vCPUs 64 GB RAM;;us-west3-c
 n2-highmem-8;8;False;64.00;8 vCPUs 64 GB RAM;;us-west4-a
 n2-highmem-8;8;False;64.00;8 vCPUs 64 GB RAM;;us-west4-b
 n2-highmem-8;8;False;64.00;8 vCPUs 64 GB RAM;;us-west4-c
+n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;asia-northeast1-c
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;asia-southeast1-a
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;asia-southeast1-b
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;asia-southeast1-c
@@ -7036,6 +7044,7 @@ n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west1-b
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west1-c
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west1-d
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west2-b
+n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west2-c
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west3-b
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west4-a
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;europe-west4-b
@@ -7047,6 +7056,7 @@ n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;us-central1-d
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;us-central1-f
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;us-east4-b
 n2-highmem-96;96;False;768.00;96 vCPUs 768 GB RAM;;us-east4-c
+n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;asia-northeast1-c
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;asia-southeast1-a
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;asia-southeast1-b
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;asia-southeast1-c
@@ -7054,6 +7064,7 @@ n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west1-b
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west1-c
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west1-d
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west2-b
+n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west2-c
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west3-b
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west4-a
 n2-standard-128;128;False;512.00;128 vCPUs 512 GB RAM;;europe-west4-b
@@ -7849,6 +7860,7 @@ n2-standard-8;8;False;32.00;8 vCPUs 32 GB RAM;;us-west3-c
 n2-standard-8;8;False;32.00;8 vCPUs 32 GB RAM;;us-west4-a
 n2-standard-8;8;False;32.00;8 vCPUs 32 GB RAM;;us-west4-b
 n2-standard-8;8;False;32.00;8 vCPUs 32 GB RAM;;us-west4-c
+n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;asia-northeast1-c
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;asia-southeast1-a
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;asia-southeast1-b
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;asia-southeast1-c
@@ -7856,6 +7868,7 @@ n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west1-b
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west1-c
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west1-d
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west2-b
+n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west2-c
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west3-b
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west4-a
 n2-standard-96;96;False;384.00;96 vCPUs 384 GB RAM;;europe-west4-b
