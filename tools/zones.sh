@@ -11,6 +11,6 @@ echo "Get zones... Please wait..."
 echo "NAME;REGION;STATUS;NEXT_MAINTENANCE;TURNDOWN_DATE" > "$CSV_GCLOUD_ZONES" || exit 9
 gcloud compute zones list \
 	--quiet \
-	--format="csv[no-heading,separator=';'](NAME,REGION,STATUS,NEXT_MAINTENANCE,TURNDOWN_DATE)" >> "$CSV_GCLOUD_ZONES" || exit 9
+	--format="csv[no-heading,separator=';'](NAME,REGION,STATUS,NEXT_MAINTENANCE,TURNDOWN_DATE)" | sort -u >> "$CSV_GCLOUD_ZONES" || exit 9
 
 echo "DONE"
