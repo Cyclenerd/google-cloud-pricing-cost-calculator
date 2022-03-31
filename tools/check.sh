@@ -30,11 +30,25 @@ if ! git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
 		echo "Deleted:"
 		git diff --color=always "$CSV_GCLOUD_REGIONS" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
 	} > "$MY_GITHUB_REGION_BODY"
+	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_REGION'."
+	gh issue comment "$GITHUB_ISSUE_ID_REGION" -F "$MY_GITHUB_REGION_BODY"
 
+	{
+		echo ""
+		echo "Todo:"
+		echo "- [ ] Check changes"
+		echo "- [ ] Edit title of this issue"
+		echo "- [ ] Run [build/skus.pl](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/tree/master/build#workflow) workflow to export SKUs from the Google Cloud Billing API"
+		echo "- [ ] Check if region is present in 'build/skus.csv'"
+		echo "- [ ] Add or remove the region in [build/gcp.yml](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/gcp.yml)"
+		echo "- [ ] Create a test for region in [t/test.sh](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/t/test.sh)"
+		echo "- [ ] Test cost calculation with new region"
+		echo "- [ ] Build new pricing information file 'pricing.yml'"
+		echo "- [ ] Run [Open Graph](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/opengraph.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
+		echo "- [ ] Run [Build](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/build.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
+	} >> "$MY_GITHUB_REGION_BODY"
 	echo "» Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
 	gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Regions" -F "$MY_GITHUB_REGION_BODY"
-	echo "» Also create a new comment to incident '$GITHUB_ISSUE_ID_REGION'."
-	gh issue comment "$GITHUB_ISSUE_ID_REGION" -F "$MY_GITHUB_REGION_BODY"
 
 	git add "$CSV_GCLOUD_REGIONS"
 	((MY_CHANGES++));
@@ -111,8 +125,20 @@ if ! git diff --exit-code "$CSV_GCLOUD_DISK_TYPES"; then
 		echo ""
 		echo "Deleted:"
 		git diff --color=always "$CSV_GCLOUD_MACHINE_TYPES" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
+		echo ""
+		echo "Todo:"
+		echo "- [ ] Check changes"
+		echo "- [ ] Edit title of this issue"
+		echo "- [ ] Run [build/skus.pl](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/tree/master/build#workflow) workflow to export SKUs from the Google Cloud Billing API"
+		echo "- [ ] Check if disk type is present in 'build/skus.csv'"
+		echo "- [ ] Add or remove mapping in [build/mapping.csv](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/mapping.csv)"
+		echo "- [ ] Add or remove the disk type in [build/gcp.yml](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/gcp.yml)"
+		echo "- [ ] Add or remove the disk type with mapping in [build/pricing.pl](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/pricing.pl)"
+		echo "- [ ] Create a test for disk type in [t/test.sh](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/t/test.sh)"
+		echo "- [ ] Test cost calculation with disk type"
+		echo "- [ ] Build new pricing information file 'pricing.yml'"
 	} > "$MY_GITHUB_DISK_TYPES_BODY"
-
+	
 	echo "»  Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
 	gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Disk types" -F "$MY_GITHUB_DISK_TYPES_BODY"
 
@@ -132,6 +158,21 @@ if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPES"; then
 		echo ""
 		echo "Deleted:"
 		git diff --color=always "$CSV_GCLOUD_MACHINE_TYPES" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
+		echo ""
+		echo "Todo:"
+		echo "- [ ] Check changes"
+		echo "- [ ] Edit title of this issue"
+		echo "- [ ] Run [build/skus.pl](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/tree/master/build#workflow) workflow to export SKUs from the Google Cloud Billing API"
+		echo "- [ ] Check if machine type is present in 'build/skus.csv'"
+		echo "- [ ] Add or remove mapping in [build/mapping.csv](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/mapping.csv)"
+		echo "- [ ] Add or remove the machine type in [build/gcp.yml](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/gcp.yml)"
+		echo "- [ ] Add or remove the machine type with mapping in [build/pricing.pl](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/pricing.pl)"
+		echo "- [ ] Check if machine type gets SUD and edit [build/pricing.pl](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/build/pricing.pl)"
+		echo "- [ ] Create a test for machine type in [t/test.sh](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/t/test.sh)"
+		echo "- [ ] Test cost calculation with machine type"
+		echo "- [ ] Build new pricing information file 'pricing.yml'"
+		echo "- [ ] Run [Open Graph](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/opengraph.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
+		echo "- [ ] Run [Build](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/build.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 	} > "$MY_GITHUB_MACHINE_TYPES_BODY"
 
 	echo "» Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
