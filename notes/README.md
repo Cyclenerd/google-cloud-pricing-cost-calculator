@@ -11,6 +11,8 @@ A few notes that help in understanding the API and cost information.
 
 Helpful documentation:
 
+* Compute Engine release notes
+	* <https://cloud.google.com/compute/docs/release-notes>
 * View and download prices for Google's cloud services
 	* <https://cloud.google.com/billing/docs/how-to/pricing-table>
 * Good help for pricing fields
