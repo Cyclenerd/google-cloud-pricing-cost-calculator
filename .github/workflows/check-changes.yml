@@ -26,10 +26,11 @@ jobs:
       - name: 📥 Google Compute Engine API
         run: |
           cd tools || exit 9
-          bash regions.sh      && \
-          bash zones.sh        && \
-          bash disktypes.sh    && \
-          bash machinetypes.sh || exit 9
+          bash regions.sh          && \
+          bash zones.sh            && \
+          bash disktypes.sh        && \
+          bash acceleratortypes.sh && \
+          bash machinetypes.sh     || exit 9
 
       - name: 🌡️ Check changes
         env:
