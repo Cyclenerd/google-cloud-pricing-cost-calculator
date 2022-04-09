@@ -14,6 +14,9 @@ usage/customers/**
 # Test
 !t/*.yml
 # Tools
+!tools/acceleratortypezone.csv
+!tools/acceleratortyperegion.csv
+!tools/acceleratortypes.csv
 !tools/disktypes.csv
 !tools/machinetyperegion.csv
 !tools/machinetypes.csv

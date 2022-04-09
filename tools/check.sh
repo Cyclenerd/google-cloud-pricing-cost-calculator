@@ -72,6 +72,25 @@ if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_REGION"; then
 	git add "$CSV_GCLOUD_MACHINE_TYPE_REGION"
 	((MY_CHANGES++));
 fi
+MY_GITHUB_ACCELERATOR_TYPE_REGION_BODY="/tmp/acceleratortyperegion.txt"
+if ! git diff --exit-code "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION"; then
+	echo "'$CSV_GCLOUD_ACCELERATOR_TYPE_REGION' changed!"
+	{
+		echo "Accelerator type in region '$CSV_GCLOUD_ACCELERATOR_TYPE_REGION' changed"
+		echo ""
+		echo "Added:"
+		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION" | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/'
+		echo ""
+		echo "Deleted:"
+		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
+	} > "$MY_GITHUB_ACCELERATOR_TYPE_REGION_BODY"
+
+	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_ZONE'."
+	gh issue comment "$GITHUB_ISSUE_ID_ZONE" -F "$MY_GITHUB_ACCELERATOR_TYPE_REGION_BODY"
+
+	git add "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION"
+	((MY_CHANGES++));
+fi
 
 # Zones
 MY_GITHUB_ZONES_BODY="/tmp/zones.txt"
@@ -110,6 +129,25 @@ if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_ZONE"; then
 	gh issue comment "$GITHUB_ISSUE_ID_ZONE" -F "$MY_GITHUB_MACHINE_TYPE_ZONE_BODY"
 
 	git add "$CSV_GCLOUD_MACHINE_TYPE_ZONE"
+	((MY_CHANGES++));
+fi
+MY_GITHUB_ACCELERATOR_TYPE_ZONE_BODY="/tmp/acceleratortypezone.txt"
+if ! git diff --exit-code "$CSV_GCLOUD_ACCELERATOR_TYPE_ZONE"; then
+	echo "'$CSV_GCLOUD_ACCELERATOR_TYPE_ZONE' changed!"
+	{
+		echo "Accelerator type in zone '$CSV_GCLOUD_ACCELERATOR_TYPE_ZONE' changed"
+		echo ""
+		echo "Added:"
+		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPE_ZONE" | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/'
+		echo ""
+		echo "Deleted:"
+		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPE_ZONE" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
+	} > "$MY_GITHUB_ACCELERATOR_TYPE_ZONE_BODY"
+
+	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_ZONE'."
+	gh issue comment "$GITHUB_ISSUE_ID_ZONE" -F "$MY_GITHUB_ACCELERATOR_TYPE_ZONE_BODY"
+
+	git add "$CSV_GCLOUD_ACCELERATOR_TYPE_ZONE"
 	((MY_CHANGES++));
 fi
 
@@ -179,6 +217,27 @@ if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPES"; then
 	gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Machine types" -F "$MY_GITHUB_MACHINE_TYPES_BODY"
 
 	git add "$CSV_GCLOUD_MACHINE_TYPES"
+	((MY_CHANGES++));
+fi
+
+# Accelerator types
+MY_GITHUB_ACCELERATOR_TYPES_BODY="/tmp/acceleratortypes.txt"
+if ! git diff --exit-code "$CSV_GCLOUD_ACCELERATOR_TYPES"; then
+	echo "'$CSV_GCLOUD_ACCELERATOR_TYPES' changed!"
+	{
+		echo "Accelerator types '$CSV_GCLOUD_ACCELERATOR_TYPES' changed"
+		echo ""
+		echo "Added:"
+		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPES" | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/'
+		echo ""
+		echo "Deleted:"
+		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPES" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
+	} > "$MY_GITHUB_ACCELERATOR_TYPES_BODY"
+
+	echo "» Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
+	gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Accelerator types" -F "$CSV_GCLOUD_ACCELERATOR_TYPES"
+
+	git add "$CSV_GCLOUD_ACCELERATOR_TYPES"
 	((MY_CHANGES++));
 fi
 
