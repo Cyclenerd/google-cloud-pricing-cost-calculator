@@ -67,3 +67,15 @@ bash disktypes.sh
 The disk types are needed to calculate the costs for the disk type.
 The disk types are required in the `gcp.yml` file in the build folder.
 New disk types must be added manually to the `gcp.yml` file.
+
+## Export GCE accelerator types (`acceleratortypes.sh`)
+
+Google Cloud Documentation:
+
+* [GPU platforms](https://cloud.google.com/compute/docs/gpus/)
+* [gcloud compute accelerator-types](https://cloud.google.com/sdk/gcloud/reference/compute/accelerator-types/)
+
+Export all Google Compute Engine accelerator types to a CSV file:
+```shell
+bash acceleratortypes.sh
+```
