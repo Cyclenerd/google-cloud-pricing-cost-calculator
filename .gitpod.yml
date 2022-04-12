@@ -1,0 +1,16 @@
+tasks:
+  - init: |
+      sudo apt-get install -y apt-transport-https ca-certificates gnupg
+      echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+      curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/cloud.google.gpg
+      sudo apt-get update -y
+      sudo apt-get install -y \
+        google-cloud-cli      \
+        libapp-options-perl   \
+        libwww-perl           \
+        libjson-xs-perl       \
+        libyaml-libyaml-perl  \
+        libdbd-csv-perl       \
+        libdbd-sqlite3-perl   \
+        libpar-packer-perl
+    command: perl gcosts.pl --version

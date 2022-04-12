@@ -164,6 +164,8 @@ alias gcosts='/your-pathname/gcosts -pricing=/your-pathname/pricing.yml'
 If you want to modify the Perl scripts or prefer to run the uncomplicated Perl scripts (`gcosts.pl`, `skus.pl`, `mapping.pl`, `pricing.pl`) and create the price information yourself,
 the following requirements are needed.
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator)
+
 Perl 5 is already installed on many Linux (Debian/Ubuntu, RedHat, SUSE) and UNIX (macOS, FreeBSD) operating systems.
 For MS Windows you can download and install [Strawberry Perl](https://strawberryperl.com/).
 

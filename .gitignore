@@ -27,3 +27,5 @@ usage/customers/**
 !/usage/example.yml
 # GitHub Actions
 !.github/workflows/*.yml
+# Gitpod
+!/.gitpod.yml
