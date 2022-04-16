@@ -1,5 +1,6 @@
 NAME;CPUS;SHARED_CPU;MEMORY_GB;DEPRECATED;ZONE
 a2-highgpu-1g;12;False;85.00;;asia-northeast1
+a2-highgpu-1g;12;False;85.00;;asia-northeast3
 a2-highgpu-1g;12;False;85.00;;asia-southeast1
 a2-highgpu-1g;12;False;85.00;;europe-west4
 a2-highgpu-1g;12;False;85.00;;us-central1
@@ -7,6 +8,7 @@ a2-highgpu-1g;12;False;85.00;;us-east1
 a2-highgpu-1g;12;False;85.00;;us-west1
 a2-highgpu-1g;12;False;85.00;;us-west4
 a2-highgpu-2g;24;False;170.00;;asia-northeast1
+a2-highgpu-2g;24;False;170.00;;asia-northeast3
 a2-highgpu-2g;24;False;170.00;;asia-southeast1
 a2-highgpu-2g;24;False;170.00;;europe-west4
 a2-highgpu-2g;24;False;170.00;;us-central1
@@ -14,6 +16,7 @@ a2-highgpu-2g;24;False;170.00;;us-east1
 a2-highgpu-2g;24;False;170.00;;us-west1
 a2-highgpu-2g;24;False;170.00;;us-west4
 a2-highgpu-4g;48;False;340.00;;asia-northeast1
+a2-highgpu-4g;48;False;340.00;;asia-northeast3
 a2-highgpu-4g;48;False;340.00;;asia-southeast1
 a2-highgpu-4g;48;False;340.00;;europe-west4
 a2-highgpu-4g;48;False;340.00;;us-central1
@@ -21,6 +24,7 @@ a2-highgpu-4g;48;False;340.00;;us-east1
 a2-highgpu-4g;48;False;340.00;;us-west1
 a2-highgpu-4g;48;False;340.00;;us-west4
 a2-highgpu-8g;96;False;680.00;;asia-northeast1
+a2-highgpu-8g;96;False;680.00;;asia-northeast3
 a2-highgpu-8g;96;False;680.00;;asia-southeast1
 a2-highgpu-8g;96;False;680.00;;europe-west4
 a2-highgpu-8g;96;False;680.00;;us-central1
