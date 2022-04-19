@@ -125,6 +125,11 @@ Generate the YAML file with the Google Cloud Platform pricing informations for a
 perl pricing.pl -sku="skus.csv"
 ```
 
+Save warning and erros in file `erros.log`:
+```shell
+perl pricing.pl -sku="skus.csv" 2> erros.log
+```
+
 Generate pricing informations only for region `europe-west4` with mapping details:
 ```shell
 perl pricing.pl -sku="skus.csv" \
