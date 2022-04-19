@@ -721,8 +721,9 @@ foreach my $region (@regions) {
 			$costs_with_sustained_use_discount_for_upgrade_100 += ($upgrade_costs * $hours_discount) * $sustained_use_discount{$usage_level};
 		}
 
+		my $costs_month = $costs_with_sustained_use_discount_100+$costs_with_sustained_use_discount_for_upgrade_100;
 		&add_gcp_compute_instance_cost('hour', $machine, $region, $costs+$upgrade_costs);
-		&add_gcp_compute_instance_cost('month', $machine, $region, $costs_with_sustained_use_discount_100+$costs_with_sustained_use_discount_for_upgrade_100);
+		&add_gcp_compute_instance_cost('month', $machine, $region, $costs_month);
 
 		my $costs_1y = 0;
 		print "Check 1 Year Commitment:\n";
@@ -761,6 +762,11 @@ foreach my $region (@regions) {
 			}
 		}
 		my $costs_month_1y = $costs_1y*$hours_month;
+		# No price for commitment found (i.e. NANOS = 0), use price per month (with SUD)
+		if ($costs_month_1y <= 0.0001) {
+			warn "WARNING: 1Y CUD price is '$costs_month_1y'. Price per month used '$costs_month' for mapping '$mapping' in region '$region'!\n";
+			$costs_month_1y = $costs_month;
+		}
 		&add_gcp_compute_instance_cost('month_1y', $machine, $region, $costs_month_1y+$costs_with_sustained_use_discount_for_upgrade_100);
 
 		my $costs_3y = 0;
@@ -800,6 +806,11 @@ foreach my $region (@regions) {
 			}
 		}
 		my $costs_month_3y = $costs_3y*$hours_month;
+		# No price for commitment found, use price per month (with CUD)
+		if ($costs_month_3y <= 0.0001) {
+			warn "WARNING: 3Y CUD price is '$costs_month_1y'. Price 1Y CUD used '$costs_month_1y' for mapping '$mapping' in region '$region'!\n";
+			$costs_month_3y = $costs_month_1y;
+		}
 		&add_gcp_compute_instance_cost('month_3y', $machine, $region, $costs_month_3y+$costs_with_sustained_use_discount_for_upgrade_100);
 	}
 }
