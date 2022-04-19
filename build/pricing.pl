@@ -307,7 +307,7 @@ foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 		}
 		$sth->finish;
 		unless ($found) {
-			warn "WARNING: '$mapping' not found for region '$region'!\n";
+			warn "WARNING: '$mapping' not found in region '$region'!\n";
 		}
 	}
 }
@@ -421,7 +421,7 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 			}
 			$sth->finish;
 		} else {
-			warn "WARNING: '$mapping' not found for region '$region'!\n";
+			warn "WARNING: '$mapping' not found in region '$region'!\n";
 		}
 	}
 }
@@ -669,7 +669,7 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found for region '$region'!\n";
+				warn "WARNING: '$mapping' not found in region '$region'!\n";
 			}
 		}
 		my $upgrade_costs = 0;
@@ -704,7 +704,7 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found for region '$region'!\n";
+				warn "WARNING: '$mapping' not found in region '$region'!\n";
 			}
 		}
 		# Calculate sustained use discount
@@ -758,7 +758,7 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found for region '$region'!\n";
+				warn "WARNING: '$mapping' not found in region '$region'!\n";
 			}
 		}
 		my $costs_month_1y = $costs_1y*$hours_month;
@@ -802,7 +802,7 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found for region '$region'!\n";
+				warn "WARNING: '$mapping' not found in region '$region'!\n";
 			}
 		}
 		my $costs_month_3y = $costs_3y*$hours_month;
@@ -932,7 +932,7 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 			&add_gcp_compute_license_cost('month', $machine, $os, $cost*$hours_month);
 			&add_gcp_compute_license_details($machine, $os, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 		} else {
-			die "ERROR: '$mapping' not found!\n";
+			die "ERROR: '$mapping' not found in region '$region'!\n";
 		}
 		$sth->finish;
 		print "Check 1 Year Commitment:\n";
@@ -1163,7 +1163,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_ip_vm_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_ip_vm_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# No charge for static and ephemeral IP addresses attached to forwarding rules, used by
@@ -1181,7 +1181,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_vpn_tunnel_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_vpn_tunnel_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 
@@ -1200,7 +1200,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_nat_gateway_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
 		# Not in all regions. I.e.: Not in asia-southeast2, northamerica-northeast1, northamerica-northeast2, us-west4
-		warn "WARNING: '$mapping' not found!\n";
+		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# NAT traffic
@@ -1214,7 +1214,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_nat_gateway_data_cost('month', $region, $cost);
 		&add_gcp_compute_nat_gateway_data_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 
@@ -1229,7 +1229,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_lb_rule_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_lb_rule_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# Load Balancing: Forwarding Rule Additional Service Charge
@@ -1243,7 +1243,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_lb_rule_add_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_lb_rule_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# Load Balancing: Network Load Balancing: Data Processing Charge
@@ -1256,7 +1256,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_lb_data_add_cost('month', $region, $cost);
 		&add_gcp_compute_lb_data_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 
@@ -1287,7 +1287,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_egress_internet_add_cost('10n', $region, $cost_10n);
 		&add_gcp_compute_egress_internet_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# Network (Egress) China Destinations (excluding Hong Kong)
@@ -1311,7 +1311,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_egress_internet_china_add_cost('10n', $region, $cost_10n);
 		&add_gcp_compute_egress_internet_china_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# Network (Egress) Australia Destinations
@@ -1339,7 +1339,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_egress_internet_australia_add_cost('10n', $region, $cost_10n);
 		&add_gcp_compute_egress_internet_australia_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found!\n";
+		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 }
