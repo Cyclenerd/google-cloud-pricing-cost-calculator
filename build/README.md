@@ -135,7 +135,6 @@ perl pricing.pl -sku="skus.csv" \
 
 ## Special curls
 
-* Region `europe-west6` (Zurich) has no compute optimized instances.
 * Region `us-east4` is called 'Northern Virginia' and 'Virginia' in SKU descriptions.
   Therefore, there are duplicate entries. I read the first one.
 * Region `asia-northeast1` is sometimes called 'Tokyo' and 'Japan' with different prices. I use the SKUs with Tokyo in the name:

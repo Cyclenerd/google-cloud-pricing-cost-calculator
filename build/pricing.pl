@@ -458,11 +458,6 @@ foreach my $region (@regions) {
 		print "Machine: $machine\n";
 		print "Type: $type\n";
 
-		# 2022/02/24
-		# Skip compute optimized instances running in Zurich
-		# Price is 0: https://cloud.google.com/skus/?currency=USD&filter=AF8B-8E84-6A88
-		next if ($region eq 'europe-west6' && $type eq 'c2');
-
 		# Sustained Use Discount
 		# https://cloud.google.com/compute/docs/sustained-use-discounts
 		my %sustained_use_discount = (
