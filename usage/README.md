@@ -151,6 +151,16 @@ Available disk types `type`:
 
 Regional persistent disk = Replication of data between two zones in the same region.
 
+Google Cloud API names:
+
+| gcloud      | gcosts   |
+|-------------|----------|
+| local-ssd   | local    |
+| pd-balanced | balanced |
+| pd-extreme  | extreme  |
+| pd-ssd      | ssd      |
+| pd-standard | hdd      |
+
 You can create snapshots of persistent disks to protect against data loss due to user error.
 Snapshots are incremental, and take only minutes to create even if you snapshot disks that are attached to running instances.
 Snapshots can be region or multi-region.

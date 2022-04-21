@@ -175,6 +175,9 @@ if ! git diff --exit-code "$CSV_GCLOUD_DISK_TYPES"; then
 		echo "- [ ] Create a test for disk type in [t/test.sh](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/t/test.sh)"
 		echo "- [ ] Test cost calculation with disk type"
 		echo "- [ ] Build new pricing information file 'pricing.yml'"
+		echo "- [ ] Update mapping in usage [README](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/tree/master/usage#-compute-engine-disks)"
+		echo "- [ ] Edit mapping in [06_add_costs.pl](https://github.com/Cyclenerd/google-cloud-compute-machine-types/blob/master/build/06_add_costs.pl) script in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
+		echo "- [ ] Run [Build](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/build.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 	} > "$MY_GITHUB_DISK_TYPES_BODY"
 	
 	echo "»  Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
