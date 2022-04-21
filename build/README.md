@@ -79,6 +79,12 @@ Alternatively, the API key can be specified as environment variable `API_KEY`:
 export API_KEY=YOUR-CLOUD-BILLING-API-KEY
 ```
 
+Run the script `skus.sh` or each step separately:
+
+```shell
+bash skus.sh
+```
+
 [Compute Engine](https://cloud.google.com/compute/):
 ```shell
 perl skus.pl -csv="skus_compute.csv" -id="6F81-5844-456A"
