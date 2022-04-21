@@ -12,6 +12,7 @@ CSV_GCLOUD_ACCELERATOR_TYPE_ZONE="acceleratortypezone.csv"
 CSV_GCLOUD_ACCELERATOR_TYPE_REGION="acceleratortyperegion.csv"
 CSV_GCLOUD_ACCELERATOR_TYPES="acceleratortypes.csv"
 CSV_GCLOUD_IMAGES="images.csv"
+CSV_GCLOUD_COMMUNITY_IMAGES="imagescommunity.csv"
 
 GITHUB_ISSUE_ASSIGNEE="Cyclenerd"
 GITHUB_ISSUE_LABEL="new"
