@@ -764,7 +764,9 @@ foreach my $region (@regions) {
 		my $costs_month_1y = $costs_1y*$hours_month;
 		# No price for commitment found (i.e. NANOS = 0), use price per month (with SUD)
 		if ($costs_month_1y <= 0.0001) {
-			warn "WARNING: 1Y CUD price is '$costs_month_1y'. Price per month used '$costs_month' for machine '$machine' in region '$region'!\n";
+			if ($machine ne 'g1-small' && $machine ne 'f1-micro') {
+				warn "WARNING: 1Y CUD price is '$costs_month_1y'. Price per month used '$costs_month' for machine '$machine' in region '$region'!\n";
+			}
 			$costs_month_1y = $costs_month;
 		}
 		&add_gcp_compute_instance_cost('month_1y', $machine, $region, $costs_month_1y+$costs_with_sustained_use_discount_for_upgrade_100);
@@ -808,7 +810,9 @@ foreach my $region (@regions) {
 		my $costs_month_3y = $costs_3y*$hours_month;
 		# No price for commitment found, use price per month (with CUD)
 		if ($costs_month_3y <= 0.0001) {
-			warn "WARNING: 3Y CUD price is '$costs_month_1y'. Price 1Y CUD used '$costs_month_1y' for machine '$machine' in region '$region'!\n";
+			if ($machine ne 'g1-small' && $machine ne 'f1-micro') {
+				warn "WARNING: 3Y CUD price is '$costs_month_1y'. Price 1Y CUD used '$costs_month_1y' for machine '$machine' in region '$region'!\n";
+			}
 			$costs_month_3y = $costs_month_1y;
 		}
 		&add_gcp_compute_instance_cost('month_3y', $machine, $region, $costs_month_3y+$costs_with_sustained_use_discount_for_upgrade_100);
