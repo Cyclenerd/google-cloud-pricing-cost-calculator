@@ -22,12 +22,6 @@ gcloud compute images list \
 	--no-standard-images \
 	--quiet \
 	--format="csv[no-heading,separator=';'](NAME,description,diskSizeGb,PROJECT,FAMILY,creationTimestamp,DEPRECATED,STATUS)" >> "$CSV_GCLOUD_COMMUNITY_IMAGES" || exit 9
-# https://cloud.google.com/compute/docs/images#fedora_cloud
-gcloud compute images list \
-	--project fedora-cloud \
-	--no-standard-images \
-	--quiet \
-	--format="csv[no-heading,separator=';'](NAME,description,diskSizeGb,PROJECT,FAMILY,creationTimestamp,DEPRECATED,STATUS)" >> "$CSV_GCLOUD_COMMUNITY_IMAGES" || exit 9
 # https://cloud.google.com/compute/docs/images#freebsd
 gcloud compute images list \
 	--project freebsd-org-cloud-dev \

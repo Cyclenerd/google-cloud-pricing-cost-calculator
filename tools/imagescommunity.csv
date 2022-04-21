@@ -1,7 +1,5 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;CREATION;DEPRECATED;STATUS
 almalinux-8-v20220406;AlmaLinux, AlmaLinux, 8, x86_64 built on 20220406;20;almalinux-cloud;almalinux-8;2022-04-06T13:05:08.220-07:00;;READY
-fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0, x86_64 published on 2021-04-27;10;fedora-cloud;fedora-cloud-34;2021-05-06T09:33:30.114-07:00;;READY
-fedora-cloud-base-gcp-35-1-2-x86-64;Fedora, Fedora Cloud Base 35, 35-20211026.0, x86_64 published on 2021-11-02;10;fedora-cloud;fedora-cloud-35;2021-12-21T13:12:17.145-08:00;;READY
 freebsd-11-3-stable-amd64-v20190801;;22;freebsd-org-cloud-dev;freebsd-11-3-snap;2019-07-31T20:58:27.473-07:00;;READY
 freebsd-11-3-stable-amd64-v20191212;;22;freebsd-org-cloud-dev;freebsd-11-3-snap;2019-12-11T21:49:20.364-08:00;;READY
 freebsd-11-3-stable-amd64-v20191219;;22;freebsd-org-cloud-dev;freebsd-11-3-snap;2019-12-18T21:49:10.295-08:00;;READY
