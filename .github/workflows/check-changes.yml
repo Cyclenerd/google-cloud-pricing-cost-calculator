@@ -29,6 +29,7 @@ jobs:
           bash regions.sh          && \
           bash zones.sh            && \
           bash disktypes.sh        && \
+          bash images.sh           && \
           bash acceleratortypes.sh && \
           bash machinetypes.sh     || exit 9
 
