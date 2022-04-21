@@ -34,11 +34,5 @@ gcloud compute images list \
 	--no-standard-images \
 	--quiet \
 	--format="csv[no-heading,separator=';'](NAME,description,diskSizeGb,PROJECT,FAMILY,creationTimestamp,DEPRECATED,STATUS)" | sort -u >> "$CSV_GCLOUD_COMMUNITY_IMAGES" || exit 9
-# https://cloud.google.com/compute/docs/images#opensuse
-gcloud compute images list \
-	--project opensuse-cloud \
-	--no-standard-images \
-	--quiet \
-	--format="csv[no-heading,separator=';'](NAME,description,diskSizeGb,PROJECT,FAMILY,creationTimestamp,DEPRECATED,STATUS)" | sort -u >> "$CSV_GCLOUD_COMMUNITY_IMAGES" || exit 9
 
 echo "DONE"
