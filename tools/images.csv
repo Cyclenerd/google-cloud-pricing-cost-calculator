@@ -14,7 +14,7 @@ debian-9-stretch-v20220406;Debian, Debian GNU/Linux, 9 (stretch), amd64 built on
 fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0, x86_64 published on 2021-04-27;10;fedora-cloud;fedora-cloud-34;2021-05-06T09:33:30.114-07:00;;READY
 fedora-cloud-base-gcp-35-1-2-x86-64;Fedora, Fedora Cloud Base 35, 35-20211026.0, x86_64 published on 2021-11-02;10;fedora-cloud;fedora-cloud-35;2021-12-21T13:12:17.145-08:00;;READY
 opensuse-leap-15-2-v20200702;openSUSE, openSUSE Leap, 15.2 x86_64 built on 2020-07-02;10;opensuse-cloud;opensuse-leap;2020-07-02T09:59:57.582-07:00;;READY
-opensuse-leap-15-3-v20220128;openSUSE, openSUSE Leap, 15.3 x86_64 built on 2021-07-08, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;2022-01-28T09:52:16.522-08:00;;READY
+opensuse-leap-15-3-v20220429-x86-64;openSUSE, openSUSE Leap, 15.3 x86_64 built on 20220429, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;2022-04-28T19:05:21.158-07:00;;READY
 rhel-7-v20220406;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20220406, supports Shielded VM features;20;rhel-cloud;rhel-7;2022-04-06T13:05:28.583-07:00;;READY
 rhel-8-v20220406;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20220406, supports Shielded VM features;20;rhel-cloud;rhel-8;2022-04-06T13:05:31.325-07:00;;READY
 rhel-7-6-sap-v20220406;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.6, x86_64 built on 20220406, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-6-sap-ha;2022-04-06T13:05:28.835-07:00;;READY
