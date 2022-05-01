@@ -44,6 +44,7 @@ if ! git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
 		echo "- [ ] Create a test for region in [t/test.sh](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/t/test.sh)"
 		echo "- [ ] Test cost calculation with new region"
 		echo "- [ ] Build new pricing information file 'pricing.yml'"
+		echo "- [ ] Check and edit [clean_up.sql](https://github.com/Cyclenerd/google-cloud-compute-machine-types/blob/master/instances/clean_up.sql) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 		echo "- [ ] Run [Open Graph](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/opengraph.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 		echo "- [ ] Run [Build](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/build.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 	} >> "$MY_GITHUB_REGION_BODY"
