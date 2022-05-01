@@ -105,9 +105,19 @@ if ! git diff --exit-code "$CSV_GCLOUD_ZONES"; then
 		echo "Deleted:"
 		git diff --color=always "$CSV_GCLOUD_ZONES" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
 	} > "$MY_GITHUB_ZONES_BODY"
-
 	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_ZONE'."
 	gh issue comment "$GITHUB_ISSUE_ID_ZONE" -F "$MY_GITHUB_ZONES_BODY"
+
+	{
+		echo ""
+		echo "Todo:"
+		echo "- [ ] Check changes"
+		echo "- [ ] Edit title of this issue"
+		echo "- [ ] Many new zones can be an indication of a new region"
+		echo "- [ ] Wait until the region appears on the regions list or adjust everything already for the new region"
+	} >> "$MY_GITHUB_ZONES_BODY"
+	echo "» Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
+	gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Zones" -F "$MY_GITHUB_ZONES_BODY"
 
 	git add "$CSV_GCLOUD_ZONES"
 	((MY_CHANGES++));
