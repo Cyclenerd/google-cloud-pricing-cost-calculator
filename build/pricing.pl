@@ -1218,7 +1218,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_nat_gateway_data_cost('month', $region, $cost);
 		&add_gcp_compute_nat_gateway_data_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 
@@ -1233,7 +1233,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_lb_rule_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_lb_rule_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# Load Balancing: Forwarding Rule Additional Service Charge
@@ -1247,7 +1247,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_lb_rule_add_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_lb_rule_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# Load Balancing: Network Load Balancing: Data Processing Charge
@@ -1260,7 +1260,7 @@ foreach my $region (@regions) {
 		&add_gcp_compute_lb_data_add_cost('month', $region, $cost);
 		&add_gcp_compute_lb_data_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 
