@@ -108,7 +108,10 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 	my $url = "$api_url"."?key=$api_key"."&pageSize=$api_page_size"."&pageToken=$api_next_page_token";
 	my $api_request  = GET "$url";
 	print "$i.\n";
-	warn "WARNING: Last page\n" if $i == $api_max_next_page;
+	if ($i == $api_max_next_page) {
+		print "ERROR: Last page '$i' is max page '$api_max_next_page'\n";
+		die   "ERROR: Last page '$i' is max page '$api_max_next_page'\n";
+	}
 	print "» API URL: $url\n" if $debug;
 	my $api_response = $ua->request($api_request);
 	my $api_status   = $api_response->status_line     || "";
