@@ -59,7 +59,7 @@ my $api_key = $App::options{key};
 my $service_id = $App::options{id};
 my $api_url = "https://cloudbilling.googleapis.com/v1/services/$service_id/skus";
 my $api_page_size       = 500;
-my $api_max_next_page   = 25;
+my $api_max_next_page   = 50;
 my $api_next_page_token = '';
 
 # CSV export
