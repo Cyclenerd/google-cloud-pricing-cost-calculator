@@ -63,6 +63,8 @@ region:
   us-east4:
     # SKUs with Northern Virginia and Virginia
     location: Northern Virginia
+  us-east5:
+    location: Columbus
   us-west1:
     location: Oregon
   us-west2:
