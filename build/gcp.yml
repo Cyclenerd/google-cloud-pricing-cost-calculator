@@ -73,6 +73,8 @@ region:
     location: Salt Lake City
   us-west4:
     location: Las Vegas
+  us-south1:
+    location: Dallas
 
 # https://cloud.google.com/storage/docs/locations#location-dr
 dual-region:

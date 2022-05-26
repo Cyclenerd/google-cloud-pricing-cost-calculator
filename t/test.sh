@@ -308,6 +308,8 @@ MY_CHECKS=(
 	'us-west2;vm;n2-standard-8;272'    # Google Cloud Pricing Calculator: $272.57
 	'us-west3;vm;n2-standard-8;272'    # Google Cloud Pricing Calculator: $272.57
 	'us-west4;vm;n2-standard-8;255'    # Google Cloud Pricing Calculator: $279.52, Price List: $255.5 (2022-03-29)
+	'us-south1;vm;n2-standard-8;267'   # Google Cloud Pricing Calculator: $267.70
+
 	# Europe
 	'europe-central2;vm;n2-standard-8;292' # Google Cloud Pricing Calculator: $292.36
 	'europe-north1;vm;n2-standard-8;249'   # Google Cloud Pricing Calculator: $249.84
