@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu May 26 04:21:22 2022
-  timestamp: 1653538882
+  generated: Thu May 26 17:07:25 2022
+  timestamp: 1653584845
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -169,6 +169,11 @@ compute:
           month: 2681.57105
           month_1y: 1689.37111
           month_3y: 938.5672415
+        us-south1:
+          hour: 4.33459386
+          month: 3164.2535178
+          month_1y: 1993.457793
+          month_3y: 1993.457793
         us-west1:
           hour: 3.673385
           month: 2681.57105
@@ -341,6 +346,11 @@ compute:
           month: 5363.1421
           month_1y: 3378.74222
           month_3y: 1877.134483
+        us-south1:
+          hour: 8.66918772
+          month: 6328.5070356
+          month_1y: 3986.915586
+          month_3y: 3986.915586
         us-west1:
           hour: 7.34677
           month: 5363.1421
@@ -513,6 +523,11 @@ compute:
           month: 10726.2842
           month_1y: 6757.48444
           month_3y: 3754.268966
+        us-south1:
+          hour: 17.33837544
+          month: 12657.0140712
+          month_1y: 7973.831172
+          month_3y: 7973.831172
         us-west1:
           hour: 14.69354
           month: 10726.2842
@@ -685,6 +700,11 @@ compute:
           month: 21452.5684
           month_1y: 13514.96888
           month_3y: 7508.537932
+        us-south1:
+          hour: 34.67675088
+          month: 25314.0281424
+          month_1y: 15947.662344
+          month_3y: 15947.662344
         us-west1:
           hour: 29.38708
           month: 21452.5684
@@ -857,6 +877,11 @@ compute:
           month: 40689.83792
           month_1y: 25634.29456
           month_3y: 14241.7184528
+        us-south1:
+          hour: 65.77260768
+          month: 48014.0036064
+          month_1y: 30248.465712
+          month_3y: 30248.465712
         us-west1:
           hour: 55.739504
           month: 40689.83792
@@ -1028,6 +1053,11 @@ compute:
           month: 487.897431872
           month_1y: 384.0968
           month_3y: 243.89008
+        us-south1:
+          hour: 0.98557376
+          month: 575.71896960896
+          month_1y: 575.71896960896
+          month_3y: 575.71896960896
         us-west1:
           hour: 0.835232
           month: 487.897431872
@@ -1199,6 +1229,11 @@ compute:
           month: 914.80768476
           month_1y: 720.1815
           month_3y: 457.2939
+        us-south1:
+          hour: 1.8479508
+          month: 1079.4730680168
+          month_1y: 1079.4730680168
+          month_3y: 1079.4730680168
         us-west1:
           hour: 1.56606
           month: 914.80768476
@@ -1370,6 +1405,11 @@ compute:
           month: 121.974357968
           month_1y: 96.0242
           month_3y: 60.97252
+        us-south1:
+          hour: 0.24639344
+          month: 143.92974240224
+          month_1y: 143.92974240224
+          month_3y: 143.92974240224
         us-west1:
           hour: 0.208808
           month: 121.974357968
@@ -1541,6 +1581,11 @@ compute:
           month: 1829.61536952
           month_1y: 1440.363
           month_3y: 914.5878
+        us-south1:
+          hour: 3.6959016
+          month: 2158.9461360336
+          month_1y: 2158.9461360336
+          month_3y: 2158.9461360336
         us-west1:
           hour: 3.13212
           month: 1829.61536952
@@ -1712,6 +1757,11 @@ compute:
           month: 243.948715936
           month_1y: 192.0484
           month_3y: 121.94504
+        us-south1:
+          hour: 0.49278688
+          month: 287.85948480448
+          month_1y: 287.85948480448
+          month_3y: 287.85948480448
         us-west1:
           hour: 0.417616
           month: 243.948715936
@@ -1883,6 +1933,11 @@ compute:
           month: 3064.44656
           month_1y: 1930.51712
           month_3y: 1378.8824
+        us-south1:
+          hour: 4.95348896
+          month: 3616.0469408
+          month_1y: 2278.0102016
+          month_3y: 2278.0102016
         us-west1:
           hour: 4.197872
           month: 3064.44656
@@ -2054,6 +2109,11 @@ compute:
           month: 437.77808
           month_1y: 275.78816
           month_3y: 196.9832
+        us-south1:
+          hour: 0.70764128
+          month: 516.5781344
+          month_1y: 325.4300288
+          month_3y: 325.4300288
         us-west1:
           hour: 0.599696
           month: 437.77808
@@ -2225,6 +2285,11 @@ compute:
           month: 54.72226
           month_1y: 34.47352
           month_3y: 24.6229
+        us-south1:
+          hour: 0.08845516
+          month: 64.5722668
+          month_1y: 40.6787536
+          month_3y: 40.6787536
         us-west1:
           hour: 0.074962
           month: 54.72226
@@ -2396,6 +2461,11 @@ compute:
           month: 875.55616
           month_1y: 551.57632
           month_3y: 393.9664
+        us-south1:
+          hour: 1.41528256
+          month: 1033.1562688
+          month_1y: 650.8600576
+          month_3y: 650.8600576
         us-west1:
           hour: 1.199392
           month: 875.55616
@@ -2567,6 +2637,11 @@ compute:
           month: 109.44452
           month_1y: 68.94704
           month_3y: 49.2458
+        us-south1:
+          hour: 0.17691032
+          month: 129.1445336
+          month_1y: 81.3575072
+          month_3y: 81.3575072
         us-west1:
           hour: 0.149924
           month: 109.44452
@@ -2738,6 +2813,11 @@ compute:
           month: 1532.22328
           month_1y: 965.25856
           month_3y: 689.4412
+        us-south1:
+          hour: 2.47674448
+          month: 1808.0234704
+          month_1y: 1139.0051008
+          month_3y: 1139.0051008
         us-west1:
           hour: 2.098936
           month: 1532.22328
@@ -2909,6 +2989,11 @@ compute:
           month: 218.88904
           month_1y: 137.89408
           month_3y: 98.4916
+        us-south1:
+          hour: 0.35382064
+          month: 258.2890672
+          month_1y: 162.7150144
+          month_3y: 162.7150144
         us-west1:
           hour: 0.299848
           month: 218.88904
@@ -3080,6 +3165,11 @@ compute:
           month: 5006.5736
           month_1y: 3153.97376
           month_3y: 2252.56976
+        us-south1:
+          hour: 8.0928176
+          month: 5907.756848
+          month_1y: 3721.6890368
+          month_3y: 3721.6890368
         us-west1:
           hour: 6.85832
           month: 5006.5736
@@ -3251,6 +3341,11 @@ compute:
           month: 715.2248
           month_1y: 450.56768
           month_3y: 321.79568
+        us-south1:
+          hour: 1.1561168
+          month: 843.965264
+          month_1y: 531.6698624
+          month_3y: 531.6698624
         us-west1:
           hour: 0.97976
           month: 715.2248
@@ -3422,6 +3517,11 @@ compute:
           month: 89.4031
           month_1y: 56.32096
           month_3y: 40.22446
+        us-south1:
+          hour: 0.1445146
+          month: 105.495658
+          month_1y: 66.4587328
+          month_3y: 66.4587328
         us-west1:
           hour: 0.12247
           month: 89.4031
@@ -3593,6 +3693,11 @@ compute:
           month: 1430.4496
           month_1y: 901.13536
           month_3y: 643.59136
+        us-south1:
+          hour: 2.3122336
+          month: 1687.930528
+          month_1y: 1063.3397248
+          month_3y: 1063.3397248
         us-west1:
           hour: 1.95952
           month: 1430.4496
@@ -3764,6 +3869,11 @@ compute:
           month: 178.8062
           month_1y: 112.64192
           month_3y: 80.44892
+        us-south1:
+          hour: 0.2890292
+          month: 210.991316
+          month_1y: 132.9174656
+          month_3y: 132.9174656
         us-west1:
           hour: 0.24494
           month: 178.8062
@@ -3935,6 +4045,11 @@ compute:
           month: 2503.2868
           month_1y: 1576.98688
           month_3y: 1126.28488
+        us-south1:
+          hour: 4.0464088
+          month: 2953.878424
+          month_1y: 1860.8445184
+          month_3y: 1860.8445184
         us-west1:
           hour: 3.42916
           month: 2503.2868
@@ -4106,6 +4221,11 @@ compute:
           month: 357.6124
           month_1y: 225.28384
           month_3y: 160.89784
+        us-south1:
+          hour: 0.5780584
+          month: 421.982632
+          month_1y: 265.8349312
+          month_3y: 265.8349312
         us-west1:
           hour: 0.48988
           month: 357.6124
@@ -4277,6 +4397,11 @@ compute:
           month: 3711.82224
           month_1y: 2338.336
           month_3y: 1670.11152
+        us-south1:
+          hour: 5.99993184
+          month: 4379.9502432
+          month_1y: 2759.23648
+          month_3y: 2759.23648
         us-west1:
           hour: 5.084688
           month: 3711.82224
@@ -4448,6 +4573,11 @@ compute:
           month: 530.26032
           month_1y: 334.048
           month_3y: 238.58736
+        us-south1:
+          hour: 0.85713312
+          month: 625.7071776
+          month_1y: 394.17664
+          month_3y: 394.17664
         us-west1:
           hour: 0.726384
           month: 530.26032
@@ -4619,6 +4749,11 @@ compute:
           month: 66.28254
           month_1y: 41.756
           month_3y: 29.82342
+        us-south1:
+          hour: 0.10714164
+          month: 78.2133972
+          month_1y: 49.27208
+          month_3y: 49.27208
         us-west1:
           hour: 0.090798
           month: 66.28254
@@ -4790,6 +4925,11 @@ compute:
           month: 1060.52064
           month_1y: 668.096
           month_3y: 477.17472
+        us-south1:
+          hour: 1.71426624
+          month: 1251.4143552
+          month_1y: 788.35328
+          month_3y: 788.35328
         us-west1:
           hour: 1.452768
           month: 1060.52064
@@ -4961,6 +5101,11 @@ compute:
           month: 132.56508
           month_1y: 83.512
           month_3y: 59.64684
+        us-south1:
+          hour: 0.21428328
+          month: 156.4267944
+          month_1y: 98.54416
+          month_3y: 98.54416
         us-west1:
           hour: 0.181596
           month: 132.56508
@@ -5132,6 +5277,11 @@ compute:
           month: 1855.91112
           month_1y: 1169.168
           month_3y: 835.05576
+        us-south1:
+          hour: 2.99996592
+          month: 2189.9751216
+          month_1y: 1379.61824
+          month_3y: 1379.61824
         us-west1:
           hour: 2.542344
           month: 1855.91112
@@ -5303,6 +5453,11 @@ compute:
           month: 265.13016
           month_1y: 167.024
           month_3y: 119.29368
+        us-south1:
+          hour: 0.42856656
+          month: 312.8535888
+          month_1y: 197.08832
+          month_3y: 197.08832
         us-west1:
           hour: 0.363192
           month: 265.13016
@@ -5474,6 +5629,11 @@ compute:
           month: 33.991209
           month_1y: 29.150725
           month_3y: 20.825075
+        us-south1:
+          hour: 0.07849242
+          month: 40.10962662
+          month_1y: 40.10962662
+          month_3y: 40.10962662
         us-west1:
           hour: 0.066519
           month: 33.991209
@@ -5645,6 +5805,11 @@ compute:
           month: 56.622888
           month_1y: 48.5596
           month_3y: 34.6896
+        us-south1:
+          hour: 0.13075344
+          month: 66.81500784
+          month_1y: 66.81500784
+          month_3y: 66.81500784
         us-west1:
           hour: 0.110808
           month: 56.622888
@@ -5816,6 +5981,11 @@ compute:
           month: 135.964836
           month_1y: 116.6029
           month_3y: 83.3003
+        us-south1:
+          hour: 0.31396968
+          month: 160.43850648
+          month_1y: 160.43850648
+          month_3y: 160.43850648
         us-west1:
           hour: 0.266076
           month: 135.964836
@@ -5987,6 +6157,11 @@ compute:
           month: 288.9062016
           month_1y: 182.01088832
           month_3y: 130.0078024
+        us-south1:
+          hour: 0.46699912
+          month: 340.9093576
+          month_1y: 214.77291456
+          month_3y: 214.77291456
         us-west1:
           hour: 0.39576192
           month: 288.9062016
@@ -6158,6 +6333,11 @@ compute:
           month: 36.1132752
           month_1y: 22.75136104
           month_3y: 16.2509753
+        us-south1:
+          hour: 0.05837489
+          month: 42.6136697
+          month_1y: 26.84661432
+          month_3y: 26.84661432
         us-west1:
           hour: 0.04947024
           month: 36.1132752
@@ -6329,6 +6509,11 @@ compute:
           month: 577.8124032
           month_1y: 364.02177664
           month_3y: 260.0156048
+        us-south1:
+          hour: 0.93399824
+          month: 681.8187152
+          month_1y: 429.54582912
+          month_3y: 429.54582912
         us-west1:
           hour: 0.79152384
           month: 577.8124032
@@ -6500,6 +6685,11 @@ compute:
           month: 72.2265504
           month_1y: 45.50272208
           month_3y: 32.5019506
+        us-south1:
+          hour: 0.11674978
+          month: 85.2273394
+          month_1y: 53.69322864
+          month_3y: 53.69322864
         us-west1:
           hour: 0.09894048
           month: 72.2265504
@@ -6671,6 +6861,11 @@ compute:
           month: 144.4531008
           month_1y: 91.00544416
           month_3y: 65.0039012
+        us-south1:
+          hour: 0.23349956
+          month: 170.4546788
+          month_1y: 107.38645728
+          month_3y: 107.38645728
         us-west1:
           hour: 0.19788096
           month: 144.4531008
@@ -6842,6 +7037,11 @@ compute:
           month: 527.9340144
           month_1y: 332.59841856
           month_3y: 237.57035904
+        us-south1:
+          hour: 0.8533728
+          month: 622.962144
+          month_1y: 392.46617408
+          month_3y: 392.46617408
         us-west1:
           hour: 0.72319728
           month: 527.9340144
@@ -7013,6 +7213,11 @@ compute:
           month: 65.9917518
           month_1y: 41.57480232
           month_3y: 29.69629488
+        us-south1:
+          hour: 0.1066716
+          month: 77.870268
+          month_1y: 49.05827176
+          month_3y: 49.05827176
         us-west1:
           hour: 0.09039966
           month: 65.9917518
@@ -7184,6 +7389,11 @@ compute:
           month: 131.9835036
           month_1y: 83.14960464
           month_3y: 59.39258976
+        us-south1:
+          hour: 0.2133432
+          month: 155.740536
+          month_1y: 98.11654352
+          month_3y: 98.11654352
         us-west1:
           hour: 0.18079932
           month: 131.9835036
@@ -7355,6 +7565,11 @@ compute:
           month: 263.9670072
           month_1y: 166.29920928
           month_3y: 118.78517952
+        us-south1:
+          hour: 0.4266864
+          month: 311.481072
+          month_1y: 196.23308704
+          month_3y: 196.23308704
         us-west1:
           hour: 0.36159864
           month: 263.9670072
@@ -7526,6 +7741,11 @@ compute:
           month: 24.4591683
           month_1y: 15.40927508
           month_3y: 11.00662756
+        us-south1:
+          hour: 0.03953674
+          month: 28.8618202
+          month_1y: 18.18294804
+          month_3y: 18.18294804
         us-west1:
           hour: 0.03350571
           month: 24.4591683
@@ -7697,6 +7917,11 @@ compute:
           month: 6.114792075
           month_1y: 3.85231877
           month_3y: 2.75165689
+        us-south1:
+          hour: 0.009884185
+          month: 7.21545505
+          month_1y: 4.54573701
+          month_3y: 4.54573701
         us-west1:
           hour: 0.0083764275
           month: 6.114792075
@@ -7868,6 +8093,11 @@ compute:
           month: 12.22958415
           month_1y: 7.70463754
           month_3y: 5.50331378
+        us-south1:
+          hour: 0.01976837
+          month: 14.4309101
+          month_1y: 9.09147402
+          month_3y: 9.09147402
         us-west1:
           hour: 0.016752855
           month: 12.22958415
@@ -8039,6 +8269,11 @@ compute:
           month: 391.3466928
           month_1y: 246.54840128
           month_3y: 176.10604096
+        us-south1:
+          hour: 0.63258784
+          month: 461.7891232
+          month_1y: 290.92716864
+          month_3y: 290.92716864
         us-west1:
           hour: 0.53609136
           month: 391.3466928
@@ -8210,6 +8445,11 @@ compute:
           month: 48.9183366
           month_1y: 30.81855016
           month_3y: 22.01325512
+        us-south1:
+          hour: 0.07907348
+          month: 57.7236404
+          month_1y: 36.36589608
+          month_3y: 36.36589608
         us-west1:
           hour: 0.06701142
           month: 48.9183366
@@ -8381,6 +8621,11 @@ compute:
           month: 782.6933856
           month_1y: 493.09680256
           month_3y: 352.21208192
+        us-south1:
+          hour: 1.26517568
+          month: 923.5782464
+          month_1y: 581.85433728
+          month_3y: 581.85433728
         us-west1:
           hour: 1.07218272
           month: 782.6933856
@@ -8552,6 +8797,11 @@ compute:
           month: 97.8366732
           month_1y: 61.63710032
           month_3y: 44.02651024
+        us-south1:
+          hour: 0.15814696
+          month: 115.4472808
+          month_1y: 72.73179216
+          month_3y: 72.73179216
         us-west1:
           hour: 0.13402284
           month: 97.8366732
@@ -8723,6 +8973,11 @@ compute:
           month: 195.6733464
           month_1y: 123.27420064
           month_3y: 88.05302048
+        us-south1:
+          hour: 0.31629392
+          month: 230.8945616
+          month_1y: 145.46358432
+          month_3y: 145.46358432
         us-west1:
           hour: 0.26804568
           month: 195.6733464
@@ -8894,6 +9149,11 @@ compute:
           month: 3.8836
           month_1y: 3.8836
           month_3y: 3.8836
+        us-south1:
+          hour: 0.008968
+          month: 4.582648
+          month_1y: 4.582648
+          month_3y: 4.582648
         us-west1:
           hour: 0.0076
           month: 3.8836
@@ -9065,6 +9325,11 @@ compute:
           month: 13.1327
           month_1y: 13.1327
           month_3y: 13.1327
+        us-south1:
+          hour: 0.030326
+          month: 15.496586
+          month_1y: 15.496586
+          month_3y: 15.496586
         us-west1:
           hour: 0.0257
           month: 13.1327
@@ -9236,6 +9501,11 @@ compute:
           month: 5443.25376
           month_1y: 4600.65856
           month_3y: 2333.52384
+        us-south1:
+          hour: 12.5695488
+          month: 6423.0394368
+          month_1y: 5428.7771008
+          month_3y: 5428.7771008
         us-west1:
           hour: 10.65216
           month: 5443.25376
@@ -9407,6 +9677,11 @@ compute:
           month: 12863.0964
           month_1y: 10874.7224
           month_3y: 5513.9236
+        us-south1:
+          hour: 29.703432
+          month: 15178.453752
+          month_1y: 12832.172432
+          month_3y: 12832.172432
         us-west1:
           hour: 25.1724
           month: 12863.0964
@@ -9578,6 +9853,11 @@ compute:
           month: 3215.7741
           month_1y: 2718.6806
           month_3y: 1378.4809
+        us-south1:
+          hour: 7.425858
+          month: 3794.613438
+          month_1y: 3208.043108
+          month_3y: 3208.043108
         us-west1:
           hour: 6.2931
           month: 3215.7741
@@ -9749,6 +10029,11 @@ compute:
           month: 6431.5482
           month_1y: 5437.3612
           month_3y: 2756.9618
+        us-south1:
+          hour: 14.851716
+          month: 7589.226876
+          month_1y: 6416.086216
+          month_3y: 6416.086216
         us-west1:
           hour: 12.5862
           month: 6431.5482
@@ -9920,6 +10205,11 @@ compute:
           month: 25698.868608
           month_1y: 22177.815808
           month_3y: 12706.270208
+        us-south1:
+          hour: 59.34376704
+          month: 30324.66495744
+          month_1y: 26169.82265344
+          month_3y: 26169.82265344
         us-west1:
           hour: 50.291328
           month: 25698.868608
@@ -10091,6 +10381,11 @@ compute:
           month: 21519.199296
           month_1y: 18576.656896
           month_3y: 10638.695296
+        us-south1:
+          hour: 49.69208448
+          month: 25392.65516928
+          month_1y: 21920.45513728
+          month_3y: 21920.45513728
         us-west1:
           hour: 42.111936
           month: 21519.199296
@@ -10262,6 +10557,11 @@ compute:
           month: 43038.398592
           month_1y: 37153.313792
           month_3y: 21277.390592
+        us-south1:
+          hour: 99.38416896
+          month: 50785.31033856
+          month_1y: 43840.91027456
+          month_3y: 43840.91027456
         us-west1:
           hour: 84.223872
           month: 43038.398592
@@ -10433,6 +10733,11 @@ compute:
           month: 289.6290768
           month_1y: 260.663728
           month_3y: 186.194384
+        us-south1:
+          hour: 0.668810784
+          month: 341.762310624
+          month_1y: 341.762310624
+          month_3y: 341.762310624
         us-west1:
           hour: 0.5667888
           month: 289.6290768
@@ -10604,6 +10909,11 @@ compute:
           month: 36.2036346
           month_1y: 32.582966
           month_3y: 23.274298
+        us-south1:
+          hour: 0.083601348
+          month: 42.720288828
+          month_1y: 42.720288828
+          month_3y: 42.720288828
         us-west1:
           hour: 0.0708486
           month: 36.2036346
@@ -10775,6 +11085,11 @@ compute:
           month: 579.2581536
           month_1y: 521.327456
           month_3y: 372.388768
+        us-south1:
+          hour: 1.337621568
+          month: 683.524621248
+          month_1y: 683.524621248
+          month_3y: 683.524621248
         us-west1:
           hour: 1.1335776
           month: 579.2581536
@@ -10946,6 +11261,11 @@ compute:
           month: 72.4072692
           month_1y: 65.165932
           month_3y: 46.548596
+        us-south1:
+          hour: 0.167202696
+          month: 85.440577656
+          month_1y: 85.440577656
+          month_3y: 85.440577656
         us-west1:
           hour: 0.1416972
           month: 72.4072692
@@ -11117,6 +11437,11 @@ compute:
           month: 1158.5163072
           month_1y: 1042.654912
           month_3y: 744.777536
+        us-south1:
+          hour: 2.675243136
+          month: 1367.049242496
+          month_1y: 1367.049242496
+          month_3y: 1367.049242496
         us-west1:
           hour: 2.2671552
           month: 1158.5163072
@@ -11288,6 +11613,11 @@ compute:
           month: 144.8145384
           month_1y: 130.331864
           month_3y: 93.097192
+        us-south1:
+          hour: 0.334405392
+          month: 170.881155312
+          month_1y: 170.881155312
+          month_3y: 170.881155312
         us-west1:
           hour: 0.2833944
           month: 144.8145384
@@ -11459,6 +11789,11 @@ compute:
           month: 1737.7744608
           month_1y: 1563.982368
           month_3y: 1117.166304
+        us-south1:
+          hour: 4.012864704
+          month: 2050.573863744
+          month_1y: 2050.573863744
+          month_3y: 2050.573863744
         us-west1:
           hour: 3.4007328
           month: 1737.7744608
@@ -11630,6 +11965,11 @@ compute:
           month: 483.622664
           month_1y: 435.23768
           month_3y: 310.92744
+        us-south1:
+          hour: 1.11678032
+          month: 570.67474352
+          month_1y: 570.67474352
+          month_3y: 570.67474352
         us-west1:
           hour: 0.946424
           month: 483.622664
@@ -11801,6 +12141,11 @@ compute:
           month: 60.452833
           month_1y: 54.40471
           month_3y: 38.86593
+        us-south1:
+          hour: 0.13959754
+          month: 71.33434294
+          month_1y: 71.33434294
+          month_3y: 71.33434294
         us-west1:
           hour: 0.118303
           month: 60.452833
@@ -11972,6 +12317,11 @@ compute:
           month: 967.245328
           month_1y: 870.47536
           month_3y: 621.85488
+        us-south1:
+          hour: 2.23356064
+          month: 1141.34948704
+          month_1y: 1141.34948704
+          month_3y: 1141.34948704
         us-west1:
           hour: 1.892848
           month: 967.245328
@@ -12143,6 +12493,11 @@ compute:
           month: 120.905666
           month_1y: 108.80942
           month_3y: 77.73186
+        us-south1:
+          hour: 0.27919508
+          month: 142.66868588
+          month_1y: 142.66868588
+          month_3y: 142.66868588
         us-west1:
           hour: 0.236606
           month: 120.905666
@@ -12314,6 +12669,11 @@ compute:
           month: 1934.490656
           month_1y: 1740.95072
           month_3y: 1243.70976
+        us-south1:
+          hour: 4.46712128
+          month: 2282.69897408
+          month_1y: 2282.69897408
+          month_3y: 2282.69897408
         us-west1:
           hour: 3.785696
           month: 1934.490656
@@ -12485,6 +12845,11 @@ compute:
           month: 241.811332
           month_1y: 217.61884
           month_3y: 155.46372
+        us-south1:
+          hour: 0.55839016
+          month: 285.33737176
+          month_1y: 285.33737176
+          month_3y: 285.33737176
         us-west1:
           hour: 0.473212
           month: 241.811332
@@ -12656,6 +13021,11 @@ compute:
           month: 2901.735984
           month_1y: 2611.42608
           month_3y: 1865.56464
+        us-south1:
+          hour: 6.70068192
+          month: 3424.04846112
+          month_1y: 3424.04846112
+          month_3y: 3424.04846112
         us-west1:
           hour: 5.678544
           month: 2901.735984
@@ -12827,6 +13197,11 @@ compute:
           month: 24.27237225
           month_1y: 21.8443375
           month_3y: 15.6046625
+        us-south1:
+          hour: 0.056049705
+          month: 28.641399255
+          month_1y: 28.641399255
+          month_3y: 28.641399255
         us-west1:
           hour: 0.04749975
           month: 24.27237225
@@ -12998,6 +13373,11 @@ compute:
           month: 388.357956
           month_1y: 349.5094
           month_3y: 249.6746
+        us-south1:
+          hour: 0.89679528
+          month: 458.26238808
+          month_1y: 458.26238808
+          month_3y: 458.26238808
         us-west1:
           hour: 0.759996
           month: 388.357956
@@ -13169,6 +13549,11 @@ compute:
           month: 48.5447445
           month_1y: 43.688675
           month_3y: 31.209325
+        us-south1:
+          hour: 0.11209941
+          month: 57.28279851
+          month_1y: 57.28279851
+          month_3y: 57.28279851
         us-west1:
           hour: 0.0949995
           month: 48.5447445
@@ -13340,6 +13725,11 @@ compute:
           month: 776.715912
           month_1y: 699.0188
           month_3y: 499.3492
+        us-south1:
+          hour: 1.79359056
+          month: 916.52477616
+          month_1y: 916.52477616
+          month_3y: 916.52477616
         us-west1:
           hour: 1.519992
           month: 776.715912
@@ -13511,6 +13901,11 @@ compute:
           month: 97.089489
           month_1y: 87.37735
           month_3y: 62.41865
+        us-south1:
+          hour: 0.22419882
+          month: 114.56559702
+          month_1y: 114.56559702
+          month_3y: 114.56559702
         us-west1:
           hour: 0.189999
           month: 97.089489
@@ -13682,6 +14077,11 @@ compute:
           month: 1553.431824
           month_1y: 1398.0376
           month_3y: 998.6984
+        us-south1:
+          hour: 3.58718112
+          month: 1833.04955232
+          month_1y: 1833.04955232
+          month_3y: 1833.04955232
         us-west1:
           hour: 3.039984
           month: 1553.431824
@@ -13853,6 +14253,11 @@ compute:
           month: 194.178978
           month_1y: 174.7547
           month_3y: 124.8373
+        us-south1:
+          hour: 0.44839764
+          month: 229.13119404
+          month_1y: 229.13119404
+          month_3y: 229.13119404
         us-west1:
           hour: 0.379998
           month: 194.178978
@@ -14024,6 +14429,11 @@ compute:
           month: 2330.147736
           month_1y: 2097.0564
           month_3y: 1498.0476
+        us-south1:
+          hour: 5.38077168
+          month: 2749.57432848
+          month_1y: 2749.57432848
+          month_3y: 2749.57432848
         us-west1:
           hour: 4.559976
           month: 2330.147736
@@ -14195,6 +14605,11 @@ compute:
           month: 335.047452928
           month_1y: 263.78112
           month_3y: 188.42176
+        us-south1:
+          hour: 0.67681024
+          month: 395.35599445504
+          month_1y: 311.2617216
+          month_3y: 311.2617216
         us-west1:
           hour: 0.573568
           month: 335.047452928
@@ -14366,6 +14781,11 @@ compute:
           month: 41.880931616
           month_1y: 32.97264
           month_3y: 23.55272
+        us-south1:
+          hour: 0.08460128
+          month: 49.41949930688
+          month_1y: 38.9077152
+          month_3y: 38.9077152
         us-west1:
           hour: 0.071696
           month: 41.880931616
@@ -14537,6 +14957,11 @@ compute:
           month: 670.094905856
           month_1y: 527.56224
           month_3y: 376.84352
+        us-south1:
+          hour: 1.35362048
+          month: 790.71198891008
+          month_1y: 622.5234432
+          month_3y: 622.5234432
         us-west1:
           hour: 1.147136
           month: 670.094905856
@@ -14709,6 +15134,11 @@ compute:
           month: 83.761863232
           month_1y: 65.94528
           month_3y: 47.10544
+        us-south1:
+          hour: 0.16920256
+          month: 98.83899861376
+          month_1y: 77.8154304
+          month_3y: 77.8154304
         us-west1:
           hour: 0.143392
           month: 83.761863232
@@ -14880,6 +15310,11 @@ compute:
           month: 1005.142358784
           month_1y: 791.34336
           month_3y: 565.26528
+        us-south1:
+          hour: 2.03043072
+          month: 1186.06798336512
+          month_1y: 933.7851648
+          month_3y: 933.7851648
         us-west1:
           hour: 1.720704
           month: 1005.142358784
@@ -15052,6 +15487,11 @@ compute:
           month: 1340.189811712
           month_1y: 1055.12448
           month_3y: 753.68704
+        us-south1:
+          hour: 2.70724096
+          month: 1581.42397782016
+          month_1y: 1245.0468864
+          month_3y: 1245.0468864
         us-west1:
           hour: 2.294272
           month: 1340.189811712
@@ -15224,6 +15664,11 @@ compute:
           month: 167.523726464
           month_1y: 131.89056
           month_3y: 94.21088
+        us-south1:
+          hour: 0.33840512
+          month: 197.67799722752
+          month_1y: 155.6308608
+          month_3y: 155.6308608
         us-west1:
           hour: 0.286784
           month: 167.523726464
@@ -15395,6 +15840,11 @@ compute:
           month: 1675.23726464
           month_1y: 1318.9056
           month_3y: 942.1088
+        us-south1:
+          hour: 3.3840512
+          month: 1976.7799722752
+          month_1y: 1556.308608
+          month_3y: 1556.308608
         us-west1:
           hour: 2.86784
           month: 1675.23726464
@@ -15567,6 +16017,11 @@ compute:
           month: 2010.284717568
           month_1y: 1582.68672
           month_3y: 1130.53056
+        us-south1:
+          hour: 4.06086144
+          month: 2372.13596673024
+          month_1y: 1867.5703296
+          month_3y: 1867.5703296
         us-west1:
           hour: 3.441408
           month: 2010.284717568
@@ -15739,6 +16194,11 @@ compute:
           month: 4501.999202496
           month_1y: 3544.24928
           month_3y: 2531.96704
+        us-south1:
+          hour: 9.09423168
+          month: 5312.35905894528
+          month_1y: 4182.2141504
+          month_3y: 4182.2141504
         us-west1:
           hour: 7.706976
           month: 4501.999202496
@@ -15911,6 +16371,11 @@ compute:
           month: 612.250432352
           month_1y: 481.99856
           month_3y: 344.33808
+        us-south1:
+          hour: 1.23677216
+          month: 722.45551017536
+          month_1y: 568.7583008
+          month_3y: 568.7583008
         us-west1:
           hour: 1.048112
           month: 612.250432352
@@ -16082,6 +16547,11 @@ compute:
           month: 76.531304044
           month_1y: 60.24982
           month_3y: 43.04226
+        us-south1:
+          hour: 0.15459652
+          month: 90.30693877192
+          month_1y: 71.0947876
+          month_3y: 71.0947876
         us-west1:
           hour: 0.131014
           month: 76.531304044
@@ -16253,6 +16723,11 @@ compute:
           month: 1224.500864704
           month_1y: 963.99712
           month_3y: 688.67616
+        us-south1:
+          hour: 2.47354432
+          month: 1444.91102035072
+          month_1y: 1137.5166016
+          month_3y: 1137.5166016
         us-west1:
           hour: 2.096224
           month: 1224.500864704
@@ -16425,6 +16900,11 @@ compute:
           month: 153.062608088
           month_1y: 120.49964
           month_3y: 86.08452
+        us-south1:
+          hour: 0.30919304
+          month: 180.61387754384
+          month_1y: 142.1895752
+          month_3y: 142.1895752
         us-west1:
           hour: 0.262028
           month: 153.062608088
@@ -16596,6 +17076,11 @@ compute:
           month: 1836.751297056
           month_1y: 1445.99568
           month_3y: 1033.01424
+        us-south1:
+          hour: 3.71031648
+          month: 2167.36653052608
+          month_1y: 1706.2749024
+          month_3y: 1706.2749024
         us-west1:
           hour: 3.144336
           month: 1836.751297056
@@ -16768,6 +17253,11 @@ compute:
           month: 2449.001729408
           month_1y: 1927.99424
           month_3y: 1377.35232
+        us-south1:
+          hour: 4.94708864
+          month: 2889.82204070144
+          month_1y: 2275.0332032
+          month_3y: 2275.0332032
         us-west1:
           hour: 4.192448
           month: 2449.001729408
@@ -16940,6 +17430,11 @@ compute:
           month: 306.125216176
           month_1y: 240.99928
           month_3y: 172.16904
+        us-south1:
+          hour: 0.61838608
+          month: 361.22775508768
+          month_1y: 284.3791504
+          month_3y: 284.3791504
         us-west1:
           hour: 0.524056
           month: 306.125216176
@@ -17111,6 +17606,11 @@ compute:
           month: 3061.25216176
           month_1y: 2409.9928
           month_3y: 1721.6904
+        us-south1:
+          hour: 6.1838608
+          month: 3612.2775508768
+          month_1y: 2843.791504
+          month_3y: 2843.791504
         us-west1:
           hour: 5.24056
           month: 3061.25216176
@@ -17283,6 +17783,11 @@ compute:
           month: 3673.502594112
           month_1y: 2891.99136
           month_3y: 2066.02848
+        us-south1:
+          hour: 7.42063296
+          month: 4334.73306105216
+          month_1y: 3412.5498048
+          month_3y: 3412.5498048
         us-west1:
           hour: 6.288672
           month: 3673.502594112
@@ -17455,6 +17960,11 @@ compute:
           month: 3630.789838592
           month_1y: 2858.42304
           month_3y: 2041.94432
+        us-south1:
+          hour: 7.33435136
+          month: 4284.33200953856
+          month_1y: 3372.9391872
+          month_3y: 3372.9391872
         us-west1:
           hour: 6.215552
           month: 3630.789838592
@@ -17627,6 +18137,11 @@ compute:
           month: 453.848729824
           month_1y: 357.30288
           month_3y: 255.24304
+        us-south1:
+          hour: 0.91679392
+          month: 535.54150119232
+          month_1y: 421.6173984
+          month_3y: 421.6173984
         us-west1:
           hour: 0.776944
           month: 453.848729824
@@ -17798,6 +18313,11 @@ compute:
           month: 56.731091228
           month_1y: 44.66286
           month_3y: 31.90538
+        us-south1:
+          hour: 0.11459924
+          month: 66.94268764904
+          month_1y: 52.7021748
+          month_3y: 52.7021748
         us-west1:
           hour: 0.097118
           month: 56.731091228
@@ -17969,6 +18489,11 @@ compute:
           month: 907.697459648
           month_1y: 714.60576
           month_3y: 510.48608
+        us-south1:
+          hour: 1.83358784
+          month: 1071.08300238464
+          month_1y: 843.2347968
+          month_3y: 843.2347968
         us-west1:
           hour: 1.553888
           month: 907.697459648
@@ -18141,6 +18666,11 @@ compute:
           month: 113.462182456
           month_1y: 89.32572
           month_3y: 63.81076
+        us-south1:
+          hour: 0.22919848
+          month: 133.88537529808
+          month_1y: 105.4043496
+          month_3y: 105.4043496
         us-west1:
           hour: 0.194236
           month: 113.462182456
@@ -18312,6 +18842,11 @@ compute:
           month: 1361.546189472
           month_1y: 1071.90864
           month_3y: 765.72912
+        us-south1:
+          hour: 2.75038176
+          month: 1606.62450357696
+          month_1y: 1264.8521952
+          month_3y: 1264.8521952
         us-west1:
           hour: 2.330832
           month: 1361.546189472
@@ -18484,6 +19019,11 @@ compute:
           month: 1815.394919296
           month_1y: 1429.21152
           month_3y: 1020.97216
+        us-south1:
+          hour: 3.66717568
+          month: 2142.16600476928
+          month_1y: 1686.4695936
+          month_3y: 1686.4695936
         us-west1:
           hour: 3.107776
           month: 1815.394919296
@@ -18656,6 +19196,11 @@ compute:
           month: 226.924364912
           month_1y: 178.65144
           month_3y: 127.62152
+        us-south1:
+          hour: 0.45839696
+          month: 267.77075059616
+          month_1y: 210.8086992
+          month_3y: 210.8086992
         us-west1:
           hour: 0.388472
           month: 226.924364912
@@ -18827,6 +19372,11 @@ compute:
           month: 2269.24364912
           month_1y: 1786.5144
           month_3y: 1276.2152
+        us-south1:
+          hour: 4.5839696
+          month: 2677.7075059616
+          month_1y: 2108.086992
+          month_3y: 2108.086992
         us-west1:
           hour: 3.88472
           month: 2269.24364912
@@ -18999,6 +19549,11 @@ compute:
           month: 2723.092378944
           month_1y: 2143.81728
           month_3y: 1531.45824
+        us-south1:
+          hour: 5.50076352
+          month: 3213.24900715392
+          month_1y: 2529.7043904
+          month_3y: 2529.7043904
         us-west1:
           hour: 4.661664
           month: 2723.092378944
@@ -19171,6 +19726,11 @@ compute:
           month: 2331.948217344
           month_1y: 1835.90912
           month_3y: 1311.4304
+        us-south1:
+          hour: 4.71063552
+          month: 2751.69889646592
+          month_1y: 2166.3727616
+          month_3y: 2166.3727616
         us-west1:
           hour: 3.992064
           month: 2331.948217344
@@ -19343,6 +19903,11 @@ compute:
           month: 291.493527168
           month_1y: 229.48864
           month_3y: 163.9288
+        us-south1:
+          hour: 0.58882944
+          month: 343.96236205824
+          month_1y: 270.7965952
+          month_3y: 270.7965952
         us-west1:
           hour: 0.499008
           month: 291.493527168
@@ -19514,6 +20079,11 @@ compute:
           month: 36.436690896
           month_1y: 28.68608
           month_3y: 20.4911
+        us-south1:
+          hour: 0.07360368
+          month: 42.99529525728
+          month_1y: 33.8495744
+          month_3y: 33.8495744
         us-west1:
           hour: 0.062376
           month: 36.436690896
@@ -19685,6 +20255,11 @@ compute:
           month: 4080.909380352
           month_1y: 3212.84096
           month_3y: 2295.0032
+        us-south1:
+          hour: 8.24361216
+          month: 4815.47306881536
+          month_1y: 3791.1523328
+          month_3y: 3791.1523328
         us-west1:
           hour: 6.986112
           month: 4080.909380352
@@ -19857,6 +20432,11 @@ compute:
           month: 582.987054336
           month_1y: 458.97728
           month_3y: 327.8576
+        us-south1:
+          hour: 1.17765888
+          month: 687.92472411648
+          month_1y: 541.5931904
+          month_3y: 541.5931904
         us-west1:
           hour: 0.998016
           month: 582.987054336
@@ -20028,6 +20608,11 @@ compute:
           month: 72.873381792
           month_1y: 57.37216
           month_3y: 40.9822
+        us-south1:
+          hour: 0.14720736
+          month: 85.99059051456
+          month_1y: 67.6991488
+          month_3y: 67.6991488
         us-west1:
           hour: 0.124752
           month: 72.873381792
@@ -20199,6 +20784,11 @@ compute:
           month: 874.480581504
           month_1y: 688.46592
           month_3y: 491.7864
+        us-south1:
+          hour: 1.76648832
+          month: 1031.88708617472
+          month_1y: 812.3897856
+          month_3y: 812.3897856
         us-west1:
           hour: 1.497024
           month: 874.480581504
@@ -20370,6 +20960,11 @@ compute:
           month: 1165.974108672
           month_1y: 917.95456
           month_3y: 655.7152
+        us-south1:
+          hour: 2.35531776
+          month: 1375.84944823296
+          month_1y: 1083.1863808
+          month_3y: 1083.1863808
         us-west1:
           hour: 1.996032
           month: 1165.974108672
@@ -20541,6 +21136,11 @@ compute:
           month: 145.746763584
           month_1y: 114.74432
           month_3y: 81.9644
+        us-south1:
+          hour: 0.29441472
+          month: 171.98118102912
+          month_1y: 135.3982976
+          month_3y: 135.3982976
         us-west1:
           hour: 0.249504
           month: 145.746763584
@@ -20712,6 +21312,11 @@ compute:
           month: 1457.46763584
           month_1y: 1147.4432
           month_3y: 819.644
+        us-south1:
+          hour: 2.9441472
+          month: 1719.8118102912
+          month_1y: 1353.982976
+          month_3y: 1353.982976
         us-west1:
           hour: 2.49504
           month: 1457.46763584
@@ -20883,6 +21488,11 @@ compute:
           month: 1748.961163008
           month_1y: 1376.93184
           month_3y: 983.5728
+        us-south1:
+          hour: 3.53297664
+          month: 2063.77417234944
+          month_1y: 1624.7795712
+          month_3y: 1624.7795712
         us-west1:
           hour: 2.994048
           month: 1748.961163008
@@ -21055,6 +21665,11 @@ compute:
           month: 532.64768864
           month_1y: 419.33536
           month_3y: 299.56864
+        us-south1:
+          hour: 1.0759712
+          month: 628.5242725952
+          month_1y: 494.8157248
+          month_3y: 494.8157248
         us-west1:
           hour: 0.91184
           month: 532.64768864
@@ -21226,6 +21841,11 @@ compute:
           month: 66.58096108
           month_1y: 52.41692
           month_3y: 37.44608
+        us-south1:
+          hour: 0.1344964
+          month: 78.5655340744
+          month_1y: 61.8519656
+          month_3y: 61.8519656
         us-west1:
           hour: 0.11398
           month: 66.58096108
@@ -21397,6 +22017,11 @@ compute:
           month: 1065.29537728
           month_1y: 838.67072
           month_3y: 599.13728
+        us-south1:
+          hour: 2.1519424
+          month: 1257.0485451904
+          month_1y: 989.6314496
+          month_3y: 989.6314496
         us-west1:
           hour: 1.82368
           month: 1065.29537728
@@ -21568,6 +22193,11 @@ compute:
           month: 133.16192216
           month_1y: 104.83384
           month_3y: 74.89216
+        us-south1:
+          hour: 0.2689928
+          month: 157.1310681488
+          month_1y: 123.7039312
+          month_3y: 123.7039312
         us-west1:
           hour: 0.22796
           month: 133.16192216
@@ -21739,6 +22369,11 @@ compute:
           month: 1597.94306592
           month_1y: 1258.00608
           month_3y: 898.70592
+        us-south1:
+          hour: 3.2279136
+          month: 1885.5728177856
+          month_1y: 1484.4471744
+          month_3y: 1484.4471744
         us-west1:
           hour: 2.73552
           month: 1597.94306592
@@ -21910,6 +22545,11 @@ compute:
           month: 2130.59075456
           month_1y: 1677.34144
           month_3y: 1198.27456
+        us-south1:
+          hour: 4.3038848
+          month: 2514.0970903808
+          month_1y: 1979.2628992
+          month_3y: 1979.2628992
         us-west1:
           hour: 3.64736
           month: 2130.59075456
@@ -22081,6 +22721,11 @@ compute:
           month: 266.32384432
           month_1y: 209.66768
           month_3y: 149.78432
+        us-south1:
+          hour: 0.5379856
+          month: 314.2621362976
+          month_1y: 247.4078624
+          month_3y: 247.4078624
         us-west1:
           hour: 0.45592
           month: 266.32384432
@@ -22252,6 +22897,11 @@ compute:
           month: 2663.2384432
           month_1y: 2096.6768
           month_3y: 1497.8432
+        us-south1:
+          hour: 5.379856
+          month: 3142.621362976
+          month_1y: 2474.078624
+          month_3y: 2474.078624
         us-west1:
           hour: 4.5592
           month: 2663.2384432
@@ -22423,6 +23073,11 @@ compute:
           month: 3195.88613184
           month_1y: 2516.01216
           month_3y: 1797.41184
+        us-south1:
+          hour: 6.4558272
+          month: 3771.1456355712
+          month_1y: 2968.8943488
+          month_3y: 2968.8943488
         us-west1:
           hour: 5.47104
           month: 3195.88613184
@@ -22595,6 +23250,11 @@ compute:
           month: 3158.762485248
           month_1y: 2486.81216
           month_3y: 1776.48128
+        us-south1:
+          hour: 6.38083584
+          month: 3727.33973259264
+          month_1y: 2934.4383488
+          month_3y: 2934.4383488
         us-west1:
           hour: 5.407488
           month: 3158.762485248
@@ -22767,6 +23427,11 @@ compute:
           month: 394.845310656
           month_1y: 310.85152
           month_3y: 222.06016
+        us-south1:
+          hour: 0.79760448
+          month: 465.91746657408
+          month_1y: 366.8047936
+          month_3y: 366.8047936
         us-west1:
           hour: 0.675936
           month: 394.845310656
@@ -22938,6 +23603,11 @@ compute:
           month: 49.355663832
           month_1y: 38.85644
           month_3y: 27.75752
+        us-south1:
+          hour: 0.09970056
+          month: 58.23968332176
+          month_1y: 45.8505992
+          month_3y: 45.8505992
         us-west1:
           hour: 0.084492
           month: 49.355663832
@@ -23109,6 +23779,11 @@ compute:
           month: 5527.834349184
           month_1y: 4351.92128
           month_3y: 3108.84224
+        us-south1:
+          hour: 11.16646272
+          month: 6522.84453203712
+          month_1y: 5135.2671104
+          month_3y: 5135.2671104
         us-west1:
           hour: 9.463104
           month: 5527.834349184
@@ -23281,6 +23956,11 @@ compute:
           month: 789.690621312
           month_1y: 621.70304
           month_3y: 444.12032
+        us-south1:
+          hour: 1.59520896
+          month: 931.83493314816
+          month_1y: 733.6095872
+          month_3y: 733.6095872
         us-west1:
           hour: 1.351872
           month: 789.690621312
@@ -23452,6 +24132,11 @@ compute:
           month: 98.711327664
           month_1y: 77.71288
           month_3y: 55.51504
+        us-south1:
+          hour: 0.19940112
+          month: 116.47936664352
+          month_1y: 91.7011984
+          month_3y: 91.7011984
         us-west1:
           hour: 0.168984
           month: 98.711327664
@@ -23623,6 +24308,11 @@ compute:
           month: 1184.535931968
           month_1y: 932.55456
           month_3y: 666.18048
+        us-south1:
+          hour: 2.39281344
+          month: 1397.75239972224
+          month_1y: 1100.4143808
+          month_3y: 1100.4143808
         us-west1:
           hour: 2.027808
           month: 1184.535931968
@@ -23794,6 +24484,11 @@ compute:
           month: 1579.381242624
           month_1y: 1243.40608
           month_3y: 888.24064
+        us-south1:
+          hour: 3.19041792
+          month: 1863.66986629632
+          month_1y: 1467.2191744
+          month_3y: 1467.2191744
         us-west1:
           hour: 2.703744
           month: 1579.381242624
@@ -23965,6 +24660,11 @@ compute:
           month: 197.422655328
           month_1y: 155.42576
           month_3y: 111.03008
+        us-south1:
+          hour: 0.39880224
+          month: 232.95873328704
+          month_1y: 183.4023968
+          month_3y: 183.4023968
         us-west1:
           hour: 0.337968
           month: 197.422655328
@@ -24136,6 +24836,11 @@ compute:
           month: 1974.22655328
           month_1y: 1554.2576
           month_3y: 1110.3008
+        us-south1:
+          hour: 3.9880224
+          month: 2329.5873328704
+          month_1y: 1834.023968
+          month_3y: 1834.023968
         us-west1:
           hour: 3.37968
           month: 1974.22655328
@@ -24307,6 +25012,11 @@ compute:
           month: 2369.071863936
           month_1y: 1865.10912
           month_3y: 1332.36096
+        us-south1:
+          hour: 4.78562688
+          month: 2795.50479944448
+          month_1y: 2200.8287616
+          month_3y: 2200.8287616
         us-west1:
           hour: 4.055616
           month: 2369.071863936
@@ -24479,6 +25189,11 @@ compute:
           month: 30.83958
           month_1y: 19.42822
           month_3y: 13.87876
+        us-south1:
+          hour: 0.04985028
+          month: 36.3907044
+          month_1y: 22.9252996
+          month_3y: 22.9252996
         us-west1:
           hour: 0.042246
           month: 30.83958
@@ -24650,6 +25365,11 @@ compute:
           month: 493.43328
           month_1y: 310.85152
           month_3y: 222.06016
+        us-south1:
+          hour: 0.79760448
+          month: 582.2512704
+          month_1y: 366.8047936
+          month_3y: 366.8047936
         us-west1:
           hour: 0.675936
           month: 493.43328
@@ -24821,6 +25541,11 @@ compute:
           month: 61.67916
           month_1y: 38.85644
           month_3y: 27.75752
+        us-south1:
+          hour: 0.09970056
+          month: 72.7814088
+          month_1y: 45.8505992
+          month_3y: 45.8505992
         us-west1:
           hour: 0.084492
           month: 61.67916
@@ -24992,6 +25717,11 @@ compute:
           month: 986.86656
           month_1y: 621.70304
           month_3y: 444.12032
+        us-south1:
+          hour: 1.59520896
+          month: 1164.5025408
+          month_1y: 733.6095872
+          month_3y: 733.6095872
         us-west1:
           hour: 1.351872
           month: 986.86656
@@ -25163,6 +25893,11 @@ compute:
           month: 123.35832
           month_1y: 77.71288
           month_3y: 55.51504
+        us-south1:
+          hour: 0.19940112
+          month: 145.5628176
+          month_1y: 91.7011984
+          month_3y: 91.7011984
         us-west1:
           hour: 0.168984
           month: 123.35832
@@ -25334,6 +26069,11 @@ compute:
           month: 1480.29984
           month_1y: 932.55456
           month_3y: 666.18048
+        us-south1:
+          hour: 2.39281344
+          month: 1746.7538112
+          month_1y: 1100.4143808
+          month_3y: 1100.4143808
         us-west1:
           hour: 2.027808
           month: 1480.29984
@@ -25505,6 +26245,11 @@ compute:
           month: 1850.3748
           month_1y: 1165.6932
           month_3y: 832.7256
+        us-south1:
+          hour: 2.9910168
+          month: 2183.442264
+          month_1y: 1375.517976
+          month_3y: 1375.517976
         us-west1:
           hour: 2.53476
           month: 1850.3748
@@ -25676,6 +26421,11 @@ compute:
           month: 246.71664
           month_1y: 155.42576
           month_3y: 111.03008
+        us-south1:
+          hour: 0.39880224
+          month: 291.1256352
+          month_1y: 183.4023968
+          month_3y: 183.4023968
         us-west1:
           hour: 0.337968
           month: 246.71664
@@ -28637,6 +29387,9 @@ compute:
           us-east5:
             hour: 0.012
             month: 8.76
+          us-south1:
+            hour: 0.0118
+            month: 8.614
           us-west1:
             hour: 0.01
             month: 7.3
@@ -28738,6 +29491,9 @@ compute:
           us-east5:
             hour: 0.004
             month: 2.92
+          us-south1:
+            hour: 0.004
+            month: 2.92
           us-west1:
             hour: 0.004
             month: 2.92
@@ -28811,6 +29567,8 @@ compute:
             month: 0.009
           us-east5:
             month: 0.01
+          us-south1:
+            month: 0.00944
           us-west1:
             month: 0.008
           us-west2:
@@ -28909,6 +29667,9 @@ compute:
             us-east5:
               hour: 0.012
               month: 8.76
+            us-south1:
+              hour: 0.0118
+              month: 8.614
             us-west1:
               hour: 0.01
               month: 7.3
@@ -29010,6 +29771,9 @@ compute:
             us-east5:
               hour: 0.0275
               month: 20.075
+            us-south1:
+              hour: 0.0295
+              month: 21.535
             us-west1:
               hour: 0.025
               month: 18.25
@@ -29082,6 +29846,8 @@ compute:
           us-east4:
             month: 0.045
           us-east5:
+            month: 0.045
+          us-south1:
             month: 0.045
           us-west1:
             month: 0.045
@@ -29226,6 +29992,8 @@ compute:
                   month: 0.19
                 us-east5:
                   month: 0.19
+                us-south1:
+                  month: 0.19
                 us-west1:
                   month: 0.19
                 us-west2:
@@ -29293,6 +30061,8 @@ compute:
                   month: 0.18
                 us-east5:
                   month: 0.18
+                us-south1:
+                  month: 0.18
                 us-west1:
                   month: 0.18
                 us-west2:
@@ -29359,6 +30129,8 @@ compute:
                 us-east4:
                   month: 0.15
                 us-east5:
+                  month: 0.15
+                us-south1:
                   month: 0.15
                 us-west1:
                   month: 0.15
@@ -29429,6 +30201,8 @@ compute:
                   month: 0.23
                 us-east5:
                   month: 0.23
+                us-south1:
+                  month: 0.23
                 us-west1:
                   month: 0.23
                 us-west2:
@@ -29496,6 +30270,8 @@ compute:
                   month: 0.22
                 us-east5:
                   month: 0.22
+                us-south1:
+                  month: 0.22
                 us-west1:
                   month: 0.22
                 us-west2:
@@ -29562,6 +30338,8 @@ compute:
                 us-east4:
                   month: 0.2
                 us-east5:
+                  month: 0.2
+                us-south1:
                   month: 0.2
                 us-west1:
                   month: 0.2
@@ -29631,6 +30409,8 @@ compute:
                 month: 0.12
               us-east5:
                 month: 0.12
+              us-south1:
+                month: 0.12
               us-west1:
                 month: 0.12
               us-west2:
@@ -29698,6 +30478,8 @@ compute:
                 month: 0.11
               us-east5:
                 month: 0.11
+              us-south1:
+                month: 0.11
               us-west1:
                 month: 0.11
               us-west2:
@@ -29764,6 +30546,8 @@ compute:
               us-east4:
                 month: 0.08
               us-east5:
+                month: 0.08
+              us-south1:
                 month: 0.08
               us-west1:
                 month: 0.08
@@ -29863,6 +30647,9 @@ compute:
           us-east5:
             hour: 0.05
             month: 36.5
+          us-south1:
+            hour: 0.059
+            month: 43.07
           us-west1:
             hour: 0.05
             month: 36.5
@@ -30152,6 +30939,8 @@ compute:
           month: 0.044
         us-east5:
           month: 0.04
+        us-south1:
+          month: 0.0472
         us-west1:
           month: 0.04
         us-west2:
@@ -30224,6 +31013,8 @@ compute:
           month: 0.088
         us-east5:
           month: 0.08
+        us-south1:
+          month: 0.0944
         us-west1:
           month: 0.08
         us-west2:
@@ -30354,6 +31145,10 @@ compute:
           month: 0.08
           month_1y: 0.0504
           month_3y: 0.036
+        us-south1:
+          month: 0.0944
+          month_1y: 0.059472
+          month_3y: 0.04248
         us-west1:
           month: 0.08
           month_1y: 0.0504
@@ -30440,6 +31235,8 @@ compute:
           month: 0.026
         us-multi:
           month: 0.026
+        us-south1:
+          month: 0.03068
         us-west1:
           month: 0.026
         us-west2:
@@ -30510,6 +31307,8 @@ compute:
           month: 0.187
         us-east5:
           month: 0.17
+        us-south1:
+          month: 0.2006
         us-west1:
           month: 0.17
         us-west2:
@@ -30582,6 +31381,8 @@ compute:
           month: 0.374
         us-east5:
           month: 0.34
+        us-south1:
+          month: 0.4012
         us-west1:
           month: 0.34
         us-west2:
@@ -30669,6 +31470,8 @@ monitoring:
           month: 0.258
         us-east5:
           month: 0.258
+        us-south1:
+          month: 0.258
         us-west1:
           month: 0.258
         us-west2:
@@ -30736,6 +31539,8 @@ monitoring:
           month: 0.151
         us-east5:
           month: 0.151
+        us-south1:
+          month: 0.151
         us-west1:
           month: 0.151
         us-west2:
@@ -30802,6 +31607,8 @@ monitoring:
         us-east4:
           month: 0.061
         us-east5:
+          month: 0.061
+        us-south1:
           month: 0.061
         us-west1:
           month: 0.061
@@ -30877,6 +31684,8 @@ region:
     location: Northern Virginia
   us-east5:
     location: Columbus
+  us-south1:
+    location: Dallas
   us-west1:
     location: Oregon
   us-west2:
@@ -30946,6 +31755,8 @@ storage:
         us-east4:
           month: 0.0025
         us-east5:
+          month: 0.0012
+        us-south1:
           month: 0.0012
         us-west1:
           month: 0.0012
@@ -31034,6 +31845,8 @@ storage:
           month: 0.006
         us-east5:
           month: 0.004
+        us-south1:
+          month: 0.004
         us-west1:
           month: 0.004
         us-west2:
@@ -31120,6 +31933,8 @@ storage:
         us-east4:
           month: 0.023
         us-east5:
+          month: 0.02
+        us-south1:
           month: 0.02
         us-west1:
           month: 0.02
@@ -31208,6 +32023,8 @@ storage:
           month: 0.013
         us-east5:
           month: 0.01
+        us-south1:
+          month: 0.01
         us-west1:
           month: 0.01
         us-west2:
@@ -31294,6 +32111,8 @@ storage:
         us-east4:
           month: 0.023
         us-east5:
+          month: 0.02
+        us-south1:
           month: 0.02
         us-west1:
           month: 0.02
