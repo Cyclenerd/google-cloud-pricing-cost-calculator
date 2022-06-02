@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu May 26 17:07:25 2022
-  timestamp: 1653584845
+  generated: Thu Jun  2 14:36:45 2022
+  timestamp: 1654180605
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -29385,8 +29385,8 @@ compute:
             hour: 0.011
             month: 8.03
           us-east5:
-            hour: 0.012
-            month: 8.76
+            hour: 0.01
+            month: 7.3
           us-south1:
             hour: 0.0118
             month: 8.614
@@ -29665,8 +29665,8 @@ compute:
               hour: 0.011
               month: 8.03
             us-east5:
-              hour: 0.012
-              month: 8.76
+              hour: 0.01
+              month: 7.3
             us-south1:
               hour: 0.0118
               month: 8.614
@@ -29769,8 +29769,8 @@ compute:
               hour: 0.028
               month: 20.44
             us-east5:
-              hour: 0.0275
-              month: 20.075
+              hour: 0.025
+              month: 18.25
             us-south1:
               hour: 0.0295
               month: 21.535
@@ -29786,148 +29786,6 @@ compute:
             us-west4:
               hour: 0.028
               month: 20.44
-    nat:
-      data:
-        cost:
-          asia-east1:
-            month: 0.045
-          asia-east2:
-            month: 0.045
-          asia-northeast1:
-            month: 0.045
-          asia-northeast2:
-            month: 0.045
-          asia-northeast3:
-            month: 0.045
-          asia-south1:
-            month: 0.045
-          asia-south2:
-            month: 0.045
-          asia-southeast1:
-            month: 0.045
-          asia-southeast2:
-            month: 0.04905
-          australia-southeast1:
-            month: 0.045
-          australia-southeast2:
-            month: 0.045
-          europe-central2:
-            month: 0.045
-          europe-north1:
-            month: 0.045
-          europe-southwest1:
-            month: 0.045
-          europe-west1:
-            month: 0.045
-          europe-west2:
-            month: 0.045
-          europe-west3:
-            month: 0.045
-          europe-west4:
-            month: 0.045
-          europe-west6:
-            month: 0.045
-          europe-west8:
-            month: 0.045
-          europe-west9:
-            month: 0.045
-          northamerica-northeast1:
-            month: 0.045
-          northamerica-northeast2:
-            month: 0.045
-          southamerica-east1:
-            month: 0.045
-          southamerica-west1:
-            month: 0.045
-          us-central1:
-            month: 0.045
-          us-east1:
-            month: 0.045
-          us-east4:
-            month: 0.045
-          us-east5:
-            month: 0.045
-          us-south1:
-            month: 0.045
-          us-west1:
-            month: 0.045
-          us-west2:
-            month: 0.045
-          us-west3:
-            month: 0.045
-          us-west4:
-            month: 0.045
-      gateway:
-        cost:
-          asia-east1:
-            hour: 0.0448
-            month: 32.704
-          asia-east2:
-            hour: 0.0448
-            month: 32.704
-          asia-northeast1:
-            hour: 0.0448
-            month: 32.704
-          asia-northeast2:
-            hour: 0.0448
-            month: 32.704
-          asia-northeast3:
-            hour: 0.0448
-            month: 32.704
-          asia-south1:
-            hour: 0.0448
-            month: 32.704
-          asia-south2:
-            hour: 0.0448
-            month: 32.704
-          asia-southeast1:
-            hour: 0.0448
-            month: 32.704
-          australia-southeast1:
-            hour: 0.0448
-            month: 32.704
-          australia-southeast2:
-            hour: 0.0448
-            month: 32.704
-          europe-north1:
-            hour: 0.0448
-            month: 32.704
-          europe-west1:
-            hour: 0.0448
-            month: 32.704
-          europe-west2:
-            hour: 0.0448
-            month: 32.704
-          europe-west3:
-            hour: 0.0448
-            month: 32.704
-          europe-west4:
-            hour: 0.0448
-            month: 32.704
-          europe-west6:
-            hour: 0.0448
-            month: 32.704
-          northamerica-northeast1:
-            hour: 0.0448
-            month: 32.704
-          southamerica-east1:
-            hour: 0.0448
-            month: 32.704
-          us-central1:
-            hour: 0.0448
-            month: 32.704
-          us-east1:
-            hour: 0.0448
-            month: 32.704
-          us-east4:
-            hour: 0.0448
-            month: 32.704
-          us-west1:
-            hour: 0.0448
-            month: 32.704
-          us-west2:
-            hour: 0.0448
-            month: 32.704
     traffic:
       egress:
         internet:
@@ -30557,111 +30415,6 @@ compute:
                 month: 0.08
               us-west4:
                 month: 0.08
-    vpn:
-      tunnel:
-        cost:
-          asia-east1:
-            hour: 0.05
-            month: 36.5
-          asia-east2:
-            hour: 0.05
-            month: 36.5
-          asia-northeast1:
-            hour: 0.075
-            month: 54.75
-          asia-northeast2:
-            hour: 0.075
-            month: 54.75
-          asia-northeast3:
-            hour: 0.075
-            month: 54.75
-          asia-south1:
-            hour: 0.05
-            month: 36.5
-          asia-south2:
-            hour: 0.05
-            month: 36.5
-          asia-southeast1:
-            hour: 0.055
-            month: 40.15
-          asia-southeast2:
-            hour: 0.05995
-            month: 43.7635
-          australia-southeast1:
-            hour: 0.068
-            month: 49.64
-          australia-southeast2:
-            hour: 0.068
-            month: 49.64
-          europe-central2:
-            hour: 0.06
-            month: 43.8
-          europe-north1:
-            hour: 0.05
-            month: 36.5
-          europe-southwest1:
-            hour: 0.06
-            month: 43.8
-          europe-west1:
-            hour: 0.05
-            month: 36.5
-          europe-west2:
-            hour: 0.06
-            month: 43.8
-          europe-west3:
-            hour: 0.06
-            month: 43.8
-          europe-west4:
-            hour: 0.05
-            month: 36.5
-          europe-west6:
-            hour: 0.065
-            month: 47.45
-          europe-west8:
-            hour: 0.0585
-            month: 42.705
-          europe-west9:
-            hour: 0.0585
-            month: 42.705
-          northamerica-northeast1:
-            hour: 0.05
-            month: 36.5
-          northamerica-northeast2:
-            hour: 0.05
-            month: 36.5
-          southamerica-east1:
-            hour: 0.075
-            month: 54.75
-          southamerica-west1:
-            hour: 0.075
-            month: 54.75
-          us-central1:
-            hour: 0.05
-            month: 36.5
-          us-east1:
-            hour: 0.05
-            month: 36.5
-          us-east4:
-            hour: 0.055
-            month: 40.15
-          us-east5:
-            hour: 0.05
-            month: 36.5
-          us-south1:
-            hour: 0.059
-            month: 43.07
-          us-west1:
-            hour: 0.05
-            month: 36.5
-          us-west2:
-            hour: 0.05
-            month: 36.5
-          us-west3:
-            hour: 0.05
-            month: 36.5
-          us-west4:
-            hour: 0.055
-            month: 40.15
   storage:
     balanced:
       cost:
