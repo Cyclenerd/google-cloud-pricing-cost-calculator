@@ -1185,7 +1185,8 @@ foreach my $region (@regions) {
 		&add_gcp_compute_vpn_tunnel_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_vpn_tunnel_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
 	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+		# Not all regions have VPN
+		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 
