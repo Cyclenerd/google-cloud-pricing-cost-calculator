@@ -6,13 +6,13 @@ NETWORK;;;;;
 gce.network.ip.external;Compute Engine;Network;IpAddress;External IP Charge on a Standard VM;GLOBAL
 gce.network.ip.external.spot;Compute Engine;Network;IpAddress;External IP Charge on a Spot Preemptible VM;GLOBAL
 gce.network.ip.external.unused;Compute Engine;Network;IpAddress;Static Ip Charge%;Static external IP address (assigned but unused)
-gce.network.vpn.tunnel;Compute Engine;Network;VPNTunnel;Vpn Tunnel%;hours
+gce.network.vpn.tunnel;Networking;Network;VPNTunnel;Networking Cloud VPN Tunnel%;hours
 gce.network.vpn.tunnel.egress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Americas;From → to, Gb, bulk price! SAME AS PremiumInternetEgress 
 gce.network.vpn.tunnel.egress.china;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%China;SAME AS PremiumInternetEgress 
 gce.network.vpn.tunnel.egress.australia;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Australia;SAME AS PremiumInternetEgress 
 gce.network.vpn.tunnel.ingress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Ingress;Free
-gce.network.nat.gateway;Compute Engine;Network;NAT;NAT Gateway: Uptime%;hours
-gce.network.nat.gateway.data;Compute Engine;Network;NAT;NAT Gateway: Data processing%;cost per GB of data that is processed by the gateway
+gce.network.nat.gateway;Networking;Network;Nat;Networking Cloud Nat Gateway Uptime%;hours
+gce.network.nat.gateway.data;Networking;Network;Nat;Networking Cloud Nat Data Processing%;cost per GB of data that is processed by the gateway
 gce.network.lb.rule;Compute Engine;Network;LoadBalancing;Network Load Balancing: Forwarding Rule Minimum Service Charge%;hours (first 5)
 gce.network.lb.rule.add;Compute Engine;Network;LoadBalancing;Network Load Balancing: Forwarding Rule Additional Service Charge%;hours
 gce.network.lb.data;Compute Engine;Network;LoadBalancing;Network Load Balancing: Data Processing Charge%;per GB

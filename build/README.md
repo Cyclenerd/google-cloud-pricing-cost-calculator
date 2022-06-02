@@ -90,6 +90,11 @@ bash skus.sh
 perl skus.pl -csv="skus_compute.csv" -id="6F81-5844-456A"
 ```
 
+Networking:
+```shell
+perl skus.pl -csv="skus_networking.csv" -id="E505-1604-58F8"
+```
+
 [Cloud Storage](https://cloud.google.com/storage/):
 ```shell
 perl skus.pl -csv="skus_storage.csv" -id="95FF-2EF5-5EA1"
@@ -109,6 +114,7 @@ Merge CSV files:
 ```shell
 {
   cat "skus_compute.csv"
+  cat "skus_networking.csv"
   cat "skus_storage.csv"
   cat "skus_stackdriver.csv"
   cat "skus_sql.csv"

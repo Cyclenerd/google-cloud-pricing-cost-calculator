@@ -301,6 +301,8 @@ MY_CHECKS=(
 	#
 	# US
 	'us-central1;vm;n2-standard-8;226' # Google Cloud Pricing Calculator: $226.92
+	'us-central1;vpn-tunnel;vpn-us-central1-tunnel;36.5' # VPN Tunnel
+	'us-central1;nat-gateway;nat-us-central1-gateway;88.234' # NAT Gateway with Data
 	'us-east1;vm;n2-standard-8;226'    # Google Cloud Pricing Calculator: $226.92
 	'us-east4;vm;n2-standard-8;255'    # Google Cloud Pricing Calculator: $255.57
 	'us-east5;vm;n2-standard-8;226'    # Google Cloud Pricing Calculator: $227.87

@@ -4,3 +4,10 @@ project: us-central1
 instances:
   - name: n2-standard-8
     type: n2-standard-8
+
+vpn-tunnels:
+  - name: vpn-us-central1-tunnel
+
+nat-gateways:
+  - name: nat-us-central1-gateway
+    data: 1234

@@ -1193,7 +1193,8 @@ foreach my $region (@regions) {
 	# NAT gateway
 	$mapping = 'gce.network.nat.gateway';
 	print "Mapping: '$mapping'\n";
-	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
+	# Store global price for each region
+	$sth->execute($mapping, 'global'); # Search SKU(s)
 	if ($sth->fetch) {
 		&mapping_found($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 		my $cost = &calc_cost($value, $units, $nanos);
@@ -1212,7 +1213,8 @@ foreach my $region (@regions) {
 	# Ingress __and__ egress data that is processed by the gateway
 	$mapping = 'gce.network.nat.gateway.data';
 	print "Mapping: '$mapping'\n";
-	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
+	# Store global price for each region
+	$sth->execute($mapping, 'global'); # Search SKU(s)
 	if ($sth->fetch) {
 		&mapping_found($mapping, $region, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 		my $cost = &calc_cost($value, $units, $nanos);
