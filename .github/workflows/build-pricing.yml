@@ -50,11 +50,16 @@ jobs:
           bash gcosts.sh && \
           bash test.sh
       
-      # Release new pricing.yml
-      - name: 🤝 Release
+      # Copy new pricing.yml for release
+      - name: 🤝 Copy
         run: cd build && mv pricing.yml ../pricing.yml
-      # Push
-      - name: ✨ Push
+
+      # Last diff check
+      - name: 🛂 Control
+        run: cd t && bash diffcheck.sh
+
+      # Release (push)
+      - name: ✨ Release
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
