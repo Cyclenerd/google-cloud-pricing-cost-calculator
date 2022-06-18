@@ -11,9 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      # Add "id-token" with the intended permissions for Google Auth
+      permissions:
+        contents: 'read'
+        id-token: 'write'
+      
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
-
+      
       # Configure Workload Identity Federation via a credentials file.
       - id: auth
         name: 🔐 Authenticate to Google Cloud
