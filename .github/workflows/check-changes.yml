@@ -12,8 +12,9 @@ jobs:
 
     # Add "id-token" for Google Authentication
     permissions:
-      contents: 'read'
-      id-token: 'write'
+      issues: write
+      contents: write
+      id-token: write
 
     steps:
       - name: 🛎️ Checkout
@@ -35,7 +36,6 @@ jobs:
       - id: 'gcloud'
         name: 📥 Google Compute Engine API
         run: |
-          gcloud config set project "$GOOGLE_CLOUD_PROJECT"
           cd tools || exit 9
           bash regions.sh          && \
           bash zones.sh            && \
