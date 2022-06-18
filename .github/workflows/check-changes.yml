@@ -32,7 +32,8 @@ jobs:
         uses: 'google-github-actions/setup-gcloud@v0'
       # Now you can run gcloud commands authenticated as the impersonated service account.
 
-      - name: 📥 Google Compute Engine API
+      - id: 'gcloud'
+        name: 📥 Google Compute Engine API
         run: |
           gcloud config set project "$GOOGLE_CLOUD_PROJECT"
           cd tools || exit 9
