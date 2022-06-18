@@ -9,13 +9,13 @@ jobs:
   check-changes:
     name: Check Google Compute Engine API changes
     runs-on: ubuntu-latest
-    steps:
 
-      # Add "id-token" with the intended permissions for Google Auth
-      permissions:
-        contents: 'read'
-        id-token: 'write'
-      
+    # Add "id-token" for Google Authentication
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
       
