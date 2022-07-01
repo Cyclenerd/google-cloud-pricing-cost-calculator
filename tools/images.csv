@@ -16,7 +16,7 @@ fedora-cloud-base-gcp-35-1-2-x86-64;Fedora, Fedora Cloud Base 35, 35-20211026.0,
 opensuse-leap-15-2-v20200702;openSUSE, openSUSE Leap, 15.2 x86_64 built on 2020-07-02;10;opensuse-cloud;opensuse-leap;2020-07-02T09:59:57.582-07:00;;READY
 opensuse-leap-15-4-v20220624-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20220624, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;2022-06-23T07:40:23.862-07:00;;READY
 rhel-7-v20220519;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20220519, supports Shielded VM features;20;rhel-cloud;rhel-7;2022-05-19T09:51:36.437-07:00;;READY
-rhel-8-v20220519;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20220519, supports Shielded VM features;20;rhel-cloud;rhel-8;2022-05-19T09:51:36.346-07:00;;READY
+rhel-8-v20220629;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20220629, supports Shielded VM features;20;rhel-cloud;rhel-8;2022-06-30T11:28:06.265-07:00;;READY
 rhel-9-v20220621;Red Hat, Red Hat Enterprise Linux, 9, x86_64 built on 20220621, supports Shielded VM features;20;rhel-cloud;rhel-9;2022-06-21T14:13:44.779-07:00;;READY
 rhel-7-6-sap-v20220519;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.6, x86_64 built on 20220519, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-6-sap-ha;2022-05-19T09:51:36.415-07:00;;READY
 rhel-7-7-sap-v20220519;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.7, x86_64 built on 20220519, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-7-sap-ha;2022-05-19T09:51:36.040-07:00;;READY
@@ -30,7 +30,6 @@ sles-15-sp4-v20220621-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4, x86_64, 
 sles-12-sp3-sap-v20220201;SUSE, SUSE Linux Enterprise Server 12 SP3 for SAP, x86_64, built on 20220201;10;suse-sap-cloud;sles-12-sp3-sap;2022-02-01T06:41:41.948-08:00;;READY
 sles-12-sp4-sap-v20220201;SUSE, SUSE Linux Enterprise Server 12 SP4 for SAP, x86_64, built on 20220201, supports Shielded VM features;10;suse-sap-cloud;sles-12-sp4-sap;2022-02-01T02:24:15.384-08:00;;READY
 sles-12-sp5-sap-v20220602-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5 for SAP, x86_64, built on 20220602, supports Shielded VM features;10;suse-sap-cloud;sles-12-sp5-sap;2022-06-02T15:01:13.443-07:00;;READY
-sles-15-sap-v20220126;SUSE, SUSE Linux Enterprise Server 15 for SAP, x86_64, built on 20220126, supports Shielded VM features;10;suse-sap-cloud;sles-15-sap;2022-01-26T14:48:07.135-08:00;;READY
 sles-15-sp1-sap-v20220126;SUSE, SUSE Linux Enterprise Server 15 SP1 for SAP, x86_64, built on 20220126, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp1-sap;2022-01-26T14:49:17.025-08:00;;READY
 sles-15-sp2-sap-v20220602-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP2 for SAP, x86_64, built on 20220602, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp2-sap;2022-06-02T15:06:34.862-07:00;;READY
 sles-15-sp3-sap-v20220602-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP3 for SAP, x86_64, built on 20220602, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp3-sap;2022-06-02T14:56:20.289-07:00;;READY
