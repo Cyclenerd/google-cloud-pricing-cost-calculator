@@ -71,3 +71,8 @@ jobs:
         run: |
           docker pull rockylinux:8
           docker run -v $PWD:/temp/test rockylinux:8 /temp/test/gcosts --version
+
+      - name: 🐧 Test Arch Linux
+        run: |
+          docker pull archlinux:latest
+          docker run -v $PWD:/temp/test archlinux:latest /temp/test/gcosts --version
