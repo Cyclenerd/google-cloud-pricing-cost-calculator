@@ -1,5 +1,9 @@
 # Google Cloud Platform Pricing and Cost Calculator
 
+[![CI](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml)
+[![GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-pricing-cost-calculator)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/LICENSE)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/googlecloud?label=Google%20Cloud%20Platform&style=social)](https://www.reddit.com/r/googlecloud/comments/svn8kj/google_cloud_platform_pricing_and_cost_calculator/)
+
 Calculate estimated monthly costs of Google Cloud Platform products and resources.
 Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront:
 
