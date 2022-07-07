@@ -62,6 +62,11 @@ jobs:
           docker pull ubuntu:20.04
           docker run -v $PWD:/temp/test ubuntu:20.04 /temp/test/gcosts --version
 
+      - name: 🐧 Test Ubuntu 22.04 (Jammy Jellyfish)
+        run: |
+          docker pull ubuntu:22.04
+          docker run -v $PWD:/temp/test ubuntu:22.04 /temp/test/gcosts --version
+
       - name: 🐧 Test Rocky Linux 8
         run: |
           docker pull rockylinux:8
