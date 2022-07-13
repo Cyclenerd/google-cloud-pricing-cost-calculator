@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Jul  7 04:36:50 2022
-  timestamp: 1657168610
+  generated: Wed Jul 13 19:33:51 2022
+  timestamp: 1657740831
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -25041,6 +25041,1238 @@ compute:
       ram: 384
       tier1: 50
       type: n2d
+    t2a-standard-1:
+      bandwidth: 10
+      cost:
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0.04748
+          month: 34.6604
+          month_1y: 34.6604
+          month_3y: 34.6604
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.04237
+          month: 30.9301
+          month_1y: 30.9301
+          month_3y: 30.9301
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.0385
+          month: 28.105
+          month_1y: 28.105
+          month_3y: 28.105
+        us-east1:
+          hour: 0.0385
+          month: 28.105
+          month_1y: 28.105
+          month_3y: 28.105
+        us-east4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.0385
+          month: 28.105
+          month_1y: 28.105
+          month_3y: 28.105
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 1
+      ram: 4
+      type: t2a
+    t2a-standard-16:
+      bandwidth: 32
+      cost:
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0.75968
+          month: 554.5664
+          month_1y: 554.5664
+          month_3y: 554.5664
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.67792
+          month: 494.8816
+          month_1y: 494.8816
+          month_3y: 494.8816
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.616
+          month: 449.68
+          month_1y: 449.68
+          month_3y: 449.68
+        us-east1:
+          hour: 0.616
+          month: 449.68
+          month_1y: 449.68
+          month_3y: 449.68
+        us-east4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.616
+          month: 449.68
+          month_1y: 449.68
+          month_3y: 449.68
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 16
+      ram: 64
+      type: t2a
+    t2a-standard-2:
+      bandwidth: 10
+      cost:
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0.09496
+          month: 69.3208
+          month_1y: 69.3208
+          month_3y: 69.3208
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.08474
+          month: 61.8602
+          month_1y: 61.8602
+          month_3y: 61.8602
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.077
+          month: 56.21
+          month_1y: 56.21
+          month_3y: 56.21
+        us-east1:
+          hour: 0.077
+          month: 56.21
+          month_1y: 56.21
+          month_3y: 56.21
+        us-east4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.077
+          month: 56.21
+          month_1y: 56.21
+          month_3y: 56.21
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 2
+      ram: 8
+      type: t2a
+    t2a-standard-32:
+      bandwidth: 32
+      cost:
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 1.51936
+          month: 1109.1328
+          month_1y: 1109.1328
+          month_3y: 1109.1328
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 1.35584
+          month: 989.7632
+          month_1y: 989.7632
+          month_3y: 989.7632
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 1.232
+          month: 899.36
+          month_1y: 899.36
+          month_3y: 899.36
+        us-east1:
+          hour: 1.232
+          month: 899.36
+          month_1y: 899.36
+          month_3y: 899.36
+        us-east4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 1.232
+          month: 899.36
+          month_1y: 899.36
+          month_3y: 899.36
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 32
+      ram: 128
+      type: t2a
+    t2a-standard-4:
+      bandwidth: 10
+      cost:
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0.18992
+          month: 138.6416
+          month_1y: 138.6416
+          month_3y: 138.6416
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.16948
+          month: 123.7204
+          month_1y: 123.7204
+          month_3y: 123.7204
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.154
+          month: 112.42
+          month_1y: 112.42
+          month_3y: 112.42
+        us-east1:
+          hour: 0.154
+          month: 112.42
+          month_1y: 112.42
+          month_3y: 112.42
+        us-east4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.154
+          month: 112.42
+          month_1y: 112.42
+          month_3y: 112.42
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 4
+      ram: 16
+      type: t2a
+    t2a-standard-48:
+      bandwidth: 32
+      cost:
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 2.27904
+          month: 1663.6992
+          month_1y: 1663.6992
+          month_3y: 1663.6992
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 2.03376
+          month: 1484.6448
+          month_1y: 1484.6448
+          month_3y: 1484.6448
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 1.848
+          month: 1349.04
+          month_1y: 1349.04
+          month_3y: 1349.04
+        us-east1:
+          hour: 1.848
+          month: 1349.04
+          month_1y: 1349.04
+          month_3y: 1349.04
+        us-east4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 1.848
+          month: 1349.04
+          month_1y: 1349.04
+          month_3y: 1349.04
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 48
+      ram: 192
+      type: t2a
+    t2a-standard-8:
+      bandwidth: 16
+      cost:
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0.37984
+          month: 277.2832
+          month_1y: 277.2832
+          month_3y: 277.2832
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.33896
+          month: 247.4408
+          month_1y: 247.4408
+          month_3y: 247.4408
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.308
+          month: 224.84
+          month_1y: 224.84
+          month_3y: 224.84
+        us-east1:
+          hour: 0.308
+          month: 224.84
+          month_1y: 224.84
+          month_3y: 224.84
+        us-east4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.308
+          month: 224.84
+          month_1y: 224.84
+          month_3y: 224.84
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 8
+      ram: 32
+      type: t2a
     t2d-standard-1:
       bandwidth: 10
       cost:
@@ -29144,6 +30376,139 @@ compute:
         windows:
           hour: 4.416
           month: 3223.68
+    t2a-standard-1:
+      cost:
+        rhel:
+          hour: 0.06
+          month: 43.8
+        rhel-sap:
+          hour: 0.1
+          month: 73
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.046
+          month: 33.58
+    t2a-standard-16:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    t2a-standard-2:
+      cost:
+        rhel:
+          hour: 0.06
+          month: 43.8
+        rhel-sap:
+          hour: 0.1
+          month: 73
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    t2a-standard-32:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    t2a-standard-4:
+      cost:
+        rhel:
+          hour: 0.06
+          month: 43.8
+        rhel-sap:
+          hour: 0.1
+          month: 73
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    t2a-standard-48:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    t2a-standard-8:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
     t2d-standard-1:
       cost:
         rhel:
