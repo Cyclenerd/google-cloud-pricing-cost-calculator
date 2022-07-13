@@ -168,7 +168,14 @@ MY_CHECKS=(
 	'europe-west4;vm;t2d-standard-16;543'
 	'europe-west4;vm;t2d-standard-32;1086'
 	'europe-west4;vm;t2d-standard-48;1629'
-	'europe-west4;vm;t2d-standard-60;2037'
+	# Tau T2A standard machine types
+	'europe-west4;vm;t2a-standard-1;30'
+	'europe-west4;vm;t2a-standard-2;61'
+	'europe-west4;vm;t2a-standard-4;123'
+	'europe-west4;vm;t2a-standard-8;247'
+	'europe-west4;vm;t2a-standard-16;494'
+	'europe-west4;vm;t2a-standard-32;989'
+	'europe-west4;vm;t2a-standard-48;1484'
 	# T2D Commitment (CUD)
 	'europe-west4;vm;t2d-standard-8-1y;171' # Google Cloud Pricing Calculator: $171.11
 	'europe-west4;vm;t2d-standard-8-3y;122' # Google Cloud Pricing Calculator: $122.23

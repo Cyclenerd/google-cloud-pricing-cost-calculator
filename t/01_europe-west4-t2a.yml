@@ -1,0 +1,22 @@
+region: europe-west4
+project: gcp-gce-t2a
+
+# General-purpose machine type family
+# https://cloud.google.com/compute/docs/general-purpose-machines#t2a_machines
+
+instances:
+# Tau T2A standard machine types
+  - name: t2a-standard-1
+    type: t2a-standard-1
+  - name: t2a-standard-2
+    type: t2a-standard-2
+  - name: t2a-standard-4
+    type: t2a-standard-4
+  - name: t2a-standard-8
+    type: t2a-standard-8
+  - name: t2a-standard-16
+    type: t2a-standard-16
+  - name: t2a-standard-32
+    type: t2a-standard-32
+  - name: t2a-standard-48
+    type: t2a-standard-48

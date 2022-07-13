@@ -703,6 +703,45 @@ compute:
       ram: 240
       bandwidth: 32
 
+    # T2A:
+    # Tau T2A general-purpose Arm VM
+    # https://cloud.google.com/compute/docs/general-purpose-machines#t2a_machines
+    t2a-standard-1:
+      type: t2a
+      cpu: 1
+      ram: 4
+      bandwidth: 10
+    t2a-standard-2:
+      type: t2a
+      cpu: 2
+      ram: 8
+      bandwidth: 10
+    t2a-standard-4:
+      type: t2a
+      cpu: 4
+      ram: 16
+      bandwidth: 10
+    t2a-standard-8:
+      type: t2a
+      cpu: 8
+      ram: 32
+      bandwidth: 16
+    t2a-standard-16:
+      type: t2a
+      cpu: 16
+      ram: 64
+      bandwidth: 32
+    t2a-standard-32:
+      type: t2a
+      cpu: 32
+      ram: 128
+      bandwidth: 32
+    t2a-standard-48:
+      type: t2a
+      cpu: 48
+      ram: 192
+      bandwidth: 32
+
     # N1:
     # » First generation general-purpose VMs available on Skylake, Broadwell, Haswell, Sandy Bridge, and Ivy Bridge CPU platforms
     # » Offer higher memory-to-core ratios for VMs created with the extended memory feature

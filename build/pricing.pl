@@ -526,6 +526,16 @@ foreach my $region (@regions) {
 			$mappings_1y{'gce.compute.ram.t2d.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.t2d.3y'} = $ram;
 		}
+		# T2A Predefined
+		# The Tau T2A machine series does not support: Committed and Sustained-use discounts
+		elsif ($type eq 't2a') {
+			$mappings{   'gce.compute.cpu.t2a'   } = $cpu;
+			$mappings_1y{'gce.compute.cpu.t2a.1y'} = $cpu;
+			$mappings_3y{'gce.compute.cpu.t2a.3y'} = $cpu;
+			$mappings{   'gce.compute.ram.t2a'   } = $ram;
+			$mappings_1y{'gce.compute.ram.t2a.1y'} = $ram;
+			$mappings_3y{'gce.compute.ram.t2a.3y'} = $ram;
+		}
 		# F1 Predefined
 		elsif ($type eq 'f1') {
 			$mappings{'gce.compute.cpu.f1'} = $cpu;
