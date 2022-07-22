@@ -1037,6 +1037,7 @@ m1-ultramem-160;160;False;3844.00;;asia-southeast1
 m1-ultramem-160;160;False;3844.00;;asia-southeast2
 m1-ultramem-160;160;False;3844.00;;australia-southeast1
 m1-ultramem-160;160;False;3844.00;;australia-southeast2
+m1-ultramem-160;160;False;3844.00;;europe-central2
 m1-ultramem-160;160;False;3844.00;;europe-southwest1
 m1-ultramem-160;160;False;3844.00;;europe-west1
 m1-ultramem-160;160;False;3844.00;;europe-west2
@@ -1065,6 +1066,7 @@ m1-ultramem-40;40;False;961.00;;asia-southeast1
 m1-ultramem-40;40;False;961.00;;asia-southeast2
 m1-ultramem-40;40;False;961.00;;australia-southeast1
 m1-ultramem-40;40;False;961.00;;australia-southeast2
+m1-ultramem-40;40;False;961.00;;europe-central2
 m1-ultramem-40;40;False;961.00;;europe-southwest1
 m1-ultramem-40;40;False;961.00;;europe-west1
 m1-ultramem-40;40;False;961.00;;europe-west2
@@ -1093,6 +1095,7 @@ m1-ultramem-80;80;False;1922.00;;asia-southeast1
 m1-ultramem-80;80;False;1922.00;;asia-southeast2
 m1-ultramem-80;80;False;1922.00;;australia-southeast1
 m1-ultramem-80;80;False;1922.00;;australia-southeast2
+m1-ultramem-80;80;False;1922.00;;europe-central2
 m1-ultramem-80;80;False;1922.00;;europe-southwest1
 m1-ultramem-80;80;False;1922.00;;europe-west1
 m1-ultramem-80;80;False;1922.00;;europe-west2
@@ -1889,6 +1892,7 @@ n1-ultramem-160;160;False;3844.00;DEPRECATED;asia-southeast1
 n1-ultramem-160;160;False;3844.00;DEPRECATED;asia-southeast2
 n1-ultramem-160;160;False;3844.00;DEPRECATED;australia-southeast1
 n1-ultramem-160;160;False;3844.00;DEPRECATED;australia-southeast2
+n1-ultramem-160;160;False;3844.00;DEPRECATED;europe-central2
 n1-ultramem-160;160;False;3844.00;DEPRECATED;europe-southwest1
 n1-ultramem-160;160;False;3844.00;DEPRECATED;europe-west1
 n1-ultramem-160;160;False;3844.00;DEPRECATED;europe-west2
@@ -1917,6 +1921,7 @@ n1-ultramem-40;40;False;961.00;DEPRECATED;asia-southeast1
 n1-ultramem-40;40;False;961.00;DEPRECATED;asia-southeast2
 n1-ultramem-40;40;False;961.00;DEPRECATED;australia-southeast1
 n1-ultramem-40;40;False;961.00;DEPRECATED;australia-southeast2
+n1-ultramem-40;40;False;961.00;DEPRECATED;europe-central2
 n1-ultramem-40;40;False;961.00;DEPRECATED;europe-southwest1
 n1-ultramem-40;40;False;961.00;DEPRECATED;europe-west1
 n1-ultramem-40;40;False;961.00;DEPRECATED;europe-west2
@@ -1945,6 +1950,7 @@ n1-ultramem-80;80;False;1922.00;DEPRECATED;asia-southeast1
 n1-ultramem-80;80;False;1922.00;DEPRECATED;asia-southeast2
 n1-ultramem-80;80;False;1922.00;DEPRECATED;australia-southeast1
 n1-ultramem-80;80;False;1922.00;DEPRECATED;australia-southeast2
+n1-ultramem-80;80;False;1922.00;DEPRECATED;europe-central2
 n1-ultramem-80;80;False;1922.00;DEPRECATED;europe-southwest1
 n1-ultramem-80;80;False;1922.00;DEPRECATED;europe-west1
 n1-ultramem-80;80;False;1922.00;DEPRECATED;europe-west2
@@ -2250,6 +2256,7 @@ n2-highcpu-96;96;False;96.00;;europe-west2
 n2-highcpu-96;96;False;96.00;;europe-west3
 n2-highcpu-96;96;False;96.00;;europe-west4
 n2-highcpu-96;96;False;96.00;;us-central1
+n2-highcpu-96;96;False;96.00;;us-central2
 n2-highcpu-96;96;False;96.00;;us-east1
 n2-highcpu-96;96;False;96.00;;us-east4
 n2-highcpu-96;96;False;96.00;;us-west1
@@ -2262,6 +2269,7 @@ n2-highmem-128;128;False;864.00;;europe-west2
 n2-highmem-128;128;False;864.00;;europe-west3
 n2-highmem-128;128;False;864.00;;europe-west4
 n2-highmem-128;128;False;864.00;;us-central1
+n2-highmem-128;128;False;864.00;;us-central2
 n2-highmem-128;128;False;864.00;;us-east1
 n2-highmem-128;128;False;864.00;;us-east4
 n2-highmem-128;128;False;864.00;;us-west3
@@ -2553,6 +2561,7 @@ n2-highmem-96;96;False;768.00;;europe-west2
 n2-highmem-96;96;False;768.00;;europe-west3
 n2-highmem-96;96;False;768.00;;europe-west4
 n2-highmem-96;96;False;768.00;;us-central1
+n2-highmem-96;96;False;768.00;;us-central2
 n2-highmem-96;96;False;768.00;;us-east1
 n2-highmem-96;96;False;768.00;;us-east4
 n2-highmem-96;96;False;768.00;;us-west3
@@ -2564,6 +2573,7 @@ n2-standard-128;128;False;512.00;;europe-west2
 n2-standard-128;128;False;512.00;;europe-west3
 n2-standard-128;128;False;512.00;;europe-west4
 n2-standard-128;128;False;512.00;;us-central1
+n2-standard-128;128;False;512.00;;us-central2
 n2-standard-128;128;False;512.00;;us-east1
 n2-standard-128;128;False;512.00;;us-east4
 n2-standard-128;128;False;512.00;;us-west3
@@ -2855,6 +2865,7 @@ n2-standard-96;96;False;384.00;;europe-west2
 n2-standard-96;96;False;384.00;;europe-west3
 n2-standard-96;96;False;384.00;;europe-west4
 n2-standard-96;96;False;384.00;;us-central1
+n2-standard-96;96;False;384.00;;us-central2
 n2-standard-96;96;False;384.00;;us-east1
 n2-standard-96;96;False;384.00;;us-east4
 n2-standard-96;96;False;384.00;;us-west1
