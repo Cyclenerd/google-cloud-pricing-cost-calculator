@@ -16,8 +16,8 @@ fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0
 fedora-cloud-base-gcp-35-1-2-x86-64;Fedora, Fedora Cloud Base 35, 35-20211026.0, x86_64 published on 2021-11-02;10;fedora-cloud;fedora-cloud-35;;2021-12-21T13:12:17.145-08:00;;READY
 opensuse-leap-15-2-v20200702;openSUSE, openSUSE Leap, 15.2 x86_64 built on 2020-07-02;10;opensuse-cloud;opensuse-leap;;2020-07-02T09:59:57.582-07:00;;READY
 opensuse-leap-15-3-v20220719-x86-64;openSUSE, openSUSE Leap, 15.3 x86_64 built on 20220719, supports Shielded VM features;10;opensuse-cloud;opensuse-leap-15-3;X86_64;2022-07-19T06:01:21.210-07:00;;READY
-opensuse-leap-15-4-v20220624-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20220624, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;;2022-06-23T07:40:23.862-07:00;;READY
-opensuse-leap-15-4-v20220713-arm64;openSUSE, openSUSE Leap, 15.4 arm64 built on 20220713, supports Shielded VM features;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2022-07-13T06:05:06.145-07:00;;READY
+opensuse-leap-15-4-v20220722-arm64;openSUSE, openSUSE Leap, 15.4 arm64 built on 20220722, supports Shielded VM features;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2022-07-22T09:08:49.732-07:00;;READY
+opensuse-leap-15-4-v20220722-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20220722, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;X86_64;2022-07-22T09:03:22.993-07:00;;READY
 rhel-7-v20220719;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20220719, supports Shielded VM features;20;rhel-cloud;rhel-7;X86_64;2022-07-19T09:45:51.925-07:00;;READY
 rhel-8-v20220719;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20220719, supports Shielded VM features;20;rhel-cloud;rhel-8;X86_64;2022-07-19T09:45:51.843-07:00;;READY
 rhel-9-arm64-v20220719;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20220719, supports Shielded VM features;20;rhel-cloud;rhel-9-arm64;ARM64;2022-07-19T09:45:51.566-07:00;;READY
@@ -32,15 +32,15 @@ rocky-linux-8-optimized-gcp-arm64-v20220719;Rocky Linux, Rocky Linux, 8 optimize
 rocky-linux-8-optimized-gcp-v20220719;Rocky Linux, Rocky Linux, 8 optimized for GCP, x86_64 built on 20220719;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp;X86_64;2022-07-19T09:45:51.178-07:00;;READY
 rocky-linux-8-v20220719;Rocky Linux, Rocky Linux, 8, x86_64 built on 20220719;20;rocky-linux-cloud;rocky-linux-8;X86_64;2022-07-19T09:45:50.837-07:00;;READY
 sles-12-sp5-v20220719-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20220719, supports Shielded VM features;10;suse-cloud;sles-12;X86_64;2022-07-19T09:11:15.503-07:00;;READY
-sles-15-sp4-v20220621-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4, x86_64, built on 20220621, supports Shielded VM features;10;suse-cloud;sles-15;X86_64;2022-06-21T10:01:09.244-07:00;;READY
-sles-15-sp4-v20220713-arm64;SUSE, SUSE Linux Enterprise Server 15 SP4, arm64, built on 20220713, supports Shielded VM features;10;suse-cloud;sles-15-arm64;ARM64;2022-07-13T06:50:50.659-07:00;;READY
+sles-15-sp4-v20220722-arm64;SUSE, SUSE Linux Enterprise Server 15 SP4, arm64, built on 20220722, supports Shielded VM features;10;suse-cloud;sles-15-arm64;ARM64;2022-07-22T07:21:06.229-07:00;;READY
+sles-15-sp4-v20220722-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4, x86_64, built on 20220722, supports Shielded VM features;10;suse-cloud;sles-15;X86_64;2022-07-22T07:02:43.327-07:00;;READY
 sles-12-sp3-sap-v20220201;SUSE, SUSE Linux Enterprise Server 12 SP3 for SAP, x86_64, built on 20220201;10;suse-sap-cloud;sles-12-sp3-sap;;2022-02-01T06:41:41.948-08:00;;READY
 sles-12-sp4-sap-v20220714-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP4 for SAP, x86_64, built on 20220714, supports Shielded VM features;10;suse-sap-cloud;sles-12-sp4-sap;X86_64;2022-07-14T15:02:02.470-07:00;;READY
 sles-12-sp5-sap-v20220714-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5 for SAP, x86_64, built on 20220714, supports Shielded VM features;10;suse-sap-cloud;sles-12-sp5-sap;X86_64;2022-07-14T14:57:03.798-07:00;;READY
 sles-15-sp1-sap-v20220716-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP1 for SAP, x86_64, built on 20220716, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp1-sap;X86_64;2022-07-16T09:21:52.781-07:00;;READY
 sles-15-sp2-sap-v20220718-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP2 for SAP, x86_64, built on 20220718, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp2-sap;X86_64;2022-07-18T05:57:15.703-07:00;;READY
 sles-15-sp3-sap-v20220719-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP3 for SAP, x86_64, built on 20220719, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp3-sap;X86_64;2022-07-19T09:49:28.759-07:00;;READY
-sles-15-sp4-sap-v20220621-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP, x86_64, built on 20220621, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp4-sap;X86_64;2022-06-21T10:46:21.569-07:00;;READY
+sles-15-sp4-sap-v20220722-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP, x86_64, built on 20220722, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp4-sap;X86_64;2022-07-22T06:23:24.548-07:00;;READY
 ubuntu-1804-bionic-arm64-v20220712;Canonical, Ubuntu, 18.04 LTS, arm64 bionic image built on 2022-07-12, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-1804-lts-arm64;ARM64;2022-07-13T00:20:53.279-07:00;;READY
 ubuntu-1804-bionic-v20220712;Canonical, Ubuntu, 18.04 LTS, amd64 bionic image built on 2022-07-12, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-1804-lts;X86_64;2022-07-12T06:51:34.341-07:00;;READY
 ubuntu-pro-1604-xenial-v20211213;Canonical, Ubuntu, 16.04 LTS Pro Server, amd64 xenial pro server image built on 2021-12-13, supports Shielded VM features;10;ubuntu-os-pro-cloud;ubuntu-pro-1604-lts;;2021-12-13T09:00:54.564-08:00;;READY
