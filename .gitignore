@@ -5,6 +5,7 @@ usage/customers/**
 **.csv
 **.log
 /gcosts
+/gcosts.exe
 # Google Cloud Platform master data
 !build/gcp.yml
 # Prepared and tested price information file
