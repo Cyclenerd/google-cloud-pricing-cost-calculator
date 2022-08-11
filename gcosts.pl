@@ -91,38 +91,12 @@ open my $fh_totals, q{>}, "$totals_file" or die "ERROR: Cannot open CSV file '$t
 # HELPER
 ###############################################################################
 
-my %icons = (
-	'name'       => '➡️',
-	'resource'   => '⚙️',
-	'file'       => '📄',
-	'region'     => '📍',
-	'project'    => '📁',
-	'total'      => '☁️',
-	'discount'   => '🈹',
-	'bucket'     => '🪣',
-	'disk'       => '💾',
-	'snapshot'   => '📸',
-	'vm'         => '🖥️',
-	'lb'         => '🤹',
-	'vpn'        => '🚇',
-	'nat'        => '🔗',
-	'network'    => '🕸️',
-	'monitoring' => '🚦',
-	'cost'       => '💵',
-	'label'      => '🏷️',
-	'world'      => '🌎',
-	'china'      => '🌏',
-	'australia'  => '🌏',
-	'total'      => '☁️',
-	'warning'    => '⚠️',
-);
-
 sub line {
-	print "―"x60 . "\n";
+	print "-"x60 . "\n";
 }
 
 sub double_line {
-	print "═"x60 . "\n";
+	print "="x60 . "\n";
 }
 
 
@@ -360,8 +334,7 @@ sub cost {
 	my $commitment = $values{'commitment'};
 	my $discount   = $values{'discount'};
 	my $file       = $values{'file'};
-	printf "$icons{'cost'} cost : %.3f\n", $cost;
-	print "$icons{'label'} ";
+	printf "cost : %.3f\n", $cost;
 	foreach my $key (sort keys %values) {
 		next if $key eq 'cost';
 		my $value = $values{$key};
@@ -401,14 +374,14 @@ sub cost_monitoring {
 		my $data     = &check_float($i->{'data'}              || '0');
 		my $discount = &check_float($i->{'discount'}          || $usage->{'discount'});
 		my $region   = &check_region($pricing, $i->{'region'} || $usage->{'region'});
-		print "$icons{'monitoring'} monitoring : $name\n";
+		print "monitoring : $name\n";
 		my $cost_1 = &check_cost($pricing->{'monitoring'}->{'data'}->{'cost'}->{'0-100000'}->{$region}->{'month'}      ||'', $region);
 		my $cost_2 = &check_cost($pricing->{'monitoring'}->{'data'}->{'cost'}->{'100000-250000'}->{$region}->{'month'} ||'', $region);
 		my $cost_3 = &check_cost($pricing->{'monitoring'}->{'data'}->{'cost'}->{'250000n'}->{$region}->{'month'}       ||'', $region);
 		my $cost = &calc_monitoring_data_cost($data, $cost_1, $cost_2, $cost_3);
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'monitoring',
+			'resource' => 'monitoring',
 			'name'     => $name,
 			'data'     => $data,
 			'cost'     => $cost,
@@ -429,13 +402,13 @@ sub cost_nat {
 		my $data     = &check_float($i->{'data'}              || '0');
 		my $discount = &check_float($i->{'discount'}          || $usage->{'discount'});
 		my $region   = &check_region($pricing, $i->{'region'} || $usage->{'region'});
-		print "$icons{'nat'} nat-gateway : $name\n";
+		print "nat-gateway : $name\n";
 		my $cost_gateway = &check_cost($pricing->{'compute'}->{'network'}->{'nat'}->{'gateway'}->{'cost'}->{$region}->{'month'} ||'', $region);
 		my $cost_data    = &check_cost($pricing->{'compute'}->{'network'}->{'nat'}->{'data'}->{'cost'}->{$region}->{'month'}    ||'', $region);
 		my $cost = $cost_gateway+($cost_data*$data);
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'nat-gateway',
+			'resource' => 'nat-gateway',
 			'name'     => $name,
 			'data'     => $data,
 			'cost'     => $cost,
@@ -455,11 +428,11 @@ sub cost_vpn {
 		my $name     = &check_name($i->{'name'}               || 'vpn-tunnel');
 		my $discount = &check_float($i->{'discount'}          || $usage->{'discount'});
 		my $region   = &check_region($pricing, $i->{'region'} || $usage->{'region'});
-		print "$icons{'vpn'} vpn-tunnel : $name\n";
+		print "vpn-tunnel : $name\n";
 		my $cost = &check_cost($pricing->{'compute'}->{'network'}->{'vpn'}->{'tunnel'}->{'cost'}->{$region}->{'month'}||'', $region);
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'vpn-tunnel',
+			'resource' => 'vpn-tunnel',
 			'name'     => $name,
 			'cost'     => $cost,
 			'discount' => $discount,
@@ -480,7 +453,7 @@ sub cost_lb {
 		my $discount = &check_float($i->{'discount'}          || $usage->{'discount'});
 		my $rules    = &check_int($i->{'rules'}               || '0');
 		my $region   = &check_region($pricing, $i->{'region'} || $usage->{'region'});
-		print "$icons{'lb'} load-balancer : $name\n";
+		print "load-balancer : $name\n";
 		my $cost_rule_min = &check_cost($pricing->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'month'} ||'compute > network > lb > rule > min', $region);
 		my $cost_rule_add = &check_cost($pricing->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'month'} ||'compute > network > lb > rule > add', $region);
 		my $cost_data     = &check_cost($pricing->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'month'}          ||'compute > network > lb > data',       $region);
@@ -488,7 +461,7 @@ sub cost_lb {
 		$cost += $cost_data*$data;
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'load-balancer',
+			'resource' => 'load-balancer',
 			'name'     => $name,
 			'data'     => $data,
 			'rules'    => $rules,
@@ -511,14 +484,14 @@ sub cost_traffic_world {
 		my $discount   = &check_float($i->{'discount'}          || $usage->{'discount'});
 		my $region     = &check_region($pricing, $i->{'region'} || $usage->{'region'});
 		unless ($data_world) { next }; # skip if no traffic
-		print "$icons{'world'} traffic-world : $name\n";
+		print "traffic-world : $name\n";
 		my $cost_world_1 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'cost'}->{'0-1'}->{$region}->{'month'}  ||'compute > network > traffic > egreess > internet > 0-1',  $region);
 		my $cost_world_2 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'cost'}->{'1-10'}->{$region}->{'month'} ||'compute > network > traffic > egreess > internet > 1-10', $region);
 		my $cost_world_3 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'cost'}->{'10n'}->{$region}->{'month'}  ||'compute > network > traffic > egreess > internet > 10n',  $region);
 		my $cost = &calc_traffic_egress_cost($data_world, $cost_world_1, $cost_world_2, $cost_world_3);
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'traffic-world',
+			'resource' => 'traffic-world',
 			'name'     => $name,
 			'data'     => $data_world,
 			'cost'     => $cost,
@@ -540,14 +513,14 @@ sub cost_traffic_china {
 		my $discount = &check_float($i->{'discount'}            || $usage->{'discount'});
 		my $region     = &check_region($pricing, $i->{'region'} || $usage->{'region'});
 		unless ($data_china) { next }; # skip if no traffic
-		print "$icons{'china'} traffic-china : $name\n";
+		print "traffic-china : $name\n";
 		my $cost_china_1 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'china'}->{'cost'}->{'0-1'}->{$region}->{'month'}  ||'compute > network > traffic > egreess > internet > china > 0-1',  $region);
 		my $cost_china_2 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'china'}->{'cost'}->{'1-10'}->{$region}->{'month'} ||'compute > network > traffic > egreess > internet > china > 1-10', $region);
 		my $cost_china_3 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'china'}->{'cost'}->{'10n'}->{$region}->{'month'}  ||'compute > network > traffic > egreess > internet > china > 10n',  $region);
 		my $cost = &calc_traffic_egress_cost($data_china, $cost_china_1, $cost_china_2, $cost_china_3);
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'traffic-china',
+			'resource' => 'traffic-china',
 			'name'     => $name,
 			'data'     => $data_china,
 			'cost'     => $cost,
@@ -569,14 +542,14 @@ sub cost_traffic_australia {
 		my $discount       = &check_float($i->{'discount'}          || $usage->{'discount'});
 		my $region         = &check_region($pricing, $i->{'region'} || $usage->{'region'});
 		unless ($data_australia) { next }; # skip if no traffic
-		print "$icons{'australia'} traffic-australia : $name\n";
+		print "traffic-australia : $name\n";
 		my $cost_australia_1 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{'0-1'}->{$region}->{'month'}  ||'compute > network > traffic > egreess > internet > australia > 0-1',  $region);
 		my $cost_australia_2 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{'1-10'}->{$region}->{'month'} ||'compute > network > traffic > egreess > internet > australia > 1-10', $region);
 		my $cost_australia_3 = &check_cost($pricing->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{'10n'}->{$region}->{'month'}  ||'compute > network > traffic > egreess > internet > australia > 10n',  $region);
 		my $cost = &calc_traffic_egress_cost($data_australia, $cost_australia_1, $cost_australia_2, $cost_australia_3);
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'traffic-australia',
+			'resource' => 'traffic-australia',
 			'name'     => $name,
 			'data'     => $data_australia,
 			'cost'     => $cost,
@@ -597,12 +570,12 @@ sub cost_buckets {
 		my $data     = &check_float($i->{'data'}              || '0');
 		my $discount = &check_float($i->{'discount'}          || $usage->{'discount'});
 		my $region   = &check_region($pricing, $i->{'region'} || $usage->{'region'});
-		print "$icons{'bucket'} bucket : $name\n";
+		print "bucket : $name\n";
 		my $cost = &check_cost($pricing->{'storage'}->{'bucket'}->{$class}->{'cost'}->{$region}->{'month'}||"storage > bucket > class '$class'", $region);
 		$cost = $data*$cost;
 		$cost = &add_discount($cost, $discount);
 		&cost(
-			'resource'  => 'bucket',
+			'resource' => 'bucket',
 			'name'     => $name,
 			'data'     => $data,
 			'class'    => $class,
@@ -624,7 +597,7 @@ sub cost_disks {
 		my $data     = &check_float($i->{'data'}               || '0');
 		my $discount = &check_float($i->{'discount'}           || $usage->{'discount'});
 		my $region   = &check_region($pricing, $i->{'region'}  || $usage->{'region'});
-		print "$icons{'disk'} disk : $name\n";
+		print "disk : $name\n";
 		my $cost = &check_cost($pricing->{'compute'}->{'storage'}->{$type}->{'cost'}->{$region}->{'month'}||"type '$type'", $region);
 		if ($type eq "local") {
 			if ($commitment == '1') {
@@ -665,7 +638,7 @@ sub cost_instances {
 		my $region     = &check_region($pricing, $i->{'region'}     || $usage->{'region'});
 		my $disks      = $i->{'disks'}                              || ();
 		my $buckets    = $i->{'buckets'}                            || ();
-		print "$icons{'vm'} vm : $name\n";
+		print "vm : $name\n";
 		# Instance (VM)
 		my $resource = 'vm';
 		my $cost_instance = &check_cost($pricing->{'compute'}->{'instance'}->{$type}->{'cost'}->{$region}->{'month'}||"compute > instance > type '$type'", $region);
@@ -695,7 +668,7 @@ sub cost_instances {
 		if ($ip) {
 			if ($state eq 'terminated') {
 				# Unused IP / Static Ip Charge / Static external IP address (assigned but unused)
-				print "$icons{'vm'} vm-unused-ip : $name\n";
+				print "vm-unused-ip : $name\n";
 				my $cost_ip = &check_cost($pricing->{'compute'}->{'network'}->{'ip'}->{'unused'}->{'cost'}->{$region}->{'month'}||"compute > network > ip > unused", $region);
 				$cost_ip = $cost_ip*$ip;
 				$cost_ip = &add_discount($cost_ip, $discount);
@@ -710,7 +683,7 @@ sub cost_instances {
 				);
 			} else {
 				# Active IP / External IP Charge on a Standard VM
-				print "$icons{'vm'} vm-ip : $name\n";
+				print "vm-ip : $name\n";
 				my $cost_ip = &check_cost($pricing->{'compute'}->{'network'}->{'ip'}->{'vm'}->{'cost'}->{$region}->{'month'}||"compute > network > ip > vm", $region);
 				$cost_ip = $cost_ip*$ip;
 				$cost_ip = &add_discount($cost_ip, $discount);
@@ -727,7 +700,7 @@ sub cost_instances {
 		}
 		# Operating system
 		if ($os ne 'free') {
-			print "$icons{'vm'} vm-os : $name\n";
+			print "vm-os : $name\n";
 			my $resource_os = 'vm-os';
 			my $cost_os = &check_cost($pricing->{'compute'}->{'license'}->{$type}->{'cost'}->{$os}->{'month'}||"compute > license > type '$type' > os '$os'", $region);
 			# Override costs for stopped (terminated) VM
@@ -793,7 +766,7 @@ print $fh join(";", (
 
 # Open usage files
 foreach my $usage_file (sort @usage_files) {
-	print "$icons{'file'} file : $usage_file\n";
+	print "file : $usage_file\n";
 	&line();
 	# Open YAML usage file
 	my $usage = LoadFile("$usage_file") or die "ERROR: Cannot open YAML file '$usage_file' to read Google Cloud Platform resources!\n";
@@ -806,9 +779,9 @@ foreach my $usage_file (sort @usage_files) {
 	$default_project  = $usage->{'project'};
 	$default_region   = $usage->{'region'};
 	$default_discount = $usage->{'discount'};
-	print "$icons{'project'} project : $default_project\n";
-	print "$icons{'region'} region : $default_region\n";
-	print "$icons{'discount'} discount : $default_discount\n";
+	print "project : $default_project\n";
+	print "region : $default_region\n";
+	print "discount : $default_discount\n";
 	&line();
 	print "\n";
 
@@ -853,7 +826,7 @@ sub total_header {
 # &total($type, $name, $cost)
 sub total {
 	my ($type, $name, $cost) = @_;\
-	printf "$icons{$type} $name : %.3f\n", $cost;
+	printf "$name : %.3f\n", $cost;
 	print $fh_totals join(";", (
 		$type,
 		$name,
@@ -865,31 +838,31 @@ print "TOTALS\n";
 &double_line();
 &total_header();
 
-print "\nName\n";
+print "\nNAME\n";
 &line();
 foreach my $key (sort keys %sum_names) {
 	my $cost = $sum_names{$key};
 	&total('name', $key, $cost);
 }
-print "\nResource\n";
+print "\nRESOURCE\n";
 &line();
 foreach my $key (sort keys %sum_services) {
 	my $cost = $sum_services{$key};
 	&total('resource', $key, $cost);
 }
-print "\nRegion\n";
+print "\nREGION\n";
 &line();
 foreach my $key (sort keys %sum_regions) {
 	my $cost = $sum_regions{$key};
 	&total('region', $key, $cost);
 }
-print "\nFile\n";
+print "\nFILE\n";
 &line();
 foreach my $key (sort keys %sum_files) {
 	my $cost = $sum_files{$key};
 	&total('file', $key, $cost);
 }
-print "\nProject\n";
+print "\nPROJECT\n";
 &line();
 foreach my $key (sort keys %sum_projects) {
 	my $cost = $sum_projects{$key};
@@ -899,7 +872,7 @@ foreach my $key (sort keys %sum_projects) {
 print "\n";
 &line();
 if ($sum_warnings) {
-	print "$icons{'warning'} warnings: $sum_warnings\n";
+	print "WARNINGS: $sum_warnings\n";
 }
 &total('total', 'total', $sum_total);
 
