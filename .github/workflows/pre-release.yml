@@ -28,13 +28,6 @@ jobs:
       # Pack 'gcosts.pl' into executable 'gcosts'
       - name: ⏳ Compile
         run: pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
-      # Test binary
-      - name: 🌡️ Test binary
-        run: ./gcosts --version
-      - name: 🌡️ Calculate
-        run: cd t && ../gcosts -pricing="../pricing.yml"
-      - name: 🌡️ Test
-        run: cd t && bash test.sh && rm *.csv
       # Upload binary
       # https://github.com/actions/download-artifact
       - name: 📤 Upload gcosts
@@ -46,7 +39,7 @@ jobs:
 
   release:
     name: Release
-    needs: test-linux
+    needs: linux
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout
