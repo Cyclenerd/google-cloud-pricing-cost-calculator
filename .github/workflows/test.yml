@@ -9,10 +9,11 @@ on:
 
 jobs:
   # Linux x86-64
-  # https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md
+  # https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md
   linux:
     name: Linux
-    runs-on: ubuntu-latest
+    # Ubuntu 18.04 with older glibc for Debian 10 (Buster) support
+    runs-on: ubuntu-18.04
     steps:
       - name: 🔧 Install dependencies
         run: |
