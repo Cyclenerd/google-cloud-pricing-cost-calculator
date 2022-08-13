@@ -68,7 +68,6 @@ jobs:
   # https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
   windows:
     name: Windows
-    needs: linux
     runs-on: windows-latest
     steps:
       - name: 🛎️ Checkout
