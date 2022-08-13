@@ -254,18 +254,9 @@ cpan App::cpanminus && \
 cpanm --installdeps .
 ```
 
-### Packager
-
-Create the standalone executables `gcosts` CLI program.
-
-Requirement:
+Execute `gcosts.pl`:
 ```shell
-sudo apt install libpar-packer-perl
-```
-
-Pack `gcosts.pl` into executable `gcosts` (or `gcosts.exe` on Win32):
-```shell
-pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
+perl gcosts.pl --help
 ```
 
 ## ❤️ Contributing
