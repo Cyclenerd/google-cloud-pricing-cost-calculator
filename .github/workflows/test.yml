@@ -12,9 +12,8 @@ jobs:
   # https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md
   linux:
     name: Linux
-    # Ubuntu 18.04 with older glibc for Debian 10 (Buster) support
     # Same as in release.yml
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: 🔧 Install dependencies
         run: |
@@ -42,10 +41,6 @@ jobs:
       - name: 🌡️ Test
         run: cd t && bash test.sh && rm *.csv
       # Test Debian
-      - name: 🐧 Test Debian 10 (Buster)
-        run: |
-          docker pull debian:10
-          docker run -v $PWD:/temp/test debian:10 /temp/test/gcosts --version
       - name: 🐧 Test Debian 11 (Bullseye)
         run: |
           docker pull debian:11
@@ -59,11 +54,6 @@ jobs:
         run: |
           docker pull ubuntu:22.04
           docker run -v $PWD:/temp/test ubuntu:22.04 /temp/test/gcosts --version
-      # Test Rock Linux
-      - name: 🐧 Test Rocky Linux 8
-        run: |
-          docker pull rockylinux:8
-          docker run -v $PWD:/temp/test rockylinux:8 /temp/test/gcosts --version
   # Windows x86-64
   # https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
   windows:
