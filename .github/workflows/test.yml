@@ -73,6 +73,12 @@ jobs:
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
+      # Strawberry for Windows
+      # https://strawberryperl.com/
+      - uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: '5.32'
+          distribution: strawberry
       # Install requirements
       - name: 🔧 Install requirements
         run: cpanm --installdeps .
