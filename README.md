@@ -9,7 +9,7 @@ Optimized for DevOps, architects and engineers to quickly see a cost breakdown a
 
 * Mapping of resource usage is done in easy to learn **YAML** usage files
 * Price information is read from a local file
-* Calculation is done via `gcosts` **Linux command line (CLI)** program
+* Calculation is done via `gcosts` **CLI** program
 * Calculated costs are saved in **CSV** files
 
 Full control and no disclosure of any information and costs to third parties.
@@ -96,25 +96,62 @@ To get started, please click the following button:
 
 ### 1. Get `gcosts` program
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts` Linux CLI program.
+<details>
+<summary>Linux</summary>
 
-Linux (x86_64) / Cloud Shell:
-<!-- https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts -->
+**Debian/Ubuntu or Google Cloud Shell (x86_64)**
+
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts` Linux CLI program:
 ```shell
-curl -OL "https://bit.ly/gcosts" && \
-chmod +x gcosts && \
+curl -OL "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts" && \
+chmod +x gcosts
+```
+
+Execute `gcosts`:
+```shell
 ./gcosts --help
 ```
 
+If you using another Linux or UNIX operating system, please see the [Development](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator#-development) section.
+</details>
+
+<details>
+<summary>Windows</summary>
+
+**Microsoft Windows (x86_64)**
+
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts.exe` Windows CLI program:
+```powershell
+Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts.exe" -OutFile "gcosts.exe"
+```
+
+Execute `gcosts.exe`:
+```powershell
+.\gcosts.exe --help
+```
+</details>
+
 ### 2. Download price information
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`.
+<details>
+<summary>Linux</summary>
 
-Linux / Cloud Shell:
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
 ```shell
-curl -L "https://bit.ly/pricing_yml" \
+curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" \
      -o "pricing.yml"
 ```
+</details>
+
+<details>
+<summary>Windows</summary>
+
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
+```powershell
+Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" -OutFile "pricing.yml"
+```
+</details>
+
 
 ### 3. Run it
 
@@ -133,10 +170,25 @@ instances:
         data: 75
 ```
 
-Run the CLI program:
+Execute the CLI program:
+
+<details>
+<summary>Linux</summary>
+
+Execute `gcosts`:
 ```shell
 ./gcosts
 ```
+</details>
+
+<details>
+<summary>Windows</summary>
+
+Execute `gcosts.exe`:
+```powershell
+.\gcosts.exe
+```
+</details>
 
 All YAML usage files (`*.yml`) of the current directory are imported and the costs of the resources are calculated:
 
@@ -154,7 +206,7 @@ Continue to familiarize yourself with the options. The following documentations 
 * [Create usage files](usage/)
 * [Build pricing information file](build/)
 
-**🤓 Pro Tip**
+**🤓 Linux Tip**
 
 Add `gcosts` to your Bash aliases with absolute pathnames. You can then execute `gcosts` anywhere.
 
@@ -186,7 +238,7 @@ For MS Windows you can download and install [Strawberry Perl](https://strawberry
 
 Debian/Ubuntu:
 ```shell
-sudo apt update
+sudo apt update && \
 sudo apt install \
 	libapp-options-perl \
 	libwww-perl \
@@ -198,7 +250,7 @@ sudo apt install \
 
 Or install Perl modules with cpanminus:
 ```shell
-cpan App::cpanminus
+cpan App::cpanminus && \
 cpanm --installdeps .
 ```
 
