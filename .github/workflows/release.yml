@@ -4,7 +4,6 @@ on:
   push:
     tags:
       - "v*.*.*"
-  workflow_dispatch:
 
 jobs:
   linux:
@@ -42,6 +41,7 @@ jobs:
       - name: 🌡️ Test
         run: cd t && bash test.sh && rm *.csv
       # Upload binary
+      # https://github.com/actions/download-artifact
       - name: 📤 Upload gcosts
         uses: actions/upload-artifact@v3
         with:
@@ -125,3 +125,23 @@ jobs:
         run: cd t && ..\gcosts.exe -pricing="..\pricing.yml"
       - name: 🌡️ Test n2-standard-8 in euw4
         run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
+
+  release:
+    name: Release
+    needs: [test-linux, test-windows]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v3
+      # Download all artifacts to the current working directory
+      - name: 📥 Download
+        uses: actions/download-artifact@v3
+      # Release, upload files
+      # https://github.com/softprops/action-gh-release
+      - name: ✨ Release
+        uses: softprops/action-gh-release@v1.1.14
+        with:
+          files: |
+            gcosts
+            gcosts.exe
+            pricing.yml
