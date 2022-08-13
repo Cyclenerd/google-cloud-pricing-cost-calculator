@@ -9,10 +9,10 @@ on:
 
 jobs:
   # Linux x86-64
+  # https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md
   linux:
     name: Linux
-    # Same OS as in release.yml
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: 🔧 Install dependencies
         run: |
@@ -20,10 +20,8 @@ jobs:
             libapp-options-perl  \
             libyaml-libyaml-perl \
             libpar-packer-perl
-
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
-
       # Test pricing
       - name: 🌡️ Test gcosts.pl
         run: |
@@ -32,12 +30,10 @@ jobs:
           perl ../gcosts.pl -pricing=../pricing.yml && \
           bash test.sh && \
           rm *.csv
-
       # Pack 'gcosts.pl' into executable 'gcosts'
       - name: ⏳ Compile gcosts
         run: |
           pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
-
       # Test pricing
       - name: 🌡️ Test gcosts
         run: |
@@ -46,33 +42,29 @@ jobs:
           ../gcosts -pricing=../pricing.yml && \
           bash test.sh && \
           rm *.csv
-
       # Test Linux operating systems
       - name: 🐧 Test Debian 10 (Buster)
         run: |
           docker pull debian:10
           docker run -v $PWD:/temp/test debian:10 /temp/test/gcosts --version
-
       - name: 🐧 Test Debian 11 (Bullseye)
         run: |
           docker pull debian:11
           docker run -v $PWD:/temp/test debian:11 /temp/test/gcosts --version
-
       - name: 🐧 Test Ubuntu 20.04 (Focal)
         run: |
           docker pull ubuntu:20.04
           docker run -v $PWD:/temp/test ubuntu:20.04 /temp/test/gcosts --version
-
       - name: 🐧 Test Ubuntu 22.04 (Jammy Jellyfish)
         run: |
           docker pull ubuntu:22.04
           docker run -v $PWD:/temp/test ubuntu:22.04 /temp/test/gcosts --version
-
       - name: 🐧 Test Rocky Linux 8
         run: |
           docker pull rockylinux:8
           docker run -v $PWD:/temp/test rockylinux:8 /temp/test/gcosts --version
   # Windows x86-64
+  # https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
   windows:
     name: Windows
     needs: linux
@@ -89,4 +81,4 @@ jobs:
       - name: 🌡️ Calculate
         run: cd t && perl ..\gcosts.pl -pricing="..\pricing.yml"
       - name: 🌡️ Test n2-standard-8 in euw4
-        run: find "europe-west4;vm;n2-standard-8;249" "t\COSTS.csv"
+        run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
