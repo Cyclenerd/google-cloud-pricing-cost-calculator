@@ -17,6 +17,7 @@ Everything tested and matched against the actual invoice in large Google Cloud m
 
 ![Screenshot: YAML usage file, gcosts and CSV costs file](https://raw.githubusercontent.com/Cyclenerd/google-cloud-pricing-cost-calculator/master/img/gcosts-usage-costs.jpg?v1)
 
+
 ## ☁️ Supported resources
 
 The cost of a resource is calculated by multiplying its price by its usage.
@@ -27,7 +28,9 @@ The cost of a resource is calculated by multiplying its price by its usage.
 
 Resources that `gcosts` supports, and Google charges for:
 
-🖥️ **Compute Engine Instances**
+<details>
+<summary>🖥️ <b>Compute Engine Instances</b></summary>
+
 - [x] All machine types are supported
 	- [x] Cost-optimized (`E2`, `F1`, `G1`)
 	- [x] Balanced (`N1`, `N2`, `N2D`)
@@ -45,38 +48,65 @@ Resources that `gcosts` supports, and Google charges for:
 	- [x] Windows Server
 - [x] Custom machine types are supported (have to be created manually)
 - [ ] Spot and sole-tenant VMs are not supported
+</details>
 
-💾 **Compute Engine Disks**
+<details>
+<summary>💾 <b>Compute Engine Disks</b></summary>
+
 - [x] All persistent disk (PD) types are supported
 	- [x] Zonal persistent disk
 	- [x] Regional persistent disk
 	- [x] Local SSD
+</details>
 
-🪣 **Cloud Storage**
+<details>
+<summary>🪣 <b>Cloud Storage</b></summary>
+
 - [x] All storage classes and location types are supported
 	- [x] region
 	- [x] dual-region
 	- [x] multi-region
+</details>
 
-🚇 **Cloud VPN**
+<details>
+<summary>🚇 <b>Hybrid Connectivity</b></summary>
+
 - [x] VPN tunnel
+- [ ] Interconnect is currently not calculated
+</details>
 
-🔗 **Cloud NAT**
+<details>
+<summary>🔗 <b>Cloud NAT</b></summary>
+
 - [x] NAT gateway
 - [x] Data processing (both egress and ingress)
+</details>
 
-🤹 **Cloud Load Balancing**
+
+<details>
+<summary>🤹 <b>Cloud Load Balancing</b></summary>
+
 - [x] Forwarding rules
 - [x] Ingress data processed by load balancer
+</details>
 
-🚦 **Cloud Monitoring (Operations Suite)**
+<details>
+<summary>🚦 <b>Cloud Monitoring (Operations Suite)</b></summary>
+
 - [x] Monitoring data
+</details>
 
-🕸️ **Network**
+<details>
+<summary>🕸️ <b>Network</b></summary>
+
 - [x] Premium Tier internet egress
 	- [x] Worldwide destinations (excluding China & Australia, but including Hong Kong)
 	- [x] China destinations (excluding Hong Kong)
 	- [x] Australia destinations
+</details>
+
+<details>
+<summary>🏗️ <b>TODO</b></summary>
 
 The following services are not currently supported, but are on the TODO list:
 
@@ -84,6 +114,8 @@ The following services are not currently supported, but are on the TODO list:
 - [ ] Cloud SQL
 
 Please suggest other resources worth covering by upvoting existing issue or opening new issue.
+</details>
+
 
 ## 🧑‍🏫 Start the interactive tutorial
 
@@ -91,6 +123,7 @@ This guide is available as an interactive Cloud Shell tutorial.
 To get started, please click the following button:
 
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator&cloudshell_git_branch=master&cloudshell_tutorial=cloud-shell-tutorial.md)
+
 
 ## 🏃 Quick start
 
@@ -151,7 +184,6 @@ curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/m
 Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" -OutFile "pricing.yml"
 ```
 </details>
-
 
 ### 3. Run it
 
@@ -215,6 +247,7 @@ Alias (`~/.bash_aliases`):
 alias gcosts='/your-pathname/gcosts -pricing=/your-pathname/pricing.yml'
 ```
 
+
 ## 🧑‍💻 Development
 
 If you want to modify the Perl scripts or prefer to run the uncomplicated Perl scripts (`gcosts.pl`, `skus.pl`, `mapping.pl`, `pricing.pl`) and create the price information yourself,
@@ -258,6 +291,7 @@ Execute `gcosts.pl`:
 ```shell
 perl gcosts.pl --help
 ```
+
 
 ## ❤️ Contributing
 
