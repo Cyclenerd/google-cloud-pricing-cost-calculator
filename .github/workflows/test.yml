@@ -8,8 +8,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    name: CI/CD Test
+  # Linux x86-64
+  linux:
+    name: Linux
     # Same OS as in release.yml
     runs-on: ubuntu-18.04
     steps:
@@ -71,3 +72,21 @@ jobs:
         run: |
           docker pull rockylinux:8
           docker run -v $PWD:/temp/test rockylinux:8 /temp/test/gcosts --version
+  # Windows x86-64
+  windows:
+    name: Windows
+    needs: linux
+    runs-on: windows-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+      # Install requirements
+      - name: 🔧 Install requirements
+        run: cpanm --installdeps .
+      # Test pricing
+      - name: 🌡️ Version
+        run: perl gcosts.pl --version
+      - name: 🌡️ Calculate
+        run: cd t && perl ..\gcosts.pl -pricing="..\pricing.yml"
+      - name: 🌡️ Test n2-standard-8 in euw4
+        run: find "europe-west4;vm;n2-standard-8;249" "t\COSTS.csv"
