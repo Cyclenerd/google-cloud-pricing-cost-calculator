@@ -12,7 +12,7 @@ Click the **Start** button to move to the next step.
 
 Download the executable `gcosts` Linux CLI program and save it to your home folder:
 ```bash
-curl -L "https://bit.ly/gcosts" \
+curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts" \
      -o ~/gcosts
 ```
 
@@ -30,7 +30,7 @@ Test:
 
 Download the latest and tested price information file `pricing.yml` and save it to your home folder:
 ```bash
-curl -L "https://bit.ly/pricing_yml" \
+curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" \
      -o ~/pricing.yml
 ```
 
