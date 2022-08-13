@@ -4,10 +4,11 @@ on:
   push:
     tags:
       - "v*.*.*"
+  workflow_dispatch:
 
 jobs:
-  build:
-    name: Compile and release
+  linux:
+    name: Linux
     # Ubuntu          Debian
     # 20.04  focal    bullseye/ sid - 11
     # 18.04  bionic   buster  / sid - 10 (Google Cloud Shell)
@@ -25,36 +26,95 @@ jobs:
             libapp-options-perl  \
             libyaml-libyaml-perl \
             libpar-packer-perl
-
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
-
-      # Test pricing
+      # Test source
       - name: 🌡️ Test gcosts.pl
-        run: |
-          perl gcosts.pl --version && \
-          cd t && \
-          perl ../gcosts.pl -pricing=../pricing.yml && \
-          bash test.sh && \
-          rm *.csv
-
+        run: perl gcosts.pl --version 
       # Pack 'gcosts.pl' into executable 'gcosts'
-      - name: ⏳ Compile gcosts
-        run: |
-          pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
-
-      # Test pricing
-      - name: 🌡️ Test gcosts
-        run: |
-          ./gcosts --version && \
-          cd t && \
-          ../gcosts -pricing=../pricing.yml && \
-          bash test.sh && \
-          rm *.csv
-
-      - name: ✨ Release
-        uses: softprops/action-gh-release@v1
+      - name: ⏳ Compile
+        run: pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
+      # Test binary
+      - name: 🌡️ Test binary
+        run: ./gcosts --version
+      - name: 🌡️ Calculate
+        run: cd t && ../gcosts -pricing="../pricing.yml"
+      - name: 🌡️ Test
+        run: cd t && bash test.sh && rm *.csv
+      # Upload binary
+      - name: Upload
+        uses: actions/upload-artifact@v3
         with:
-          files: |
-            gcosts
-            pricing.yml
+          name: gcosts
+          path: gcosts
+          retention-days: 1
+
+  test-linux:
+    name: Test Linux
+    needs: linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+      - name: Download gcosts
+        uses: actions/download-artifact@v3
+        with:
+          name: gcosts
+      # Test binary
+      - name: 🌡️ Test gcosts
+        run: ./gcosts --version
+      - name: 🌡️ Calculate
+        run: cd t && ../gcosts -pricing="../pricing.yml"
+      - name: 🌡️ Test
+        run: cd t && bash test.sh && rm *.csv
+
+  windows:
+    name: Windows
+    runs-on: windows-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+      # Install requirements
+      - name: 🔧 Install requirements
+        run: |
+          cpanm --installdeps .
+          cpanm PAR::Packer
+      # Test source
+      - name: 🌡️ Test gcosts.pl
+        run: perl gcosts.pl --version
+      # Pack 'gcosts.pl' into executable 'gcosts'
+      - name: ⏳ Compile
+        run: pp -vvv -o gcosts.exe gcosts.pl
+      # Test binary
+      - name: 🌡️ Test binary
+        run: gcosts.exe --version
+      - name: 🌡️ Calculate
+        run: cd t && ..\gcosts.exe -pricing="..\pricing.yml"
+      - name: 🌡️ Test n2-standard-8 in euw4
+        run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
+      # Upload binary
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: gcosts.exe
+          path: gcosts.exe
+          retention-days: 1
+
+  test-windows:
+    name: Test Windows
+    needs: windows
+    runs-on: windows-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+      - name: Download gcosts.exe
+        uses: actions/download-artifact@v3
+        with:
+          name: gcosts.exe
+      # Test binary
+      - name: 🌡️ Test binary
+        run: gcosts.exe --version
+      - name: 🌡️ Calculate
+        run: cd t && ..\gcosts.exe -pricing="..\pricing.yml"
+      - name: 🌡️ Test n2-standard-8 in euw4
+        run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
