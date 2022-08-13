@@ -44,94 +44,19 @@ jobs:
           path: gcosts
           retention-days: 1
 
-  test-linux:
-    name: Test Linux
-    needs: linux
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛎️ Checkout
-        uses: actions/checkout@v3
-      - name: 📥 Download gcosts
-        uses: actions/download-artifact@v3
-        with:
-          name: gcosts
-      # Test binary
-      - name: 🌡️ Test gcosts
-        run: chmod +x gcosts && ./gcosts --version
-      - name: 🌡️ Calculate
-        run: cd t && ../gcosts -pricing="../pricing.yml"
-      - name: 🌡️ Test
-        run: cd t && bash test.sh && rm *.csv
-
-  windows:
-    name: Windows
-    runs-on: windows-latest
-    steps:
-      - name: 🛎️ Checkout
-        uses: actions/checkout@v3
-      # Strawberry for Windows
-      # https://strawberryperl.com/
-      # https://github.com/shogo82148/actions-setup-perl
-      - uses: shogo82148/actions-setup-perl@v1
-        with:
-          perl-version: '5.32'
-          distribution: strawberry
-      # Install requirements
-      - name: 🔧 Install requirements
-        run: cpanm --installdeps .
-      - name: 🔧 Install pp
-        run: cpanm --verbose --no-interactive --force PAR::Packer
-      # Test source
-      - name: 🌡️ Test gcosts.pl
-        run: perl gcosts.pl --version
-      # Pack 'gcosts.pl' into executable 'gcosts'
-      - name: ⏳ Compile
-        run: pp -vvv -o gcosts.exe gcosts.pl
-      # Test binary
-      - name: 🌡️ Test binary
-        run: .\gcosts.exe --version
-      - name: 🌡️ Calculate
-        run: cd t && ..\gcosts.exe -pricing="..\pricing.yml"
-      - name: 🌡️ Test n2-standard-8 in euw4
-        run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
-      # Upload binary
-      - name: 📤 Upload gcosts.exe
-        uses: actions/upload-artifact@v3
-        with:
-          name: gcosts.exe
-          path: gcosts.exe
-          retention-days: 1
-
-  test-windows:
-    name: Test Windows
-    needs: windows
-    runs-on: windows-latest
-    steps:
-      - name: 🛎️ Checkout
-        uses: actions/checkout@v3
-      - name: 📥 Download gcosts.exe
-        uses: actions/download-artifact@v3
-        with:
-          name: gcosts.exe
-      # Test binary
-      - name: 🌡️ Test binary
-        run: .\gcosts.exe --version
-      - name: 🌡️ Calculate
-        run: cd t && ..\gcosts.exe -pricing="..\pricing.yml"
-      - name: 🌡️ Test n2-standard-8 in euw4
-        run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
-
   release:
     name: Release
-    needs: [test-linux, test-windows]
+    needs: test-linux
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
       # Download all artifacts to the current working directory
-      - name: 📥 Download
+      - name: 📥 Download gcosts
         uses: actions/download-artifact@v3
-      # Release, upload files
-      # https://github.com/softprops/action-gh-release
+        with:
+          name: gcosts
       - name: ✨ List
         run: ls -lah
+      - name: Run
+        run: ./gcosts --help
