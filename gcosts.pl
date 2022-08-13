@@ -19,7 +19,7 @@
 # Help: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 
 BEGIN {
-	$VERSION = "1.0.5";
+	$VERSION = "1.1.0";
 }
 
 use strict;
