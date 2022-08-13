@@ -32,9 +32,8 @@ jobs:
       - name: 🌡️ Test
         run: cd t && bash test.sh && rm *.csv
       # Pack 'gcosts.pl' into executable 'gcosts'
-      - name: ⏳ Compile gcosts
-        run: |
-          pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
+      - name: ⏳ Compile
+        run: pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
       # Test binary
       - name: 🌡️ Test gcosts
         run: ./gcosts --version
