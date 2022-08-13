@@ -74,6 +74,8 @@ jobs:
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
+      - name: 🗑️ Remove Chocolatey
+        run: Remove-Item 'c:\programdata\chocolatey' -Recurse
       # Install requirements
       - name: 🔧 Install requirements
         run: cpanm --installdeps .
