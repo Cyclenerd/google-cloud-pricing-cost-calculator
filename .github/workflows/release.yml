@@ -131,8 +131,14 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
       # Download all artifacts to the current working directory
-      - name: 📥 Download
+      - name: 📥 Download gcosts
         uses: actions/download-artifact@v3
+        with:
+          name: gcosts
+      - name: 📥 Download gcosts.exe
+        uses: actions/download-artifact@v3
+        with:
+          name: gcosts.exe
       # Release, upload files
       # https://github.com/softprops/action-gh-release
       - name: ✨ Release
