@@ -42,7 +42,7 @@ jobs:
       - name: 🌡️ Test
         run: cd t && bash test.sh && rm *.csv
       # Upload binary
-      - name: Upload
+      - name: 📤 Upload gcosts
         uses: actions/upload-artifact@v3
         with:
           name: gcosts
@@ -56,13 +56,13 @@ jobs:
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
-      - name: Download gcosts
+      - name: 📥 Download gcosts
         uses: actions/download-artifact@v3
         with:
           name: gcosts
       # Test binary
       - name: 🌡️ Test gcosts
-        run: ./gcosts --version
+        run: chmod +x gcosts && ./gcosts --version
       - name: 🌡️ Calculate
         run: cd t && ../gcosts -pricing="../pricing.yml"
       - name: 🌡️ Test
@@ -76,9 +76,9 @@ jobs:
         uses: actions/checkout@v2
       # Install requirements
       - name: 🔧 Install requirements
-        run: |
-          cpanm --installdeps .
-          cpanm PAR::Packer
+        run: cpanm --installdeps .
+      - name: 🔧 Install pp
+        run: cpanm PAR::Packer
       # Test source
       - name: 🌡️ Test gcosts.pl
         run: perl gcosts.pl --version
@@ -93,7 +93,7 @@ jobs:
       - name: 🌡️ Test n2-standard-8 in euw4
         run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
       # Upload binary
-      - name: Upload
+      - name: 📤 Upload gcosts.exe
         uses: actions/upload-artifact@v3
         with:
           name: gcosts.exe
@@ -107,7 +107,7 @@ jobs:
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v2
-      - name: Download gcosts.exe
+      - name: 📥 Download gcosts.exe
         uses: actions/download-artifact@v3
         with:
           name: gcosts.exe

@@ -36,7 +36,7 @@ jobs:
         run: pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
       # Test binary
       - name: 🌡️ Test gcosts
-        run: ./gcosts --version
+        run: chmod +x gcosts && ./gcosts --version
       - name: 🌡️ Calculate
         run: cd t && ../gcosts -pricing="../pricing.yml"
       - name: 🌡️ Test
