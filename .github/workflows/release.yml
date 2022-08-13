@@ -78,7 +78,7 @@ jobs:
       - name: 🔧 Install requirements
         run: cpanm --installdeps .
       - name: 🔧 Install pp
-        run: cpanm PAR::Packer
+        run: cpanm --verbose --no-interactive PAR::Packer
       # Test source
       - name: 🌡️ Test gcosts.pl
         run: perl gcosts.pl --version
