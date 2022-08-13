@@ -67,10 +67,6 @@ jobs:
         run: |
           docker pull rockylinux:8
           docker run -v $PWD:/temp/test rockylinux:8 /temp/test/gcosts --version
-      - name: 🐧 Test Rocky Linux 9
-        run: |
-          docker pull rockylinux:9
-          docker run -v $PWD:/temp/test rockylinux:9 /temp/test/gcosts --version
   # Windows x86-64
   # https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
   windows:
