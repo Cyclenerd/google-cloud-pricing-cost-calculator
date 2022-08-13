@@ -27,7 +27,7 @@ jobs:
             libyaml-libyaml-perl \
             libpar-packer-perl
       - name: 🛎️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       # Test source
       - name: 🌡️ Test gcosts.pl
         run: perl gcosts.pl --version 
@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 📥 Download gcosts
         uses: actions/download-artifact@v3
         with:
@@ -73,7 +73,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 🛎️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       # Install requirements
       - name: 🔧 Install requirements
         run: cpanm --installdeps .
@@ -106,7 +106,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 🛎️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 📥 Download gcosts.exe
         uses: actions/download-artifact@v3
         with:
