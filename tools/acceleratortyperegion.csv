@@ -1,4 +1,5 @@
 NAME;ZONE
+nvidia-a100-80gb;us-east7
 nvidia-tesla-a100;asia-northeast1
 nvidia-tesla-a100;asia-northeast3
 nvidia-tesla-a100;asia-southeast1
@@ -53,6 +54,7 @@ nvidia-tesla-t4-vws;europe-west1
 nvidia-tesla-t4-vws;europe-west2
 nvidia-tesla-t4-vws;europe-west3
 nvidia-tesla-t4-vws;europe-west4
+nvidia-tesla-t4-vws;me-west1
 nvidia-tesla-t4-vws;northamerica-northeast1
 nvidia-tesla-t4-vws;southamerica-east1
 nvidia-tesla-t4-vws;us-central1
@@ -72,6 +74,7 @@ nvidia-tesla-t4;europe-west1
 nvidia-tesla-t4;europe-west2
 nvidia-tesla-t4;europe-west3
 nvidia-tesla-t4;europe-west4
+nvidia-tesla-t4;me-west1
 nvidia-tesla-t4;northamerica-northeast1
 nvidia-tesla-t4;southamerica-east1
 nvidia-tesla-t4;us-central1
