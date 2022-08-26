@@ -246,10 +246,14 @@ if ! git diff --exit-code "$CSV_GCLOUD_ACCELERATOR_TYPES"; then
 		echo ""
 		echo "Deleted:"
 		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPES" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
+		echo ""
+		echo "Todo:"
+		echo "- [ ] Check changes"
+		echo "- [ ] Edit title of this issue"
 	} > "$MY_GITHUB_ACCELERATOR_TYPES_BODY"
 
 	echo "» Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
-	gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Accelerator types" -F "$CSV_GCLOUD_ACCELERATOR_TYPES"
+	gh issue create --assignee "$GITHUB_ISSUE_ASSIGNEE" --label "$GITHUB_ISSUE_LABEL" --title "Change detected: Accelerator types" -F "$MY_GITHUB_ACCELERATOR_TYPES_BODY"
 
 	git add "$CSV_GCLOUD_ACCELERATOR_TYPES"
 	((MY_CHANGES++));
