@@ -250,7 +250,7 @@ alias gcosts='/your-pathname/gcosts -pricing=/your-pathname/pricing.yml'
 
 ## 🧑‍💻 Development
 
-If you want to modify the Perl scripts or prefer to run the uncomplicated Perl scripts (`gcosts.pl`, `skus.pl`, `mapping.pl`, `pricing.pl`) and create the price information yourself,
+If you want to modify the Perl scripts or prefer to run the uncompiled Perl scripts (`gcosts.pl`, `skus.pl`, `mapping.pl`, `pricing.pl`) and create the price information yourself,
 the following requirements are needed.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator)
