@@ -16,10 +16,8 @@ debian-11-bullseye-v20220822;Debian, Debian GNU/Linux, 11 (bullseye), amd64 buil
 fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0, x86_64 published on 2021-04-27;10;fedora-cloud;fedora-cloud-34;;2021-05-06T09:33:30.114-07:00;;READY
 fedora-cloud-base-gcp-35-1-2-x86-64;Fedora, Fedora Cloud Base 35, 35-20211026.0, x86_64 published on 2021-11-02;10;fedora-cloud;fedora-cloud-35;;2021-12-21T13:12:17.145-08:00;;READY
 fedora-cloud-base-gcp-36-20220506-n-0-x86-64;Fedora, Fedora Cloud Base 36, 36-20220506.n.0, x86_64 published on 2022-05-06;10;fedora-cloud;fedora-cloud-36;;2022-08-23T03:44:49.923-07:00;;READY
-opensuse-leap-15-2-v20200702;openSUSE, openSUSE Leap, 15.2 x86_64 built on 2020-07-02;10;opensuse-cloud;opensuse-leap;;2020-07-02T09:59:57.582-07:00;;READY
-opensuse-leap-15-3-v20220719-x86-64;openSUSE, openSUSE Leap, 15.3 x86_64 built on 20220719, supports Shielded VM features;10;opensuse-cloud;opensuse-leap-15-3;X86_64;2022-07-19T06:01:21.210-07:00;;READY
 opensuse-leap-15-4-v20220722-arm64;openSUSE, openSUSE Leap, 15.4 arm64 built on 20220722, supports Shielded VM features;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2022-07-22T09:08:49.732-07:00;;READY
-opensuse-leap-15-4-v20220722-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20220722, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;X86_64;2022-07-22T09:03:22.993-07:00;;READY
+opensuse-leap-15-4-v20220831-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20220831, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;X86_64;2022-08-31T15:20:28.733-07:00;;READY
 rhel-7-v20220822;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20220822, supports Shielded VM features;20;rhel-cloud;rhel-7;X86_64;2022-08-22T14:38:57.677-07:00;;READY
 rhel-8-v20220822;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20220822, supports Shielded VM features;20;rhel-cloud;rhel-8;X86_64;2022-08-22T14:38:57.423-07:00;;READY
 rhel-9-arm64-v20220822;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20220822, supports Shielded VM features;20;rhel-cloud;rhel-9-arm64;ARM64;2022-08-22T14:38:57.170-07:00;;READY
@@ -64,8 +62,8 @@ sql-2014-web-windows-2012-r2-dc-v20220812;Microsoft, SQL Server 2014 Web, on Win
 cos-stable-97-16919-103-33;Google, Container-Optimized OS, 97-16919.103.33 stable, Kernel: COS-5.10.133 Kubernetes: 1.23.3 Docker: 20.10.12 Family: cos-stable, supports Shielded VM features;10;cos-cloud;cos-stable;;2022-08-29T12:14:45.103-07:00;;READY
 ubuntu-2004-focal-arm64-v20220823;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2022-08-23, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2022-08-23T18:25:27.037-07:00;;READY
 ubuntu-2004-focal-v20220823;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2022-08-23, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2022-08-23T18:25:27.727-07:00;;READY
-ubuntu-2204-jammy-arm64-v20220810;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2022-08-10, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2022-08-10T06:33:09.325-07:00;;READY
-ubuntu-2204-jammy-v20220810;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2022-08-10, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2022-08-10T06:33:09.809-07:00;;READY
+ubuntu-2204-jammy-arm64-v20220831;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2022-08-31, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2022-08-31T00:44:58.330-07:00;;READY
+ubuntu-2204-jammy-v20220831;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2022-08-31, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2022-08-31T00:44:58.936-07:00;;READY
 ubuntu-minimal-1804-bionic-arm64-v20220817;Canonical, Ubuntu, 18.04 LTS Minimal, arm64 bionic minimal image built on 2022-08-17, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-1804-lts-arm64;ARM64;2022-08-17T02:21:01.761-07:00;;READY
 ubuntu-minimal-1804-bionic-v20220817;Canonical, Ubuntu, 18.04 LTS Minimal, amd64 bionic minimal image built on 2022-08-17, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-1804-lts;X86_64;2022-08-17T02:21:02.132-07:00;;READY
 ubuntu-minimal-2004-focal-arm64-v20220817;Canonical, Ubuntu, 20.04 LTS Minimal, arm64 focal minimal image built on 2022-08-17, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts-arm64;ARM64;2022-08-17T00:13:36.603-07:00;;READY
