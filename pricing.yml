@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Sep  8 05:11:57 2022
-  timestamp: 1662613917
+  generated: Sun Sep 11 10:37:18 2022
+  timestamp: 1662892638
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -903,6 +903,718 @@ compute:
           month_1y: 27125.92015728
           month_3y: 15274.95609616
       cpu: 96
+      ram: 1360
+      type: a2
+    a2-ultragpu-1g:
+      a100: 1
+      bandwidth: 24
+      cost:
+        asia-east1:
+          hour: 4.207152
+          month: 3071.22096
+          month_1y: 1934.8223972
+          month_3y: 1074.96660562
+        asia-east2:
+          hour: 5.226873526
+          month: 3815.61767398
+          month_1y: 2424.81326949
+          month_3y: 1330.18714483
+        asia-northeast1:
+          hour: 4.510205926
+          month: 3292.45032598
+          month_1y: 2058.42718783
+          month_3y: 1156.42421699
+        asia-northeast2:
+          hour: 4.510205926
+          month: 3292.45032598
+          month_1y: 2058.42718783
+          month_3y: 1156.42421699
+        asia-northeast3:
+          hour: 4.510205926
+          month: 3292.45032598
+          month_1y: 2058.42718783
+          month_3y: 1156.42421699
+        asia-south1:
+          hour: 4.757463684
+          month: 3472.94848932
+          month_1y: 2201.93495761
+          month_3y: 1180.78118456
+        asia-south2:
+          hour: 4.8412896
+          month: 3534.141408
+          month_1y: 2226.467734
+          month_3y: 1236.9889639
+        asia-southeast1:
+          hour: 4.457967926
+          month: 3254.31658598
+          month_1y: 2034.40230383
+          month_3y: 1143.07222645
+        asia-southeast2:
+          hour: 4.859178062
+          month: 3547.19998526
+          month_1y: 2217.50055051
+          month_3y: 1245.95104177
+        australia-southeast1:
+          hour: 5.248483526
+          month: 3831.39297398
+          month_1y: 2434.75338749
+          month_3y: 1335.70412567
+        australia-southeast2:
+          hour: 5.72629136
+          month: 4180.1926928
+          month_1y: 2633.4690432
+          month_3y: 1463.1117856
+        europe-central2:
+          hour: 4.853483684
+          month: 3543.04308932
+          month_1y: 2246.08214561
+          month_3y: 1205.32385026
+        europe-north1:
+          hour: 4.14446
+          month: 3025.4558
+          month_1y: 1905.9984932
+          month_3y: 1058.94879962
+        europe-southwest1:
+          hour: 4.75956496
+          month: 3474.4824208
+          month_1y: 2188.879304
+          month_3y: 2188.879304
+        europe-west1:
+          hour: 4.143554
+          month: 3024.79442
+          month_1y: 1905.5804952
+          month_3y: 1058.71213508
+        europe-west2:
+          hour: 4.853483684
+          month: 3543.04308932
+          month_1y: 2246.08214561
+          month_3y: 1205.32385026
+        europe-west3:
+          hour: 4.853483684
+          month: 3543.04308932
+          month_1y: 2246.08214561
+          month_3y: 1205.32385026
+        europe-west4:
+          hour: 4.144412
+          month: 3025.42076
+          month_1y: 1905.9757172
+          month_3y: 1058.93653562
+        europe-west6:
+          hour: 5.310699442
+          month: 3876.81059266
+          month_1y: 2424.81326949
+          month_3y: 1330.18714483
+        europe-west8:
+          hour: 4.67889452
+          month: 3415.5929996
+          month_1y: 2151.779828
+          month_3y: 2151.779828
+        europe-west9:
+          hour: 4.67889452
+          month: 3415.5929996
+          month_1y: 2151.779828
+          month_3y: 2151.779828
+        northamerica-northeast1:
+          hour: 4.312063926
+          month: 3147.80666598
+          month_1y: 1967.30771183
+          month_3y: 1105.79409609
+        northamerica-northeast2:
+          hour: 1.210504
+          month: 883.66792
+          month_1y: 2040.906114
+          month_3y: 1133.8980719
+        southamerica-east1:
+          hour: 5.769055284
+          month: 4211.41035732
+          month_1y: 2642.61947202
+          month_3y: 1429.85348054
+        southamerica-west1:
+          hour: 5.7679479
+          month: 4210.601967
+          month_1y: 2652.6250608
+          month_3y: 1473.75960502
+        us-central1:
+          hour: 4.03353
+          month: 2944.4769
+          month_1y: 1854.9825892
+          month_3y: 1030.60100308
+        us-east1:
+          hour: 4.03353
+          month: 2944.4769
+          month_1y: 1854.9825892
+          month_3y: 1030.60100308
+        us-east4:
+          hour: 4.339889926
+          month: 3168.11964598
+          month_1y: 1980.10373583
+          month_3y: 1112.89845755
+        us-east5:
+          hour: 4.03353
+          month: 2944.4769
+          month_1y: 1854.98256
+          month_3y: 1030.6011666
+        us-south1:
+          hour: 4.75956496
+          month: 3474.4824208
+          month_1y: 2188.879304
+          month_3y: 2188.879304
+        us-west1:
+          hour: 4.03353
+          month: 2944.4769
+          month_1y: 1854.9825892
+          month_3y: 1030.60100308
+        us-west2:
+          hour: 4.757633684
+          month: 3473.07258932
+          month_1y: 2202.00941761
+          month_3y: 1180.82945946
+        us-west3:
+          hour: 4.757633684
+          month: 3473.07258932
+          month_1y: 2202.00941761
+          month_3y: 1180.82945946
+        us-west4:
+          hour: 4.339889926
+          month: 3168.11964598
+          month_1y: 1980.10373583
+          month_3y: 1112.89845755
+      cpu: 12
+      local: 375
+      ram: 170
+      type: a2
+    a2-ultragpu-2g:
+      a100: 2
+      bandwidth: 32
+      cost:
+        asia-east1:
+          hour: 8.414304
+          month: 6142.44192
+          month_1y: 3869.6447944
+          month_3y: 2149.93321124
+        asia-east2:
+          hour: 10.453747052
+          month: 7631.23534796
+          month_1y: 4849.62653898
+          month_3y: 2660.37428966
+        asia-northeast1:
+          hour: 9.020411852
+          month: 6584.90065196
+          month_1y: 4116.85437566
+          month_3y: 2312.84843398
+        asia-northeast2:
+          hour: 9.020411852
+          month: 6584.90065196
+          month_1y: 4116.85437566
+          month_3y: 2312.84843398
+        asia-northeast3:
+          hour: 9.020411852
+          month: 6584.90065196
+          month_1y: 4116.85437566
+          month_3y: 2312.84843398
+        asia-south1:
+          hour: 9.514927368
+          month: 6945.89697864
+          month_1y: 4403.86991522
+          month_3y: 2361.56236912
+        asia-south2:
+          hour: 9.6825792
+          month: 7068.282816
+          month_1y: 4452.935468
+          month_3y: 2473.9779278
+        asia-southeast1:
+          hour: 8.915935852
+          month: 6508.63317196
+          month_1y: 4068.80460766
+          month_3y: 2286.1444529
+        asia-southeast2:
+          hour: 9.718356124
+          month: 7094.39997052
+          month_1y: 4435.00110102
+          month_3y: 2491.90208354
+        australia-southeast1:
+          hour: 10.496967052
+          month: 7662.78594796
+          month_1y: 4869.50677498
+          month_3y: 2671.40825134
+        australia-southeast2:
+          hour: 11.45258272
+          month: 8360.3853856
+          month_1y: 5266.9380864
+          month_3y: 2926.2235712
+        europe-central2:
+          hour: 9.706967368
+          month: 7086.08617864
+          month_1y: 4492.16429122
+          month_3y: 2410.64770052
+        europe-north1:
+          hour: 8.28892
+          month: 6050.9116
+          month_1y: 3811.9969864
+          month_3y: 2117.89759924
+        europe-southwest1:
+          hour: 9.51912992
+          month: 6948.9648416
+          month_1y: 4377.758608
+          month_3y: 4377.758608
+        europe-west1:
+          hour: 8.287108
+          month: 6049.58884
+          month_1y: 3811.1609904
+          month_3y: 2117.42427016
+        europe-west2:
+          hour: 9.706967368
+          month: 7086.08617864
+          month_1y: 4492.16429122
+          month_3y: 2410.64770052
+        europe-west3:
+          hour: 9.706967368
+          month: 7086.08617864
+          month_1y: 4492.16429122
+          month_3y: 2410.64770052
+        europe-west4:
+          hour: 8.288824
+          month: 6050.84152
+          month_1y: 3811.9514344
+          month_3y: 2117.87307124
+        europe-west6:
+          hour: 10.621398884
+          month: 7753.62118532
+          month_1y: 4849.62653898
+          month_3y: 2660.37428966
+        europe-west8:
+          hour: 9.35778904
+          month: 6831.1859992
+          month_1y: 4303.559656
+          month_3y: 4303.559656
+        europe-west9:
+          hour: 9.35778904
+          month: 6831.1859992
+          month_1y: 4303.559656
+          month_3y: 4303.559656
+        northamerica-northeast1:
+          hour: 8.624127852
+          month: 6295.61333196
+          month_1y: 3934.61542366
+          month_3y: 2211.58819218
+        northamerica-northeast2:
+          hour: 2.421008
+          month: 1767.33584
+          month_1y: 4081.812228
+          month_3y: 2267.7961438
+        southamerica-east1:
+          hour: 11.538110568
+          month: 8422.82071464
+          month_1y: 5285.23894404
+          month_3y: 2859.70696108
+        southamerica-west1:
+          hour: 11.5358958
+          month: 8421.203934
+          month_1y: 5305.2501216
+          month_3y: 2947.51921004
+        us-central1:
+          hour: 8.06706
+          month: 5888.9538
+          month_1y: 3709.9651784
+          month_3y: 2061.20200616
+        us-east1:
+          hour: 8.06706
+          month: 5888.9538
+          month_1y: 3709.9651784
+          month_3y: 2061.20200616
+        us-east4:
+          hour: 8.679779852
+          month: 6336.23929196
+          month_1y: 3960.20747166
+          month_3y: 2225.7969151
+        us-east5:
+          hour: 8.06706
+          month: 5888.9538
+          month_1y: 3709.96512
+          month_3y: 2061.2023332
+        us-south1:
+          hour: 9.51912992
+          month: 6948.9648416
+          month_1y: 4377.758608
+          month_3y: 4377.758608
+        us-west1:
+          hour: 8.06706
+          month: 5888.9538
+          month_1y: 3709.9651784
+          month_3y: 2061.20200616
+        us-west2:
+          hour: 9.515267368
+          month: 6946.14517864
+          month_1y: 4404.01883522
+          month_3y: 2361.65891892
+        us-west3:
+          hour: 9.515267368
+          month: 6946.14517864
+          month_1y: 4404.01883522
+          month_3y: 2361.65891892
+        us-west4:
+          hour: 8.679779852
+          month: 6336.23929196
+          month_1y: 3960.20747166
+          month_3y: 2225.7969151
+      cpu: 24
+      local: 750
+      ram: 340
+      type: a2
+    a2-ultragpu-4g:
+      a100: 4
+      bandwidth: 50
+      cost:
+        asia-east1:
+          hour: 16.828608
+          month: 12284.88384
+          month_1y: 7739.2895888
+          month_3y: 4299.86642248
+        asia-east2:
+          hour: 20.907494104
+          month: 15262.47069592
+          month_1y: 9699.25307796
+          month_3y: 5320.74857932
+        asia-northeast1:
+          hour: 18.040823704
+          month: 13169.80130392
+          month_1y: 8233.70875132
+          month_3y: 4625.69686796
+        asia-northeast2:
+          hour: 18.040823704
+          month: 13169.80130392
+          month_1y: 8233.70875132
+          month_3y: 4625.69686796
+        asia-northeast3:
+          hour: 18.040823704
+          month: 13169.80130392
+          month_1y: 8233.70875132
+          month_3y: 4625.69686796
+        asia-south1:
+          hour: 19.029854736
+          month: 13891.79395728
+          month_1y: 8807.73983044
+          month_3y: 4723.12473824
+        asia-south2:
+          hour: 19.3651584
+          month: 14136.565632
+          month_1y: 8905.870936
+          month_3y: 4947.9558556
+        asia-southeast1:
+          hour: 17.831871704
+          month: 13017.26634392
+          month_1y: 8137.60921532
+          month_3y: 4572.2889058
+        asia-southeast2:
+          hour: 19.436712248
+          month: 14188.79994104
+          month_1y: 8870.00220204
+          month_3y: 4983.80416708
+        australia-southeast1:
+          hour: 20.993934104
+          month: 15325.57189592
+          month_1y: 9739.01354996
+          month_3y: 5342.81650268
+        australia-southeast2:
+          hour: 22.90516544
+          month: 16720.7707712
+          month_1y: 10533.8761728
+          month_3y: 5852.4471424
+        europe-central2:
+          hour: 19.413934736
+          month: 14172.17235728
+          month_1y: 8984.32858244
+          month_3y: 4821.29540104
+        europe-north1:
+          hour: 16.57784
+          month: 12101.8232
+          month_1y: 7623.9939728
+          month_3y: 4235.79519848
+        europe-southwest1:
+          hour: 19.03825984
+          month: 13897.9296832
+          month_1y: 8755.517216
+          month_3y: 8755.517216
+        europe-west1:
+          hour: 16.574216
+          month: 12099.17768
+          month_1y: 7622.3219808
+          month_3y: 4234.84854032
+        europe-west2:
+          hour: 19.413934736
+          month: 14172.17235728
+          month_1y: 8984.32858244
+          month_3y: 4821.29540104
+        europe-west3:
+          hour: 19.413934736
+          month: 14172.17235728
+          month_1y: 8984.32858244
+          month_3y: 4821.29540104
+        europe-west4:
+          hour: 16.577648
+          month: 12101.68304
+          month_1y: 7623.9028688
+          month_3y: 4235.74614248
+        europe-west6:
+          hour: 21.242797768
+          month: 15507.24237064
+          month_1y: 9699.25307796
+          month_3y: 5320.74857932
+        europe-west8:
+          hour: 18.71557808
+          month: 13662.3719984
+          month_1y: 8607.119312
+          month_3y: 8607.119312
+        europe-west9:
+          hour: 18.71557808
+          month: 13662.3719984
+          month_1y: 8607.119312
+          month_3y: 8607.119312
+        northamerica-northeast1:
+          hour: 17.248255704
+          month: 12591.22666392
+          month_1y: 7869.23084732
+          month_3y: 4423.17638436
+        northamerica-northeast2:
+          hour: 4.842016
+          month: 3534.67168
+          month_1y: 8163.624456
+          month_3y: 4535.5922876
+        southamerica-east1:
+          hour: 23.076221136
+          month: 16845.64142928
+          month_1y: 10570.47788808
+          month_3y: 5719.41392216
+        southamerica-west1:
+          hour: 23.0717916
+          month: 16842.407868
+          month_1y: 10610.5002432
+          month_3y: 5895.03842008
+        us-central1:
+          hour: 16.13412
+          month: 11777.9076
+          month_1y: 7419.9303568
+          month_3y: 4122.40401232
+        us-east1:
+          hour: 16.13412
+          month: 11777.9076
+          month_1y: 7419.9303568
+          month_3y: 4122.40401232
+        us-east4:
+          hour: 17.359559704
+          month: 12672.47858392
+          month_1y: 7920.41494332
+          month_3y: 4451.5938302
+        us-east5:
+          hour: 16.13412
+          month: 11777.9076
+          month_1y: 7419.93024
+          month_3y: 4122.4046664
+        us-south1:
+          hour: 19.03825984
+          month: 13897.9296832
+          month_1y: 8755.517216
+          month_3y: 8755.517216
+        us-west1:
+          hour: 16.13412
+          month: 11777.9076
+          month_1y: 7419.9303568
+          month_3y: 4122.40401232
+        us-west2:
+          hour: 19.030534736
+          month: 13892.29035728
+          month_1y: 8808.03767044
+          month_3y: 4723.31783784
+        us-west3:
+          hour: 19.030534736
+          month: 13892.29035728
+          month_1y: 8808.03767044
+          month_3y: 4723.31783784
+        us-west4:
+          hour: 17.359559704
+          month: 12672.47858392
+          month_1y: 7920.41494332
+          month_3y: 4451.5938302
+      cpu: 48
+      local: 1500
+      ram: 680
+      type: a2
+    a2-ultragpu-8g:
+      a100: 8
+      bandwidth: 100
+      cost:
+        asia-east1:
+          hour: 33.657216
+          month: 24569.76768
+          month_1y: 15478.5791776
+          month_3y: 8599.73284496
+        asia-east2:
+          hour: 41.814988208
+          month: 30524.94139184
+          month_1y: 19398.50615592
+          month_3y: 10641.49715864
+        asia-northeast1:
+          hour: 36.081647408
+          month: 26339.60260784
+          month_1y: 16467.41750264
+          month_3y: 9251.39373592
+        asia-northeast2:
+          hour: 36.081647408
+          month: 26339.60260784
+          month_1y: 16467.41750264
+          month_3y: 9251.39373592
+        asia-northeast3:
+          hour: 36.081647408
+          month: 26339.60260784
+          month_1y: 16467.41750264
+          month_3y: 9251.39373592
+        asia-south1:
+          hour: 38.059709472
+          month: 27783.58791456
+          month_1y: 17615.47966088
+          month_3y: 9446.24947648
+        asia-south2:
+          hour: 38.7303168
+          month: 28273.131264
+          month_1y: 17811.741872
+          month_3y: 9895.9117112
+        asia-southeast1:
+          hour: 35.663743408
+          month: 26034.53268784
+          month_1y: 16275.21843064
+          month_3y: 9144.5778116
+        asia-southeast2:
+          hour: 38.873424496
+          month: 28377.59988208
+          month_1y: 17740.00440408
+          month_3y: 9967.60833416
+        australia-southeast1:
+          hour: 41.987868208
+          month: 30651.14379184
+          month_1y: 19478.02709992
+          month_3y: 10685.63300536
+        australia-southeast2:
+          hour: 45.81033088
+          month: 33441.5415424
+          month_1y: 21067.7523456
+          month_3y: 11704.8942848
+        europe-central2:
+          hour: 38.827869472
+          month: 28344.34471456
+          month_1y: 17968.65716488
+          month_3y: 9642.59080208
+        europe-north1:
+          hour: 33.15568
+          month: 24203.6464
+          month_1y: 15247.9879456
+          month_3y: 8471.59039696
+        europe-southwest1:
+          hour: 38.07651968
+          month: 27795.8593664
+          month_1y: 17511.034432
+          month_3y: 17511.034432
+        europe-west1:
+          hour: 33.148432
+          month: 24198.35536
+          month_1y: 15244.6439616
+          month_3y: 8469.69708064
+        europe-west2:
+          hour: 38.827869472
+          month: 28344.34471456
+          month_1y: 17968.65716488
+          month_3y: 9642.59080208
+        europe-west3:
+          hour: 38.827869472
+          month: 28344.34471456
+          month_1y: 17968.65716488
+          month_3y: 9642.59080208
+        europe-west4:
+          hour: 33.155296
+          month: 24203.36608
+          month_1y: 15247.8057376
+          month_3y: 8471.49228496
+        europe-west6:
+          hour: 42.485595536
+          month: 31014.48474128
+          month_1y: 19398.50615592
+          month_3y: 10641.49715864
+        europe-west8:
+          hour: 37.43115616
+          month: 27324.7439968
+          month_1y: 17214.238624
+          month_3y: 17214.238624
+        europe-west9:
+          hour: 37.43115616
+          month: 27324.7439968
+          month_1y: 17214.238624
+          month_3y: 17214.238624
+        northamerica-northeast1:
+          hour: 34.496511408
+          month: 25182.45332784
+          month_1y: 15738.46169464
+          month_3y: 8846.35276872
+        northamerica-northeast2:
+          hour: 9.684032
+          month: 7069.34336
+          month_1y: 16327.248912
+          month_3y: 9071.1845752
+        southamerica-east1:
+          hour: 46.152442272
+          month: 33691.28285856
+          month_1y: 21140.95577616
+          month_3y: 11438.82784432
+        southamerica-west1:
+          hour: 46.1435832
+          month: 33684.815736
+          month_1y: 21221.0004864
+          month_3y: 11790.07684016
+        us-central1:
+          hour: 32.26824
+          month: 23555.8152
+          month_1y: 14839.8607136
+          month_3y: 8244.80802464
+        us-east1:
+          hour: 32.26824
+          month: 23555.8152
+          month_1y: 14839.8607136
+          month_3y: 8244.80802464
+        us-east4:
+          hour: 34.719119408
+          month: 25344.95716784
+          month_1y: 15840.82988664
+          month_3y: 8903.1876604
+        us-east5:
+          hour: 32.26824
+          month: 23555.8152
+          month_1y: 14839.86048
+          month_3y: 8244.8093328
+        us-south1:
+          hour: 38.07651968
+          month: 27795.8593664
+          month_1y: 17511.034432
+          month_3y: 17511.034432
+        us-west1:
+          hour: 32.26824
+          month: 23555.8152
+          month_1y: 14839.8607136
+          month_3y: 8244.80802464
+        us-west2:
+          hour: 38.061069472
+          month: 27784.58071456
+          month_1y: 17616.07534088
+          month_3y: 9446.63567568
+        us-west3:
+          hour: 38.061069472
+          month: 27784.58071456
+          month_1y: 17616.07534088
+          month_3y: 9446.63567568
+        us-west4:
+          hour: 34.719119408
+          month: 25344.95716784
+          month_1y: 15840.82988664
+          month_3y: 8903.1876604
+      cpu: 96
+      local: 3000
       ram: 1360
       type: a2
     c2-standard-16:
@@ -10057,6 +10769,182 @@ compute:
       cpu: 80
       ram: 1922
       type: m1
+    m2-hypermem-416:
+      bandwidth: 32
+      cost:
+        asia-east1:
+          hour: 78.06605904
+          month: 39891.75616944
+          month_1y: 34315.15068144
+          month_3y: 19740.14588144
+        asia-east2:
+          hour: 94.16064
+          month: 48116.08704
+          month_1y: 41531.79072
+          month_3y: 23788.56256
+        asia-northeast1:
+          hour: 81.9024
+          month: 41852.1264
+          month_1y: 36322.8144
+          month_3y: 20951.9344
+        asia-northeast2:
+          hour: 82.231777824
+          month: 42020.438468064
+          month_1y: 36201.083335264
+          month_3y: 20774.840135264
+        asia-northeast3:
+          hour: 82.231777824
+          month: 42020.438468064
+          month_1y: 36201.083335264
+          month_3y: 20774.840135264
+        asia-south1:
+          hour: 77.133300992
+          month: 39415.116806912
+          month_1y: 33920.428064512
+          month_3y: 19513.848864512
+        asia-south2:
+          hour: 80.70912
+          month: 41242.36032
+          month_1y: 35598.67776
+          month_3y: 20390.19648
+        asia-southeast1:
+          hour: 79.227565248
+          month: 40485.285841728
+          month_1y: 35217.151256128
+          month_3y: 19998.111256128
+        asia-southeast2:
+          hour: 86.358038432
+          month: 44128.957638752
+          month_1y: 38022.069372448
+          month_3y: 21791.317116448
+        australia-southeast1:
+          hour: 91.12992576
+          month: 46567.39206336
+          month_1y: 40104.84339136
+          month_3y: 22997.38099136
+        australia-southeast2:
+          hour: 95.505792
+          month: 48803.459712
+          month_1y: 42125.102016
+          month_3y: 24128.399168
+        europe-central2:
+          hour: 82.670000064
+          month: 42244.370032704
+          month_1y: 36370.974576704
+          month_3y: 20874.184176704
+        europe-north1:
+          hour: 70.7112416
+          month: 36133.4444576
+          month_1y: 32439.7612576
+          month_3y: 18498.6534176
+        europe-southwest1:
+          hour: 79.363968
+          month: 40554.987648
+          month_1y: 35005.366464
+          month_3y: 35005.366464
+        europe-west1:
+          hour: 74.156770496
+          month: 37894.109723456
+          month_1y: 32627.902454656
+          month_3y: 18744.820854656
+        europe-west2:
+          hour: 82.670000064
+          month: 42244.370032704
+          month_1y: 36370.974576704
+          month_3y: 20874.184176704
+        europe-west3:
+          hour: 82.670000064
+          month: 42244.370032704
+          month_1y: 36370.974576704
+          month_3y: 20874.184176704
+        europe-west4:
+          hour: 70.7112416
+          month: 36133.4444576
+          month_1y: 31077.9433376
+          month_3y: 17865.5273376
+        europe-west6:
+          hour: 94.16064
+          month: 48116.08704
+          month_1y: 41427.48832
+          month_3y: 23784.31104
+        europe-west8:
+          hour: 78.018816
+          month: 39867.614976
+          month_1y: 34412.055168
+          month_3y: 34412.055168
+        europe-west9:
+          hour: 78.018816
+          month: 39867.614976
+          month_1y: 34412.055168
+          month_3y: 34412.055168
+        northamerica-northeast1:
+          hour: 70.707296544
+          month: 36131.428533984
+          month_1y: 31077.711417184
+          month_3y: 17865.295417184
+        northamerica-northeast2:
+          hour: 73.98336
+          month: 37805.49696
+          month_1y: 32632.12128
+          month_3y: 18691.01344
+        southamerica-east1:
+          hour: 101.620448
+          month: 51928.048928
+          month_1y: 44879.869728
+          month_3y: 25733.079328
+        southamerica-west1:
+          hour: 96.178368
+          month: 49147.146048
+          month_1y: 42421.757664
+          month_3y: 24298.317472
+        us-central1:
+          hour: 67.2576
+          month: 34368.6336
+          month_1y: 29665.5648
+          month_3y: 16991.8304
+        us-east1:
+          hour: 67.2576
+          month: 34368.6336
+          month_1y: 29665.5648
+          month_3y: 16991.8304
+        us-east4:
+          hour: 76.313805376
+          month: 38996.354547136
+          month_1y: 33453.493747136
+          month_3y: 19031.029747136
+        us-east5:
+          hour: 67.2576
+          month: 34368.6336
+          month_1y: 29665.5648
+          month_3y: 16991.8304
+        us-south1:
+          hour: 79.363968
+          month: 40554.987648
+          month_1y: 35005.366464
+          month_3y: 35005.366464
+        us-west1:
+          hour: 67.2576
+          month: 34368.6336
+          month_1y: 29665.5648
+          month_3y: 16991.8304
+        us-west2:
+          hour: 77.14551584
+          month: 39421.35859424
+          month_1y: 35389.18198624
+          month_3y: 20180.70070624
+        us-west3:
+          hour: 77.14551584
+          month: 39421.35859424
+          month_1y: 35389.18198624
+          month_3y: 20180.70070624
+        us-west4:
+          hour: 75.920010048
+          month: 38795.125134528
+          month_1y: 33414.371988928
+          month_3y: 19191.402388928
+      cpu: 416
+      ram: 8832
+      type: m2
     m2-megamem-416:
       bandwidth: 32
       cost:
@@ -27777,6 +28665,82 @@ compute:
         windows:
           hour: 4.416
           month: 3223.68
+    a2-ultragpu-1g:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.552
+          month: 402.96
+    a2-ultragpu-2g:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.104
+          month: 805.92
+    a2-ultragpu-4g:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    a2-ultragpu-8g:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
     c2-standard-16:
       cost:
         rhel:
@@ -28761,6 +29725,25 @@ compute:
         windows:
           hour: 3.68
           month: 2686.4
+    m2-hypermem-416:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 19.136
+          month: 13969.28
     m2-megamem-416:
       cost:
         rhel:
