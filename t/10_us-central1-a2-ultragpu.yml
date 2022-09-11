@@ -1,0 +1,27 @@
+region: us-central1
+project: gcp-gce-a2-ultragpu
+
+# Accelerator-optimized machine type family with NVIDIA A100 80GB GPUs.
+# https://cloud.google.com/compute/docs/accelerator-optimized-machines#a2-ultra-vms
+
+instances:
+# A2 standard machine types (total cost)
+  - name: a2-ultragpu-1g
+    type: a2-ultragpu-1g
+  - name: a2-ultragpu-2g
+    type: a2-ultragpu-2g
+  - name: a2-ultragpu-4g
+    type: a2-ultragpu-4g
+  - name: a2-ultragpu-8g
+    type: a2-ultragpu-8g
+    #disks:
+    #  - name: a2-ultragpu-8g-local-ssd
+    #    data: 3000
+    #    type: local
+# Commitment (CUD)
+  - name: a2-ultragpu-8g-1y
+    type: a2-ultragpu-8g
+    commitment: 1
+  - name: a2-ultragpu-8g-3y
+    type: a2-ultragpu-8g
+    commitment: 3

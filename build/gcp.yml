@@ -1093,7 +1093,7 @@ compute:
       bandwidth: 32
 
     # A2:
-    # » Accelerator-optimized VMs featuring NVIDIA's Ampere A100 GPUs
+    # » Accelerator-optimized VMs featuring NVIDIA's Ampere A100 40GB GPUs
     # » High performance network bandwidth of up to 100 Gbps
     a2-highgpu-1g:
       type: a2
@@ -1125,3 +1125,35 @@ compute:
       ram: 1360
       a100: 16
       bandwidth: 100
+    # TODO: Add price for nvidia-a100-80gb
+    # » Machine types with fixed number of A100 80GB HBM2e GPUs
+    # » Cost for the GPUs, vCPU, memory, _and_ local SSD
+    a2-ultragpu-1g:
+      type: a2
+      cpu: 12
+      ram: 170
+      a100: 1
+      bandwidth: 24
+      # Local SSD
+      local: 375
+    a2-ultragpu-2g:
+      type: a2
+      cpu: 24
+      ram: 340
+      a100: 2
+      bandwidth: 32
+      local: 750
+    a2-ultragpu-4g:
+      type: a2
+      cpu: 48
+      ram: 680
+      a100: 4
+      bandwidth: 50
+      local: 1500
+    a2-ultragpu-8g:
+      type: a2
+      cpu: 96
+      ram: 1360
+      a100: 8
+      bandwidth: 100
+      local: 3000
