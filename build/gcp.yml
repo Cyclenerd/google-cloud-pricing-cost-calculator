@@ -1081,15 +1081,20 @@ compute:
       cpu: 208
       ram: 5888
       bandwidth: 32
-    m2-ultramem-416:
-      type: m2
-      cpu: 416
-      ram: 11776
-      bandwidth: 32
     m2-megamem-416:
       type: m2
       cpu: 416
       ram: 5888
+      bandwidth: 32
+    m2-hypermem-416:
+      type: m2
+      cpu: 416
+      ram: 8832
+      bandwidth: 32
+    m2-ultramem-416:
+      type: m2
+      cpu: 416
+      ram: 11776
       bandwidth: 32
 
     # A2:
