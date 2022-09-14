@@ -84,7 +84,6 @@ sql-2016-web-windows-2012-r2-dc-v20220902;Microsoft, SQL Server 2016 Web, on Win
 fedora-coreos-36-20220522-2-0-gcp-x86-64;Fedora, Fedora CoreOS testing, 36.20220522.2.0, x86_64 published on 2022-05-24;10;fedora-coreos-cloud;;;2022-05-24T01:53:19.591-07:00;;READY
 fedora-coreos-36-20220820-3-0-gcp-x86-64;Fedora, Fedora CoreOS stable, 36.20220820.3.0, x86_64 published on 2022-09-06;10;fedora-coreos-cloud;fedora-coreos-stable;;2022-09-06T12:19:28.892-07:00;;READY
 fedora-coreos-36-20220906-2-0-gcp-x86-64;Fedora, Fedora CoreOS testing, 36.20220906.2.0, x86_64 published on 2022-09-06;10;fedora-coreos-cloud;fedora-coreos-testing;;2022-09-06T12:19:13.502-07:00;;READY
-fedora-coreos-36-20220913-20-0-gcp-x86-64;Fedora, Fedora CoreOS testing-devel, 36.20220913.20.0, x86_64 published on 2022-09-13;10;fedora-coreos-cloud;;;2022-09-12T21:25:03.991-07:00;;PENDING
 fedora-coreos-37-20220910-1-0-gcp-x86-64;Fedora, Fedora CoreOS next, 37.20220910.1.0, x86_64 published on 2022-09-12;10;fedora-coreos-cloud;fedora-coreos-next;;2022-09-12T10:00:49.067-07:00;;READY
 ubuntu-minimal-2004-focal-v20220910;Canonical, Ubuntu, 20.04 LTS Minimal, amd64 focal minimal image built on 2022-09-10, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts;X86_64;2022-09-09T23:59:36.947-07:00;;READY
 ubuntu-minimal-2204-jammy-arm64-v20220902;Canonical, Ubuntu, 22.04 LTS Minimal, arm64 jammy minimal image built on 2022-09-02, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts-arm64;ARM64;2022-09-02T17:28:52.630-07:00;;READY
