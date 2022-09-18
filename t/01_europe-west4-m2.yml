@@ -12,6 +12,8 @@ instances:
     type: m2-ultramem-416
   - name: m2-megamem-416
     type: m2-megamem-416
+  - name: m2-hypermem-416
+    type: m2-hypermem-416
 # Commitment (CUD)
 # m2-ultramem-208
   - name: m2-ultramem-208-1y
@@ -33,4 +35,11 @@ instances:
     commitment: 1
   - name: m2-megamem-416-3y
     type: m2-megamem-416
+    commitment: 3
+# m2-hypermem-416
+  - name: m2-hypermem-416-1y
+    type: m2-hypermem-416
+    commitment: 1
+  - name: m2-hypermem-416-3y
+    type: m2-hypermem-416
     commitment: 3
