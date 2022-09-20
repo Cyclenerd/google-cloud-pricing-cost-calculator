@@ -2,28 +2,6 @@
 
 Small helpers to get required informations.
 
-## Export services (`services.pl`)
-
-Store API key in `services.conf` configuration file:
-```shell
-echo "key = YOUR-CLOUD-BILLING-API-KEY" > services.conf
-```
-
-Alternatively, the API key can be specified as environment variable `API_KEY`:
-```shell
-export API_KEY=YOUR-CLOUD-BILLING-API-KEY
-```
-
-Export public services from the Cloud Billing Catalog to a CSV file:
-```shell
-perl services.pl
-```
-
-The service ID is needed to export the SKUs wiht the `skus.pl` script in the build directory.
-Only needed if you want to integrate the cost informations of a new service.
-
-» [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#listing_public_services_from_the_catalog)
-
 ## Export GCE regions (`regions.sh`)
 
 Export all Google Compute Engine regions to a CSV file:

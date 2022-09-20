@@ -10,6 +10,7 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 
 | File | Short Description |
 |------|-------------------|
+| `services.pl` | Script to export public services (`serviceId`) from the Cloud Billing Catalog. |
 | `skus.pl`     | Script to export SKUs from the Google Cloud Billing API. |
 | `skus.conf`   | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
 | `skus.csv`    | CSV (semicolon) file with SKU pricing and information exported from the Google Cloud Billing API. |
@@ -85,6 +86,9 @@ Run the script `skus.sh` or each step separately:
 bash skus.sh
 ```
 
+> **Note**
+> Get identifier (`-id`) for the service (`serviceId`) with script `services.pl`.
+
 [Compute Engine](https://cloud.google.com/compute/):
 ```shell
 perl skus.pl -csv="skus_compute.csv" -id="6F81-5844-456A"
@@ -149,6 +153,29 @@ perl pricing.pl -sku="skus.csv" \
   -region="europe-west4"      \
   -export="pricing_europe_west4.yml"
 ```
+
+## Export services (`services.pl`)
+
+Store API key in `services.conf` configuration file:
+```shell
+echo "key = YOUR-CLOUD-BILLING-API-KEY" > services.conf
+```
+
+Alternatively, the API key can be specified as environment variable `API_KEY`:
+```shell
+export API_KEY=YOUR-CLOUD-BILLING-API-KEY
+```
+
+Export public services from the Cloud Billing Catalog to a CSV file:
+```shell
+perl services.pl
+```
+
+The service ID is needed to export the SKUs wiht the `skus.pl` script in the build directory.
+Only needed if you want to integrate the cost informations of a new service.
+
+» [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#listing_public_services_from_the_catalog)
+
 
 ## Special curls
 
