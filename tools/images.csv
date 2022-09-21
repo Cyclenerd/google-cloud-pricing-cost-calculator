@@ -1,7 +1,7 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS
-centos-7-v20220822;CentOS, CentOS, 7, x86_64 built on 20220822, supports Shielded VM features;20;centos-cloud;centos-7;X86_64;2022-08-22T14:38:57.700-07:00;;READY
-centos-stream-8-v20220822;CentOS, CentOS, Stream 8, x86_64 built on 20220822, supports Shielded VM features;20;centos-cloud;centos-stream-8;X86_64;2022-08-22T14:38:57.432-07:00;;READY
-centos-stream-9-v20220822;CentOS, CentOS, Stream 9, x86_64 built on 20220822, supports Shielded VM features;20;centos-cloud;centos-stream-9;X86_64;2022-08-22T14:38:57.622-07:00;;READY
+centos-7-v20220920;CentOS, CentOS, 7, x86_64 built on 20220920, supports Shielded VM features;20;centos-cloud;centos-7;X86_64;2022-09-20T16:32:45.546-07:00;;READY
+centos-stream-8-v20220920;CentOS, CentOS, Stream 8, x86_64 built on 20220920, supports Shielded VM features;20;centos-cloud;centos-stream-8;X86_64;2022-09-20T16:32:45.304-07:00;;READY
+centos-stream-9-v20220920;CentOS, CentOS, Stream 9, x86_64 built on 20220920, supports Shielded VM features;20;centos-cloud;centos-stream-9;X86_64;2022-09-20T16:32:45.415-07:00;;READY
 cos-101-17162-40-5;Google, Container-Optimized OS, 101-17162.40.5 LTS, Kernel: COS-5.15.65 Kubernetes: 1.23.10 Docker: 20.10.12 Family: cos-101-lts, supports Shielded VM features;10;cos-cloud;cos-101-lts;X86_64;2022-09-19T15:54:40.509-07:00;;READY
 cos-89-16108-717-34;Google, Container-Optimized OS, 89-16108.717.34 LTS, Kernel: COS-5.4.202 Kubernetes: 1.20.15 Docker: 20.10.3 Family: cos-89-lts, supports Shielded VM features;10;cos-cloud;cos-89-lts;X86_64;2022-09-19T15:54:34.018-07:00;;READY
 cos-93-16623-227-37;Google, Container-Optimized OS, 93-16623.227.37 LTS, Kernel: COS-5.10.133 Kubernetes: 1.21.14 Docker: 20.10.6 Family: cos-93-lts, supports Shielded VM features;10;cos-cloud;cos-93-lts;X86_64;2022-09-19T15:54:35.903-07:00;;READY
@@ -12,32 +12,32 @@ cos-arm64-dev-105-17222-0-0;Google, Container-Optimized OS, 105-17222.0.0 dev, K
 cos-arm64-stable-101-17162-40-5;Google, Container-Optimized OS, 101-17162.40.5 stable, Kernel: COS-5.15.65 Kubernetes: 1.23.10 Docker: 20.10.12 Family: cos-arm64-stable, supports Shielded VM features;10;cos-cloud;cos-arm64-stable;ARM64;2022-09-19T15:54:34.997-07:00;;READY
 cos-beta-101-17162-40-5;Google, Container-Optimized OS, 101-17162.40.5 beta, Kernel: COS-5.15.65 Kubernetes: 1.23.10 Docker: 20.10.12 Family: cos-beta, supports Shielded VM features;10;cos-cloud;cos-beta;X86_64;2022-09-19T15:54:40.693-07:00;;READY
 cos-dev-105-17222-0-0;Google, Container-Optimized OS, 105-17222.0.0 dev, Kernel: COS-5.15.68 Kubernetes: 1.23.10 Docker: 20.10.12 Family: cos-dev, supports Shielded VM features;10;cos-cloud;cos-dev;X86_64;2022-09-19T15:54:37.504-07:00;;READY
-debian-10-buster-v20220822;Debian, Debian GNU/Linux, 10 (buster), amd64 built on 20220822, supports Shielded VM features;10;debian-cloud;debian-10;X86_64;2022-08-22T14:38:57.396-07:00;;READY
-debian-11-bullseye-arm64-v20220822;Debian, Debian GNU/Linux, 11 (bullseye), arm64 built on 20220822;10;debian-cloud;debian-11-arm64;ARM64;2022-08-22T14:38:57.548-07:00;;READY
-debian-11-bullseye-v20220822;Debian, Debian GNU/Linux, 11 (bullseye), amd64 built on 20220822, supports Shielded VM features;10;debian-cloud;debian-11;X86_64;2022-08-22T14:38:57.539-07:00;;READY
+debian-10-buster-v20220920;Debian, Debian GNU/Linux, 10 (buster), amd64 built on 20220920, supports Shielded VM features;10;debian-cloud;debian-10;X86_64;2022-09-20T16:32:45.002-07:00;;READY
+debian-11-bullseye-arm64-v20220920;Debian, Debian GNU/Linux, 11 (bullseye), arm64 built on 20220920;10;debian-cloud;debian-11-arm64;ARM64;2022-09-20T16:32:44.951-07:00;;READY
+debian-11-bullseye-v20220920;Debian, Debian GNU/Linux, 11 (bullseye), amd64 built on 20220920, supports Shielded VM features;10;debian-cloud;debian-11;X86_64;2022-09-20T16:32:44.953-07:00;;READY
 fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0, x86_64 published on 2021-04-27;10;fedora-cloud;fedora-cloud-34;;2021-05-06T09:33:30.114-07:00;;READY
 fedora-cloud-base-gcp-35-1-2-x86-64;Fedora, Fedora Cloud Base 35, 35-20211026.0, x86_64 published on 2021-11-02;10;fedora-cloud;fedora-cloud-35;;2021-12-21T13:12:17.145-08:00;;READY
 fedora-cloud-base-gcp-36-20220506-n-0-x86-64;Fedora, Fedora Cloud Base 36, 36-20220506.n.0, x86_64 published on 2022-05-06;10;fedora-cloud;fedora-cloud-36;;2022-08-23T03:44:49.923-07:00;;READY
 opensuse-leap-15-4-v20220831-arm64;openSUSE, openSUSE Leap, 15.4 arm64 built on 20220831, supports Shielded VM features;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2022-09-01T03:53:36.507-07:00;;READY
 opensuse-leap-15-4-v20220831-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20220831, supports Shielded VM features;10;opensuse-cloud;opensuse-leap;X86_64;2022-08-31T15:20:28.733-07:00;;READY
-rhel-7-v20220822;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20220822, supports Shielded VM features;20;rhel-cloud;rhel-7;X86_64;2022-08-22T14:38:57.677-07:00;;READY
-rhel-8-v20220822;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20220822, supports Shielded VM features;20;rhel-cloud;rhel-8;X86_64;2022-08-22T14:38:57.423-07:00;;READY
-rhel-9-arm64-v20220822;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20220822, supports Shielded VM features;20;rhel-cloud;rhel-9-arm64;ARM64;2022-08-22T14:38:57.170-07:00;;READY
-rhel-9-v20220822;Red Hat, Red Hat Enterprise Linux, 9, x86_64 built on 20220822, supports Shielded VM features;20;rhel-cloud;rhel-9;X86_64;2022-08-22T14:38:57.399-07:00;;READY
-rhel-7-6-sap-v20220822;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.6, x86_64 built on 20220822, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-6-sap-ha;X86_64;2022-08-22T14:38:57.266-07:00;;READY
-rhel-7-7-sap-v20220822;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.7, x86_64 built on 20220822, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-7-sap-ha;X86_64;2022-08-22T14:38:57.601-07:00;;READY
-rhel-7-9-sap-v20220822;Red Hat, Red Hat Enterprise Linux for SAP with HA, 7.9, x86_64 built on 20220822, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-9-sap-ha;X86_64;2022-08-22T14:38:57.624-07:00;;READY
-rhel-8-1-sap-v20220822;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.1, x86_64 built on 20220822, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-1-sap-ha;X86_64;2022-08-22T14:38:57.408-07:00;;READY
-rhel-8-2-sap-v20220822;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.2, x86_64 built on 20220822, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-2-sap-ha;X86_64;2022-08-22T14:38:57.766-07:00;;READY
-rhel-8-4-sap-v20220822;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.4, x86_64 built on 20220822, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-4-sap-ha;X86_64;2022-08-22T14:38:57.761-07:00;;READY
-rhel-8-6-sap-v20220822;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.6, x86_64 built on 20220822, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-6-sap-ha;X86_64;2022-08-22T14:38:57.505-07:00;;READY
-rocky-linux-8-optimized-gcp-arm64-v20220822;Rocky Linux, Rocky Linux, 8 optimized for GCP, aarch64 built on 20220822;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp-arm64;ARM64;2022-08-22T14:38:56.466-07:00;;READY
-rocky-linux-8-optimized-gcp-v20220822;Rocky Linux, Rocky Linux, 8 optimized for GCP, x86_64 built on 20220822;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp;X86_64;2022-08-22T14:38:56.705-07:00;;READY
-rocky-linux-8-v20220822;Rocky Linux, Rocky Linux, 8, x86_64 built on 20220822;20;rocky-linux-cloud;rocky-linux-8;X86_64;2022-08-22T14:38:56.295-07:00;;READY
-rocky-linux-9-arm64-v20220822;Rocky Linux, Rocky Linux, 9, aarch64 built on 20220822;20;rocky-linux-cloud;rocky-linux-9-arm64;ARM64;2022-08-22T14:38:56.873-07:00;;READY
-rocky-linux-9-optimized-gcp-arm64-v20220822;Rocky Linux, Rocky Linux, 9 optimized for GCP, aarch64 built on 20220822;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp-arm64;ARM64;2022-08-22T14:38:56.900-07:00;;READY
-rocky-linux-9-optimized-gcp-v20220822;Rocky Linux, Rocky Linux, 9 optimized for GCP, x86_64 built on 20220822;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp;X86_64;2022-08-22T14:38:56.535-07:00;;READY
-rocky-linux-9-v20220822;Rocky Linux, Rocky Linux, 9, x86_64 built on 20220822;20;rocky-linux-cloud;rocky-linux-9;X86_64;2022-08-22T14:38:56.532-07:00;;READY
+rhel-7-v20220920;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20220920, supports Shielded VM features;20;rhel-cloud;rhel-7;X86_64;2022-09-20T16:32:45.572-07:00;;READY
+rhel-8-v20220920;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20220920, supports Shielded VM features;20;rhel-cloud;rhel-8;X86_64;2022-09-20T16:32:45.492-07:00;;READY
+rhel-9-arm64-v20220920;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20220920, supports Shielded VM features;20;rhel-cloud;rhel-9-arm64;ARM64;2022-09-20T16:32:45.561-07:00;;READY
+rhel-9-v20220920;Red Hat, Red Hat Enterprise Linux, 9, x86_64 built on 20220920, supports Shielded VM features;20;rhel-cloud;rhel-9;X86_64;2022-09-20T16:32:45.492-07:00;;READY
+rhel-7-6-sap-v20220920;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.6, x86_64 built on 20220920, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-6-sap-ha;X86_64;2022-09-20T16:32:44.832-07:00;;READY
+rhel-7-7-sap-v20220920;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.7, x86_64 built on 20220920, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-7-sap-ha;X86_64;2022-09-20T16:32:45.092-07:00;;READY
+rhel-7-9-sap-v20220920;Red Hat, Red Hat Enterprise Linux for SAP with HA, 7.9, x86_64 built on 20220920, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-9-sap-ha;X86_64;2022-09-20T16:32:45.160-07:00;;READY
+rhel-8-1-sap-v20220920;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.1, x86_64 built on 20220920, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-1-sap-ha;X86_64;2022-09-20T16:32:44.931-07:00;;READY
+rhel-8-2-sap-v20220920;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.2, x86_64 built on 20220920, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-2-sap-ha;X86_64;2022-09-20T16:32:44.828-07:00;;READY
+rhel-8-4-sap-v20220920;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.4, x86_64 built on 20220920, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-4-sap-ha;X86_64;2022-09-20T16:32:45.383-07:00;;READY
+rhel-8-6-sap-v20220920;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.6, x86_64 built on 20220920, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-6-sap-ha;X86_64;2022-09-20T16:32:45.125-07:00;;READY
+rocky-linux-8-optimized-gcp-arm64-v20220920;Rocky Linux, Rocky Linux, 8 optimized for GCP, aarch64 built on 20220920;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp-arm64;ARM64;2022-09-20T16:32:44.757-07:00;;READY
+rocky-linux-8-optimized-gcp-v20220920;Rocky Linux, Rocky Linux, 8 optimized for GCP, x86_64 built on 20220920;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp;X86_64;2022-09-20T16:32:44.899-07:00;;READY
+rocky-linux-8-v20220920;Rocky Linux, Rocky Linux, 8, x86_64 built on 20220920;20;rocky-linux-cloud;rocky-linux-8;X86_64;2022-09-20T16:32:44.477-07:00;;READY
+rocky-linux-9-arm64-v20220920;Rocky Linux, Rocky Linux, 9, aarch64 built on 20220920;20;rocky-linux-cloud;rocky-linux-9-arm64;ARM64;2022-09-20T16:32:44.700-07:00;;READY
+rocky-linux-9-optimized-gcp-arm64-v20220920;Rocky Linux, Rocky Linux, 9 optimized for GCP, aarch64 built on 20220920;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp-arm64;ARM64;2022-09-20T16:32:44.765-07:00;;READY
+rocky-linux-9-optimized-gcp-v20220920;Rocky Linux, Rocky Linux, 9 optimized for GCP, x86_64 built on 20220920;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp;X86_64;2022-09-20T16:32:44.604-07:00;;READY
+rocky-linux-9-v20220920;Rocky Linux, Rocky Linux, 9, x86_64 built on 20220920;20;rocky-linux-cloud;rocky-linux-9;X86_64;2022-09-20T16:32:44.765-07:00;;READY
 sles-12-sp5-v20220719-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20220719, supports Shielded VM features;10;suse-cloud;sles-12;X86_64;2022-07-19T09:11:15.503-07:00;;READY
 sles-15-sp4-v20220722-arm64;SUSE, SUSE Linux Enterprise Server 15 SP4, arm64, built on 20220722, supports Shielded VM features;10;suse-cloud;sles-15-arm64;ARM64;2022-07-22T07:21:06.229-07:00;;READY
 sles-15-sp4-v20220722-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4, x86_64, built on 20220722, supports Shielded VM features;10;suse-cloud;sles-15;X86_64;2022-07-22T07:02:43.327-07:00;;READY
