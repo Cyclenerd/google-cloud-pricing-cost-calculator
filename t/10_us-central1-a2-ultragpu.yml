@@ -8,20 +8,7 @@ instances:
 # A2 standard machine types (total cost)
   - name: a2-ultragpu-1g
     type: a2-ultragpu-1g
-  - name: a2-ultragpu-2g
-    type: a2-ultragpu-2g
-  - name: a2-ultragpu-4g
-    type: a2-ultragpu-4g
-  - name: a2-ultragpu-8g
-    type: a2-ultragpu-8g
-    #disks:
-    #  - name: a2-ultragpu-8g-local-ssd
-    #    data: 3000
-    #    type: local
-# Commitment (CUD)
-  - name: a2-ultragpu-8g-1y
-    type: a2-ultragpu-8g
-    commitment: 1
-  - name: a2-ultragpu-8g-3y
-    type: a2-ultragpu-8g
-    commitment: 3
+    disks:
+      - name: a2-ultragpu-1g-local-disk
+        type: local
+        data: 375

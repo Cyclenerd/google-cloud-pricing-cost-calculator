@@ -450,10 +450,11 @@ print "Instances:\n";
 foreach my $region (@regions) {
 	foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 		# CPU and RAM
-		my $type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'} || '';
-		my $cpu  = $gcp->{'compute'}->{'instance'}->{$machine}->{'cpu'}  || '0';
-		my $ram  = $gcp->{'compute'}->{'instance'}->{$machine}->{'ram'}  || '0';
-		my $a100 = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100'} || '0';
+		my $type      = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'}      || '';
+		my $cpu       = $gcp->{'compute'}->{'instance'}->{$machine}->{'cpu'}       || '0';
+		my $ram       = $gcp->{'compute'}->{'instance'}->{$machine}->{'ram'}       || '0';
+		my $a100      = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100'}      || '0';
+		my $a100_80gb = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100-80gb'} || '0';
 
 		print "Machine: $machine\n";
 		print "Type: $type\n";
@@ -638,9 +639,14 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.a2'     } = $ram;
 			$mappings_1y{'gce.compute.ram.a2.1y'  } = $ram;
 			$mappings_3y{'gce.compute.ram.a2.3y'  } = $ram;
+			# NVIDIA's Ampere A100 40GB GPUs
 			$mappings{   'gce.compute.gpu.a100'   } = $a100;
 			$mappings_1y{'gce.compute.gpu.a100.1y'} = $a100;
 			$mappings_3y{'gce.compute.gpu.a100.3y'} = $a100;
+			# NVIDIA's Ampere A100 80GB HBM2e GPUs
+			$mappings{   'gce.compute.gpu.a100.80gb'   } = $a100_80gb;
+			$mappings_1y{'gce.compute.gpu.a100.80gb.1y'} = $a100_80gb;
+			$mappings_3y{'gce.compute.gpu.a100.80gb.3y'} = $a100_80gb;
 		}
 		# Unknown family
 		else {

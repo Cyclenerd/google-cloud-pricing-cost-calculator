@@ -1140,7 +1140,7 @@ compute:
       type: a2
       cpu: 12
       ram: 170
-      a100: 1
+      a100-80gb: 1
       bandwidth: 24
       # Local SSD
       local: 375
@@ -1148,20 +1148,20 @@ compute:
       type: a2
       cpu: 24
       ram: 340
-      a100: 2
+      a100-80gb: 2
       bandwidth: 32
       local: 750
     a2-ultragpu-4g:
       type: a2
       cpu: 48
       ram: 680
-      a100: 4
+      a100-80gb: 4
       bandwidth: 50
       local: 1500
     a2-ultragpu-8g:
       type: a2
       cpu: 96
       ram: 1360
-      a100: 8
+      a100-80gb: 8
       bandwidth: 100
       local: 3000

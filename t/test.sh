@@ -306,6 +306,10 @@ MY_CHECKS=(
 	# A2 Commitment (CUD)
 	'europe-west4;vm;a2-highgpu-8g-1y;13789' # Google Cloud Pricing Calculator: $13789.38, Price List: $13787.27
 	'europe-west4;vm;a2-highgpu-8g-3y;7661'  # Google Cloud Pricing Calculator: $7661.01, Price List: $7661.79
+	# A2 with A100 80GB and local SSD
+	# Pirce list: a2-ultragpu-1g in us-central1 = $3700.22
+	'us-central1;vm;a2-ultragpu-1g;3670'
+	'us-central1;disk;a2-ultragpu-1g-local-disk;30'
 	#
 	# Regions
 	# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
