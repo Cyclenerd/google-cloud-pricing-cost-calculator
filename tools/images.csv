@@ -1,5 +1,5 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS
-centos-7-v20220920;CentOS, CentOS, 7, x86_64 built on 20220920, supports Shielded VM features;20;centos-cloud;centos-7;X86_64;2022-09-20T16:32:45.546-07:00;;READY
+centos-7-v20221004;CentOS, CentOS, 7, x86_64 built on 20221004, supports Shielded VM features;20;centos-cloud;centos-7;X86_64;2022-10-04T14:14:55.169-07:00;;READY
 centos-stream-8-v20220920;CentOS, CentOS, Stream 8, x86_64 built on 20220920, supports Shielded VM features;20;centos-cloud;centos-stream-8;X86_64;2022-09-20T16:32:45.304-07:00;;READY
 centos-stream-9-v20220920;CentOS, CentOS, Stream 9, x86_64 built on 20220920, supports Shielded VM features;20;centos-cloud;centos-stream-9;X86_64;2022-09-20T16:32:45.415-07:00;;READY
 cos-101-17162-40-5;Google, Container-Optimized OS, 101-17162.40.5 LTS, Kernel: COS-5.15.65 Kubernetes: 1.23.10 Docker: 20.10.12 Family: cos-101-lts, supports Shielded VM features;10;cos-cloud;cos-101-lts;X86_64;2022-09-19T15:54:40.509-07:00;;READY
@@ -86,8 +86,8 @@ sql-2016-standard-windows-2016-dc-v20220915;Microsoft, SQL Server 2016 Standard,
 sql-2016-standard-windows-2019-dc-v20220915;Microsoft, SQL Server 2016 Standard, on Windows Server 2019 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-std-2016-win-2019;X86_64;2022-09-16T12:14:00.954-07:00;;READY
 sql-2016-web-windows-2012-r2-dc-v20220915;Microsoft, SQL Server 2016 Web, on Windows Server 2012 R2 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-web-2016-win-2012-r2;X86_64;2022-09-16T12:14:00.922-07:00;;READY
 fedora-coreos-36-20220522-2-0-gcp-x86-64;Fedora, Fedora CoreOS testing, 36.20220522.2.0, x86_64 published on 2022-05-24;10;fedora-coreos-cloud;;;2022-05-24T01:53:19.591-07:00;;READY
-fedora-coreos-36-20220906-3-2-gcp-x86-64;Fedora, Fedora CoreOS stable, 36.20220906.3.2, x86_64 published on 2022-09-22;10;fedora-coreos-cloud;fedora-coreos-stable;;2022-09-22T07:31:14.323-07:00;;READY
-fedora-coreos-36-20220918-2-2-gcp-x86-64;Fedora, Fedora CoreOS testing, 36.20220918.2.2, x86_64 published on 2022-09-22;10;fedora-coreos-cloud;fedora-coreos-testing;;2022-09-22T07:27:05.858-07:00;;READY
+fedora-coreos-36-20220918-3-0-gcp-x86-64;Fedora, Fedora CoreOS stable, 36.20220918.3.0, x86_64 published on 2022-10-03;10;fedora-coreos-cloud;fedora-coreos-stable;;2022-10-03T12:26:24.150-07:00;;READY
+fedora-coreos-36-20221001-2-0-gcp-x86-64;Fedora, Fedora CoreOS testing, 36.20221001.2.0, x86_64 published on 2022-10-03;10;fedora-coreos-cloud;fedora-coreos-testing;;2022-10-03T11:31:57.994-07:00;;READY
 ubuntu-minimal-2004-focal-v20220927a;Canonical, Ubuntu, 20.04 LTS Minimal, amd64 focal minimal image built on 2022-09-27, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts;X86_64;2022-09-27T12:07:22.807-07:00;;READY
 ubuntu-minimal-2204-jammy-arm64-v20220928;Canonical, Ubuntu, 22.04 LTS Minimal, arm64 jammy minimal image built on 2022-09-28, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts-arm64;ARM64;2022-09-28T05:52:06.235-07:00;;READY
 ubuntu-minimal-2204-jammy-v20220928;Canonical, Ubuntu, 22.04 LTS Minimal, amd64 jammy minimal image built on 2022-09-28, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts;X86_64;2022-09-28T05:52:04.958-07:00;;READY
@@ -102,7 +102,7 @@ sql-2017-express-windows-2019-dc-v20220915;Microsoft, SQL Server 2017 Express, o
 sql-2017-standard-windows-2016-dc-v20220915;Microsoft, SQL Server 2017 Standard, on Windows Server 2016 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-std-2017-win-2016;X86_64;2022-09-16T12:14:01.189-07:00;;READY
 sql-2017-standard-windows-2019-dc-v20220915;Microsoft, SQL Server 2017 Standard, on Windows Server 2019 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-std-2017-win-2019;X86_64;2022-09-16T12:14:00.651-07:00;;READY
 sql-2017-standard-windows-2022-dc-v20220915;Microsoft, SQL Server 2017 Standard, on Windows Server 2022 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-std-2017-win-2022;X86_64;2022-09-16T12:14:00.694-07:00;;READY
-fedora-coreos-37-20220918-1-1-gcp-x86-64;Fedora, Fedora CoreOS next, 37.20220918.1.1, x86_64 published on 2022-09-21;10;fedora-coreos-cloud;fedora-coreos-next;;2022-09-21T14:55:09.997-07:00;;READY
+fedora-coreos-37-20221003-1-0-gcp-x86-64;Fedora, Fedora CoreOS next, 37.20221003.1.0, x86_64 published on 2022-10-03;10;fedora-coreos-cloud;fedora-coreos-next;;2022-10-03T11:35:22.528-07:00;;READY
 sql-2017-web-windows-2016-dc-v20220915;Microsoft, SQL Server 2017 Web, on Windows Server 2016 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-web-2017-win-2016;X86_64;2022-09-16T12:14:01.608-07:00;;READY
 sql-2017-web-windows-2019-dc-v20220915;Microsoft, SQL Server 2017 Web, on Windows Server 2019 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-web-2017-win-2019;X86_64;2022-09-16T12:14:00.899-07:00;;READY
 sql-2017-web-windows-2022-dc-v20220915;Microsoft, SQL Server 2017 Web, on Windows Server 2022 Datacenter, x64 built on 20220915, supports Shielded VM features;50;windows-sql-cloud;sql-web-2017-win-2022;X86_64;2022-09-16T12:14:01.210-07:00;;READY
