@@ -6834,6 +6834,7 @@ n2-highcpu-96;96;False;96.00;;us-east4-c
 n2-highcpu-96;96;False;96.00;;us-west1-a
 n2-highcpu-96;96;False;96.00;;us-west1-b
 n2-highcpu-96;96;False;96.00;;us-west1-c
+n2-highcpu-96;96;False;96.00;;us-west3-a
 n2-highcpu-96;96;False;96.00;;us-west3-b
 n2-highcpu-96;96;False;96.00;;us-west3-c
 n2-highcpu-96;96;False;96.00;;us-west4-a
@@ -6873,6 +6874,7 @@ n2-highmem-128;128;False;864.00;;us-east4-c
 n2-highmem-128;128;False;864.00;;us-west1-a
 n2-highmem-128;128;False;864.00;;us-west1-b
 n2-highmem-128;128;False;864.00;;us-west1-c
+n2-highmem-128;128;False;864.00;;us-west3-a
 n2-highmem-128;128;False;864.00;;us-west3-b
 n2-highmem-128;128;False;864.00;;us-west3-c
 n2-highmem-128;128;False;864.00;;us-west4-a
@@ -7800,6 +7802,7 @@ n2-highmem-96;96;False;768.00;;us-east4-c
 n2-highmem-96;96;False;768.00;;us-west1-a
 n2-highmem-96;96;False;768.00;;us-west1-b
 n2-highmem-96;96;False;768.00;;us-west1-c
+n2-highmem-96;96;False;768.00;;us-west3-a
 n2-highmem-96;96;False;768.00;;us-west3-b
 n2-highmem-96;96;False;768.00;;us-west3-c
 n2-highmem-96;96;False;768.00;;us-west4-a
@@ -7841,6 +7844,7 @@ n2-standard-128;128;False;512.00;;us-east4-c
 n2-standard-128;128;False;512.00;;us-west1-a
 n2-standard-128;128;False;512.00;;us-west1-b
 n2-standard-128;128;False;512.00;;us-west1-c
+n2-standard-128;128;False;512.00;;us-west3-a
 n2-standard-128;128;False;512.00;;us-west3-b
 n2-standard-128;128;False;512.00;;us-west3-c
 n2-standard-128;128;False;512.00;;us-west4-a
@@ -8770,6 +8774,7 @@ n2-standard-96;96;False;384.00;;us-east4-c
 n2-standard-96;96;False;384.00;;us-west1-a
 n2-standard-96;96;False;384.00;;us-west1-b
 n2-standard-96;96;False;384.00;;us-west1-c
+n2-standard-96;96;False;384.00;;us-west3-a
 n2-standard-96;96;False;384.00;;us-west3-b
 n2-standard-96;96;False;384.00;;us-west3-c
 n2-standard-96;96;False;384.00;;us-west4-a
