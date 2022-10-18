@@ -644,7 +644,7 @@ foreach my $region (@regions) {
 			$mappings_1y{'gce.compute.gpu.a100.1y'} = $a100;
 			$mappings_3y{'gce.compute.gpu.a100.3y'} = $a100;
 			# NVIDIA's Ampere A100 80GB HBM2e GPUs
-			$mappings{   'gce.compute.gpu.a100.80gb'   } = $a100_80gb;
+			$mappings{ 'gce.compute.gpu.a100.80gb' } = $a100_80gb;
 			$mappings_1y{'gce.compute.gpu.a100.80gb.1y'} = $a100_80gb;
 			$mappings_3y{'gce.compute.gpu.a100.80gb.3y'} = $a100_80gb;
 		}
@@ -778,6 +778,12 @@ foreach my $region (@regions) {
 			}
 		}
 		my $costs_month_1y = $costs_1y*$hours_month;
+		# 2022-10-18:
+		# For committed use discounts pricing on the A2 ultra machine series, connect with your sales account team.
+		if ($machine =~ m/a2-ultragpu/) {
+			print "INFO: No public committed use discounts for A2 ultra machine series. Reset calculated price.";
+			$costs_month_1y = $costs_month;
+		}
 		# No price for commitment found (i.e. NANOS = 0), use price per month (with SUD)
 		if ($costs_month_1y <= 0.0001) {
 			if ($machine ne 'g1-small' && $machine ne 'f1-micro') {
@@ -824,6 +830,12 @@ foreach my $region (@regions) {
 			}
 		}
 		my $costs_month_3y = $costs_3y*$hours_month;
+		# 2022-10-18:
+		# For committed use discounts pricing on the A2 ultra machine series, connect with your sales account team.
+		if ($machine =~ m/a2-ultragpu/) {
+			print "INFO: No public committed use discounts for A2 ultra machine series. Reset calculated price.";
+			$costs_month_3y = $costs_month;
+		}
 		# No price for commitment found, use price per month (with CUD)
 		if ($costs_month_3y <= 0.0001) {
 			if ($machine ne 'g1-small' && $machine ne 'f1-micro') {

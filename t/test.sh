@@ -309,6 +309,8 @@ MY_CHECKS=(
 	# A2 with A100 80GB and local SSD
 	# Pirce list: a2-ultragpu-1g in us-central1 = $3700.22
 	'us-central1;vm;a2-ultragpu-1g;3670'
+	'us-central1;vm;a2-ultragpu-1g-1y;3670'
+	'us-central1;vm;a2-ultragpu-1g-3y;3670'
 	'us-central1;disk;a2-ultragpu-1g-local-disk;30'
 	#
 	# Regions

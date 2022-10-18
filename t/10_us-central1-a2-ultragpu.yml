@@ -12,3 +12,9 @@ instances:
       - name: a2-ultragpu-1g-local-disk
         type: local
         data: 375
+  - name: a2-ultragpu-1g-1y
+    type: a2-ultragpu-1g
+    commitment: 1
+  - name: a2-ultragpu-1g-3y
+    type: a2-ultragpu-1g
+    commitment: 3
