@@ -1,8 +1,11 @@
 # Google Cloud Platform Pricing and Cost Calculator
 
-[![CI](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml)
-[![GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-pricing-cost-calculator)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/LICENSE)
-[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/googlecloud?label=Google%20Cloud%20Platform&style=social)](https://www.reddit.com/r/googlecloud/comments/svn8kj/google_cloud_platform_pricing_and_cost_calculator/)
+[![Bagde: Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?logo=google-cloud&logoColor=white)](#readme)
+[![Bagde: Linux](https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black)](#1-get-gcosts-program)
+[![Bagde: Windows](https://img.shields.io/badge/Windows-008080.svg?logo=windows95&logoColor=white)](#1-get-gcosts-program)
+[![Bagde: CI](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml)
+[![Bagde: GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-pricing-cost-calculator)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/LICENSE)
+[![Bagde: Reddit](https://img.shields.io/reddit/subreddit-subscribers/googlecloud?label=Google%20Cloud%20Platform&style=social)](https://www.reddit.com/r/googlecloud/comments/svn8kj/google_cloud_platform_pricing_and_cost_calculator/)
 
 [![Image: Google Open Source Peer Bonus winner 2022](./img/open_source_peer%20bonus_winner_2022.jpg)](https://opensource.googleblog.com/2022/09/announcing-the-second-group-of-open-source-peer-bonus-winners-in-2022.html)
 
