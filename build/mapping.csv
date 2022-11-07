@@ -106,6 +106,9 @@ gce.compute.cpu.compute.optimized.3y;Compute Engine;Compute;CPU;Commitment: Comp
 gce.compute.cpu.memory.optimized;Compute Engine;Compute;CPU;Memory-optimized Instance%;
 gce.compute.cpu.memory.optimized.1y;Compute Engine;Compute;CPU;Commitment v1: Memory-optimized%1 Year;
 gce.compute.cpu.memory.optimized.3y;Compute Engine;Compute;CPU;Commitment v1: Memory-optimized%3 Year%;
+gce.compute.cpu.m3;Compute Engine;Compute;CPU;M3 Memory-optimized Instance%;
+gce.compute.cpu.m3.1y;Compute Engine;Compute;CPU;Commitment v1: M3 Memory-optimized%1 Year;
+gce.compute.cpu.m3.3y;Compute Engine;Compute;CPU;Commitment v1: M3 Memory-optimized%3 Year%;
 gce.compute.cpu.sole.tenancy;Compute Engine;Compute;CPU;Sole Tenancy Instance%;
 gce.compute.cpu.sole.tenancy.n2;Compute Engine;Compute;CPU;N2 Sole Tenancy Instance%;
 gce.compute.cpu.sole.tenancy.n2d;Compute Engine;Compute;CPU;N2D AMD Sole Tenancy Instance%;
@@ -155,6 +158,9 @@ gce.compute.ram.compute.optimized.3y;Compute Engine;Compute;RAM;Commitment: Comp
 gce.compute.ram.memory.optimized;Compute Engine;Compute;RAM;Memory-optimized Instance%;
 gce.compute.ram.memory.optimized.1y;Compute Engine;Compute;RAM;Commitment v1: Memory-optimized%1 Year;
 gce.compute.ram.memory.optimized.3y;Compute Engine;Compute;RAM;Commitment v1: Memory-optimized%3 Year%;
+gce.compute.ram.m3;Compute Engine;Compute;RAM;M3 Memory-optimized Instance%;
+gce.compute.ram.m3.1y;Compute Engine;Compute;RAM;Commitment v1: M3 Memory-optimized%1 Year;
+gce.compute.ram.m3.3y;Compute Engine;Compute;RAM;Commitment v1: M3 Memory-optimized%3 Year%;
 gce.compute.ram.sole.tenancy;Compute Engine;Compute;RAM;Sole Tenancy Instance%;
 gce.compute.ram.sole.tenancy.n2;Compute Engine;Compute;RAM;N2 Sole Tenancy Instance%;
 gce.compute.ram.sole.tenancy.n2d;Compute Engine;Compute;RAM;N2D AMD Sole Tenancy Instance%;

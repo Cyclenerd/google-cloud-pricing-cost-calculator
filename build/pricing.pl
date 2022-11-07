@@ -631,6 +631,16 @@ foreach my $region (@regions) {
 			$mapping_upgrades{'gce.compute.ram.memory.optimized.premium.upgrade'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 		}
+		# M3
+		elsif ($type eq 'm3') {
+			$mappings{   'gce.compute.cpu.m3'   } = $cpu;
+			$mappings_1y{'gce.compute.cpu.m3.1y'} = $cpu;
+			$mappings_3y{'gce.compute.cpu.m3.3y'} = $cpu;
+			$mappings{   'gce.compute.ram.m3'   } = $ram;
+			$mappings_1y{'gce.compute.ram.m3.1y'} = $ram;
+			$mappings_3y{'gce.compute.ram.m3.3y'} = $ram;
+			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
+		}
 		# A2
 		elsif ($type eq 'a2') {
 			$mappings{   'gce.compute.cpu.a2'     } = $cpu;

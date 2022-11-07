@@ -1100,6 +1100,35 @@ compute:
       ram: 11776
       bandwidth: 32
 
+    # M3:
+    # » The M3 machine series does not support GPUs.
+    # » The M3 machine series does not support standard persistent disks (pd-standard).
+    m3-ultramem-32:
+      type: m3
+      cpu: 32
+      ram: 976
+      bandwidth: 32
+    m3-ultramem-64:
+      type: m3
+      cpu: 64
+      ram: 1952
+      bandwidth: 32
+    m3-ultramem-128:
+      type: m3
+      cpu: 128
+      ram: 3904
+      bandwidth: 32
+    m3-megamem-64:
+      type: m3
+      cpu: 64
+      ram: 976
+      bandwidth: 32
+    m3-megamem-128:
+      type: m3
+      cpu: 128
+      ram: 1952
+      bandwidth: 32
+
     # A2:
     # » Accelerator-optimized VMs featuring NVIDIA's Ampere A100 40GB GPUs
     # » High performance network bandwidth of up to 100 Gbps
