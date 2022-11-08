@@ -639,7 +639,7 @@ foreach my $region (@regions) {
 			$mappings{   'gce.compute.ram.m3'   } = $ram;
 			$mappings_1y{'gce.compute.ram.m3.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.m3.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
+			# M3 machine types do not offer sustained use discounts.
 		}
 		# A2
 		elsif ($type eq 'a2') {

@@ -259,6 +259,27 @@ MY_CHECKS=(
 	# Memory-optimized machine type family
 	# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types
 	#
+	# M3 machine types
+	# » m3-ultramem-32
+	'europe-west4;vm;m3-ultramem-32;4896'
+	'europe-west4;vm;m3-ultramem-32-1y;2897'
+	'europe-west4;vm;m3-ultramem-32-3y;1469'
+	# » m3-ultramem-64
+	'europe-west4;vm;m3-ultramem-64;9792'
+	'europe-west4;vm;m3-ultramem-64-1y;5795'
+	'europe-west4;vm;m3-ultramem-64-3y;2938'
+	# » m3-ultramem-128
+	'europe-west4;vm;m3-ultramem-128;19584'
+	'europe-west4;vm;m3-ultramem-128-1y;11591'
+	'europe-west4;vm;m3-ultramem-128-3y;5876'
+	# » m3-megamem-64
+	'europe-west4;vm;m3-megamem-64;5791'
+	'europe-west4;vm;m3-megamem-64-1y;3426'
+	'europe-west4;vm;m3-megamem-64-3y;1737'
+	# » m3-megamem-128
+	'europe-west4;vm;m3-megamem-128;11582'
+	'europe-west4;vm;m3-megamem-128-1y;6852'
+	'europe-west4;vm;m3-megamem-128-3y;3475'
 	# M2 machine types
 	# » m2-ultramem-208
 	'europe-west4;vm;m2-ultramem-208;22625'    # Google Cloud Pricing Calculator: $22612.16, Price List: $22624.53

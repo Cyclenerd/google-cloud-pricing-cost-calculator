@@ -1,0 +1,54 @@
+region: europe-west4
+project: gcp-gce-m3
+
+# Memory-optimized machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types
+
+instances:
+# M3 machine types
+  - name: m3-ultramem-32
+    type: m3-ultramem-32
+  - name: m3-ultramem-64
+    type: m3-ultramem-64
+  - name: m3-ultramem-128
+    type: m3-ultramem-128
+  - name: m3-megamem-64
+    type: m3-megamem-64
+  - name: m3-megamem-128
+    type: m3-megamem-128
+# Commitment (CUD)
+# m3-ultramem-32
+  - name: m3-ultramem-32-1y
+    type: m3-ultramem-32
+    commitment: 1
+  - name: m3-ultramem-32-3y
+    type: m3-ultramem-32
+    commitment: 3
+# m3-ultramem-64
+  - name: m3-ultramem-64-1y
+    type: m3-ultramem-64
+    commitment: 1
+  - name: m3-ultramem-64-3y
+    type: m3-ultramem-64
+    commitment: 3
+# m3-ultramem-128
+  - name: m3-ultramem-128-1y
+    type: m3-ultramem-128
+    commitment: 1
+  - name: m3-ultramem-128-3y
+    type: m3-ultramem-128
+    commitment: 3
+# m3-megamem-64
+  - name: m3-megamem-64-1y
+    type: m3-megamem-64
+    commitment: 1
+  - name: m3-megamem-64-3y
+    type: m3-megamem-64
+    commitment: 3
+# m3-megamem-128
+  - name: m3-megamem-128-1y
+    type: m3-megamem-128
+    commitment: 1
+  - name: m3-megamem-128-3y
+    type: m3-megamem-128
+    commitment: 3
