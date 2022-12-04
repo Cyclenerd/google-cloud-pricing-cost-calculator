@@ -6980,6 +6980,7 @@ n2-highcpu-8;8;False;8.00;;us-west4-c
 n2-highcpu-96;96;False;96.00;;asia-northeast1-a
 n2-highcpu-96;96;False;96.00;;asia-northeast1-b
 n2-highcpu-96;96;False;96.00;;asia-northeast1-c
+n2-highcpu-96;96;False;96.00;;asia-northeast3-c
 n2-highcpu-96;96;False;96.00;;asia-south1-a
 n2-highcpu-96;96;False;96.00;;asia-south2-b
 n2-highcpu-96;96;False;96.00;;asia-southeast1-a
@@ -7035,6 +7036,7 @@ n2-highcpu-96;96;False;96.00;;us-west4-c
 n2-highmem-128;128;False;864.00;;asia-northeast1-a
 n2-highmem-128;128;False;864.00;;asia-northeast1-b
 n2-highmem-128;128;False;864.00;;asia-northeast1-c
+n2-highmem-128;128;False;864.00;;asia-northeast3-c
 n2-highmem-128;128;False;864.00;;asia-south2-b
 n2-highmem-128;128;False;864.00;;asia-southeast1-a
 n2-highmem-128;128;False;864.00;;asia-southeast1-b
@@ -7966,6 +7968,7 @@ n2-highmem-8;8;False;64.00;;us-west4-c
 n2-highmem-96;96;False;768.00;;asia-northeast1-a
 n2-highmem-96;96;False;768.00;;asia-northeast1-b
 n2-highmem-96;96;False;768.00;;asia-northeast1-c
+n2-highmem-96;96;False;768.00;;asia-northeast3-c
 n2-highmem-96;96;False;768.00;;asia-south2-b
 n2-highmem-96;96;False;768.00;;asia-southeast1-a
 n2-highmem-96;96;False;768.00;;asia-southeast1-b
@@ -8009,6 +8012,7 @@ n2-highmem-96;96;False;768.00;;us-west4-c
 n2-standard-128;128;False;512.00;;asia-northeast1-a
 n2-standard-128;128;False;512.00;;asia-northeast1-b
 n2-standard-128;128;False;512.00;;asia-northeast1-c
+n2-standard-128;128;False;512.00;;asia-northeast3-c
 n2-standard-128;128;False;512.00;;asia-south1-a
 n2-standard-128;128;False;512.00;;asia-south2-b
 n2-standard-128;128;False;512.00;;asia-southeast1-a
@@ -8952,6 +8956,7 @@ n2-standard-8;8;False;32.00;;us-west4-c
 n2-standard-96;96;False;384.00;;asia-northeast1-a
 n2-standard-96;96;False;384.00;;asia-northeast1-b
 n2-standard-96;96;False;384.00;;asia-northeast1-c
+n2-standard-96;96;False;384.00;;asia-northeast3-c
 n2-standard-96;96;False;384.00;;asia-south1-a
 n2-standard-96;96;False;384.00;;asia-south2-b
 n2-standard-96;96;False;384.00;;asia-southeast1-a
