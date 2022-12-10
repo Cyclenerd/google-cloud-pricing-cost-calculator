@@ -193,6 +193,7 @@ freebsd-12-4-prerelease-amd64-v20221014;;22;freebsd-org-cloud-dev;freebsd-12-4-s
 freebsd-12-4-rc1-amd64;;22;freebsd-org-cloud-dev;freebsd-12-4;;2022-11-04T03:05:39.522-07:00;;READY
 freebsd-12-4-rc2-amd64;;22;freebsd-org-cloud-dev;freebsd-12-4;;2022-11-11T02:13:45.933-08:00;;READY
 freebsd-12-4-release-amd64;;22;freebsd-org-cloud-dev;freebsd-12-4;;2022-11-30T02:26:46.910-08:00;;READY
+freebsd-12-4-stable-amd64-v20221209;;22;freebsd-org-cloud-dev;freebsd-12-4-snap;;2022-12-09T03:03:04.047-08:00;;READY
 freebsd-13-0-alpha1-amd64;;22;freebsd-org-cloud-dev;freebsd-13-0;;2021-01-14T04:37:29.717-08:00;;READY
 freebsd-13-0-alpha2-amd64;;22;freebsd-org-cloud-dev;freebsd-13-0;;2021-01-22T02:54:29.620-08:00;;READY
 freebsd-13-0-alpha3-amd64;;22;freebsd-org-cloud-dev;freebsd-13-0;;2021-01-28T23:33:16.625-08:00;;READY
@@ -329,6 +330,7 @@ freebsd-13-1-stable-amd64-v20221110;;22;freebsd-org-cloud-dev;freebsd-13-1-snap;
 freebsd-13-1-stable-amd64-v20221117;;22;freebsd-org-cloud-dev;freebsd-13-1-snap;;2022-11-17T00:25:58.106-08:00;;READY
 freebsd-13-1-stable-amd64-v20221123;;22;freebsd-org-cloud-dev;freebsd-13-1-snap;;2022-11-22T23:01:06.052-08:00;;READY
 freebsd-13-1-stable-amd64-v20221201;;22;freebsd-org-cloud-dev;freebsd-13-1-snap;;2022-12-01T00:09:44.970-08:00;;READY
+freebsd-13-1-stable-amd64-v20221209;;22;freebsd-org-cloud-dev;freebsd-13-1-snap;;2022-12-09T00:21:17.174-08:00;;READY
 freebsd-14-0-current-amd64-v20210311;;22;freebsd-org-cloud-dev;freebsd-14-0-snap;;2021-03-11T04:44:14.926-08:00;;READY
 freebsd-14-0-current-amd64-v20210318;;22;freebsd-org-cloud-dev;freebsd-14-0-snap;;2021-03-18T06:12:29.867-07:00;;READY
 freebsd-14-0-current-amd64-v20210401;;22;freebsd-org-cloud-dev;freebsd-14-0-snap;;2021-04-01T08:19:05.195-07:00;;READY
@@ -412,3 +414,4 @@ freebsd-14-0-current-amd64-v20221110;;22;freebsd-org-cloud-dev;freebsd-14-0-snap
 freebsd-14-0-current-amd64-v20221117;;22;freebsd-org-cloud-dev;freebsd-14-0-snap;;2022-11-17T07:19:51.546-08:00;;READY
 freebsd-14-0-current-amd64-v20221123;;22;freebsd-org-cloud-dev;freebsd-14-0-snap;;2022-11-23T06:21:30.822-08:00;;READY
 freebsd-14-0-current-amd64-v20221201;;22;freebsd-org-cloud-dev;freebsd-14-0-snap;;2022-12-01T07:37:09.285-08:00;;READY
+freebsd-14-0-current-amd64-v20221209;;22;freebsd-org-cloud-dev;freebsd-14-0-snap;;2022-12-09T11:13:52.981-08:00;;READY
