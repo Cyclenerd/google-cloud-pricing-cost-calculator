@@ -888,6 +888,7 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	print "CPU: $cpu\n";
 
 	# Mappings for "premium" operating systems
+	# https://cloud.google.com/compute/all-pricing#premiumimages
 	my @operating_systems = ('sles', 'sles-sap', 'rhel', 'rhel-sap', 'windows');
 	# SUSE Linux Enterprise Server 15
 	# https://console.cloud.google.com/marketplace/product/suse-cloud/sles-15
@@ -895,8 +896,8 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	# SLES 15 for SAP
 	# https://console.cloud.google.com/marketplace/product/suse-sap-cloud/sles-15-sap
 	my $sles_sap_mapping = '';
-	# Red Hat Enterprise Linux 8
-	# https://console.cloud.google.com/marketplace/product/rhel-cloud/rhel-8
+	# Red Hat Enterprise Linux 9
+	# https://console.cloud.google.com/marketplace/product/rhel-cloud/rhel-9
 	my $rhel_mapping     = '';
 	# RHEL for SAP with High Availability and Update Services
 	# https://console.cloud.google.com/marketplace/product/rhel-sap-cloud/rhel-8-4-sap
@@ -909,16 +910,16 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	if ($type eq 'f1') {
 		$sles_mapping     = 'gce.os.sles.f1';
 		$sles_sap_mapping = 'gce.os.sles.sap.f1';
-		$rhel_mapping     = 'gce.os.rhel.f1';
-		$rhel_sap_mapping = 'gce.os.rhel.sap.f1';
+		$rhel_mapping     = 'gce.os.rhel.cpu.1.4';
+		$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.4';
 		$windows_mapping  = 'gce.os.windows.f1';
 	}
 	# G1 Predefined
 	elsif ($type eq 'g1') {
 		$sles_mapping     = 'gce.os.sles.g1';
 		$sles_sap_mapping = 'gce.os.sles.sap.g1';
-		$rhel_mapping     = 'gce.os.rhel.g1';
-		$rhel_sap_mapping = 'gce.os.rhel.sap.g1';
+		$rhel_mapping     = 'gce.os.rhel.cpu.1.4';
+		$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.4';
 		$windows_mapping  = 'gce.os.windows.g1';
 	}
 	# CPU

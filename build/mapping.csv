@@ -7,7 +7,7 @@ gce.network.ip.external;Compute Engine;Network;IpAddress;External IP Charge on a
 gce.network.ip.external.spot;Compute Engine;Network;IpAddress;External IP Charge on a Spot Preemptible VM;GLOBAL
 gce.network.ip.external.unused;Compute Engine;Network;IpAddress;Static Ip Charge%;Static external IP address (assigned but unused)
 gce.network.vpn.tunnel;Networking;Network;VPNTunnel;Networking Cloud VPN Tunnel%;hours
-gce.network.vpn.tunnel.egress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Americas;From → to, Gb, bulk price! SAME AS PremiumInternetEgress 
+gce.network.vpn.tunnel.egress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Americas;From... to..., Gb, bulk price! SAME AS PremiumInternetEgress 
 gce.network.vpn.tunnel.egress.china;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%China;SAME AS PremiumInternetEgress 
 gce.network.vpn.tunnel.egress.australia;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Australia;SAME AS PremiumInternetEgress 
 gce.network.vpn.tunnel.ingress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Ingress;Free
@@ -16,7 +16,7 @@ gce.network.nat.gateway.data;Networking;Network;Nat;Networking Cloud Nat Data Pr
 gce.network.lb.rule;Compute Engine;Network;LoadBalancing;Network Load Balancing: Forwarding Rule Minimum Service Charge%;hours (first 5)
 gce.network.lb.rule.add;Compute Engine;Network;LoadBalancing;Network Load Balancing: Forwarding Rule Additional Service Charge%;hours
 gce.network.lb.data;Compute Engine;Network;LoadBalancing;Network Load Balancing: Data Processing Charge%;per GB
-gce.network.internet.egress;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Americas;From → to, Gb, bulk price!
+gce.network.internet.egress;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Americas;From... to..., Gb, bulk price!
 gce.network.internet.egress.china;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%China;
 gce.network.internet.egress.australia;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Australia;
 gce.network.internet.ingress;Compute Engine;Network;PremiumInternetEgress;Network Internet Ingress%;Free
@@ -214,29 +214,19 @@ SLES;;;;;
 gce.os.sles.f1;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15 on f1-micro;
 gce.os.sles.g1;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15 on g1-small;
 gce.os.sles.cpu;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15%CPU%;
-gce.os.sles.gpu;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15%GPU%;
-gce.os.sles.ram;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15%RAM%;
 RHEL;;;;;
-gce.os.rhel.f1;Compute Engine;License;Google;Licensing Fee for RedHat Enterprise Linux 8 on f1-micro;
-gce.os.rhel.g1;Compute Engine;License;Google;Licensing Fee for RedHat Enterprise Linux 8 on g1-small;
-gce.os.rhel.cpu.1.4;Compute Engine;License;Google;Licensing Fee for RedHat Enterprise Linux 8 on VM with 1 to 4 VCPU;
-gce.os.rhel.cpu.6.n;Compute Engine;License;Google;Licensing Fee for RedHat Enterprise Linux 8 on VM with 6 or more VCPU;
-gce.os.rhel.gpu;Compute Engine;License;Google;Licensing Fee for RedHat Enterprise Linux 8%GPU%;
-gce.os.rhel.ram;Compute Engine;License;Google;Licensing Fee for RedHat Enterprise Linux 8%RAM%;
+gce.os.rhel.cpu.1.4;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with up to 4 VCPU;
+gce.os.rhel.cpu.6.n;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with 5 or more VCPU;
 WINDOWS;;;;;
 gce.os.windows.f1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on f1-micro;
 gce.os.windows.g1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on g1-small;
 gce.os.windows.cpu;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition%CPU%;
-gce.os.windows.gpu;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition%GPU%;
-gce.os.windows.ram;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition%RAM%;
 SLES for SAP;;;;;
 gce.os.sles.sap.f1;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on f1-micro;
 gce.os.sles.sap.g1;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on g1-small;
 gce.os.sles.sap.cpu.1.3;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 1 to 3 VCPU;
 gce.os.sles.sap.cpu.4;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 4 VCPU;
 gce.os.sles.sap.cpu.6.n;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 6 or more VCPU;
-gce.os.sles.sap.gpu;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License%GPU%;
-gce.os.sles.sap.ram;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License%RAM%;
 gce.os.sles.sap.cpu.1.3.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 1 to 3 VCPU for 1 Year;
 gce.os.sles.sap.cpu.1.3.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 1 to 3 VCPU for 3 Year;
 gce.os.sles.sap.cpu.4.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 4 VCPU for 1 Year;
@@ -244,12 +234,8 @@ gce.os.sles.sap.cpu.4.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for 
 gce.os.sles.sap.cpu.6.n.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 6 or more VCPU for 1 Year;
 gce.os.sles.sap.cpu.6.n.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 6 or more VCPU for 3 Year;
 RHEL for SAP;;;;;
-gce.os.rhel.sap.f1;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux for SAP with High Availability and Update Services on f1-micro;
-gce.os.rhel.sap.g1;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux for SAP with High Availability and Update Services on g1-small;
-gce.os.rhel.sap.cpu.1.4;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux for SAP with High Availability and Update Services on VM with 1 to 4 VCPU;
-gce.os.rhel.sap.cpu.6.n;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux for SAP with High Availability and Update Services on VM with 6 or more VCPU;
-gce.os.rhel.sap.gpu;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux for SAP with High Availability and Update Services%GPU%;
-gce.os.rhel.sap.ram;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux for SAP with High Availability and Update Services%RAM%;
+gce.os.rhel.sap.cpu.1.4;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with up to 4 VCPU;
+gce.os.rhel.sap.cpu.6.n;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with 5 or more VCPU;
 STORAGE;;;;;https://cloud.google.com/storage/docs/storage-classes#available_storage_classes
 STANDARD Storage;;;;;
 storage.standard;Cloud Storage;Storage;RegionalStorage;Standard Storage%;
