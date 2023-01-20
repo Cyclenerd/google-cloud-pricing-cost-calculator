@@ -24,7 +24,6 @@ rhel-7-v20221206;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20221206,
 rhel-8-v20221206;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20221206, supports Shielded VM features;20;rhel-cloud;rhel-8;X86_64;2022-12-06T13:36:14.211-08:00;;READY
 rhel-9-arm64-v20221206;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20221206, supports Shielded VM features;20;rhel-cloud;rhel-9-arm64;ARM64;2022-12-06T13:36:14.200-08:00;;READY
 rhel-9-v20221206;Red Hat, Red Hat Enterprise Linux, 9, x86_64 built on 20221206, supports Shielded VM features;20;rhel-cloud;rhel-9;X86_64;2022-12-06T13:36:14.432-08:00;;READY
-rhel-7-6-sap-v20221102;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.6, x86_64 built on 20221102, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-6-sap-ha;X86_64;2022-11-02T12:23:04.867-07:00;;READY
 rhel-7-7-sap-v20221206;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 7.7, x86_64 built on 20221206, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-7-sap-ha;X86_64;2022-12-06T13:36:14.230-08:00;;READY
 rhel-7-9-sap-v20221206;Red Hat, Red Hat Enterprise Linux for SAP with HA, 7.9, x86_64 built on 20221206, supports Shielded VM features;20;rhel-sap-cloud;rhel-7-9-sap-ha;X86_64;2022-12-06T13:36:13.591-08:00;;READY
 rhel-8-1-sap-v20221206;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.1, x86_64 built on 20221206, supports Shielded VM features;20;rhel-sap-cloud;rhel-8-1-sap-ha;X86_64;2022-12-06T13:36:13.602-08:00;;READY
