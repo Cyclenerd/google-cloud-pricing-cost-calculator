@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Jan 26 03:56:56 2023
-  timestamp: 1674705416
+  generated: Tue Jan 31 20:53:56 2023
+  timestamp: 1675198436
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -142,8 +142,8 @@ compute:
         northamerica-northeast2:
           hour: 0.814064
           month: 594.26672
-          month_1y: 1858.603214
-          month_3y: 1032.58835435
+          month_1y: 374.368528
+          month_3y: 208.01335035
         southamerica-east1:
           hour: 5.197430284
           month: 3794.12410732
@@ -324,8 +324,8 @@ compute:
         northamerica-northeast2:
           hour: 1.628128
           month: 1188.53344
-          month_1y: 3717.206428
-          month_3y: 2065.1767087
+          month_1y: 748.737056
+          month_3y: 416.0267007
         southamerica-east1:
           hour: 10.394860568
           month: 7588.24821464
@@ -506,8 +506,8 @@ compute:
         northamerica-northeast2:
           hour: 3.256256
           month: 2377.06688
-          month_1y: 7434.412856
-          month_3y: 4130.3534174
+          month_1y: 1497.474112
+          month_3y: 832.0534014
         southamerica-east1:
           hour: 20.789721136
           month: 15176.49642928
@@ -688,8 +688,8 @@ compute:
         northamerica-northeast2:
           hour: 6.512512
           month: 4754.13376
-          month_1y: 14868.825712
-          month_3y: 8260.7068348
+          month_1y: 2994.948224
+          month_3y: 1664.1068028
         southamerica-east1:
           hour: 41.579442272
           month: 30352.99285856
@@ -870,8 +870,8 @@ compute:
         northamerica-northeast2:
           hour: 9.684032
           month: 7069.34336
-          month_1y: 28201.1264
-          month_3y: 15667.7846072
+          month_1y: 4453.371424
+          month_3y: 2474.5845432
         southamerica-east1:
           hour: 78.341604544
           month: 57189.37131712
@@ -30290,9 +30290,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30309,9 +30313,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30328,9 +30336,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30347,9 +30359,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30366,9 +30382,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30385,9 +30405,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30404,9 +30428,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30423,9 +30451,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30442,9 +30474,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30461,9 +30497,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30480,9 +30520,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30499,9 +30543,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30518,9 +30566,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30537,9 +30589,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30556,9 +30612,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30575,9 +30635,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30594,9 +30658,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30613,9 +30681,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30632,9 +30704,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30651,9 +30727,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30670,9 +30750,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30689,9 +30773,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30708,9 +30796,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30727,9 +30819,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30746,9 +30842,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30765,9 +30865,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30784,9 +30888,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30803,9 +30911,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30822,9 +30934,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30841,9 +30957,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30860,9 +30980,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30879,9 +31003,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30898,9 +31026,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30917,9 +31049,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30936,9 +31072,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -30955,9 +31095,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30974,9 +31118,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -30993,9 +31141,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31012,9 +31164,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31031,9 +31187,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31050,9 +31210,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31069,9 +31233,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31088,9 +31256,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31107,9 +31279,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31126,9 +31302,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31145,9 +31325,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31164,9 +31348,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31183,9 +31371,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31202,9 +31394,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31221,9 +31417,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31240,9 +31440,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31259,9 +31463,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31278,9 +31486,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31297,9 +31509,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31316,9 +31532,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31335,9 +31555,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.02
           month: 14.6
@@ -31352,9 +31576,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.02
           month: 14.6
@@ -31369,9 +31597,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31388,9 +31620,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31407,9 +31643,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31426,9 +31666,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31445,9 +31689,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31464,9 +31712,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31483,9 +31735,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31502,9 +31758,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31521,9 +31781,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31540,9 +31804,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31559,9 +31827,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31578,9 +31850,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31597,9 +31873,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31616,9 +31896,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31635,9 +31919,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31654,9 +31942,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31673,9 +31965,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31692,9 +31988,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31711,9 +32011,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31730,9 +32034,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31749,9 +32057,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31768,9 +32080,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31787,9 +32103,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31806,9 +32126,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31825,9 +32149,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31844,9 +32172,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31863,9 +32195,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31882,9 +32218,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31901,9 +32241,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31920,9 +32264,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31939,9 +32287,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31958,9 +32310,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -31977,9 +32333,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -31996,9 +32356,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32015,9 +32379,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32034,9 +32402,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32053,9 +32425,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32072,9 +32448,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32091,9 +32471,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32110,9 +32494,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32129,9 +32517,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32148,9 +32540,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32167,9 +32563,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32186,9 +32586,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32205,9 +32609,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32224,9 +32632,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32243,9 +32655,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32262,9 +32678,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32281,9 +32701,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32300,9 +32724,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32319,9 +32747,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32338,9 +32770,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32357,9 +32793,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32376,9 +32816,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32395,9 +32839,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32414,9 +32862,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32433,9 +32885,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32452,9 +32908,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32471,9 +32931,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32490,9 +32954,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32509,9 +32977,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32528,9 +33000,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32547,9 +33023,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32566,9 +33046,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32585,9 +33069,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32604,9 +33092,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32623,9 +33115,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32642,9 +33138,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32661,9 +33161,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32680,9 +33184,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32699,9 +33207,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32718,9 +33230,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32737,9 +33253,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32756,9 +33276,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32775,9 +33299,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32794,9 +33322,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32813,9 +33345,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32832,9 +33368,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32851,9 +33391,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -32870,9 +33414,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32889,9 +33437,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32908,9 +33460,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32927,9 +33483,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32946,9 +33506,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32965,9 +33529,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -32984,9 +33552,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33003,9 +33575,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33022,9 +33598,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33041,9 +33621,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33060,9 +33644,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33079,9 +33667,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33098,9 +33690,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33117,9 +33713,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33136,9 +33736,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33155,9 +33759,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33174,9 +33782,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33193,9 +33805,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33212,9 +33828,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33231,9 +33851,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33250,9 +33874,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33269,9 +33897,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33288,9 +33920,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33307,9 +33943,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33326,9 +33966,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33345,9 +33989,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33364,9 +34012,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33383,9 +34035,13 @@ compute:
         rhel:
           hour: 0.06
           month: 43.8
+          month_1y: 35.04
+          month_3y: 33.58
         rhel-sap:
           hour: 0.1
           month: 73
+          month_1y: 58.4
+          month_3y: 55.553
         sles:
           hour: 0.11
           month: 80.3
@@ -33402,9 +34058,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33421,9 +34081,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -33440,9 +34104,13 @@ compute:
         rhel:
           hour: 0.13
           month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
         rhel-sap:
           hour: 0.225
           month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
         sles:
           hour: 0.11
           month: 80.3
@@ -35243,7 +35911,7 @@ compute:
         europe-west9:
           month: 0.0928
         me-west1:
-          month: 0.088
+          month: 0.0972
         northamerica-northeast1:
           month: 0.088
         northamerica-northeast2:
