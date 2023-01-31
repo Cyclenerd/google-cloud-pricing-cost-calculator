@@ -83,8 +83,8 @@ jobs:
           path: gcosts.exe
           retention-days: 1
 
-  release:
-    name: Release
+  download:
+    name: Download and Test
     needs: [linux, windows]
     runs-on: ubuntu-latest
     steps:
