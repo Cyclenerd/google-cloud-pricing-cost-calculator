@@ -709,7 +709,8 @@ sub cost_instances {
 				$resource_os = 'vm-os-terminated';
 			}
 			# 2022/02/18: 1y and 3y committed use discounts (CUD) only for SUSE Linux Enterprise Server for SAP (sles-sap)
-			if ($os eq 'sles-sap') {
+			# 2023/01/31: Compute Engine committed use discounts are now also available for Red Hat Enterprise Linux (RHEL) image licenses.
+			if ($os eq 'sles-sap' || $os eq 'rhel' || $os eq 'rhel-sap') {
 				if ($commitment == '1') {
 					$cost_os = &check_commitment_cost($pricing->{'compute'}->{'license'}->{$type}->{'cost'}->{$os}->{'month_1y'}||"compute > license > type '$type' > os '$os'", '1 year', $cost_os, $region);
 				} elsif ($commitment == '3') {

@@ -217,6 +217,10 @@ gce.os.sles.cpu;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enter
 RHEL;;;;;
 gce.os.rhel.cpu.1.4;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with up to 4 VCPU;
 gce.os.rhel.cpu.6.n;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with 5 or more VCPU;
+gce.os.rhel.cpu.1.4.1y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 1 to 4 VCPU for 1 Year;
+gce.os.rhel.cpu.6.n.1y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 5 or more VCPU for 1 Year;
+gce.os.rhel.cpu.1.4.3y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 1 to 4 VCPU for 3 Year;
+gce.os.rhel.cpu.6.n.3y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 5 or more VCPU for 3 Year;
 WINDOWS;;;;;
 gce.os.windows.f1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on f1-micro;
 gce.os.windows.g1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on g1-small;
@@ -236,6 +240,10 @@ gce.os.sles.sap.cpu.6.n.3y;Compute Engine;License;SlesSap;Commitment v1: SLES fo
 RHEL for SAP;;;;;
 gce.os.rhel.sap.cpu.1.4;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with up to 4 VCPU;
 gce.os.rhel.sap.cpu.6.n;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with 5 or more VCPU;
+gce.os.rhel.sap.cpu.1.4.1y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 1 to 4 VCPU for 1 Year;
+gce.os.rhel.sap.cpu.6.n.1y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 5 or more VCPU for 1 Year;
+gce.os.rhel.sap.cpu.1.4.3y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 1 to 4 VCPU for 3 Year;
+gce.os.rhel.sap.cpu.6.n.3y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 5 or more VCPU for 3 Year;
 STORAGE;;;;;https://cloud.google.com/storage/docs/storage-classes#available_storage_classes
 STANDARD Storage;;;;;
 storage.standard;Cloud Storage;Storage;RegionalStorage;Standard Storage%;

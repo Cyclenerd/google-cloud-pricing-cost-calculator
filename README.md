@@ -48,8 +48,8 @@ Resources that `gcosts` supports, and Google charges for:
 - [x] Paid "premium" operating system licenses (paid images) are supported
 	- [x] SUSE Linux Enterprise Server
 	- [x] SLES for SAP (1y and 3y committed use discounts (CUD) are also supported)
-	- [x] Red Hat Enterprise Linux
-	- [x] RHEL for SAP
+	- [x] Red Hat Enterprise Linux (1y and 3y committed use discounts (CUD) are also supported)
+	- [x] RHEL for SAP (1y and 3y committed use discounts (CUD) are also supported)
 	- [x] Windows Server
 - [x] Custom machine types are supported (have to be created manually)
 - [ ] Spot and sole-tenant VMs are not supported
