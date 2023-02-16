@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright 2022 Nils Knieling. All Rights Reserved.
+# Copyright 2022-2023 Nils Knieling. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "2.0.0";
+	$VERSION = "2.1.0";
 }
 
 use strict;
@@ -151,14 +151,14 @@ $sth->bind_columns (\my ($nanos, $units, $unit_description, $sku_id, $sku_descri
 # &mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description)
 sub mapping_found {
 	my ($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description) = @_;
-	print "» Mapping '$mapping' found in region '$region' found : ";
-	print "regions = '$regions', ";
-	print "value = '$value', ";
-	print "nanos = '$nanos', ";
-	print "units = '$units', ";
-	print "sku_id = '$sku_id', ";
-	print "unit_description = '$unit_description', ";
-	print "sku_description = '$sku_description'\n";
+	print "OK: Mapping '$mapping' found in region '$region' found:\n";
+	print "    regions = '$regions'\n";
+	print "    value = '$value'\n";
+	print "    nanos = '$nanos'\n";
+	print "    units = '$units'\n";
+	print "    sku_id = '$sku_id'\n";
+	print "    unit_description = '$unit_description'\n";
+	print "    sku_description = '$sku_description'\n";
 }
 
 # &check_region($region, $regions);
@@ -166,13 +166,13 @@ sub mapping_found {
 sub check_region {
 	my ($region, $regions) = @_;
 	if ($regions =~ /$region$/) {
-		print "» Region '$region' in regions '$regions' found\n";
+		print "OK: Region '$region' in regions '$regions' found\n";
 		return 1;
 	} elsif ($regions =~ /$region,/) {
-		print "» Region '$region' in regions '$regions' found\n";
+		print "OK: Region '$region' in regions '$regions' found\n";
 		return 1;
 	} else {
-		print "» Region '$region' in regions '$regions' not found, continue search for mapping...\n";
+		print "NEXT: '$region' in regions '$regions' not found\n";
 		return 0;
 	}
 }
@@ -183,7 +183,7 @@ sub calc_cost {
 		my @bulk_nanos = split(',', $nanos);
 		print "INFO: Bulk nanos!\n";
 		foreach my $i (@bulk_nanos) {
-			print "* $i\n";
+			print "     * $i\n";
 		}
 		$nanos = $bulk_nanos[-1]; # last
 	}
@@ -191,12 +191,12 @@ sub calc_cost {
 		my @bulk_units = split(',', $units);
 		print "INFO: Bulk units!\n";
 		foreach my $i (@bulk_units) {
-			print "* $i\n";
+			print "     * $i\n";
 		}
 		$units = $bulk_units[-1]; # last
 	}
 	my $cost = $value * ( $units+($nanos*0.000000001) );
-	print "OK: cost = $cost, value = $value, units = $units, nanos = $nanos\n";
+	print "CALC: cost = $cost, value = $value, units = $units, nanos = $nanos\n";
 	return $cost;
 }
 
@@ -232,13 +232,14 @@ sub add_gcp_monitoring_data_add_details {
 	$gcp->{'monitoring'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'monitoring'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "Monitoring:";
+print "\nMONITORING\n";
+print "-"x40 . "\n";
 foreach my $region (@regions) {
 	my $value = 1; # per 1 mebibyte not GB
 	# Monitoring data
 	#  https://cloud.google.com/monitoring#pricing
 	my $mapping = 'monitoring.data';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, 'global'); # Search SKU(s)
 	if ($sth->fetch) {
 		&mapping_found($mapping, 'global', $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
@@ -287,7 +288,8 @@ sub add_gcp_storage_bucket_details {
 	$gcp->{'storage'}->{'bucket'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'storage'}->{'bucket'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "Bucket storage:\n";
+print "\nBUCKET STORAGE\n";
+print "-"x40 . "\n";
 foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 	my $value = 1; # 1 GB per month
 	my @bucket_regions;
@@ -313,20 +315,21 @@ foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 	else                                { die "ERROR: No mapping for storage bucket '$bucket'!\n"; }
 	foreach my $region (@bucket_regions) {
 		print "Bucket: $bucket\n";
-		print "Mapping: '$mapping'\n";
+		print "MAPPING: '$mapping' in region '$region'\n";
 		$sth->execute("$mapping", '%'."$region".'%'); # Search SKU(s)
 		my $found = 0;
 		while ($sth->fetch) {
-			next unless &check_region($region, $regions);
-			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-			# Check duplicate entries for mapping and region
-			if ($found) {
-				die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n"
-			} else {
-				$found = 1;
-				my $cost = &calc_cost($value, $units, $nanos);
-				&add_gcp_storage_bucket_cost('month', $bucket, $region, $cost);
-				&add_gcp_storage_bucket_details($bucket, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			if (&check_region($region, $regions)) {
+				&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+				# Check duplicate entries for mapping and region
+				if ($found) {
+					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n"
+				} else {
+					$found = 1;
+					my $cost = &calc_cost($value, $units, $nanos);
+					&add_gcp_storage_bucket_cost('month', $bucket, $region, $cost);
+					&add_gcp_storage_bucket_details($bucket, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				}
 			}
 		}
 		$sth->finish;
@@ -356,7 +359,8 @@ sub add_gcp_compute_storage_details {
 	$gcp->{'compute'}->{'storage'}->{$disk}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'storage'}->{$disk}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "Disk storage:\n";
+print "\nDISK STORAGE\n";
+print "-"x40 . "\n";
 foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 	my $value = 1; # 1 GB per month
 	my @storage_regions = @regions;
@@ -388,25 +392,26 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 		elsif ($disk eq 'snapshot')            { $mapping = 'gce.storage.snapshot'; }
 		# Unknown storage type
 		else                                   { die "ERROR: No mapping for disk '$disk'!\n"; }
-		print "Mapping: '$mapping'\n";
+		print "MAPPING: '$mapping' in region '$region'\n";
 		$sth->execute("$mapping", '%'."$region".'%'); # Search SKU(s)
 		my $found = 0;
 		while ($sth->fetch) {
-			next unless &check_region($region, $regions);
-			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-			# Check duplicate entries for mapping and region
-			if ($found) {
-				die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
-			} else {
-				$found = 1;
-				# Bulk price in some regions
-				# I.e.: 'Storage PD Snapshot'
-				#   https://cloud.google.com/skus/?currency=USD&filter=817F-F5A3-514E
-				# 0-5 GB = free
-				# >5 GB  = 0.026 USD
-				my $cost = &calc_cost($value, $units, $nanos);
-				&add_gcp_compute_storage_cost('month', $disk, $region, $cost);
-				&add_gcp_compute_storage_details($disk, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			if (&check_region($region, $regions)) {
+				&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+				# Check duplicate entries for mapping and region
+				if ($found) {
+					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
+				} else {
+					$found = 1;
+					# Bulk price in some regions
+					# I.e.: 'Storage PD Snapshot'
+					#   https://cloud.google.com/skus/?currency=USD&filter=817F-F5A3-514E
+					# 0-5 GB = free
+					# >5 GB  = 0.026 USD
+					my $cost = &calc_cost($value, $units, $nanos);
+					&add_gcp_compute_storage_cost('month', $disk, $region, $cost);
+					&add_gcp_compute_storage_details($disk, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				}
 			}
 		}
 		$sth->finish;
@@ -416,16 +421,17 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 			my $mapping_1y = "$mapping".'.1y';
 			$sth->execute($mapping_1y, '%'."$region".'%'); # Search SKU(s)
 			while ($sth->fetch) {
-				next unless &check_region($region, $regions);
-				&mapping_found($mapping_1y, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-				# Check duplicate entries for mapping and region
-				if ($commitment_1y_found) {
-					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping_1y' in region '$region'!\n"
-				} else {
-					$commitment_1y_found = 1;
-					my $cost = &calc_cost($value, $units, $nanos);
-					&add_gcp_compute_storage_cost('month_1y', $disk, $region, $cost);
-					&add_gcp_compute_storage_details($disk, $region, $mapping_1y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping_1y, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($commitment_1y_found) {
+						die "ERROR: Duplicate entry. Already found price for this mapping '$mapping_1y' in region '$region'!\n"
+					} else {
+						$commitment_1y_found = 1;
+						my $cost = &calc_cost($value, $units, $nanos);
+						&add_gcp_compute_storage_cost('month_1y', $disk, $region, $cost);
+						&add_gcp_compute_storage_details($disk, $region, $mapping_1y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					}
 				}
 			}
 			$sth->finish;
@@ -434,16 +440,17 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 			my $mapping_3y = "$mapping".'.3y';
 			$sth->execute($mapping_3y, '%'."$region".'%'); # Search SKU(s)
 			while ($sth->fetch) {
-				next unless &check_region($region, $regions);
-				&mapping_found($mapping_3y, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-				# Check duplicate entries for mapping and region
-				if ($commitment_3y_found) {
-					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping_3y' in region '$region'!\n"
-				} else {
-					$commitment_3y_found = 1;
-					my $cost = &calc_cost($value, $units, $nanos);
-					&add_gcp_compute_storage_cost('month_3y', $disk, $region, $cost);
-					&add_gcp_compute_storage_details($disk, $region, $mapping_3y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping_3y, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($commitment_3y_found) {
+						die "ERROR: Duplicate entry. Already found price for this mapping '$mapping_3y' in region '$region'!\n"
+					} else {
+						$commitment_3y_found = 1;
+						my $cost = &calc_cost($value, $units, $nanos);
+						&add_gcp_compute_storage_cost('month_3y', $disk, $region, $cost);
+						&add_gcp_compute_storage_details($disk, $region, $mapping_3y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					}
 				}
 			}
 			$sth->finish;
@@ -473,7 +480,8 @@ sub add_gcp_compute_instance_details {
 	$gcp->{'compute'}->{'instance'}->{$machine}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'instance'}->{$machine}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "Instances:\n";
+print "\nINSTANCES\n";
+print "-"x40 . "\n";
 foreach my $region (@regions) {
 	foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 		# CPU and RAM
@@ -692,7 +700,7 @@ foreach my $region (@regions) {
 
 		my $costs = 0;
 		foreach my $mapping (keys %mappings) {
-			print "Mapping: '$mapping'\n";
+			print "MAPPING: '$mapping' in region '$region'\n";
 			my $value = $mappings{$mapping} || '0';
 			$sth->execute("$mapping", '%'."$region".'%'); # Search SKU(s)
 			my $found = 0;
@@ -708,17 +716,18 @@ foreach my $region (@regions) {
 				# Skip cheaper SKU for 'Memory-optimized Instance Core running in Singapore'
 				next if ($sku_id eq 'B428-ABC6-FFED');
 
-				next unless &check_region($region, $regions);
-				&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-				# Check duplicate entries for mapping and region
-				if ($found) {
-					# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
-					next if ($sku_description =~ /Virginia/);
-					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
-				} else {
-					$found = 1;
-					$costs += &calc_cost($value, $units, $nanos); # SUM
-					&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($found) {
+						# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
+						next if ($sku_description =~ /Virginia/);
+						die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
+					} else {
+						$found = 1;
+						$costs += &calc_cost($value, $units, $nanos); # SUM
+						&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					}
 				}
 			}
 			$sth->finish;
@@ -744,17 +753,18 @@ foreach my $region (@regions) {
 				# Skip cheaper SKU for 'Memory Optimized Upgrade Premium for Memory-optimized Instance Core running in Singapore'
 				next if ($sku_id eq '79D9-7C0D-4C27');
 
-				next unless &check_region($region, $regions);
-				&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-				# Check duplicate entries for mapping and region
-				if ($found) {
-					# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
-					next if ($sku_description =~ /Virginia/);
-					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
-				} else {
-					$found = 1;
-					$upgrade_costs += &calc_cost($value, $units, $nanos); # SUM
-					&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($found) {
+						# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
+						next if ($sku_description =~ /Virginia/);
+						die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
+					} else {
+						$found = 1;
+						$upgrade_costs += &calc_cost($value, $units, $nanos); # SUM
+						&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					}
 				}
 			}
 			$sth->finish;
@@ -799,17 +809,18 @@ foreach my $region (@regions) {
 				# Skip cheaper SKU for 'Commitment v1: Memory-optimized Cpu in Singapore for 1 Year'
 				next if ($sku_id eq '1A15-7952-674A');
 
-				next unless &check_region($region, $regions);
-				&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-				# Check duplicate entries for mapping and region
-				if ($found) {
-					# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
-					next if ($sku_description =~ /Virginia/);
-					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
-				} else {
-					$found = 1;
-					$costs_1y += &calc_cost($value, $units, $nanos); # SUM
-					&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($found) {
+						# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
+						next if ($sku_description =~ /Virginia/);
+						die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
+					} else {
+						$found = 1;
+						$costs_1y += &calc_cost($value, $units, $nanos); # SUM
+						&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					}
 				}
 			}
 			$sth->finish;
@@ -852,17 +863,18 @@ foreach my $region (@regions) {
 				# Skip cheaper SKU for 'Commitment v1: Memory-optimized Cpu in Singapore for 3 Year'
 				next if ($sku_id eq '7BDA-424A-1067');
 
-				next unless &check_region($region, $regions);
-				&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-				# Check duplicate entries for mapping and region
-				if ($found) {
-					# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
-					next if ($sku_description =~ /Virginia/);
-					die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
-				} else {
-					$found = 1;
-					$costs_3y += &calc_cost($value, $units, $nanos); # SUM
-					&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($found) {
+						# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
+						next if ($sku_description =~ /Virginia/);
+						die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
+					} else {
+						$found = 1;
+						$costs_3y += &calc_cost($value, $units, $nanos); # SUM
+						&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					}
 				}
 			}
 			$sth->finish;
@@ -908,7 +920,8 @@ sub add_gcp_compute_license_details {
 	$gcp->{'compute'}->{'license'}->{$machine}->{'cost'}->{$os}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'license'}->{$machine}->{'cost'}->{$os}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "Licenses:\n";
+print "\nLICENSES\n";
+print "-"x40 . "\n";
 foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	# License per vCPU
 	my $type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'} || '';
@@ -997,7 +1010,7 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 		}
 		else                      { die "ERROR: No mapping for OS '$os'!\n"; }
 
-		print "Mapping: '$mapping'\n";
+		print "MAPPING: '$mapping' in region '$region'\n";
 		$sth->execute($mapping, $region); # Search SKU(s)
 		if ($sth->fetch) {
 			# do not check region
@@ -1205,8 +1218,10 @@ sub add_gcp_compute_egress_internet_australia_add_details {
 	$gcp->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "Network:";
+print "\nNETWORK\n";
+print "-"x40 . "\n";
 foreach my $region (@regions) {
+	print "Network in region '$region'\n";
 	my $value = 1; # per 1 GB or hour
 
 	# Static external IP address (assigned but unused)
@@ -1215,33 +1230,30 @@ foreach my $region (@regions) {
 	# 0 = 0
 	# 1 = 0,01
 	my $mapping = 'gce.network.ip.external.unused';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		next unless &check_region($region, $regions);
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		my $cost = &calc_cost($value, $units, $nanos);
-		&add_gcp_compute_ip_unused_cost('hour', $region, $cost);
-		&add_gcp_compute_ip_unused_cost('month', $region, $cost*$hours_month);
-		&add_gcp_compute_ip_unused_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		die "ERROR: '$mapping' not found for region '$region'!\n";
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			my $cost = &calc_cost($value, $units, $nanos);
+			&add_gcp_compute_ip_unused_cost('hour', $region, $cost);
+			&add_gcp_compute_ip_unused_cost('month', $region, $cost*$hours_month);
+			&add_gcp_compute_ip_unused_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
 
 	# Static and ephemeral IP addresses in use __on standard VM instances__
 	# Store global price for each region
 	$mapping = 'gce.network.ip.external';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, 'global'); # Search SKU(s)
-	if ($sth->fetch) {
+	while ($sth->fetch) {
 		&mapping_found($mapping, 'global', $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 		my $cost = &calc_cost($value, $units, $nanos);
 		&add_gcp_compute_ip_vm_cost('hour', $region, $cost);
 		&add_gcp_compute_ip_vm_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_ip_vm_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 	# No charge for static and ephemeral IP addresses attached to forwarding rules, used by
@@ -1250,26 +1262,25 @@ foreach my $region (@regions) {
 
 	# VPN tunnel
 	$mapping = 'gce.network.vpn.tunnel';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		my $cost = &calc_cost($value, $units, $nanos);
-		&add_gcp_compute_vpn_tunnel_cost('hour', $region, $cost);
-		&add_gcp_compute_vpn_tunnel_cost('month', $region, $cost*$hours_month);
-		&add_gcp_compute_vpn_tunnel_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		# Not all regions have VPN
-		warn "WARNING: '$mapping' not found in region '$region'!\n";
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			my $cost = &calc_cost($value, $units, $nanos);
+			&add_gcp_compute_vpn_tunnel_cost('hour', $region, $cost);
+			&add_gcp_compute_vpn_tunnel_cost('month', $region, $cost*$hours_month);
+			&add_gcp_compute_vpn_tunnel_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
 
 	# NAT gateway
 	$mapping = 'gce.network.nat.gateway';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	# Store global price for each region
 	$sth->execute($mapping, 'global'); # Search SKU(s)
-	if ($sth->fetch) {
+	while ($sth->fetch) {
 		&mapping_found($mapping, 'global', $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 		my $cost = &calc_cost($value, $units, $nanos);
 		# The per-hour rate is capped at 32 VM instances.
@@ -1278,69 +1289,64 @@ foreach my $region (@regions) {
 		&add_gcp_compute_nat_gateway_cost('hour', $region, $cost);
 		&add_gcp_compute_nat_gateway_cost('month', $region, $cost*$hours_month);
 		&add_gcp_compute_nat_gateway_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		# Not in all regions. I.e.: Not in asia-southeast2, northamerica-northeast1, northamerica-northeast2, us-west4
-		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
+
 	# NAT traffic
 	# Ingress __and__ egress data that is processed by the gateway
 	$mapping = 'gce.network.nat.gateway.data';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	# Store global price for each region
 	$sth->execute($mapping, 'global'); # Search SKU(s)
-	if ($sth->fetch) {
+	while ($sth->fetch) {
 		&mapping_found($mapping, 'global', $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 		my $cost = &calc_cost($value, $units, $nanos);
 		&add_gcp_compute_nat_gateway_data_cost('month', $region, $cost);
 		&add_gcp_compute_nat_gateway_data_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		warn "WARNING: '$mapping' not found in region '$region'!\n";
 	}
 	$sth->finish;
 
 	# Load Balancing: Forwarding Rule Minimum Service Charge
 	$mapping = 'gce.network.lb.rule'; # first 5 rules, up to 5 forwarding rules for the price, 1 = same as for 5
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		next unless &check_region($region, $regions);
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		my $cost = &calc_cost($value, $units, $nanos);
-		&add_gcp_compute_lb_rule_cost('hour', $region, $cost);
-		&add_gcp_compute_lb_rule_cost('month', $region, $cost*$hours_month);
-		&add_gcp_compute_lb_rule_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		warn "WARNING: '$mapping' not found in region '$region'!\n";
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			my $cost = &calc_cost($value, $units, $nanos);
+			&add_gcp_compute_lb_rule_cost('hour', $region, $cost);
+			&add_gcp_compute_lb_rule_cost('month', $region, $cost*$hours_month);
+			&add_gcp_compute_lb_rule_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
+
 	# Load Balancing: Forwarding Rule Additional Service Charge
 	$mapping = 'gce.network.lb.rule.add'; # each additional forwarding rule
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		next unless &check_region($region, $regions);
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		my $cost = &calc_cost($value, $units, $nanos);
-		&add_gcp_compute_lb_rule_add_cost('hour', $region, $cost);
-		&add_gcp_compute_lb_rule_add_cost('month', $region, $cost*$hours_month);
-		&add_gcp_compute_lb_rule_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		warn "WARNING: '$mapping' not found in region '$region'!\n";
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			my $cost = &calc_cost($value, $units, $nanos);
+			&add_gcp_compute_lb_rule_add_cost('hour', $region, $cost);
+			&add_gcp_compute_lb_rule_add_cost('month', $region, $cost*$hours_month);
+			&add_gcp_compute_lb_rule_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
+
 	# Load Balancing: Network Load Balancing: Data Processing Charge
 	$mapping = 'gce.network.lb.data'; # Ingress data processed by load balancer
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		next unless &check_region($region, $regions);
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		my $cost = &calc_cost($value, $units, $nanos);
-		&add_gcp_compute_lb_data_add_cost('month', $region, $cost);
-		&add_gcp_compute_lb_data_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		warn "WARNING: '$mapping' not found in region '$region'!\n";
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			my $cost = &calc_cost($value, $units, $nanos);
+			&add_gcp_compute_lb_data_add_cost('month', $region, $cost);
+			&add_gcp_compute_lb_data_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
 
@@ -1348,92 +1354,91 @@ foreach my $region (@regions) {
 	#  https://cloud.google.com/vpc/network-pricing#vpc-pricing
 	# Network (Egress) Worldwide Destinations (excluding China & Australia, but including Hong Kong)
 	$mapping = 'gce.network.internet.egress';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		next unless &check_region($region, $regions);
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		# Bulk price:
-		# 0 - 1   TB
-		# 1 - 10  TB
-		#     10+ TB
-		my @bulk_nanos = split(',', $nanos);
-		my @bulk_units = split(',', $units);
-		# last price
-		my $cost_10n  = &calc_cost($value, $bulk_units[-1], $bulk_nanos[-1]);
-		my $cost_1_10 = $cost_10n;
-		my $cost_0_1  = $cost_10n;
-		# overwrite
-		$cost_1_10 = &calc_cost($value, $bulk_units[-2], $bulk_nanos[-2]) if $bulk_nanos[-2];
-		$cost_0_1  = &calc_cost($value, $bulk_units[-3], $bulk_nanos[-3]) if $bulk_nanos[-3];
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			# Bulk price:
+			# 0 - 1   TB
+			# 1 - 10  TB
+			#     10+ TB
+			my @bulk_nanos = split(',', $nanos);
+			my @bulk_units = split(',', $units);
+			# last price
+			my $cost_10n  = &calc_cost($value, $bulk_units[-1], $bulk_nanos[-1]);
+			my $cost_1_10 = $cost_10n;
+			my $cost_0_1  = $cost_10n;
+			# overwrite
+			$cost_1_10 = &calc_cost($value, $bulk_units[-2], $bulk_nanos[-2]) if $bulk_nanos[-2];
+			$cost_0_1  = &calc_cost($value, $bulk_units[-3], $bulk_nanos[-3]) if $bulk_nanos[-3];
 
-		&add_gcp_compute_egress_internet_add_cost('0-1', $region, $cost_0_1);
-		&add_gcp_compute_egress_internet_add_cost('1-10', $region, $cost_1_10);
-		&add_gcp_compute_egress_internet_add_cost('10n', $region, $cost_10n);
-		&add_gcp_compute_egress_internet_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+			&add_gcp_compute_egress_internet_add_cost('0-1', $region, $cost_0_1);
+			&add_gcp_compute_egress_internet_add_cost('1-10', $region, $cost_1_10);
+			&add_gcp_compute_egress_internet_add_cost('10n', $region, $cost_10n);
+			&add_gcp_compute_egress_internet_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
+
 	# Network (Egress) China Destinations (excluding Hong Kong)
 	$mapping = 'gce.network.internet.egress.china';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		next unless &check_region($region, $regions);
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		my @bulk_nanos = split(',', $nanos);
-		my @bulk_units = split(',', $units);
-		# last price
-		my $cost_10n  = &calc_cost($value, $bulk_units[-1], $bulk_nanos[-1]);
-		my $cost_1_10 = $cost_10n;
-		my $cost_0_1  = $cost_10n;
-		# overwrite
-		$cost_1_10 = &calc_cost($value, $bulk_units[-2], $bulk_nanos[-2]) if $bulk_nanos[-2];
-		$cost_0_1  = &calc_cost($value, $bulk_units[-3], $bulk_nanos[-3]) if $bulk_nanos[-3];
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			my @bulk_nanos = split(',', $nanos);
+			my @bulk_units = split(',', $units);
+			# last price
+			my $cost_10n  = &calc_cost($value, $bulk_units[-1], $bulk_nanos[-1]);
+			my $cost_1_10 = $cost_10n;
+			my $cost_0_1  = $cost_10n;
+			# overwrite
+			$cost_1_10 = &calc_cost($value, $bulk_units[-2], $bulk_nanos[-2]) if $bulk_nanos[-2];
+			$cost_0_1  = &calc_cost($value, $bulk_units[-3], $bulk_nanos[-3]) if $bulk_nanos[-3];
 
-		&add_gcp_compute_egress_internet_china_add_cost('0-1', $region, $cost_0_1);
-		&add_gcp_compute_egress_internet_china_add_cost('1-10', $region, $cost_1_10);
-		&add_gcp_compute_egress_internet_china_add_cost('10n', $region, $cost_10n);
-		&add_gcp_compute_egress_internet_china_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+			&add_gcp_compute_egress_internet_china_add_cost('0-1', $region, $cost_0_1);
+			&add_gcp_compute_egress_internet_china_add_cost('1-10', $region, $cost_1_10);
+			&add_gcp_compute_egress_internet_china_add_cost('10n', $region, $cost_10n);
+			&add_gcp_compute_egress_internet_china_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
+
 	# Network (Egress) Australia Destinations
 	$mapping = 'gce.network.internet.egress.australia';
-	print "Mapping: '$mapping'\n";
+	print "MAPPING: '$mapping' in region '$region'\n";
 	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	if ($sth->fetch) {
-		next unless &check_region($region, $regions);
-		&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-		# Bulk price:
-		# 0 - 1   TB
-		# 1 - 10  TB
-		#     10+ TB
-		my @bulk_nanos = split(',', $nanos);
-		my @bulk_units = split(',', $units);
-		# last price
-		my $cost_10n  = &calc_cost($value, $bulk_units[-1], $bulk_nanos[-1]);
-		my $cost_1_10 = $cost_10n;
-		my $cost_0_1  = $cost_10n;
-		# overwrite
-		$cost_1_10 = &calc_cost($value, $bulk_units[-2], $bulk_nanos[-2]) if $bulk_nanos[-2];
-		$cost_0_1  = &calc_cost($value, $bulk_units[-3], $bulk_nanos[-3]) if $bulk_nanos[-3];
+	while ($sth->fetch) {
+		if (&check_region($region, $regions)) {
+			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			# Bulk price:
+			# 0 - 1   TB
+			# 1 - 10  TB
+			#     10+ TB
+			my @bulk_nanos = split(',', $nanos);
+			my @bulk_units = split(',', $units);
+			# last price
+			my $cost_10n  = &calc_cost($value, $bulk_units[-1], $bulk_nanos[-1]);
+			my $cost_1_10 = $cost_10n;
+			my $cost_0_1  = $cost_10n;
+			# overwrite
+			$cost_1_10 = &calc_cost($value, $bulk_units[-2], $bulk_nanos[-2]) if $bulk_nanos[-2];
+			$cost_0_1  = &calc_cost($value, $bulk_units[-3], $bulk_nanos[-3]) if $bulk_nanos[-3];
 
-		&add_gcp_compute_egress_internet_australia_add_cost('0-1', $region, $cost_0_1);
-		&add_gcp_compute_egress_internet_australia_add_cost('1-10', $region, $cost_1_10);
-		&add_gcp_compute_egress_internet_australia_add_cost('10n', $region, $cost_10n);
-		&add_gcp_compute_egress_internet_australia_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	} else {
-		die "ERROR: '$mapping' not found in region '$region'!\n";
+			&add_gcp_compute_egress_internet_australia_add_cost('0-1', $region, $cost_0_1);
+			&add_gcp_compute_egress_internet_australia_add_cost('1-10', $region, $cost_1_10);
+			&add_gcp_compute_egress_internet_australia_add_cost('10n', $region, $cost_10n);
+			&add_gcp_compute_egress_internet_australia_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		}
 	}
 	$sth->finish;
 }
 
 # Add copyright information to YAML pricing export
 $gcp->{'about'}->{'copyright'} = qq ~
-Copyright 2022 Nils Knieling. All Rights Reserved.
+Copyright 2022-2023 Nils Knieling. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
