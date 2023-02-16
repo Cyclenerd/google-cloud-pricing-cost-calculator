@@ -11997,6 +11997,7 @@ t2a-standard-8;8;False;32.00;;us-central1-f
 t2d-standard-16;16;False;64.00;;asia-east1-a
 t2d-standard-16;16;False;64.00;;asia-east1-b
 t2d-standard-16;16;False;64.00;;asia-east1-c
+t2d-standard-16;16;False;64.00;;asia-east2-c
 t2d-standard-16;16;False;64.00;;asia-northeast1-a
 t2d-standard-16;16;False;64.00;;asia-northeast1-b
 t2d-standard-16;16;False;64.00;;asia-northeast1-c
@@ -12009,6 +12010,7 @@ t2d-standard-16;16;False;64.00;;asia-southeast1-c
 t2d-standard-16;16;False;64.00;;australia-southeast1-a
 t2d-standard-16;16;False;64.00;;australia-southeast1-b
 t2d-standard-16;16;False;64.00;;australia-southeast1-c
+t2d-standard-16;16;False;64.00;;europe-north1-c
 t2d-standard-16;16;False;64.00;;europe-west1-b
 t2d-standard-16;16;False;64.00;;europe-west1-c
 t2d-standard-16;16;False;64.00;;europe-west1-d
@@ -12045,6 +12047,7 @@ t2d-standard-16;16;False;64.00;;us-west4-b
 t2d-standard-1;1;False;4.00;;asia-east1-a
 t2d-standard-1;1;False;4.00;;asia-east1-b
 t2d-standard-1;1;False;4.00;;asia-east1-c
+t2d-standard-1;1;False;4.00;;asia-east2-c
 t2d-standard-1;1;False;4.00;;asia-northeast1-a
 t2d-standard-1;1;False;4.00;;asia-northeast1-b
 t2d-standard-1;1;False;4.00;;asia-northeast1-c
@@ -12057,6 +12060,7 @@ t2d-standard-1;1;False;4.00;;asia-southeast1-c
 t2d-standard-1;1;False;4.00;;australia-southeast1-a
 t2d-standard-1;1;False;4.00;;australia-southeast1-b
 t2d-standard-1;1;False;4.00;;australia-southeast1-c
+t2d-standard-1;1;False;4.00;;europe-north1-c
 t2d-standard-1;1;False;4.00;;europe-west1-b
 t2d-standard-1;1;False;4.00;;europe-west1-c
 t2d-standard-1;1;False;4.00;;europe-west1-d
@@ -12093,6 +12097,7 @@ t2d-standard-1;1;False;4.00;;us-west4-b
 t2d-standard-2;2;False;8.00;;asia-east1-a
 t2d-standard-2;2;False;8.00;;asia-east1-b
 t2d-standard-2;2;False;8.00;;asia-east1-c
+t2d-standard-2;2;False;8.00;;asia-east2-c
 t2d-standard-2;2;False;8.00;;asia-northeast1-a
 t2d-standard-2;2;False;8.00;;asia-northeast1-b
 t2d-standard-2;2;False;8.00;;asia-northeast1-c
@@ -12105,6 +12110,7 @@ t2d-standard-2;2;False;8.00;;asia-southeast1-c
 t2d-standard-2;2;False;8.00;;australia-southeast1-a
 t2d-standard-2;2;False;8.00;;australia-southeast1-b
 t2d-standard-2;2;False;8.00;;australia-southeast1-c
+t2d-standard-2;2;False;8.00;;europe-north1-c
 t2d-standard-2;2;False;8.00;;europe-west1-b
 t2d-standard-2;2;False;8.00;;europe-west1-c
 t2d-standard-2;2;False;8.00;;europe-west1-d
@@ -12141,6 +12147,7 @@ t2d-standard-2;2;False;8.00;;us-west4-b
 t2d-standard-32;32;False;128.00;;asia-east1-a
 t2d-standard-32;32;False;128.00;;asia-east1-b
 t2d-standard-32;32;False;128.00;;asia-east1-c
+t2d-standard-32;32;False;128.00;;asia-east2-c
 t2d-standard-32;32;False;128.00;;asia-northeast1-a
 t2d-standard-32;32;False;128.00;;asia-northeast1-b
 t2d-standard-32;32;False;128.00;;asia-northeast1-c
@@ -12153,6 +12160,7 @@ t2d-standard-32;32;False;128.00;;asia-southeast1-c
 t2d-standard-32;32;False;128.00;;australia-southeast1-a
 t2d-standard-32;32;False;128.00;;australia-southeast1-b
 t2d-standard-32;32;False;128.00;;australia-southeast1-c
+t2d-standard-32;32;False;128.00;;europe-north1-c
 t2d-standard-32;32;False;128.00;;europe-west1-b
 t2d-standard-32;32;False;128.00;;europe-west1-c
 t2d-standard-32;32;False;128.00;;europe-west1-d
@@ -12189,6 +12197,7 @@ t2d-standard-32;32;False;128.00;;us-west4-b
 t2d-standard-48;48;False;192.00;;asia-east1-a
 t2d-standard-48;48;False;192.00;;asia-east1-b
 t2d-standard-48;48;False;192.00;;asia-east1-c
+t2d-standard-48;48;False;192.00;;asia-east2-c
 t2d-standard-48;48;False;192.00;;asia-northeast1-a
 t2d-standard-48;48;False;192.00;;asia-northeast1-b
 t2d-standard-48;48;False;192.00;;asia-northeast1-c
@@ -12201,6 +12210,7 @@ t2d-standard-48;48;False;192.00;;asia-southeast1-c
 t2d-standard-48;48;False;192.00;;australia-southeast1-a
 t2d-standard-48;48;False;192.00;;australia-southeast1-b
 t2d-standard-48;48;False;192.00;;australia-southeast1-c
+t2d-standard-48;48;False;192.00;;europe-north1-c
 t2d-standard-48;48;False;192.00;;europe-west1-b
 t2d-standard-48;48;False;192.00;;europe-west1-c
 t2d-standard-48;48;False;192.00;;europe-west1-d
@@ -12237,6 +12247,7 @@ t2d-standard-48;48;False;192.00;;us-west4-b
 t2d-standard-4;4;False;16.00;;asia-east1-a
 t2d-standard-4;4;False;16.00;;asia-east1-b
 t2d-standard-4;4;False;16.00;;asia-east1-c
+t2d-standard-4;4;False;16.00;;asia-east2-c
 t2d-standard-4;4;False;16.00;;asia-northeast1-a
 t2d-standard-4;4;False;16.00;;asia-northeast1-b
 t2d-standard-4;4;False;16.00;;asia-northeast1-c
@@ -12249,6 +12260,7 @@ t2d-standard-4;4;False;16.00;;asia-southeast1-c
 t2d-standard-4;4;False;16.00;;australia-southeast1-a
 t2d-standard-4;4;False;16.00;;australia-southeast1-b
 t2d-standard-4;4;False;16.00;;australia-southeast1-c
+t2d-standard-4;4;False;16.00;;europe-north1-c
 t2d-standard-4;4;False;16.00;;europe-west1-b
 t2d-standard-4;4;False;16.00;;europe-west1-c
 t2d-standard-4;4;False;16.00;;europe-west1-d
@@ -12285,6 +12297,7 @@ t2d-standard-4;4;False;16.00;;us-west4-b
 t2d-standard-60;60;False;240.00;;asia-east1-a
 t2d-standard-60;60;False;240.00;;asia-east1-b
 t2d-standard-60;60;False;240.00;;asia-east1-c
+t2d-standard-60;60;False;240.00;;asia-east2-c
 t2d-standard-60;60;False;240.00;;asia-northeast1-a
 t2d-standard-60;60;False;240.00;;asia-northeast1-b
 t2d-standard-60;60;False;240.00;;asia-northeast1-c
@@ -12297,6 +12310,7 @@ t2d-standard-60;60;False;240.00;;asia-southeast1-c
 t2d-standard-60;60;False;240.00;;australia-southeast1-a
 t2d-standard-60;60;False;240.00;;australia-southeast1-b
 t2d-standard-60;60;False;240.00;;australia-southeast1-c
+t2d-standard-60;60;False;240.00;;europe-north1-c
 t2d-standard-60;60;False;240.00;;europe-west1-b
 t2d-standard-60;60;False;240.00;;europe-west1-c
 t2d-standard-60;60;False;240.00;;europe-west1-d
@@ -12333,6 +12347,7 @@ t2d-standard-60;60;False;240.00;;us-west4-b
 t2d-standard-8;8;False;32.00;;asia-east1-a
 t2d-standard-8;8;False;32.00;;asia-east1-b
 t2d-standard-8;8;False;32.00;;asia-east1-c
+t2d-standard-8;8;False;32.00;;asia-east2-c
 t2d-standard-8;8;False;32.00;;asia-northeast1-a
 t2d-standard-8;8;False;32.00;;asia-northeast1-b
 t2d-standard-8;8;False;32.00;;asia-northeast1-c
@@ -12345,6 +12360,7 @@ t2d-standard-8;8;False;32.00;;asia-southeast1-c
 t2d-standard-8;8;False;32.00;;australia-southeast1-a
 t2d-standard-8;8;False;32.00;;australia-southeast1-b
 t2d-standard-8;8;False;32.00;;australia-southeast1-c
+t2d-standard-8;8;False;32.00;;europe-north1-c
 t2d-standard-8;8;False;32.00;;europe-west1-b
 t2d-standard-8;8;False;32.00;;europe-west1-c
 t2d-standard-8;8;False;32.00;;europe-west1-d
