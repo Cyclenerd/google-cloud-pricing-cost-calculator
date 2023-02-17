@@ -1052,6 +1052,43 @@ compute:
       ram: 32
       bandwidth: 32
 
+    # C3:
+    # » Compute-optimized machine family
+    # » Powered by the 4th Gen Intel Xeon Scalable processor (Sapphire Rapids)
+    #   and Google’s custom Intel Infrastructure Processing Unit (IPU)
+    #
+    # TODO: Check again if GA
+    c3-highcpu-4:
+      type: c3
+      cpu: 4
+      ram: 8
+      bandwidth: 32
+    c3-highcpu-8:
+      type: c3
+      cpu: 8
+      ram: 16
+      bandwidth: 32
+    c3-highcpu-22:
+      type: c3
+      cpu: 22
+      ram: 44
+      bandwidth: 32
+    c3-highcpu-44:
+      type: c3
+      cpu: 44
+      ram: 88
+      bandwidth: 32
+    c3-highcpu-88:
+      type: c3
+      cpu: 88
+      ram: 176
+      bandwidth: 32
+    c3-highcpu-176:
+      type: c3
+      cpu: 176
+      ram: 352
+      bandwidth: 32
+
     # M1:
     # » Memory-optimized VMs that offer 14.9 to 24 GB of memory per vCPU
     # » Do not support GPUs

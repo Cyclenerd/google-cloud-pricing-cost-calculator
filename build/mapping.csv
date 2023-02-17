@@ -100,6 +100,9 @@ gce.compute.cpu.t2a;Compute Engine;Compute;CPU;T2A Arm Instance%;The Tau T2A mac
 gce.compute.cpu.c2d;Compute Engine;Compute;CPU;C2D AMD Instance%;
 gce.compute.cpu.c2d.1y;Compute Engine;Compute;CPU;Commitment v1: C2D%1 Year;
 gce.compute.cpu.c2d.3y;Compute Engine;Compute;CPU;Commitment v1: C2D%3 Year%;
+gce.compute.cpu.c3;Compute Engine;Compute;CPU;C3 Instance%;
+gce.compute.cpu.c3.1y;Compute Engine;Compute;CPU;Commitment v1: C3%1 Year;
+gce.compute.cpu.c3.3y;Compute Engine;Compute;CPU;Commitment v1: C3%3 Year%;
 gce.compute.cpu.compute.optimized;Compute Engine;Compute;CPU;Compute optimized%;
 gce.compute.cpu.compute.optimized.1y;Compute Engine;Compute;CPU;Commitment: Compute optimized%1 Year;
 gce.compute.cpu.compute.optimized.3y;Compute Engine;Compute;CPU;Commitment: Compute optimized%3 Year%;
@@ -152,6 +155,9 @@ gce.compute.ram.t2a;Compute Engine;Compute;RAM;T2A Arm Instance%;The Tau T2A mac
 gce.compute.ram.c2d;Compute Engine;Compute;RAM;C2D AMD Instance%;
 gce.compute.ram.c2d.1y;Compute Engine;Compute;RAM;Commitment v1: C2D%1 Year;
 gce.compute.ram.c2d.3y;Compute Engine;Compute;RAM;Commitment v1: C2D%3 Year%;
+gce.compute.ram.c3;Compute Engine;Compute;RAM;C3 Instance%;
+gce.compute.ram.c3.1y;Compute Engine;Compute;RAM;Commitment v1: C3%1 Year;
+gce.compute.ram.c3.3y;Compute Engine;Compute;RAM;Commitment v1: C3%3 Year%;
 gce.compute.ram.compute.optimized;Compute Engine;Compute;RAM;Compute optimized%;
 gce.compute.ram.compute.optimized.1y;Compute Engine;Compute;RAM;Commitment: Compute optimized%1 Year;
 gce.compute.ram.compute.optimized.3y;Compute Engine;Compute;RAM;Commitment: Compute optimized%3 Year%;
