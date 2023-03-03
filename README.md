@@ -274,7 +274,10 @@ For MS Windows you can download and install [Strawberry Perl](https://strawberry
 	* [DBD::CSV](https://metacpan.org/pod/DBD::CSV)
 	* [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)
 
-Debian/Ubuntu:
+<details>
+<summary><b>Debian/Ubuntu</b></summary>
+
+Packages:
 ```shell
 sudo apt update && \
 sudo apt install \
@@ -285,12 +288,23 @@ sudo apt install \
 	libdbd-csv-perl \
 	libdbd-sqlite3-perl
 ```
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+Homebrew packages:
+```shell
+brew install perl
+brew install cpanminus pkg-config
+brew install sqlite3
+```
 
 Or install Perl modules with cpanminus:
 ```shell
-cpan App::cpanminus && \
 cpanm --installdeps .
 ```
+</details>
 
 Execute `gcosts.pl`:
 ```shell
