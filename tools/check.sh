@@ -170,10 +170,10 @@ if ! git diff --exit-code "$CSV_GCLOUD_DISK_TYPES"; then
 		echo "Disk types '$CSV_GCLOUD_DISK_TYPES' changed"
 		echo ""
 		echo "Added:"
-		git diff --color=always "$CSV_GCLOUD_MACHINE_TYPES" | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/'
+		git diff --color=always "$CSV_GCLOUD_DISK_TYPES" | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/'
 		echo ""
 		echo "Deleted:"
-		git diff --color=always "$CSV_GCLOUD_MACHINE_TYPES" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
+		git diff --color=always "$CSV_GCLOUD_DISK_TYPES" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
 		echo ""
 		echo "Todo:"
 		echo "- [ ] Check changes"
