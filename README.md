@@ -300,7 +300,7 @@ brew install cpanminus pkg-config
 brew install sqlite3
 ```
 
-Or install Perl modules with cpanminus:
+Install Perl modules with cpanminus:
 ```shell
 cpanm --installdeps .
 ```
