@@ -382,6 +382,8 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 		elsif ($disk eq 'balanced')            { $mapping = 'gce.storage.ssd.balanced'; }
 		# Zonal extreme PD
 		elsif ($disk eq 'extreme')             { $mapping = 'gce.storage.ssd.extreme'; }
+		# Hyperdisk Extreme
+		elsif ($disk eq 'hyperdisk-extreme')   { $mapping = 'gce.storage.hyperdisk.extreme'; }
 		# Regional standard PD
 		elsif ($disk eq 'hdd-replicated')      { $mapping = 'gce.storage.hdd.replicated'; }
 		# Regional SSD PD

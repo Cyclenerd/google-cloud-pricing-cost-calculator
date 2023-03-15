@@ -62,6 +62,7 @@ Resources that `gcosts` supports, and Google charges for:
 	- [x] Zonal persistent disk
 	- [x] Regional persistent disk
 	- [x] Local SSD
+	- [ ] Provisioned IOPS
 </details>
 
 <details>

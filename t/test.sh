@@ -23,6 +23,7 @@ MY_CHECKS=(
 	# Disk
 	'europe-west4;disk;disk-ssd;191'
 	'europe-west4;disk;disk-hdd;90'
+	'europe-west4;disk;disk-hyperdisk-extreme;134'
 
 	#
 	# 01_europe-west4-sap.yml

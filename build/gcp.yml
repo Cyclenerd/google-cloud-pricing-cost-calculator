@@ -176,6 +176,12 @@ compute:
       increment: 1
       # 257 TB per instance
       max: 64000
+    # Hyperdisk
+    hyperdisk-extreme:
+      type: hyperdisk-extreme
+      min: 10
+      increment: 1
+      max: 64000
     # Regional (two zones in the same region)
     hdd-replicated:
       type: pd-standard

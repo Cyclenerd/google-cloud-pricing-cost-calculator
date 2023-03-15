@@ -1,7 +1,7 @@
 MAPPING;SVC_DISPLAY_NAME;FAMILY;GROUP;SKU_DESCRIPTION;COMMENT
 gce.compute.security.policy;Compute Engine;Compute;SecurityPolicy;Cloud Armor Policy Charge;
 gce.compute.security.rule;Compute Engine;Compute;SecurityPolicy;Cloud Armor Rule Charge;
-monitoring.data;Stackdriver Monitoring;ApplicationServices;Monitoring;Metric Volume;in mebibyte not gb!
+monitoring.data;Cloud Monitoring;ApplicationServices;Monitoring;Metric Volume;in mebibyte not gb!
 NETWORK;;;;;
 gce.network.ip.external;Compute Engine;Network;IpAddress;External IP Charge on a Standard VM;GLOBAL
 gce.network.ip.external.spot;Compute Engine;Network;IpAddress;External IP Charge on a Spot Preemptible VM;GLOBAL
@@ -41,6 +41,8 @@ gce.storage.ssd.balanced;Compute Engine;Storage;SSD;Balanced PD%;
 gce.storage.ssd.balanced.replicated;Compute Engine;Storage;SSD;Regional Balanced PD%;
 gce.storage.ssd.extreme;Compute Engine;Storage;SSD;Extreme PD%;
 gce.storage.ssd.extreme.iops;Compute Engine;Storage;SSD;Extreme PD IOPS%;
+gce.storage.hyperdisk.extreme;Compute Engine;Storage;SSD;Hyperdisk Extreme Capacity%;
+gce.storage.hyperdisk.extreme.iops;Compute Engine;Storage;SSD;Hyperdisk Extreme IOPS %;
 gce.storage.snapshot;Compute Engine;Storage;PDSnapshot;Storage PD Snapshot%;https://cloud.google.com/sdk/gcloud/reference/compute/disks/snapshot 
 gce.storage.snapshot.egress;Compute Engine;Compute;PdSnapshotEgress;PD snapshot egress%;
 gce.storage.image;Compute Engine;Storage;StorageImage;Storage Image%;
