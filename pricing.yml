@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Mar  9 03:57:31 2023
-  timestamp: 1678334251
+  generated: Wed Mar 15 14:56:03 2023
+  timestamp: 1678892163
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -37166,6 +37166,82 @@ compute:
       max: 64000
       min: 200
       type: pd-standard
+    hyperdisk-extreme:
+      cost:
+        asia-east1:
+          month: 0.145
+        asia-east2:
+          month: 0.175
+        asia-northeast1:
+          month: 0.16
+        asia-northeast2:
+          month: 0.16
+        asia-northeast3:
+          month: 0.143
+        asia-south1:
+          month: 0.13
+        asia-south2:
+          month: 0.15
+        asia-southeast1:
+          month: 0.154
+        asia-southeast2:
+          month: 0.15
+        australia-southeast1:
+          month: 0.156
+        australia-southeast2:
+          month: 0.163
+        europe-central2:
+          month: 0.15
+        europe-north1:
+          month: 0.138
+        europe-southwest1:
+          month: 0.148
+        europe-west1:
+          month: 0.138
+        europe-west2:
+          month: 0.143
+        europe-west3:
+          month: 0.148
+        europe-west4:
+          month: 0.131
+        europe-west6:
+          month: 0.175
+        europe-west8:
+          month: 0.145
+        europe-west9:
+          month: 0.145
+        me-west1:
+          month: 0.138
+        northamerica-northeast1:
+          month: 0.138
+        northamerica-northeast2:
+          month: 0.138
+        southamerica-east1:
+          month: 0.199
+        southamerica-west1:
+          month: 0.179
+        us-central1:
+          month: 0.125
+        us-east1:
+          month: 0.141
+        us-east4:
+          month: 0.125
+        us-east5:
+          month: 0.125
+        us-south1:
+          month: 0.148
+        us-west1:
+          month: 0.125
+        us-west2:
+          month: 0.15
+        us-west3:
+          month: 0.15
+        us-west4:
+          month: 0.141
+      increment: 1
+      max: 64000
+      min: 10
+      type: hyperdisk-extreme
     local:
       cost:
         asia-east1:
