@@ -144,6 +144,8 @@ Available disk types `type`:
     * `ssd-replicated`      : Regional persistent disk (replicated)
 * Extreme persistent disks
     * `extreme`             : Zonal persistent disk
+* Hyperdisk Extreme persistent disks
+    * `hyperdisk-extreme`   : Zonal persistent disk
 * Local SSDs
     * `local`               : Zonal persistent disk
 * Snapshots
