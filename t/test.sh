@@ -364,7 +364,7 @@ MY_CHECKS=(
 	'europe-southwest1;vm;n2-standard-8;267' # Google Cloud Pricing Calculator: $268
 
 	# Middle East
-	'me-central1;vm;n2-standard-8;275'
+	'me-central1;vm;n2-standard-8;275' # Google Cloud Pricing Calculator: $275.71
 	'me-west1;vm;n2-standard-8;249' # Google Cloud Pricing Calculator: $249.62
 
 	# Santiago
