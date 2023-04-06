@@ -19,7 +19,7 @@ MY_CHECKS=(
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'
-	'eur4;bucket;bucket-standard-dual;1.8'
+	'eur4;bucket;bucket-standard-dual;2.2'
 	# Disk
 	'europe-west4;disk;disk-ssd;191'
 	'europe-west4;disk;disk-hdd;90'
@@ -33,9 +33,9 @@ MY_CHECKS=(
 	'europe-west4;vm-os;n1-standard-16-sles-sap;107'
 	'europe-west4;disk;disk-n1-standard-16-sles-sap-boot;14'
 	'europe-west4;disk;disk-n1-standard-16-sles-sap-data;28'
-	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-boot;2.9'
-	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-data;5.8'
-	'eur4;bucket;bucket-n1-standard-16-sles-sap;20'
+	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-boot;5.3'
+	'europe-west4;disk;snapshot-n1-standard-16-sles-sap-data;10.6'
+	'eur4;bucket;bucket-n1-standard-16-sles-sap;22.5'
 	# RHEL for SAP (https://cloud.google.com/products/calculator/#id=a41b2496-c124-4db8-9e30-0a5fcfbe9466)
 	'europe-west4;vm;n1-standard-16-rhel-sap;274'
 	'europe-west4;vm-os;n1-standard-16-rhel-sap;124'
