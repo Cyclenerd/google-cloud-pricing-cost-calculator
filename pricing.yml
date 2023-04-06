@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Mar 30 03:57:29 2023
-  timestamp: 1680148649
+  generated: Thu Apr  6 09:57:50 2023
+  timestamp: 1680775070
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -39233,85 +39233,85 @@ compute:
     snapshot:
       cost:
         asia-east1:
-          month: 0.026
+          month: 0.05
         asia-east2:
-          month: 0.03237
+          month: 0.07
         asia-multi:
-          month: 0.026
+          month: 0.083
         asia-northeast1:
-          month: 0.034
+          month: 0.064
         asia-northeast2:
-          month: 0.034
+          month: 0.064
         asia-northeast3:
-          month: 0.034
+          month: 0.064
         asia-south1:
-          month: 0.031
+          month: 0.052
         asia-south2:
-          month: 0.031
+          month: 0.06
         asia-southeast1:
-          month: 0.029
+          month: 0.061
         asia-southeast2:
-          month: 0.034
+          month: 0.067
         australia-southeast1:
-          month: 0.035
+          month: 0.062
         australia-southeast2:
-          month: 0.035
+          month: 0.065
         europe-central2:
-          month: 0.031
+          month: 0.065
         europe-multi:
-          month: 0.026
+          month: 0.075
         europe-north1:
-          month: 0.029
+          month: 0.055
         europe-southwest1:
-          month: 0.03068
+          month: 0.059
         europe-west1:
-          month: 0.026
+          month: 0.05
         europe-west12:
           month: 0.03354
         europe-west2:
-          month: 0.031
+          month: 0.057
         europe-west3:
-          month: 0.031
+          month: 0.059
         europe-west4:
-          month: 0.029
+          month: 0.053
         europe-west6:
-          month: 0.0338
+          month: 0.07
         europe-west8:
-          month: 0.03016
+          month: 0.058
         europe-west9:
-          month: 0.03016
+          month: 0.058
         me-central1:
           month: 0.03159
         me-west1:
           month: 0.0286
         northamerica-northeast1:
-          month: 0.0286
+          month: 0.055
         northamerica-northeast2:
-          month: 0.0286
+          month: 0.055
         southamerica-east1:
-          month: 0.039
+          month: 0.08
         southamerica-west1:
-          month: 0.037818
+          month: 0.071
         us-central1:
-          month: 0.026
+          month: 0.05
         us-east1:
-          month: 0.026
+          month: 0.05
         us-east4:
-          month: 0.029
+          month: 0.05
         us-east5:
           month: 0.026
         us-multi:
-          month: 0.026
+          month: 0.065
         us-south1:
-          month: 0.03068
+          month: 0.06
         us-west1:
-          month: 0.026
+          month: 0.05
         us-west2:
-          month: 0.0312
+          month: 0.06
         us-west3:
-          month: 0.0312
+          month: 0.06
         us-west4:
-          month: 0.029
+          month: 0.056
       increment: 1
       type: pd-snapshot
     ssd:
@@ -39974,7 +39974,7 @@ storage:
     coldline-dual:
       cost:
         asia1:
-          month: 0.012
+          month: 0.0132
         eur4:
           month: 0.0088
         nam4:
@@ -39983,7 +39983,7 @@ storage:
     coldline-multi:
       cost:
         asia-multi:
-          month: 0.007
+          month: 0.00875
         europe-multi:
           month: 0.007
         us-multi:
@@ -40164,20 +40164,20 @@ storage:
     nearline-dual:
       cost:
         asia1:
-          month: 0.032
+          month: 0.0352
         eur4:
-          month: 0.02
+          month: 0.022
         nam4:
-          month: 0.02
+          month: 0.022
       min-duration: 30
     nearline-multi:
       cost:
         asia-multi:
-          month: 0.01
+          month: 0.015
         europe-multi:
-          month: 0.01
+          month: 0.015
         us-multi:
-          month: 0.01
+          month: 0.015
       min-duration: 30
     standard:
       cost:
@@ -40259,11 +40259,11 @@ storage:
     standard-dual:
       cost:
         asia1:
-          month: 0.046
+          month: 0.0506
         eur4:
-          month: 0.036
+          month: 0.044
         nam4:
-          month: 0.036
+          month: 0.044
       min-duration: 0
     standard-multi:
       cost:
