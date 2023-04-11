@@ -4,20 +4,6 @@ traffic:
   - name: traffic-world
     world: 1025
 
-load-balancers:
-  - name: load-balancer-1
-    rules: 1
-    data: 0
-  - name: load-balancer-5
-    rules: 5
-    data: 0
-  - name: load-balancer-6
-    rules: 6
-    data: 0
-  - name: load-balancer-6-50
-    rules: 6
-    data: 500
-
 monitoring:
   - name: stackdriver
     data: 6000 # mebibyte!

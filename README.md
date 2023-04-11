@@ -88,14 +88,6 @@ Resources that `gcosts` supports, and Google charges for:
 - [x] Data processing (both egress and ingress)
 </details>
 
-
-<details>
-<summary>🤹 <b>Cloud Load Balancing</b></summary>
-
-- [x] Forwarding rules
-- [x] Ingress data processed by load balancer
-</details>
-
 <details>
 <summary>🚦 <b>Cloud Monitoring (Operations Suite)</b></summary>
 

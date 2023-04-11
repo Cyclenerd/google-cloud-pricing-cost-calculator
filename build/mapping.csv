@@ -13,9 +13,6 @@ gce.network.vpn.tunnel.egress.australia;Compute Engine;Network;VPNInternetEgress
 gce.network.vpn.tunnel.ingress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Ingress;Free
 gce.network.nat.gateway;Networking;Network;Nat;Networking Cloud Nat Gateway Uptime%;hours
 gce.network.nat.gateway.data;Networking;Network;Nat;Networking Cloud Nat Data Processing%;cost per GB of data that is processed by the gateway
-gce.network.lb.rule;Compute Engine;Network;LoadBalancing;Network Load Balancing: Forwarding Rule Minimum Service Charge%;hours (first 5)
-gce.network.lb.rule.add;Compute Engine;Network;LoadBalancing;Network Load Balancing: Forwarding Rule Additional Service Charge%;hours
-gce.network.lb.data;Compute Engine;Network;LoadBalancing;Network Load Balancing: Data Processing Charge%;per GB
 gce.network.internet.egress;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Americas;From... to..., Gb, bulk price!
 gce.network.internet.egress.china;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%China;
 gce.network.internet.egress.australia;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Australia;

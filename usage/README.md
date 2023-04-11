@@ -248,19 +248,6 @@ nat-gateways:
 
 You have to pay ingress __and__ egress data that is processed by the NAT gateway.
 
-### 🤹 Cloud Load Balancing
-
-Load balancing and forwarding rules.
-
-```yml
-load-balancers:
-  - name: LB-NAME
-    rules: LB-RULES
-    data: INGRESS-TRAFFIC-IN-GiB
-```
-
-You have to pay ingress data processed by the load balancer.
-
 ### 🚦 Cloud Monitoring
 
 Monitoring data for Cloud Monitoring and all Google Cloud metrics.

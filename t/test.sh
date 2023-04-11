@@ -2,7 +2,7 @@
 
 MY_CHECKS=(
 	# HEADER
-	'PROJECT;REGION;RESOURCE;NAME;COST;TYPE;DATA;CLASS;RULES;COMMITMENT;DISCOUNT;FILE'
+	'PROJECT;REGION;RESOURCE;NAME;COST;TYPE;DATA;CLASS;COMMITMENT;DISCOUNT;FILE'
 	
 	#
 	# 00_europe-west4.yml
@@ -11,11 +11,6 @@ MY_CHECKS=(
 	'monitoring;stackdriver;1548'
 	# Traffic
 	'europe-west4;traffic-world;traffic-world;122'
-	# Load Balancing
-	'europe-west4;load-balancer;load-balancer-1;20'
-	'europe-west4;load-balancer;load-balancer-5;20'
-	'europe-west4;load-balancer;load-balancer-6;28'
-	'europe-west4;load-balancer;load-balancer-6-50;32'
 	# Standard storage
 	'europe-west4;bucket;bucket-standard;1.0'
 	'europe-multi;bucket;bucket-standard-multi;1.3'

@@ -1139,51 +1139,6 @@ sub add_gcp_compute_nat_gateway_data_details {
 	$gcp->{'compute'}->{'network'}->{'nat'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'network'}->{'nat'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-# &add_gcp_compute_lb_rule_cost($what, $region, $cost)
-sub add_gcp_compute_lb_rule_cost {
-	my ($what, $region, $cost) = @_;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{$what} = $cost;
-}
-# &add_gcp_compute_lb_rule_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description)
-sub add_gcp_compute_lb_rule_details {
-	my ($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) = @_;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'sku'}   = $sku_id;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'value'} = $value;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'nanos'} = $nanos;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'units'} = $units;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
-}
-# &add_gcp_compute_lb_rule_add_cost($what, $region, $cost)
-sub add_gcp_compute_lb_rule_add_cost {
-	my ($what, $region, $cost) = @_;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{$what} = $cost;
-}
-# &add_gcp_compute_lb_rule_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description)
-sub add_gcp_compute_lb_rule_add_details {
-	my ($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) = @_;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'sku'}   = $sku_id;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'value'} = $value;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'nanos'} = $nanos;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'units'} = $units;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
-}
-# &add_gcp_compute_lb_data_add_cost($what, $region, $cost)
-sub add_gcp_compute_lb_data_add_cost {
-	my ($what, $region, $cost) = @_;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{$what} = $cost;
-}
-# &add_gcp_compute_lb_data_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description)
-sub add_gcp_compute_lb_data_add_details {
-	my ($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) = @_;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'sku'}   = $sku_id;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'value'} = $value;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'nanos'} = $nanos;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'units'} = $units;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
-	$gcp->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
-}
 # &add_gcp_compute_egress_internet_add_cost($usage, $region, $cost)
 sub add_gcp_compute_egress_internet_add_cost {
 	my ($usage, $region, $cost) = @_;
@@ -1314,50 +1269,6 @@ foreach my $region (@regions) {
 		my $cost = &calc_cost($value, $units, $nanos);
 		&add_gcp_compute_nat_gateway_data_cost('month', $region, $cost);
 		&add_gcp_compute_nat_gateway_data_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-	}
-	$sth->finish;
-
-	# Load Balancing: Forwarding Rule Minimum Service Charge
-	$mapping = 'gce.network.lb.rule'; # first 5 rules, up to 5 forwarding rules for the price, 1 = same as for 5
-	print "MAPPING: '$mapping' in region '$region'\n";
-	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	while ($sth->fetch) {
-		if (&check_region($region, $regions)) {
-			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-			my $cost = &calc_cost($value, $units, $nanos);
-			&add_gcp_compute_lb_rule_cost('hour', $region, $cost);
-			&add_gcp_compute_lb_rule_cost('month', $region, $cost*$hours_month);
-			&add_gcp_compute_lb_rule_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-		}
-	}
-	$sth->finish;
-
-	# Load Balancing: Forwarding Rule Additional Service Charge
-	$mapping = 'gce.network.lb.rule.add'; # each additional forwarding rule
-	print "MAPPING: '$mapping' in region '$region'\n";
-	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	while ($sth->fetch) {
-		if (&check_region($region, $regions)) {
-			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-			my $cost = &calc_cost($value, $units, $nanos);
-			&add_gcp_compute_lb_rule_add_cost('hour', $region, $cost);
-			&add_gcp_compute_lb_rule_add_cost('month', $region, $cost*$hours_month);
-			&add_gcp_compute_lb_rule_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-		}
-	}
-	$sth->finish;
-
-	# Load Balancing: Network Load Balancing: Data Processing Charge
-	$mapping = 'gce.network.lb.data'; # Ingress data processed by load balancer
-	print "MAPPING: '$mapping' in region '$region'\n";
-	$sth->execute($mapping, '%'."$region".'%'); # Search SKU(s)
-	while ($sth->fetch) {
-		if (&check_region($region, $regions)) {
-			&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
-			my $cost = &calc_cost($value, $units, $nanos);
-			&add_gcp_compute_lb_data_add_cost('month', $region, $cost);
-			&add_gcp_compute_lb_data_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
-		}
 	}
 	$sth->finish;
 

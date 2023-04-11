@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright 2022 Nils Knieling. All Rights Reserved.
+# Copyright 2022-2023 Nils Knieling. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 # Help: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 
 BEGIN {
-	$VERSION = "1.1.0";
+	$VERSION = "2.0.0";
 }
 
 use strict;
@@ -265,21 +265,6 @@ sub calc_monitoring_data_cost {
 	return $cost;
 }
 
-# &calc_lb_rule_cost($rules, $cost_min, $cost_add)
-sub calc_lb_rule_cost {
-	my ($rules, $cost_min, $cost_add) = @_;
-	# Bulk price:
-	my $range_1 = 5; # first 5 rules, up to 5 forwarding rules for the price, 1 = same as for 5 (cost_min)
-	my $cost = 0;
-	if ($rules > $range_1) {
-		$cost = ($rules-$range_1)*$cost_add;
-		$cost += $cost_min;
-	} else {
-		$cost = $cost_min;
-	}
-	return $cost;
-}
-
 # &calc_traffic_egress_cost($data, $cost_1, $cost_2, $cost_3)
 sub calc_traffic_egress_cost {
 	my ($data, $cost_1, $cost_2, $cost_3) = @_;
@@ -328,7 +313,6 @@ sub cost {
 	my $name       = $values{'name'};
 	my $data       = $values{'data'};
 	my $class      = $values{'class'}; # buckets
-	my $rules      = $values{'rules'}; # lb
 	my $type       = $values{'type'}; # disks, instances
 	my $cost       = $values{'cost'};
 	my $commitment = $values{'commitment'};
@@ -351,7 +335,6 @@ sub cost {
 		$type,
 		$data,
 		$class,
-		$rules,
 		$commitment,
 		$discount,
 		$file
@@ -434,37 +417,6 @@ sub cost_vpn {
 		&cost(
 			'resource' => 'vpn-tunnel',
 			'name'     => $name,
-			'cost'     => $cost,
-			'discount' => $discount,
-			'region'   => $region,
-			'project'  => $usage->{'project'},
-			'file'     => $usage->{'file'}
-		);
-	}
-}
-
-# &cost_lb($usage, $pricing)
-sub cost_lb {
-	my ($usage, $pricing) = @_;
-	my $load_balancers = $usage->{'load-balancers'} || ();
-	foreach my $i (@{$load_balancers}) {
-		my $name     = &check_name($i->{'name'}               || 'load-balancer');
-		my $data     = &check_float($i->{'data'}              || '0');
-		my $discount = &check_float($i->{'discount'}          || $usage->{'discount'});
-		my $rules    = &check_int($i->{'rules'}               || '0');
-		my $region   = &check_region($pricing, $i->{'region'} || $usage->{'region'});
-		print "load-balancer : $name\n";
-		my $cost_rule_min = &check_cost($pricing->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'min'}->{'cost'}->{$region}->{'month'} ||'compute > network > lb > rule > min', $region);
-		my $cost_rule_add = &check_cost($pricing->{'compute'}->{'network'}->{'lb'}->{'rule'}->{'add'}->{'cost'}->{$region}->{'month'} ||'compute > network > lb > rule > add', $region);
-		my $cost_data     = &check_cost($pricing->{'compute'}->{'network'}->{'lb'}->{'data'}->{'cost'}->{$region}->{'month'}          ||'compute > network > lb > data',       $region);
-		my $cost = &calc_lb_rule_cost($rules, $cost_rule_min, $cost_rule_add);
-		$cost += $cost_data*$data;
-		$cost = &add_discount($cost, $discount);
-		&cost(
-			'resource' => 'load-balancer',
-			'name'     => $name,
-			'data'     => $data,
-			'rules'    => $rules,
 			'cost'     => $cost,
 			'discount' => $discount,
 			'region'   => $region,
@@ -759,7 +711,6 @@ print $fh join(";", (
 	'TYPE',
 	'DATA',
 	'CLASS',
-	'RULES',
 	'COMMITMENT',
 	'DISCOUNT',
 	'FILE'
@@ -792,8 +743,6 @@ foreach my $usage_file (sort @usage_files) {
 	&cost_nat($usage, $pricing);
 	# VPN Tunnel
 	&cost_vpn($usage, $pricing);
-	# Load Balancer
-	&cost_lb($usage, $pricing);
 	# Traffic
 	&cost_traffic_world($usage, $pricing);
 	&cost_traffic_china($usage, $pricing);
