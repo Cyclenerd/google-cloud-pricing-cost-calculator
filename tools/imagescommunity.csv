@@ -1,6 +1,6 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS
-almalinux-8-v20230306;AlmaLinux, AlmaLinux, 8, x86_64 built on 20230306;20;almalinux-cloud;almalinux-8;X86_64;2023-03-06T12:57:16.009-08:00;;READY
-almalinux-9-v20230306;AlmaLinux, AlmaLinux, 9, x86_64 built on 20230306;20;almalinux-cloud;almalinux-9;X86_64;2023-03-06T12:57:17.125-08:00;;READY
+almalinux-8-v20230411;AlmaLinux, AlmaLinux, 8, x86_64 built on 20230411;20;almalinux-cloud;almalinux-8;X86_64;2023-04-11T15:37:20.725-07:00;;READY
+almalinux-9-v20230411;AlmaLinux, AlmaLinux, 9, x86_64 built on 20230411;20;almalinux-cloud;almalinux-9;X86_64;2023-04-11T15:37:20.790-07:00;;READY
 freebsd-11-3-stable-amd64-v20190801;;22;freebsd-org-cloud-dev;freebsd-11-3-snap;;2019-07-31T20:58:27.473-07:00;;READY
 freebsd-11-3-stable-amd64-v20191212;;22;freebsd-org-cloud-dev;freebsd-11-3-snap;;2019-12-11T21:49:20.364-08:00;;READY
 freebsd-11-3-stable-amd64-v20191219;;22;freebsd-org-cloud-dev;freebsd-11-3-snap;;2019-12-18T21:49:10.295-08:00;;READY
