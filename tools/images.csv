@@ -44,7 +44,7 @@ rocky-linux-9-v20230411;Rocky Linux, Rocky Linux, 9, x86_64 built on 20230411;20
 sles-12-sp5-v20230205-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20230205, supports Shielded VM features;10;suse-cloud;sles-12;X86_64;2023-02-06T07:25:19.537-08:00;;READY
 sles-15-sp4-v20230205-arm64;SUSE, SUSE Linux Enterprise Server 15 SP4, arm64, built on 20230205, supports Shielded VM features;10;suse-cloud;sles-15-arm64;ARM64;2023-02-06T07:25:29.149-08:00;;READY
 sles-15-sp4-v20230322-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4, x86_64, built on 20230322, supports Shielded VM features;10;suse-cloud;sles-15;X86_64;2023-03-23T06:06:28.138-07:00;;READY
-sles-12-sp5-sap-v20230116-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5 for SAP, x86_64, built on 20230116, supports Shielded VM features;10;suse-sap-cloud;sles-12-sp5-sap;X86_64;2023-01-15T18:11:19.945-08:00;;READY
+sles-12-sp5-sap-v20230417-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5 for SAP, x86_64, built on 20230417, supports Shielded VM features;10;suse-sap-cloud;sles-12-sp5-sap;X86_64;2023-04-16T19:16:53.567-07:00;;READY
 sles-15-sp1-sap-v20221108-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP1 for SAP, x86_64, built on 20221108, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp1-sap;X86_64;2022-11-08T06:11:21.343-08:00;;READY
 sles-15-sp2-sap-v20221108-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP2 for SAP, x86_64, built on 20221108, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp2-sap;X86_64;2022-11-08T09:06:40.565-08:00;;READY
 sles-15-sp3-sap-v20221108-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP3 for SAP, x86_64, built on 20221108, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp3-sap;X86_64;2022-11-08T09:01:48.247-08:00;;READY
