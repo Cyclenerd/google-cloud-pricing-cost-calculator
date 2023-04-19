@@ -23,7 +23,7 @@ jobs:
       # Configure Workload Identity Federation via a credentials file.
       - id: auth
         name: 🔐 Authenticate to Google Cloud
-        uses: google-github-actions/auth@v0
+        uses: google-github-actions/auth@v1
         with:
           workload_identity_provider: 'projects/586925744942/locations/global/workloadIdentityPools/github/providers/action'
           service_account: 'github-action@billing-api-340811.iam.gserviceaccount.com'
