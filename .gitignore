@@ -30,6 +30,6 @@ usage/customers/**
 # Example
 !/usage/example.yml
 # GitHub Actions
-!.github/workflows/*.yml
+!.github/**/*.yml
 # Gitpod
 !/.gitpod.yml
