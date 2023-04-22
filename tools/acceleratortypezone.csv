@@ -60,6 +60,7 @@ nvidia-tesla-p100-vws;us-central1-f
 nvidia-tesla-p100-vws;us-east1-a
 nvidia-tesla-p100-vws;us-east1-b
 nvidia-tesla-p100-vws;us-east1-c
+nvidia-tesla-p100-vws;us-east7-b
 nvidia-tesla-p100-vws;us-west1-a
 nvidia-tesla-p100-vws;us-west1-b
 nvidia-tesla-p100;asia-east1-a
@@ -73,6 +74,7 @@ nvidia-tesla-p100;us-central1-f
 nvidia-tesla-p100;us-east1-a
 nvidia-tesla-p100;us-east1-b
 nvidia-tesla-p100;us-east1-c
+nvidia-tesla-p100;us-east7-b
 nvidia-tesla-p100;us-west1-a
 nvidia-tesla-p100;us-west1-b
 nvidia-tesla-p4-vws;asia-southeast1-b
@@ -155,6 +157,7 @@ nvidia-tesla-t4-vws;us-east1-d
 nvidia-tesla-t4-vws;us-east4-a
 nvidia-tesla-t4-vws;us-east4-b
 nvidia-tesla-t4-vws;us-east4-c
+nvidia-tesla-t4-vws;us-east7-b
 nvidia-tesla-t4-vws;us-west1-a
 nvidia-tesla-t4-vws;us-west1-b
 nvidia-tesla-t4-vws;us-west2-b
@@ -206,6 +209,7 @@ nvidia-tesla-t4;us-east1-d
 nvidia-tesla-t4;us-east4-a
 nvidia-tesla-t4;us-east4-b
 nvidia-tesla-t4;us-east4-c
+nvidia-tesla-t4;us-east7-b
 nvidia-tesla-t4;us-west1-a
 nvidia-tesla-t4;us-west1-b
 nvidia-tesla-t4;us-west2-b
@@ -223,5 +227,6 @@ nvidia-tesla-v100;us-central1-c
 nvidia-tesla-v100;us-central1-f
 nvidia-tesla-v100;us-east1-a
 nvidia-tesla-v100;us-east1-c
+nvidia-tesla-v100;us-east7-b
 nvidia-tesla-v100;us-west1-a
 nvidia-tesla-v100;us-west1-b
