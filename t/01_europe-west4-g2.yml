@@ -1,0 +1,31 @@
+region: europe-west4
+project: gcp-gce-g2
+
+# Accelerator-optimized machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#accelerator-optimized
+
+instances:
+# G2 standard machine types (total cost)
+  - name: g2-standard-4
+    type: g2-standard-4
+  - name: g2-standard-8
+    type: g2-standard-8
+  - name: g2-standard-12
+    type: g2-standard-12
+  - name: g2-standard-16
+    type: g2-standard-16
+  - name: g2-standard-24
+    type: g2-standard-24
+  - name: g2-standard-32
+    type: g2-standard-32
+  - name: g2-standard-48
+    type: g2-standard-48
+  - name: g2-standard-96
+    type: g2-standard-96
+# Commitment (CUD)
+  - name: g2-standard-8-1y
+    type: g2-standard-8
+    commitment: 1
+  - name: g2-standard-8-3y
+    type: g2-standard-8
+    commitment: 3

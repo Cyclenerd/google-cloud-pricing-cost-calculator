@@ -492,6 +492,7 @@ foreach my $region (@regions) {
 		my $ram       = $gcp->{'compute'}->{'instance'}->{$machine}->{'ram'}       || '0';
 		my $a100      = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100'}      || '0';
 		my $a100_80gb = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100-80gb'} || '0';
+		my $l4        = $gcp->{'compute'}->{'instance'}->{$machine}->{'l4'}        || '0';
 
 		print "Machine: $machine\n";
 		print "Type: $type\n";
@@ -703,6 +704,19 @@ foreach my $region (@regions) {
 			$mappings{ 'gce.compute.gpu.a100.80gb' } = $a100_80gb;
 			$mappings_1y{'gce.compute.gpu.a100.80gb.1y'} = $a100_80gb;
 			$mappings_3y{'gce.compute.gpu.a100.80gb.3y'} = $a100_80gb;
+		}
+		# G2
+		elsif ($type eq 'g2') {
+			$mappings{   'gce.compute.cpu.g2'     } = $cpu;
+			$mappings_1y{'gce.compute.cpu.g2.1y'  } = $cpu;
+			$mappings_3y{'gce.compute.cpu.g2.3y'  } = $cpu;
+			$mappings{   'gce.compute.ram.g2'     } = $ram;
+			$mappings_1y{'gce.compute.ram.g2.1y'  } = $ram;
+			$mappings_3y{'gce.compute.ram.g2.3y'  } = $ram;
+			# NVIDIA's L4 GPUs
+			$mappings{   'gce.compute.gpu.l4'   } = $l4;
+			$mappings_1y{'gce.compute.gpu.l4.1y'} = $l4;
+			$mappings_3y{'gce.compute.gpu.l4.3y'} = $l4;
 		}
 		# Unknown family
 		else {

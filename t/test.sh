@@ -329,6 +329,18 @@ MY_CHECKS=(
 	'us-central1;vm;a2-ultragpu-1g-1y;3670'
 	'us-central1;vm;a2-ultragpu-1g-3y;3670'
 	'us-central1;disk;a2-ultragpu-1g-local-disk;30'
+	# G2 standard machine types (total cost) // Price List accessed on: 2023-04-23 // TODO: Check calculator
+	'europe-west4;vm;g2-standard-4;5'   # Google Cloud Pricing Calculator: ???,  Price List: $570.59209
+	'europe-west4;vm;g2-standard-8;6'   # Google Cloud Pricing Calculator: ??? , Price List: $688.58345
+	'europe-west4;vm;g2-standard-12;8'  # Google Cloud Pricing Calculator: ???,  Price List: $806.57554
+	'europe-west4;vm;g2-standard-16;9'  # Google Cloud Pricing Calculator: ???,  Price List: $924.56763
+	'europe-west4;vm;g2-standard-24;16' # Google Cloud Pricing Calculator: ???,  Price List: $1613.15108
+	'europe-west4;vm;g2-standard-32;13' # Google Cloud Pricing Calculator: ???,  Price List: $1396.53453
+	'europe-west4;vm;g2-standard-48;32' # Google Cloud Pricing Calculator: ???,  Price List: $3226.30216
+	'europe-west4;vm;g2-standard-96;64' # Google Cloud Pricing Calculator: ???,  Price List: $6452.60359
+	# G2 Commitment (CUD)
+	'europe-west4;vm;g2-standard-8-1y;4' # Google Cloud Pricing Calculator: ???, Price List: $433.36961
+	'europe-west4;vm;g2-standard-8-3y;3' # Google Cloud Pricing Calculator: ???, Price List: $310.5931
 	#
 	# Regions
 	# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family

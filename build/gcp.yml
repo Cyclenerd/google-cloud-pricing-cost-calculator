@@ -1241,3 +1241,55 @@ compute:
       a100-80gb: 8
       bandwidth: 100
       local: 3000
+
+    # G2:
+    # » Accelerator-optimized VMs featuring NVIDIA's L4 GPUs
+    # » Only available on the Intel Cascade Lake platform
+    g2-standard-4:
+      type: g2
+      cpu: 4
+      ram: 16
+      l4: 1
+      bandwidth: 10
+    g2-standard-8:
+      type: g2
+      cpu: 8
+      ram: 32
+      l4: 1
+      bandwidth: 16
+    g2-standard-12:
+      type: g2
+      cpu: 12
+      ram: 48
+      l4: 1
+      bandwidth: 16
+    g2-standard-16:
+      type: g2
+      cpu: 16
+      ram: 64
+      l4: 1
+      bandwidth: 32
+    g2-standard-24:
+      type: g2
+      cpu: 24
+      ram: 96
+      l4: 2
+      bandwidth: 32
+    g2-standard-32:
+      type: g2
+      cpu: 32
+      ram: 128
+      l4: 1
+      bandwidth: 32
+    g2-standard-48:
+      type: g2
+      cpu: 48
+      ram: 192
+      l4: 4
+      bandwidth: 50
+    g2-standard-96:
+      type: g2
+      cpu: 96
+      ram: 384
+      l4: 8
+      bandwidth: 100
