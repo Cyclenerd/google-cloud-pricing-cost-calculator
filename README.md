@@ -42,7 +42,7 @@ Resources that `gcosts` supports, and Google charges for:
 	- [x] Scale-out optimized (Tau `T2D` and `T2A`)
 	- [x] Memory-optimized (`M1`, `M2`, `M3`)
 	- [x] Compute optimized (`C2`, `C2D`)
-	- [x] Accelerator optimized (`A2`)
+	- [x] Accelerator optimized (`A2`, `G2`)
 - [x] Sustained use discounts (SUD) are applied to monthly costs
 - [x] 1 year and 3 year committed use discounts (CUD) are supported
 - [x] Paid "premium" operating system licenses (paid images) are supported
