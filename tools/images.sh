@@ -47,4 +47,15 @@ gcloud compute images list \
 	--quiet \
 	--format="csv[no-heading,separator=';'](NAME,description,diskSizeGb,PROJECT,FAMILY,architecture,creationTimestamp,DEPRECATED,STATUS)" >> "$CSV_GCLOUD_DEEPLEARNING_IMAGES" || exit 9
 
+# High Performance Computing (HPC)
+echo "Get HPC images... Please wait..."
+
+echo "NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS" > "$CSV_GCLOUD_HPC_IMAGES" || exit 9
+gcloud compute images list \
+	--project cloud-hpc-image-public \
+	--filter="creationTimestamp > -P1Y" \
+	--no-standard-images \
+	--quiet \
+	--format="csv[no-heading,separator=';'](NAME,description,diskSizeGb,PROJECT,FAMILY,architecture,creationTimestamp,DEPRECATED,STATUS)" >> "$CSV_GCLOUD_HPC_IMAGES" || exit 9
+
 echo "DONE"

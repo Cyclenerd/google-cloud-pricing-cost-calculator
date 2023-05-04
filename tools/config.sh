@@ -14,6 +14,7 @@ CSV_GCLOUD_ACCELERATOR_TYPES="acceleratortypes.csv"
 CSV_GCLOUD_IMAGES="images.csv"
 CSV_GCLOUD_COMMUNITY_IMAGES="imagescommunity.csv"
 CSV_GCLOUD_DEEPLEARNING_IMAGES="imagesdeeplearning.csv"
+CSV_GCLOUD_HPC_IMAGES="imageshpc.csv"
 
 GITHUB_ISSUE_ASSIGNEE="Cyclenerd"
 GITHUB_ISSUE_LABEL="new"

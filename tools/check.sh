@@ -203,6 +203,10 @@ if ! git diff --exit-code "$CSV_GCLOUD_DEEPLEARNING_IMAGES"; then
 	git add "$CSV_GCLOUD_DEEPLEARNING_IMAGES"
 	((MY_CHANGES++));
 fi
+if ! git diff --exit-code "$CSV_GCLOUD_HPC_IMAGES"; then
+	git add "$CSV_GCLOUD_HPC_IMAGES"
+	((MY_CHANGES++));
+fi
 
 # Commit and push
 if [ "$MY_CHANGES" -ge 1 ]; then
