@@ -8,6 +8,7 @@ gce.compute.cpu.a2.spot;Compute Engine;Compute;CPU;Spot Preemptible A2 Instance%
 gce.compute.cpu.c2d;Compute Engine;Compute;CPU;C2D AMD Instance%;
 gce.compute.cpu.c2d.1y;Compute Engine;Compute;CPU;Commitment v1: C2D%1 Year;
 gce.compute.cpu.c2d.3y;Compute Engine;Compute;CPU;Commitment v1: C2D%3 Year%;
+gce.compute.cpu.c2d.spot;Compute Engine;Compute;CPU;Spot Preemptible C2D AMD Instance%;
 gce.compute.cpu.c3;Compute Engine;Compute;CPU;C3 Instance%;
 gce.compute.cpu.c3.1y;Compute Engine;Compute;CPU;Commitment v1: C3%1 Year;
 gce.compute.cpu.c3.3y;Compute Engine;Compute;CPU;Commitment v1: C3%3 Year%;
@@ -16,8 +17,6 @@ gce.compute.cpu.compute.optimized;Compute Engine;Compute;CPU;Compute optimized%;
 gce.compute.cpu.compute.optimized.1y;Compute Engine;Compute;CPU;Commitment: Compute optimized%1 Year;
 gce.compute.cpu.compute.optimized.3y;Compute Engine;Compute;CPU;Commitment: Compute optimized%3 Year%;
 gce.compute.cpu.compute.optimized.spot;Compute Engine;Compute;CPU;Spot Preemptible Compute optimized%;
-gce.compute.cpu.custom;Compute Engine;Compute;CPU;Custom Instance%;
-gce.compute.cpu.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible Custom Instance%;
 gce.compute.cpu.e2;Compute Engine;Compute;CPU;E2 Instance%;
 gce.compute.cpu.e2.1y;Compute Engine;Compute;CPU;Commitment v1: E2%1 Year;
 gce.compute.cpu.e2.3y;Compute Engine;Compute;CPU;Commitment v1: E2%3 Year%;
@@ -40,14 +39,15 @@ gce.compute.cpu.memory.optimized.3y;Compute Engine;Compute;CPU;Commitment v1: Me
 gce.compute.cpu.memory.optimized.premium.upgrade;Compute Engine;Compute;CPU;Memory Optimized Upgrade Premium for Memory-optimized Instance%;M2
 gce.compute.cpu.memory.optimized.spot;Compute Engine;Compute;CPU;Spot Preemptible Memory-optimized Instance%;
 gce.compute.cpu.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Core%;CPU and RAM are in the same group
-gce.compute.cpu.1y;Compute Engine;Compute;CPU;Commitment v1: Cpu%1 Year;
-gce.compute.cpu.3y;Compute Engine;Compute;CPU;Commitment v1: Cpu%3 Year%;
+gce.compute.cpu.n1.1y;Compute Engine;Compute;CPU;Commitment v1: Cpu%1 Year;
+gce.compute.cpu.n1.3y;Compute Engine;Compute;CPU;Commitment v1: Cpu%3 Year%;
+gce.compute.cpu.n1.custom;Compute Engine;Compute;CPU;Custom Instance%;
+gce.compute.cpu.n1.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible Custom Instance%;
 gce.compute.cpu.n1.spot;Compute Engine;Compute;N1Standard;Spot Preemptible N1 Predefined Instance Core%;CPU and RAM are in the same group
 gce.compute.cpu.n2;Compute Engine;Compute;CPU;N2 Instance%;
 gce.compute.cpu.n2.1y;Compute Engine;Compute;CPU;Commitment v1: N2%1 Year;
 gce.compute.cpu.n2.3y;Compute Engine;Compute;CPU;Commitment v1: N2%3 Year%;
 gce.compute.cpu.n2.custom;Compute Engine;Compute;CPU;N2 Custom Instance%;
-gce.compute.cpu.n2.custom.extended;Compute Engine;Compute;CPU;N2 Custom Extended%;
 gce.compute.cpu.n2.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible N2 Custom Instance%;
 gce.compute.cpu.n2.spot;Compute Engine;Compute;CPU;Spot Preemptible N2 Instance%;
 gce.compute.cpu.n2d;Compute Engine;Compute;CPU;N2D AMD Instance%;
@@ -56,18 +56,6 @@ gce.compute.cpu.n2d.3y;Compute Engine;Compute;CPU;Commitment v1: N2D%3 Year%;
 gce.compute.cpu.n2d.custom;Compute Engine;Compute;CPU;N2D AMD Custom Instance%;
 gce.compute.cpu.n2d.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible N2D AMD Custom Instance%;
 gce.compute.cpu.n2d.spot;Compute Engine;Compute;CPU;Spot Preemptible N2D AMD Instance%;
-gce.compute.cpu.sole.tenancy;Compute Engine;Compute;CPU;Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.compute.optimized;Compute Engine;Compute;CPU;Compute-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.memory.optimized;Compute Engine;Compute;CPU;Memory-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2;Compute Engine;Compute;CPU;N2 Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2.premium;Compute Engine;Compute;CPU;Sole Tenancy Premium for N2 Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2.premium.overcommit;Compute Engine;Compute;CPU;Sole Tenancy Overcommit Premium for N2 Sole Tenancy Instance%;???
-gce.compute.cpu.sole.tenancy.n2d;Compute Engine;Compute;CPU;N2D AMD Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2d.premium;Compute Engine;Compute;CPU;Sole Tenancy Premium for N2D AMD Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium;Compute Engine;Compute;CPU;Sole Tenancy Premium for Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium.compute.optimized;Compute Engine;Compute;CPU;Sole Tenancy Premium for Compute-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium.memory.optimized;Compute Engine;Compute;CPU;Sole Tenancy Premium for Memory-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium.overcommit;Compute Engine;Compute;CPU;Sole Tenancy Overcommit Premium for Sole Tenancy Instance%;???
 gce.compute.cpu.t2a;Compute Engine;Compute;CPU;T2A Arm Instance%;The Tau T2A machine series does not support: Committed and Sustained-use discounts
 gce.compute.cpu.t2a.spot;Compute Engine;Compute;CPU;Spot Preemptible T2A Arm Instance%;
 gce.compute.cpu.t2d;Compute Engine;Compute;CPU;T2D AMD Instance%;
@@ -92,10 +80,6 @@ gce.compute.ram.compute.optimized;Compute Engine;Compute;RAM;Compute optimized%;
 gce.compute.ram.compute.optimized.1y;Compute Engine;Compute;RAM;Commitment: Compute optimized%1 Year;
 gce.compute.ram.compute.optimized.3y;Compute Engine;Compute;RAM;Commitment: Compute optimized%3 Year%;
 gce.compute.ram.compute.optimized.spot;Compute Engine;Compute;RAM;Spot Preemptible Compute optimized%;
-gce.compute.ram.custom;Compute Engine;Compute;RAM;Custom Instance%;
-gce.compute.ram.custom.extended;Compute Engine;Compute;RAM;Custom Extended Instance%;
-gce.compute.ram.custom.extended.spot;Compute Engine;Compute;RAM;Spot Preemptible Custom Extended Instance%;
-gce.compute.ram.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible Custom Instance%;
 gce.compute.ram.e2;Compute Engine;Compute;RAM;E2 Instance%;
 gce.compute.ram.e2.1y;Compute Engine;Compute;RAM;Commitment v1: E2%1 Year;
 gce.compute.ram.e2.3y;Compute Engine;Compute;RAM;Commitment v1: E2%3 Year%;
@@ -114,37 +98,23 @@ gce.compute.ram.memory.optimized.3y;Compute Engine;Compute;RAM;Commitment v1: Me
 gce.compute.ram.memory.optimized.premium.upgrade;Compute Engine;Compute;RAM;Memory Optimized Upgrade Premium for Memory-optimized Instance%;M2
 gce.compute.ram.memory.optimized.spot;Compute Engine;Compute;RAM;Spot Preemptible Memory-optimized Instance%;
 gce.compute.ram.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Ram%;CPU and RAM are in the same group
-gce.compute.ram.1y;Compute Engine;Compute;RAM;Commitment v1: Ram%1 Year;
-gce.compute.ram.3y;Compute Engine;Compute;RAM;Commitment v1: Ram%3 Year%;
+gce.compute.ram.n1.1y;Compute Engine;Compute;RAM;Commitment v1: Ram%1 Year;
+gce.compute.ram.n1.3y;Compute Engine;Compute;RAM;Commitment v1: Ram%3 Year%;
+gce.compute.ram.n1.custom;Compute Engine;Compute;RAM;Custom Instance%;
+gce.compute.ram.n1.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible Custom Instance%;
 gce.compute.ram.n1.spot;Compute Engine;Compute;N1Standard;Spot Preemptible N1 Predefined Instance Ram%;CPU and RAM are in the same group
 gce.compute.ram.n2;Compute Engine;Compute;RAM;N2 Instance%;
 gce.compute.ram.n2.1y;Compute Engine;Compute;RAM;Commitment v1: N2%1 Year;
 gce.compute.ram.n2.3y;Compute Engine;Compute;RAM;Commitment v1: N2%3 Year%;
 gce.compute.ram.n2.custom;Compute Engine;Compute;RAM;N2 Custom Instance%;
-gce.compute.ram.n2.custom.extended;Compute Engine;Compute;RAM;N2 Custom Extended%;
-gce.compute.ram.n2.custom.extended.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Custom Extended%;
 gce.compute.ram.n2.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Custom Instance%;
 gce.compute.ram.n2.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Instance%;
 gce.compute.ram.n2d;Compute Engine;Compute;RAM;N2D AMD Instance%;
 gce.compute.ram.n2d.1y;Compute Engine;Compute;RAM;Commitment v1: N2D%1 Year;
 gce.compute.ram.n2d.3y;Compute Engine;Compute;RAM;Commitment v1: N2D%3 Year%;
 gce.compute.ram.n2d.custom;Compute Engine;Compute;RAM;N2D AMD Custom Instance%;
-gce.compute.ram.n2d.custom.extended;Compute Engine;Compute;RAM;N2D AMD Custom Extended%;
-gce.compute.ram.n2d.custom.extended.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Custom Extended%;
 gce.compute.ram.n2d.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Custom Instance%;
 gce.compute.ram.n2d.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Instance%;
-gce.compute.ram.sole.tenancy;Compute Engine;Compute;RAM;Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.compute.optimized;Compute Engine;Compute;RAM;Compute-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.memory.optimized;Compute Engine;Compute;RAM;Memory-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2;Compute Engine;Compute;RAM;N2 Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2.premium;Compute Engine;Compute;RAM;Sole Tenancy Premium for N2 Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2.premium.overcommit;Compute Engine;Compute;RAM;Sole Tenancy Overcommit Premium for N2 Sole Tenancy Instance%;???
-gce.compute.ram.sole.tenancy.n2d;Compute Engine;Compute;RAM;N2D AMD Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2d.premium;Compute Engine;Compute;RAM;Sole Tenancy Premium for N2D AMD Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium;Compute Engine;Compute;RAM;Sole Tenancy Premium for Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium.compute.optimized;Compute Engine;Compute;RAM;Sole Tenancy Premium for Compute-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium.memory.optimized;Compute Engine;Compute;RAM;Sole Tenancy Premium for Memory-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium.overcommit;Compute Engine;Compute;RAM;Sole Tenancy Overcommit Premium for Sole Tenancy Instance%;???
 gce.compute.ram.t2a;Compute Engine;Compute;RAM;T2A Arm Instance%;The Tau T2A machine series does not support: Committed and Sustained-use discounts
 gce.compute.ram.t2a.spot;Compute Engine;Compute;RAM;Spot Preemptible T2A Arm Instance%;
 gce.compute.ram.t2d;Compute Engine;Compute;RAM;T2D AMD Instance%;
@@ -155,12 +125,11 @@ GPU;;;;;
 gce.compute.gpu.a100;Compute Engine;Compute;GPU;Nvidia Tesla A100 GPU running%;
 gce.compute.gpu.a100.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100%1 Year;
 gce.compute.gpu.a100.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100%3 Year%;
+gce.compute.gpu.a100.spot;Compute Engine;Compute;GPU;Nvidia Tesla A100 GPU attached%;
 gce.compute.gpu.a100.80gb;Compute Engine;Compute;GPU;Nvidia Tesla A100 80GB GPU running in%;
 gce.compute.gpu.a100.80gb.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100 80GB%1 Year;
 gce.compute.gpu.a100.80gb.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100 80GB%3 Year%;
-gce.compute.gpu.a100.80gb.reserved;Compute Engine;Compute;GPU;Reserved Nvidia Tesla A100 80GB GPU%;
-gce.compute.gpu.a100.reserved;Compute Engine;Compute;GPU;Reserved Nvidia Tesla A100 GPU%;
-gce.compute.gpu.a100.spot;Compute Engine;Compute;GPU;Nvidia Tesla A100 GPU attached%;
+gce.compute.gpu.a100.80gb.spot;Compute Engine;Compute;GPU;Nvidia Tesla A100 80GB GPU attached%;
 gce.compute.gpu.k80;Compute Engine;Compute;GPU;Nvidia Tesla K80 GPU running%;
 gce.compute.gpu.k80.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla K80%1 Year%;
 gce.compute.gpu.k80.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla K80%3 Year%;
