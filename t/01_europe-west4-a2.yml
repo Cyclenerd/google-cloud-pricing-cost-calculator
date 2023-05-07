@@ -23,3 +23,7 @@ instances:
   - name: a2-highgpu-8g-3y
     type: a2-highgpu-8g
     commitment: 3
+# Spot VM
+  - name: a2-highgpu-8g-spot
+    type: a2-highgpu-8g
+    spot: true

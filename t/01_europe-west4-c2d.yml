@@ -27,6 +27,10 @@ instances:
   - name: c2d-standard-8-3y
     type: c2d-standard-8
     commitment: 3
+# Spot VM
+  - name: c2d-standard-8-spot
+    type: c2d-standard-8
+    spot: true
 # C2D Highmem machine types
   - name: c2d-highmem-2
     type: c2d-highmem-2

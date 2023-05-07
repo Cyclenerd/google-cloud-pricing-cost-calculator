@@ -44,6 +44,7 @@ Resources that `gcosts` supports, and Google charges for:
 	- [x] Compute optimized (`C2`, `C2D`)
 	- [x] Accelerator optimized (`A2`, `G2`)
 - [x] Sustained use discounts (SUD) are applied to monthly costs
+- [x] Spot provisioning model (Spot VM) is supported
 - [x] 1 year and 3 year committed use discounts (CUD) are supported
 - [x] Paid "premium" operating system licenses (paid images) are supported
 	- [x] SUSE Linux Enterprise Server

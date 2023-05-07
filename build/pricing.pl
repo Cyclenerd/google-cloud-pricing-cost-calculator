@@ -88,6 +88,22 @@ open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YAML file '$yml_expo
 
 
 ###############################################################################
+# HELPER
+###############################################################################
+
+sub print_line {
+	print "-"x80 . "\n";
+}
+
+sub print_header {
+	my ($header) = @_;
+	&print_line();
+	print uc($header) . "\n";
+	&print_line();
+}
+
+
+###############################################################################
 # SKUS
 ###############################################################################
 
@@ -245,9 +261,7 @@ sub add_gcp_monitoring_data_add_details {
 	$gcp->{'monitoring'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
 
-print "-"x80 . "\n";
-print "MONITORING\n";
-print "-"x80 . "\n";
+&print_header("Monitoring");
 foreach my $region (@regions) {
 	my $value = 1; # per 1 mebibyte not GB
 	# Monitoring data
@@ -312,9 +326,7 @@ sub add_gcp_storage_bucket_details {
 	$gcp->{'storage'}->{'bucket'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
 
-print "-"x80 . "\n";
-print "BUCKET STORAGE\n";
-print "-"x80 . "\n";
+&print_header("Bucket Storage");
 foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 	my $value = 1; # 1 GB per month
 	my @bucket_regions;
@@ -395,9 +407,7 @@ sub add_gcp_compute_storage_details {
 	$gcp->{'compute'}->{'storage'}->{$disk}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
 
-print "-"x80 . "\n";
-print "DISK STORAGE\n";
-print "-"x80 . "\n";
+&print_header("Disk Storage");
 foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 	my $value = 1; # 1 GB per month
 	my @storage_regions = @regions;
@@ -550,9 +560,7 @@ sub add_gcp_compute_instance_details {
 	$gcp->{'compute'}->{'instance'}->{$machine}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
 
-print "-"x80 . "\n";
-print "INSTANCES\n";
-print "-"x80 . "\n";
+&print_header("Instances");
 foreach my $region (@regions) {
 	foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 		# CPU and RAM
@@ -1149,9 +1157,7 @@ sub add_gcp_compute_license_details {
 	$gcp->{'compute'}->{'license'}->{$machine}->{'cost'}->{$os}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
 
-print "-"x80 . "\n";
-print "LICENSES\n";
-print "-"x80 . "\n";
+&print_header("Licenses");
 foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	# License per vCPU
 	my $type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'} || '';
@@ -1434,9 +1440,7 @@ sub add_gcp_compute_egress_internet_australia_add_details {
 	$gcp->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
 
-print "-"x80 . "\n";
-print "NETWORK\n";
-print "-"x80 . "\n";
+&print_header("Network");
 foreach my $region (@regions) {
 	print "Network in region '$region'\n";
 	my $value = 1; # per 1 GB or hour

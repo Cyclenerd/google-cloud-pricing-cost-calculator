@@ -23,6 +23,10 @@ instances:
   - name: e2-standard-8-3y
     type: e2-standard-8
     commitment: 3
+# Spot VM
+  - name: e2-standard-8-spot
+    type: e2-standard-8
+    spot: true
 # E2 high-memory machine types
   - name: e2-highmem-2
     type: e2-highmem-2

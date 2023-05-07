@@ -29,6 +29,10 @@ instances:
   - name: n1-standard-8-3y
     type: n1-standard-8
     commitment: 3
+# Spot VM
+  - name: n1-standard-8-spot
+    type: n1-standard-8
+    spot: true
 # N1 high-memory machine types
   - name: n1-highmem-2
     type: n1-highmem-2

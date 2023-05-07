@@ -35,6 +35,10 @@ instances:
   - name: n2d-standard-8-3y
     type: n2d-standard-8
     commitment: 3
+# Spot VM
+  - name: n2d-standard-8-spot
+    type: n2d-standard-8
+    spot: true
 # N2D high-memory machine types
   - name: n2d-highmem-2
     type: n2d-highmem-2

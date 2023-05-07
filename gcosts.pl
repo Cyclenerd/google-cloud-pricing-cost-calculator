@@ -19,7 +19,7 @@
 # Help: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 
 BEGIN {
-	$VERSION = "2.0.0";
+	$VERSION = "2.1.0";
 }
 
 use strict;
@@ -91,14 +91,27 @@ open my $fh_totals, q{>}, "$totals_file" or die "ERROR: Cannot open CSV file '$t
 # HELPER
 ###############################################################################
 
-sub line {
-	print "-"x60 . "\n";
+sub print_line {
+	print "-"x80 . "\n";
 }
 
-sub double_line {
-	print "="x60 . "\n";
+sub print_double_line {
+	print "="x80 . "\n";
 }
 
+sub print_header {
+	my ($header) = @_;
+	&print_line();
+	print uc($header) . "\n";
+	&print_line();
+}
+
+sub print_title {
+	my ($title) = @_;
+	&print_double_line();
+	print uc($title) . "\n";
+	&print_double_line();
+}
 
 ###############################################################################
 # CHECK FUNCTIONS
@@ -172,6 +185,22 @@ sub check_commitment {
 	}
 }
 
+# &check_spot($spot)
+sub check_spot {
+	my ($spot) = @_;
+	if ($spot == '1') {
+		return '1';
+	} elsif ($spot eq 'true') {
+		return '1'
+	} elsif ($spot == '0') {
+		return '0';
+	} elsif ($spot eq 'false') {
+		return '0';
+	} else {
+		die "ERROR: Spot provisioning model '$spot' not valid!\n";
+	}
+}
+
 # &check_name($name)
 sub check_name {
 	my ($name) = @_;
@@ -236,7 +265,16 @@ sub check_commitment_cost {
 		return $cost;
 	}
 }
-
+sub check_spot_cost {
+	my ($spot_cost, $cost, $region) = @_;
+	if ($spot_cost =~ /^[+-]?([0-9]*[.])?[0-9]+$/) {
+		return $spot_cost;
+	} else {
+		warn "WARNING: Spot cost for '$spot_cost' in region '$region' not found! Apply standard cost: '$cost'.\n";
+		$sum_warnings++;
+		return $cost;
+	}
+}
 
 ###############################################################################
 # CALCULATION FUNCTIONS for bulk prices
@@ -345,7 +383,6 @@ sub cost {
 	$sum_regions{$region}   += $cost;
 	$sum_projects{$project} += $cost;
 	$sum_files{$file}       += $cost;
-
 }
 
 # &cost_monitoring($usage, $pricing)
@@ -584,6 +621,7 @@ sub cost_instances {
 		my $type       = &check_machine_type($pricing, $i->{'type'} || 'f1-micro');
 		my $os         = &check_os($pricing, $i->{'os'}             || 'free');
 		my $state      = &check_state($i->{'state'}                 || 'running'); # RUNNING, TERMINATED
+		my $spot       = &check_spot($i->{'spot'}                   || 'false');
 		my $commitment = &check_commitment($i->{'commitment'}       || '0');
 		my $discount   = &check_float($i->{'discount'}              || $usage->{'discount'});
 		my $ip         = &check_int($i->{'external-ip'}             || '0');
@@ -603,6 +641,9 @@ sub cost_instances {
 			$cost_instance= &check_commitment_cost($pricing->{'compute'}->{'instance'}->{$type}->{'cost'}->{$region}->{'month_1y'}||"compute > instance > type '$type'", '1 year', $cost_instance, $region);
 		} elsif ($commitment == '3') {
 			$cost_instance = &check_commitment_cost($pricing->{'compute'}->{'instance'}->{$type}->{'cost'}->{$region}->{'month_3y'}||"compute > instance > type '$type'", '3 year', $cost_instance, $region);
+		} elsif ($spot) {
+			$cost_instance= &check_spot_cost($pricing->{'compute'}->{'instance'}->{$type}->{'cost'}->{$region}->{'month_spot'}||"compute > instance > type '$type'", 'spot', $cost_instance, $region);
+			$commitment = 'spot';
 		}
 		$cost_instance = &add_discount($cost_instance, $discount);
 		&cost(
@@ -700,8 +741,7 @@ my $default_region   = &check_region($pricing, 'us-central1');
 my $default_project  = &check_name('gcp-calculator');
 my $default_discount = &check_float('1.0');
 
-print "COSTS\n";
-&double_line();
+print_title("Costs");
 print $fh join(";", (
 	'PROJECT',
 	'REGION',
@@ -718,8 +758,7 @@ print $fh join(";", (
 
 # Open usage files
 foreach my $usage_file (sort @usage_files) {
-	print "file : $usage_file\n";
-	&line();
+	print_header("file : $usage_file");
 	# Open YAML usage file
 	my $usage = LoadFile("$usage_file") or die "ERROR: Cannot open YAML file '$usage_file' to read Google Cloud Platform resources!\n";
 	# Read usage
@@ -734,7 +773,7 @@ foreach my $usage_file (sort @usage_files) {
 	print "project : $default_project\n";
 	print "region : $default_region\n";
 	print "discount : $default_discount\n";
-	&line();
+	&print_line();
 	print "\n";
 
 	# Monitoring
@@ -784,43 +823,41 @@ sub total {
 	))."\n";
 }
 
-print "TOTALS\n";
-&double_line();
+print_title("Totals");
 &total_header();
 
-print "\nNAME\n";
-&line();
+print_header("Name");
 foreach my $key (sort keys %sum_names) {
 	my $cost = $sum_names{$key};
 	&total('name', $key, $cost);
 }
-print "\nRESOURCE\n";
-&line();
+
+print_header("Resource");
 foreach my $key (sort keys %sum_services) {
 	my $cost = $sum_services{$key};
 	&total('resource', $key, $cost);
 }
-print "\nREGION\n";
-&line();
+
+print_header("Region");
 foreach my $key (sort keys %sum_regions) {
 	my $cost = $sum_regions{$key};
 	&total('region', $key, $cost);
 }
-print "\nFILE\n";
-&line();
+
+print_header("File");
 foreach my $key (sort keys %sum_files) {
 	my $cost = $sum_files{$key};
 	&total('file', $key, $cost);
 }
-print "\nPROJECT\n";
-&line();
+
+print_header("Project");
 foreach my $key (sort keys %sum_projects) {
 	my $cost = $sum_projects{$key};
 	&total('project', $key, $cost);
 }
 
 print "\n";
-&line();
+&print_line();
 if ($sum_warnings) {
 	print "WARNINGS: $sum_warnings\n";
 }

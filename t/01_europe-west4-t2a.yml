@@ -20,3 +20,7 @@ instances:
     type: t2a-standard-32
   - name: t2a-standard-48
     type: t2a-standard-48
+# Spot VM
+  - name: t2a-standard-8-spot
+    type: t2a-standard-8
+    spot: true
