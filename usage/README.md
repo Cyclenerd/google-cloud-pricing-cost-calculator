@@ -77,6 +77,7 @@ discount: 0.882
 instances:
   - name: SERVER-NAME
     type: MACHINE-TYPE
+    spot: true or false
     commitment: 0, 1 or 3
     os: free, sles, sles-sap, rhel, rhel-sap or windows
     external-ip: 0 or n
@@ -94,6 +95,9 @@ instances:
 * Supported machine types `type`:
     * Please see `instance` in [gcp.yml](../build/gcp.yml).
     * An overview and comparison of all [machine types](https://gcloud-compute.com/instances.html) can be found on the website: [https://gcloud-compute.com](https://gcloud-compute.com/)
+* Spot provisioning model `spot`:
+    * `true` : Calculate with Spot VM price
+    * `false` : Calculate with normal price
 * Commitment `commitment`:
     * `1` : 1 year
     * `3` : 3 years
@@ -110,7 +114,6 @@ instances:
     * `rhel-sap` : Red Hat Enterprise Linux for SAP
     * `windows`  : Windows Server
 * External IP address `external-ip` : Amount of external public IP addresses used
-
 
 You can also set the state `state`:
   * `terminated` : Stopped instance

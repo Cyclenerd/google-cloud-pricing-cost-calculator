@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright 2022 Nils Knieling. All Rights Reserved.
+# Copyright 2022-2023 Nils Knieling. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "1.0.0";
+	$VERSION = "1.1.0";
 }
 
 use strict;
@@ -79,18 +79,33 @@ my $sth = $dbh->prepare("SELECT MAPPING, SVC_DISPLAY_NAME, FAMILY, GROUP, SKU_DE
 $sth->execute();
 $sth->bind_columns(\my ($mapping, $service_display_name, $resource_family, $group, $sku_description));
 while ($sth->fetch) {
-	print "'$mapping'\n";
 	if ($service_display_name) {
-		print "  '$service_display_name'\n";
-		print "  '$resource_family'\n";
-		print "  '$group'\n";
-		print "  '$sku_description'\n";
-		my $update = $dbh->prepare("UPDATE $csv_skus SET MAPPING = ? WHERE SVC_DISPLAY_NAME = ? AND FAMILY = ? AND GROUP = ? AND SKU_DESCRIPTION LIKE ?");
-		$update->execute("$mapping", "$service_display_name", "$resource_family", "$group", "$sku_description");
+		print "* $mapping\n";
+		print "  - $service_display_name\n";
+		print "  - $resource_family\n";
+		print "  - $group\n";
+		print "  - $sku_description\n";
+		my $update = $dbh->prepare("UPDATE $csv_skus ".
+			"SET MAPPING = ? ".
+			"WHERE SVC_DISPLAY_NAME = ? ".
+			"AND FAMILY = ? ".
+			"AND GROUP = ? ".
+			"AND SKU_DESCRIPTION LIKE ?");
+		$update->execute(
+			"$mapping",
+			"$service_display_name",
+			"$resource_family",
+			"$group",
+			"$sku_description"
+		);
 		$update->finish;
 	} else {
 		print "-"x80 ."\n";
+		print uc($mapping) ."\n";
+		print "-"x80 ."\n";
 	}
-	
 }
 $dbh->disconnect;
+
+print "-"x80 ."\n";
+print "DONE\n";

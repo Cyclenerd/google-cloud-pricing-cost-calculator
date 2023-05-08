@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "2.1.0";
+	$VERSION = "2.2.0";
 }
 
 use strict;
@@ -88,6 +88,22 @@ open my $fh, q{>}, "$yml_export" or die "ERROR: Cannot open YAML file '$yml_expo
 
 
 ###############################################################################
+# HELPER
+###############################################################################
+
+sub print_line {
+	print "-"x80 . "\n";
+}
+
+sub print_header {
+	my ($header) = @_;
+	&print_line();
+	print uc($header) . "\n";
+	&print_line();
+}
+
+
+###############################################################################
 # SKUS
 ###############################################################################
 
@@ -110,7 +126,7 @@ my $csv = DBI->connect("dbi:CSV:", undef, undef, {
 my $dbname = ':memory:'; # https://sqlite.org/inmemorydb.html
 my $dbh = DBI->connect("dbi:SQLite:dbname=$dbname","","") or die "ERROR: Cannot connect to in-memory SQLite database $DBI::errstr\n";
 $dbh->do("DROP TABLE IF EXISTS skus");
-my $create_table = qq ~
+my $sql_create_table = qq ~
 	CREATE TABLE skus(
 		ID               INTEGER,
 		MAPPING          TEXT,
@@ -123,11 +139,11 @@ my $create_table = qq ~
 		PRIMARY KEY('ID' AUTOINCREMENT)
 	)
 ~;
-$dbh->do($create_table);
+$dbh->do($sql_create_table);
 # Copy only necessary data
 my $select_csv = $csv->prepare("SELECT MAPPING, REGIONS, NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION FROM $csv_skus");
 $select_csv->execute;
-$select_csv->bind_columns (\my ($mapping, $regions, $nanos, $units, $unit_description, $sku_id, $sku_description));
+$select_csv->bind_columns(\my ($mapping, $regions, $nanos, $units, $unit_description, $sku_id, $sku_description));
 my @values = ();
 while ($select_csv->fetch) {
 	next if $mapping eq 'TODO'; # skip TODO mapping
@@ -135,34 +151,45 @@ while ($select_csv->fetch) {
 	push(@values, $value);
 }
 # Insert data to SQLite database table
-my $insert = "INSERT INTO skus (MAPPING, REGIONS, NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION) VALUES";
-$insert .= join(",", @values);
-$insert .= ";\n";
-$dbh->do($insert) or die "ERROR: Cannot insert $DBI::errstr\n";
+my $sql_insert = "INSERT INTO skus (MAPPING, REGIONS, NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION) VALUES";
+$sql_insert .= join(",", @values);
+$sql_insert .= ";\n";
+$dbh->do($sql_insert) or die "ERROR: Cannot insert $DBI::errstr\n";
 
 
 ###############################################################################
 # SEARCH MAPPING
 ###############################################################################
 
-my $sth = $dbh->prepare ("SELECT NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION, REGIONS FROM skus WHERE MAPPING = ? AND REGIONS LIKE ?");
+my $sql_mapping = qq ~
+SELECT
+	NANOS,
+	UNITS,
+	UNIT_DESCRIPTION,
+	SKU_ID,
+	SKU_DESCRIPTION,
+	REGIONS
+FROM skus
+WHERE MAPPING = ?
+AND REGIONS LIKE ?
+~;
+my $sth = $dbh->prepare($sql_mapping);
 $sth->bind_columns (\my ($nanos, $units, $unit_description, $sku_id, $sku_description, $regions));
 
 # &mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description)
 sub mapping_found {
 	my ($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description) = @_;
 	print "OK: Mapping '$mapping' found in region '$region' found:\n";
-	print "    regions = '$regions'\n";
-	print "    value = '$value'\n";
-	print "    nanos = '$nanos'\n";
-	print "    units = '$units'\n";
-	print "    sku_id = '$sku_id'\n";
-	print "    unit_description = '$unit_description'\n";
-	print "    sku_description = '$sku_description'\n";
+	print "  - regions = '$regions'\n";
+	print "  - value = '$value'\n";
+	print "  - nanos = '$nanos'\n";
+	print "  - units = '$units'\n";
+	print "  - sku_id = '$sku_id'\n";
+	print "  - unit_description = '$unit_description'\n";
+	print "  - sku_description = '$sku_description'\n";
 }
 
 # &check_region($region, $regions);
-
 sub check_region {
 	my ($region, $regions) = @_;
 	if ($regions =~ /$region$/) {
@@ -176,6 +203,7 @@ sub check_region {
 		return 0;
 	}
 }
+
 # &calc_cost($value, $units, $nanos)
 sub calc_cost {
 	my ($value, $units, $nanos) = @_;
@@ -232,8 +260,8 @@ sub add_gcp_monitoring_data_add_details {
 	$gcp->{'monitoring'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'monitoring'}->{'data'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "\nMONITORING\n";
-print "-"x40 . "\n";
+
+&print_header("Monitoring");
 foreach my $region (@regions) {
 	my $value = 1; # per 1 mebibyte not GB
 	# Monitoring data
@@ -261,7 +289,16 @@ foreach my $region (@regions) {
 		&add_gcp_monitoring_data_add_cost('0-100000', $region, $cost_0_100000);
 		&add_gcp_monitoring_data_add_cost('100000-250000', $region, $cost_100000_250000);
 		&add_gcp_monitoring_data_add_cost('250000n', $region, $cost_250000n);
-		&add_gcp_monitoring_data_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		&add_gcp_monitoring_data_add_details(
+			$region,
+			$mapping,
+			$sku_id,
+			$value,
+			$nanos,
+			$units,
+			$unit_description,
+			$sku_description
+		) if ($export_details);
 	} else {
 		die "ERROR: '$mapping' (GLOBAL) not found for region '$region'!\n";
 	}
@@ -288,8 +325,8 @@ sub add_gcp_storage_bucket_details {
 	$gcp->{'storage'}->{'bucket'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'storage'}->{'bucket'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "\nBUCKET STORAGE\n";
-print "-"x40 . "\n";
+
+&print_header("Bucket Storage");
 foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 	my $value = 1; # 1 GB per month
 	my @bucket_regions;
@@ -312,7 +349,7 @@ foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 	elsif ($bucket eq 'dra-dual')       { $mapping = 'storage.dra.dual';       @bucket_regions = @dual_regions; }
 	elsif ($bucket eq 'dra-multi')      { $mapping = 'storage.dra';            @bucket_regions = @multi_regions; } # Multi and region are the same SKU
 	# Unknown storage type
-	else                                { die "ERROR: No mapping for storage bucket '$bucket'!\n"; }
+	else { die "ERROR: No mapping for storage bucket '$bucket'!\n"; }
 	foreach my $region (@bucket_regions) {
 		print "Bucket: $bucket\n";
 		print "MAPPING: '$mapping' in region '$region'\n";
@@ -328,7 +365,17 @@ foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 					$found = 1;
 					my $cost = &calc_cost($value, $units, $nanos);
 					&add_gcp_storage_bucket_cost('month', $bucket, $region, $cost);
-					&add_gcp_storage_bucket_details($bucket, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					&add_gcp_storage_bucket_details(
+						$bucket,
+						$region,
+						$mapping,
+						$sku_id,
+						$value,
+						$nanos,
+						$units,
+						$unit_description,
+						$sku_description
+					) if ($export_details);
 				}
 			}
 		}
@@ -359,8 +406,8 @@ sub add_gcp_compute_storage_details {
 	$gcp->{'compute'}->{'storage'}->{$disk}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'storage'}->{$disk}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "\nDISK STORAGE\n";
-print "-"x40 . "\n";
+
+&print_header("Disk Storage");
 foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 	my $value = 1; # 1 GB per month
 	my @storage_regions = @regions;
@@ -393,7 +440,7 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 		# Snapshot
 		elsif ($disk eq 'snapshot')            { $mapping = 'gce.storage.snapshot'; }
 		# Unknown storage type
-		else                                   { die "ERROR: No mapping for disk '$disk'!\n"; }
+		else { die "ERROR: No mapping for disk '$disk'!\n"; }
 		print "MAPPING: '$mapping' in region '$region'\n";
 		$sth->execute("$mapping", '%'."$region".'%'); # Search SKU(s)
 		my $found = 0;
@@ -412,7 +459,17 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 					# >5 GB  = 0.026 USD
 					my $cost = &calc_cost($value, $units, $nanos);
 					&add_gcp_compute_storage_cost('month', $disk, $region, $cost);
-					&add_gcp_compute_storage_details($disk, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+					&add_gcp_compute_storage_details(
+						$disk,
+						$region,
+						$mapping,
+						$sku_id,
+						$value,
+						$nanos,
+						$units,
+						$unit_description,
+						$sku_description
+					) if ($export_details);
 				}
 			}
 		}
@@ -432,7 +489,17 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 						$commitment_1y_found = 1;
 						my $cost = &calc_cost($value, $units, $nanos);
 						&add_gcp_compute_storage_cost('month_1y', $disk, $region, $cost);
-						&add_gcp_compute_storage_details($disk, $region, $mapping_1y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+						&add_gcp_compute_storage_details(
+							$disk,
+							$region,
+							$mapping_1y,
+							$sku_id,
+							$value,
+							$nanos,
+							$units,
+							$unit_description,
+							$sku_description
+						) if ($export_details);
 					}
 				}
 			}
@@ -451,7 +518,17 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 						$commitment_3y_found = 1;
 						my $cost = &calc_cost($value, $units, $nanos);
 						&add_gcp_compute_storage_cost('month_3y', $disk, $region, $cost);
-						&add_gcp_compute_storage_details($disk, $region, $mapping_3y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+						&add_gcp_compute_storage_details(
+							$disk,
+							$region,
+							$mapping_3y,
+							$sku_id,
+							$value,
+							$nanos,
+							$units,
+							$unit_description,
+							$sku_description
+						) if ($export_details);
 					}
 				}
 			}
@@ -482,8 +559,8 @@ sub add_gcp_compute_instance_details {
 	$gcp->{'compute'}->{'instance'}->{$machine}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'instance'}->{$machine}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "\nINSTANCES\n";
-print "-"x40 . "\n";
+
+&print_header("Instances");
 foreach my $region (@regions) {
 	foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 		# CPU and RAM
@@ -524,153 +601,184 @@ foreach my $region (@regions) {
 		# https://cloud.google.com/compute/docs/instances/signing-up-committed-use-discounts#commitment_types
 		my %mappings_1y;
 		my %mappings_3y;
+		# Mapping for Spot VMs
+		my %mappings_spot;
 		# Mapping for upgrades without commitments like M2 upgrade but with sustained use discount
 		my %mapping_upgrades;
 
 		# E2 Predefined
 		if ($type eq 'e2') {
-			$mappings{   'gce.compute.cpu.e2'}    = $cpu;
-			$mappings_1y{'gce.compute.cpu.e2.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.e2.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.e2'}    = $ram;
-			$mappings_1y{'gce.compute.ram.e2.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.e2.3y'} = $ram;
-		}
-		# N2 Predefined
-		elsif ($type eq 'n2') {
-			$mappings{   'gce.compute.cpu.n2'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.n2.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.n2.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.n2'   } = $ram;
-			$mappings_1y{'gce.compute.ram.n2.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.n2.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
-		}
-		# N2D Predefined
-		elsif ($type eq 'n2d') {
-			$mappings{   'gce.compute.cpu.n2d'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.n2d.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.n2d.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.n2d'   } = $ram;
-			$mappings_1y{'gce.compute.ram.n2d.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.n2d.3y'} = $ram;
-			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
-		}
-		# T2D Predefined
-		elsif ($type eq 't2d') {
-			$mappings{   'gce.compute.cpu.t2d'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.t2d.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.t2d.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.t2d'   } = $ram;
-			$mappings_1y{'gce.compute.ram.t2d.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.t2d.3y'} = $ram;
-		}
-		# T2A Predefined
-		# The Tau T2A machine series does not support: Committed and Sustained-use discounts
-		elsif ($type eq 't2a') {
-			$mappings{   'gce.compute.cpu.t2a'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.t2a.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.t2a.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.t2a'   } = $ram;
-			$mappings_1y{'gce.compute.ram.t2a.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.t2a.3y'} = $ram;
+			$mappings{     'gce.compute.cpu.e2'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.e2.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.e2.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.e2.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.e2'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.e2.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.e2.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.e2.spot'} = $ram;
 		}
 		# F1 Predefined
 		elsif ($type eq 'f1') {
-			$mappings{'gce.compute.cpu.f1'} = $cpu;
+			$mappings{     'gce.compute.cpu.f1'}      = $cpu;
+			$mappings_spot{'gce.compute.cpu.f1.spot'} = $cpu;
 			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 			# RAM incl.
 		}
 		# G1 Predefined
 		elsif ($type eq 'g1') {
-			$mappings{'gce.compute.cpu.g1'} = $cpu;
+			$mappings{     'gce.compute.cpu.g1'}      = $cpu;
+			$mappings_spot{'gce.compute.cpu.g1.spot'} = $cpu;
 			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 			# RAM incl.
 		}
 		# N1 Predefined
 		elsif ($type eq 'n1') {
-			$mappings{   'gce.compute.cpu.n1'} = $cpu; # N1!
-			$mappings_1y{'gce.compute.cpu.1y'} = $cpu; # without N1
-			$mappings_3y{'gce.compute.cpu.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.n1'} = $ram;
-			$mappings_1y{'gce.compute.ram.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.3y'} = $ram;
+			$mappings{     'gce.compute.cpu.n1'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n1.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n1.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.n1.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n1'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n1.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.n1.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.n1.spot'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 		}
 		# N1 Custom
 		elsif ($type eq 'n1-custom') {
-			$mappings{   'gce.compute.cpu.custom'} = $cpu;
-			$mappings_1y{'gce.compute.cpu.1y'    } = $cpu;
-			$mappings_3y{'gce.compute.cpu.3y'    } = $cpu;
-			$mappings{   'gce.compute.ram.custom'} = $ram;
-			$mappings_1y{'gce.compute.ram.1y'    } = $ram;
-			$mappings_3y{'gce.compute.ram.3y'    } = $ram;
+			$mappings{     'gce.compute.cpu.n1.custom'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n1.1y'}          = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n1.3y'}          = $cpu;
+			$mappings_spot{'gce.compute.cpu.n1.custom.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n1.custom'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n1.1y'}          = $ram;
+			$mappings_3y{  'gce.compute.ram.n1.3y'}          = $ram;
+			$mappings_spot{'gce.compute.ram.n1.custom.spot'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
+		}
+		# N2 Predefined
+		elsif ($type eq 'n2') {
+			$mappings{     'gce.compute.cpu.n2'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n2.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n2.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.n2.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n2'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n2.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.n2.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.n2.spot'} = $ram;
+			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# N2 Custom
 		elsif ($type eq 'n2-custom') {
-			$mappings{   'gce.compute.cpu.n2.custom'} = $cpu;
-			$mappings_1y{'gce.compute.cpu.n2.1y'    } = $cpu;
-			$mappings_3y{'gce.compute.cpu.n2.3y'    } = $cpu;
-			$mappings{   'gce.compute.ram.n2.custom'} = $ram;
-			$mappings_1y{'gce.compute.ram.n2.1y'    } = $ram;
-			$mappings_3y{'gce.compute.ram.n2.3y'    } = $ram;
+			$mappings{     'gce.compute.cpu.n2.custom'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n2.1y'}          = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n2.3y'}          = $cpu;
+			$mappings_spot{'gce.compute.cpu.n2.custom.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n2.custom'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n2.1y'}          = $ram;
+			$mappings_3y{  'gce.compute.ram.n2.3y'}          = $ram;
+			$mappings_spot{'gce.compute.ram.n2.custom.spot'} = $ram;
+			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
+		}
+		# N2D Predefined
+		elsif ($type eq 'n2d') {
+			$mappings{     'gce.compute.cpu.n2d'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n2d.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n2d.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.n2d.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n2d'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n2d.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.n2d.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.n2d.spot'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# N2D Custom
 		elsif ($type eq 'n2d-custom') {
-			$mappings{   'gce.compute.cpu.n2d.custom'} = $cpu;
-			$mappings_1y{'gce.compute.cpu.n2d.1y'    } = $cpu;
-			$mappings_3y{'gce.compute.cpu.n2d.3y'    } = $cpu;
-			$mappings{   'gce.compute.ram.n2d.custom'} = $ram;
-			$mappings_1y{'gce.compute.ram.n2d.1y'    } = $ram;
-			$mappings_3y{'gce.compute.ram.n2d.3y'    } = $ram;
+			$mappings{     'gce.compute.cpu.n2d.custom'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n2d.1y'}          = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n2d.3y'}          = $cpu;
+			$mappings_spot{'gce.compute.cpu.n2d.custom.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n2d.custom'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n2d.1y'}          = $ram;
+			$mappings_3y{  'gce.compute.ram.n2d.3y'}          = $ram;
+			$mappings_spot{'gce.compute.ram.n2d.custom.spot'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
+		}
+		# T2D Predefined
+		elsif ($type eq 't2d') {
+			$mappings{     'gce.compute.cpu.t2d'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.t2d.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.t2d.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.t2d.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.t2d'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.t2d.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.t2d.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.t2d.spot'} = $ram;
+		}
+		# T2A Predefined
+		# The Tau T2A machine series does not support: Committed and Sustained-use discounts
+		elsif ($type eq 't2a') {
+			$mappings{     'gce.compute.cpu.t2a'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.t2a.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.t2a.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.t2a.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.t2a'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.t2a.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.t2a.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.t2a.spot'} = $ram;
 		}
 		# C2
 		elsif ($type eq 'c2') {
-			$mappings{   'gce.compute.cpu.compute.optimized'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.compute.optimized.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.compute.optimized.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.compute.optimized'   } = $ram;
-			$mappings_1y{'gce.compute.ram.compute.optimized.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.compute.optimized.3y'} = $ram;
+			$mappings{     'gce.compute.cpu.compute.optimized'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.compute.optimized.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.compute.optimized.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.compute.optimized.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.compute.optimized'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.compute.optimized.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.compute.optimized.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.compute.optimized.spot'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
 		}
 		# C2D
 		elsif ($type eq 'c2d') {
-			$mappings{   'gce.compute.cpu.c2d'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.c2d.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.c2d.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.c2d'   } = $ram;
-			$mappings_1y{'gce.compute.ram.c2d.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.c2d.3y'} = $ram;
+			$mappings{     'gce.compute.cpu.c2d'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.c2d.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.c2d.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.c2d.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.c2d'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.c2d.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.c2d.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.c2d.spot'} = $ram;
 		}
 		# C3
 		elsif ($type eq 'c3') {
-			$mappings{   'gce.compute.cpu.c3'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.c3.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.c3.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.c3'   } = $ram;
-			$mappings_1y{'gce.compute.ram.c3.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.c3.3y'} = $ram;
+			$mappings{     'gce.compute.cpu.c3'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.c3.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.c3.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.c3.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.c3'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.c3.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.c3.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.c3.spot'} = $ram;
 		}
 		# M1
 		elsif ($type eq 'm1') {
-			$mappings{   'gce.compute.cpu.memory.optimized'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.memory.optimized.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.memory.optimized.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.memory.optimized'   } = $ram;
-			$mappings_1y{'gce.compute.ram.memory.optimized.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.memory.optimized.3y'} = $ram;
+			$mappings{     'gce.compute.cpu.memory.optimized'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.memory.optimized.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.memory.optimized.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.memory.optimized.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.memory.optimized'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.memory.optimized.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.memory.optimized.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.memory.optimized.spot'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n1 if $add_sud;
 		}
 		# M2
 		elsif ($type eq 'm2') {
-			$mappings{   'gce.compute.cpu.memory.optimized'   } = $cpu;
+			$mappings{   'gce.compute.cpu.memory.optimized'}   = $cpu;
 			$mappings_1y{'gce.compute.cpu.memory.optimized.1y'} = $cpu;
 			$mappings_3y{'gce.compute.cpu.memory.optimized.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.memory.optimized'   } = $ram;
+			# no spot provisioning mode (Spot VM)
+			$mappings{   'gce.compute.ram.memory.optimized'}   = $ram;
 			$mappings_1y{'gce.compute.ram.memory.optimized.1y'} = $ram;
 			$mappings_3y{'gce.compute.ram.memory.optimized.3y'} = $ram;
 			# M2 upgrade
@@ -680,43 +788,52 @@ foreach my $region (@regions) {
 		}
 		# M3
 		elsif ($type eq 'm3') {
-			$mappings{   'gce.compute.cpu.m3'   } = $cpu;
-			$mappings_1y{'gce.compute.cpu.m3.1y'} = $cpu;
-			$mappings_3y{'gce.compute.cpu.m3.3y'} = $cpu;
-			$mappings{   'gce.compute.ram.m3'   } = $ram;
-			$mappings_1y{'gce.compute.ram.m3.1y'} = $ram;
-			$mappings_3y{'gce.compute.ram.m3.3y'} = $ram;
+			$mappings{     'gce.compute.cpu.m3'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.m3.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.m3.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.m3.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.m3'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.m3.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.m3.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.m3.spot'} = $ram;
 			# M3 machine types do not offer sustained use discounts.
 		}
 		# A2
 		elsif ($type eq 'a2') {
-			$mappings{   'gce.compute.cpu.a2'     } = $cpu;
-			$mappings_1y{'gce.compute.cpu.a2.1y'  } = $cpu;
-			$mappings_3y{'gce.compute.cpu.a2.3y'  } = $cpu;
-			$mappings{   'gce.compute.ram.a2'     } = $ram;
-			$mappings_1y{'gce.compute.ram.a2.1y'  } = $ram;
-			$mappings_3y{'gce.compute.ram.a2.3y'  } = $ram;
+			$mappings{     'gce.compute.cpu.a2'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.a2.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.a2.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.a2.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.a2'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.a2.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.a2.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.a2.spot'} = $ram;
 			# NVIDIA's Ampere A100 40GB GPUs
-			$mappings{   'gce.compute.gpu.a100'   } = $a100;
-			$mappings_1y{'gce.compute.gpu.a100.1y'} = $a100;
-			$mappings_3y{'gce.compute.gpu.a100.3y'} = $a100;
+			$mappings{     'gce.compute.gpu.a100'}      = $a100;
+			$mappings_1y{  'gce.compute.gpu.a100.1y'}   = $a100;
+			$mappings_3y{  'gce.compute.gpu.a100.3y'}   = $a100;
+			$mappings_spot{'gce.compute.gpu.a100.spot'} = $a100;
 			# NVIDIA's Ampere A100 80GB HBM2e GPUs
-			$mappings{ 'gce.compute.gpu.a100.80gb' } = $a100_80gb;
-			$mappings_1y{'gce.compute.gpu.a100.80gb.1y'} = $a100_80gb;
-			$mappings_3y{'gce.compute.gpu.a100.80gb.3y'} = $a100_80gb;
+			$mappings{     'gce.compute.gpu.a100.80gb'}      = $a100_80gb;
+			$mappings_1y{  'gce.compute.gpu.a100.80gb.1y'}   = $a100_80gb;
+			$mappings_3y{  'gce.compute.gpu.a100.80gb.3y'}   = $a100_80gb;
+			$mappings_spot{'gce.compute.gpu.a100.80gb.spot'} = $a100_80gb;
 		}
 		# G2
 		elsif ($type eq 'g2') {
-			$mappings{   'gce.compute.cpu.g2'     } = $cpu;
-			$mappings_1y{'gce.compute.cpu.g2.1y'  } = $cpu;
-			$mappings_3y{'gce.compute.cpu.g2.3y'  } = $cpu;
-			$mappings{   'gce.compute.ram.g2'     } = $ram;
-			$mappings_1y{'gce.compute.ram.g2.1y'  } = $ram;
-			$mappings_3y{'gce.compute.ram.g2.3y'  } = $ram;
+			$mappings{     'gce.compute.cpu.g2'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.g2.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.g2.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.g2.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.g2'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.g2.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.g2.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.g2.spot'} = $ram;
 			# NVIDIA's L4 GPUs
-			$mappings{   'gce.compute.gpu.l4'   } = $l4;
-			$mappings_1y{'gce.compute.gpu.l4.1y'} = $l4;
-			$mappings_3y{'gce.compute.gpu.l4.3y'} = $l4;
+			$mappings{     'gce.compute.gpu.l4'}     = $l4;
+			$mappings_1y{  'gce.compute.gpu.l4.1y'}   = $l4;
+			$mappings_3y{  'gce.compute.gpu.l4.3y'}   = $l4;
+			$mappings_spot{'gce.compute.gpu.l4.spot'} = $l4;
 		}
 		# Unknown family
 		else {
@@ -788,7 +905,17 @@ foreach my $region (@regions) {
 					} else {
 						$found = 1;
 						$upgrade_costs += &calc_cost($value, $units, $nanos); # SUM
-						&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+						&add_gcp_compute_instance_details(
+							$machine,
+							$region,
+							$mapping,
+							$sku_id,
+							$value,
+							$nanos,
+							$units,
+							$unit_description,
+							$sku_description
+						) if ($export_details);
 					}
 				}
 			}
@@ -844,7 +971,17 @@ foreach my $region (@regions) {
 					} else {
 						$found = 1;
 						$costs_1y += &calc_cost($value, $units, $nanos); # SUM
-						&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+						&add_gcp_compute_instance_details(
+							$machine,
+							$region,
+							$mapping,
+							$sku_id,
+							$value,
+							$nanos,
+							$units,
+							$unit_description,
+							$sku_description
+						) if ($export_details);
 					}
 				}
 			}
@@ -867,7 +1004,12 @@ foreach my $region (@regions) {
 			}
 			$costs_month_1y = $costs_month;
 		}
-		&add_gcp_compute_instance_cost('month_1y', $machine, $region, $costs_month_1y+$costs_with_sustained_use_discount_for_upgrade_100);
+		&add_gcp_compute_instance_cost(
+			'month_1y',
+			$machine,
+			$region,
+			$costs_month_1y+$costs_with_sustained_use_discount_for_upgrade_100
+		);
 
 		my $costs_3y = 0;
 		print "Check 3 Year Commitment:\n";
@@ -898,7 +1040,17 @@ foreach my $region (@regions) {
 					} else {
 						$found = 1;
 						$costs_3y += &calc_cost($value, $units, $nanos); # SUM
-						&add_gcp_compute_instance_details($machine, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+						&add_gcp_compute_instance_details(
+							$machine,
+							$region,
+							$mapping,
+							$sku_id,
+							$value,
+							$nanos,
+							$units,
+							$unit_description,
+							$sku_description
+						) if ($export_details);
 					}
 				}
 			}
@@ -921,7 +1073,66 @@ foreach my $region (@regions) {
 			}
 			$costs_month_3y = $costs_month_1y;
 		}
-		&add_gcp_compute_instance_cost('month_3y', $machine, $region, $costs_month_3y+$costs_with_sustained_use_discount_for_upgrade_100);
+		&add_gcp_compute_instance_cost(
+			'month_3y',
+			$machine,
+			$region,
+			$costs_month_3y+$costs_with_sustained_use_discount_for_upgrade_100
+		);
+
+		# Spot VMs
+		my $costs_spot = 0;
+		print "Check Spot VM:\n";
+		foreach my $mapping (keys %mappings_spot) {
+			print "Spot VM Mapping: '$mapping'\n";
+			my $value = $mappings_spot{$mapping} || '0';
+			$sth->execute("$mapping", '%'."$region".'%'); # Search SKU(s)
+			my $found = 0;
+			while ($sth->fetch) {
+				# asia-northeast1
+				# Skip SKU for 'Spot Preemptible Memory-optimized Instance Core running in Japan', use Tokyo
+				next if ($sku_id eq '939D-7E43-244A');
+				# Skip SKU for 'Spot Preemptible Memory-optimized Instance Ram running in Japan', use Tokyo
+				next if ($sku_id eq '7CDE-C4C3-FE63');
+				# asia-southeast1
+				# Skip cheaper SKU for 'Spot Preemptible Memory-optimized Instance Core running in Singapore'
+				next if ($sku_id eq 'D92B-7B2B-F4CB');
+				# Skip duplicate SKU for 'Spot Preemptible Memory-optimized Instance Ram running in Singapore'
+				next if ($sku_id eq '768B-2116-67EA');
+
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($found) {
+						# Skip duplicate SKUs for 'Virginia' and 'Northern Virginia' (both us-east4)
+						next if ($sku_description =~ /Virginia/);
+						die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n";
+					} else {
+						$found = 1;
+						$costs_spot += &calc_cost($value, $units, $nanos); # SUM
+						&add_gcp_compute_instance_details(
+							$machine,
+							$region,
+							$mapping,
+							$sku_id,
+							$value,
+							$nanos,
+							$units,
+							$unit_description,
+							$sku_description
+						) if ($export_details);
+					}
+				}
+			}
+			$sth->finish;
+			unless ($found) {
+				warn "WARNING: '$mapping' not found in region '$region'!\n";
+			}
+		}
+		if ($costs_spot > 0) {
+			&add_gcp_compute_instance_cost('hour_spot',  $machine, $region, $costs_spot);
+			&add_gcp_compute_instance_cost('month_spot', $machine, $region, $costs_spot*$hours_month);
+		}
 	}
 }
 
@@ -945,8 +1156,8 @@ sub add_gcp_compute_license_details {
 	$gcp->{'compute'}->{'license'}->{$machine}->{'cost'}->{$os}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'license'}->{$machine}->{'cost'}->{$os}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "\nLICENSES\n";
-print "-"x40 . "\n";
+
+&print_header("Licenses");
 foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	# License per vCPU
 	my $type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'} || '';
@@ -1033,7 +1244,7 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 			$mapping = $windows_mapping;
 			$value   = $cpu; # license per vCPU (core/hour)
 		}
-		else                      { die "ERROR: No mapping for OS '$os'!\n"; }
+		else { die "ERROR: No mapping for OS '$os'!\n"; }
 
 		print "MAPPING: '$mapping' in region '$region'\n";
 		$sth->execute($mapping, $region); # Search SKU(s)
@@ -1043,7 +1254,17 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 			my $cost = &calc_cost($value, $units, $nanos);
 			&add_gcp_compute_license_cost('hour', $machine, $os, $cost);
 			&add_gcp_compute_license_cost('month', $machine, $os, $cost*$hours_month);
-			&add_gcp_compute_license_details($machine, $os, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_license_details(
+				$machine,
+				$os,
+				$mapping,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		} else {
 			die "ERROR: '$mapping' not found in region '$region'!\n";
 		}
@@ -1056,7 +1277,17 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 			&mapping_found($mapping_1y, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 			my $cost = &calc_cost($value, $units, $nanos);
 			&add_gcp_compute_license_cost('month_1y', $machine, $os, $cost*$hours_month);
-			&add_gcp_compute_license_details($machine, $os, $mapping_1y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_license_details(
+				$machine,
+				$os,
+				$mapping_1y,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		}
 		$sth->finish;
 		print "Check 3 Year Commitment:\n";
@@ -1067,7 +1298,17 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 			&mapping_found($mapping_3y, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 			my $cost = &calc_cost($value, $units, $nanos);
 			&add_gcp_compute_license_cost('month_3y', $machine, $os, $cost*$hours_month);
-			&add_gcp_compute_license_details($machine, $os, $mapping_3y, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_license_details(
+				$machine,
+				$os,
+				$mapping_3y,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		}
 		$sth->finish;
 	}
@@ -1198,8 +1439,8 @@ sub add_gcp_compute_egress_internet_australia_add_details {
 	$gcp->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
 	$gcp->{'compute'}->{'network'}->{'traffic'}->{'egress'}->{'internet'}->{'australia'}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
 }
-print "\nNETWORK\n";
-print "-"x40 . "\n";
+
+&print_header("Network");
 foreach my $region (@regions) {
 	print "Network in region '$region'\n";
 	my $value = 1; # per 1 GB or hour
@@ -1218,7 +1459,16 @@ foreach my $region (@regions) {
 			my $cost = &calc_cost($value, $units, $nanos);
 			&add_gcp_compute_ip_unused_cost('hour', $region, $cost);
 			&add_gcp_compute_ip_unused_cost('month', $region, $cost*$hours_month);
-			&add_gcp_compute_ip_unused_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_ip_unused_details(
+				$region,
+				$mapping,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		}
 	}
 	$sth->finish;
@@ -1233,7 +1483,16 @@ foreach my $region (@regions) {
 		my $cost = &calc_cost($value, $units, $nanos);
 		&add_gcp_compute_ip_vm_cost('hour', $region, $cost);
 		&add_gcp_compute_ip_vm_cost('month', $region, $cost*$hours_month);
-		&add_gcp_compute_ip_vm_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		&add_gcp_compute_ip_vm_details(
+			$region,
+			$mapping,
+			$sku_id,
+			$value,
+			$nanos,
+			$units,
+			$unit_description,
+			$sku_description
+		) if ($export_details);
 	}
 	$sth->finish;
 	# No charge for static and ephemeral IP addresses attached to forwarding rules, used by
@@ -1250,7 +1509,16 @@ foreach my $region (@regions) {
 			my $cost = &calc_cost($value, $units, $nanos);
 			&add_gcp_compute_vpn_tunnel_cost('hour', $region, $cost);
 			&add_gcp_compute_vpn_tunnel_cost('month', $region, $cost*$hours_month);
-			&add_gcp_compute_vpn_tunnel_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_vpn_tunnel_details(
+				$region,
+				$mapping,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		}
 	}
 	$sth->finish;
@@ -1268,7 +1536,16 @@ foreach my $region (@regions) {
 		$cost = $cost * 32; # max price for more than 32 VM instances (always $0.044)
 		&add_gcp_compute_nat_gateway_cost('hour', $region, $cost);
 		&add_gcp_compute_nat_gateway_cost('month', $region, $cost*$hours_month);
-		&add_gcp_compute_nat_gateway_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		&add_gcp_compute_nat_gateway_details(
+			$region,
+			$mapping,
+			$sku_id,
+			$value,
+			$nanos,
+			$units,
+			$unit_description,
+			$sku_description
+		) if ($export_details);
 	}
 	$sth->finish;
 
@@ -1282,7 +1559,16 @@ foreach my $region (@regions) {
 		&mapping_found($mapping, 'global', $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
 		my $cost = &calc_cost($value, $units, $nanos);
 		&add_gcp_compute_nat_gateway_data_cost('month', $region, $cost);
-		&add_gcp_compute_nat_gateway_data_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+		&add_gcp_compute_nat_gateway_data_details(
+			$region,
+			$mapping,
+			$sku_id,
+			$value,
+			$nanos,
+			$units,
+			$unit_description,
+			$sku_description
+		) if ($export_details);
 	}
 	$sth->finish;
 
@@ -1312,7 +1598,16 @@ foreach my $region (@regions) {
 			&add_gcp_compute_egress_internet_add_cost('0-1', $region, $cost_0_1);
 			&add_gcp_compute_egress_internet_add_cost('1-10', $region, $cost_1_10);
 			&add_gcp_compute_egress_internet_add_cost('10n', $region, $cost_10n);
-			&add_gcp_compute_egress_internet_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_egress_internet_add_details(
+				$region,
+				$mapping,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		}
 	}
 	$sth->finish;
@@ -1337,7 +1632,16 @@ foreach my $region (@regions) {
 			&add_gcp_compute_egress_internet_china_add_cost('0-1', $region, $cost_0_1);
 			&add_gcp_compute_egress_internet_china_add_cost('1-10', $region, $cost_1_10);
 			&add_gcp_compute_egress_internet_china_add_cost('10n', $region, $cost_10n);
-			&add_gcp_compute_egress_internet_china_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_egress_internet_china_add_details(
+				$region,
+				$mapping,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		}
 	}
 	$sth->finish;
@@ -1366,7 +1670,16 @@ foreach my $region (@regions) {
 			&add_gcp_compute_egress_internet_australia_add_cost('0-1', $region, $cost_0_1);
 			&add_gcp_compute_egress_internet_australia_add_cost('1-10', $region, $cost_1_10);
 			&add_gcp_compute_egress_internet_australia_add_cost('10n', $region, $cost_10n);
-			&add_gcp_compute_egress_internet_australia_add_details($region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) if ($export_details);
+			&add_gcp_compute_egress_internet_australia_add_details(
+				$region,
+				$mapping,
+				$sku_id,
+				$value,
+				$nanos,
+				$units,
+				$unit_description,
+				$sku_description
+			) if ($export_details);
 		}
 	}
 	$sth->finish;

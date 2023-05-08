@@ -56,6 +56,7 @@ MY_CHECKS=(
 	# E2 Commitment (CUD)
 	'europe-west4;vm;e2-standard-8-1y;135' # Google Cloud Pricing Calculator: $135.71
 	'europe-west4;vm;e2-standard-8-3y;96'  # Google Cloud Pricing Calculator: $96.94
+	'europe-west4;vm;e2-standard-8-spot;'
 	# E2 high-memory machine types
 	'europe-west4;vm;e2-highmem-2;72'
 	'europe-west4;vm;e2-highmem-4;145'
@@ -87,6 +88,7 @@ MY_CHECKS=(
 	# N2 Commitment (CUD)
 	'europe-west4;vm;n2-standard-8-1y;196' # Google Cloud Pricing Calculator: $196.67
 	'europe-west4;vm;n2-standard-8-3y;140' # Google Cloud Pricing Calculator: $140.49
+	'europe-west4;vm;n2-standard-8-spot;'
 	# N2 high-memory machine types
 	'europe-west4;vm;n2-highmem-2;84'
 	'europe-west4;vm;n2-highmem-4;168'
@@ -130,6 +132,7 @@ MY_CHECKS=(
 	# N2D Commitment (CUD)
 	'europe-west4;vm;n2d-standard-8-1y;171' # Google Cloud Pricing Calculator: $171.11
 	'europe-west4;vm;n2d-standard-8-3y;122' # Google Cloud Pricing Calculator: $122.23
+	'europe-west4;vm;n2d-standard-8-spot;'
 	# N2D high-memory machine types
 	'europe-west4;vm;n2d-highmem-2;73'
 	'europe-west4;vm;n2d-highmem-4;146'
@@ -164,6 +167,9 @@ MY_CHECKS=(
 	'europe-west4;vm;t2d-standard-16;543'
 	'europe-west4;vm;t2d-standard-32;1086'
 	'europe-west4;vm;t2d-standard-48;1629'
+	# T2D Commitment (CUD)
+	'europe-west4;vm;t2d-standard-8-1y;171' # Google Cloud Pricing Calculator: $171.11
+	'europe-west4;vm;t2d-standard-8-3y;122' # Google Cloud Pricing Calculator: $122.23
 	# Tau T2A standard machine types
 	'europe-west4;vm;t2a-standard-1;30'
 	'europe-west4;vm;t2a-standard-2;61'
@@ -172,9 +178,8 @@ MY_CHECKS=(
 	'europe-west4;vm;t2a-standard-16;494'
 	'europe-west4;vm;t2a-standard-32;989'
 	'europe-west4;vm;t2a-standard-48;1484'
-	# T2D Commitment (CUD)
-	'europe-west4;vm;t2d-standard-8-1y;171' # Google Cloud Pricing Calculator: $171.11
-	'europe-west4;vm;t2d-standard-8-3y;122' # Google Cloud Pricing Calculator: $122.23
+	# T2A Spot VM
+	'europe-west4;vm;t2a-standard-8-spot;'
 	# N1 standard machine types
 	'europe-west4;vm;n1-standard-1;26'
 	'europe-west4;vm;n1-standard-2;53'
@@ -187,6 +192,7 @@ MY_CHECKS=(
 	# N1 Commitment (CUD)
 	'europe-west4;vm;n1-standard-8-1y;192'
 	'europe-west4;vm;n1-standard-8-3y;137'
+	'europe-west4;vm;n1-standard-8-spot;'
 	# N1 high-memory machine types
 	'europe-west4;vm;n1-highmem-2;66'
 	'europe-west4;vm;n1-highmem-4;133'
@@ -228,6 +234,7 @@ MY_CHECKS=(
 	# C2 Commitment (CUD)
 	'europe-west4;vm;c2-standard-8-1y;211' # Google Cloud Pricing Calculator: $211.41
 	'europe-west4;vm;c2-standard-8-3y;134' # Google Cloud Pricing Calculator: $134.26
+	'europe-west4;vm;c2-standard-8-spot;'
 	# C2D Standard machine types
 	'europe-west4;vm;c2d-standard-2;72'
 	'europe-west4;vm;c2d-standard-4;145'
@@ -241,6 +248,7 @@ MY_CHECKS=(
 	# C2D Commitment (CUD)
 	'europe-west4;vm;c2d-standard-8-1y;183'
 	'europe-west4;vm;c2d-standard-8-3y;131'
+	'europe-west4;vm;c2d-standard-8-spot;'
 	# C2D Highmem machine types
 	'europe-west4;vm;c2d-highmem-2;98'
 	'europe-west4;vm;c2d-highmem-4;196'
@@ -260,6 +268,7 @@ MY_CHECKS=(
 	'europe-west4;vm;m3-ultramem-32;4896'
 	'europe-west4;vm;m3-ultramem-32-1y;2897'
 	'europe-west4;vm;m3-ultramem-32-3y;1469'
+	'europe-west4;vm;m3-ultramem-32-spot;'
 	# » m3-ultramem-64
 	'europe-west4;vm;m3-ultramem-64;9792'
 	'europe-west4;vm;m3-ultramem-64-1y;5795'
@@ -298,6 +307,7 @@ MY_CHECKS=(
 	'europe-west4;vm;m1-ultramem-40;3381' # Google Cloud Pricing Calculator: $3381.02, Price List: $3380.776
 	'europe-west4;vm;m1-ultramem-40-1y;2846'
 	'europe-west4;vm;m1-ultramem-40-3y;1449'
+	'europe-west4;vm;m1-ultramem-40-spot;'
 	# » m1-ultramem-80
 	'europe-west4;vm;m1-ultramem-80;6762'
 	'europe-west4;vm;m1-ultramem-80-1y;5692'
@@ -323,6 +333,7 @@ MY_CHECKS=(
 	# A2 Commitment (CUD)
 	'europe-west4;vm;a2-highgpu-8g-1y;13789' # Google Cloud Pricing Calculator: $13789.38, Price List: $13787.27
 	'europe-west4;vm;a2-highgpu-8g-3y;7661'  # Google Cloud Pricing Calculator: $7661.01, Price List: $7661.79
+	'europe-west4;vm;a2-highgpu-8g-spot;'
 	# A2 with A100 80GB and local SSD
 	# Pirce list: a2-ultragpu-1g in us-central1 = $3700.22
 	'us-central1;vm;a2-ultragpu-1g;3670'
@@ -341,6 +352,7 @@ MY_CHECKS=(
 	# G2 Commitment (CUD)
 	'europe-west4;vm;g2-standard-8-1y;4' # Google Cloud Pricing Calculator: ???, Price List: $433.36961
 	'europe-west4;vm;g2-standard-8-3y;3' # Google Cloud Pricing Calculator: ???, Price List: $310.5931
+	'europe-west4;vm;g2-standard-8-spot;'
 	#
 	# Regions
 	# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family

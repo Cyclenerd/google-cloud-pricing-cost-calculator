@@ -43,3 +43,7 @@ instances:
   - name: m1-megamem-96-3y
     type: m1-megamem-96
     commitment: 3
+# Spot VM
+  - name: m1-ultramem-40-spot
+    type: m1-ultramem-40
+    spot: true

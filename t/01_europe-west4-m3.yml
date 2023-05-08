@@ -52,3 +52,7 @@ instances:
   - name: m3-megamem-128-3y
     type: m3-megamem-128
     commitment: 3
+# Spot VM
+  - name: m3-ultramem-32-spot
+    type: m3-ultramem-32
+    spot: true

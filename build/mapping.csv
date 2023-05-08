@@ -1,289 +1,262 @@
 MAPPING;SVC_DISPLAY_NAME;FAMILY;GROUP;SKU_DESCRIPTION;COMMENT
-gce.compute.security.policy;Compute Engine;Compute;SecurityPolicy;Cloud Armor Policy Charge;
-gce.compute.security.rule;Compute Engine;Compute;SecurityPolicy;Cloud Armor Rule Charge;
-monitoring.data;Cloud Monitoring;ApplicationServices;Monitoring;Metric Volume;in mebibyte not gb!
-NETWORK;;;;;
-gce.network.ip.external;Compute Engine;Network;IpAddress;External IP Charge on a Standard VM;GLOBAL
-gce.network.ip.external.spot;Compute Engine;Network;IpAddress;External IP Charge on a Spot Preemptible VM;GLOBAL
-gce.network.ip.external.unused;Compute Engine;Network;IpAddress;Static Ip Charge%;Static external IP address (assigned but unused)
-gce.network.vpn.tunnel;Networking;Network;VPNTunnel;Networking Cloud VPN Tunnel%;hours
-gce.network.vpn.tunnel.egress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Americas;From... to..., Gb, bulk price! SAME AS PremiumInternetEgress 
-gce.network.vpn.tunnel.egress.china;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%China;SAME AS PremiumInternetEgress 
-gce.network.vpn.tunnel.egress.australia;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Australia;SAME AS PremiumInternetEgress 
-gce.network.vpn.tunnel.ingress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Ingress;Free
-gce.network.nat.gateway;Networking;Network;Nat;Networking Cloud Nat Gateway Uptime%;hours
-gce.network.nat.gateway.data;Networking;Network;Nat;Networking Cloud Nat Data Processing%;cost per GB of data that is processed by the gateway
-gce.network.internet.egress;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Americas;From... to..., Gb, bulk price!
-gce.network.internet.egress.china;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%China;
-gce.network.internet.egress.australia;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Australia;
-gce.network.internet.ingress;Compute Engine;Network;PremiumInternetEgress;Network Internet Ingress%;Free
-TIER1;;;;;
-gcp.network.tier1.100;Compute Engine;Network;AdvancedNetworking;On-demand fee for total VM network bandwidth up to 100%;hours
-gcp.network.tier1.75;Compute Engine;Network;AdvancedNetworking;On-demand fee for total VM network bandwidth up to 75%;hours
-gcp.network.tier1.50;Compute Engine;Network;AdvancedNetworking;On-demand fee for total VM network bandwidth up to 50%;hours
-gcp.network.tier1.100.spot;Compute Engine;Network;AdvancedNetworking;Preemptible fee for total VM network bandwidth up to 100%;???
-gcp.network.tier1.75.spot;Compute Engine;Network;AdvancedNetworking;Preemptible fee for total VM network bandwidth up to 75%;???
-gcp.network.tier1.50.spot;Compute Engine;Network;AdvancedNetworking;Preemptible fee for total VM network bandwidth up to 50%;???
+CPU;;;;;
+gce.compute.cpu.a2;Compute Engine;Compute;CPU;A2 Instance%;
+gce.compute.cpu.a2.1y;Compute Engine;Compute;CPU;Commitment v1: A2%1 Year;
+gce.compute.cpu.a2.3y;Compute Engine;Compute;CPU;Commitment v1: A2%3 Year%;
+gce.compute.cpu.a2.reserved;Compute Engine;Compute;CPU;Reserved A2%;
+gce.compute.cpu.a2.spot;Compute Engine;Compute;CPU;Spot Preemptible A2 Instance%;
+gce.compute.cpu.c2d;Compute Engine;Compute;CPU;C2D AMD Instance%;
+gce.compute.cpu.c2d.1y;Compute Engine;Compute;CPU;Commitment v1: C2D%1 Year;
+gce.compute.cpu.c2d.3y;Compute Engine;Compute;CPU;Commitment v1: C2D%3 Year%;
+gce.compute.cpu.c2d.spot;Compute Engine;Compute;CPU;Spot Preemptible C2D AMD Instance%;
+gce.compute.cpu.c3;Compute Engine;Compute;CPU;C3 Instance%;
+gce.compute.cpu.c3.1y;Compute Engine;Compute;CPU;Commitment v1: C3%1 Year;
+gce.compute.cpu.c3.3y;Compute Engine;Compute;CPU;Commitment v1: C3%3 Year%;
+gce.compute.cpu.c3.spot;Compute Engine;Compute;CPU;Spot Preemptible C3 Instance%;
+gce.compute.cpu.compute.optimized;Compute Engine;Compute;CPU;Compute optimized%;
+gce.compute.cpu.compute.optimized.1y;Compute Engine;Compute;CPU;Commitment: Compute optimized%1 Year;
+gce.compute.cpu.compute.optimized.3y;Compute Engine;Compute;CPU;Commitment: Compute optimized%3 Year%;
+gce.compute.cpu.compute.optimized.spot;Compute Engine;Compute;CPU;Spot Preemptible Compute optimized%;
+gce.compute.cpu.e2;Compute Engine;Compute;CPU;E2 Instance%;
+gce.compute.cpu.e2.1y;Compute Engine;Compute;CPU;Commitment v1: E2%1 Year;
+gce.compute.cpu.e2.3y;Compute Engine;Compute;CPU;Commitment v1: E2%3 Year%;
+gce.compute.cpu.e2.spot;Compute Engine;Compute;CPU;Spot Preemptible E2 Instance%;
+gce.compute.cpu.f1;Compute Engine;Compute;F1Micro;Micro Instance with burstable CPU%;
+gce.compute.cpu.f1.spot;Compute Engine;Compute;F1Micro;Spot Preemptible Micro Instance with burstable CPU%;
+gce.compute.cpu.g1;Compute Engine;Compute;G1Small;Small Instance with 1 VCPU%;
+gce.compute.cpu.g1.spot;Compute Engine;Compute;G1Small;Spot Preemptible Small Instance with 1 VCPU%;
+gce.compute.cpu.g2;Compute Engine;Compute;CPU;G2 Instance%;
+gce.compute.cpu.g2.1y;Compute Engine;Compute;CPU;Commitment v1: G2%1 Year;
+gce.compute.cpu.g2.3y;Compute Engine;Compute;CPU;Commitment v1: G2%3 Year%;
+gce.compute.cpu.g2.spot;Compute Engine;Compute;CPU;Spot Preemptible G2 Instance%;
+gce.compute.cpu.m3;Compute Engine;Compute;CPU;M3 Memory-optimized Instance%;
+gce.compute.cpu.m3.1y;Compute Engine;Compute;CPU;Commitment v1: M3 Memory-optimized%1 Year;
+gce.compute.cpu.m3.3y;Compute Engine;Compute;CPU;Commitment v1: M3 Memory-optimized%3 Year%;
+gce.compute.cpu.m3.spot;Compute Engine;Compute;CPU;Spot Preemptible M3 Memory-optimized Instance%;
+gce.compute.cpu.memory.optimized;Compute Engine;Compute;CPU;Memory-optimized Instance%;
+gce.compute.cpu.memory.optimized.1y;Compute Engine;Compute;CPU;Commitment v1: Memory-optimized%1 Year;
+gce.compute.cpu.memory.optimized.3y;Compute Engine;Compute;CPU;Commitment v1: Memory-optimized%3 Year%;
+gce.compute.cpu.memory.optimized.premium.upgrade;Compute Engine;Compute;CPU;Memory Optimized Upgrade Premium for Memory-optimized Instance%;M2
+gce.compute.cpu.memory.optimized.spot;Compute Engine;Compute;CPU;Spot Preemptible Memory-optimized Instance%;
+gce.compute.cpu.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Core%;CPU and RAM are in the same group
+gce.compute.cpu.n1.1y;Compute Engine;Compute;CPU;Commitment v1: Cpu%1 Year;
+gce.compute.cpu.n1.3y;Compute Engine;Compute;CPU;Commitment v1: Cpu%3 Year%;
+gce.compute.cpu.n1.custom;Compute Engine;Compute;CPU;Custom Instance%;
+gce.compute.cpu.n1.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible Custom Instance%;
+gce.compute.cpu.n1.spot;Compute Engine;Compute;N1Standard;Spot Preemptible N1 Predefined Instance Core%;CPU and RAM are in the same group
+gce.compute.cpu.n2;Compute Engine;Compute;CPU;N2 Instance%;
+gce.compute.cpu.n2.1y;Compute Engine;Compute;CPU;Commitment v1: N2%1 Year;
+gce.compute.cpu.n2.3y;Compute Engine;Compute;CPU;Commitment v1: N2%3 Year%;
+gce.compute.cpu.n2.custom;Compute Engine;Compute;CPU;N2 Custom Instance%;
+gce.compute.cpu.n2.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible N2 Custom Instance%;
+gce.compute.cpu.n2.spot;Compute Engine;Compute;CPU;Spot Preemptible N2 Instance%;
+gce.compute.cpu.n2d;Compute Engine;Compute;CPU;N2D AMD Instance%;
+gce.compute.cpu.n2d.1y;Compute Engine;Compute;CPU;Commitment v1: N2D%1 Year;
+gce.compute.cpu.n2d.3y;Compute Engine;Compute;CPU;Commitment v1: N2D%3 Year%;
+gce.compute.cpu.n2d.custom;Compute Engine;Compute;CPU;N2D AMD Custom Instance%;
+gce.compute.cpu.n2d.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible N2D AMD Custom Instance%;
+gce.compute.cpu.n2d.spot;Compute Engine;Compute;CPU;Spot Preemptible N2D AMD Instance%;
+gce.compute.cpu.t2a;Compute Engine;Compute;CPU;T2A Arm Instance%;The Tau T2A machine series does not support: Committed and Sustained-use discounts
+gce.compute.cpu.t2a.spot;Compute Engine;Compute;CPU;Spot Preemptible T2A Arm Instance%;
+gce.compute.cpu.t2d;Compute Engine;Compute;CPU;T2D AMD Instance%;
+gce.compute.cpu.t2d.1y;Compute Engine;Compute;CPU;Commitment v1: T2D%1 Year;
+gce.compute.cpu.t2d.3y;Compute Engine;Compute;CPU;Commitment v1: T2D%3 Year%;
+gce.compute.cpu.t2d.spot;Compute Engine;Compute;CPU;Spot Preemptible T2D AMD Instance%;
+RAM;;;;;
+gce.compute.ram.a2;Compute Engine;Compute;RAM;A2 Instance%;
+gce.compute.ram.a2.1y;Compute Engine;Compute;RAM;Commitment v1: A2%1 Year;
+gce.compute.ram.a2.3y;Compute Engine;Compute;RAM;Commitment v1: A2%3 Year%;
+gce.compute.ram.a2.reserved;Compute Engine;Compute;RAM;Reserved A2%;
+gce.compute.ram.a2.spot;Compute Engine;Compute;RAM;Spot Preemptible A2 Instance%;
+gce.compute.ram.c2d;Compute Engine;Compute;RAM;C2D AMD Instance%;
+gce.compute.ram.c2d.1y;Compute Engine;Compute;RAM;Commitment v1: C2D%1 Year;
+gce.compute.ram.c2d.3y;Compute Engine;Compute;RAM;Commitment v1: C2D%3 Year%;
+gce.compute.ram.c2d.spot;Compute Engine;Compute;RAM;Spot Preemptible C2D AMD Instance%;
+gce.compute.ram.c3;Compute Engine;Compute;RAM;C3 Instance%;
+gce.compute.ram.c3.1y;Compute Engine;Compute;RAM;Commitment v1: C3%1 Year;
+gce.compute.ram.c3.3y;Compute Engine;Compute;RAM;Commitment v1: C3%3 Year%;
+gce.compute.ram.c3.spot;Compute Engine;Compute;RAM;Spot Preemptible C3 Instance%;
+gce.compute.ram.compute.optimized;Compute Engine;Compute;RAM;Compute optimized%;
+gce.compute.ram.compute.optimized.1y;Compute Engine;Compute;RAM;Commitment: Compute optimized%1 Year;
+gce.compute.ram.compute.optimized.3y;Compute Engine;Compute;RAM;Commitment: Compute optimized%3 Year%;
+gce.compute.ram.compute.optimized.spot;Compute Engine;Compute;RAM;Spot Preemptible Compute optimized%;
+gce.compute.ram.e2;Compute Engine;Compute;RAM;E2 Instance%;
+gce.compute.ram.e2.1y;Compute Engine;Compute;RAM;Commitment v1: E2%1 Year;
+gce.compute.ram.e2.3y;Compute Engine;Compute;RAM;Commitment v1: E2%3 Year%;
+gce.compute.ram.e2.spot;Compute Engine;Compute;RAM;Spot Preemptible E2 Instance%;
+gce.compute.ram.g2;Compute Engine;Compute;RAM;G2 Instance%;
+gce.compute.ram.g2.1y;Compute Engine;Compute;RAM;Commitment v1: G2%1 Year;
+gce.compute.ram.g2.3y;Compute Engine;Compute;RAM;Commitment v1: G2%3 Year%;
+gce.compute.ram.g2.spot;Compute Engine;Compute;RAM;Spot Preemptible G2 Instance%;
+gce.compute.ram.m3;Compute Engine;Compute;RAM;M3 Memory-optimized Instance%;
+gce.compute.ram.m3.1y;Compute Engine;Compute;RAM;Commitment v1: M3 Memory-optimized%1 Year;
+gce.compute.ram.m3.3y;Compute Engine;Compute;RAM;Commitment v1: M3 Memory-optimized%3 Year%;
+gce.compute.ram.m3.spot;Compute Engine;Compute;RAM;Spot Preemptible M3 Memory-optimized Instance%;
+gce.compute.ram.memory.optimized;Compute Engine;Compute;RAM;Memory-optimized Instance%;
+gce.compute.ram.memory.optimized.1y;Compute Engine;Compute;RAM;Commitment v1: Memory-optimized%1 Year;
+gce.compute.ram.memory.optimized.3y;Compute Engine;Compute;RAM;Commitment v1: Memory-optimized%3 Year%;
+gce.compute.ram.memory.optimized.premium.upgrade;Compute Engine;Compute;RAM;Memory Optimized Upgrade Premium for Memory-optimized Instance%;M2
+gce.compute.ram.memory.optimized.spot;Compute Engine;Compute;RAM;Spot Preemptible Memory-optimized Instance%;
+gce.compute.ram.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Ram%;CPU and RAM are in the same group
+gce.compute.ram.n1.1y;Compute Engine;Compute;RAM;Commitment v1: Ram%1 Year;
+gce.compute.ram.n1.3y;Compute Engine;Compute;RAM;Commitment v1: Ram%3 Year%;
+gce.compute.ram.n1.custom;Compute Engine;Compute;RAM;Custom Instance%;
+gce.compute.ram.n1.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible Custom Instance%;
+gce.compute.ram.n1.spot;Compute Engine;Compute;N1Standard;Spot Preemptible N1 Predefined Instance Ram%;CPU and RAM are in the same group
+gce.compute.ram.n2;Compute Engine;Compute;RAM;N2 Instance%;
+gce.compute.ram.n2.1y;Compute Engine;Compute;RAM;Commitment v1: N2%1 Year;
+gce.compute.ram.n2.3y;Compute Engine;Compute;RAM;Commitment v1: N2%3 Year%;
+gce.compute.ram.n2.custom;Compute Engine;Compute;RAM;N2 Custom Instance%;
+gce.compute.ram.n2.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Custom Instance%;
+gce.compute.ram.n2.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Instance%;
+gce.compute.ram.n2d;Compute Engine;Compute;RAM;N2D AMD Instance%;
+gce.compute.ram.n2d.1y;Compute Engine;Compute;RAM;Commitment v1: N2D%1 Year;
+gce.compute.ram.n2d.3y;Compute Engine;Compute;RAM;Commitment v1: N2D%3 Year%;
+gce.compute.ram.n2d.custom;Compute Engine;Compute;RAM;N2D AMD Custom Instance%;
+gce.compute.ram.n2d.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Custom Instance%;
+gce.compute.ram.n2d.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Instance%;
+gce.compute.ram.t2a;Compute Engine;Compute;RAM;T2A Arm Instance%;The Tau T2A machine series does not support: Committed and Sustained-use discounts
+gce.compute.ram.t2a.spot;Compute Engine;Compute;RAM;Spot Preemptible T2A Arm Instance%;
+gce.compute.ram.t2d;Compute Engine;Compute;RAM;T2D AMD Instance%;
+gce.compute.ram.t2d.1y;Compute Engine;Compute;RAM;Commitment v1: T2D%1 Year;
+gce.compute.ram.t2d.3y;Compute Engine;Compute;RAM;Commitment v1: T2D%3 Year%;
+gce.compute.ram.t2d.spot;Compute Engine;Compute;RAM;Spot Preemptible T2D AMD Instance%;
+GPU;;;;;
+gce.compute.gpu.a100;Compute Engine;Compute;GPU;Nvidia Tesla A100 GPU running%;
+gce.compute.gpu.a100.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100%1 Year;
+gce.compute.gpu.a100.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100%3 Year%;
+gce.compute.gpu.a100.spot;Compute Engine;Compute;GPU;Nvidia Tesla A100 GPU attached%;
+gce.compute.gpu.a100.80gb;Compute Engine;Compute;GPU;Nvidia Tesla A100 80GB GPU running in%;
+gce.compute.gpu.a100.80gb.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100 80GB%1 Year;
+gce.compute.gpu.a100.80gb.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100 80GB%3 Year%;
+gce.compute.gpu.a100.80gb.spot;Compute Engine;Compute;GPU;Nvidia Tesla A100 80GB GPU attached%;
+gce.compute.gpu.k80;Compute Engine;Compute;GPU;Nvidia Tesla K80 GPU running%;
+gce.compute.gpu.k80.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla K80%1 Year%;
+gce.compute.gpu.k80.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla K80%3 Year%;
+gce.compute.gpu.k80.spot;Compute Engine;Compute;GPU;Nvidia Tesla K80 GPU attached%;
+gce.compute.gpu.l4;Compute Engine;Compute;GPU;Nvidia L4 GPU running%;
+gce.compute.gpu.l4.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia L4%1 Year;
+gce.compute.gpu.l4.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia L4%3 Year%;
+gce.compute.gpu.l4.spot;Compute Engine;Compute;GPU;Nvidia L4 GPU attached%;
+gce.compute.gpu.p100;Compute Engine;Compute;GPU;Nvidia Tesla P100 GPU running%;
+gce.compute.gpu.p100.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P100%1 Year;
+gce.compute.gpu.p100.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P100%3 Year%;
+gce.compute.gpu.p100.spot;Compute Engine;Compute;GPU;Nvidia Tesla P100 GPU attached%;
+gce.compute.gpu.p4;Compute Engine;Compute;GPU;Nvidia Tesla P4 GPU running%;
+gce.compute.gpu.p4.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P4%1 Year;
+gce.compute.gpu.p4.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P4%3 Year%;
+gce.compute.gpu.p4.spot;Compute Engine;Compute;GPU;Nvidia Tesla P4 GPU attached%;
+gce.compute.gpu.t4;Compute Engine;Compute;GPU;Nvidia Tesla T4 GPU running%;
+gce.compute.gpu.t4.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla T4%1 Year;
+gce.compute.gpu.t4.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla T4%3 Year%;
+gce.compute.gpu.t4.spot;Compute Engine;Compute;GPU;Nvidia Tesla T4 GPU attached%;
+gce.compute.gpu.v100;Compute Engine;Compute;GPU;Nvidia Tesla V100 GPU running%;
+gce.compute.gpu.v100.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla V100%1 Year;
+gce.compute.gpu.v100.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla V100%3 Year%;
+gce.compute.gpu.v100.spot;Compute Engine;Compute;GPU;Nvidia Tesla V100 GPU attached%;
+SLES License;;;;;
+gce.os.sles.cpu;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15%CPU%;
+gce.os.sles.f1;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15 on f1-micro;
+gce.os.sles.g1;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15 on g1-small;
+RHEL License;;;;;
+gce.os.rhel.cpu.1.4;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with up to 4 VCPU;
+gce.os.rhel.cpu.1.4.1y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 1 to 4 VCPU for 1 Year;
+gce.os.rhel.cpu.1.4.3y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 1 to 4 VCPU for 3 Year;
+gce.os.rhel.cpu.6.n;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with 5 or more VCPU;
+gce.os.rhel.cpu.6.n.1y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 5 or more VCPU for 1 Year;
+gce.os.rhel.cpu.6.n.3y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 5 or more VCPU for 3 Year;
+WINDOWS License;;;;;
+gce.os.windows.cpu;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition%CPU%;
+gce.os.windows.f1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on f1-micro;
+gce.os.windows.g1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on g1-small;
+SLES for SAP License;;;;;
+gce.os.sles.sap.cpu.1.3;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 1 to 3 VCPU;
+gce.os.sles.sap.cpu.1.3.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 1 to 3 VCPU for 1 Year;
+gce.os.sles.sap.cpu.1.3.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 1 to 3 VCPU for 3 Year;
+gce.os.sles.sap.cpu.4;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 4 VCPU;
+gce.os.sles.sap.cpu.4.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 4 VCPU for 1 Year;
+gce.os.sles.sap.cpu.4.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 4 VCPU for 3 Year;
+gce.os.sles.sap.cpu.6.n;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 6 or more VCPU;
+gce.os.sles.sap.cpu.6.n.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 6 or more VCPU for 1 Year;
+gce.os.sles.sap.cpu.6.n.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 6 or more VCPU for 3 Year;
+gce.os.sles.sap.f1;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on f1-micro;
+gce.os.sles.sap.g1;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on g1-small;
+RHEL for SAP License;;;;;
+gce.os.rhel.sap.cpu.1.4;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with up to 4 VCPU;
+gce.os.rhel.sap.cpu.1.4.1y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 1 to 4 VCPU for 1 Year;
+gce.os.rhel.sap.cpu.1.4.3y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 1 to 4 VCPU for 3 Year;
+gce.os.rhel.sap.cpu.6.n;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with 5 or more VCPU;
+gce.os.rhel.sap.cpu.6.n.1y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 5 or more VCPU for 1 Year;
+gce.os.rhel.sap.cpu.6.n.3y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 5 or more VCPU for 3 Year;
 STORAGE;;;;;
-gce.storage.io.requests;Compute Engine;Storage;DiskOps;PD IO Requests%;???
-gce.storage.ssd.local;Compute Engine;Storage;LocalSSD;SSD backed Local Storage%;
-gce.storage.ssd.local.spot;Compute Engine;Storage;LocalSSD;SSD backed Local Storage attached to Spot Preemptible%;
-gce.storage.ssd.local.1y;Compute Engine;Storage;LocalSSD;Commitment v1: Local SSD%1 Year;
-gce.storage.ssd.local.3y;Compute Engine;Storage;LocalSSD;Commitment v1: Local SSD%3 Year%;
 gce.storage.hdd;Compute Engine;Storage;PDStandard;Storage PD Capacity%;
 gce.storage.hdd.replicated;Compute Engine;Storage;PDStandard;Regional Storage PD%;
+gce.storage.hyperdisk.extreme;Compute Engine;Storage;SSD;Hyperdisk Extreme Capacity%;
+gce.storage.hyperdisk.extreme.iops;Compute Engine;Storage;SSD;Hyperdisk Extreme IOPS %;
+gce.storage.image;Compute Engine;Storage;StorageImage;Storage Image%;
+gce.storage.image.machine;Compute Engine;Storage;MachineImage;Storage Machine Image%;https://cloud.google.com/sdk/gcloud/reference/beta/compute/machine-images/create
+gce.storage.io.requests;Compute Engine;Storage;DiskOps;PD IO Requests%;???
+gce.storage.snapshot;Compute Engine;Storage;PDSnapshot;Storage PD Snapshot%;https://cloud.google.com/sdk/gcloud/reference/compute/disks/snapshot 
+gce.storage.snapshot.egress;Compute Engine;Compute;PdSnapshotEgress;PD snapshot egress%;
 gce.storage.ssd;Compute Engine;Storage;SSD;SSD backed PD%;
-gce.storage.ssd.replicated;Compute Engine;Storage;SSD;Regional SSD backed PD%;
 gce.storage.ssd.balanced;Compute Engine;Storage;SSD;Balanced PD%;
 gce.storage.ssd.balanced.replicated;Compute Engine;Storage;SSD;Regional Balanced PD%;
 gce.storage.ssd.extreme;Compute Engine;Storage;SSD;Extreme PD%;
 gce.storage.ssd.extreme.iops;Compute Engine;Storage;SSD;Extreme PD IOPS%;
-gce.storage.hyperdisk.extreme;Compute Engine;Storage;SSD;Hyperdisk Extreme Capacity%;
-gce.storage.hyperdisk.extreme.iops;Compute Engine;Storage;SSD;Hyperdisk Extreme IOPS %;
-gce.storage.snapshot;Compute Engine;Storage;PDSnapshot;Storage PD Snapshot%;https://cloud.google.com/sdk/gcloud/reference/compute/disks/snapshot 
-gce.storage.snapshot.egress;Compute Engine;Compute;PdSnapshotEgress;PD snapshot egress%;
-gce.storage.image;Compute Engine;Storage;StorageImage;Storage Image%;
-gce.storage.image.machine;Compute Engine;Storage;MachineImage;Storage Machine Image%;https://cloud.google.com/sdk/gcloud/reference/beta/compute/machine-images/create
-GPU;;;;;
-gce.compute.gpu.a100;Compute Engine;Compute;GPU;Nvidia Tesla A100 GPU running%;
-gce.compute.gpu.a100.reserved;Compute Engine;Compute;GPU;Reserved Nvidia Tesla A100 GPU%;
-gce.compute.gpu.a100.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100%1 Year;
-gce.compute.gpu.a100.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100%3 Year%;
-gce.compute.gpu.a100.80gb;Compute Engine;Compute;GPU;Nvidia Tesla A100 80GB GPU running in%;
-gce.compute.gpu.a100.80gb.reserved;Compute Engine;Compute;GPU;Reserved Nvidia Tesla A100 80GB GPU%;
-gce.compute.gpu.a100.80gb.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100 80GB%1 Year;
-gce.compute.gpu.a100.80gb.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla A100 80GB%3 Year%;
-gce.compute.gpu.k80;Compute Engine;Compute;GPU;Nvidia Tesla K80 GPU running%;
-gce.compute.gpu.k80.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla K80%1 Year%;
-gce.compute.gpu.k80.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla K80%3 Year%;
-gce.compute.gpu.p100;Compute Engine;Compute;GPU;Nvidia Tesla P100 GPU running%;
-gce.compute.gpu.p100.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P100%1 Year;
-gce.compute.gpu.p100.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P100%3 Year%;
-gce.compute.gpu.p4;Compute Engine;Compute;GPU;Nvidia Tesla P4 GPU running%;
-gce.compute.gpu.p4.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P4%1 Year;
-gce.compute.gpu.p4.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla P4%3 Year%;
-gce.compute.gpu.t4;Compute Engine;Compute;GPU;Nvidia Tesla T4 GPU running%;
-gce.compute.gpu.t4.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla T4%1 Year;
-gce.compute.gpu.t4.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla T4%3 Year%;
-gce.compute.gpu.l4;Compute Engine;Compute;GPU;Nvidia L4 GPU running%;
-gce.compute.gpu.l4.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia L4%1 Year;
-gce.compute.gpu.l4.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia L4%3 Year%;
-gce.compute.gpu.v100;Compute Engine;Compute;GPU;Nvidia Tesla V100 GPU running%;
-gce.compute.gpu.v100.1y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla V100%1 Year;
-gce.compute.gpu.v100.3y;Compute Engine;Compute;GPU;Commitment v1: Nvidia Tesla V100%3 Year%;
-CPU;;;;;
-gce.compute.cpu.memory.optimized.premium.upgrade;Compute Engine;Compute;CPU;Memory Optimized Upgrade Premium for Memory-optimized Instance%;M2
-gce.compute.cpu.a2;Compute Engine;Compute;CPU;A2 Instance%;
-gce.compute.cpu.a2.reserved;Compute Engine;Compute;CPU;Reserved A2%;
-gce.compute.cpu.a2.1y;Compute Engine;Compute;CPU;Commitment v1: A2%1 Year;
-gce.compute.cpu.a2.3y;Compute Engine;Compute;CPU;Commitment v1: A2%3 Year%;
-gce.compute.cpu.g2;Compute Engine;Compute;CPU;G2 Instance%;
-gce.compute.cpu.g2.1y;Compute Engine;Compute;CPU;Commitment v1: G2%1 Year;
-gce.compute.cpu.g2.3y;Compute Engine;Compute;CPU;Commitment v1: G2%3 Year%;
-gce.compute.cpu.f1;Compute Engine;Compute;F1Micro;Micro Instance with burstable CPU%;
-gce.compute.cpu.g1;Compute Engine;Compute;G1Small;Small Instance with 1 VCPU%;
-gce.compute.cpu.e2;Compute Engine;Compute;CPU;E2 Instance%;
-gce.compute.cpu.e2.1y;Compute Engine;Compute;CPU;Commitment v1: E2%1 Year;
-gce.compute.cpu.e2.3y;Compute Engine;Compute;CPU;Commitment v1: E2%3 Year%;
-gce.compute.cpu.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Core%;CPU and RAM are in the same group
-gce.compute.cpu.custom;Compute Engine;Compute;CPU;Custom Instance%;
-gce.compute.cpu.1y;Compute Engine;Compute;CPU;Commitment v1: Cpu%1 Year;
-gce.compute.cpu.3y;Compute Engine;Compute;CPU;Commitment v1: Cpu%3 Year%;
-gce.compute.cpu.n2;Compute Engine;Compute;CPU;N2 Instance%;
-gce.compute.cpu.n2.custom;Compute Engine;Compute;CPU;N2 Custom Instance%;
-gce.compute.cpu.n2.custom.extended;Compute Engine;Compute;CPU;N2 Custom Extended%;
-gce.compute.cpu.n2.1y;Compute Engine;Compute;CPU;Commitment v1: N2%1 Year;
-gce.compute.cpu.n2.3y;Compute Engine;Compute;CPU;Commitment v1: N2%3 Year%;
-gce.compute.cpu.n2d;Compute Engine;Compute;CPU;N2D AMD Instance%;
-gce.compute.cpu.n2d.custom;Compute Engine;Compute;CPU;N2D AMD Custom Instance%;
-gce.compute.cpu.n2d.1y;Compute Engine;Compute;CPU;Commitment v1: N2D%1 Year;
-gce.compute.cpu.n2d.3y;Compute Engine;Compute;CPU;Commitment v1: N2D%3 Year%;
-gce.compute.cpu.t2d;Compute Engine;Compute;CPU;T2D AMD Instance%;
-gce.compute.cpu.t2d.1y;Compute Engine;Compute;CPU;Commitment v1: T2D%1 Year;
-gce.compute.cpu.t2d.3y;Compute Engine;Compute;CPU;Commitment v1: T2D%3 Year%;
-gce.compute.cpu.t2a;Compute Engine;Compute;CPU;T2A Arm Instance%;The Tau T2A machine series does not support: Committed and Sustained-use discounts
-gce.compute.cpu.c2d;Compute Engine;Compute;CPU;C2D AMD Instance%;
-gce.compute.cpu.c2d.1y;Compute Engine;Compute;CPU;Commitment v1: C2D%1 Year;
-gce.compute.cpu.c2d.3y;Compute Engine;Compute;CPU;Commitment v1: C2D%3 Year%;
-gce.compute.cpu.c3;Compute Engine;Compute;CPU;C3 Instance%;
-gce.compute.cpu.c3.1y;Compute Engine;Compute;CPU;Commitment v1: C3%1 Year;
-gce.compute.cpu.c3.3y;Compute Engine;Compute;CPU;Commitment v1: C3%3 Year%;
-gce.compute.cpu.compute.optimized;Compute Engine;Compute;CPU;Compute optimized%;
-gce.compute.cpu.compute.optimized.1y;Compute Engine;Compute;CPU;Commitment: Compute optimized%1 Year;
-gce.compute.cpu.compute.optimized.3y;Compute Engine;Compute;CPU;Commitment: Compute optimized%3 Year%;
-gce.compute.cpu.memory.optimized;Compute Engine;Compute;CPU;Memory-optimized Instance%;
-gce.compute.cpu.memory.optimized.1y;Compute Engine;Compute;CPU;Commitment v1: Memory-optimized%1 Year;
-gce.compute.cpu.memory.optimized.3y;Compute Engine;Compute;CPU;Commitment v1: Memory-optimized%3 Year%;
-gce.compute.cpu.m3;Compute Engine;Compute;CPU;M3 Memory-optimized Instance%;
-gce.compute.cpu.m3.1y;Compute Engine;Compute;CPU;Commitment v1: M3 Memory-optimized%1 Year;
-gce.compute.cpu.m3.3y;Compute Engine;Compute;CPU;Commitment v1: M3 Memory-optimized%3 Year%;
-gce.compute.cpu.sole.tenancy;Compute Engine;Compute;CPU;Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2;Compute Engine;Compute;CPU;N2 Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2d;Compute Engine;Compute;CPU;N2D AMD Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.compute.optimized;Compute Engine;Compute;CPU;Compute-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.memory.optimized;Compute Engine;Compute;CPU;Memory-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium;Compute Engine;Compute;CPU;Sole Tenancy Premium for Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2.premium;Compute Engine;Compute;CPU;Sole Tenancy Premium for N2 Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.n2d.premium;Compute Engine;Compute;CPU;Sole Tenancy Premium for N2D AMD Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium.compute.optimized;Compute Engine;Compute;CPU;Sole Tenancy Premium for Compute-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium.memory.optimized;Compute Engine;Compute;CPU;Sole Tenancy Premium for Memory-optimized Sole Tenancy Instance%;
-gce.compute.cpu.sole.tenancy.premium.overcommit;Compute Engine;Compute;CPU;Sole Tenancy Overcommit Premium for Sole Tenancy Instance%;???
-gce.compute.cpu.sole.tenancy.n2.premium.overcommit;Compute Engine;Compute;CPU;Sole Tenancy Overcommit Premium for N2 Sole Tenancy Instance%;???
-RAM;;;;;
-gce.compute.ram.memory.optimized.premium.upgrade;Compute Engine;Compute;RAM;Memory Optimized Upgrade Premium for Memory-optimized Instance%;M2
-gce.compute.ram.a2;Compute Engine;Compute;RAM;A2 Instance%;
-gce.compute.ram.a2.reserved;Compute Engine;Compute;RAM;Reserved A2%;
-gce.compute.ram.a2.1y;Compute Engine;Compute;RAM;Commitment v1: A2%1 Year;
-gce.compute.ram.a2.3y;Compute Engine;Compute;RAM;Commitment v1: A2%3 Year%;
-gce.compute.ram.g2;Compute Engine;Compute;RAM;G2 Instance%;
-gce.compute.ram.g2.1y;Compute Engine;Compute;RAM;Commitment v1: G2%1 Year;
-gce.compute.ram.g2.3y;Compute Engine;Compute;RAM;Commitment v1: G2%3 Year%;
-gce.compute.ram.e2;Compute Engine;Compute;RAM;E2 Instance%;
-gce.compute.ram.e2.1y;Compute Engine;Compute;RAM;Commitment v1: E2%1 Year;
-gce.compute.ram.e2.3y;Compute Engine;Compute;RAM;Commitment v1: E2%3 Year%;
-gce.compute.ram.n1;Compute Engine;Compute;N1Standard;N1 Predefined Instance Ram%;CPU and RAM are in the same group
-gce.compute.ram.custom;Compute Engine;Compute;RAM;Custom Instance%;
-gce.compute.ram.custom.extended;Compute Engine;Compute;RAM;Custom Extended Instance%;
-gce.compute.ram.1y;Compute Engine;Compute;RAM;Commitment v1: Ram%1 Year;
-gce.compute.ram.3y;Compute Engine;Compute;RAM;Commitment v1: Ram%3 Year%;
-gce.compute.ram.n2;Compute Engine;Compute;RAM;N2 Instance%;
-gce.compute.ram.n2.custom;Compute Engine;Compute;RAM;N2 Custom Instance%;
-gce.compute.ram.n2.custom.extended;Compute Engine;Compute;RAM;N2 Custom Extended%;
-gce.compute.ram.n2.1y;Compute Engine;Compute;RAM;Commitment v1: N2%1 Year;
-gce.compute.ram.n2.3y;Compute Engine;Compute;RAM;Commitment v1: N2%3 Year%;
-gce.compute.ram.n2d;Compute Engine;Compute;RAM;N2D AMD Instance%;
-gce.compute.ram.n2d.custom;Compute Engine;Compute;RAM;N2D AMD Custom Instance%;
-gce.compute.ram.n2d.custom.extended;Compute Engine;Compute;RAM;N2D AMD Custom Extended%;
-gce.compute.ram.n2d.1y;Compute Engine;Compute;RAM;Commitment v1: N2D%1 Year;
-gce.compute.ram.n2d.3y;Compute Engine;Compute;RAM;Commitment v1: N2D%3 Year%;
-gce.compute.ram.t2d;Compute Engine;Compute;RAM;T2D AMD Instance%;
-gce.compute.ram.t2d.1y;Compute Engine;Compute;RAM;Commitment v1: T2D%1 Year;
-gce.compute.ram.t2d.3y;Compute Engine;Compute;RAM;Commitment v1: T2D%3 Year%;
-gce.compute.ram.t2a;Compute Engine;Compute;RAM;T2A Arm Instance%;The Tau T2A machine series does not support: Committed and Sustained-use discounts
-gce.compute.ram.c2d;Compute Engine;Compute;RAM;C2D AMD Instance%;
-gce.compute.ram.c2d.1y;Compute Engine;Compute;RAM;Commitment v1: C2D%1 Year;
-gce.compute.ram.c2d.3y;Compute Engine;Compute;RAM;Commitment v1: C2D%3 Year%;
-gce.compute.ram.c3;Compute Engine;Compute;RAM;C3 Instance%;
-gce.compute.ram.c3.1y;Compute Engine;Compute;RAM;Commitment v1: C3%1 Year;
-gce.compute.ram.c3.3y;Compute Engine;Compute;RAM;Commitment v1: C3%3 Year%;
-gce.compute.ram.compute.optimized;Compute Engine;Compute;RAM;Compute optimized%;
-gce.compute.ram.compute.optimized.1y;Compute Engine;Compute;RAM;Commitment: Compute optimized%1 Year;
-gce.compute.ram.compute.optimized.3y;Compute Engine;Compute;RAM;Commitment: Compute optimized%3 Year%;
-gce.compute.ram.memory.optimized;Compute Engine;Compute;RAM;Memory-optimized Instance%;
-gce.compute.ram.memory.optimized.1y;Compute Engine;Compute;RAM;Commitment v1: Memory-optimized%1 Year;
-gce.compute.ram.memory.optimized.3y;Compute Engine;Compute;RAM;Commitment v1: Memory-optimized%3 Year%;
-gce.compute.ram.m3;Compute Engine;Compute;RAM;M3 Memory-optimized Instance%;
-gce.compute.ram.m3.1y;Compute Engine;Compute;RAM;Commitment v1: M3 Memory-optimized%1 Year;
-gce.compute.ram.m3.3y;Compute Engine;Compute;RAM;Commitment v1: M3 Memory-optimized%3 Year%;
-gce.compute.ram.sole.tenancy;Compute Engine;Compute;RAM;Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2;Compute Engine;Compute;RAM;N2 Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2d;Compute Engine;Compute;RAM;N2D AMD Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.compute.optimized;Compute Engine;Compute;RAM;Compute-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.memory.optimized;Compute Engine;Compute;RAM;Memory-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium;Compute Engine;Compute;RAM;Sole Tenancy Premium for Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2.premium;Compute Engine;Compute;RAM;Sole Tenancy Premium for N2 Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.n2d.premium;Compute Engine;Compute;RAM;Sole Tenancy Premium for N2D AMD Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium.compute.optimized;Compute Engine;Compute;RAM;Sole Tenancy Premium for Compute-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium.memory.optimized;Compute Engine;Compute;RAM;Sole Tenancy Premium for Memory-optimized Sole Tenancy Instance%;
-gce.compute.ram.sole.tenancy.premium.overcommit;Compute Engine;Compute;RAM;Sole Tenancy Overcommit Premium for Sole Tenancy Instance%;???
-gce.compute.ram.sole.tenancy.n2.premium.overcommit;Compute Engine;Compute;RAM;Sole Tenancy Overcommit Premium for N2 Sole Tenancy Instance%;???
-SPOT CPU;;;;;
-gce.compute.cpu.a2.spot;Compute Engine;Compute;CPU;Spot Preemptible A2 Instance%;
-gce.compute.cpu.f1.spot;Compute Engine;Compute;F1Micro;Spot Preemptible Micro Instance with burstable CPU%;
-gce.compute.cpu.g1.spot;Compute Engine;Compute;G1Small;Spot Preemptible Small Instance with 1 VCPU%;
-gce.compute.cpu.e2.spot;Compute Engine;Compute;CPU;Spot Preemptible E2 Instance%;
-gce.compute.cpu.n1.spot;Compute Engine;Compute;N1Standard;Spot Preemptible N1 Predefined Instance Core%;CPU and RAM are in the same group
-gce.compute.cpu.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible Custom Instance%;
-gce.compute.cpu.n2.spot;Compute Engine;Compute;CPU;Spot Preemptible N2 Instance%;
-gce.compute.cpu.n2.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible N2 Custom Instance%;
-gce.compute.cpu.n2d.spot;Compute Engine;Compute;CPU;Spot Preemptible N2D AMD Instance%;
-gce.compute.cpu.n2d.custom.spot;Compute Engine;Compute;CPU;Spot Preemptible N2D AMD Custom Instance%;
-gce.compute.cpu.t2d.spot;Compute Engine;Compute;CPU;Spot Preemptible T2D AMD Instance%;
-gce.compute.cpu.compute.optimized.spot;Compute Engine;Compute;CPU;Spot Preemptible Compute optimized%;
-gce.compute.cpu.memory.optimized.spot;Compute Engine;Compute;CPU;Spot Preemptible Memory-optimized Instance%;
-SPOT RAM;;;;;
-gce.compute.ram.a2.spot;Compute Engine;Compute;RAM;Spot Preemptible A2 Instance%;
-gce.compute.ram.e2.spot;Compute Engine;Compute;RAM;Spot Preemptible E2 Instance%;
-gce.compute.ram.n1.spot;Compute Engine;Compute;N1Standard;Spot Preemptible N1 Predefined Instance Ram%;CPU and RAM are in the same group
-gce.compute.ram.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible Custom Instance%;
-gce.compute.ram.custom.extended.spot;Compute Engine;Compute;RAM;Spot Preemptible Custom Extended Instance%;
-gce.compute.ram.n2.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Instance%;
-gce.compute.ram.n2.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Custom Instance%;
-gce.compute.ram.n2.custom.extended.spot;Compute Engine;Compute;RAM;Spot Preemptible N2 Custom Extended%;
-gce.compute.ram.n2d.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Instance%;
-gce.compute.ram.n2d.custom.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Custom Instance%;
-gce.compute.ram.n2d.custom.extended.spot;Compute Engine;Compute;RAM;Spot Preemptible N2D AMD Custom Extended%;
-gce.compute.ram.t2d.spot;Compute Engine;Compute;RAM;Spot Preemptible T2D AMD Instance%;
-gce.compute.ram.compute.optimized.spot;Compute Engine;Compute;RAM;Spot Preemptible Compute optimized%;
-gce.compute.ram.memory.optimized.spot;Compute Engine;Compute;RAM;Spot Preemptible Memory-optimized Instance%;
-SPOT GPU;;;;;
-gce.compute.gpu.a100.spot;Compute Engine;Compute;GPU;Nvidia Tesla A100 GPU attached%;
-gce.compute.gpu.k80.spot;Compute Engine;Compute;GPU;Nvidia Tesla K80 GPU attached%;
-gce.compute.gpu.p100.spot;Compute Engine;Compute;GPU;Nvidia Tesla P100 GPU attached%;
-gce.compute.gpu.p4.spot;Compute Engine;Compute;GPU;Nvidia Tesla P4 GPU attached%;
-gce.compute.gpu.t4.spot;Compute Engine;Compute;GPU;Nvidia Tesla T4 GPU attached%;
-gce.compute.gpu.v100.spot;Compute Engine;Compute;GPU;Nvidia Tesla V100 GPU attached%;
-LICENSE;;;;;
-SLES;;;;;
-gce.os.sles.f1;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15 on f1-micro;
-gce.os.sles.g1;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15 on g1-small;
-gce.os.sles.cpu;Compute Engine;License;Google;Licensing Fee for SUSE Linux Enterprise Server 15%CPU%;
-RHEL;;;;;
-gce.os.rhel.cpu.1.4;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with up to 4 VCPU;
-gce.os.rhel.cpu.6.n;Compute Engine;License;Google;Licensing Fee for Red Hat Enterprise Linux 9 on VM with 5 or more VCPU;
-gce.os.rhel.cpu.1.4.1y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 1 to 4 VCPU for 1 Year;
-gce.os.rhel.cpu.6.n.1y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 5 or more VCPU for 1 Year;
-gce.os.rhel.cpu.1.4.3y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 1 to 4 VCPU for 3 Year;
-gce.os.rhel.cpu.6.n.3y;Compute Engine;License;Rhel;Commitment v1: RHEL for VM with 5 or more VCPU for 3 Year;
-WINDOWS;;;;;
-gce.os.windows.f1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on f1-micro;
-gce.os.windows.g1;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition on g1-small;
-gce.os.windows.cpu;Compute Engine;License;Google;Licensing Fee for Windows Server 2019 Datacenter Edition%CPU%;
-SLES for SAP;;;;;
-gce.os.sles.sap.f1;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on f1-micro;
-gce.os.sles.sap.g1;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on g1-small;
-gce.os.sles.sap.cpu.1.3;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 1 to 3 VCPU;
-gce.os.sles.sap.cpu.4;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 4 VCPU;
-gce.os.sles.sap.cpu.6.n;Compute Engine;License;SUSE;Licensing Fee for SLES 15 For SAP License on VM with 6 or more VCPU;
-gce.os.sles.sap.cpu.1.3.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 1 to 3 VCPU for 1 Year;
-gce.os.sles.sap.cpu.1.3.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 1 to 3 VCPU for 3 Year;
-gce.os.sles.sap.cpu.4.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 4 VCPU for 1 Year;
-gce.os.sles.sap.cpu.4.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 4 VCPU for 3 Year;
-gce.os.sles.sap.cpu.6.n.1y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 6 or more VCPU for 1 Year;
-gce.os.sles.sap.cpu.6.n.3y;Compute Engine;License;SlesSap;Commitment v1: SLES for SAP for VM with 6 or more VCPU for 3 Year;
-RHEL for SAP;;;;;
-gce.os.rhel.sap.cpu.1.4;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with up to 4 VCPU;
-gce.os.rhel.sap.cpu.6.n;Compute Engine;License;RedHat;Licensing Fee for Red Hat Enterprise Linux 9 for SAP with High Availability and Update Services on VM with 5 or more VCPU;
-gce.os.rhel.sap.cpu.1.4.1y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 1 to 4 VCPU for 1 Year;
-gce.os.rhel.sap.cpu.6.n.1y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 5 or more VCPU for 1 Year;
-gce.os.rhel.sap.cpu.1.4.3y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 1 to 4 VCPU for 3 Year;
-gce.os.rhel.sap.cpu.6.n.3y;Compute Engine;License;RhelSap;Commitment v1: RHEL for SAP for VM with 5 or more VCPU for 3 Year;
-STORAGE;;;;;https://cloud.google.com/storage/docs/storage-classes#available_storage_classes
+gce.storage.ssd.local;Compute Engine;Storage;LocalSSD;SSD backed Local Storage%;
+gce.storage.ssd.local.1y;Compute Engine;Storage;LocalSSD;Commitment v1: Local SSD%1 Year;
+gce.storage.ssd.local.3y;Compute Engine;Storage;LocalSSD;Commitment v1: Local SSD%3 Year%;
+gce.storage.ssd.local.spot;Compute Engine;Storage;LocalSSD;SSD backed Local Storage attached to Spot Preemptible%;
+gce.storage.ssd.replicated;Compute Engine;Storage;SSD;Regional SSD backed PD%;
 STANDARD Storage;;;;;
 storage.standard;Cloud Storage;Storage;RegionalStorage;Standard Storage%;
-storage.standard.multi;Cloud Storage;Storage;MultiRegionalStorage;Standard Storage%Multi-region;
 storage.standard.dual;Cloud Storage;Storage;MultiRegionalStorage;Standard Storage%Dual-region;Region: nam4, eur4, asia1
+storage.standard.multi;Cloud Storage;Storage;MultiRegionalStorage;Standard Storage%Multi-region;
 NEARLINE Storage;;;;;
 storage.nearline;Cloud Storage;Storage;NearlineStorage;Nearline Storage%;
-storage.nearline.multi;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Multi-region%;
 storage.nearline.dual;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Dual-region%;
-storage.nearline.early;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Early Delete%;
-storage.nearline.multi.early;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Multi-region%Early Delete%;
 storage.nearline.dual.early;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Dual-region%Early Delete%;
+storage.nearline.early;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Early Delete%;
+storage.nearline.multi;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Multi-region%;
+storage.nearline.multi.early;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Multi-region%Early Delete%;
 COLDLINE Storage;;;;;
 storage.coldline;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%;
-storage.coldline.multi;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Multi-region%;
 storage.coldline.dual;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Dual-region%;
-storage.coldline.early;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Early Delete%;
-storage.coldline.multi.early;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Multi-region%Early Delete%;
 storage.coldline.dual.early;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Dual-region%Early Delete%;
+storage.coldline.early;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Early Delete%;
+storage.coldline.multi;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Multi-region%;
+storage.coldline.multi.early;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Multi-region%Early Delete%;
 ARCHIVE Storage;;;;;
 storage.archive;Cloud Storage;Storage;ArchiveStorage;Archive Storage%;
-storage.archive.multi;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Multi-region%;
 storage.archive.dual;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Dual-region%;
-storage.archive.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Early Delete%;
-storage.archive.multi.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Multi-region%Early Delete%;
 storage.archive.dual.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Dual-region%Early Delete%;
+storage.archive.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Early Delete%;
+storage.archive.multi;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Multi-region%;
+storage.archive.multi.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Multi-region%Early Delete%;
 Durable Reduced Availability (DRA) Storage;;;;;
 storage.dra;Cloud Storage;Storage;DRAStorage;Durable Reduced Availability Storage%;Multi and Region are the same SKU
 storage.dra.dual;Cloud Storage;Storage;DRAStorage;Durable Reduced Availability Storage%Dual-region;
+MONITORING;;;;;
+monitoring.data;Cloud Monitoring;ApplicationServices;Monitoring;Metric Volume;in mebibyte not gb!
+NETWORK;;;;;
+gce.network.internet.egress;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Americas;From... to..., Gb, bulk price!
+gce.network.internet.egress.australia;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%Australia;
+gce.network.internet.egress.china;Compute Engine;Network;PremiumInternetEgress;Network Internet Egress%China;
+gce.network.internet.ingress;Compute Engine;Network;PremiumInternetEgress;Network Internet Ingress%;Free
+gce.network.ip.external;Compute Engine;Network;IpAddress;External IP Charge on a Standard VM;GLOBAL
+gce.network.ip.external.spot;Compute Engine;Network;IpAddress;External IP Charge on a Spot Preemptible VM;GLOBAL
+gce.network.ip.external.unused;Compute Engine;Network;IpAddress;Static Ip Charge%;Static external IP address (assigned but unused)
+gce.network.nat.gateway;Networking;Network;Nat;Networking Cloud Nat Gateway Uptime%;hours
+gce.network.nat.gateway.data;Networking;Network;Nat;Networking Cloud Nat Data Processing%;cost per GB of data that is processed by the gateway
+gce.network.vpn.tunnel;Networking;Network;VPNTunnel;Networking Cloud VPN Tunnel%;hours
+gce.network.vpn.tunnel.egress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Americas;From... to..., Gb, bulk price! SAME AS PremiumInternetEgress 
+gce.network.vpn.tunnel.egress.australia;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%Australia;SAME AS PremiumInternetEgress 
+gce.network.vpn.tunnel.egress.china;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Egress%China;SAME AS PremiumInternetEgress 
+gce.network.vpn.tunnel.ingress;Compute Engine;Network;VPNInternetEgress;Network Vpn Internet Ingress;Free
+TIER1;;;;;
+gcp.network.tier1.100;Compute Engine;Network;AdvancedNetworking;On-demand fee for total VM network bandwidth up to 100%;hours
+gcp.network.tier1.100.spot;Compute Engine;Network;AdvancedNetworking;Preemptible fee for total VM network bandwidth up to 100%;???
+gcp.network.tier1.50;Compute Engine;Network;AdvancedNetworking;On-demand fee for total VM network bandwidth up to 50%;hours
+gcp.network.tier1.50.spot;Compute Engine;Network;AdvancedNetworking;Preemptible fee for total VM network bandwidth up to 50%;???
+gcp.network.tier1.75;Compute Engine;Network;AdvancedNetworking;On-demand fee for total VM network bandwidth up to 75%;hours
+gcp.network.tier1.75.spot;Compute Engine;Network;AdvancedNetworking;Preemptible fee for total VM network bandwidth up to 75%;???

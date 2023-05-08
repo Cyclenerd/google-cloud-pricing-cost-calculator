@@ -29,3 +29,7 @@ instances:
   - name: g2-standard-8-3y
     type: g2-standard-8
     commitment: 3
+# Spot VM
+  - name: g2-standard-8-spot
+    type: g2-standard-8
+    spot: true
