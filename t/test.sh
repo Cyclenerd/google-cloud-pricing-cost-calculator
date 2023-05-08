@@ -47,6 +47,13 @@ MY_CHECKS=(
 	# General-purpose machine type family
 	# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
 	#
+	# C3 machine types
+	'europe-west4;vm;c3-highcpu-4;138'
+	'europe-west4;vm;c3-highcpu-8;277'
+	'europe-west4;vm;c3-highcpu-22;761'
+	'europe-west4;vm;c3-highcpu-44;1523'
+	'europe-west4;vm;c3-highcpu-88;3047'
+	'europe-west4;vm;c3-highcpu-176;6095'
 	# E2 standard machine types
 	'europe-west4;vm;e2-standard-2;53'
 	'europe-west4;vm;e2-standard-4;107'
