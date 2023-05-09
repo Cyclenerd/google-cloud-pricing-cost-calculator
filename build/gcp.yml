@@ -113,35 +113,20 @@ storage:
   # https://cloud.google.com/storage/docs/storage-classes#available_storage_classes
   bucket:
     standard:
-      min-duration: 0
     standard-dual:
-      min-duration: 0
     standard-multi:
-      min-duration: 0
     nearline:
-      min-duration: 30
     nearline-dual:
-      min-duration: 30
     nearline-multi:
-      min-duration: 30
     coldline:
-      min-duration: 90
     coldline-dual:
-      min-duration: 90
     coldline-multi:
-      min-duration: 90
     archiv:
-      min-duration: 365
     archiv-dual:
-      min-duration: 365
     archiv-multi:
-      min-duration: 365
     dra:
-      min-duration: 0
     dra-dual:
-      min-duration: 0
     dra-multi:
-      min-duration: 0
 
 
 # Compute Engine
@@ -152,69 +137,30 @@ compute:
     # Zonal (one zone)
     local:
       type: pd-local
-      min: 375
-      increment: 375
-      # 9 TB per instance
-      max: 375
     hdd:
       type: pd-standard
-      min: 10
-      increment: 1
-      # 257 TB per instance
-      max: 64000
     ssd:
       type: pd-ssd
-      min: 10
-      increment: 1
-      # 257 TB per instance
-      max: 64000
     balanced:
       type: pd-balanced
-      min: 10
-      increment: 1
-      # 257 TB per instance
-      max: 64000
     extreme:
       type: pd-extreme
-      min: 500
-      increment: 1
-      # 257 TB per instance
-      max: 64000
     # Hyperdisk
     hyperdisk-extreme:
       type: hyperdisk-extreme
-      min: 10
-      increment: 1
-      max: 64000
     # Regional (two zones in the same region)
     hdd-replicated:
       type: pd-standard
-      min: 200
-      increment: 1
-      # 257 TB per instance
-      max: 64000
     ssd-replicated:
       type: pd-ssd
-      min: 10
-      increment: 1
-      # 257 TB per instance
-      max: 64000
     balanced-replicated:
       type: pd-balanced
-      min: 10
-      increment: 1
-      # 257 TB per instance
-      max: 64000
     snapshot:
       type: pd-snapshot
-      increment: 1
 
   # Virtual machine instances
   # VM instance pricing : https://cloud.google.com/compute/vm-instance-pricing
   instance:
-    # bandwidth: Maximum egress bandwidth (Gbps)
-    # https://cloud.google.com/compute/docs/general-purpose-machines
-
     # E2:
     # » Intel and AMD EPYC Rome processors
     # » Cost-optimized sizes between 2 to 32 vCPUs with a ratio of 0.5 GB to 8 GB of memory per vCPU
@@ -222,99 +168,65 @@ compute:
     # » Do not support GPUs, local SSDs, sole-tenant nodes, or nested virtualization
     # E2 shared-core
     e2-micro:
-      type: e2
       # Fractional vCPU of 0.25
       cpu: 0.25
       ram: 1
-      bandwidth: 1
     e2-small:
-      type: e2
       # Fractional vCPU of 0.5
       cpu: 0.5
       ram: 2
-      bandwidth: 1
     e2-medium:
-      type: e2
       # Fractional vCPU of 1
       cpu: 1
       ram: 4
-      bandwidth: 2
     # E2 standard
     # 4 GB of system memory per vCPU
     e2-standard-2:
-      type: e2
       cpu: 2
       ram: 8
-      bandwidth: 4
     e2-standard-4:
-      type: e2
       cpu: 4
       ram: 16
-      bandwidth: 8
     e2-standard-8:
-      type: e2
       cpu: 8
       ram: 32
-      bandwidth: 16
     e2-standard-16:
-      type: e2
       cpu: 16
       ram: 64
-      bandwidth: 16
     e2-standard-32:
-      type: e2
       cpu: 32
       ram: 128
-      bandwidth: 16
     # E2 high-memory
     # 8 GB of system memory per vCPU
     e2-highmem-2:
-      type: e2
       cpu: 2
       ram: 16
-      bandwidth: 4
     e2-highmem-4:
-      type: e2
       cpu: 4
       ram: 32
-      bandwidth: 8
     e2-highmem-8:
-      type: e2
       cpu: 8
       ram: 64
-      bandwidth: 16
     e2-highmem-16:
-      type: e2
       cpu: 16
       ram: 128
-      bandwidth: 16
     # E2 high-cpu
     # 1 GB of system memory per vCPU
     e2-highcpu-2:
-      type: e2
       cpu: 2
       ram: 2
-      bandwidth: 4
     e2-highcpu-4:
-      type: e2
       cpu: 4
       ram: 4
-      bandwidth: 8
     e2-highcpu-8:
-      type: e2
       cpu: 8
       ram: 8
-      bandwidth: 16
     e2-highcpu-16:
-      type: e2
       cpu: 16
       ram: 16
-      bandwidth: 16
     e2-highcpu-32:
-      type: e2
       cpu: 32
       ram: 32
-      bandwidth: 16
 
     # N2:
     # » Flexible sizing between 2 to 128 vCPUs and 0.5 to 8 GB of memory per vCPU
@@ -324,176 +236,96 @@ compute:
     # N2 standard
     # 4 GB of system memory per vCPU
     n2-standard-2:
-      type: n2
       cpu: 2
       ram: 8
-      bandwidth: 10
     n2-standard-4:
-      type: n2
       cpu: 4
       ram: 16
-      bandwidth: 10
     n2-standard-8:
-      type: n2
       cpu: 8
       ram: 32
-      bandwidth: 16
     n2-standard-16:
-      type: n2
       cpu: 16
       ram: 64
-      bandwidth: 32
     n2-standard-32:
-      type: n2
       cpu: 32
       ram: 128
-      bandwidth: 32
-      tier1: 50
     n2-standard-48:
-      type: n2
       cpu: 48
       ram: 192
-      bandwidth: 32
-      tier1: 50
     n2-standard-64:
-      type: n2
       cpu: 64
       ram: 256
-      bandwidth: 32
-      tier1: 75
     n2-standard-80:
-      type: n2
       cpu: 80
       ram: 320
-      bandwidth: 32
-      tier1: 100
     n2-standard-96:
-      type: n2
-      # always newer Intel Ice Lake
       cpu: 96
       ram: 384
-      bandwidth: 32
-      tier1: 100
     n2-standard-128:
-      type: n2
-      # always newer Intel Ice Lake
       cpu: 128
       ram: 512
-      bandwidth: 32
-      tier1: 100
     # N2 high-memory
     # 8 GB of system memory per vCPU
     n2-highmem-2:
-      type: n2
       cpu: 2
       ram: 16
-      bandwidth: 10
     n2-highmem-4:
-      type: n2
       cpu: 4
       ram: 32
-      bandwidth: 10
     n2-highmem-8:
-      type: n2
       cpu: 8
       ram: 64
-      bandwidth: 16
     n2-highmem-16:
-      type: n2
       cpu: 16
       ram: 128
-      bandwidth: 32
     n2-highmem-32:
-      type: n2
       cpu: 32
       ram: 256
-      bandwidth: 32
-      tier1: 50
     n2-highmem-48:
-      type: n2
       cpu: 48
       ram: 384
-      bandwidth: 32
-      tier1: 50
     n2-highmem-64:
-      type: n2
       cpu: 64
       ram: 512
-      bandwidth: 32
-      tier1: 75
     n2-highmem-80:
-      type: n2
       cpu: 80
       ram: 640
-      bandwidth: 32
-      tier1: 100
     n2-highmem-96:
-      type: n2
-      # always newer Intel Ice Lake
       cpu: 96
       ram: 768
-      bandwidth: 32
-      tier1: 100
     n2-highmem-128:
-      type: n2
-      # always newer Intel Ice Lake
       cpu: 128
       ram: 864
-      bandwidth: 32
-      tier1: 100
      # N2 high-cpu
      # 1 GB of system memory per vCPU
     n2-highcpu-2:
-      type: n2
       cpu: 2
       ram: 2
-      bandwidth: 10
     n2-highcpu-4:
-      type: n2
       cpu: 4
       ram: 4
-      bandwidth: 10
     n2-highcpu-8:
-      type: n2
       cpu: 8
       ram: 8
-      bandwidth: 16
     n2-highcpu-16:
-      type: n2
       cpu: 16
       ram: 16
-      bandwidth: 32
     n2-highcpu-32:
-      type: n2
       cpu: 32
       ram: 32
-      bandwidth: 32
-      tier1: 50
     n2-highcpu-48:
-      type: n2
       cpu: 48
       ram: 48
-      bandwidth: 32
-      tier1: 50
     n2-highcpu-64:
-      type: n2
       cpu: 64
       ram: 64
-      bandwidth: 32
-      tier1: 75
     n2-highcpu-80:
-      type: n2
       cpu: 80
       ram: 80
-      bandwidth: 32
-      tier1: 100
     n2-highcpu-96:
-      type: n2
-      # always newer Intel Ice Lake
       cpu: 96
       ram: 96
-      bandwidth: 32
-      tier1: 100
 
     # N2D:
     # » Support up to 224 vCPUs and 896 GB of memory
@@ -503,171 +335,103 @@ compute:
     # N2D standard
     # 4 GB of system memory per vCPU
     n2d-standard-2:
-      type: n2d
       cpu: 2
       ram: 8
-      bandwidth: 10
     n2d-standard-4:
-      type: n2d
       cpu: 4
       ram: 16
-      bandwidth: 10
     n2d-standard-8:
-      type: n2d
       cpu: 8
       ram: 32
-      bandwidth: 16
     n2d-standard-16:
-      type: n2d
       cpu: 16
       ram: 64
-      bandwidth: 32
     n2d-standard-32:
-      type: n2d
       cpu: 32
       ram: 128
-      bandwidth: 32
     n2d-standard-48:
-      type: n2d
       cpu: 48
       ram: 192
-      bandwidth: 32
     n2d-standard-64:
-      type: n2d
       cpu: 64
       ram: 256
-      bandwidth: 32
     n2d-standard-80:
-      type: n2d
       cpu: 80
       ram: 320
-      bandwidth: 32
     n2d-standard-96:
-      type: n2d
       cpu: 96
       ram: 384
-      bandwidth: 32
-      tier1: 50
     n2d-standard-128:
-      type: n2d
       cpu: 128
       ram: 512
-      bandwidth: 32
-      tier1: 50
     n2d-standard-224:
-      type: n2d
       cpu: 224
       ram: 896
-      bandwidth: 32
-      tier1: 100
     # N2D high-mem
     # 8 GB of system memory per vCPU
     n2d-highmem-2:
-      type: n2d
       cpu: 2
       ram: 16
-      bandwidth: 10
     n2d-highmem-4:
-      type: n2d
       cpu: 4
       ram: 32
-      bandwidth: 10
     n2d-highmem-8:
-      type: n2d
       cpu: 8
       ram: 64
-      bandwidth: 16
     n2d-highmem-16:
-      type: n2d
       cpu: 16
       ram: 128
-      bandwidth: 32
     n2d-highmem-32:
-      type: n2d
       cpu: 32
       ram: 256
-      bandwidth: 32
     n2d-highmem-48:
-      type: n2d
       cpu: 48
       ram: 384
-      bandwidth: 32
     n2d-highmem-64:
-      type: n2d
       cpu: 64
       ram: 512
-      bandwidth: 32
     n2d-highmem-80:
-      type: n2d
       cpu: 80
       ram: 640
-      bandwidth: 32
     n2d-highmem-96:
-      type: n2d
       cpu: 96
       ram: 768
-      bandwidth: 32
-      tier1: 50
+
     # N2D high-cpu
     # 1 GB of system memory per vCPU
     n2d-highcpu-2:
-      type: n2d
       cpu: 2
       ram: 2
-      bandwidth: 10
     n2d-highcpu-4:
-      type: n2d
       cpu: 4
       ram: 4
-      bandwidth: 10
     n2d-highcpu-8:
-      type: n2d
       cpu: 8
       ram: 8
-      bandwidth: 16
     n2d-highcpu-16:
-      type: n2d
       cpu: 16
       ram: 16
-      bandwidth: 32
     n2d-highcpu-32:
-      type: n2d
       cpu: 32
       ram: 32
-      bandwidth: 32
     n2d-highcpu-48:
-      type: n2d
       cpu: 48
       ram: 48
-      bandwidth: 32
     n2d-highcpu-64:
-      type: n2d
       cpu: 64
       ram: 64
-      bandwidth: 32
     n2d-highcpu-80:
-      type: n2d
       cpu: 80
       ram: 80
-      bandwidth: 32
     n2d-highcpu-96:
-      type: n2d
       cpu: 96
       ram: 96
-      bandwidth: 32
-      tier1: 50
     n2d-highcpu-128:
-      type: n2d
       cpu: 128
       ram: 128
-      bandwidth: 32
-      tier1: 50
     n2d-highcpu-224:
-      type: n2d
       cpu: 224
       ram: 224
-      bandwidth: 32
-      tier1: 100
 
     # T2D:
     # » Run on the third generation AMD EPYC Milan processor
@@ -676,84 +440,54 @@ compute:
     # T2D standard
     # 4 GB of system memory per vCPU
     t2d-standard-1:
-      type: t2d
       cpu: 1
       ram: 4
-      bandwidth: 10
     t2d-standard-2:
-      type: t2d
       cpu: 2
       ram: 8
-      bandwidth: 10
     t2d-standard-4:
-      type: t2d
       cpu: 4
       ram: 16
-      bandwidth: 10
     t2d-standard-8:
-      type: t2d
       cpu: 8
       ram: 32
-      bandwidth: 16
     t2d-standard-16:
-      type: t2d
       cpu: 16
       ram: 64
-      bandwidth: 32
     t2d-standard-32:
-      type: t2d
       cpu: 32
       ram: 128
-      bandwidth: 32
     t2d-standard-48:
-      type: t2d
       cpu: 48
       ram: 192
-      bandwidth: 32
     t2d-standard-60:
-      type: t2d
       cpu: 60
       ram: 240
-      bandwidth: 32
 
     # T2A:
     # Tau T2A general-purpose Arm VM
     # https://cloud.google.com/compute/docs/general-purpose-machines#t2a_machines
     t2a-standard-1:
-      type: t2a
       cpu: 1
       ram: 4
-      bandwidth: 10
     t2a-standard-2:
-      type: t2a
       cpu: 2
       ram: 8
-      bandwidth: 10
     t2a-standard-4:
-      type: t2a
       cpu: 4
       ram: 16
-      bandwidth: 10
     t2a-standard-8:
-      type: t2a
       cpu: 8
       ram: 32
-      bandwidth: 16
     t2a-standard-16:
-      type: t2a
       cpu: 16
       ram: 64
-      bandwidth: 32
     t2a-standard-32:
-      type: t2a
       cpu: 32
       ram: 128
-      bandwidth: 32
     t2a-standard-48:
-      type: t2a
       cpu: 48
       ram: 192
-      bandwidth: 32
 
     # N1:
     # » First generation general-purpose VMs available on Skylake, Broadwell, Haswell, Sandy Bridge, and Ivy Bridge CPU platforms
@@ -761,145 +495,87 @@ compute:
     # » Offer a larger sustained use discount than N2 VMs
     # N1 shared-core
     f1-micro:
-      type: f1
       # Fractional vCPU of 0.2
       cpu: 1
       ram: 0.6
-      bandwidth: 1
     g1-small:
-      type: g1
       # Fractional vCPU of 0.5
       cpu: 1
       ram: 1.7
-      bandwidth: 1
     # N1 standard
     # 3.75 GB of system memory per vCPU
     n1-standard-1:
-      type: n1
       cpu: 1
       ram: 3.75
-      bandwidth: 2
     n1-standard-2:
-      type: n1
       cpu: 2
       ram: 7.50
-      bandwidth: 10
     n1-standard-4:
-      type: n1
       cpu: 4
       ram: 15
-      bandwidth: 10
     n1-standard-8:
-      type: n1
       cpu: 8
       ram: 30
-      bandwidth: 16
     n1-standard-16:
-      type: n1
       cpu: 16
       ram: 60
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-standard-32:
-      type: n1
       cpu: 32
       ram: 120
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-standard-64:
-      type: n1
       cpu: 64
       ram: 240
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-standard-96:
-      type: n1
       cpu: 96
       ram: 360
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
+
     # N1 high-memory
     # 6.5 GB of system memory per vCPU
     n1-highmem-2:
-      type: n1
       cpu: 2
       ram: 13
-      bandwidth: 10
     n1-highmem-4:
-      type: n1
       cpu: 4
       ram: 26
-      bandwidth: 10
     n1-highmem-8:
-      type: n1
       cpu: 8
       ram: 52
-      bandwidth: 16
     n1-highmem-16:
-      type: n1
       cpu: 16
       ram: 104
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-highmem-32:
-      type: n1
       cpu: 32
       ram: 208
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-highmem-64:
-      type: n1
       cpu: 64
       ram: 416
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-highmem-96:
-      type: n1
       cpu: 96
       ram: 624
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
+
     # N1 high-cpu
     # 0.9 GB of system memory per vCPU
     n1-highcpu-2:
-      type: n1
       cpu: 2
       ram: 1.8
-      bandwidth: 10
     n1-highcpu-4:
-      type: n1
       cpu: 4
       ram: 3.6
-      bandwidth: 10
     n1-highcpu-8:
-      type: n1
       cpu: 8
       ram: 7.2
-      bandwidth: 16
     n1-highcpu-16:
-      type: n1
       cpu: 16
       ram: 14.4
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-highcpu-32:
-      type: n1
       cpu: 32
       ram: 28.8
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-highcpu-64:
-      type: n1
       cpu: 64
       ram: 57.6
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
     n1-highcpu-96:
-      type: n1
       cpu: 96
       ram: 86.4
-      # 32 Gbps for Skylake or later CPU platforms / 16 Gbps for all other platforms
-      bandwidth: 32
 
     # Custom:
     # » It costs slightly more to use a custom VM than an equivalent predefined VM
@@ -909,47 +585,34 @@ compute:
       type: n1-custom
       cpu: 1
       ram: 7.5
-      bandwidth: 16
     custom-2-10240-ext:
       type: n1-custom
       cpu: 2
       ram: 10
-      bandwidth: 16
     custom-4-30720-ext:
       type: n1-custom
       cpu: 4
       ram: 30
-      bandwidth: 16
     
     # C2:
     # » Compute-optimized machine family
     # » Using Intel 3.8 GHz Cascade Lake processors
     # » Do not support GPUs
     c2-standard-4:
-      type: c2
       cpu: 4
       ram: 16
-      bandwidth: 10
     c2-standard-8:
-      type: c2
       cpu: 8
       ram: 32
-      bandwidth: 16
     c2-standard-16:
-      type: c2
       cpu: 16
       ram: 64
-      bandwidth: 32
     c2-standard-30:
-      type: c2
       cpu: 30
       ram: 120
-      bandwidth: 32
     c2-standard-60:
-      type: c2
       cpu: 60
       ram: 240
-      bandwidth: 32
 
     # C2D:
     # » Compute-optimized machine family
@@ -957,110 +620,68 @@ compute:
     # » Do not offer sustained-use discounts
     # » Do not support GPUs or nested virtualization
     c2d-highcpu-112:
-      type: c2d
       cpu: 112
       ram: 224
-      bandwidth: 32
     c2d-highcpu-16:
-      type: c2d
       cpu: 16
       ram: 32
-      bandwidth: 32
     c2d-highcpu-2:
-      type: c2d
       cpu: 2
       ram: 4
-      bandwidth: 32
     c2d-highcpu-32:
-      type: c2d
       cpu: 32
       ram: 64
-      bandwidth: 32
     c2d-highcpu-4:
-      type: c2d
       cpu: 4
       ram: 8
-      bandwidth: 32
     c2d-highcpu-56:
-      type: c2d
       cpu: 56
       ram: 112
-      bandwidth: 32
     c2d-highcpu-8:
-      type: c2d
       cpu: 8
       ram: 16
-      bandwidth: 32
     c2d-highmem-112:
-      type: c2d
       cpu: 112
       ram: 896
-      bandwidth: 32
     c2d-highmem-16:
-      type: c2d
       cpu: 16
       ram: 128
-      bandwidth: 32
     c2d-highmem-2:
-      type: c2d
       cpu: 2
       ram: 16
-      bandwidth: 32
     c2d-highmem-32:
-      type: c2d
       cpu: 32
       ram: 256
-      bandwidth: 32
     c2d-highmem-4:
-      type: c2d
       cpu: 4
       ram: 32
-      bandwidth: 32
     c2d-highmem-56:
-      type: c2d
       cpu: 56
       ram: 448
-      bandwidth: 32
     c2d-highmem-8:
-      type: c2d
       cpu: 8
       ram: 64
-      bandwidth: 32
     c2d-standard-112:
-      type: c2d
       cpu: 112
       ram: 448
-      bandwidth: 32
     c2d-standard-16:
-      type: c2d
       cpu: 16
       ram: 64
-      bandwidth: 32
     c2d-standard-2:
-      type: c2d
       cpu: 2
       ram: 8
-      bandwidth: 32
     c2d-standard-32:
-      type: c2d
       cpu: 32
       ram: 128
-      bandwidth: 32
     c2d-standard-4:
-      type: c2d
       cpu: 4
       ram: 16
-      bandwidth: 32
     c2d-standard-56:
-      type: c2d
       cpu: 56
       ram: 224
-      bandwidth: 32
     c2d-standard-8:
-      type: c2d
       cpu: 8
       ram: 32
-      bandwidth: 32
 
     # C3:
     # » Compute-optimized machine family
@@ -1069,227 +690,148 @@ compute:
     #
     # TODO: Check again if GA
     c3-highcpu-4:
-      type: c3
       cpu: 4
       ram: 8
-      bandwidth: 32
     c3-highcpu-8:
-      type: c3
       cpu: 8
       ram: 16
-      bandwidth: 32
     c3-highcpu-22:
-      type: c3
       cpu: 22
       ram: 44
-      bandwidth: 32
     c3-highcpu-44:
-      type: c3
       cpu: 44
       ram: 88
-      bandwidth: 32
     c3-highcpu-88:
-      type: c3
       cpu: 88
       ram: 176
-      bandwidth: 32
     c3-highcpu-176:
-      type: c3
       cpu: 176
       ram: 352
-      bandwidth: 32
 
     # M1:
     # » Memory-optimized VMs that offer 14.9 to 24 GB of memory per vCPU
     # » Do not support GPUs
     m1-ultramem-40:
-      type: m1
       cpu: 40
       ram: 961
-      bandwidth: 32
     m1-ultramem-80:
-      type: m1
       cpu: 80
       ram: 1922
-      bandwidth: 32
     m1-ultramem-160:
-      type: m1
       cpu: 160
       ram: 3844
-      bandwidth: 32
     m1-megamem-96:
-      type: m1
       cpu: 96
       ram: 1433.6
-      bandwidth: 32
 
     # M2:
     # » Memory-optimized VMs that offer 6 TB and 12 TB VMs
     # » Do not support GPUs
     m2-ultramem-208:
-      type: m2
       cpu: 208
       ram: 5888
-      bandwidth: 32
     m2-megamem-416:
-      type: m2
       cpu: 416
       ram: 5888
-      bandwidth: 32
     m2-hypermem-416:
-      type: m2
       cpu: 416
       ram: 8832
-      bandwidth: 32
     m2-ultramem-416:
-      type: m2
       cpu: 416
       ram: 11776
-      bandwidth: 32
 
     # M3:
     # » The M3 machine series does not support GPUs.
     # » The M3 machine series does not support standard persistent disks (pd-standard).
     m3-ultramem-32:
-      type: m3
       cpu: 32
       ram: 976
-      bandwidth: 32
     m3-ultramem-64:
-      type: m3
       cpu: 64
       ram: 1952
-      bandwidth: 32
     m3-ultramem-128:
-      type: m3
       cpu: 128
       ram: 3904
-      bandwidth: 32
     m3-megamem-64:
-      type: m3
       cpu: 64
       ram: 976
-      bandwidth: 32
     m3-megamem-128:
-      type: m3
       cpu: 128
       ram: 1952
-      bandwidth: 32
 
     # A2:
     # » Accelerator-optimized VMs featuring NVIDIA's Ampere A100 40GB GPUs
     # » High performance network bandwidth of up to 100 Gbps
     a2-highgpu-1g:
-      type: a2
       cpu: 12
       ram: 85
       a100: 1
-      bandwidth: 24
     a2-highgpu-2g:
-      type: a2
       cpu: 24
       ram: 170
       a100: 2
-      bandwidth: 32
     a2-highgpu-4g:
-      type: a2
       cpu: 48
       ram: 340
       a100: 4
-      bandwidth: 50
     a2-highgpu-8g:
-      type: a2
       cpu: 96
       ram: 680
       a100: 8
-      bandwidth: 100
     a2-megagpu-16g:
-      type: a2
       cpu: 96
       ram: 1360
       a100: 16
-      bandwidth: 100
-    # TODO: Add price for nvidia-a100-80gb
     # » Machine types with fixed number of A100 80GB HBM2e GPUs
     # » Cost for the GPUs, vCPU, memory, _and_ local SSD
     a2-ultragpu-1g:
-      type: a2
       cpu: 12
       ram: 170
       a100-80gb: 1
-      bandwidth: 24
-      # Local SSD
-      local: 375
     a2-ultragpu-2g:
-      type: a2
       cpu: 24
       ram: 340
-      a100-80gb: 2
-      bandwidth: 32
-      local: 750
     a2-ultragpu-4g:
-      type: a2
       cpu: 48
       ram: 680
       a100-80gb: 4
-      bandwidth: 50
-      local: 1500
     a2-ultragpu-8g:
-      type: a2
       cpu: 96
       ram: 1360
       a100-80gb: 8
-      bandwidth: 100
-      local: 3000
 
     # G2:
     # » Accelerator-optimized VMs featuring NVIDIA's L4 GPUs
     # » Only available on the Intel Cascade Lake platform
     g2-standard-4:
-      type: g2
       cpu: 4
       ram: 16
       l4: 1
-      bandwidth: 10
     g2-standard-8:
-      type: g2
       cpu: 8
       ram: 32
       l4: 1
-      bandwidth: 16
     g2-standard-12:
-      type: g2
       cpu: 12
       ram: 48
       l4: 1
-      bandwidth: 16
     g2-standard-16:
-      type: g2
       cpu: 16
       ram: 64
       l4: 1
-      bandwidth: 32
     g2-standard-24:
-      type: g2
       cpu: 24
       ram: 96
       l4: 2
-      bandwidth: 32
     g2-standard-32:
-      type: g2
       cpu: 32
       ram: 128
       l4: 1
-      bandwidth: 32
     g2-standard-48:
-      type: g2
       cpu: 48
       ram: 192
       l4: 4
-      bandwidth: 50
     g2-standard-96:
-      type: g2
       cpu: 96
       ram: 384
       l4: 8
-      bandwidth: 100

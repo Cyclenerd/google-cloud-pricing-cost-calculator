@@ -15,14 +15,13 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Mon May  8 06:42:47 2023
-  timestamp: 1683528167
+  generated: Tue May  9 12:07:08 2023
+  timestamp: 1683634028
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
     a2-highgpu-1g:
       a100: 1
-      bandwidth: 24
       cost:
         asia-east1:
           hour: 3.790142
@@ -285,10 +284,8 @@ compute:
           month_spot: 844.75235
       cpu: 12
       ram: 85
-      type: a2
     a2-highgpu-2g:
       a100: 2
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 7.580284
@@ -551,10 +548,8 @@ compute:
           month_spot: 1689.5047
       cpu: 24
       ram: 170
-      type: a2
     a2-highgpu-4g:
       a100: 4
-      bandwidth: 50
       cost:
         asia-east1:
           hour: 15.160568
@@ -817,10 +812,8 @@ compute:
           month_spot: 3379.0094
       cpu: 48
       ram: 340
-      type: a2
     a2-highgpu-8g:
       a100: 8
-      bandwidth: 100
       cost:
         asia-east1:
           hour: 30.321136
@@ -1083,10 +1076,8 @@ compute:
           month_spot: 6758.0188
       cpu: 96
       ram: 680
-      type: a2
     a2-megagpu-16g:
       a100: 16
-      bandwidth: 100
       cost:
         asia-east1:
           hour: 57.12848
@@ -1349,10 +1340,8 @@ compute:
           month_spot: 12818.0408
       cpu: 96
       ram: 1360
-      type: a2
     a2-ultragpu-1g:
       a100-80gb: 1
-      bandwidth: 24
       cost:
         asia-east1:
           hour: 5.821568
@@ -1614,279 +1603,272 @@ compute:
           month_3y: 4133.64471
           month_spot: 1276.93936
       cpu: 12
-      local: 375
       ram: 170
-      type: a2
     a2-ultragpu-2g:
-      a100-80gb: 2
-      bandwidth: 32
       cost:
         asia-east1:
-          hour: 11.643136
-          hour_spot: 3.5440092
-          month: 8499.48928
-          month_1y: 8499.48928
-          month_3y: 8499.48928
-          month_spot: 2587.126716
+          hour: 2.546488
+          hour_spot: 0.6597732
+          month: 1858.93624
+          month_1y: 1858.93624
+          month_3y: 1858.93624
+          month_spot: 481.634436
         asia-east2:
-          hour: 14.067046
-          hour_spot: 4.1443212
-          month: 10268.94358
-          month_1y: 10268.94358
-          month_3y: 10268.94358
-          month_spot: 3025.354476
+          hour: 3.077064
+          hour_spot: 0.6597732
+          month: 2246.25672
+          month_1y: 2246.25672
+          month_3y: 2246.25672
+          month_spot: 481.634436
         asia-northeast1:
-          hour: 12.906172
-          hour_spot: 3.92448
-          month: 9421.50556
-          month_1y: 9421.50556
-          month_3y: 9421.50556
-          month_spot: 2864.8704
+          hour: 2.817292
+          hour_spot: 0.72564
+          month: 2056.62316
+          month_1y: 2056.62316
+          month_3y: 2056.62316
+          month_spot: 529.7172
         asia-northeast2:
-          hour: 12.906172
-          hour_spot: 3.8586132
-          month: 9421.50556
-          month_1y: 9421.50556
-          month_3y: 9421.50556
-          month_spot: 2816.787636
+          hour: 2.817292
+          hour_spot: 0.6597732
+          month: 2056.62316
+          month_1y: 2056.62316
+          month_3y: 2056.62316
+          month_spot: 481.634436
         asia-northeast3:
-          hour: 12.906172
-          hour_spot: 3.92448
-          month: 9421.50556
-          month_1y: 9421.50556
-          month_3y: 9421.50556
-          month_spot: 2864.8704
+          hour: 2.817292
+          hour_spot: 0.72564
+          month: 2056.62316
+          month_1y: 2056.62316
+          month_3y: 2056.62316
+          month_spot: 529.7172
         asia-south1:
-          hour: 12.077234
-          hour_spot: 3.6516172
-          month: 8816.38082
-          month_1y: 8816.38082
-          month_3y: 8816.38082
-          month_spot: 2665.680556
+          hour: 2.6412
+          hour_spot: 0.6597732
+          month: 1928.076
+          month_1y: 1928.076
+          month_3y: 1928.076
+          month_spot: 481.634436
         asia-south2:
-          hour: 12.077234
-          hour_spot: 3.78357184
-          month: 8816.38082
-          month_1y: 8816.38082
-          month_3y: 8816.38082
-          month_spot: 2762.0074432
+          hour: 2.6412
+          hour_spot: 0.79172784
+          month: 1928.076
+          month_1y: 1928.076
+          month_3y: 1928.076
+          month_spot: 577.9613232
         asia-southeast1:
-          hour: 12.40496
-          hour_spot: 4.22694
-          month: 9055.6208
-          month_1y: 9055.6208
-          month_3y: 9055.6208
-          month_spot: 3085.6662
+          hour: 2.712816
+          hour_spot: 0.69294
+          month: 1980.35568
+          month_1y: 1980.35568
+          month_3y: 1980.35568
+          month_spot: 505.8462
         asia-southeast2:
-          hour: 13.5211336
-          hour_spot: 4.0093132
-          month: 9870.427528
-          month_1y: 9870.427528
-          month_3y: 9870.427528
-          month_spot: 2926.798636
+          hour: 2.9569556
+          hour_spot: 0.6597732
+          month: 2158.577588
+          month_1y: 2158.577588
+          month_3y: 2158.577588
+          month_spot: 481.634436
         australia-southeast1:
-          hour: 14.272104
-          hour_spot: 4.1956332
-          month: 10418.63592
-          month_1y: 10418.63592
-          month_3y: 10418.63592
-          month_spot: 3062.812236
+          hour: 3.120284
+          hour_spot: 0.6597732
+          month: 2277.80732
+          month_1y: 2277.80732
+          month_3y: 2277.80732
+          month_spot: 481.634436
         australia-southeast2:
-          hour: 14.272104
-          hour_spot: 4.472737944
-          month: 10418.63592
-          month_1y: 10418.63592
-          month_3y: 10418.63592
-          month_spot: 3265.09869912
+          hour: 3.120284
+          hour_spot: 0.936877944
+          month: 2277.80732
+          month_1y: 2277.80732
+          month_3y: 2277.80732
+          month_spot: 683.92089912
         europe-central2:
-          hour: 12.955116
-          hour_spot: 3.8690752
-          month: 9457.23468
-          month_1y: 9457.23468
-          month_3y: 9457.23468
-          month_spot: 2824.424896
+          hour: 2.83324
+          hour_spot: 0.6597732
+          month: 2068.2652
+          month_1y: 2068.2652
+          month_3y: 2068.2652
+          month_spot: 481.634436
         europe-north1:
-          hour: 11.071522
-          hour_spot: 3.4025252
-          month: 8082.21106
-          month_1y: 8082.21106
-          month_3y: 8082.21106
-          month_spot: 2483.843396
+          hour: 2.421104
+          hour_spot: 0.6597732
+          month: 1767.40592
+          month_1y: 1767.40592
+          month_3y: 1767.40592
+          month_spot: 481.634436
         europe-southwest1:
-          hour: 11.86537592
-          hour_spot: 3.71781828
-          month: 8661.7244216
-          month_1y: 8661.7244216
-          month_3y: 8661.7244216
-          month_spot: 2714.0073444
+          hour: 2.59510792
+          hour_spot: 0.77853228
+          month: 1894.4287816
+          month_1y: 1894.4287816
+          month_3y: 1894.4287816
+          month_spot: 568.3285644
         europe-west1:
-          hour: 11.06971
-          hour_spot: 3.4025252
-          month: 8080.8883
-          month_1y: 8080.8883
-          month_3y: 8080.8883
-          month_spot: 2483.843396
+          hour: 2.419292
+          hour_spot: 0.6597732
+          month: 1766.08316
+          month_1y: 1766.08316
+          month_3y: 1766.08316
+          month_spot: 481.634436
         europe-west12:
-          hour: 12.97147076
-          hour_spot: 4.0643935
-          month: 9469.1736548
-          month_1y: 9469.1736548
-          month_3y: 9469.1736548
-          month_spot: 2967.007255
+          hour: 2.83702476
+          hour_spot: 0.8511075
+          month: 2071.0280748
+          month_1y: 2071.0280748
+          month_3y: 2071.0280748
+          month_spot: 621.308475
         europe-west2:
-          hour: 12.955116
-          hour_spot: 3.8690752
-          month: 9457.23468
-          month_1y: 9457.23468
-          month_3y: 9457.23468
-          month_spot: 2824.424896
+          hour: 2.83324
+          hour_spot: 0.6597732
+          month: 2068.2652
+          month_1y: 2068.2652
+          month_3y: 2068.2652
+          month_spot: 481.634436
         europe-west3:
-          hour: 12.955116
-          hour_spot: 3.8690752
-          month: 9457.23468
-          month_1y: 9457.23468
-          month_3y: 9457.23468
-          month_spot: 2824.424896
+          hour: 2.83324
+          hour_spot: 0.6597732
+          month: 2068.2652
+          month_1y: 2068.2652
+          month_3y: 2068.2652
+          month_spot: 481.634436
         europe-west4:
-          hour: 11.071426
-          hour_spot: 3.435692
-          month: 8082.14098
-          month_1y: 8082.14098
-          month_3y: 8082.14098
-          month_spot: 2508.05516
+          hour: 2.421008
+          hour_spot: 0.69294
+          month: 1767.33584
+          month_1y: 1767.33584
+          month_3y: 1767.33584
+          month_spot: 505.8462
         europe-west6:
-          hour: 14.067046
-          hour_spot: 4.1443212
-          month: 10268.94358
-          month_1y: 10268.94358
-          month_3y: 10268.94358
-          month_spot: 3025.354476
+          hour: 3.077064
+          hour_spot: 0.6597732
+          month: 2246.25672
+          month_1y: 2246.25672
+          month_3y: 2246.25672
+          month_spot: 481.634436
         europe-west8:
-          hour: 11.66426904
-          hour_spot: 3.65480496
-          month: 8514.9163992
-          month_1y: 8514.9163992
-          month_3y: 8514.9163992
-          month_spot: 2668.0076208
+          hour: 2.55112304
+          hour_spot: 0.76533696
+          month: 1862.3198192
+          month_1y: 1862.3198192
+          month_3y: 1862.3198192
+          month_spot: 558.6959808
         europe-west9:
-          hour: 11.66426904
-          hour_spot: 3.65480496
-          month: 8514.9163992
-          month_1y: 8514.9163992
-          month_3y: 8514.9163992
-          month_spot: 2668.0076208
+          hour: 2.55112304
+          hour_spot: 0.76533696
+          month: 1862.3198192
+          month_1y: 1862.3198192
+          month_3y: 1862.3198192
+          month_spot: 558.6959808
         me-central1:
-          hour: 12.21731558
-          hour_spot: 3.82809262
-          month: 8918.6403734
-          month_1y: 8918.6403734
-          month_3y: 8918.6403734
-          month_spot: 2794.5076126
+          hour: 2.67208158
+          hour_spot: 0.80162462
+          month: 1950.6195534
+          month_1y: 1950.6195534
+          month_3y: 1950.6195534
+          month_spot: 585.1859726
         me-west1:
-          hour: 11.0609444
-          hour_spot: 3.46576252
-          month: 8074.489412
-          month_1y: 8074.489412
-          month_3y: 8074.489412
-          month_spot: 2530.0066396
+          hour: 2.4191684
+          hour_spot: 0.72575052
+          month: 1765.992932
+          month_1y: 1765.992932
+          month_3y: 1765.992932
+          month_spot: 529.7978796
         northamerica-northeast1:
-          hour: 11.071426
-          hour_spot: 3.4025252
-          month: 8082.14098
-          month_1y: 8082.14098
-          month_3y: 8082.14098
-          month_spot: 2483.843396
+          hour: 2.421008
+          hour_spot: 0.6597732
+          month: 1767.33584
+          month_1y: 1767.33584
+          month_3y: 1767.33584
+          month_spot: 481.634436
         northamerica-northeast2:
-          hour: 11.071426
-          hour_spot: 3.46850252
-          month: 8082.14098
-          month_1y: 8082.14098
-          month_3y: 8082.14098
-          month_spot: 2532.0068396
+          hour: 2.421008
+          hour_spot: 0.72575052
+          month: 1767.33584
+          month_1y: 1767.33584
+          month_3y: 1767.33584
+          month_spot: 529.7978796
         southamerica-east1:
-          hour: 15.965616
-          hour_spot: 4.6151052
-          month: 11654.89968
-          month_1y: 11654.89968
-          month_3y: 11654.89968
-          month_spot: 3369.026796
+          hour: 3.49082
+          hour_spot: 0.6597732
+          month: 2548.2986
+          month_1y: 2548.2986
+          month_3y: 2548.2986
+          month_spot: 481.634436
         southamerica-west1:
-          hour: 14.37922692
-          hour_spot: 4.505491676
-          month: 10496.8356516
-          month_1y: 10496.8356516
-          month_3y: 10496.8356516
-          month_spot: 3289.00892348
+          hour: 3.14491892
+          hour_spot: 0.943475676
+          month: 2295.7908116
+          month_1y: 2295.7908116
+          month_3y: 2295.7908116
+          month_spot: 688.73724348
         us-central1:
-          hour: 10.055404
-          hour_spot: 3.1506932
-          month: 7340.44492
-          month_1y: 7340.44492
-          month_3y: 7340.44492
-          month_spot: 2300.006036
+          hour: 2.199244
+          hour_spot: 0.6597732
+          month: 1605.44812
+          month_1y: 1605.44812
+          month_3y: 1605.44812
+          month_spot: 481.634436
         us-east1:
-          hour: 10.055404
-          hour_spot: 3.1506932
-          month: 7340.44492
-          month_1y: 7340.44492
-          month_3y: 7340.44492
-          month_spot: 2300.006036
+          hour: 2.199244
+          hour_spot: 0.6597732
+          month: 1605.44812
+          month_1y: 1605.44812
+          month_3y: 1605.44812
+          month_spot: 481.634436
         us-east4:
-          hour: 11.325054
-          hour_spot: 3.4652972
-          month: 8267.28942
-          month_1y: 8267.28942
-          month_3y: 8267.28942
-          month_spot: 2529.666956
+          hour: 2.47666
+          hour_spot: 0.6597732
+          month: 1807.9618
+          month_1y: 1807.9618
+          month_3y: 1807.9618
+          month_spot: 481.634436
         us-east5:
-          hour: 11.047638
-          hour_spot: 3.4652972
-          month: 8064.77574
-          month_1y: 8064.77574
-          month_3y: 8064.77574
-          month_spot: 2529.666956
+          hour: 2.199244
+          hour_spot: 0.6597732
+          month: 1605.44812
+          month_1y: 1605.44812
+          month_3y: 1605.44812
+          month_spot: 481.634436
         us-south1:
-          hour: 11.86537592
-          hour_spot: 3.71781828
-          month: 8661.7244216
-          month_1y: 8661.7244216
-          month_3y: 8661.7244216
-          month_spot: 2714.0073444
+          hour: 2.59510792
+          hour_spot: 0.77853228
+          month: 1894.4287816
+          month_1y: 1894.4287816
+          month_3y: 1894.4287816
+          month_spot: 568.3285644
         us-west1:
-          hour: 10.055404
-          hour_spot: 3.1506932
-          month: 7340.44492
-          month_1y: 7340.44492
-          month_3y: 7340.44492
-          month_spot: 2300.006036
+          hour: 2.199244
+          hour_spot: 0.6597732
+          month: 1605.44812
+          month_1y: 1605.44812
+          month_3y: 1605.44812
+          month_spot: 481.634436
         us-west2:
-          hour: 12.08543
-          hour_spot: 3.6541072
-          month: 8822.3639
-          month_1y: 8822.3639
-          month_3y: 8822.3639
-          month_spot: 2667.498256
+          hour: 2.64154
+          hour_spot: 0.6597732
+          month: 1928.3242
+          month_1y: 1928.3242
+          month_3y: 1928.3242
+          month_spot: 481.634436
         us-west3:
-          hour: 12.08543
-          hour_spot: 3.687274
-          month: 8822.3639
-          month_1y: 8822.3639
-          month_3y: 8822.3639
-          month_spot: 2691.71002
+          hour: 2.64154
+          hour_spot: 0.69294
+          month: 1928.3242
+          month_1y: 1928.3242
+          month_3y: 1928.3242
+          month_spot: 505.8462
         us-west4:
-          hour: 11.325054
-          hour_spot: 3.498464
-          month: 8267.28942
-          month_1y: 8267.28942
-          month_3y: 8267.28942
-          month_spot: 2553.87872
+          hour: 2.47666
+          hour_spot: 0.69294
+          month: 1807.9618
+          month_1y: 1807.9618
+          month_3y: 1807.9618
+          month_spot: 505.8462
       cpu: 24
-      local: 750
       ram: 340
-      type: a2
     a2-ultragpu-4g:
       a100-80gb: 4
-      bandwidth: 50
       cost:
         asia-east1:
           hour: 23.286272
@@ -2148,12 +2130,9 @@ compute:
           month_3y: 16534.57884
           month_spot: 5107.75744
       cpu: 48
-      local: 1500
       ram: 680
-      type: a2
     a2-ultragpu-8g:
       a100-80gb: 8
-      bandwidth: 100
       cost:
         asia-east1:
           hour: 46.572544
@@ -2415,11 +2394,8 @@ compute:
           month_3y: 33069.15768
           month_spot: 10215.51488
       cpu: 96
-      local: 3000
       ram: 1360
-      type: a2
     c2-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.967088
@@ -2682,9 +2658,7 @@ compute:
           month_spot: 157.84352
       cpu: 16
       ram: 64
-      type: c2
     c2-standard-30:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.81329
@@ -2947,9 +2921,7 @@ compute:
           month_spot: 295.9566
       cpu: 30
       ram: 120
-      type: c2
     c2-standard-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.241772
@@ -3212,9 +3184,7 @@ compute:
           month_spot: 39.46088
       cpu: 4
       ram: 16
-      type: c2
     c2-standard-60:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.62658
@@ -3477,9 +3447,7 @@ compute:
           month_spot: 591.9132
       cpu: 60
       ram: 240
-      type: c2
     c2-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.483544
@@ -3742,9 +3710,7 @@ compute:
           month_spot: 78.92176
       cpu: 8
       ram: 32
-      type: c2
     c2d-highcpu-112:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.860688
@@ -4007,9 +3973,7 @@ compute:
           month_spot: 835.26016
       cpu: 112
       ram: 224
-      type: c2d
     c2d-highcpu-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.694384
@@ -4272,9 +4236,7 @@ compute:
           month_spot: 119.32288
       cpu: 16
       ram: 32
-      type: c2d
     c2d-highcpu-2:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.086798
@@ -4537,9 +4499,7 @@ compute:
           month_spot: 14.91536
       cpu: 2
       ram: 4
-      type: c2d
     c2d-highcpu-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.388768
@@ -4802,9 +4762,7 @@ compute:
           month_spot: 238.64576
       cpu: 32
       ram: 64
-      type: c2d
     c2d-highcpu-4:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.173596
@@ -5067,9 +5025,7 @@ compute:
           month_spot: 29.83072
       cpu: 4
       ram: 8
-      type: c2d
     c2d-highcpu-56:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.430344
@@ -5332,9 +5288,7 @@ compute:
           month_spot: 417.63008
       cpu: 56
       ram: 112
-      type: c2d
     c2d-highcpu-8:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.347192
@@ -5597,9 +5551,7 @@ compute:
           month_spot: 59.66144
       cpu: 8
       ram: 16
-      type: c2d
     c2d-highmem-112:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 7.941136
@@ -5862,9 +5814,7 @@ compute:
           month_spot: 1364.5744
       cpu: 112
       ram: 896
-      type: c2d
     c2d-highmem-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.134448
@@ -6127,9 +6077,7 @@ compute:
           month_spot: 194.9392
       cpu: 16
       ram: 128
-      type: c2d
     c2d-highmem-2:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.141806
@@ -6392,9 +6340,7 @@ compute:
           month_spot: 24.3674
       cpu: 2
       ram: 16
-      type: c2d
     c2d-highmem-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.268896
@@ -6657,9 +6603,7 @@ compute:
           month_spot: 389.8784
       cpu: 32
       ram: 256
-      type: c2d
     c2d-highmem-4:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.283612
@@ -6922,9 +6866,7 @@ compute:
           month_spot: 48.7348
       cpu: 4
       ram: 32
-      type: c2d
     c2d-highmem-56:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.970568
@@ -7187,9 +7129,7 @@ compute:
           month_spot: 682.2872
       cpu: 56
       ram: 448
-      type: c2d
     c2d-highmem-8:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.567224
@@ -7452,9 +7392,7 @@ compute:
           month_spot: 97.4696
       cpu: 8
       ram: 64
-      type: c2d
     c2d-standard-112:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 5.887504
@@ -7717,9 +7655,7 @@ compute:
           month_spot: 1011.69824
       cpu: 112
       ram: 448
-      type: c2d
     c2d-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.841072
@@ -7982,9 +7918,7 @@ compute:
           month_spot: 144.52832
       cpu: 16
       ram: 64
-      type: c2d
     c2d-standard-2:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.105134
@@ -8247,9 +8181,7 @@ compute:
           month_spot: 18.06604
       cpu: 2
       ram: 8
-      type: c2d
     c2d-standard-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.682144
@@ -8512,9 +8444,7 @@ compute:
           month_spot: 289.05664
       cpu: 32
       ram: 128
-      type: c2d
     c2d-standard-4:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.210268
@@ -8777,9 +8707,7 @@ compute:
           month_spot: 36.13208
       cpu: 4
       ram: 16
-      type: c2d
     c2d-standard-56:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.943752
@@ -9042,9 +8970,7 @@ compute:
           month_spot: 505.84912
       cpu: 56
       ram: 224
-      type: c2d
     c2d-standard-8:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.420536
@@ -9307,9 +9233,7 @@ compute:
           month_spot: 72.26416
       cpu: 8
       ram: 32
-      type: c2d
     c3-highcpu-176:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 8.78152
@@ -9572,9 +9496,7 @@ compute:
           month_spot: 1433.32288
       cpu: 176
       ram: 352
-      type: c3
     c3-highcpu-22:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.09769
@@ -9837,9 +9759,7 @@ compute:
           month_spot: 179.16536
       cpu: 22
       ram: 44
-      type: c3
     c3-highcpu-4:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.19958
@@ -10102,9 +10022,7 @@ compute:
           month_spot: 32.57552
       cpu: 4
       ram: 8
-      type: c3
     c3-highcpu-44:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.19538
@@ -10367,9 +10285,7 @@ compute:
           month_spot: 358.33072
       cpu: 44
       ram: 88
-      type: c3
     c3-highcpu-8:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.39916
@@ -10632,9 +10548,7 @@ compute:
           month_spot: 65.15104
       cpu: 8
       ram: 16
-      type: c3
     c3-highcpu-88:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.39076
@@ -10897,9 +10811,7 @@ compute:
           month_spot: 716.66144
       cpu: 88
       ram: 176
-      type: c3
     custom-1-7680-ext:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.077035
@@ -11164,7 +11076,6 @@ compute:
       ram: 7.5
       type: n1-custom
     custom-2-10240-ext:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.12832
@@ -11429,7 +11340,6 @@ compute:
       ram: 10
       type: n1-custom
     custom-4-30720-ext:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.30814
@@ -11694,7 +11604,6 @@ compute:
       ram: 30
       type: n1-custom
     e2-highcpu-16:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.45824832
@@ -11957,9 +11866,7 @@ compute:
           month_spot: 30.47312
       cpu: 16
       ram: 16
-      type: e2
     e2-highcpu-2:
-      bandwidth: 4
       cost:
         asia-east1:
           hour: 0.05728104
@@ -12222,9 +12129,7 @@ compute:
           month_spot: 3.80914
       cpu: 2
       ram: 2
-      type: e2
     e2-highcpu-32:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.91649664
@@ -12487,9 +12392,7 @@ compute:
           month_spot: 60.94624
       cpu: 32
       ram: 32
-      type: e2
     e2-highcpu-4:
-      bandwidth: 8
       cost:
         asia-east1:
           hour: 0.11456208
@@ -12752,9 +12655,7 @@ compute:
           month_spot: 7.61828
       cpu: 4
       ram: 4
-      type: e2
     e2-highcpu-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.22912416
@@ -13017,9 +12918,7 @@ compute:
           month_spot: 15.23656
       cpu: 8
       ram: 8
-      type: e2
     e2-highmem-16:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.837384
@@ -13282,9 +13181,7 @@ compute:
           month_spot: 55.73696
       cpu: 16
       ram: 128
-      type: e2
     e2-highmem-2:
-      bandwidth: 4
       cost:
         asia-east1:
           hour: 0.104673
@@ -13547,9 +13444,7 @@ compute:
           month_spot: 6.96712
       cpu: 2
       ram: 16
-      type: e2
     e2-highmem-4:
-      bandwidth: 8
       cost:
         asia-east1:
           hour: 0.209346
@@ -13812,9 +13707,7 @@ compute:
           month_spot: 13.93424
       cpu: 4
       ram: 32
-      type: e2
     e2-highmem-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.418692
@@ -14077,9 +13970,7 @@ compute:
           month_spot: 27.86848
       cpu: 8
       ram: 64
-      type: e2
     e2-medium:
-      bandwidth: 2
       cost:
         asia-east1:
           hour: 0.03879594
@@ -14342,9 +14233,7 @@ compute:
           month_spot: 2.58128
       cpu: 1
       ram: 4
-      type: e2
     e2-micro:
-      bandwidth: 1
       cost:
         asia-east1:
           hour: 0.009698985
@@ -14607,9 +14496,7 @@ compute:
           month_spot: 0.64532
       cpu: 0.25
       ram: 1
-      type: e2
     e2-small:
-      bandwidth: 1
       cost:
         asia-east1:
           hour: 0.01939797
@@ -14872,9 +14759,7 @@ compute:
           month_spot: 1.29064
       cpu: 0.5
       ram: 2
-      type: e2
     e2-standard-16:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.62073504
@@ -15137,9 +15022,7 @@ compute:
           month_spot: 41.30048
       cpu: 16
       ram: 64
-      type: e2
     e2-standard-2:
-      bandwidth: 4
       cost:
         asia-east1:
           hour: 0.07759188
@@ -15402,9 +15285,7 @@ compute:
           month_spot: 5.16256
       cpu: 2
       ram: 8
-      type: e2
     e2-standard-32:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 1.24147008
@@ -15667,9 +15548,7 @@ compute:
           month_spot: 82.60096
       cpu: 32
       ram: 128
-      type: e2
     e2-standard-4:
-      bandwidth: 8
       cost:
         asia-east1:
           hour: 0.15518376
@@ -15932,9 +15811,7 @@ compute:
           month_spot: 10.32512
       cpu: 4
       ram: 16
-      type: e2
     e2-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.31036752
@@ -16197,9 +16074,7 @@ compute:
           month_spot: 20.65024
       cpu: 8
       ram: 32
-      type: e2
     f1-micro:
-      bandwidth: 1
       cost:
         asia-east1:
           hour: 0.009
@@ -16462,9 +16337,7 @@ compute:
           month_spot: 2.7375
       cpu: 1
       ram: 0.6
-      type: f1
     g1-small:
-      bandwidth: 1
       cost:
         asia-east1:
           hour: 0.03
@@ -16727,9 +16600,7 @@ compute:
           month_spot: 5.4677
       cpu: 1
       ram: 1.7
-      type: g1
     g2-standard-12:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 1.158382064
@@ -16993,9 +16864,7 @@ compute:
       cpu: 12
       l4: 1
       ram: 48
-      type: g2
     g2-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.328352552
@@ -17259,9 +17128,7 @@ compute:
       cpu: 16
       l4: 1
       ram: 64
-      type: g2
     g2-standard-24:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.316764128
@@ -17525,9 +17392,7 @@ compute:
       cpu: 24
       l4: 2
       ram: 96
-      type: g2
     g2-standard-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.008234504
@@ -17791,9 +17656,7 @@ compute:
       cpu: 32
       l4: 1
       ram: 128
-      type: g2
     g2-standard-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.818441088
@@ -18057,9 +17920,7 @@ compute:
       cpu: 4
       l4: 1
       ram: 16
-      type: g2
     g2-standard-48:
-      bandwidth: 50
       cost:
         asia-east1:
           hour: 4.633528256
@@ -18323,9 +18184,7 @@ compute:
       cpu: 48
       l4: 4
       ram: 192
-      type: g2
     g2-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.988411576
@@ -18589,9 +18448,7 @@ compute:
       cpu: 8
       l4: 1
       ram: 32
-      type: g2
     g2-standard-96:
-      bandwidth: 100
       cost:
         asia-east1:
           hour: 9.267056512
@@ -18855,9 +18712,7 @@ compute:
       cpu: 96
       l4: 8
       ram: 384
-      type: g2
     m1-megamem-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 12.362224
@@ -19120,9 +18975,7 @@ compute:
           month_spot: 1805.2608
       cpu: 96
       ram: 1433.6
-      type: m1
     m1-ultramem-160:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 29.21897
@@ -19385,9 +19238,7 @@ compute:
           month_spot: 4283.056
       cpu: 160
       ram: 3844
-      type: m1
     m1-ultramem-40:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 7.3047425
@@ -19650,9 +19501,7 @@ compute:
           month_spot: 1070.764
       cpu: 40
       ram: 961
-      type: m1
     m1-ultramem-80:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 14.609485
@@ -19915,9 +19764,7 @@ compute:
           month_spot: 2141.528
       cpu: 80
       ram: 1922
-      type: m1
     m2-hypermem-416:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 78.06605904
@@ -20106,9 +19953,7 @@ compute:
           month_3y: 19191.402388928
       cpu: 416
       ram: 8832
-      type: m2
     m2-megamem-416:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 58.36355984
@@ -20297,9 +20142,7 @@ compute:
           month_3y: 14347.098505664
       cpu: 416
       ram: 5888
-      type: m2
     m2-ultramem-208:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 48.88427912
@@ -20488,9 +20331,7 @@ compute:
           month_3y: 12017.853136096
       cpu: 208
       ram: 5888
-      type: m2
     m2-ultramem-416:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 97.76855824
@@ -20679,9 +20520,7 @@ compute:
           month_3y: 24035.706272192
       cpu: 416
       ram: 11776
-      type: m2
     m3-megamem-128:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 16.68487584
@@ -20944,9 +20783,7 @@ compute:
           month_spot: 2504.7470336
       cpu: 128
       ram: 1952
-      type: m3
     m3-megamem-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 8.34243792
@@ -21209,9 +21046,7 @@ compute:
           month_spot: 1252.3735168
       cpu: 64
       ram: 976
-      type: m3
     m3-ultramem-128:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 28.21200192
@@ -21474,9 +21309,7 @@ compute:
           month_spot: 4238.07407744
       cpu: 128
       ram: 3904
-      type: m3
     m3-ultramem-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 7.05300048
@@ -21739,9 +21572,7 @@ compute:
           month_spot: 1059.51851936
       cpu: 32
       ram: 976
-      type: m3
     m3-ultramem-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 14.10600096
@@ -22004,9 +21835,7 @@ compute:
           month_spot: 2119.03703872
       cpu: 64
       ram: 1952
-      type: m3
     n1-highcpu-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.6562784
@@ -22269,9 +22098,7 @@ compute:
           month_spot: 46.595024
       cpu: 16
       ram: 14.4
-      type: n1
     n1-highcpu-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.0820348
@@ -22534,9 +22361,7 @@ compute:
           month_spot: 5.824378
       cpu: 2
       ram: 1.8
-      type: n1
     n1-highcpu-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.3125568
@@ -22799,9 +22624,7 @@ compute:
           month_spot: 93.190048
       cpu: 32
       ram: 28.8
-      type: n1
     n1-highcpu-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.1640696
@@ -23064,9 +22887,7 @@ compute:
           month_spot: 11.648756
       cpu: 4
       ram: 3.6
-      type: n1
     n1-highcpu-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.6251136
@@ -23329,9 +23150,7 @@ compute:
           month_spot: 186.380096
       cpu: 64
       ram: 57.6
-      type: n1
     n1-highcpu-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.3281392
@@ -23594,9 +23413,7 @@ compute:
           month_spot: 23.297512
       cpu: 8
       ram: 7.2
-      type: n1
     n1-highcpu-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.9376704
@@ -23859,9 +23676,7 @@ compute:
           month_spot: 279.570144
       cpu: 96
       ram: 86.4
-      type: n1
     n1-highmem-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.095856
@@ -24124,9 +23939,7 @@ compute:
           month_spot: 77.79464
       cpu: 16
       ram: 104
-      type: n1
     n1-highmem-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.136982
@@ -24389,9 +24202,7 @@ compute:
           month_spot: 9.72433
       cpu: 2
       ram: 13
-      type: n1
     n1-highmem-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.191712
@@ -24654,9 +24465,7 @@ compute:
           month_spot: 155.58928
       cpu: 32
       ram: 208
-      type: n1
     n1-highmem-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.273964
@@ -24919,9 +24728,7 @@ compute:
           month_spot: 19.44866
       cpu: 4
       ram: 26
-      type: n1
     n1-highmem-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.383424
@@ -25184,9 +24991,7 @@ compute:
           month_spot: 311.17856
       cpu: 64
       ram: 416
-      type: n1
     n1-highmem-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.547928
@@ -25449,9 +25254,7 @@ compute:
           month_spot: 38.89732
       cpu: 8
       ram: 52
-      type: n1
     n1-highmem-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 6.575136
@@ -25714,9 +25517,7 @@ compute:
           month_spot: 466.76784
       cpu: 96
       ram: 624
-      type: n1
     n1-standard-1:
-      bandwidth: 2
       cost:
         asia-east1:
           hour: 0.0549995
@@ -25979,9 +25780,7 @@ compute:
           month_spot: 3.9045875
       cpu: 1
       ram: 3.75
-      type: n1
     n1-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.879992
@@ -26244,9 +26043,7 @@ compute:
           month_spot: 62.4734
       cpu: 16
       ram: 60
-      type: n1
     n1-standard-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.109999
@@ -26509,9 +26306,7 @@ compute:
           month_spot: 7.809175
       cpu: 2
       ram: 7.50
-      type: n1
     n1-standard-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.759984
@@ -26774,9 +26569,7 @@ compute:
           month_spot: 124.9468
       cpu: 32
       ram: 120
-      type: n1
     n1-standard-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.219998
@@ -27039,9 +26832,7 @@ compute:
           month_spot: 15.61835
       cpu: 4
       ram: 15
-      type: n1
     n1-standard-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.519968
@@ -27304,9 +27095,7 @@ compute:
           month_spot: 249.8936
       cpu: 64
       ram: 240
-      type: n1
     n1-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.439996
@@ -27569,9 +27358,7 @@ compute:
           month_spot: 31.2367
       cpu: 8
       ram: 30
-      type: n1
     n1-standard-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 5.279952
@@ -27834,9 +27621,7 @@ compute:
           month_spot: 374.8404
       cpu: 96
       ram: 360
-      type: n1
     n2-highcpu-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.664128
@@ -28099,9 +27884,7 @@ compute:
           month_spot: 94.03568
       cpu: 16
       ram: 16
-      type: n2
     n2-highcpu-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.083016
@@ -28364,9 +28147,7 @@ compute:
           month_spot: 11.75446
       cpu: 2
       ram: 2
-      type: n2
     n2-highcpu-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.328256
@@ -28629,10 +28410,7 @@ compute:
           month_spot: 188.07136
       cpu: 32
       ram: 32
-      tier1: 50
-      type: n2
     n2-highcpu-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.166032
@@ -28895,9 +28673,7 @@ compute:
           month_spot: 23.50892
       cpu: 4
       ram: 4
-      type: n2
     n2-highcpu-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.992384
@@ -29160,10 +28936,7 @@ compute:
           month_spot: 282.10704
       cpu: 48
       ram: 48
-      tier1: 50
-      type: n2
     n2-highcpu-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.656512
@@ -29426,10 +29199,7 @@ compute:
           month_spot: 376.14272
       cpu: 64
       ram: 64
-      tier1: 75
-      type: n2
     n2-highcpu-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.332064
@@ -29692,9 +29462,7 @@ compute:
           month_spot: 47.01784
       cpu: 8
       ram: 8
-      type: n2
     n2-highcpu-80:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.32064
@@ -29957,10 +29725,7 @@ compute:
           month_spot: 470.1784
       cpu: 80
       ram: 80
-      tier1: 100
-      type: n2
     n2-highcpu-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.984768
@@ -30223,10 +29988,7 @@ compute:
           month_spot: 564.21408
       cpu: 96
       ram: 96
-      tier1: 100
-      type: n2
     n2-highmem-128:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 8.92384
@@ -30489,10 +30251,7 @@ compute:
           month_spot: 1263.23872
       cpu: 128
       ram: 864
-      tier1: 100
-      type: n2
     n2-highmem-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.2136
@@ -30755,9 +30514,7 @@ compute:
           month_spot: 171.78944
       cpu: 16
       ram: 128
-      type: n2
     n2-highmem-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.1517
@@ -31020,9 +30777,7 @@ compute:
           month_spot: 21.47368
       cpu: 2
       ram: 16
-      type: n2
     n2-highmem-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.4272
@@ -31285,10 +31040,7 @@ compute:
           month_spot: 343.57888
       cpu: 32
       ram: 256
-      tier1: 50
-      type: n2
     n2-highmem-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.3034
@@ -31551,9 +31303,7 @@ compute:
           month_spot: 42.94736
       cpu: 4
       ram: 32
-      type: n2
     n2-highmem-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.6408
@@ -31816,10 +31566,7 @@ compute:
           month_spot: 515.36832
       cpu: 48
       ram: 384
-      tier1: 50
-      type: n2
     n2-highmem-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.8544
@@ -32082,10 +31829,7 @@ compute:
           month_spot: 687.15776
       cpu: 64
       ram: 512
-      tier1: 75
-      type: n2
     n2-highmem-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.6068
@@ -32348,9 +32092,7 @@ compute:
           month_spot: 85.89472
       cpu: 8
       ram: 64
-      type: n2
     n2-highmem-80:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 6.068
@@ -32613,10 +32355,7 @@ compute:
           month_spot: 858.9472
       cpu: 80
       ram: 640
-      tier1: 100
-      type: n2
     n2-highmem-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 7.2816
@@ -32879,10 +32618,7 @@ compute:
           month_spot: 1030.73664
       cpu: 96
       ram: 768
-      tier1: 100
-      type: n2
     n2-standard-128:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 7.196928
@@ -33145,10 +32881,7 @@ compute:
           month_spot: 1018.86976
       cpu: 128
       ram: 512
-      tier1: 100
-      type: n2
     n2-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.899616
@@ -33411,9 +33144,7 @@ compute:
           month_spot: 127.35872
       cpu: 16
       ram: 64
-      type: n2
     n2-standard-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.112452
@@ -33676,9 +33407,7 @@ compute:
           month_spot: 15.91984
       cpu: 2
       ram: 8
-      type: n2
     n2-standard-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.799232
@@ -33941,10 +33670,7 @@ compute:
           month_spot: 254.71744
       cpu: 32
       ram: 128
-      tier1: 50
-      type: n2
     n2-standard-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.224904
@@ -34207,9 +33933,7 @@ compute:
           month_spot: 31.83968
       cpu: 4
       ram: 16
-      type: n2
     n2-standard-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.698848
@@ -34472,10 +34196,7 @@ compute:
           month_spot: 382.07616
       cpu: 48
       ram: 192
-      tier1: 50
-      type: n2
     n2-standard-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.598464
@@ -34738,10 +34459,7 @@ compute:
           month_spot: 509.43488
       cpu: 64
       ram: 256
-      tier1: 75
-      type: n2
     n2-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.449808
@@ -35004,9 +34722,7 @@ compute:
           month_spot: 63.67936
       cpu: 8
       ram: 32
-      type: n2
     n2-standard-80:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.49808
@@ -35269,10 +34985,7 @@ compute:
           month_spot: 636.7936
       cpu: 80
       ram: 320
-      tier1: 100
-      type: n2
     n2-standard-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 5.397696
@@ -35535,10 +35248,7 @@ compute:
           month_spot: 764.15232
       cpu: 96
       ram: 384
-      tier1: 100
-      type: n2
     n2d-highcpu-128:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.622336
@@ -35801,10 +35511,7 @@ compute:
           month_spot: 754.43456
       cpu: 128
       ram: 128
-      tier1: 50
-      type: n2d
     n2d-highcpu-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.577792
@@ -36067,9 +35774,7 @@ compute:
           month_spot: 94.30432
       cpu: 16
       ram: 16
-      type: n2d
     n2d-highcpu-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.072224
@@ -36332,9 +36037,7 @@ compute:
           month_spot: 11.78804
       cpu: 2
       ram: 2
-      type: n2d
     n2d-highcpu-224:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 8.089088
@@ -36597,10 +36300,7 @@ compute:
           month_spot: 1320.26048
       cpu: 224
       ram: 224
-      tier1: 100
-      type: n2d
     n2d-highcpu-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.155584
@@ -36863,9 +36563,7 @@ compute:
           month_spot: 188.60864
       cpu: 32
       ram: 32
-      type: n2d
     n2d-highcpu-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.144448
@@ -37128,9 +36826,7 @@ compute:
           month_spot: 23.57608
       cpu: 4
       ram: 4
-      type: n2d
     n2d-highcpu-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.733376
@@ -37393,9 +37089,7 @@ compute:
           month_spot: 282.91296
       cpu: 48
       ram: 48
-      type: n2d
     n2d-highcpu-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.311168
@@ -37658,9 +37352,7 @@ compute:
           month_spot: 377.21728
       cpu: 64
       ram: 64
-      type: n2d
     n2d-highcpu-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.288896
@@ -37923,9 +37615,7 @@ compute:
           month_spot: 47.15216
       cpu: 8
       ram: 8
-      type: n2d
     n2d-highcpu-80:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.88896
@@ -38188,9 +37878,7 @@ compute:
           month_spot: 471.5216
       cpu: 80
       ram: 80
-      type: n2d
     n2d-highcpu-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.466752
@@ -38453,10 +38141,7 @@ compute:
           month_spot: 565.82592
       cpu: 96
       ram: 96
-      tier1: 50
-      type: n2d
     n2d-highmem-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.055808
@@ -38719,9 +38404,7 @@ compute:
           month_spot: 172.30336
       cpu: 16
       ram: 128
-      type: n2d
     n2d-highmem-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.131976
@@ -38984,9 +38667,7 @@ compute:
           month_spot: 21.53792
       cpu: 2
       ram: 16
-      type: n2d
     n2d-highmem-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.111616
@@ -39249,9 +38930,7 @@ compute:
           month_spot: 344.60672
       cpu: 32
       ram: 256
-      type: n2d
     n2d-highmem-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.263952
@@ -39514,9 +39193,7 @@ compute:
           month_spot: 43.07584
       cpu: 4
       ram: 32
-      type: n2d
     n2d-highmem-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.167424
@@ -39779,9 +39456,7 @@ compute:
           month_spot: 516.91008
       cpu: 48
       ram: 384
-      type: n2d
     n2d-highmem-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.223232
@@ -40044,9 +39719,7 @@ compute:
           month_spot: 689.21344
       cpu: 64
       ram: 512
-      type: n2d
     n2d-highmem-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.527904
@@ -40309,9 +39982,7 @@ compute:
           month_spot: 86.15168
       cpu: 8
       ram: 64
-      type: n2d
     n2d-highmem-80:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 5.27904
@@ -40574,9 +40245,7 @@ compute:
           month_spot: 861.5168
       cpu: 80
       ram: 640
-      type: n2d
     n2d-highmem-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 6.334848
@@ -40839,10 +40508,7 @@ compute:
           month_spot: 1033.82016
       cpu: 96
       ram: 768
-      tier1: 50
-      type: n2d
     n2d-standard-128:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 6.261248
@@ -41105,10 +40771,7 @@ compute:
           month_spot: 1021.85984
       cpu: 128
       ram: 512
-      tier1: 50
-      type: n2d
     n2d-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.782656
@@ -41371,9 +41034,7 @@ compute:
           month_spot: 127.73248
       cpu: 16
       ram: 64
-      type: n2d
     n2d-standard-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.097832
@@ -41636,9 +41297,7 @@ compute:
           month_spot: 15.96656
       cpu: 2
       ram: 8
-      type: n2d
     n2d-standard-224:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 10.957184
@@ -41901,10 +41560,7 @@ compute:
           month_spot: 1788.25472
       cpu: 224
       ram: 896
-      tier1: 100
-      type: n2d
     n2d-standard-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.565312
@@ -42167,9 +41823,7 @@ compute:
           month_spot: 255.46496
       cpu: 32
       ram: 128
-      type: n2d
     n2d-standard-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.195664
@@ -42432,9 +42086,7 @@ compute:
           month_spot: 31.93312
       cpu: 4
       ram: 16
-      type: n2d
     n2d-standard-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.347968
@@ -42697,9 +42349,7 @@ compute:
           month_spot: 383.19744
       cpu: 48
       ram: 192
-      type: n2d
     n2d-standard-64:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.130624
@@ -42962,9 +42612,7 @@ compute:
           month_spot: 510.92992
       cpu: 64
       ram: 256
-      type: n2d
     n2d-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.391328
@@ -43227,9 +42875,7 @@ compute:
           month_spot: 63.86624
       cpu: 8
       ram: 32
-      type: n2d
     n2d-standard-80:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 3.91328
@@ -43492,9 +43138,7 @@ compute:
           month_spot: 638.6624
       cpu: 80
       ram: 320
-      type: n2d
     n2d-standard-96:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 4.695936
@@ -43757,10 +43401,7 @@ compute:
           month_spot: 766.39488
       cpu: 96
       ram: 384
-      tier1: 50
-      type: n2d
     t2a-standard-1:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0
@@ -43959,9 +43600,7 @@ compute:
           month_3y: 0
       cpu: 1
       ram: 4
-      type: t2a
     t2a-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0
@@ -44160,9 +43799,7 @@ compute:
           month_3y: 0
       cpu: 16
       ram: 64
-      type: t2a
     t2a-standard-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0
@@ -44361,9 +43998,7 @@ compute:
           month_3y: 0
       cpu: 2
       ram: 8
-      type: t2a
     t2a-standard-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0
@@ -44562,9 +44197,7 @@ compute:
           month_3y: 0
       cpu: 32
       ram: 128
-      type: t2a
     t2a-standard-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0
@@ -44763,9 +44396,7 @@ compute:
           month_3y: 0
       cpu: 4
       ram: 16
-      type: t2a
     t2a-standard-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0
@@ -44964,9 +44595,7 @@ compute:
           month_3y: 0
       cpu: 48
       ram: 192
-      type: t2a
     t2a-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0
@@ -45165,9 +44794,7 @@ compute:
           month_3y: 0
       cpu: 8
       ram: 32
-      type: t2a
     t2d-standard-1:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.048916
@@ -45430,9 +45057,7 @@ compute:
           month_spot: 7.18758
       cpu: 1
       ram: 4
-      type: t2d
     t2d-standard-16:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 0.782656
@@ -45695,9 +45320,7 @@ compute:
           month_spot: 115.00128
       cpu: 16
       ram: 64
-      type: t2d
     t2d-standard-2:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.097832
@@ -45960,9 +45583,7 @@ compute:
           month_spot: 14.37516
       cpu: 2
       ram: 8
-      type: t2d
     t2d-standard-32:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 1.565312
@@ -46225,9 +45846,7 @@ compute:
           month_spot: 230.00256
       cpu: 32
       ram: 128
-      type: t2d
     t2d-standard-4:
-      bandwidth: 10
       cost:
         asia-east1:
           hour: 0.195664
@@ -46490,9 +46109,7 @@ compute:
           month_spot: 28.75032
       cpu: 4
       ram: 16
-      type: t2d
     t2d-standard-48:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.347968
@@ -46755,9 +46372,7 @@ compute:
           month_spot: 345.00384
       cpu: 48
       ram: 192
-      type: t2d
     t2d-standard-60:
-      bandwidth: 32
       cost:
         asia-east1:
           hour: 2.93496
@@ -47020,9 +46635,7 @@ compute:
           month_spot: 431.2548
       cpu: 60
       ram: 240
-      type: t2d
     t2d-standard-8:
-      bandwidth: 16
       cost:
         asia-east1:
           hour: 0.391328
@@ -47285,7 +46898,6 @@ compute:
           month_spot: 57.50064
       cpu: 8
       ram: 32
-      type: t2d
   license:
     a2-highgpu-1g:
       cost:
@@ -48703,14 +48315,16 @@ compute:
           month_1y: 58.4
           month_3y: 55.553
         sles:
-          hour: 0.02
-          month: 14.6
+          hour: 0.11
+          month: 80.3
         sles-sap:
           hour: 0.17
           month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
         windows:
-          hour: 0.023
-          month: 16.79
+          hour: 0.046
+          month: 33.58
     g1-small:
       cost:
         rhel:
@@ -48724,14 +48338,16 @@ compute:
           month_1y: 58.4
           month_3y: 55.553
         sles:
-          hour: 0.02
-          month: 14.6
+          hour: 0.11
+          month: 80.3
         sles-sap:
           hour: 0.17
           month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
         windows:
-          hour: 0.023
-          month: 16.79
+          hour: 0.046
+          month: 33.58
     g2-standard-12:
       cost:
         rhel:
@@ -52738,9 +52354,6 @@ compute:
           month: 0.12
         us-west4:
           month: 0.11
-      increment: 1
-      max: 64000
-      min: 10
       type: pd-balanced
     balanced-replicated:
       cost:
@@ -52818,9 +52431,6 @@ compute:
           month: 0.24
         us-west4:
           month: 0.22
-      increment: 1
-      max: 64000
-      min: 10
       type: pd-balanced
     extreme:
       cost:
@@ -52898,9 +52508,6 @@ compute:
           month: 0.15
         us-west4:
           month: 0.138
-      increment: 1
-      max: 64000
-      min: 500
       type: pd-extreme
     hdd:
       cost:
@@ -52978,9 +52585,6 @@ compute:
           month: 0.048
         us-west4:
           month: 0.044
-      increment: 1
-      max: 64000
-      min: 10
       type: pd-standard
     hdd-replicated:
       cost:
@@ -53058,9 +52662,6 @@ compute:
           month: 0.096
         us-west4:
           month: 0.088
-      increment: 1
-      max: 64000
-      min: 200
       type: pd-standard
     hyperdisk-extreme:
       cost:
@@ -53138,9 +52739,6 @@ compute:
           month: 0.15
         us-west4:
           month: 0.141
-      increment: 1
-      max: 64000
-      min: 10
       type: hyperdisk-extreme
     local:
       cost:
@@ -53292,9 +52890,6 @@ compute:
           month: 0.088
           month_1y: 0.05544
           month_3y: 0.0396
-      increment: 375
-      max: 375
-      min: 375
       type: pd-local
     snapshot:
       cost:
@@ -53378,7 +52973,6 @@ compute:
           month: 0.06
         us-west4:
           month: 0.056
-      increment: 1
       type: pd-snapshot
     ssd:
       cost:
@@ -53456,9 +53050,6 @@ compute:
           month: 0.204
         us-west4:
           month: 0.187
-      increment: 1
-      max: 64000
-      min: 10
       type: pd-ssd
     ssd-replicated:
       cost:
@@ -53536,9 +53127,6 @@ compute:
           month: 0.408
         us-west4:
           month: 0.374
-      increment: 1
-      max: 64000
-      min: 10
       type: pd-ssd
 dual-region:
   asia1:
@@ -53941,7 +53529,6 @@ storage:
           month: 0.0025
         us-west4:
           month: 0.0025
-      min-duration: 365
     archiv-dual:
       cost:
         asia1:
@@ -53950,7 +53537,6 @@ storage:
           month: 0.0028
         nam4:
           month: 0.0028
-      min-duration: 365
     archiv-multi:
       cost:
         asia-multi:
@@ -53959,7 +53545,6 @@ storage:
           month: 0.0024
         us-multi:
           month: 0.0024
-      min-duration: 365
     coldline:
       cost:
         asia-east1:
@@ -54036,7 +53621,6 @@ storage:
           month: 0.007
         us-west4:
           month: 0.006
-      min-duration: 90
     coldline-dual:
       cost:
         asia1:
@@ -54045,7 +53629,6 @@ storage:
           month: 0.0088
         nam4:
           month: 0.0088
-      min-duration: 90
     coldline-multi:
       cost:
         asia-multi:
@@ -54054,7 +53637,6 @@ storage:
           month: 0.007
         us-multi:
           month: 0.007
-      min-duration: 90
     dra:
       cost:
         asia-east1:
@@ -54131,7 +53713,6 @@ storage:
           month: 0.023
         us-west4:
           month: 0.023
-      min-duration: 0
     dra-dual:
       cost:
         asia1:
@@ -54140,7 +53721,6 @@ storage:
           month: 0.02
         nam4:
           month: 0.02
-      min-duration: 0
     dra-multi:
       cost:
         asia-multi:
@@ -54149,7 +53729,6 @@ storage:
           month: 0.02
         us-multi:
           month: 0.02
-      min-duration: 0
     nearline:
       cost:
         asia-east1:
@@ -54226,7 +53805,6 @@ storage:
           month: 0.016
         us-west4:
           month: 0.013
-      min-duration: 30
     nearline-dual:
       cost:
         asia1:
@@ -54235,7 +53813,6 @@ storage:
           month: 0.022
         nam4:
           month: 0.022
-      min-duration: 30
     nearline-multi:
       cost:
         asia-multi:
@@ -54244,7 +53821,6 @@ storage:
           month: 0.015
         us-multi:
           month: 0.015
-      min-duration: 30
     standard:
       cost:
         asia-east1:
@@ -54321,7 +53897,6 @@ storage:
           month: 0.023
         us-west4:
           month: 0.023
-      min-duration: 0
     standard-dual:
       cost:
         asia1:
@@ -54330,7 +53905,6 @@ storage:
           month: 0.044
         nam4:
           month: 0.044
-      min-duration: 0
     standard-multi:
       cost:
         asia-multi:
@@ -54339,4 +53913,3 @@ storage:
           month: 0.026
         us-multi:
           month: 0.026
-      min-duration: 0

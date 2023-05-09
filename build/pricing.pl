@@ -563,8 +563,14 @@ sub add_gcp_compute_instance_details {
 &print_header("Instances");
 foreach my $region (@regions) {
 	foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
+		# Type
+		my $type = '';
+		my @machine_name = split('-', $machine);
+		$type = $machine_name[0];
+		if ($gcp->{'compute'}->{'instance'}->{$machine}->{'type'}) {
+			$type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'};
+		}
 		# CPU and RAM
-		my $type      = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'}      || '';
 		my $cpu       = $gcp->{'compute'}->{'instance'}->{$machine}->{'cpu'}       || '0';
 		my $ram       = $gcp->{'compute'}->{'instance'}->{$machine}->{'ram'}       || '0';
 		my $a100      = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100'}      || '0';
