@@ -567,6 +567,7 @@ foreach my $region (@regions) {
 		my $type = '';
 		my @machine_name = split('-', $machine);
 		$type = $machine_name[0];
+		# Custom Type
 		if ($gcp->{'compute'}->{'instance'}->{$machine}->{'type'}) {
 			$type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'};
 		}
