@@ -1166,9 +1166,16 @@ sub add_gcp_compute_license_details {
 
 &print_header("Licenses");
 foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
+	# Type
+	my $type = '';
+	my @machine_name = split('-', $machine);
+	$type = $machine_name[0];
+	# Custom Type
+	if ($gcp->{'compute'}->{'instance'}->{$machine}->{'type'}) {
+		$type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'};
+	}
 	# License per vCPU
-	my $type = $gcp->{'compute'}->{'instance'}->{$machine}->{'type'} || '';
-	my $cpu  = $gcp->{'compute'}->{'instance'}->{$machine}->{'cpu'}  || '0';
+	my $cpu  = $gcp->{'compute'}->{'instance'}->{$machine}->{'cpu'} || '0';
 
 	print "Machine: $machine\n";
 	print "Type: $type\n";
@@ -1176,7 +1183,13 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 
 	# Mappings for "premium" operating systems
 	# https://cloud.google.com/compute/all-pricing#premiumimages
-	my @operating_systems = ('sles', 'sles-sap', 'rhel', 'rhel-sap', 'windows');
+	my @operating_systems = (
+		'sles',
+		'sles-sap',
+		'rhel',
+		'rhel-sap',
+		'windows'
+	);
 	# SUSE Linux Enterprise Server 15
 	# https://console.cloud.google.com/marketplace/product/suse-cloud/sles-15
 	my $sles_mapping     = '';
