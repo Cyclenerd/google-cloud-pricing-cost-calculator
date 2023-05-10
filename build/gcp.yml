@@ -738,6 +738,7 @@ compute:
     a2-ultragpu-2g:
       cpu: 24
       ram: 340
+      a100-80gb: 2
     a2-ultragpu-4g:
       cpu: 48
       ram: 680
