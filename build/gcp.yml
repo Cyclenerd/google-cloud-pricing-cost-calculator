@@ -110,7 +110,7 @@ multi-region:
 
 # Storage
 storage:
-  # https://cloud.google.com/storage/docs/storage-classes#available_storage_classes
+  # https://cloud.google.com/storage/docs/storage-classes#classes
   bucket:
     standard:
     standard-dual:
@@ -132,7 +132,7 @@ storage:
 # Compute Engine
 compute:
   # Persistent disks
-  # https://cloud.google.com/compute/docs/disks#introduction
+  # https://cloud.google.com/compute/docs/disks#pdspecs
   storage:
     # Zonal (one zone)
     local:
@@ -161,11 +161,6 @@ compute:
   # Virtual machine instances
   # VM instance pricing : https://cloud.google.com/compute/vm-instance-pricing
   instance:
-    # E2:
-    # » Intel and AMD EPYC Rome processors
-    # » Cost-optimized sizes between 2 to 32 vCPUs with a ratio of 0.5 GB to 8 GB of memory per vCPU
-    # » Do not offer sustained-use discounts
-    # » Do not support GPUs, local SSDs, sole-tenant nodes, or nested virtualization
     # E2 shared-core
     e2-micro:
       # Fractional vCPU of 0.25
@@ -180,7 +175,6 @@ compute:
       cpu: 1
       ram: 4
     # E2 standard
-    # 4 GB of system memory per vCPU
     e2-standard-2:
       cpu: 2
       ram: 8
@@ -197,7 +191,6 @@ compute:
       cpu: 32
       ram: 128
     # E2 high-memory
-    # 8 GB of system memory per vCPU
     e2-highmem-2:
       cpu: 2
       ram: 16
@@ -211,7 +204,6 @@ compute:
       cpu: 16
       ram: 128
     # E2 high-cpu
-    # 1 GB of system memory per vCPU
     e2-highcpu-2:
       cpu: 2
       ram: 2
@@ -229,12 +221,7 @@ compute:
       ram: 32
 
     # N2:
-    # » Flexible sizing between 2 to 128 vCPUs and 0.5 to 8 GB of memory per vCPU
-    # » Intel Ice Lake and Cascade Lake processors
-    # » Support committed use and sustained use discounts
-    # » Support 50 Gbps, 75 Gbps, and 100 Gbps higher bandwidth network (tier1)
     # N2 standard
-    # 4 GB of system memory per vCPU
     n2-standard-2:
       cpu: 2
       ram: 8
@@ -266,7 +253,6 @@ compute:
       cpu: 128
       ram: 512
     # N2 high-memory
-    # 8 GB of system memory per vCPU
     n2-highmem-2:
       cpu: 2
       ram: 16
@@ -298,7 +284,6 @@ compute:
       cpu: 128
       ram: 864
      # N2 high-cpu
-     # 1 GB of system memory per vCPU
     n2-highcpu-2:
       cpu: 2
       ram: 2
@@ -328,12 +313,7 @@ compute:
       ram: 96
 
     # N2D:
-    # » Support up to 224 vCPUs and 896 GB of memory
-    # » Third generation AMD EPYC Milan and second generation AMD EPYC Rome processors
-    # » Support committed use and sustained use discounts
-    # » Do not support GPUs or nested virtualization
     # N2D standard
-    # 4 GB of system memory per vCPU
     n2d-standard-2:
       cpu: 2
       ram: 8
@@ -368,7 +348,6 @@ compute:
       cpu: 224
       ram: 896
     # N2D high-mem
-    # 8 GB of system memory per vCPU
     n2d-highmem-2:
       cpu: 2
       ram: 16
@@ -396,9 +375,7 @@ compute:
     n2d-highmem-96:
       cpu: 96
       ram: 768
-
     # N2D high-cpu
-    # 1 GB of system memory per vCPU
     n2d-highcpu-2:
       cpu: 2
       ram: 2
@@ -434,11 +411,7 @@ compute:
       ram: 224
 
     # T2D:
-    # » Run on the third generation AMD EPYC Milan processor
-    # » Do not offer sustained-use discounts
-    # » Do not support GPUs or nested virtualization
     # T2D standard
-    # 4 GB of system memory per vCPU
     t2d-standard-1:
       cpu: 1
       ram: 4
@@ -465,8 +438,7 @@ compute:
       ram: 240
 
     # T2A:
-    # Tau T2A general-purpose Arm VM
-    # https://cloud.google.com/compute/docs/general-purpose-machines#t2a_machines
+    # T2D standard
     t2a-standard-1:
       cpu: 1
       ram: 4
@@ -490,9 +462,6 @@ compute:
       ram: 192
 
     # N1:
-    # » First generation general-purpose VMs available on Skylake, Broadwell, Haswell, Sandy Bridge, and Ivy Bridge CPU platforms
-    # » Offer higher memory-to-core ratios for VMs created with the extended memory feature
-    # » Offer a larger sustained use discount than N2 VMs
     # N1 shared-core
     f1-micro:
       # Fractional vCPU of 0.2
@@ -503,7 +472,6 @@ compute:
       cpu: 1
       ram: 1.7
     # N1 standard
-    # 3.75 GB of system memory per vCPU
     n1-standard-1:
       cpu: 1
       ram: 3.75
@@ -528,9 +496,7 @@ compute:
     n1-standard-96:
       cpu: 96
       ram: 360
-
     # N1 high-memory
-    # 6.5 GB of system memory per vCPU
     n1-highmem-2:
       cpu: 2
       ram: 13
@@ -552,9 +518,7 @@ compute:
     n1-highmem-96:
       cpu: 96
       ram: 624
-
     # N1 high-cpu
-    # 0.9 GB of system memory per vCPU
     n1-highcpu-2:
       cpu: 2
       ram: 1.8
@@ -595,9 +559,7 @@ compute:
       ram: 30
     
     # C2:
-    # » Compute-optimized machine family
-    # » Using Intel 3.8 GHz Cascade Lake processors
-    # » Do not support GPUs
+    # C2 standard
     c2-standard-4:
       cpu: 4
       ram: 16
@@ -615,10 +577,7 @@ compute:
       ram: 240
 
     # C2D:
-    # » Compute-optimized machine family
-    # » Run on the third generation AMD EPYC Milan processor
-    # » Do not offer sustained-use discounts
-    # » Do not support GPUs or nested virtualization
+    # C2D highcpu
     c2d-highcpu-112:
       cpu: 112
       ram: 224
@@ -684,11 +643,7 @@ compute:
       ram: 32
 
     # C3:
-    # » Compute-optimized machine family
-    # » Powered by the 4th Gen Intel Xeon Scalable processor (Sapphire Rapids)
-    #   and Google’s custom Intel Infrastructure Processing Unit (IPU)
-    #
-    # TODO: Check again if GA
+    # C3 highcpu
     c3-highcpu-4:
       cpu: 4
       ram: 8
@@ -709,8 +664,6 @@ compute:
       ram: 352
 
     # M1:
-    # » Memory-optimized VMs that offer 14.9 to 24 GB of memory per vCPU
-    # » Do not support GPUs
     m1-ultramem-40:
       cpu: 40
       ram: 961
@@ -725,8 +678,6 @@ compute:
       ram: 1433.6
 
     # M2:
-    # » Memory-optimized VMs that offer 6 TB and 12 TB VMs
-    # » Do not support GPUs
     m2-ultramem-208:
       cpu: 208
       ram: 5888
@@ -741,8 +692,6 @@ compute:
       ram: 11776
 
     # M3:
-    # » The M3 machine series does not support GPUs.
-    # » The M3 machine series does not support standard persistent disks (pd-standard).
     m3-ultramem-32:
       cpu: 32
       ram: 976
@@ -760,8 +709,6 @@ compute:
       ram: 1952
 
     # A2:
-    # » Accelerator-optimized VMs featuring NVIDIA's Ampere A100 40GB GPUs
-    # » High performance network bandwidth of up to 100 Gbps
     a2-highgpu-1g:
       cpu: 12
       ram: 85
@@ -782,8 +729,8 @@ compute:
       cpu: 96
       ram: 1360
       a100: 16
-    # » Machine types with fixed number of A100 80GB HBM2e GPUs
-    # » Cost for the GPUs, vCPU, memory, _and_ local SSD
+    # Machine types with fixed number of A100 80GB HBM2e GPUs
+    # Cost for the GPUs, vCPU, memory, _and_ local SSD
     a2-ultragpu-1g:
       cpu: 12
       ram: 170
@@ -801,8 +748,6 @@ compute:
       a100-80gb: 8
 
     # G2:
-    # » Accelerator-optimized VMs featuring NVIDIA's L4 GPUs
-    # » Only available on the Intel Cascade Lake platform
     g2-standard-4:
       cpu: 4
       ram: 16
