@@ -27,6 +27,7 @@ disks:
     type: ssd
   - name: disk-hdd
     data: 2048
+    type: hdd
   - name: disk-hyperdisk-extreme
     type: hyperdisk-extreme
     data: 1024
