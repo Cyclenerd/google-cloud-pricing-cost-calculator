@@ -9,8 +9,8 @@
 [![Bagde: GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-pricing-cost-calculator)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/LICENSE)
 
 | 🏆 Awarded |
-|------------------------------------------------|
-| This project was [Google Open Source Peer Bonus](https://opensource.googleblog.com/2022/09/announcing-the-second-group-of-open-source-peer-bonus-winners-in-2022.html) winner in 2022 🥳 |
+|------------|
+| This project was the winner of the [Google Open Source Peer Bonus](https://opensource.googleblog.com/2022/09/announcing-the-second-group-of-open-source-peer-bonus-winners-in-2022.html) in 2022 🥳 |
 
 Calculate estimated monthly costs of Google Cloud Platform products and resources.
 Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront:
@@ -27,11 +27,9 @@ Everything tested and matched against the actual invoice in large Google Cloud m
 Over 270 automated tests ensure `gcosts` reliability.
 `gcosts` works on various OS and terminals, including Windows CMD, macOS iTerm2, and in CI systems like GitHub Actions.
 
-
 | 1️⃣ Create YAML file | 2️⃣ Run `gcosts` CLI program | 3️⃣ Open CSV file |
-|--------------------------|-----------------------------|------------------|
+|---------------------|-----------------------------|------------------|
 | ![Screenshot: YAML usage file](./img/usage.png) | ![Screenshot: gcosts CLI program](./img/gcosts.png) | ![Screenshot: CSV file](./img/csv.png) |
-
 
 
 ## ☁️ Supported resources
@@ -138,6 +136,8 @@ To get started, please click the following button:
 
 ### 1. Get `gcosts` program
 
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the ready complied and executable `gcosts` CLI program for your operating system and architecture.
+
 <details>
 <summary><b>Linux</b></summary>
 
@@ -210,10 +210,14 @@ Execute `gcosts.exe`:
 
 ### 2. Download price information
 
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`.
+The price information is automatically regenerated on a weekly basis.
+Download the updated pricing file regularly.
+
 <details>
 <summary><b>Linux</b></summary>
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
+Download `pricing.yml`:
 ```bash
 curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" \
      -o "pricing.yml"
@@ -223,7 +227,7 @@ curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/m
 <details>
 <summary><b>macOS</b></summary>
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
+Download `pricing.yml`:
 ```bash
 curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" \
      -o "pricing.yml"
@@ -233,7 +237,7 @@ curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/m
 <details>
 <summary><b>Windows</b></summary>
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
+Download `pricing.yml`:
 ```powershell
 Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" -OutFile "pricing.yml"
 ```
@@ -259,7 +263,7 @@ instances:
 Execute the CLI program:
 
 <details>
-<summary>Linux</summary>
+<summary><b>Linux</b></summary>
 
 Execute `gcosts`:
 ```bash
@@ -268,7 +272,7 @@ Execute `gcosts`:
 </details>
 
 <details>
-<summary>macOS</summary>
+<summary><b>macOS</b></summary>
 
 Execute `gcosts`:
 ```bash
@@ -277,7 +281,7 @@ Execute `gcosts`:
 </details>
 
 <details>
-<summary>Windows</summary>
+<summary><b>Windows</b></summary>
 
 Execute `gcosts.exe`:
 ```powershell
@@ -304,8 +308,8 @@ You can import the CSV file with MS Excel, Apple Numbers, LibreOffice or Google 
 
 Continue to familiarize yourself with the options. The following documentations are prepared for this purpose:
 
-* [Create usage files](usage/)
-* [Build pricing information file](build/)
+* [Create usage files](usage/README.md)
+* [Build pricing information file](build/README.md)
 
 **🤓 Tip**
 
