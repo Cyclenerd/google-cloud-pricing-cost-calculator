@@ -22,6 +22,7 @@ Optimized for DevOps, architects and engineers to quickly see a cost breakdown a
 
 Full control and no disclosure of any information and costs to third parties.
 Everything tested and matched against the actual invoice in large Google Cloud migration projects.
+Over 270 automated tests ensure `gcosts` reliability.
 
 ![Screenshot: YAML usage file, gcosts and CSV costs file](https://raw.githubusercontent.com/Cyclenerd/google-cloud-pricing-cost-calculator/master/img/gcosts-usage-costs.jpg?v1)
 
