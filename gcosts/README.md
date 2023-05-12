@@ -23,8 +23,17 @@ bash build.sh
 
 Please use `golangci-lint`. It is a Go linters aggregator.
 
-Install: <https://golangci-lint.run/usage/install/>
+* Install: <https://golangci-lint.run/usage/install/>
+    * Linux:
+        ```bash
+        curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
+        ```
+    * macOS:
+        ```bash
+        brew install golangci-lint
+        ```
 
+Run:
 ```bash
 golangci-lint run
 ```

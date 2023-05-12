@@ -35,5 +35,5 @@ var computeNetworkNatGatewayCmd = &cobra.Command{
 func init() {
 	computeNetworkNatCmd.AddCommand(computeNetworkNatGatewayCmd)
 	computeNetworkNatGatewayCmd.PersistentFlags().StringVarP(&inputRegion, "region", "r", "", "Google Cloud region (required)")
-	computeNetworkNatGatewayCmd.MarkPersistentFlagRequired("region")
+	_ = computeNetworkNatGatewayCmd.MarkPersistentFlagRequired("region")
 }
