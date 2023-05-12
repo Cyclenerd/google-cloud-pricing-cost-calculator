@@ -13,4 +13,3 @@ tasks:
         libyaml-libyaml-perl  \
         libdbd-csv-perl       \
         libdbd-sqlite3-perl
-    command: perl gcosts.pl --version
