@@ -16,11 +16,13 @@ Calculate estimated monthly costs of Google Cloud Platform products and resource
 Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront:
 
 * Mapping of resource usage is done in easy to learn **YAML** usage files
-* Price information is read from a local file
+* Price information is read from a local file (`pricing.yml`)
 * Calculation is done via `gcosts` **CLI** program
 * Calculated costs are saved in **CSV** file optimized for non-technical audience
 
 Full control and no disclosure of any information and costs to third parties.
+Everything is calculated on your local computer.
+No need to have a connection to the Internet.
 Everything tested and matched against the actual invoice in large Google Cloud migration projects.
 Over 270 automated tests ensure `gcosts` reliability.
 `gcosts` works on various OS and terminals, including Windows CMD, macOS iTerm2, and in CI systems like GitHub Actions.
