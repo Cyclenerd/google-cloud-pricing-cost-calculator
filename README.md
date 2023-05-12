@@ -27,7 +27,11 @@ Everything tested and matched against the actual invoice in large Google Cloud m
 Over 270 automated tests ensure `gcosts` reliability.
 `gcosts` works on various OS and terminals, including Windows CMD, macOS iTerm2, and in CI systems like GitHub Actions.
 
-![Screenshot: YAML usage file, gcosts and CSV costs file](https://raw.githubusercontent.com/Cyclenerd/google-cloud-pricing-cost-calculator/master/img/gcosts-usage-costs.jpg?v1)
+
+| 1️⃣ Create YAML file | 2️⃣ Run `gcosts` CLI program | 3️⃣ Open CSV file |
+|--------------------------|-----------------------------|------------------|
+| ![Screenshot: YAML usage file](./img/usage.png) | ![Screenshot: gcosts CLI program](./img/gcosts.png) | ![Screenshot: CSV file](./img/csv.png) |
+
 
 
 ## ☁️ Supported resources
