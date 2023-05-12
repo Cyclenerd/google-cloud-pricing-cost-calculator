@@ -39,6 +39,15 @@ jobs:
       - name: 🌡️ Test pricing.pl
         run: cd build && perl pricing.pl --version
 
-      # Test gcosts CLI
+      - name: 🍳 Build gcosts
+        run: cd gcosts && bash build.sh
+
+      # Test binary
       - name: 🌡️ Test gcosts
-        run: cd gcosts && go run main.go help
+        run: cd gcosts && ./gcosts help
+      - name: 🌡️ Test gcosts region
+        run: cd gcosts && ./gcosts region -p ../pricing.yml
+      - name: 🌡️ Test gcosts compute instance
+        run: cd gcosts && ./gcosts compute instance -p ../pricing.yml
+      - name: 🌡️ Test gcosts calc
+        run: cd gcosts && ./gcosts calc -d ../t -p ../pricing.yml
