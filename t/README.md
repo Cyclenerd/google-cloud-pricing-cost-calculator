@@ -79,6 +79,5 @@ Calculated values are checked against values calculated with the official [Googl
 
 ## Known bugs
 
-* Calculated costs for load balancing are slightly lower (cents) than if you calculate it with the Google calculator.
 * Calculated costs for the large M2 instances are slightly higher than if you calculate it with the Google calculator.
 	* VM `m2-ultramem-416` with 3Y commitment = 22371.46 vs 22374.64758848

@@ -5,7 +5,7 @@ Small helpers to get required informations.
 ## Export GCE regions (`regions.sh`)
 
 Export all Google Compute Engine regions to a CSV file:
-```shell
+```bash
 bash regions.sh
 ```
 
@@ -18,7 +18,7 @@ New regions must be added manually to the `gcp.yml` file.
 ## Export GCE zones (`zones.sh`)
 
 Export all Google Compute Engine zones to a CSV file:
-```shell
+```bash
 bash zones.sh
 ```
 
@@ -27,7 +27,7 @@ The zones are not currently required by any other script and are for informative
 ## Export GCE machine types (`machinetypes.sh`)
 
 Export all Google Compute Engine machine types to a CSV file:
-```shell
+```bash
 bash machinetypes.sh
 ```
 
@@ -38,7 +38,7 @@ New machine types must be added manually to the `gcp.yml` file.
 ## Export GCE disk types (`disktypes.sh`)
 
 Export all Google Compute Engine disk types to a CSV file:
-```shell
+```bash
 bash disktypes.sh
 ```
 
@@ -54,6 +54,6 @@ Google Cloud Documentation:
 * [gcloud compute accelerator-types](https://cloud.google.com/sdk/gcloud/reference/compute/accelerator-types/)
 
 Export all Google Compute Engine accelerator types to a CSV file:
-```shell
+```bash
 bash acceleratortypes.sh
 ```

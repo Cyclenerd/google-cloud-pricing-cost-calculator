@@ -10,6 +10,9 @@ jobs:
     name: Build pricing information file
     runs-on: ubuntu-latest
     steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v3
+
       - name: 🔧 Install dependencies
         run: |
           sudo apt-get install   \
@@ -20,12 +23,16 @@ jobs:
             libdbd-csv-perl      \
             libdbd-sqlite3-perl
 
-      - name: 🛎️ Checkout
-        uses: actions/checkout@v3
+      # https://github.com/marketplace/actions/setup-go-environment
+      - name: 🔧 Setup go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: 'gcosts/go.mod'
+          cache-dependency-path: 'gcosts/go.sum'
 
-      # gcosts Version
-      - name: 💡 Version
-        run: perl gcosts.pl --version
+      # Compile gcosts CLI
+      - name: 🍳 Build gcosts
+        run: cd gcosts && go build -o gcosts main.go && ./gcosts --version
 
       # Export SKUs
       - name: 📥 Export SKUs

@@ -4,8 +4,16 @@ usage/customers/**
 **.yml
 **.csv
 **.log
-/gcosts
-/gcosts.exe
+**.exe
+**.exe~
+**.dll
+**.so
+**.dylib
+**.out
+**.test
+
+gcosts/gcosts*
+
 # Google Cloud Platform master data
 !build/gcp.yml
 # Prepared and tested price information file

@@ -8,7 +8,7 @@ Create usage files for cost calculation based on the asset inventory.
 
 Export asset inventory:
 
-```shell
+```bash
 gcloud asset search-all-resources \
 	--project=PROJECT_ID \
 	--scope=projects/PROJECT_ID \
@@ -34,7 +34,7 @@ Google Cloud Documentation:
 
 Create a separate YAML file `buckets.yml` with the buckets and size.
 
-```shell
+```bash
 gsutil ls
 perl buckets.pl
 ```
@@ -45,6 +45,6 @@ Create a separate YAML file for each project `PROJECT_ID.yml`.
 Bucket object size file `buckets.yml` is used by default.
 Files are overwritten without any warning.
 
-```shell
+```bash
 perl assets.pl -asset=assets.yml
 ```

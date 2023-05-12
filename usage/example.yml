@@ -19,7 +19,6 @@ monitoring:
   - name: stackdriver
     data: 6000 # mebibyte!
 
-discount: 0.5
 instances:
   - name: app-server
     type: n1-standard-8
