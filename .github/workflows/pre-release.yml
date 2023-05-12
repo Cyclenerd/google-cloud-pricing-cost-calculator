@@ -38,8 +38,8 @@ jobs:
       - name: 📤 Upload
         uses: actions/upload-artifact@v3
         with:
-          name: gcosts
-          path: gcosts/gcosts*
+          name: gcosts-artifact
+          path: gcosts/gcosts-*
           retention-days: 1
 
   test-linux:
@@ -54,7 +54,7 @@ jobs:
       - name: 📥 Download
         uses: actions/download-artifact@v3
         with:
-          name: gcosts
+          name: gcosts-artifact
       # Test binary
       - name: 🌡️ Test
         run: chmod +x gcosts-linux-x86_64 && ./gcosts-linux-x86_64 help
@@ -69,7 +69,7 @@ jobs:
       - name: 📥 Download
         uses: actions/download-artifact@v3
         with:
-          name: gcosts
+          name: gcosts-artifact
       # Test binary
       - name: 🌡️ Test
         run: chmod +x gcosts-macos-x86_64 && ./gcosts-macos-x86_64 help
@@ -84,7 +84,7 @@ jobs:
       - name: 📥 Download
         uses: actions/download-artifact@v3
         with:
-          name: gcosts
+          name: gcosts-artifact
       # Test binary
       - name: 🌡️ Test
         run: .\gcosts-windows-x86_64.exe help
