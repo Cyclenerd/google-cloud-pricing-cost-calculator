@@ -1,81 +1,26 @@
-name: Test
+name: CI
 
 on:
   push:
-    paths:
-      - 'gcosts.pl'
   pull_request:
   workflow_dispatch:
 
 jobs:
-  # Linux x86-64
-  # https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu1804-Readme.md
-  linux:
-    name: Linux
-    # Same as in release.yml
-    runs-on: ubuntu-20.04
+  test:
+    name: CI/CD Test
+    # https://github.com/actions/virtual-environments/
+    runs-on: ubuntu-latest
     steps:
-      - name: 🔧 Install dependencies
-        run: |
-          sudo apt-get install   \
-            libapp-options-perl  \
-            libyaml-libyaml-perl \
-            libpar-packer-perl
+
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
-      # Test source
-      - name: 🌡️ Test gcosts.pl
-        run: perl gcosts.pl --version
-      - name: 🌡️ Calculate
-        run: cd t && perl ../gcosts.pl -pricing="../pricing.yml"
-      - name: 🌡️ Test
-        run: cd t && bash test.sh && rm *.csv
-      # Pack 'gcosts.pl' into executable 'gcosts'
-      - name: ⏳ Compile
-        run: pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
-      # Test binary
-      - name: 🌡️ Test gcosts
-        run: chmod +x gcosts && ./gcosts --version
-      - name: 🌡️ Calculate
-        run: cd t && ../gcosts -pricing="../pricing.yml"
-      - name: 🌡️ Test
-        run: cd t && bash test.sh && rm *.csv
-      # Test Debian
-      - name: 🐧 Test Debian 11 (Bullseye)
-        run: |
-          docker pull debian:11
-          docker run -v $PWD:/temp/test debian:11 /temp/test/gcosts --version
-      # Test Ubuntu
-      - name: 🐧 Test Ubuntu 20.04 (Focal)
-        run: |
-          docker pull ubuntu:20.04
-          docker run -v $PWD:/temp/test ubuntu:20.04 /temp/test/gcosts --version
-      - name: 🐧 Test Ubuntu 22.04 (Jammy Jellyfish)
-        run: |
-          docker pull ubuntu:22.04
-          docker run -v $PWD:/temp/test ubuntu:22.04 /temp/test/gcosts --version
-  # Windows x86-64
-  # https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
-  windows:
-    name: Windows
-    runs-on: windows-latest
-    steps:
-      - name: 🛎️ Checkout
-        uses: actions/checkout@v3
-      # Strawberry for Windows
-      # https://strawberryperl.com/
-      # https://github.com/shogo82148/actions-setup-perl
-      - uses: shogo82148/actions-setup-perl@v1
+
+      # https://github.com/marketplace/actions/setup-go-environment
+      - name: 🔧 Setup go
+        uses: actions/setup-go@v4
         with:
-          perl-version: '5.32'
-          distribution: strawberry
-      # Install requirements
-      - name: 🔧 Install requirements
-        run: cpanm --installdeps .
-      # Test pricing
-      - name: 🌡️ Version
-        run: perl gcosts.pl --version
-      - name: 🌡️ Calculate
-        run: cd t && perl ..\gcosts.pl -pricing="..\pricing.yml"
-      - name: 🌡️ Test n2-standard-8 in euw4
-        run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
+          go-version-file: 'gcosts/go.mod'
+
+      # Test
+      - name: 🌡️ Test
+        run: cd gcosts && go run main.go help
