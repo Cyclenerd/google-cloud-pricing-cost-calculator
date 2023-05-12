@@ -24,7 +24,7 @@ var computeNetworkTrafficIngressCmd = &cobra.Command{
 	Use:   "ingress",
 	Short: "Google Cloud internet ingress traffic",
 	Run: func(cmd *cobra.Command, args []string) {
-		pterm.Info.Println("Price per GiB per month: Free in all regions 😊\n")
+		pterm.Info.Println("Price per GiB per month: Free in all regions 😊")
 	},
 }
 

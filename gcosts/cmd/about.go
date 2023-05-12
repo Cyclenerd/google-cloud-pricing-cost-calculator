@@ -30,7 +30,7 @@ var aboutCmd = &cobra.Command{
 		if len(generated) > 0 {
 			pterm.Info.Printf("Last price update: %s\n", generated)
 		} else {
-			pterm.Error.Println("Information not found!\n")
+			pterm.Error.Println("Information not found!")
 			os.Exit(1)
 		}
 	},

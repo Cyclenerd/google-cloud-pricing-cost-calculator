@@ -30,7 +30,7 @@ var copyrightCmd = &cobra.Command{
 		if len(copyright) > 0 {
 			pterm.DefaultBox.Println(copyright)
 		} else {
-			pterm.Error.Println("Copyright information not found!\n")
+			pterm.Error.Println("Copyright information not found!")
 			os.Exit(1)
 		}
 	},

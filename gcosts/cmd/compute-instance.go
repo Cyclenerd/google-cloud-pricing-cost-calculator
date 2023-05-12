@@ -41,11 +41,10 @@ var instanceCmd = &cobra.Command{
 		} else {
 			var td pterm.TableData
 			td = append(td, []string{"Machine Type"})
-			instances := pricingYml.Compute.Instance
-			for key, _ := range instances {
+			for key := range pricingYml.Compute.Instance {
 				td = append(td, []string{key})
 			}
-			pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
+			_ = pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
 		}
 	},
 }

@@ -38,11 +38,10 @@ var regionDualCmd = &cobra.Command{
 		} else {
 			var td pterm.TableData
 			td = append(td, []string{"Region", "Regions"})
-			dualRegion := pricingYml.DualRegion
-			for key, value := range dualRegion {
+			for key, value := range pricingYml.DualRegion {
 				td = append(td, []string{key, strings.Join(value.Regions, ", ")})
 			}
-			pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
+			_ = pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
 		}
 	},
 }

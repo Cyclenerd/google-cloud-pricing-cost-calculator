@@ -43,57 +43,52 @@ var LineItems []LineItem
 func Hour(cost Cost) float32 {
 	hour := cost.Hour
 	if !(hour > 0) {
-		pterm.Error.Println("Price per hour not found!\n")
+		pterm.Error.Println("Price per hour not found!")
 		os.Exit(1)
 	}
 	return hour
 }
 
 func HourSpot(cost Cost) float32 {
-	var hour float32
-	hour = cost.HourSpot
+	var hour float32 = cost.HourSpot
 	if !(hour > 0) {
-		pterm.Warning.Println("Spot price per hour not found! Apply normal hour price.\n")
+		pterm.Warning.Println("Spot price per hour not found! Apply normal hour price.")
 		hour = Hour(cost)
 	}
 	return hour
 }
 
 func Month(cost Cost) float32 {
-	var month float32
-	month = cost.Month
+	var month float32 = cost.Month
 	if !(month > 0) {
-		pterm.Error.Println("Price per month not found!\n")
+		pterm.Error.Println("Price per month not found!")
 		os.Exit(1)
 	}
 	return month
 }
 
 func Month1Y(cost Cost) float32 {
-	var month float32
-	month = cost.Month1Y
+	var month float32 = cost.Month1Y
 	if !(month > 0) {
-		pterm.Warning.Println("1Y CUD price per month not found! Apply normal monthly price.\n")
+		pterm.Warning.Println("1Y CUD price per month not found! Apply normal monthly price.")
 		month = Month(cost)
 	}
 	return month
 }
 
 func Month3Y(cost Cost) float32 {
-	var month float32
-	month = cost.Month3Y
+	var month float32 = cost.Month3Y
 	if !(month > 0) {
-		pterm.Warning.Println("3Y CUD price per month not found! Apply normal monthly price.\n")
+		pterm.Warning.Println("3Y CUD price per month not found! Apply normal monthly price.")
 		month = Month(cost)
 	}
 	return month
 }
 
 func MonthSpot(cost Cost) float32 {
-	var month float32
-	month = cost.MonthSpot
+	var month float32 = cost.MonthSpot
 	if !(month > 0) {
-		pterm.Warning.Println("Spot price per month not found! Apply normal monthly price.\n")
+		pterm.Warning.Println("Spot price per month not found! Apply normal monthly price.")
 		month = Month(cost)
 	}
 	return month
@@ -162,16 +157,16 @@ func ExportCsv(lineItems []LineItem, inputExportCsv string) {
 	}
 	for _, lineItem := range lineItems {
 		data = append(data, []string{
-			fmt.Sprintf("%s", lineItem.Project),
-			fmt.Sprintf("%s", lineItem.Region),
-			fmt.Sprintf("%s", lineItem.Resource),
-			fmt.Sprintf("%s", lineItem.Type),
-			fmt.Sprintf("%s", lineItem.Name),
+			lineItem.Project,
+			lineItem.Region,
+			lineItem.Resource,
+			lineItem.Type,
+			lineItem.Name,
 			fmt.Sprintf("%f", lineItem.Cost),
 			fmt.Sprintf("%f", lineItem.Data),
 			fmt.Sprintf("%v", lineItem.Commitment),
 			fmt.Sprintf("%f", lineItem.Discount),
-			fmt.Sprintf("%s", lineItem.File),
+			lineItem.File,
 		})
 	}
 	if err := w.WriteAll(data); err != nil {

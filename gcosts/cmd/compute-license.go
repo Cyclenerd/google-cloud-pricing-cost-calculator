@@ -37,11 +37,10 @@ var licenseCmd = &cobra.Command{
 		} else {
 			var td pterm.TableData
 			td = append(td, []string{"Operating System Licenses"})
-			operatingsystems := pricingYml.Compute.License["e2-standard-8"].Cost
-			for key, _ := range operatingsystems {
+			for key := range pricingYml.Compute.License["e2-standard-8"].Cost {
 				td = append(td, []string{key})
 			}
-			pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
+			_ = pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
 		}
 	},
 }

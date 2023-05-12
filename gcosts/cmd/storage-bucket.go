@@ -35,11 +35,10 @@ var bucketCmd = &cobra.Command{
 		} else {
 			var td pterm.TableData
 			td = append(td, []string{"Storage Class"})
-			resources := pricingYml.Storage.Bucket
-			for key, _ := range resources {
+			for key := range pricingYml.Storage.Bucket {
 				td = append(td, []string{key})
 			}
-			pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
+			_ = pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
 		}
 	},
 }

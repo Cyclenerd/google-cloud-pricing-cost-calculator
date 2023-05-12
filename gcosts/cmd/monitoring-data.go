@@ -46,5 +46,5 @@ var monitoringDataCmd = &cobra.Command{
 func init() {
 	monitoringCmd.AddCommand(monitoringDataCmd)
 	monitoringDataCmd.PersistentFlags().StringVarP(&inputRegion, "region", "r", "", "Google Cloud region (required)")
-	monitoringDataCmd.MarkPersistentFlagRequired("region")
+	_ = monitoringDataCmd.MarkPersistentFlagRequired("region")
 }

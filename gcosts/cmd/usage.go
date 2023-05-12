@@ -90,12 +90,8 @@ var usageCmd = &cobra.Command{
 					pricing.CalcComputeInstance(pricingYml, instance.Name, instance.Type, region, discount, instance.Commitment, instance.Spot, instance.Terminated)
 					pricing.CalcComputeLicense(pricingYml, instance.Name, instance.Type, instance.Os, discount, instance.Commitment, instance.Terminated)
 					pricing.CalcComputeNetworkIp(pricingYml, instance.Name, instance.ExternalIp, region, discount, instance.Terminated)
-					for _, disk := range instance.Disks {
-						disks = append(disks, disk)
-					}
-					for _, bucket := range instance.Buckets {
-						buckets = append(buckets, bucket)
-					}
+					disks = append(disks, instance.Disks...)
+					buckets = append(buckets, instance.Buckets...)
 				}
 			}
 			if len(disks) > 0 {
@@ -138,7 +134,7 @@ var usageCmd = &cobra.Command{
 		}
 
 		pterm.DefaultSection.WithLevel(2).Println("💰 Costs")
-		pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
+		_ = pterm.DefaultTable.WithHasHeader().WithBoxed().WithData(td).Render()
 		pterm.DefaultBasicText.Println("Total cost: " + pterm.LightMagenta(fmt.Sprintf("%.2f", totalCosts)))
 
 		// Export CSV file

@@ -50,7 +50,7 @@ func returnComputeInstanceSpot(inputValue bool) bool {
 	var outputValue bool
 	if inputValue {
 		outputValue = true
-		pterm.Info.Println("GCE instance provisioning model: Spot VM\n")
+		pterm.Info.Println("GCE instance provisioning model: Spot VM")
 	}
 	return outputValue
 }
@@ -59,7 +59,7 @@ func returnComputeInstanceTerminated(inputValue bool) bool {
 	var outputValue bool
 	if inputValue {
 		outputValue = true
-		pterm.Info.Println("GCE instance state: Terminated\n")
+		pterm.Info.Println("GCE instance state: Terminated")
 	}
 	return outputValue
 }
@@ -69,14 +69,14 @@ func returnComputeInstanceCommitment(inputValue int) int {
 	if inputValue > 0 {
 		if inputValue == 1 {
 			outputValue = inputValue
-			pterm.Info.Println("GCE instance commitment: 1 year\n")
+			pterm.Info.Println("GCE instance commitment: 1 year")
 		} else if inputValue == 3 {
 			outputValue = inputValue
-			pterm.Info.Println("GCE instance commitment: 3 years\n")
+			pterm.Info.Println("GCE instance commitment: 3 years")
 		} else {
 			outputValue = 0
 			pterm.Warning.Printf("Invalid GCE instance commitment: '%v'\n", inputValue)
-			pterm.Info.Println("GCE instance commitment: no\n")
+			pterm.Info.Println("GCE instance commitment: no")
 		}
 	} else {
 		outputValue = 0

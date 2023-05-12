@@ -33,7 +33,7 @@ var computeNetworkVpnTunnelCmd = &cobra.Command{
 			if month > 0 {
 				pterm.Info.Printf("Price per tunnel per month: $%.2f\n", month)
 			} else {
-				pterm.Error.Println("Price per month not found!\n")
+				pterm.Error.Println("Price per month not found!")
 				os.Exit(1)
 			}
 		} else {
@@ -46,5 +46,5 @@ var computeNetworkVpnTunnelCmd = &cobra.Command{
 func init() {
 	computeNetworkVpnCmd.AddCommand(computeNetworkVpnTunnelCmd)
 	computeNetworkVpnTunnelCmd.PersistentFlags().StringVarP(&inputRegion, "region", "r", "", "Google Cloud region (required)")
-	computeNetworkVpnTunnelCmd.MarkPersistentFlagRequired("region")
+	_ = computeNetworkVpnTunnelCmd.MarkPersistentFlagRequired("region")
 }

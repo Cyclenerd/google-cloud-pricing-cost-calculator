@@ -47,5 +47,5 @@ var computeNetworkTrafficEgressAustraliaCmd= &cobra.Command{
 func init() {
 	computeNetworkTrafficEgressCmd.AddCommand(computeNetworkTrafficEgressAustraliaCmd)
 	computeNetworkTrafficEgressAustraliaCmd.PersistentFlags().StringVarP(&inputRegion, "region", "r", "", "Google Cloud region (required)")
-	computeNetworkTrafficEgressAustraliaCmd.MarkPersistentFlagRequired("region")
+	_ = computeNetworkTrafficEgressAustraliaCmd.MarkPersistentFlagRequired("region")
 }
