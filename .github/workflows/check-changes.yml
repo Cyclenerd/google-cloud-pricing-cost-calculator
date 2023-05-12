@@ -1,4 +1,4 @@
-name: "Check GCE Changes"
+name: "Check"
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-changes:
-    name: Check Google Compute Engine API changes
+    name: Google Compute Engine API changes
     runs-on: ubuntu-latest
 
     # Add "id-token" for Google Authentication

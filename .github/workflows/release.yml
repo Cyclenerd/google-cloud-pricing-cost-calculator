@@ -35,7 +35,7 @@ jobs:
       - name: 🌡️ Test gcosts calc
         run: |
           cd t && \
-          ./gcosts calc -p ../pricing.yml && \
+          bash gcosts.sh && \
           bash test.sh
 
       # Upload binaries

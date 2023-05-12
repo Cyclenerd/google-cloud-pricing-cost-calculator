@@ -1,4 +1,4 @@
-name: "Build Pricing"
+name: "Build"
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-pricing:
-    name: Build pricing information file
+    name: Pricing information
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout

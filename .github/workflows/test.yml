@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    name: CI/CD Test
+    name: Test
     # https://github.com/actions/virtual-environments/
     runs-on: ubuntu-latest
     steps:
