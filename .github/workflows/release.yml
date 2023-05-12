@@ -105,7 +105,7 @@ jobs:
       - name: 📥 Download gcosts
         uses: actions/download-artifact@v3
         with:
-          name: gcosts-cli
+          name: gcosts-artifact
       # Release, upload files
       # https://github.com/softprops/action-gh-release
       - name: ✨ Release
