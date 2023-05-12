@@ -15,12 +15,31 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
 
+      - name: 🔧 Install dependencies
+        run: |
+          sudo apt-get install   \
+            libapp-options-perl  \
+            libwww-perl          \
+            libjson-xs-perl      \
+            libyaml-libyaml-perl \
+            libdbd-csv-perl      \
+            libdbd-sqlite3-perl
+
       # https://github.com/marketplace/actions/setup-go-environment
       - name: 🔧 Setup go
         uses: actions/setup-go@v4
         with:
           go-version-file: 'gcosts/go.mod'
+          cache-dependency-path: 'gcosts/go.sum'
 
-      # Test
-      - name: 🌡️ Test
+      # Tests Perl scripts
+      - name: 🌡️ Test skus.pl
+        run: cd build && perl skus.pl --version
+      - name: 🌡️ Test mapping.pl
+        run: cd build && perl mapping.pl --version
+      - name: 🌡️ Test pricing.pl
+        run: cd build && perl pricing.pl --version
+
+      # Test gcosts CLI
+      - name: 🌡️ Test gcosts
         run: cd gcosts && go run main.go help
