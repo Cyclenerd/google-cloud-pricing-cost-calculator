@@ -4,102 +4,81 @@ on:
   workflow_dispatch:
 
 jobs:
-  linux:
-    name: Linux
-    # Ubuntu          Debian
-    # 20.04  focal    bullseye/ sid - 11 (Google Cloud Shell)
-    #
-    # No support for Debian 10, Ubuntu 18.04 and older:
-    #   pp on Ubuntu 20.04 and run on Debian 10
-    #   /tmp/par-6e696c73/cache[...]/gcosts: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.29' not found (required by /tmp/par-6e696c73/cache-[...]/libperl.so.5.30)
-    runs-on: ubuntu-20.04
+  build:
+    name: Build
+    # https://github.com/actions/virtual-environments/
+    runs-on: ubuntu-latest
     steps:
-      - name: 🔧 Install dependencies
-        run: |
-          sudo apt-get install   \
-            libapp-options-perl  \
-            libyaml-libyaml-perl \
-            libpar-packer-perl
+
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
-      # Test source
-      - name: 🌡️ Test gcosts.pl
-        run: perl gcosts.pl --version 
-      # Pack 'gcosts.pl' into executable 'gcosts'
-      - name: ⏳ Compile
-        run: pp -vvv -l libyaml-0.so.2 -o gcosts gcosts.pl
+
+      # https://github.com/marketplace/actions/setup-go-environment
+      - name: 🔧 Setup go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: 'gcosts/go.mod'
+          cache-dependency-path: 'gcosts/go.sum'
+
+      - name: 🍳 Build gcosts
+        run: cd gcosts && bash build.sh
+
       # Test binary
-      - name: 🌡️ Test binary
-        run: ./gcosts --version
-      - name: 🌡️ Calculate
-        run: cd t && ../gcosts -pricing="../pricing.yml"
       - name: 🌡️ Test
-        run: cd t && bash test.sh && rm *.csv
-      # Upload binary
-      # https://github.com/actions/download-artifact
-      - name: 📤 Upload gcosts
+        run: cd gcosts && ./gcosts help
+
+      # Upload binaries
+      # https://github.com/marketplace/actions/upload-a-build-artifact
+      - name: 📤 Upload
         uses: actions/upload-artifact@v3
         with:
           name: gcosts
-          path: gcosts
+          path: gcosts/gcosts*
           retention-days: 1
 
-  windows:
-    name: Windows
-    runs-on: windows-latest
-    steps:
-      - name: 🛎️ Checkout
-        uses: actions/checkout@v3
-      # Strawberry for Windows
-      # https://strawberryperl.com/
-      # https://github.com/shogo82148/actions-setup-perl
-      - uses: shogo82148/actions-setup-perl@v1
-        with:
-          perl-version: '5.32'
-          distribution: strawberry
-      # Install requirements
-      - name: 🔧 Install requirements
-        run: cpanm --installdeps .
-      - name: 🔧 Install pp
-        run: cpanm --verbose --no-interactive --force PAR::Packer
-      # Test source
-      - name: 🌡️ Test gcosts.pl
-        run: perl gcosts.pl --version
-      # Pack 'gcosts.pl' into executable 'gcosts'
-      - name: ⏳ Compile
-        run: pp -vvv -o gcosts.exe gcosts.pl
-      # Test binary
-      - name: 🌡️ Test binary
-        run: .\gcosts.exe --version
-      - name: 🌡️ Calculate
-        run: cd t && ..\gcosts.exe -pricing="..\pricing.yml"
-      - name: 🌡️ Test n2-standard-8 in euw4
-        run: Select-String -Path .\t\COSTS.csv -pattern "europe-west4;vm;n2-standard-8;249"
-      # Upload binary
-      - name: 📤 Upload gcosts.exe
-        uses: actions/upload-artifact@v3
-        with:
-          name: gcosts.exe
-          path: gcosts.exe
-          retention-days: 1
-
-  download:
-    name: Download and Test
-    needs: [linux, windows]
+  test-linux:
+    name: Test Linux
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
-      # Download all artifacts to the current working directory
-      - name: 📥 Download gcosts
+      # Download binaries
+      # https://github.com/marketplace/actions/download-a-build-artifact
+      - name: 📥 Download
         uses: actions/download-artifact@v3
         with:
           name: gcosts
-      - name: 📥 Download gcosts.exe
+      # Test binary
+      - name: 🌡️ Test
+        run: chmod +x gcosts-linux-x86_64 && ./gcosts-linux-x86_64 help
+
+  test-macos:
+    name: Test macOS
+    needs: build
+    runs-on: macos-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v3
+      - name: 📥 Download
         uses: actions/download-artifact@v3
         with:
-          name: gcosts.exe
-      - name: ✨ List
-        run: ls -lah
-      - name: 🌡️ Run
-        run: chmod +x gcosts && ./gcosts --help
+          name: gcosts
+      # Test binary
+      - name: 🌡️ Test
+        run: chmod +x gcosts-macos-x86_64 && ./gcosts-macos-x86_64 help
+
+  test-windows:
+    name: Test Windows
+    needs: build
+    runs-on: windows-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v3
+      - name: 📥 Download
+        uses: actions/download-artifact@v3
+        with:
+          name: gcosts
+      # Test binary
+      - name: 🌡️ Test
+        run: .\gcosts-windows-x86_64.exe help
