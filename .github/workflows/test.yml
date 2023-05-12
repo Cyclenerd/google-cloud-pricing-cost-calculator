@@ -39,6 +39,12 @@ jobs:
       - name: 🌡️ Test pricing.pl
         run: cd build && perl pricing.pl --version
 
+      # https://github.com/marketplace/actions/run-golangci-lint
+      - name: 🌡️ Lint gcosts
+        uses: golangci/golangci-lint-action@v3
+        with:
+          working-directory: gcosts
+
       - name: 🍳 Build gcosts
         run: cd gcosts && go build -o gcosts main.go && ./gcosts --version
 
