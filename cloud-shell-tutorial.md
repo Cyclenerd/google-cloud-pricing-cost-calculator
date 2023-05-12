@@ -12,7 +12,7 @@ Click the **Start** button to move to the next step.
 
 Download the executable `gcosts` Linux CLI program and save it to your home folder:
 ```bash
-curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts" \
+curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-linux-x86_64" \
      -o ~/gcosts
 ```
 
@@ -23,7 +23,7 @@ chmod +x ~/gcosts
 
 Test:
 ```bash
-~/gcosts --help
+~/gcosts help
 ```
 
 ## Download price information
@@ -38,7 +38,7 @@ curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/m
 
 Add `gcosts` to your Bash aliases with absolute pathnames:
 ```bash
-echo "alias gcosts='$HOME/gcosts -pricing=$HOME/pricing.yml'" >> ~/.bash_aliases
+echo "alias gcosts='$HOME/gcosts --pricing $HOME/pricing.yml'" >> ~/.bash_aliases
 ```
 
 Reload aliases:
@@ -48,7 +48,7 @@ source ~/.bash_aliases
 
 You can then execute `gcosts`:
 ```bash
-gcosts --help
+gcosts --version
 ```
 
 ## First usage file
@@ -73,22 +73,21 @@ edit example.yml
 Run `gcosts` in the current folder.
 All YAML usage files (`*.yml`) of the current directory are imported and the costs of the resources are calculated:
 ```bash
-gcosts
+gcosts calc
 ```
 
 ## Download
 
-Two CSV (semicolon) files with the costs are created:
+The calculated costs are exported to one CSV (comma-separated values) file.
 
-1. `COSTS.csv`  : Costs for the resources
-1. `TOTALS.csv` : Total costs per name, resource, project, region and file.
+Without specifying the file location, the file is named `costs.csv` and is saved in the current directory.
 
 Download the CSV files:
 ```bash
-dl COSTS.csv TOTALS.csv
+dl costs.csv
 ```
 
-You can import the CSV files with MS Excel, LibreOffice or Google Sheets.
+You can import the CSV file with MS Excel, Apple Numbers, LibreOffice or Google Sheets.
 
 ## Done 🎉
 

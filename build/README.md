@@ -1,8 +1,12 @@
 # Build pricing information file
 
-**The process of calculating and generation is done regularly and automatically via  [GitHub Actions](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml)!**
-
+[![Bagde: GNU Bash](https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?logo=gnubash&logoColor=white)](#)
+[![Bagde: Perl](https://img.shields.io/badge/Perl-%2339457E.svg?logo=perl&logoColor=white)](#)
 [![Build Pricing](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml)
+
+| 🤖 Automated |
+|------------------------------------------------|
+| The process of calculating and generation is done regularly and automatically via [GitHub Actions](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml)! |
 
 ## Files
 
@@ -71,18 +75,18 @@ Export the SKU information of the Google Cloud Billing API to a more readable CS
 You can get all service IDs with the script `servies.pl` in the tool directory.
 
 Store API key in `skus.conf` configuration file:
-```shell
+```bash
 echo "key = YOUR-CLOUD-BILLING-API-KEY" > skus.conf
 ```
 
 Alternatively, the API key can be specified as environment variable `API_KEY`:
-```shell
+```bash
 export API_KEY=YOUR-CLOUD-BILLING-API-KEY
 ```
 
 Run the script `skus.sh` or each step separately:
 
-```shell
+```bash
 bash skus.sh
 ```
 
@@ -90,32 +94,32 @@ bash skus.sh
 > Get identifier (`-id`) for the service (`serviceId`) with script `services.pl`.
 
 [Compute Engine](https://cloud.google.com/compute/):
-```shell
+```bash
 perl skus.pl -csv="skus_compute.csv" -id="6F81-5844-456A"
 ```
 
 Networking:
-```shell
+```bash
 perl skus.pl -csv="skus_networking.csv" -id="E505-1604-58F8"
 ```
 
 [Cloud Storage](https://cloud.google.com/storage/):
-```shell
+```bash
 perl skus.pl -csv="skus_storage.csv" -id="95FF-2EF5-5EA1"
 ```
 
 [Stackdriver Monitoring](https://cloud.google.com/monitoring/):
-```shell
+```bash
 perl skus.pl -csv="skus_stackdriver.csv" -id="58CD-E7C3-72CA"
 ```
 
 [Cloud SQL](https://cloud.google.com/sql/):
-```shell
+```bash
 perl skus.pl -csv="skus_sql.csv" -id="9662-B51E-5089"
 ```
 
 Merge CSV files:
-```shell
+```bash
 {
   cat "skus_compute.csv"
   cat "skus_networking.csv"
@@ -130,24 +134,24 @@ Merge CSV files:
 ### 3️⃣  Add custom mapping IDs to SKUs (`mapping.pl`)
 
 To make it easier to find the SKUs we add our own mapping (IDs):
-```shell
+```bash
 perl mapping.pl -sku="skus.csv"
 ```
 
 ### 4️⃣  Generate pricing information file (`pricing.pl`)
 
 Generate the YAML file with the Google Cloud Platform pricing informations for all regions:
-```shell
+```bash
 perl pricing.pl -sku="skus.csv"
 ```
 
 Save warning and erros in file `erros.log`:
-```shell
+```bash
 perl pricing.pl -sku="skus.csv" 2> erros.log
 ```
 
 Generate pricing informations only for region `europe-west4` with mapping details:
-```shell
+```bash
 perl pricing.pl -sku="skus.csv" \
   -details=1                  \
   -region="europe-west4"      \
@@ -157,17 +161,17 @@ perl pricing.pl -sku="skus.csv" \
 ## Export services (`services.pl`)
 
 Store API key in `services.conf` configuration file:
-```shell
+```bash
 echo "key = YOUR-CLOUD-BILLING-API-KEY" > services.conf
 ```
 
 Alternatively, the API key can be specified as environment variable `API_KEY`:
-```shell
+```bash
 export API_KEY=YOUR-CLOUD-BILLING-API-KEY
 ```
 
 Export public services from the Cloud Billing Catalog to a CSV file:
-```shell
+```bash
 perl services.pl
 ```
 
@@ -176,6 +180,78 @@ Only needed if you want to integrate the cost informations of a new service.
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#listing_public_services_from_the_catalog)
 
+## Custom machine types
+
+Own machine types can be defined as type `n1-custom`, `n2-custom` and `n2d-custom` in `gcp.yml`.
+
+Example:
+```yml
+n1-custom-24-108:
+  type: n1-custom
+  cpu: 24
+  ram: 108
+  bandwidth: 16
+```
+
+In your usage file you can then use the machine type `n1-custom-24-108`.
+
+## Development
+
+If you want to modify the Perl scripts and create the price information yourself,
+the following requirements are needed.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator)
+
+Perl 5 is already installed on many Linux (Debian/Ubuntu, RedHat, SUSE) and UNIX (macOS, FreeBSD) operating systems.
+For MS Windows you can download and install [Strawberry Perl](https://strawberryperl.com/).
+
+### Requirements
+
+* Perl 5 (`perl`)
+* Perl modules:
+	* [App::Options](https://metacpan.org/pod/App::Options)
+	* [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
+	* [JSON::XS](https://metacpan.org/pod/JSON::XS)
+	* [YAML::XS](https://metacpan.org/pod/YAML::XS) (and `libyaml`)
+	* [DBD::CSV](https://metacpan.org/pod/DBD::CSV)
+	* [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)
+
+<details>
+<summary><b>Debian/Ubuntu</b></summary>
+
+Packages:
+```bash
+sudo apt update && \
+sudo apt install \
+	libapp-options-perl \
+	libwww-perl \
+	libjson-xs-perl \
+	libyaml-libyaml-perl \
+	libdbd-csv-perl \
+	libdbd-sqlite3-perl
+```
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+Homebrew packages:
+```bash
+brew install perl
+brew install cpanminus pkg-config
+brew install sqlite3
+```
+
+Install Perl modules with cpanminus:
+```bash
+cpanm --installdeps .
+```
+</details>
+
+Execute `pricing.pl`:
+```bash
+perl pricing.pl --help
+```
 
 ## Special curls
 
@@ -231,18 +307,3 @@ Only needed if you want to integrate the cost informations of a new service.
 	* Description 'Commitment v1: Memory-optimized Cpu in Singapore for 3 Year' has more SKUs with diffent costs:
 		1. `09A6-C688-1278`
 		1. `7BDA-424A-1067` (cheaper = skipped)
-
-## Custom machine types
-
-Own machine types can be defined as type `n1-custom`, `n2-custom` and `n2d-custom` in `gcp.yml`.
-
-Example:
-```yml
-n1-custom-24-108:
-  type: n1-custom
-  cpu: 24
-  ram: 108
-  bandwidth: 16
-```
-
-In your usage file you can then use the machine type `n1-custom-24-108`.

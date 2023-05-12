@@ -284,7 +284,7 @@ foreach my $project (sort keys %projects) {
 				print $fh "  - name: ". $i->{'name'} ."\n";
 				#print $fh "    project: ". $i->{'project'} ."\n";
 				print $fh "    type: ". $i->{'type'} ."\n";
-				print $fh "    state: terminated\n" if ($i->{'state'} eq 'terminated');
+				print $fh "    terminated: true\n" if ($i->{'state'} eq 'terminated');
 				print $fh "    disks:\n";
 				my @disks = split(';', $i->{'disks'});
 				my $os = '';

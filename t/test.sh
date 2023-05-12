@@ -401,7 +401,7 @@ MY_CHECKS=(
 MY_ERROR=0
 for MY_CHECK in "${MY_CHECKS[@]}"
 do
-	if grep "$MY_CHECK" < "COSTS.csv" > /dev/null; then
+	if grep "$MY_CHECK" < "costs.csv" > /dev/null; then
 		echo "✅ OK: Found '$MY_CHECK'"
 	else
 		echo "❌ ERROR: Check '$MY_CHECK' not found"

@@ -6,11 +6,11 @@ tasks:
       sudo apt-get update -y
       sudo apt-get install -y \
         google-cloud-cli      \
+        golang                \
         libapp-options-perl   \
         libwww-perl           \
         libjson-xs-perl       \
         libyaml-libyaml-perl  \
         libdbd-csv-perl       \
-        libdbd-sqlite3-perl   \
-        libpar-packer-perl
+        libdbd-sqlite3-perl
     command: perl gcosts.pl --version

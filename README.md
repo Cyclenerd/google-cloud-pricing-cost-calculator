@@ -1,13 +1,16 @@
 # Google Cloud Platform Pricing and Cost Calculator
 
 [![Bagde: Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?logo=google-cloud&logoColor=white)](#readme)
-[![Bagde: Linux](https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black)](#1-get-gcosts-program)
-[![Bagde: Windows](https://img.shields.io/badge/Windows-008080.svg?logo=windows95&logoColor=white)](#1-get-gcosts-program)
+[![Bagde: Go](https://img.shields.io/badge/Go-%2300ADD8.svg?logo=go&logoColor=white)](#readme)
+[![Bagde: Linux](https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black)](#-quick-start)
+[![Bagde: macOS](https://img.shields.io/badge/macOS-000000.svg?logo=apple&logoColor=white)](#-quick-start)
+[![Bagde: Windows](https://img.shields.io/badge/Windows-008080.svg?logo=windows95&logoColor=white)](#-quick-start)
 [![Bagde: CI](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml)
 [![Bagde: GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-pricing-cost-calculator)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/LICENSE)
-[![Bagde: Reddit](https://img.shields.io/reddit/subreddit-subscribers/googlecloud?label=Google%20Cloud%20Platform&style=social)](https://www.reddit.com/r/googlecloud/comments/svn8kj/google_cloud_platform_pricing_and_cost_calculator/)
 
-[![Image: Google Open Source Peer Bonus winner 2022](./img/open_source_peer%20bonus_winner_2022.jpg)](https://opensource.googleblog.com/2022/09/announcing-the-second-group-of-open-source-peer-bonus-winners-in-2022.html)
+| 🏆 Awarded |
+|------------------------------------------------|
+| This project was [Google Open Source Peer Bonus](https://opensource.googleblog.com/2022/09/announcing-the-second-group-of-open-source-peer-bonus-winners-in-2022.html) winner in 2022 🥳 |
 
 Calculate estimated monthly costs of Google Cloud Platform products and resources.
 Optimized for DevOps, architects and engineers to quickly see a cost breakdown and compare different options upfront:
@@ -15,7 +18,7 @@ Optimized for DevOps, architects and engineers to quickly see a cost breakdown a
 * Mapping of resource usage is done in easy to learn **YAML** usage files
 * Price information is read from a local file
 * Calculation is done via `gcosts` **CLI** program
-* Calculated costs are saved in **CSV** files
+* Calculated costs are saved in **CSV** file optimized for non-technical audience
 
 Full control and no disclosure of any information and costs to third parties.
 Everything tested and matched against the actual invoice in large Google Cloud migration projects.
@@ -37,14 +40,13 @@ Resources that `gcosts` supports, and Google charges for:
 <summary>🖥️ <b>Compute Engine Instances</b></summary>
 
 - [x] All machine types are supported
-	- [x] Cost-optimized (`E2`, `F1`, `G1`)
-	- [x] Balanced (`N1`, `N2`, `N2D`)
-	- [x] Scale-out optimized (Tau `T2D` and `T2A`)
-	- [x] Memory-optimized (`M1`, `M2`, `M3`)
-	- [x] Compute optimized (`C2`, `C2D`)
-	- [x] Accelerator optimized (`A2`, `G2`)
+	- [x] `A2` and `G2` accelerator optimized machines
+	- [x] `C2` and `C2D` compute optimized machine series 
+	- [x] `M1`, `M2` and `M3` memory optimized machine series 
+	- [x] `C3`, `E2`, `N1`, `N2`, `N2D`, `T2D` and `T2A` general purpose machine series 
 - [x] Sustained use discounts (SUD) are applied to monthly costs
 - [x] Spot provisioning model (Spot VM) is supported
+- [ ] Flexible committed use discounts (Flexible CUD) are not supported
 - [x] 1 year and 3 year committed use discounts (CUD) are supported
 - [x] Paid "premium" operating system licenses (paid images) are supported
 	- [x] SUSE Linux Enterprise Server
@@ -53,7 +55,7 @@ Resources that `gcosts` supports, and Google charges for:
 	- [x] RHEL for SAP (1y and 3y committed use discounts (CUD) are also supported)
 	- [x] Windows Server
 - [x] Custom machine types are supported (have to be created manually)
-- [ ] Spot and sole-tenant VMs are not supported
+- [ ] Sole-tenant VMs are not supported
 </details>
 
 <details>
@@ -129,54 +131,99 @@ To get started, please click the following button:
 ### 1. Get `gcosts` program
 
 <details>
-<summary>Linux</summary>
+<summary><b>Linux</b></summary>
 
-**Debian/Ubuntu or Google Cloud Shell (x86_64)**
+Download:
+* [x86_64](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-linux-x86_64) Intel or AMD 64-Bit CPU
+  ```bash
+  curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-linux-x86_64" \
+       -o "gcosts" && \
+  chmod +x "gcosts"
+  ```
+* [arm64](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-linux-arm64) Arm-based 64-Bit CPU (i.e. in Raspberry Pi)
+  ```bash
+  curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-linux-arm64" \
+       -o "gcosts" && \
+  chmod +x "gcosts"
+  ```
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts` Linux CLI program:
-```shell
-curl -OL "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts" && \
-chmod +x gcosts
-```
+To determine your OS version, run `getconf LONG_BIT` or `uname -m` at the command line.
 
 Execute `gcosts`:
-```shell
-./gcosts --help
+```bash
+./gcosts help
 ```
-
-If you using another Linux or UNIX operating system, please see the [Development](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator#-development) section.
 </details>
 
 <details>
-<summary>Windows</summary>
+<summary><b>macOS</b></summary>
 
-**Microsoft Windows (x86_64)**
+Download:
+* [x86_64](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-macos-x86_64) Intel 64-bit
+  ```bash
+  curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-macos-x86_64" \
+       -o "gcosts" && \
+  chmod +x "gcosts"
+  ```
+* [arm64](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-macos-arm64) Apple silicon 64-bit
+  ```bash
+  curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-macos-arm64" \
+       -o "gcosts" && \
+  chmod +x "gcosts"
+  ```
 
-[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest) the executable `gcosts.exe` Windows CLI program:
-```powershell
-Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts.exe" -OutFile "gcosts.exe"
+To determine your OS version, run `uname -m` at the command line.
+
+Execute `gcosts`:
+```bash
+./gcosts help
 ```
+</details>
+
+<details>
+<summary><b>Windows</b></summary>
+
+Download:
+* [x86_64](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-windows-x86_64.exe) Intel or AMD 64-Bit CPU
+   ```powershell
+   Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-windows-x86_64.exe" -OutFile "gcosts.exe"
+   ```
+* [arm64](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-windows-arm64.exe) Arm-based 64-Bit CPU
+   ```powershell
+   Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases/latest/download/gcosts-windows-arm64.exe" -OutFile "gcosts.exe"
+   ```
+To determine your OS version, run `echo %PROCESSOR_ARCHITECTURE%` at the command line.
 
 Execute `gcosts.exe`:
 ```powershell
-.\gcosts.exe --help
+.\gcosts.exe help
 ```
 </details>
 
 ### 2. Download price information
 
 <details>
-<summary>Linux</summary>
+<summary><b>Linux</b></summary>
 
 [Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
-```shell
+```bash
 curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" \
      -o "pricing.yml"
 ```
 </details>
 
 <details>
-<summary>Windows</summary>
+<summary><b>macOS</b></summary>
+
+[Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
+```bash
+curl -L "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml" \
+     -o "pricing.yml"
+```
+</details>
+
+<details>
+<summary><b>Windows</b></summary>
 
 [Download](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml) the latest and tested price information file `pricing.yml`:
 ```powershell
@@ -207,8 +254,17 @@ Execute the CLI program:
 <summary>Linux</summary>
 
 Execute `gcosts`:
-```shell
-./gcosts
+```bash
+./gcosts calc
+```
+</details>
+
+<details>
+<summary>macOS</summary>
+
+Execute `gcosts`:
+```bash
+./gcosts calc
 ```
 </details>
 
@@ -217,18 +273,24 @@ Execute `gcosts`:
 
 Execute `gcosts.exe`:
 ```powershell
-.\gcosts.exe
+.\gcosts.exe calc
 ```
 </details>
 
-All YAML usage files (`*.yml`) of the current directory are imported and the costs of the resources are calculated:
+Without extra specification of the directory all YAML usage files (`*.yml`) of the current directory are imported and the costs of the resources are calculated.
+You can specify the directory:
+```bash
+gcosts calc --dir DIRECTORY-PATH --pricing YML-PRICING-PATH
+```
 
-Two CSV (semicolon) files with the costs are created:
+The calculated costs are exported to one CSV (comma-separated values) file.
+Without specifying the file location, the file is named `costs.csv` and is saved in the current directory.
+You can specify the CSV export file:
+```bash
+gcosts calc --csv CSV-EXPORT-FILE-PATH --pricing YML-PRICING-PATH
+```
 
-1. `COSTS.csv`  : Costs for resources
-1. `TOTALS.csv` : Total costs per name, resource, project, region and file
-
-You can import the CSV files with MS Excel, [LibreOffice](usage/libreoffice.md) or [Google Sheets](usage/google_sheets.md).
+You can import the CSV file with MS Excel, Apple Numbers, LibreOffice or Google Sheets.
 
 ### 4. Get familiar
 
@@ -237,74 +299,15 @@ Continue to familiarize yourself with the options. The following documentations 
 * [Create usage files](usage/)
 * [Build pricing information file](build/)
 
-**🤓 Linux Tip**
+**🤓 Tip**
 
-Add `gcosts` to your Bash aliases with absolute pathnames. You can then execute `gcosts` anywhere.
+Add `gcosts` to your Shell aliases with absolute pathnames.
+You can then execute `gcosts` anywhere.
 
-Alias (`~/.bash_aliases`):
-```shell
-alias gcosts='/your-pathname/gcosts -pricing=/your-pathname/pricing.yml'
+Alias (`~/.aliases`):
+```bash
+alias gcosts='/your-pathname/gcosts --pricing /your-pathname/pricing.yml'
 ```
-
-
-## 🧑‍💻 Development
-
-If you want to modify the Perl scripts or prefer to run the uncompiled Perl scripts (`gcosts.pl`, `skus.pl`, `mapping.pl`, `pricing.pl`) and create the price information yourself,
-the following requirements are needed.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator)
-
-Perl 5 is already installed on many Linux (Debian/Ubuntu, RedHat, SUSE) and UNIX (macOS, FreeBSD) operating systems.
-For MS Windows you can download and install [Strawberry Perl](https://strawberryperl.com/).
-
-### Requirements
-
-* Perl 5 (`perl`)
-* Perl modules:
-	* [App::Options](https://metacpan.org/pod/App::Options)
-	* [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
-	* [JSON::XS](https://metacpan.org/pod/JSON::XS)
-	* [YAML::XS](https://metacpan.org/pod/YAML::XS) (and `libyaml`)
-	* [DBD::CSV](https://metacpan.org/pod/DBD::CSV)
-	* [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)
-
-<details>
-<summary><b>Debian/Ubuntu</b></summary>
-
-Packages:
-```shell
-sudo apt update && \
-sudo apt install \
-	libapp-options-perl \
-	libwww-perl \
-	libjson-xs-perl \
-	libyaml-libyaml-perl \
-	libdbd-csv-perl \
-	libdbd-sqlite3-perl
-```
-</details>
-
-<details>
-<summary><b>macOS</b></summary>
-
-Homebrew packages:
-```shell
-brew install perl
-brew install cpanminus pkg-config
-brew install sqlite3
-```
-
-Install Perl modules with cpanminus:
-```shell
-cpanm --installdeps .
-```
-</details>
-
-Execute `gcosts.pl`:
-```shell
-perl gcosts.pl --help
-```
-
 
 ## ❤️ Contributing
 
@@ -324,8 +327,3 @@ All files in this repository are under the [Apache License, Version 2.0](LICENSE
 
 Portions of this repository are modifications based on work created and shared by [Google](https://developers.google.com/readme/policies)
 and used according to terms described in the [Creative Commons 4.0 Attribution License](https://creativecommons.org/licenses/by/4.0/).
-
-Please note:
-
-* No warranty
-* No official Google product
