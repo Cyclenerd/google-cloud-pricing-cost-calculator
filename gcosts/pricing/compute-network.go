@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,8 +16,8 @@ limitations under the License.
 package pricing
 
 import (
-	"os"
 	"github.com/pterm/pterm"
+	"os"
 )
 
 // Google Compute Engine external public IP attached but unused
@@ -56,24 +56,24 @@ func CalcComputeNetworkIp(pricingYml StructPricing, inputName string, inputExter
 	var price float32
 	if externalIp > 0 {
 		if terminated {
-			price = (Month(CostComputeNetworkIpUnused(pricingYml, inputRegion))*externalIp)*discount
+			price = (Month(CostComputeNetworkIpUnused(pricingYml, inputRegion)) * externalIp) * discount
 			pterm.Info.Printf("Price '%s' %v unused IP per month: $%.2f (terminated instance) %s\n", name, inputExternalIp, price, discountText)
 		} else {
-			price = (Month(CostComputeNetworkIpVm(pricingYml, inputRegion))*externalIp)*discount
+			price = (Month(CostComputeNetworkIpVm(pricingYml, inputRegion)) * externalIp) * discount
 			pterm.Info.Printf("Price '%s' %v IP per month: $%.2f %s\n", name, inputExternalIp, price, discountText)
 		}
 	}
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Region: inputRegion,
-			Name: name,
-			Type: "ip",
-			Data: externalIp,
+			File:     File,
+			Project:  Project,
+			Region:   inputRegion,
+			Name:     name,
+			Type:     "ip",
+			Data:     externalIp,
 			Resource: "network",
 			Discount: discount,
-			Cost: price,
+			Cost:     price,
 		})
 	}
 	return price
@@ -124,26 +124,26 @@ func CalcComputeNetworkNatGateway(pricingYml StructPricing, inputName string, in
 	discount, discountText := returnDiscount(inputDiscount)
 	// Gateway
 	costComputeNetworkNatGateway := CostComputeNetworkNatGateway(pricingYml, inputRegion)
-	priceComputeNetworkNatGateway := Month(costComputeNetworkNatGateway)*discount
+	priceComputeNetworkNatGateway := Month(costComputeNetworkNatGateway) * discount
 	pterm.Info.Printf("Price '%s' NAT gateway per month: $%.2f %s\n", name, priceComputeNetworkNatGateway, discountText)
 	// Data
 	costComputeNetworkNatData := CostComputeNetworkNatData(pricingYml, inputRegion)
-	priceComputeNetworkNatData := (Month(costComputeNetworkNatData)*inputData)*discount
+	priceComputeNetworkNatData := (Month(costComputeNetworkNatData) * inputData) * discount
 	pterm.Info.Printf("Price '%s' %.2f MiB NAT data per month: $%.2f %s\n", name, inputData, priceComputeNetworkNatData, discountText)
 	// Sum
-	price := priceComputeNetworkNatGateway+priceComputeNetworkNatData
+	price := priceComputeNetworkNatGateway + priceComputeNetworkNatData
 	pterm.Info.Printf("Price '%s' NAT total per month: $%.2f %s\n", name, price, discountText)
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Region: inputRegion,
-			Name: name,
-			Type: "nat-gateway",
-			Data: inputData,
+			File:     File,
+			Project:  Project,
+			Region:   inputRegion,
+			Name:     name,
+			Type:     "nat-gateway",
+			Data:     inputData,
 			Resource: "network",
 			Discount: discount,
-			Cost: price,
+			Cost:     price,
 		})
 	}
 	return price
@@ -180,18 +180,18 @@ func CalcComputeNetworkVpnTunnel(pricingYml StructPricing, inputName string, inp
 	name := returnComputeNetworkVpnTunnelName("", inputName)
 	cost := CostComputeNetworkVpnTunnel(pricingYml, inputRegion)
 	discount, discountText := returnDiscount(inputDiscount)
-	price := Month(cost)*discount
+	price := Month(cost) * discount
 	pterm.Info.Printf("Price '%s' tunnel per month: $%.2f %s\n", name, price, discountText)
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Region: inputRegion,
-			Name: name,
-			Type: "vpn-tunnel",
+			File:     File,
+			Project:  Project,
+			Region:   inputRegion,
+			Name:     name,
+			Type:     "vpn-tunnel",
 			Resource: "network",
 			Discount: discount,
-			Cost: price,
+			Cost:     price,
 		})
 	}
 	return price
@@ -319,41 +319,41 @@ func returnComputeNetworkTrafficEgressName(defaultName string, inputName string)
 func CalcComputeNetworkTrafficEgress(pricingYml StructPricing, inputName string, inputWorld float32, inputChina float32, inputAustralia float32, inputRegion string, inputDiscount float32) float32 {
 	name := returnComputeNetworkTrafficEgressName("", inputName)
 	discount, discountText := returnDiscount(inputDiscount)
-	var range1 float32 = 1024 // 0-1 TiB
+	var range1 float32 = 1024  // 0-1 TiB
 	var range2 float32 = 10240 // 1-10 TiB
 	var price float32
 	if inputWorld > 0 {
 		// 0-1 TiB
 		month1 := Month(CostComputeNetworkTrafficEgressTiB0_1(pricingYml, inputRegion))
-		monthRange1 := range1*month1
+		monthRange1 := range1 * month1
 		// 1-10 TiB
 		month2 := Month(CostComputeNetworkTrafficEgressTiB1_10(pricingYml, inputRegion))
-		monthRange2 := (range2-range1)*month2
+		monthRange2 := (range2 - range1) * month2
 		// 10n TiB
 		month3 := Month(CostComputeNetworkTrafficEgressTiB10n(pricingYml, inputRegion))
 		var priceTraffic float32
-		if (inputWorld > range2) {
-			priceTraffic = (inputWorld-range2)*month3
+		if inputWorld > range2 {
+			priceTraffic = (inputWorld - range2) * month3
 			priceTraffic = priceTraffic + monthRange2 + monthRange1
 		} else if inputWorld > range1 {
-			priceTraffic = (inputWorld-range1)*month2
+			priceTraffic = (inputWorld - range1) * month2
 			priceTraffic = priceTraffic + monthRange1
 		} else {
-			priceTraffic = inputWorld*month1
+			priceTraffic = inputWorld * month1
 		}
-		priceTraffic = priceTraffic*discount
+		priceTraffic = priceTraffic * discount
 		pterm.Info.Printf("Price '%s' %.2f GiB traffic per month: $%.2f %s\n", name, inputWorld, priceTraffic, discountText)
 		if priceTraffic > 0 {
 			LineItems = append(LineItems, LineItem{
-				File: File,
-				Project: Project,
-				Region: inputRegion,
-				Name: name,
-				Data: inputWorld,
-				Type: "traffic",
+				File:     File,
+				Project:  Project,
+				Region:   inputRegion,
+				Name:     name,
+				Data:     inputWorld,
+				Type:     "traffic",
 				Resource: "network",
 				Discount: discount,
-				Cost: priceTraffic,
+				Cost:     priceTraffic,
 			})
 		}
 		price = price + priceTraffic
@@ -361,35 +361,35 @@ func CalcComputeNetworkTrafficEgress(pricingYml StructPricing, inputName string,
 	if inputChina > 0 {
 		// 0-1 TiB
 		month1 := Month(CostComputeNetworkTrafficEgressChinaTiB0_1(pricingYml, inputRegion))
-		monthRange1 := range1*month1
+		monthRange1 := range1 * month1
 		// 1-10 TiB
 		month2 := Month(CostComputeNetworkTrafficEgressChinaTiB1_10(pricingYml, inputRegion))
-		monthRange2 := (range2-range1)*month2
+		monthRange2 := (range2 - range1) * month2
 		// 10n TiB
 		month3 := Month(CostComputeNetworkTrafficEgressChinaTiB10n(pricingYml, inputRegion))
 		var priceTraffic float32
-		if (inputChina > range2) {
-			priceTraffic = (inputChina-range2)*month3
+		if inputChina > range2 {
+			priceTraffic = (inputChina - range2) * month3
 			priceTraffic = priceTraffic + monthRange2 + monthRange1
 		} else if inputWorld > range1 {
-			priceTraffic = (inputChina-range1)*month2
+			priceTraffic = (inputChina - range1) * month2
 			priceTraffic = priceTraffic + monthRange1
 		} else {
-			priceTraffic = inputChina*month1
+			priceTraffic = inputChina * month1
 		}
-		priceTraffic = priceTraffic*discount
+		priceTraffic = priceTraffic * discount
 		pterm.Info.Printf("Price '%s' %.2f GiB traffic w. CN dest. per month: $%.2f %s\n", name, inputChina, priceTraffic, discountText)
 		if priceTraffic > 0 {
 			LineItems = append(LineItems, LineItem{
-				File: File,
-				Project: Project,
-				Region: inputRegion,
-				Name: name,
-				Data: inputChina,
-				Type: "traffic-cn",
+				File:     File,
+				Project:  Project,
+				Region:   inputRegion,
+				Name:     name,
+				Data:     inputChina,
+				Type:     "traffic-cn",
 				Resource: "network",
 				Discount: discount,
-				Cost: priceTraffic,
+				Cost:     priceTraffic,
 			})
 		}
 		price = price + priceTraffic
@@ -397,35 +397,35 @@ func CalcComputeNetworkTrafficEgress(pricingYml StructPricing, inputName string,
 	if inputAustralia > 0 {
 		// 0-1 TiB
 		month1 := Month(CostComputeNetworkTrafficEgressAustraliaTiB0_1(pricingYml, inputRegion))
-		monthRange1 := range1*month1
+		monthRange1 := range1 * month1
 		// 1-10 TiB
 		month2 := Month(CostComputeNetworkTrafficEgressAustraliaTiB1_10(pricingYml, inputRegion))
-		monthRange2 := (range2-range1)*month2
+		monthRange2 := (range2 - range1) * month2
 		// 10n TiB
 		month3 := Month(CostComputeNetworkTrafficEgressAustraliaTiB10n(pricingYml, inputRegion))
 		var priceTraffic float32
-		if (inputAustralia > range2) {
-			priceTraffic = (inputAustralia-range2)*month3
+		if inputAustralia > range2 {
+			priceTraffic = (inputAustralia - range2) * month3
 			priceTraffic = priceTraffic + monthRange2 + monthRange1
 		} else if inputWorld > range1 {
-			priceTraffic = (inputAustralia-range1)*month2
+			priceTraffic = (inputAustralia - range1) * month2
 			priceTraffic = priceTraffic + monthRange1
 		} else {
-			priceTraffic = inputAustralia*month1
+			priceTraffic = inputAustralia * month1
 		}
-		priceTraffic = priceTraffic*discount
+		priceTraffic = priceTraffic * discount
 		pterm.Info.Printf("Price '%s' %.2f GiB traffic w. AU dest. per month: $%.2f %s\n", name, inputAustralia, priceTraffic, discountText)
 		if priceTraffic > 0 {
 			LineItems = append(LineItems, LineItem{
-				File: File,
-				Project: Project,
-				Region: inputRegion,
-				Name: name,
-				Data: inputAustralia,
-				Type: "traffic-au",
+				File:     File,
+				Project:  Project,
+				Region:   inputRegion,
+				Name:     name,
+				Data:     inputAustralia,
+				Type:     "traffic-au",
 				Resource: "network",
 				Discount: discount,
-				Cost: priceTraffic,
+				Cost:     priceTraffic,
 			})
 		}
 		price = price + priceTraffic

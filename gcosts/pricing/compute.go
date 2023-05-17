@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,8 +16,8 @@ limitations under the License.
 package pricing
 
 import (
-	"os"
 	"github.com/pterm/pterm"
+	"os"
 )
 
 // Google Compute Engine instance
@@ -108,32 +108,32 @@ func CalcComputeInstance(pricingYml StructPricing, inputName string, inputMachin
 
 	var price float32
 	if commitment == 1 {
-		price = Month1Y(cost)*discount
+		price = Month1Y(cost) * discount
 		pterm.Info.Printf("1Y CUD price '%s' VM per month: $%.2f %s\n", name, price, discountText)
 	} else if commitment == 3 {
-		price = Month3Y(cost)*discount
+		price = Month3Y(cost) * discount
 		pterm.Info.Printf("3Y CUD price '%s' VM per month: $%.2f %s\n", name, price, discountText)
 	} else if terminated {
 		price = 0
 		pterm.Info.Printf("Price '%s' VM per month: $%.2f (terminated instance)\n", name, price)
 	} else if spot {
-		price = MonthSpot(cost)*discount
+		price = MonthSpot(cost) * discount
 		pterm.Info.Printf("Spot price '%s' VM per month: $%.2f %s\n", name, price, discountText)
 	} else {
-		price = Month(cost)*discount
+		price = Month(cost) * discount
 		pterm.Info.Printf("Price '%s' VM per month: $%.2f %s\n", name, price, discountText)
 	}
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Name: name,
-			Type: inputMachineType,
-			Region: inputRegion,
-			Resource: "vm",
+			File:       File,
+			Project:    Project,
+			Name:       name,
+			Type:       inputMachineType,
+			Region:     inputRegion,
+			Resource:   "vm",
 			Commitment: commitment,
-			Discount: discount,
-			Cost: price,
+			Discount:   discount,
+			Cost:       price,
 		})
 	}
 	return price
@@ -182,19 +182,19 @@ func returnComputeDiskName(defaultName string, inputName string) string {
 func CalcComputeDisk(pricingYml StructPricing, inputName string, inputStorageType string, inputStorageData float32, inputRegion string, inputDiscount float32) float32 {
 	name := returnComputeDiskName("", inputName)
 	discount, discountText := returnDiscount(inputDiscount)
-	var price float32 = (Month(CostComputeDisk(pricingYml, inputStorageType, inputRegion))*inputStorageData)*discount
+	var price float32 = (Month(CostComputeDisk(pricingYml, inputStorageType, inputRegion)) * inputStorageData) * discount
 	pterm.Info.Printf("Price '%s' '%.2f' GiB per month: $%.2f %s\n", name, inputStorageData, price, discountText)
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Name: name,
-			Type: inputStorageType,
-			Data: inputStorageData,
-			Region: inputRegion,
+			File:     File,
+			Project:  Project,
+			Name:     name,
+			Type:     inputStorageType,
+			Data:     inputStorageData,
+			Region:   inputRegion,
 			Resource: "disk",
 			Discount: discount,
-			Cost: price,
+			Cost:     price,
 		})
 	}
 	return price
@@ -235,29 +235,29 @@ func CalcComputeLicense(pricingYml StructPricing, inputName string, inputMachine
 	if len(inputOperatingSystem) > 0 {
 		cost := CostComputeLicense(pricingYml, inputMachineType, inputOperatingSystem)
 		if commitment == 1 {
-			price = Month1Y(cost)*discount
+			price = Month1Y(cost) * discount
 			pterm.Info.Printf("1Y CUD price '%s' license per month: $%.2f %s\n", name, price, discountText)
 		} else if commitment == 3 {
-			price = Month3Y(cost)*discount
+			price = Month3Y(cost) * discount
 			pterm.Info.Printf("3Y CUD price '%s' license per month: $%.2f %s\n", name, price, discountText)
 		} else if terminated {
 			price = 0
 			pterm.Info.Printf("Price '%s' license per month: $%.2f (terminated instance)\n", name, price)
 		} else {
-			price = Month(cost)*discount
+			price = Month(cost) * discount
 			pterm.Info.Printf("Price '%s' license per month: $%.2f %s\n", name, price, discountText)
 		}
 	}
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Name: name,
-			Type: inputMachineType,
-			Resource: inputOperatingSystem,
+			File:       File,
+			Project:    Project,
+			Name:       name,
+			Type:       inputMachineType,
+			Resource:   inputOperatingSystem,
 			Commitment: commitment,
-			Discount: discount,
-			Cost: price,
+			Discount:   discount,
+			Cost:       price,
 		})
 	}
 	return price

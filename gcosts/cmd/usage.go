@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,22 +16,22 @@ limitations under the License.
 package cmd
 
 import (
-	"os"
 	"errors"
 	"fmt"
-	"path/filepath"
 	"github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts/pricing"
 	"github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts/usage"
-	"github.com/spf13/cobra"
 	"github.com/pterm/pterm"
+	"github.com/spf13/cobra"
+	"os"
+	"path/filepath"
 )
 
 // usageCmd represents the calc commands
 var usageCmd = &cobra.Command{
-	Use: "calc",
-	Aliases: []string{"calculate", "calculator"},
+	Use:        "calc",
+	Aliases:    []string{"calculate", "calculator"},
 	SuggestFor: []string{"usage"},
-	Short: "Usage files",
+	Short:      "Usage files",
 	Run: func(cmd *cobra.Command, args []string) {
 		pricingYml := pricing.Yml(inputPricing)
 

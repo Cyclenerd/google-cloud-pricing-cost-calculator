@@ -28,6 +28,7 @@ Start reading the code and you'll get the hang of it. It is optimized for readab
 * No space between function name and its opening parenthesis.
 * Line up corresponding things vertically, especially if it'd be too long to fit on one line anyway.
 * Please use tabs to indent.
+* For Go please run `gofmt -s` and `golangci-lint`
 * Be nice.
 
 One more thing:

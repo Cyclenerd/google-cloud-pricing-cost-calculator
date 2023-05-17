@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,81 +16,81 @@ limitations under the License.
 package usage
 
 import (
-	"os"
 	"github.com/pterm/pterm"
 	"gopkg.in/yaml.v3"
+	"os"
 )
 
 type Instance struct {
-	Name string
-	Type string
-	Region string
-	Discount float32
+	Name       string
+	Type       string
+	Region     string
+	Discount   float32
 	Commitment int
-	Spot bool
-	Os string
+	Spot       bool
+	Os         string
 	ExternalIp int `yaml:"external-ip"`
-	Disks []Disk
-	Buckets []Bucket
+	Disks      []Disk
+	Buckets    []Bucket
 	Terminated bool
 }
 
 type Disk struct {
-	Name string
-	Type string
-	Region string
+	Name     string
+	Type     string
+	Region   string
 	Discount float32
-	Data float32
+	Data     float32
 }
 
 type Bucket struct {
-	Name string
-	Class string
-	Region string
+	Name     string
+	Class    string
+	Region   string
 	Discount float32
-	Data float32
+	Data     float32
 }
 
 type VpnTunnel struct {
-	Name string
-	Region string
+	Name     string
+	Region   string
 	Discount float32
 }
 
 type NatGateway struct {
-	Name string
-	Region string
+	Name     string
+	Region   string
 	Discount float32
-	Data float32
+	Data     float32
 }
 
 type Monitoring struct {
-	Name string
-	Region string
+	Name     string
+	Region   string
 	Discount float32
-	Data float32
+	Data     float32
 }
 
 type Traffic struct {
-	Name string
-	Region string
-	Discount float32
-	World float32
-	China float32
+	Name      string
+	Region    string
+	Discount  float32
+	World     float32
+	China     float32
 	Australia float32
 }
 
 type StructUsage struct {
-	Region string
-	Project string
-	Discount float32
-	Instances []Instance
-	Disks []Disk
-	Buckets []Bucket
-	VpnTunnels []VpnTunnel `yaml:"vpn-tunnels"`
+	Region      string
+	Project     string
+	Discount    float32
+	Instances   []Instance
+	Disks       []Disk
+	Buckets     []Bucket
+	VpnTunnels  []VpnTunnel  `yaml:"vpn-tunnels"`
 	NatGateways []NatGateway `yaml:"nat-gateways"`
-	Monitoring []Monitoring
-	Traffic []Traffic
+	Monitoring  []Monitoring
+	Traffic     []Traffic
 }
 
 func readUsageYmlFile(filepath string) []byte {

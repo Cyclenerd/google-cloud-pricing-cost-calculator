@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,26 +16,26 @@ limitations under the License.
 package pricing
 
 import (
-	"os"
-	"fmt"
 	"encoding/csv"
+	"fmt"
 	"github.com/pterm/pterm"
+	"os"
 )
 
 var File string
 var Project string
 
 type LineItem struct {
-	Project string
-	Region string
-	Resource string
-	Name string
-	Cost float32
-	Type string // Type or Class
-	Data float32
+	Project    string
+	Region     string
+	Resource   string
+	Name       string
+	Cost       float32
+	Type       string // Type or Class
+	Data       float32
 	Commitment int
-	Discount float32
-	File string
+	Discount   float32
+	File       string
 }
 
 var LineItems []LineItem

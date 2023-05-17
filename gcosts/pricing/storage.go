@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,8 +16,8 @@ limitations under the License.
 package pricing
 
 import (
-	"os"
 	"github.com/pterm/pterm"
+	"os"
 )
 
 // Storage bucket
@@ -63,19 +63,19 @@ func returnStorageBucketName(defaultName string, inputName string) string {
 func CalcStorageBucket(pricingYml StructPricing, inputName string, inputStorageClass string, inputStorageData float32, inputRegion string, inputDiscount float32) float32 {
 	name := returnStorageBucketName("", inputName)
 	discount, discountText := returnDiscount(inputDiscount)
-	var price float32 = (Month(CostStorageBucket(pricingYml, inputStorageClass, inputRegion))*inputStorageData)*discount
+	var price float32 = (Month(CostStorageBucket(pricingYml, inputStorageClass, inputRegion)) * inputStorageData) * discount
 	pterm.Info.Printf("Price '%s' '%.2f' GiB per month: $%.2f %s\n", name, inputStorageData, price, discountText)
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Name: name,
-			Type: inputStorageClass, // Store Class in Type
-			Data: inputStorageData,
-			Region: inputRegion,
+			File:     File,
+			Project:  Project,
+			Name:     name,
+			Type:     inputStorageClass, // Store Class in Type
+			Data:     inputStorageData,
+			Region:   inputRegion,
 			Resource: "bucket",
 			Discount: discount,
-			Cost: price,
+			Cost:     price,
 		})
 	}
 	return price

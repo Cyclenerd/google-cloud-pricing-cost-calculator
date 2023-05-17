@@ -12,11 +12,12 @@
 go run main.go
 ```
 
-## Compile
+## Format
 
-Compile the packages for Linux, macOS and Windows:
+Pleas run:
+
 ```bash
-bash build.sh
+gofmt -w -s *.go
 ```
 
 ## Lint
@@ -36,4 +37,11 @@ Please use `golangci-lint`. It is a Go linters aggregator.
 Run:
 ```bash
 golangci-lint run
+```
+
+## Compile
+
+Compile the packages for Linux, macOS and Windows:
+```bash
+bash build.sh
 ```

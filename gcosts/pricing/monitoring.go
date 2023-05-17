@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,8 +16,8 @@ limitations under the License.
 package pricing
 
 import (
-	"os"
 	"github.com/pterm/pterm"
+	"os"
 )
 
 // Google Cloud Monitoring data
@@ -78,35 +78,35 @@ func CalcMonitoring(pricingYml StructPricing, inputName string, inputData float3
 	if inputData > 0 {
 		// 0-100000 MiB
 		month1 := Month(CostMonitoringDataMiB0_100000(pricingYml, inputRegion))
-		monthRange1 := range1*month1
+		monthRange1 := range1 * month1
 		// 100000-250000 MiB
 		month2 := Month(CostMonitoringDataMiB0_100000_250000(pricingYml, inputRegion))
-		monthRange2 := (range2-range1)*month2
+		monthRange2 := (range2 - range1) * month2
 		// 250000n MiB
 		month3 := Month(CostMonitoringDataMiB0_250000n(pricingYml, inputRegion))
-		if (inputData > range2) {
-			price = (inputData-range2)*month3
+		if inputData > range2 {
+			price = (inputData - range2) * month3
 			price = price + monthRange2 + monthRange1
 		} else if inputData > range1 {
-			price = (inputData-range1)*month2
+			price = (inputData - range1) * month2
 			price = price + monthRange1
 		} else {
-			price = inputData*month1
+			price = inputData * month1
 		}
-		price = price*discount
+		price = price * discount
 		pterm.Info.Printf("Price '%s' %.2f MiB data per month: $%.2f %s\n", name, inputData, price, discountText)
 	}
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
-			File: File,
-			Project: Project,
-			Name: name,
-			Data: inputData,
-			Region: inputRegion,
+			File:     File,
+			Project:  Project,
+			Name:     name,
+			Data:     inputData,
+			Region:   inputRegion,
 			Resource: "monitoring",
-			Type: "data",
+			Type:     "data",
 			Discount: discount,
-			Cost: price,
+			Cost:     price,
 		})
 	}
 	return price

@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,17 +16,17 @@ limitations under the License.
 package cmd
 
 import (
+	"github.com/pterm/pterm"
+	"github.com/spf13/cobra"
 	"os"
 	"path/filepath"
-	"github.com/spf13/cobra"
-	"github.com/pterm/pterm"
 )
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "gcosts",
+	Use:     "gcosts",
 	Version: "v3.0.0",
-	Short: "Calculate and save the costs of Google Cloud Platform products and resources.",
+	Short:   "Calculate and save the costs of Google Cloud Platform products and resources.",
 	Long: `Calculate estimated monthly costs of Google Cloud Platform products and resources.
 
 Optimized for 
@@ -49,8 +49,8 @@ More help: <https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator>`,
 	//Run: func(cmd *cobra.Command, args []string) { },
 }
 
-var defaultDir string // current working directory
-var defaultPricing string // pricing.yml in current working directory
+var defaultDir string       // current working directory
+var defaultPricing string   // pricing.yml in current working directory
 var defaultExportCsv string // costs.csv in current working directory
 
 var defaultRegion string = "us-central1"

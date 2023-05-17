@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,9 +16,9 @@ limitations under the License.
 package pricing
 
 import (
-	"os"
 	"github.com/pterm/pterm"
 	"gopkg.in/yaml.v3"
+	"os"
 )
 
 var CostSum float32
@@ -45,8 +45,8 @@ type Storage struct {
 }
 
 type Instance struct {
-	Cpu float32
-	Ram float32
+	Cpu  float32
+	Ram  float32
 	Cost map[string]Cost
 }
 
@@ -55,11 +55,11 @@ type License struct {
 }
 
 type Cost struct {
-	Hour float32
-	HourSpot float32 `yaml:"hour_spot"`
-	Month float32
-	Month1Y float32 `yaml:"month_1y"`
-	Month3Y float32 `yaml:"month_3y"`
+	Hour      float32
+	HourSpot  float32 `yaml:"hour_spot"`
+	Month     float32
+	Month1Y   float32 `yaml:"month_1y"`
+	Month3Y   float32 `yaml:"month_3y"`
 	MonthSpot float32 `yaml:"month_spot"`
 }
 
@@ -68,17 +68,17 @@ type StructPricing struct {
 		Copyright string
 		Generated string
 		Timestamp string
-		Url string
+		Url       string
 	}
-	Region map[string]Region
-	DualRegion map[string]DualRegion `yaml:"dual-region"`
+	Region      map[string]Region
+	DualRegion  map[string]DualRegion  `yaml:"dual-region"`
 	MultiRegion map[string]MultiRegion `yaml:"multi-region"`
-	Monitoring struct {
+	Monitoring  struct {
 		Data struct {
 			Cost struct {
-				MiB0_100000 map[string]Cost `yaml:"0-100000"`
+				MiB0_100000        map[string]Cost `yaml:"0-100000"`
 				MiB0_100000_250000 map[string]Cost `yaml:"100000-250000"`
-				MiB0_250000n map[string]Cost `yaml:"250000n"`
+				MiB0_250000n       map[string]Cost `yaml:"250000n"`
 			}
 		}
 	}
@@ -86,10 +86,10 @@ type StructPricing struct {
 		Bucket map[string]Bucket
 	}
 	Compute struct {
-		Storage map[string]Storage
+		Storage  map[string]Storage
 		Instance map[string]Instance
-		License map[string]License
-		Network struct {
+		License  map[string]License
+		Network  struct {
 			Ip struct {
 				Unused struct {
 					Cost map[string]Cost
@@ -116,22 +116,22 @@ type StructPricing struct {
 					Internet struct {
 						China struct {
 							Cost struct {
-								TiB0_1 map[string]Cost `yaml:"0-1"`
+								TiB0_1  map[string]Cost `yaml:"0-1"`
 								TiB1_10 map[string]Cost `yaml:"1-10"`
-								TiB10n map[string]Cost `yaml:"10n"`
+								TiB10n  map[string]Cost `yaml:"10n"`
 							}
 						}
 						Australia struct {
 							Cost struct {
-								TiB0_1 map[string]Cost `yaml:"0-1"`
+								TiB0_1  map[string]Cost `yaml:"0-1"`
 								TiB1_10 map[string]Cost `yaml:"1-10"`
-								TiB10n map[string]Cost `yaml:"10n"`
+								TiB10n  map[string]Cost `yaml:"10n"`
 							}
 						}
 						Cost struct {
-							TiB0_1 map[string]Cost `yaml:"0-1"`
+							TiB0_1  map[string]Cost `yaml:"0-1"`
 							TiB1_10 map[string]Cost `yaml:"1-10"`
-							TiB10n map[string]Cost `yaml:"10n"`
+							TiB10n  map[string]Cost `yaml:"10n"`
 						}
 					}
 				}
