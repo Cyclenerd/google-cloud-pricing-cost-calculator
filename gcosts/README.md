@@ -14,7 +14,7 @@ go run main.go
 
 ## Format
 
-Pleas run:
+Please run:
 
 ```bash
 gofmt -w -s *.go
