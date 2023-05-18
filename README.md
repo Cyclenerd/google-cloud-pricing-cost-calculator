@@ -246,7 +246,7 @@ Invoke-WebRequest -Uri "https://github.com/Cyclenerd/google-cloud-pricing-cost-c
 
 ### 3. Run it
 
-Create your first YAML usage file (`usage.yml`):
+Prepare a separate directory (i.e. `usage`) just for your YAML usage files and create your first YAML usage file (`resources.yml`) in this directory:
 ```yml
 region: europe-west4
 project: my-first-project
@@ -261,6 +261,9 @@ instances:
         data: 75
 ```
 
+> **Warning**
+> If the price list (`pricing.yml`) is in the same directory, errors occur because the YAML file is also parsed.
+
 Execute the CLI program:
 
 <details>
@@ -268,7 +271,7 @@ Execute the CLI program:
 
 Execute `gcosts`:
 ```bash
-./gcosts calc
+./gcosts calc --pricing YML-PRICING-PATH
 ```
 </details>
 
@@ -277,7 +280,7 @@ Execute `gcosts`:
 
 Execute `gcosts`:
 ```bash
-./gcosts calc
+./gcosts calc --pricing YML-PRICING-PATH
 ```
 </details>
 
@@ -286,11 +289,11 @@ Execute `gcosts`:
 
 Execute `gcosts.exe`:
 ```powershell
-.\gcosts.exe calc
+.\gcosts.exe calc --pricing YML-PRICING-PATH
 ```
 </details>
 
-Without extra specification of the directory all YAML usage files (`*.yml`) of the current directory are imported and the costs of the resources are calculated.
+Without extra specification of the directory all YAML files (`*.yml`) of the current directory are imported and the costs of the resources are calculated.
 You can specify the directory:
 ```bash
 gcosts calc --dir DIRECTORY-PATH --pricing YML-PRICING-PATH
