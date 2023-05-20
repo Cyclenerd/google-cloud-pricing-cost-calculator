@@ -38,6 +38,10 @@ func ReadDir(dir string) []string {
 			pterm.Success.Printf("YAML usage file '%s' found.\n", name)
 			files = append(files, name)
 		}
+		if strings.Contains(name, "pricing.yml") {
+			pterm.Warning.Println("YAML file has the default name of the price list (pricing.yml).\n" +
+				"If it is the price list, please do not save it in the directory with the usage files.")
+		}
 	}
 	return files
 }

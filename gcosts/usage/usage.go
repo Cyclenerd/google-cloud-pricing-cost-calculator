@@ -108,6 +108,10 @@ func Yml(file string) StructUsage {
 	s := StructUsage{}
 	err := yaml.Unmarshal([]byte(filecontent), &s)
 	if err != nil {
+		pterm.Error.Println("Usage YAML file could not be processed.\n" +
+			"Please check the file structure and make sure that it is not another YAML file (like the price list).\n\n"+
+			"For more help, please see:\n"+
+			"  <https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/usage/README.md>")
 		pterm.Error.Println(err)
 		os.Exit(8)
 	}
