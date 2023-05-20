@@ -78,6 +78,9 @@ func Execute() {
 }
 
 func init() {
+	// Disable the default completion command:
+	rootCmd.CompletionOptions.DisableDefaultCmd = true
+
 	// current working directory
 	dir, err := os.Getwd()
 	if err != nil {
