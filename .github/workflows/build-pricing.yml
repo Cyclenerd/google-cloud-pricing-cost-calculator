@@ -32,7 +32,7 @@ jobs:
 
       # Compile gcosts CLI
       - name: 🍳 Build gcosts
-        run: cd gcosts && go build -o gcosts main.go && ./gcosts --version
+        run: cd gcosts && make native && ./gcosts --version
 
       # Export SKUs
       - name: 📥 Export SKUs

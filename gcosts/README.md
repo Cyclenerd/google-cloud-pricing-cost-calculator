@@ -43,5 +43,5 @@ golangci-lint run
 
 Compile the packages for Linux, macOS and Windows:
 ```bash
-bash build.sh
+make
 ```

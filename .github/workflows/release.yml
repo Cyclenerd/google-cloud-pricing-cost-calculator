@@ -22,7 +22,7 @@ jobs:
           cache-dependency-path: 'gcosts/go.sum'
 
       - name: 🍳 Build gcosts
-        run: cd gcosts && bash build.sh
+        run: cd gcosts && make
 
       # Test binary
       - name: 🌡️ Test

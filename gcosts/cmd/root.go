@@ -22,10 +22,12 @@ import (
 	"path/filepath"
 )
 
+var version string = "v?.?.?"
+
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:     "gcosts",
-	Version: "v3.0.0",
+	Version: version,
 	Short:   "Calculate and save the costs of Google Cloud Platform products and resources.",
 	Long: `Calculate estimated monthly costs of Google Cloud Platform products and resources.
 

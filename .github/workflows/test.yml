@@ -46,7 +46,7 @@ jobs:
           working-directory: gcosts
 
       - name: 🍳 Build gcosts
-        run: cd gcosts && go build -o gcosts main.go && ./gcosts --version
+        run: cd gcosts && make native && ./gcosts --version
 
       # Test binary
       - name: 🌡️ Test gcosts
