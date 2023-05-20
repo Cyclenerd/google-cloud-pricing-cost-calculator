@@ -1,8 +1,12 @@
 # Name of the binary output
-BINARY=gcosts
+BINARY = gcosts
 
 # Values to pass as VERSION
-VERSION=`git describe --tags`
+# GitHub Tag name: https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
+VERSION = ${GITHUB_REF_NAME}
+ifeq ($(VERSION),)
+	VERSION = `git rev-parse --short HEAD`
+endif
 
 # Setup the -ldflags option for go build here, interpolate the variable values
 LDFLAGS=-ldflags "-w -s -X github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts/cmd.version=${VERSION}"
