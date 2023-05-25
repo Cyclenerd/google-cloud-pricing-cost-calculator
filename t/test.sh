@@ -74,7 +74,7 @@ MY_CHECKS=(
 	# C3 Commitment (CUD)
 	# TODO: Check again when C3 is GA
 	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-1y,174'
-	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-3y,110'
+	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-3y,124'
 	'c3-highcpu-8-spot,'
 
 # 01_europe-west4-e2.yml
