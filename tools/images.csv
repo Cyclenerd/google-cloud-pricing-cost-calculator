@@ -14,6 +14,8 @@ cos-arm64-stable-105-17412-101-17;Google, Container-Optimized OS, 105-17412.101.
 debian-10-buster-v20230510;Debian, Debian GNU/Linux, 10 (buster), amd64 built on 20230510, supports Shielded VM features;10;debian-cloud;debian-10;X86_64;2023-05-09T17:50:17.886-07:00;;READY
 debian-11-bullseye-arm64-v20230509;Debian, Debian GNU/Linux, 11 (bullseye), arm64 built on 20230509;10;debian-cloud;debian-11-arm64;ARM64;2023-05-09T15:09:02.528-07:00;;READY
 debian-11-bullseye-v20230509;Debian, Debian GNU/Linux, 11 (bullseye), amd64 built on 20230509, supports Shielded VM features;10;debian-cloud;debian-11;X86_64;2023-05-09T16:00:44.978-07:00;;READY
+debian-12-bookworm-arm64-v20230609;Debian, Debian GNU/Linux, 12 (bookworm), arm64 built on 20230609;10;debian-cloud;debian-12-arm64;ARM64;2023-06-09T10:22:54.957-07:00;;READY
+debian-12-bookworm-v20230609;Debian, Debian GNU/Linux, 12 (bookworm), amd64 built on 20230609;10;debian-cloud;debian-12;X86_64;2023-06-09T10:17:54.442-07:00;;READY
 fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0, x86_64 published on 2021-04-27;10;fedora-cloud;fedora-cloud-34;;2021-05-06T09:33:30.114-07:00;;READY
 fedora-cloud-base-gcp-37-1-7-x86-64;Fedora, Fedora Cloud Base 37, 37-20221105.0, x86_64 published on 2022-11-05;10;fedora-cloud;fedora-cloud-37;;2023-03-15T18:26:27.597-07:00;;READY
 fedora-cloud-base-gcp-38-1-6-x86-64;Fedora, Fedora Cloud Base 38, 38-20230413.1, x86_64 published on 2023-04-13;10;fedora-cloud;fedora-cloud-38;;2023-04-23T22:33:32.441-07:00;;READY
