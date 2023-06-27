@@ -44,6 +44,8 @@ region:
     location: Milan
   europe-west9:
     location: Paris
+  europe-west10:
+    location: Berlin
   europe-west12:
     location: Turin
   europe-southwest1:
@@ -51,6 +53,8 @@ region:
   # Middle East
   me-central1:
     location: Doha
+  me-central2:
+    location: Dammam
   me-west1:
     location: Tel Aviv
   # Americas
