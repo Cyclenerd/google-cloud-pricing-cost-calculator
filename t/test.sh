@@ -65,6 +65,18 @@ MY_CHECKS=(
 
 # 01_europe-west4-c3.yml
 	# C3 machine types
+	'c3-standard-4,167'
+	'c3-standard-8,335'
+	'c3-standard-22,922'
+	'c3-standard-44,1845'
+	'c3-standard-88,3691'
+	'c3-standard-176,7383'
+	'c3-highmem-4,226'
+	'c3-highmem-8,452'
+	'c3-highmem-22,1245'
+	'c3-highmem-44,2490'
+	'c3-highmem-88,4980'
+	'c3-highmem-176,9960'
 	'c3-highcpu-4,138'
 	'c3-highcpu-8,277'
 	'c3-highcpu-22,761'
@@ -72,7 +84,9 @@ MY_CHECKS=(
 	'c3-highcpu-88,3047'
 	'c3-highcpu-176,6095'
 	# C3 Commitment (CUD)
-	# TODO: Check again when C3 is GA
+	'gcp-gce-c3,europe-west4,vm,c3-standard-8,c3-standard-8-1y,211'
+	'gcp-gce-c3,europe-west4,vm,c3-standard-8,c3-standard-8-3y,151'
+	'c3-standard-8-spot,'
 	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-1y,174'
 	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-3y,124'
 	'c3-highcpu-8-spot,'

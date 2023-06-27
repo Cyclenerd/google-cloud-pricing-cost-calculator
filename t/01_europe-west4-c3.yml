@@ -2,6 +2,30 @@ region: europe-west4
 project: gcp-gce-c3
 
 instances:
+  - name: c3-standard-4
+    type: c3-standard-4
+  - name: c3-standard-8
+    type: c3-standard-8
+  - name: c3-standard-22
+    type: c3-standard-22
+  - name: c3-standard-44
+    type: c3-standard-44
+  - name: c3-standard-88
+    type: c3-standard-88
+  - name: c3-standard-176
+    type: c3-standard-176
+  - name: c3-highmem-4
+    type: c3-highmem-4
+  - name: c3-highmem-8
+    type: c3-highmem-8
+  - name: c3-highmem-22
+    type: c3-highmem-22
+  - name: c3-highmem-44
+    type: c3-highmem-44
+  - name: c3-highmem-88
+    type: c3-highmem-88
+  - name: c3-highmem-176
+    type: c3-highmem-176
   - name: c3-highcpu-4
     type: c3-highcpu-4
   - name: c3-highcpu-8
@@ -15,6 +39,18 @@ instances:
   - name: c3-highcpu-176
     type: c3-highcpu-176
 # Commitment (CUD)
+  - name: c3-standard-8-1y
+    type: c3-standard-8
+    commitment: 1
+  - name: c3-standard-8-3y
+    type: c3-standard-8
+    commitment: 3
+  - name: c3-highmem-8-1y
+    type: c3-highmem-8
+    commitment: 1
+  - name: c3-highmem-8-3y
+    type: c3-highmem-8
+    commitment: 3
   - name: c3-highcpu-8-1y
     type: c3-highcpu-8
     commitment: 1
@@ -22,6 +58,12 @@ instances:
     type: c3-highcpu-8
     commitment: 3
 # Spot VM
+  - name: c3-standard-8-spot
+    type: c3-standard-8
+    spot: true
+  - name: c3-highmem-8-spot
+    type: c3-highmem-8
+    spot: true
   - name: c3-highcpu-8-spot
     type: c3-highcpu-8
     spot: true
