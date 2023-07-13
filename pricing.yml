@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Jul  6 03:57:41 2023
-  timestamp: 1688615861
+  generated: Thu Jul 13 03:57:54 2023
+  timestamp: 1689220674
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -14825,11 +14825,11 @@ compute:
           month_3y: 52.34646186
           month_spot: 15.772526
         europe-west12:
-          hour: 0.08580951
+          hour: 0.08369196
           hour_spot: 0.0180987
-          month: 43.84865961
-          month_1y: 43.84865961
-          month_3y: 43.84865961
+          month: 42.76659156
+          month_1y: 42.76659156
+          month_3y: 42.76659156
           month_spot: 13.212051
         europe-west2:
           hour: 0.081565
@@ -15103,11 +15103,11 @@ compute:
           month_3y: 87.19924752
           month_spot: 26.261312
         europe-west12:
-          hour: 0.14294232
+          hour: 0.14011892
           hour_spot: 0.0301344
-          month: 73.04352552
-          month_1y: 73.04352552
-          month_3y: 73.04352552
+          month: 71.60076812
+          month_1y: 71.60076812
+          month_3y: 71.60076812
           month_spot: 21.998112
         europe-west2:
           hour: 0.13588
@@ -15381,11 +15381,11 @@ compute:
           month_3y: 209.38584744
           month_spot: 63.090104
         europe-west12:
-          hour: 0.34323804
+          hour: 0.33476784
           hour_spot: 0.0723948
-          month: 175.39463844
-          month_1y: 175.39463844
-          month_3y: 175.39463844
+          month: 171.06636624
+          month_1y: 171.06636624
+          month_3y: 171.06636624
           month_spot: 52.848204
         europe-west2:
           hour: 0.32626
@@ -20368,11 +20368,11 @@ compute:
           month_3y: 5.980744
           month_spot: 3.9347
         europe-west12:
-          hour: 0.009804
+          hour: 0.0096
           hour_spot: 0.004515
-          month: 5.009844
-          month_1y: 5.009844
-          month_3y: 5.009844
+          month: 4.9056
+          month_1y: 4.9056
+          month_3y: 4.9056
           month_spot: 3.29595
         europe-west2:
           hour: 0.0096
@@ -20645,11 +20645,11 @@ compute:
           month_3y: 20.224358
           month_spot: 7.8694
         europe-west12:
-          hour: 0.033153
+          hour: 0.0324
           hour_spot: 0.00903
-          month: 16.941183
-          month_1y: 16.941183
-          month_3y: 16.941183
+          month: 16.5564
+          month_1y: 16.5564
+          month_3y: 16.5564
           month_spot: 6.5919
         europe-west2:
           hour: 0.0324
@@ -23146,11 +23146,11 @@ compute:
           month_3y: 3593.6267136
           month_spot: 2531.6624256
         europe-west12:
-          hour: 13.7412864
+          hour: 13.09178752
           hour_spot: 2.90503872
-          month: 7021.7973504
-          month_1y: 5934.8495424
-          month_3y: 3010.2457536
+          month: 6689.90342272
+          month_1y: 5638.8704
+          month_3y: 2865.89824
           month_spot: 2120.6782656
         europe-west2:
           hour: 13.09178752
@@ -23423,11 +23423,11 @@ compute:
           month_3y: 8491.442344
           month_spot: 5985.600544
         europe-west12:
-          hour: 32.472396
+          hour: 30.9417878
           hour_spot: 6.8683728
-          month: 16593.394356
-          month_1y: 14028.391896
-          month_3y: 7112.961444
+          month: 15811.2535658
+          month_1y: 13327.172
+          month_3y: 6772.8816
           month_spot: 5013.912144
         europe-west2:
           hour: 30.9417878
@@ -23700,11 +23700,11 @@ compute:
           month_3y: 2122.860586
           month_spot: 1496.400136
         europe-west12:
-          hour: 8.118099
+          hour: 7.73544695
           hour_spot: 1.7170932
-          month: 4148.348589
-          month_1y: 3507.097974
-          month_3y: 1778.240361
+          month: 3952.81339145
+          month_1y: 3331.793
+          month_3y: 1693.2204
           month_spot: 1253.478036
         europe-west2:
           hour: 7.73544695
@@ -23977,11 +23977,11 @@ compute:
           month_3y: 4245.721172
           month_spot: 2992.800272
         europe-west12:
-          hour: 16.236198
+          hour: 15.4708939
           hour_spot: 3.4341864
-          month: 8296.697178
-          month_1y: 7014.195948
-          month_3y: 3556.480722
+          month: 7905.6267829
+          month_1y: 6663.586
+          month_3y: 3386.4408
           month_spot: 2506.956072
         europe-west2:
           hour: 15.4708939
@@ -24222,10 +24222,10 @@ compute:
           month_1y: 45684.969792
           month_3y: 26167.418816
         europe-west12:
-          hour: 86.762304
-          month: 44335.537344
-          month_1y: 38268.578592
-          month_3y: 21919.461216
+          hour: 82.670000064
+          month: 42244.370032704
+          month_1y: 36370.974576704
+          month_3y: 20874.184176704
         europe-west2:
           hour: 82.670000064
           month: 42244.370032704
@@ -24421,10 +24421,10 @@ compute:
           month_1y: 34153.83634432
           month_3y: 19567.65612032
         europe-west12:
-          hour: 64.87581312
-          month: 33151.54050432
-          month_1y: 28609.38239232
-          month_3y: 16391.08856832
+          hour: 61.808306752
+          month: 31584.044750272
+          month_1y: 27192.822139072
+          month_3y: 15607.430139072
         europe-west2:
           hour: 61.808306752
           month: 31584.044750272
@@ -24620,10 +24620,10 @@ compute:
           month_1y: 28608.05161984
           month_3y: 16383.59075584
         europe-west12:
-          hour: 54.32439744
-          month: 27759.76709184
-          month_1y: 23963.88739584
-          month_3y: 13723.91693184
+          hour: 51.765846688
+          month: 26452.347657568
+          month_1y: 22774.563507168
+          month_3y: 13070.469107168
         europe-west2:
           hour: 51.765846688
           month: 26452.347657568
@@ -24819,10 +24819,10 @@ compute:
           month_1y: 57216.10323968
           month_3y: 32767.18151168
         europe-west12:
-          hour: 108.64879488
-          month: 55519.53418368
-          month_1y: 47927.77479168
-          month_3y: 27447.83386368
+          hour: 103.531693376
+          month: 52904.695315136
+          month_1y: 45549.127014336
+          month_3y: 26140.938214336
         europe-west2:
           hour: 103.531693376
           month: 52904.695315136
