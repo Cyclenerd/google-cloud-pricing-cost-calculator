@@ -72,8 +72,8 @@ cos-arm64-dev-109-17749-0-0;Google, Container-Optimized OS, 109-17749.0.0 dev, K
 cos-arm64-stable-105-17412-101-51;Google, Container-Optimized OS, 105-17412.101.51 stable, Kernel: COS-5.15.109 Kubernetes: 1.25.5 Docker: 23.0.3 Family: cos-arm64-stable;10;cos-cloud;cos-arm64-stable;ARM64;2023-07-13T14:57:51.866-07:00;;READY
 cos-beta-105-17412-101-51;Google, Container-Optimized OS, 105-17412.101.51 beta, Kernel: COS-5.15.109 Kubernetes: 1.25.5 Docker: 23.0.3 Family: cos-beta;10;cos-cloud;cos-beta;X86_64;2023-07-13T14:57:36.390-07:00;;READY
 cos-dev-109-17749-0-0;Google, Container-Optimized OS, 109-17749.0.0 dev, Kernel: COS-6.1.38 Kubernetes: 1.27.1 Docker: 23.0.3 Family: cos-dev;10;cos-cloud;cos-dev;X86_64;2023-07-13T14:57:46.718-07:00;;READY
-ubuntu-2004-focal-arm64-v20230628;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2023-06-28, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2023-06-28T18:13:16.894-07:00;;READY
-ubuntu-2004-focal-v20230628;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2023-06-28, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2023-06-28T18:12:30.892-07:00;;READY
+ubuntu-2004-focal-arm64-v20230715;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2023-07-15;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2023-07-15T16:50:14.260-07:00;;READY
+ubuntu-2004-focal-v20230715;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2023-07-15;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2023-07-15T16:50:14.995-07:00;;READY
 ubuntu-2204-jammy-arm64-v20230714;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2023-07-14, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2023-07-13T21:04:01.460-07:00;;READY
 ubuntu-2204-jammy-v20230714;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-07-14, supports Shielded VM features;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-07-13T21:03:59.027-07:00;;READY
 ubuntu-2210-kinetic-amd64-v20230714;Canonical, Ubuntu, 22.10, amd64 kinetic image built on 2023-07-14;10;ubuntu-os-cloud;ubuntu-2210-amd64;X86_64;2023-07-14T10:51:08.963-07:00;;READY
