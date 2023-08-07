@@ -40,7 +40,7 @@ rocky-linux-9-arm64-v20230711;Rocky Linux, Rocky Linux, 9, aarch64 built on 2023
 rocky-linux-9-optimized-gcp-arm64-v20230711;Rocky Linux, Rocky Linux, 9 optimized for GCP, aarch64 built on 20230711;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp-arm64;ARM64;2023-07-11T16:20:26.652-07:00;;READY
 rocky-linux-9-optimized-gcp-v20230711;Rocky Linux, Rocky Linux, 9 optimized for GCP, x86_64 built on 20230711;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp;X86_64;2023-07-11T16:20:26.975-07:00;;READY
 rocky-linux-9-v20230711;Rocky Linux, Rocky Linux, 9, x86_64 built on 20230711;20;rocky-linux-cloud;rocky-linux-9;X86_64;2023-07-11T16:20:26.723-07:00;;READY
-sles-12-sp5-v20230506-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20230506, supports Shielded VM features;10;suse-cloud;sles-12;X86_64;2023-05-05T19:21:58.369-07:00;;READY
+sles-12-sp5-v20230807-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20230807;10;suse-cloud;sles-12;X86_64;2023-08-06T19:11:55.987-07:00;;READY
 sles-15-sp5-v20230620-arm64;SUSE, SUSE Linux Enterprise Server 15 SP5, arm64, built on 20230620, supports Shielded VM features;10;suse-cloud;sles-15-arm64;ARM64;2023-06-20T05:46:39.979-07:00;;READY
 sles-15-sp5-v20230620-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5, x86_64, built on 20230620, supports Shielded VM features;10;suse-cloud;sles-15;X86_64;2023-06-20T06:17:23.093-07:00;;READY
 sles-12-sp5-sap-v20230718-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5 for SAP, x86_64, built on 20230718, supports Shielded VM features;10;suse-sap-cloud;sles-12-sp5-sap;X86_64;2023-07-17T19:17:57.898-07:00;;READY
