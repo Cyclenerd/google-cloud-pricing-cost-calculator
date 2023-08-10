@@ -65,30 +65,30 @@ MY_CHECKS=(
 
 # 01_europe-west4-c3.yml
 	# C3 machine types
-	'c3-standard-4,167'
-	'c3-standard-8,335'
-	'c3-standard-22,922'
-	'c3-standard-44,1845'
-	'c3-standard-88,3691'
-	'c3-standard-176,7383'
-	'c3-highmem-4,226'
-	'c3-highmem-8,452'
-	'c3-highmem-22,1245'
-	'c3-highmem-44,2490'
-	'c3-highmem-88,4980'
-	'c3-highmem-176,9960'
-	'c3-highcpu-4,138'
-	'c3-highcpu-8,277'
-	'c3-highcpu-22,761'
-	'c3-highcpu-44,1523'
-	'c3-highcpu-88,3047'
-	'c3-highcpu-176,6095'
+	'c3-standard-4,160'
+	'c3-standard-8,320'
+	'c3-standard-22,880'
+	'c3-standard-44,1761'
+	'c3-standard-88,3523'
+	'c3-standard-176,7047'
+	'c3-highmem-4,216'
+	'c3-highmem-8,432'
+	'c3-highmem-22,1188'
+	'c3-highmem-44,2376'
+	'c3-highmem-88,4753'
+	'c3-highmem-176,9507'
+	'c3-highcpu-4,132'
+	'c3-highcpu-8,264'
+	'c3-highcpu-22,727'
+	'c3-highcpu-44,1454'
+	'c3-highcpu-88,2909'
+	'c3-highcpu-176,5818'
 	# C3 Commitment (CUD)
-	'gcp-gce-c3,europe-west4,vm,c3-standard-8,c3-standard-8-1y,211'
-	'gcp-gce-c3,europe-west4,vm,c3-standard-8,c3-standard-8-3y,151'
+	'gcp-gce-c3,europe-west4,vm,c3-standard-8,c3-standard-8-1y,201'
+	'gcp-gce-c3,europe-west4,vm,c3-standard-8,c3-standard-8-3y,144'
 	'c3-standard-8-spot,'
-	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-1y,174'
-	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-3y,124'
+	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-1y,166'
+	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-3y,119'
 	'c3-highcpu-8-spot,'
 
 # 01_europe-west4-e2.yml
@@ -116,18 +116,18 @@ MY_CHECKS=(
 	'e2-standard-8-spot,'
 
 # 01_europe-west4-g2.yml
-	# G2 machine types // Price List accessed on: 2023-04-23 // TODO: Check calculator
-	'g2-standard-4,5'   # Google Cloud Pricing Calculator: ???,  Price List: $570.59209
-	'g2-standard-8,6'   # Google Cloud Pricing Calculator: ??? , Price List: $688.58345
-	'g2-standard-12,8'  # Google Cloud Pricing Calculator: ???,  Price List: $806.57554
-	'g2-standard-16,9'  # Google Cloud Pricing Calculator: ???,  Price List: $924.56763
-	'g2-standard-24,16' # Google Cloud Pricing Calculator: ???,  Price List: $1613.15108
-	'g2-standard-32,13' # Google Cloud Pricing Calculator: ???,  Price List: $1396.53453
-	'g2-standard-48,32' # Google Cloud Pricing Calculator: ???,  Price List: $3226.30216
-	'g2-standard-96,64' # Google Cloud Pricing Calculator: ???,  Price List: $6452.60359
+	# G2 machine types
+	'g2-standard-4,542'
+	'g2-standard-8,654'
+	'g2-standard-12,767'
+	'g2-standard-16,880'
+	'g2-standard-24,1535'
+	'g2-standard-32,1330'
+	'g2-standard-48,3070'
+	'g2-standard-96,6140'
 	# G2 Commitment (CUD)
-	'gcp-gce-g2,europe-west4,vm,g2-standard-8,g2-standard-8-1y,432' # Google Cloud Pricing Calculator: ???, Price List: $433.36961
-	'gcp-gce-g2,europe-west4,vm,g2-standard-8,g2-standard-8-3y,308' # Google Cloud Pricing Calculator: ???, Price List: $310.5931
+	'gcp-gce-g2,europe-west4,vm,g2-standard-8,g2-standard-8-1y,412'
+	'gcp-gce-g2,europe-west4,vm,g2-standard-8,g2-standard-8-3y,294'
 	'g2-standard-8-spot,'
 
 # 01_europe-west4-m1.yml
@@ -163,22 +163,22 @@ MY_CHECKS=(
 
 # 01_europe-west4-m3.yml
 	# M3 machine types
-	'm3-ultramem-32,4896'
-	'm3-ultramem-32-1y,2897'
-	'm3-ultramem-32-3y,1469'
+	'm3-ultramem-32,4673'
+	'm3-ultramem-32-1y,2766'
+	'm3-ultramem-32-3y,1402'
 	'm3-ultramem-32-spot,'
-	'm3-ultramem-64,9792'
-	'm3-ultramem-64-1y,5795'
-	'm3-ultramem-64-3y,2938'
-	'm3-ultramem-128,19584'
-	'm3-ultramem-128-1y,11591'
-	'm3-ultramem-128-3y,5876'
-	'm3-megamem-64,5791'
-	'm3-megamem-64-1y,3426'
-	'm3-megamem-64-3y,1737'
-	'm3-megamem-128,11582'
-	'gcp-gce-m3,europe-west4,vm,m3-megamem-128,m3-megamem-128-1y,6852'
-	'gcp-gce-m3,europe-west4,vm,m3-megamem-128,m3-megamem-128-3y,3475'
+	'm3-ultramem-64,9347'
+	'm3-ultramem-64-1y,5532'
+	'm3-ultramem-64-3y,2804'
+	'm3-ultramem-128,18694'
+	'm3-ultramem-128-1y,11064'
+	'm3-ultramem-128-3y,5609'
+	'm3-megamem-64,5528'
+	'm3-megamem-64-1y,3270'
+	'm3-megamem-64-3y,1658'
+	'm3-megamem-128,11056'
+	'gcp-gce-m3,europe-west4,vm,m3-megamem-128,m3-megamem-128-1y,6541'
+	'gcp-gce-m3,europe-west4,vm,m3-megamem-128,m3-megamem-128-3y,3317'
 
 # 01_europe-west4-n1.yml
 	# N1 machine types
@@ -307,13 +307,13 @@ MY_CHECKS=(
 
 # 01_europe-west4-t2a.yml
 	# Tau T2A (Arm) machine types
-	't2a-standard-1,30'
-	't2a-standard-2,61'
-	't2a-standard-4,123'
-	't2a-standard-8,247'
-	't2a-standard-16,494'
-	't2a-standard-32,989'
-	't2a-standard-48,1484'
+	't2a-standard-1,29'
+	't2a-standard-2,59'
+	't2a-standard-4,118'
+	't2a-standard-8,236'
+	't2a-standard-16,472'
+	't2a-standard-32,944'
+	't2a-standard-48,1417'
 	# T2A no CUD
 	't2a-standard-8-spot,'
 
