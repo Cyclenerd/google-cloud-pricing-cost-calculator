@@ -386,6 +386,76 @@ foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
 	}
 }
 
+###############################################################################
+# BUCKET DATA RETRIEVAL GB PER MONTH
+###############################################################################
+
+# &add_gcp_storage_retrieval_cost($what, $bucket, $region, $cost)
+sub add_gcp_storage_retrieval_cost {
+	my ($what, $bucket, $region, $cost) = @_;
+	$gcp->{'storage'}->{'retrieval'}->{$bucket}->{'cost'}->{$region}->{$what}  = $cost;
+}
+# &add_gcp_storage_retrieval_details($bucket, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description)
+sub add_gcp_storage_retrieval_details {
+	my ($bucket, $region, $mapping, $sku_id, $value, $nanos, $units, $unit_description, $sku_description) = @_;
+	$gcp->{'storage'}->{'retrieval'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'sku'}   = $sku_id;
+	$gcp->{'storage'}->{'retrieval'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'value'} = $value;
+	$gcp->{'storage'}->{'retrieval'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'nanos'} = $nanos;
+	$gcp->{'storage'}->{'retrieval'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'units'} = $units;
+	$gcp->{'storage'}->{'retrieval'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'unit'} = $unit_description;
+	$gcp->{'storage'}->{'retrieval'}->{$bucket}->{'cost'}->{$region}->{'mapping'}->{$mapping}->{'description'} = $sku_description;
+}
+
+&print_header("Bucket Storage Data Retrieval Fee");
+foreach my $bucket (keys %{ $gcp->{'storage'}->{'bucket'} }) {
+	my $value = 1; # 1 GB per month
+	my @bucket_regions;
+	# Mapping
+	# https://cloud.google.com/storage/docs/storage-classes#available_storage_classes
+	my $mapping;
+	if    ($bucket eq 'nearline')       { $mapping = 'storage.nearline.retrieval';       @bucket_regions = @regions; }
+	elsif ($bucket eq 'nearline-dual')  { $mapping = 'storage.nearline.retrieval';  @bucket_regions = @dual_regions; }
+	elsif ($bucket eq 'nearline-multi') { $mapping = 'storage.nearline.retrieval'; @bucket_regions = @multi_regions; }
+	elsif ($bucket eq 'coldline')       { $mapping = 'storage.coldline.retrieval';       @bucket_regions = @regions; }
+	elsif ($bucket eq 'coldline-dual')  { $mapping = 'storage.coldline.retrieval';  @bucket_regions = @dual_regions; }
+	elsif ($bucket eq 'coldline-multi') { $mapping = 'storage.coldline.retrieval'; @bucket_regions = @multi_regions; }
+	elsif ($bucket eq 'archiv')         { $mapping = 'storage.archive.retrieval';        @bucket_regions = @regions; }
+	elsif ($bucket eq 'archiv-dual')    { $mapping = 'storage.archive.retrieval';   @bucket_regions = @dual_regions; }
+	elsif ($bucket eq 'archiv-multi')   { $mapping = 'storage.archive.retrieval';  @bucket_regions = @multi_regions; }
+	foreach my $region (@bucket_regions) {
+		print "Bucket: $bucket\n";
+		print "MAPPING: '$mapping' in region '$region'\n";
+		$sth->execute($mapping, 'global'); # Search SKU(s)
+		my $found = 0;
+		while ($sth->fetch) {
+			&mapping_found($mapping, 'global', $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+			# Check duplicate entries for mapping and region
+			if ($found) {
+				die "ERROR: Duplicate entry. Already found price for this mapping '$mapping' in region '$region'!\n"
+			} else {
+				$found = 1;
+				my $cost = &calc_cost($value, $units, $nanos);
+				&add_gcp_storage_retrieval_cost('month', $bucket, $region, $cost);
+				&add_gcp_storage_retrieval_details(
+					$bucket,
+					$region,
+					$mapping,
+					$sku_id,
+					$value,
+					$nanos,
+					$units,
+					$unit_description,
+					$sku_description
+				) if ($export_details);
+			}
+		}
+		$sth->finish;
+		unless ($found) {
+			warn "WARNING: '$mapping' not found in region '$region'!\n";
+		}
+	}
+}
+
 
 ###############################################################################
 # DISK STORAGE GB PER MONTH

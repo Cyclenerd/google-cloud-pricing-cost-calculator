@@ -219,6 +219,7 @@ storage.nearline.dual.early;Cloud Storage;Storage;NearlineStorage;Nearline Stora
 storage.nearline.early;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Early Delete%;
 storage.nearline.multi;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Multi-region%;
 storage.nearline.multi.early;Cloud Storage;Storage;NearlineStorage;Nearline Storage%Multi-region%Early Delete%;
+storage.nearline.retrieval;Cloud Storage;Storage;NearlineOps;Nearline Data Retrieval;
 COLDLINE Storage;;;;;
 storage.coldline;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%;
 storage.coldline.dual;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Dual-region%;
@@ -226,6 +227,7 @@ storage.coldline.dual.early;Cloud Storage;Storage;ColdlineStorage;Coldline Stora
 storage.coldline.early;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Early Delete%;
 storage.coldline.multi;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Multi-region%;
 storage.coldline.multi.early;Cloud Storage;Storage;ColdlineStorage;Coldline Storage%Multi-region%Early Delete%;
+storage.coldline.retrieval;Cloud Storage;Storage;ColdlineOps;Coldline Data Retrieval;
 ARCHIVE Storage;;;;;
 storage.archive;Cloud Storage;Storage;ArchiveStorage;Archive Storage%;
 storage.archive.dual;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Dual-region%;
@@ -233,6 +235,7 @@ storage.archive.dual.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%
 storage.archive.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Early Delete%;
 storage.archive.multi;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Multi-region%;
 storage.archive.multi.early;Cloud Storage;Storage;ArchiveStorage;Archive Storage%Multi-region%Early Delete%;
+storage.archive.retrieval;Cloud Storage;Storage;ArchiveOps;Archive Data Retrieval;
 Durable Reduced Availability (DRA) Storage;;;;;
 storage.dra;Cloud Storage;Storage;DRAStorage;Durable Reduced Availability Storage%;Multi and Region are the same SKU
 storage.dra.dual;Cloud Storage;Storage;DRAStorage;Durable Reduced Availability Storage%Dual-region;
