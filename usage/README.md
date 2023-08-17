@@ -228,6 +228,7 @@ buckets:
     discount: DISCOUNT-AS-FLOAT
     class: BUCKET-CLASS
     data: SIZE-IN-GiB
+    retrieval: SIZE-IN-GiB
 ```
 
 * Resource name `name` (recommended):
@@ -272,6 +273,10 @@ buckets:
     * `dra`       : Objects stored in region
     * `dra-dual`  : Objects stored in dual-regions
     * `dra-multi` : Objects stored in multi-regions
+* Retrieval fees `retrieval` only applies to:
+  * Nearline Storage
+  * Coldline Storage
+  * Archive Storage
 
 ### 🚇 Cloud VPN
 
