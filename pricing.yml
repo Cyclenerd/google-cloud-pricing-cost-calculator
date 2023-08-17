@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Aug 17 03:58:18 2023
-  timestamp: 1692244698
+  generated: Thu Aug 17 16:00:59 2023
+  timestamp: 1692288059
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -60142,3 +60142,292 @@ storage:
           month: 0.026
         us-multi:
           month: 0.026
+  retrieval:
+    archiv:
+      cost:
+        asia-east1:
+          month: 0.05
+        asia-east2:
+          month: 0.05
+        asia-northeast1:
+          month: 0.05
+        asia-northeast2:
+          month: 0.05
+        asia-northeast3:
+          month: 0.05
+        asia-south1:
+          month: 0.05
+        asia-south2:
+          month: 0.05
+        asia-southeast1:
+          month: 0.05
+        asia-southeast2:
+          month: 0.05
+        australia-southeast1:
+          month: 0.05
+        australia-southeast2:
+          month: 0.05
+        europe-central2:
+          month: 0.05
+        europe-north1:
+          month: 0.05
+        europe-southwest1:
+          month: 0.05
+        europe-west1:
+          month: 0.05
+        europe-west10:
+          month: 0.05
+        europe-west12:
+          month: 0.05
+        europe-west2:
+          month: 0.05
+        europe-west3:
+          month: 0.05
+        europe-west4:
+          month: 0.05
+        europe-west6:
+          month: 0.05
+        europe-west8:
+          month: 0.05
+        europe-west9:
+          month: 0.05
+        me-central1:
+          month: 0.05
+        me-central2:
+          month: 0.05
+        me-west1:
+          month: 0.05
+        northamerica-northeast1:
+          month: 0.05
+        northamerica-northeast2:
+          month: 0.05
+        southamerica-east1:
+          month: 0.05
+        southamerica-west1:
+          month: 0.05
+        us-central1:
+          month: 0.05
+        us-east1:
+          month: 0.05
+        us-east4:
+          month: 0.05
+        us-east5:
+          month: 0.05
+        us-south1:
+          month: 0.05
+        us-west1:
+          month: 0.05
+        us-west2:
+          month: 0.05
+        us-west3:
+          month: 0.05
+        us-west4:
+          month: 0.05
+    archiv-dual:
+      cost:
+        asia1:
+          month: 0.05
+        eur4:
+          month: 0.05
+        nam4:
+          month: 0.05
+    archiv-multi:
+      cost:
+        asia-multi:
+          month: 0.05
+        europe-multi:
+          month: 0.05
+        us-multi:
+          month: 0.05
+    coldline:
+      cost:
+        asia-east1:
+          month: 0.02
+        asia-east2:
+          month: 0.02
+        asia-northeast1:
+          month: 0.02
+        asia-northeast2:
+          month: 0.02
+        asia-northeast3:
+          month: 0.02
+        asia-south1:
+          month: 0.02
+        asia-south2:
+          month: 0.02
+        asia-southeast1:
+          month: 0.02
+        asia-southeast2:
+          month: 0.02
+        australia-southeast1:
+          month: 0.02
+        australia-southeast2:
+          month: 0.02
+        europe-central2:
+          month: 0.02
+        europe-north1:
+          month: 0.02
+        europe-southwest1:
+          month: 0.02
+        europe-west1:
+          month: 0.02
+        europe-west10:
+          month: 0.02
+        europe-west12:
+          month: 0.02
+        europe-west2:
+          month: 0.02
+        europe-west3:
+          month: 0.02
+        europe-west4:
+          month: 0.02
+        europe-west6:
+          month: 0.02
+        europe-west8:
+          month: 0.02
+        europe-west9:
+          month: 0.02
+        me-central1:
+          month: 0.02
+        me-central2:
+          month: 0.02
+        me-west1:
+          month: 0.02
+        northamerica-northeast1:
+          month: 0.02
+        northamerica-northeast2:
+          month: 0.02
+        southamerica-east1:
+          month: 0.02
+        southamerica-west1:
+          month: 0.02
+        us-central1:
+          month: 0.02
+        us-east1:
+          month: 0.02
+        us-east4:
+          month: 0.02
+        us-east5:
+          month: 0.02
+        us-south1:
+          month: 0.02
+        us-west1:
+          month: 0.02
+        us-west2:
+          month: 0.02
+        us-west3:
+          month: 0.02
+        us-west4:
+          month: 0.02
+    coldline-dual:
+      cost:
+        asia1:
+          month: 0.02
+        eur4:
+          month: 0.02
+        nam4:
+          month: 0.02
+    coldline-multi:
+      cost:
+        asia-multi:
+          month: 0.02
+        europe-multi:
+          month: 0.02
+        us-multi:
+          month: 0.02
+    nearline:
+      cost:
+        asia-east1:
+          month: 0.01
+        asia-east2:
+          month: 0.01
+        asia-northeast1:
+          month: 0.01
+        asia-northeast2:
+          month: 0.01
+        asia-northeast3:
+          month: 0.01
+        asia-south1:
+          month: 0.01
+        asia-south2:
+          month: 0.01
+        asia-southeast1:
+          month: 0.01
+        asia-southeast2:
+          month: 0.01
+        australia-southeast1:
+          month: 0.01
+        australia-southeast2:
+          month: 0.01
+        europe-central2:
+          month: 0.01
+        europe-north1:
+          month: 0.01
+        europe-southwest1:
+          month: 0.01
+        europe-west1:
+          month: 0.01
+        europe-west10:
+          month: 0.01
+        europe-west12:
+          month: 0.01
+        europe-west2:
+          month: 0.01
+        europe-west3:
+          month: 0.01
+        europe-west4:
+          month: 0.01
+        europe-west6:
+          month: 0.01
+        europe-west8:
+          month: 0.01
+        europe-west9:
+          month: 0.01
+        me-central1:
+          month: 0.01
+        me-central2:
+          month: 0.01
+        me-west1:
+          month: 0.01
+        northamerica-northeast1:
+          month: 0.01
+        northamerica-northeast2:
+          month: 0.01
+        southamerica-east1:
+          month: 0.01
+        southamerica-west1:
+          month: 0.01
+        us-central1:
+          month: 0.01
+        us-east1:
+          month: 0.01
+        us-east4:
+          month: 0.01
+        us-east5:
+          month: 0.01
+        us-south1:
+          month: 0.01
+        us-west1:
+          month: 0.01
+        us-west2:
+          month: 0.01
+        us-west3:
+          month: 0.01
+        us-west4:
+          month: 0.01
+    nearline-dual:
+      cost:
+        asia1:
+          month: 0.01
+        eur4:
+          month: 0.01
+        nam4:
+          month: 0.01
+    nearline-multi:
+      cost:
+        asia-multi:
+          month: 0.01
+        europe-multi:
+          month: 0.01
+        us-multi:
+          month: 0.01
