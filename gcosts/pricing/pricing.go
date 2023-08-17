@@ -16,9 +16,10 @@ limitations under the License.
 package pricing
 
 import (
+	"os"
+
 	"github.com/pterm/pterm"
 	"gopkg.in/yaml.v3"
-	"os"
 )
 
 var CostSum float32
@@ -36,6 +37,10 @@ type MultiRegion struct {
 }
 
 type Bucket struct {
+	Cost map[string]Cost
+}
+
+type Retrieval struct {
 	Cost map[string]Cost
 }
 
@@ -83,7 +88,8 @@ type StructPricing struct {
 		}
 	}
 	Storage struct {
-		Bucket map[string]Bucket
+		Bucket    map[string]Bucket
+		Retrieval map[string]Retrieval
 	}
 	Compute struct {
 		Storage  map[string]Storage

@@ -13,6 +13,15 @@ MY_CHECKS=(
 	'default-project-id,europe-west4,bucket,standard,bucket-standard,1.0'
 	'default-project-id,europe-multi,bucket,standard-multi,bucket-standard-multi,1.3'
 	'default-project-id,eur4,bucket,standard-dual,bucket-standard-dual,2.2'
+	# Nearline storage
+	'default-project-id,europe-west4,bucket,nearline,bucket-nearline,5.0'
+	'default-project-id,europe-west4,retrieval,nearline,bucket-nearline,3.0'
+	# Coldline storage
+	'default-project-id,europe-west4,bucket,coldline,bucket-coldline,2.0'
+	'default-project-id,europe-west4,retrieval,coldline,bucket-coldline,6.0'
+	# Archive storage
+	'default-project-id,europe-west4,bucket,archiv,bucket-archiv,0.6'
+	'default-project-id,europe-west4,retrieval,archiv,bucket-archiv,15.0'
 	# Disk
 	'default-project-id,europe-west4,disk,ssd,disk-ssd,191'
 	'default-project-id,europe-west4,disk,hdd,disk-hdd,90'

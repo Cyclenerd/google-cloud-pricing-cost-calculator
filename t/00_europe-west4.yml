@@ -20,6 +20,18 @@ buckets:
     class: standard-dual
     region: eur4
     data: 50
+  - name: bucket-nearline
+    class: nearline
+    data: 500
+    retrieval: 300
+  - name: bucket-coldline
+    class: coldline
+    data: 500
+    retrieval: 300
+  - name: bucket-archiv
+    class: archiv
+    data: 500
+    retrieval: 300
 
 disks:
   - name: disk-ssd

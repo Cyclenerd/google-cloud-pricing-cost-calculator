@@ -18,12 +18,13 @@ package cmd
 import (
 	"errors"
 	"fmt"
+	"os"
+	"path/filepath"
+
 	"github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts/pricing"
 	"github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts/usage"
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
-	"os"
-	"path/filepath"
 )
 
 // usageCmd represents the calc commands
@@ -105,7 +106,7 @@ var usageCmd = &cobra.Command{
 				pterm.DefaultSection.WithLevel(3).Println("🪣 Cloud Storage")
 				for _, bucket := range buckets {
 					region, discount := pricing.OverwirteDefault(pricingYml, defaultRegion, bucket.Region, defaultDiscount, bucket.Discount)
-					pricing.CalcStorageBucket(pricingYml, bucket.Name, bucket.Class, bucket.Data, region, discount)
+					pricing.CalcStorageBucket(pricingYml, bucket.Name, bucket.Class, bucket.Data, bucket.Retrieval, region, discount)
 				}
 			}
 		}

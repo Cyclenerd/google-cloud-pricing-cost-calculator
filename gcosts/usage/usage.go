@@ -16,9 +16,10 @@ limitations under the License.
 package usage
 
 import (
+	"os"
+
 	"github.com/pterm/pterm"
 	"gopkg.in/yaml.v3"
-	"os"
 )
 
 type Instance struct {
@@ -44,11 +45,12 @@ type Disk struct {
 }
 
 type Bucket struct {
-	Name     string
-	Class    string
-	Region   string
-	Discount float32
-	Data     float32
+	Name      string
+	Class     string
+	Region    string
+	Discount  float32
+	Data      float32
+	Retrieval float32
 }
 
 type VpnTunnel struct {
@@ -109,8 +111,8 @@ func Yml(file string) StructUsage {
 	err := yaml.Unmarshal([]byte(filecontent), &s)
 	if err != nil {
 		pterm.Error.Println("Usage YAML file could not be processed.\n" +
-			"Please check the file structure and make sure that it is not another YAML file (like the price list).\n\n"+
-			"For more help, please see:\n"+
+			"Please check the file structure and make sure that it is not another YAML file (like the price list).\n\n" +
+			"For more help, please see:\n" +
 			"  <https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/usage/README.md>")
 		pterm.Error.Println(err)
 		os.Exit(8)
