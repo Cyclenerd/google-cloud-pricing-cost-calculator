@@ -25,7 +25,7 @@ Full control and no disclosure of any information and costs to third parties.
 Everything is calculated on your local computer.
 No need to have a connection to the Internet.
 Everything tested and matched against the actual invoice in large Google Cloud migration projects.
-Over **296 automated tests** ensure `gcosts` reliability.
+Over **300 automated tests** ensure `gcosts` reliability.
 `gcosts` works on various OS and terminals, including Windows CMD, macOS iTerm2, and in CI systems like GitHub Actions.
 
 | 1️⃣ Create YAML file | 2️⃣ Run `gcosts` CLI program | 3️⃣ Open CSV file |
@@ -48,7 +48,7 @@ Resources that `gcosts` supports, and Google charges for:
 
 - [x] All machine types are supported
 	- [x] `A2` and `G2` accelerator optimized machines
-	- [x] `C2` and `C2D` compute optimized machine series 
+	- [x] `C2`, `C2D` and `H3` compute optimized machine series 
 	- [x] `M1`, `M2` and `M3` memory optimized machine series 
 	- [x] `C3`, `E2`, `N1`, `N2`, `N2D`, `T2D` and `T2A` general purpose machine series 
 - [x] Sustained use discounts (SUD) are applied to monthly costs
