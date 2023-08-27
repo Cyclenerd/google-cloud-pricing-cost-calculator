@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Sun Aug 27 09:38:02 2023
-  timestamp: 1693129082
+  generated: Sun Aug 27 09:49:38 2023
+  timestamp: 1693129778
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -24693,6 +24693,205 @@ compute:
       cpu: 96
       l4: 8
       ram: 384
+    h3-standard-88:
+      cost:
+        asia-east1:
+          hour: 5.701036528
+          month: 4161.75666544
+          month_1y: 3413.45843872
+          month_3y: 2498.54143792
+        asia-east2:
+          hour: 6.887624128
+          month: 5027.96561344
+          month_1y: 4123.92007632
+          month_3y: 3018.57644352
+        asia-northeast1:
+          hour: 6.322886944
+          month: 4615.70746912
+          month_1y: 3785.78744016
+          month_3y: 2771.07424176
+        asia-northeast2:
+          hour: 6.322886944
+          month: 4615.70746912
+          month_1y: 3785.78744016
+          month_3y: 2771.07424176
+        asia-northeast3:
+          hour: 6.322886944
+          month: 4615.70746912
+          month_1y: 3785.78744016
+          month_3y: 2771.07424176
+        asia-south1:
+          hour: 5.120544
+          month: 3737.99712
+          month_1y: 3065.892544
+          month_3y: 2244.134464
+        asia-south2:
+          hour: 5.913735872
+          month: 4317.02718656
+          month_1y: 3540.81128368
+          month_3y: 2591.75971648
+        asia-southeast1:
+          hour: 6.074245584
+          month: 4434.19927632
+          month_1y: 3636.91509456
+          month_3y: 2662.10457216
+        asia-southeast2:
+          hour: 6.620765184
+          month: 4833.15858432
+          month_1y: 3964.14016416
+          month_3y: 2901.62276976
+        australia-southeast1:
+          hour: 6.1545
+          month: 4492.785
+          month_1y: 3684.967
+          month_3y: 2697.277
+        australia-southeast2:
+          hour: 6.40068
+          month: 4672.4964
+          month_1y: 3832.36568
+          month_3y: 2805.16808
+        europe-central2:
+          hour: 6.343565888
+          month: 4630.80309824
+          month_1y: 3798.16931472
+          month_3y: 2780.13747792
+        europe-north1:
+          hour: 5.421375872
+          month: 3957.60438656
+          month_1y: 3246.01392368
+          month_3y: 2375.97755648
+        europe-southwest1:
+          hour: 5.809848
+          month: 4241.18904
+          month_1y: 3478.608848
+          month_3y: 2546.229488
+        europe-west1:
+          hour: 5.421375872
+          month: 3957.60438656
+          month_1y: 3246.01392368
+          month_3y: 2375.97755648
+        europe-west10:
+          hour: 7.582344
+          month: 5535.11112
+          month_1y: 4539.879344
+          month_3y: 3323.045264
+        europe-west12:
+          hour: 6.351444
+          month: 4636.55412
+          month_1y: 3802.885944
+          month_3y: 2783.589864
+        europe-west2:
+          hour: 5.612904
+          month: 4097.41992
+          month_1y: 3360.689904
+          month_3y: 2459.916624
+        europe-west3:
+          hour: 5.809848
+          month: 4241.18904
+          month_1y: 3478.608848
+          month_3y: 2546.229488
+        europe-west4:
+          hour: 5.16978
+          month: 3773.9394
+          month_1y: 3095.37228
+          month_3y: 2265.71268
+        europe-west6:
+          hour: 6.887624128
+          month: 5027.96561344
+          month_1y: 4123.92007632
+          month_3y: 3018.57644352
+        europe-west8:
+          hour: 5.711376
+          month: 4169.30448
+          month_1y: 3419.649376
+          month_3y: 2503.073056
+        europe-west9:
+          hour: 5.711376
+          month: 4169.30448
+          month_1y: 3419.649376
+          month_3y: 2503.073056
+        me-central1:
+          hour: 5.982174
+          month: 4366.98702
+          month_1y: 3581.787924
+          month_3y: 2621.753244
+        me-central2:
+          hour: 7.87776
+          month: 5750.7648
+          month_1y: 4716.75776
+          month_3y: 3452.51456
+        me-west1:
+          hour: 5.41596
+          month: 3953.6508
+          month_1y: 3242.77096
+          month_3y: 2373.60376
+        northamerica-northeast1:
+          hour: 5.421375872
+          month: 3957.60438656
+          month_1y: 3246.01392368
+          month_3y: 2375.97755648
+        northamerica-northeast2:
+          hour: 5.421375872
+          month: 3957.60438656
+          month_1y: 3246.01392368
+          month_3y: 2375.97755648
+        southamerica-east1:
+          hour: 7.818184528
+          month: 5707.27470544
+          month_1y: 4681.08708672
+          month_3y: 3426.40472592
+        southamerica-west1:
+          hour: 7.040748
+          month: 5139.74604
+          month_1y: 4215.602248
+          month_3y: 3085.684888
+        us-central1:
+          hour: 4.9236
+          month: 3594.228
+          month_1y: 2947.9736
+          month_3y: 2157.8216
+        us-east1:
+          hour: 4.9236
+          month: 3594.228
+          month_1y: 2947.9736
+          month_3y: 2157.8216
+        us-east4:
+          hour: 4.9236
+          month: 3594.228
+          month_1y: 2947.9736
+          month_3y: 2157.8216
+        us-east5:
+          hour: 5.545450416
+          month: 4048.17880368
+          month_1y: 3320.30260144
+          month_3y: 2430.35440384
+        us-south1:
+          hour: 5.809848
+          month: 4241.18904
+          month_1y: 3478.608848
+          month_3y: 2546.229488
+        us-west1:
+          hour: 4.9236
+          month: 3594.228
+          month_1y: 2947.9736
+          month_3y: 2157.8216
+        us-west2:
+          hour: 5.918659472
+          month: 4320.62141456
+          month_1y: 3543.75925728
+          month_3y: 2593.91753808
+        us-west3:
+          hour: 5.918659472
+          month: 4320.62141456
+          month_1y: 3543.75925728
+          month_3y: 2593.91753808
+        us-west4:
+          hour: 5.545450416
+          month: 4048.17880368
+          month_1y: 3320.30260144
+          month_3y: 2430.35440384
+      cpu: 88
+      ram: 352
     m1-megamem-96:
       cost:
         asia-east1:
@@ -56419,6 +56618,29 @@ compute:
         windows:
           hour: 4.416
           month: 3223.68
+    h3-standard-88:
+      cost:
+        rhel:
+          hour: 0.13
+          month: 94.9
+          month_1y: 75.92
+          month_3y: 72.27
+        rhel-sap:
+          hour: 0.225
+          month: 164.25
+          month_1y: 131.4
+          month_3y: 124.83
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.048
+          month: 2955.04
     m1-megamem-96:
       cost:
         rhel:

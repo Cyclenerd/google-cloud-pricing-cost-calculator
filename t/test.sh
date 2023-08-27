@@ -101,6 +101,13 @@ MY_CHECKS=(
 	'gcp-gce-c3,europe-west4,vm,c3-highcpu-8,c3-highcpu-8-3y,119'
 	'c3-highcpu-8-spot,'
 
+# 01_europe-west4-h3.yml
+	# H3 machine types
+	'h3-standard-88,3773'
+	# C3 Commitment (CUD)
+	'gcp-gce-h3,europe-west4,vm,h3-standard-88,h3-standard-88-1y,3095'
+	'gcp-gce-h3,europe-west4,vm,h3-standard-88,h3-standard-88-3y,2265'
+
 # 01_europe-west4-e2.yml
 	# E2 machine types
 	'e2-standard-2,53'

@@ -838,3 +838,8 @@ compute:
       cpu: 96
       ram: 384
       l4: 8
+
+    # H3:
+    h3-standard-88:
+      cpu: 88
+      ram: 352

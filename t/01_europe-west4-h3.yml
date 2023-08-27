@@ -1,0 +1,14 @@
+region: europe-west4
+project: gcp-gce-h3
+
+instances:
+  - name: h3-standard-88
+    type: h3-standard-88
+ 
+# Commitment (CUD)
+  - name: h3-standard-88-1y
+    type: h3-standard-88
+    commitment: 1
+  - name: h3-standard-88-3y
+    type: h3-standard-88
+    commitment: 3
