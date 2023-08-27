@@ -76,6 +76,7 @@ MY_CHECKS=(
 	# C3 machine types
 	'c3-standard-4,160'
 	'c3-standard-8,320'
+	'c3-standard-8-lssd,320'
 	'c3-standard-22,880'
 	'c3-standard-44,1761'
 	'c3-standard-88,3523'

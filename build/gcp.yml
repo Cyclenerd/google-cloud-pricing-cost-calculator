@@ -650,19 +650,37 @@ compute:
     c3-standard-4:
       cpu: 4
       ram: 16
+    c3-standard-4-lssd:
+      cpu: 4
+      ram: 16
     c3-standard-8:
+      cpu: 8
+      ram: 32
+    c3-standard-8-lssd:
       cpu: 8
       ram: 32
     c3-standard-22:
       cpu: 22
       ram: 88
+    c3-standard-22-lssd:
+      cpu: 22
+      ram: 88
     c3-standard-44:
+      cpu: 44
+      ram: 176
+    c3-standard-44-lssd:
       cpu: 44
       ram: 176
     c3-standard-88:
       cpu: 88
       ram: 352
+    c3-standard-88-lssd:
+      cpu: 88
+      ram: 352
     c3-standard-176:
+      cpu: 176
+      ram: 704
+    c3-standard-176-lssd:
       cpu: 176
       ram: 704
     c3-highmem-4:
