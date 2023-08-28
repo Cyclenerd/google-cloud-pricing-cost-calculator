@@ -3,7 +3,7 @@ module github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts
 go 1.20
 
 require (
-	github.com/pterm/pterm v0.12.66
+	github.com/pterm/pterm v0.12.67
 	github.com/spf13/cobra v1.7.0
 	gopkg.in/yaml.v3 v3.0.1
 )
