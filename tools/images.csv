@@ -121,6 +121,7 @@ fedora-coreos-38-20230819-1-0-gcp-aarch64;Fedora, Fedora CoreOS next, 38.2023081
 fedora-coreos-38-20230819-1-0-gcp-x86-64;Fedora, Fedora CoreOS next, 38.20230819.1.0, x86_64 published on 2023-08-22;10;fedora-coreos-cloud;fedora-coreos-next;X86_64;2023-08-21T21:13:46.977-07:00;;READY
 fedora-coreos-38-20230819-2-0-gcp-aarch64;Fedora, Fedora CoreOS testing, 38.20230819.2.0, aarch64 published on 2023-08-22;10;fedora-coreos-cloud;fedora-coreos-testing-arm64;ARM64;2023-08-22T08:35:39.975-07:00;;READY
 fedora-coreos-38-20230819-2-0-gcp-x86-64;Fedora, Fedora CoreOS testing, 38.20230819.2.0, x86_64 published on 2023-08-22;10;fedora-coreos-cloud;fedora-coreos-testing;X86_64;2023-08-21T21:21:23.551-07:00;;READY
+fedora-coreos-38-20230819-3-0-gcp-aarch64;Fedora, Fedora CoreOS stable, 38.20230819.3.0, aarch64 published on 2023-09-05;10;fedora-coreos-cloud;;ARM64;2023-09-04T19:25:26.559-07:00;;PENDING
 sql-2019-standard-windows-2019-dc-v20230809;Microsoft, SQL Server 2019 Standard, on Windows Server 2019 Datacenter, x64 built on 20230809;50;windows-sql-cloud;sql-std-2019-win-2019;X86_64;2023-08-09T17:05:47.863-07:00;;READY
 sql-2019-standard-windows-2022-dc-v20230809;Microsoft, SQL Server 2019 Standard, on Windows Server 2022 Datacenter, x64 built on 20230809;50;windows-sql-cloud;sql-std-2019-win-2022;X86_64;2023-08-09T17:05:48.454-07:00;;READY
 sql-2019-web-windows-2019-dc-v20230809;Microsoft, SQL Server 2019 Web, on Windows Server 2019 Datacenter, x64 built on 20230809;50;windows-sql-cloud;sql-web-2019-win-2019;X86_64;2023-08-09T17:05:46.795-07:00;;READY
