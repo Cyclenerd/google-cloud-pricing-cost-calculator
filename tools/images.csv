@@ -56,8 +56,8 @@ ubuntu-pro-1804-bionic-arm64-v20230831;Canonical, Ubuntu, 18.04 LTS Pro Server, 
 ubuntu-pro-1804-bionic-v20230831;Canonical, Ubuntu, 18.04 LTS Pro Server, amd64 bionic pro server image built on 2023-08-31;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts;X86_64;2023-08-30T22:58:52.724-07:00;;READY
 ubuntu-pro-2004-focal-arm64-v20230907;Canonical, Ubuntu, 20.04 LTS Pro Server, arm64 focal pro server image built on 2023-09-07;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts-arm64;ARM64;2023-09-07T17:39:18.035-07:00;;READY
 ubuntu-pro-2004-focal-v20230907;Canonical, Ubuntu, 20.04 LTS Pro Server, amd64 focal pro server image built on 2023-09-07;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts;X86_64;2023-09-07T17:39:25.853-07:00;;READY
-ubuntu-pro-2204-jammy-arm64-v20230829;Canonical, Ubuntu, 22.04 LTS Pro Server, arm64 jammy pro server image built on 2023-08-29;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts-arm64;ARM64;2023-08-30T14:33:52.980-07:00;;READY
-ubuntu-pro-2204-jammy-v20230829;Canonical, Ubuntu, 22.04 LTS Pro Server, amd64 jammy pro server image built on 2023-08-29;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts;X86_64;2023-08-30T14:33:54.846-07:00;;READY
+ubuntu-pro-2204-jammy-arm64-v20230908;Canonical, Ubuntu, 22.04 LTS Pro Server, arm64 jammy pro server image built on 2023-09-08;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts-arm64;ARM64;2023-09-07T20:58:33.691-07:00;;READY
+ubuntu-pro-2204-jammy-v20230908;Canonical, Ubuntu, 22.04 LTS Pro Server, amd64 jammy pro server image built on 2023-09-08;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts;X86_64;2023-09-07T20:58:32.602-07:00;;READY
 ubuntu-pro-fips-1804-bionic-v20230530;Canonical, Ubuntu, 18.04 LTS Pro FIPS Server, amd64 bionic pro fips server image built on 2023-05-30, supports Shielded VM features;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-1804-lts;X86_64;2023-05-30T10:07:07.195-07:00;;READY
 ubuntu-pro-fips-2004-focal-v20230811;Canonical, Ubuntu, 20.04 LTS Pro FIPS Server, amd64 focal pro fips server image built on 2023-08-11;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-2004-lts;X86_64;2023-08-11T15:53:24.823-07:00;;READY
 windows-server-2012-r2-dc-core-v20230809;Microsoft, Windows Server, 2012 R2 Datacenter Core, Server Core, x64 built on 20230809;32;windows-cloud;windows-2012-r2-core;X86_64;2023-08-09T17:05:36.180-07:00;;READY
@@ -72,10 +72,10 @@ cos-beta-109-17800-0-31;Google, Container-Optimized OS, 109-17800.0.31 beta, Ker
 cos-dev-113-17872-0-0;Google, Container-Optimized OS, 113-17872.0.0 dev, Kernel: COS-6.1.49 Kubernetes: 1.27.4 Docker: 24.0.5 Family: cos-dev;10;cos-cloud;cos-dev;X86_64;2023-09-07T10:48:09.343-07:00;;READY
 ubuntu-2004-focal-arm64-v20230907;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2023-09-07;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2023-09-07T17:49:32.274-07:00;;READY
 ubuntu-2004-focal-v20230907;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2023-09-07;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2023-09-07T17:49:31.706-07:00;;READY
-ubuntu-2204-jammy-arm64-v20230829;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2023-08-29;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2023-08-30T14:30:58.224-07:00;;READY
-ubuntu-2204-jammy-v20230829;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-08-29;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-08-30T14:30:54.948-07:00;;READY
-ubuntu-2304-lunar-amd64-v20230829;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2023-08-29;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2023-08-29T18:31:30.274-07:00;;READY
-ubuntu-2304-lunar-arm64-v20230829;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2023-08-29;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2023-08-29T18:31:29.121-07:00;;READY
+ubuntu-2204-jammy-arm64-v20230908;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2023-09-08;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2023-09-07T20:54:16.028-07:00;;READY
+ubuntu-2204-jammy-v20230908;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-09-08;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-09-07T20:54:17.387-07:00;;READY
+ubuntu-2304-lunar-amd64-v20230907;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2023-09-07;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2023-09-07T20:38:16.631-07:00;;READY
+ubuntu-2304-lunar-arm64-v20230907;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2023-09-07;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2023-09-07T20:38:15.535-07:00;;READY
 windows-server-2016-dc-core-v20230809;Microsoft, Windows Server, 2016 Datacenter Core, Server Core, x64 built on 20230809;32;windows-cloud;windows-2016-core;X86_64;2023-08-09T17:05:37.069-07:00;;READY
 windows-server-2016-dc-v20230809;Microsoft, Windows Server, 2016 Datacenter, Server with Desktop Experience, x64 built on 20230809;50;windows-cloud;windows-2016;X86_64;2023-08-09T17:05:37.229-07:00;;READY
 windows-server-2019-dc-core-for-containers-v20230809;Microsoft, Windows Server, 2019 Datacenter Core for Containers, Server Core, x64 built on 20230809;32;windows-cloud;windows-2019-core-for-containers;X86_64;2023-08-09T17:05:37.630-07:00;;READY
