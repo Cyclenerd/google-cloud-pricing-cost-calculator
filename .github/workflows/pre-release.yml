@@ -11,7 +11,7 @@ jobs:
     steps:
 
       - name: 🛎️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # https://github.com/marketplace/actions/setup-go-environment
       - name: 🔧 Setup go
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       # Download binaries
       # https://github.com/marketplace/actions/download-a-build-artifact
       - name: 📥 Download
@@ -69,7 +69,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: 🛎️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 📥 Download
         uses: actions/download-artifact@v3
         with:
@@ -84,7 +84,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 🛎️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 📥 Download
         uses: actions/download-artifact@v3
         with:
