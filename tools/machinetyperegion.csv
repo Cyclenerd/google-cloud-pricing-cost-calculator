@@ -772,12 +772,8 @@ c3d-standard-90;90;False;360.00;;us-central1
 c3d-standard-90;90;False;360.00;;us-east1
 c3d-standard-90;90;False;360.00;;us-east4
 c3d-standard-90;90;False;360.00;;us-east7
-ct4p-hightpu-4t;240;False;407.00;;us-central2
-ct5lp-hightpu-1t;24;False;48.00;;us-east5
 ct5lp-hightpu-1t;24;False;48.00;;us-west4
-ct5lp-hightpu-4t;112;False;192.00;;us-east5
 ct5lp-hightpu-4t;112;False;192.00;;us-west4
-ct5lp-hightpu-8t;224;False;384.00;;us-east5
 ct5lp-hightpu-8t;224;False;384.00;;us-west4
 e2-highcpu-16;16;False;16.00;;africa-south1
 e2-highcpu-16;16;False;16.00;;asia-east1
@@ -3120,6 +3116,7 @@ n2-highmem-128;128;False;864.00;;asia-south2
 n2-highmem-128;128;False;864.00;;asia-southeast1
 n2-highmem-128;128;False;864.00;;asia-southeast2
 n2-highmem-128;128;False;864.00;;australia-southeast1
+n2-highmem-128;128;False;864.00;;australia-southeast2
 n2-highmem-128;128;False;864.00;;europe-central2
 n2-highmem-128;128;False;864.00;;europe-southwest1
 n2-highmem-128;128;False;864.00;;europe-west1
@@ -3485,6 +3482,7 @@ n2-highmem-96;96;False;768.00;;asia-south2
 n2-highmem-96;96;False;768.00;;asia-southeast1
 n2-highmem-96;96;False;768.00;;asia-southeast2
 n2-highmem-96;96;False;768.00;;australia-southeast1
+n2-highmem-96;96;False;768.00;;australia-southeast2
 n2-highmem-96;96;False;768.00;;europe-central2
 n2-highmem-96;96;False;768.00;;europe-southwest1
 n2-highmem-96;96;False;768.00;;europe-west1
