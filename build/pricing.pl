@@ -837,6 +837,17 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.c3.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.c3.spot'} = $ram;
 		}
+		# C3D
+		elsif ($type eq 'c3d') {
+			$mappings{     'gce.compute.cpu.c3d'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.c3d.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.c3d.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.c3d.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.c3d'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.c3d.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.c3d.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.c3d.spot'} = $ram;
+		}
 		# H3
 		elsif ($type eq 'h3') {
 			$mappings{     'gce.compute.cpu.h3'}      = $cpu;

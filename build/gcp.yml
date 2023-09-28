@@ -720,6 +720,101 @@ compute:
       cpu: 176
       ram: 352
 
+    # C3D
+    c3d-standard-16-lssd:
+      cpu: 16
+      ram: 64
+    c3d-standard-16:
+      cpu: 16
+      ram: 64
+    c3d-standard-180-lssd:
+      cpu: 180
+      ram: 720
+    c3d-standard-180:
+      cpu: 180
+      ram: 720
+    c3d-standard-30-lssd:
+      cpu: 30
+      ram: 120
+    c3d-standard-30:
+      cpu: 30
+      ram: 120
+    c3d-standard-360-lssd:
+      cpu: 360
+      ram: 1440
+    c3d-standard-360:
+      cpu: 360
+      ram: 1440
+    c3d-standard-4:
+      cpu: 4
+      ram: 16
+    c3d-standard-60-lssd:
+      cpu: 60
+      ram: 240
+    c3d-standard-60:
+      cpu: 60
+      ram: 240
+    c3d-standard-8-lssd:
+      cpu: 8
+      ram: 32
+    c3d-standard-8:
+      cpu: 8
+      ram: 32
+    c3d-standard-90-lssd:
+      cpu: 90
+      ram: 360
+    c3d-standard-90:
+      cpu: 90
+      ram: 360
+    c3d-highcpu-16:
+      cpu: 16
+      ram: 32
+    c3d-highcpu-180:
+      cpu: 180
+      ram: 354
+    c3d-highcpu-30:
+      cpu: 30
+      ram: 59
+    c3d-highcpu-360:
+      cpu: 360
+      ram: 708
+    c3d-highcpu-4:
+      cpu: 4
+      ram: 8
+    c3d-highcpu-60:
+      cpu: 60
+      ram: 118
+    c3d-highcpu-8:
+      cpu: 8
+      ram: 16
+    c3d-highcpu-90:
+      cpu: 90
+      ram: 177
+    c3d-highmem-16:
+      cpu: 16
+      ram: 128
+    c3d-highmem-180:
+      cpu: 180
+      ram: 1440
+    c3d-highmem-30:
+      cpu: 30
+      ram: 240
+    c3d-highmem-360:
+      cpu: 360
+      ram: 2880
+    c3d-highmem-4:
+      cpu: 4
+      ram: 32
+    c3d-highmem-60:
+      cpu: 60
+      ram: 480
+    c3d-highmem-8:
+      cpu: 8
+      ram: 64
+    c3d-highmem-90:
+      cpu: 90
+      ram: 720
+
     # M1:
     m1-ultramem-40:
       cpu: 40
