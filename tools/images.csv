@@ -8,11 +8,11 @@ cos-109-17800-0-45;Google, Container-Optimized OS, 109-17800.0.45 LTS, Kernel: C
 cos-93-16623-461-35;Google, Container-Optimized OS, 93-16623.461.35 LTS, Kernel: COS-5.10.177 Kubernetes: 1.21.14 Docker: 20.10.24 Family: cos-93-lts;10;cos-cloud;cos-93-lts;X86_64;2023-09-26T13:18:02.807-07:00;;READY
 cos-97-16919-353-50;Google, Container-Optimized OS, 97-16919.353.50 LTS, Kernel: COS-5.10.186 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-97-lts;10;cos-cloud;cos-97-lts;X86_64;2023-09-26T13:18:04.076-07:00;;READY
 cos-arm64-101-17162-279-55;Google, Container-Optimized OS, 101-17162.279.55 LTS, Kernel: COS-5.15.120 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-arm64-101-lts;10;cos-cloud;cos-arm64-101-lts;ARM64;2023-09-26T13:18:12.642-07:00;;READY
-debian-10-buster-v20230912;Debian, Debian GNU/Linux, 10 (buster), amd64 built on 20230912;10;debian-cloud;debian-10;X86_64;2023-09-12T17:13:05.657-07:00;;READY
-debian-11-bullseye-arm64-v20230912;Debian, Debian GNU/Linux, 11 (bullseye), arm64 built on 20230912;10;debian-cloud;debian-11-arm64;ARM64;2023-09-12T17:13:05.719-07:00;;READY
-debian-11-bullseye-v20230912;Debian, Debian GNU/Linux, 11 (bullseye), amd64 built on 20230912;10;debian-cloud;debian-11;X86_64;2023-09-12T17:13:05.492-07:00;;READY
-debian-12-bookworm-arm64-v20230912;Debian, Debian GNU/Linux, 12 (bookworm), arm64 built on 20230912;10;debian-cloud;debian-12-arm64;ARM64;2023-09-12T17:13:05.908-07:00;;READY
-debian-12-bookworm-v20230912;Debian, Debian GNU/Linux, 12 (bookworm), amd64 built on 20230912;10;debian-cloud;debian-12;X86_64;2023-09-12T17:13:05.624-07:00;;READY
+debian-10-buster-v20231004;Debian, Debian GNU/Linux, 10 (buster), amd64 built on 20231004;10;debian-cloud;debian-10;X86_64;2023-10-04T11:01:38.701-07:00;;READY
+debian-11-bullseye-arm64-v20231004;Debian, Debian GNU/Linux, 11 (bullseye), arm64 built on 20231004;10;debian-cloud;debian-11-arm64;ARM64;2023-10-04T16:07:15.165-07:00;;READY
+debian-11-bullseye-v20231004;Debian, Debian GNU/Linux, 11 (bullseye), amd64 built on 20231004;10;debian-cloud;debian-11;X86_64;2023-10-04T11:01:38.644-07:00;;READY
+debian-12-bookworm-arm64-v20231004;Debian, Debian GNU/Linux, 12 (bookworm), arm64 built on 20231004;10;debian-cloud;debian-12-arm64;ARM64;2023-10-04T11:01:38.678-07:00;;READY
+debian-12-bookworm-v20231004;Debian, Debian GNU/Linux, 12 (bookworm), amd64 built on 20231004;10;debian-cloud;debian-12;X86_64;2023-10-04T11:01:38.510-07:00;;READY
 fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0, x86_64 published on 2021-04-27;10;fedora-cloud;fedora-cloud-34;;2021-05-06T09:33:30.114-07:00;;READY
 fedora-cloud-base-gcp-37-1-7-x86-64;Fedora, Fedora Cloud Base 37, 37-20221105.0, x86_64 published on 2022-11-05;10;fedora-cloud;fedora-cloud-37;;2023-03-15T18:26:27.597-07:00;;READY
 fedora-cloud-base-gcp-38-1-6-x86-64;Fedora, Fedora Cloud Base 38, 38-20230413.1, x86_64 published on 2023-04-13;10;fedora-cloud;fedora-cloud-38;;2023-04-23T22:33:32.441-07:00;;READY
@@ -117,10 +117,10 @@ sql-2017-web-windows-2019-dc-v20230913;Microsoft, SQL Server 2017 Web, on Window
 sql-2017-web-windows-2022-dc-v20230913;Microsoft, SQL Server 2017 Web, on Windows Server 2022 Datacenter, x64 built on 20230913;50;windows-sql-cloud;sql-web-2017-win-2022;X86_64;2023-09-13T11:54:48.856-07:00;;READY
 sql-2019-enterprise-windows-2019-dc-v20230913;Microsoft, SQL Server 2019 Enterprise, on Windows Server 2019 Datacenter, x64 built on 20230913;50;windows-sql-cloud;sql-ent-2019-win-2019;X86_64;2023-09-13T11:54:49.799-07:00;;READY
 sql-2019-enterprise-windows-2022-dc-v20230913;Microsoft, SQL Server 2019 Enterprise, on Windows Server 2022 Datacenter, x64 built on 20230913;50;windows-sql-cloud;sql-ent-2019-win-2022;X86_64;2023-09-13T11:54:50.065-07:00;;READY
-fedora-coreos-38-20230902-3-0-gcp-aarch64;Fedora, Fedora CoreOS stable, 38.20230902.3.0, aarch64 published on 2023-09-19;10;fedora-coreos-cloud;fedora-coreos-stable-arm64;ARM64;2023-09-18T17:06:21.284-07:00;;READY
-fedora-coreos-38-20230902-3-0-gcp-x86-64;Fedora, Fedora CoreOS stable, 38.20230902.3.0, x86_64 published on 2023-09-18;10;fedora-coreos-cloud;fedora-coreos-stable;X86_64;2023-09-18T16:19:28.666-07:00;;READY
 fedora-coreos-38-20230918-2-0-gcp-aarch64;Fedora, Fedora CoreOS testing, 38.20230918.2.0, aarch64 published on 2023-09-19;10;fedora-coreos-cloud;fedora-coreos-testing-arm64;ARM64;2023-09-18T17:09:38.191-07:00;;READY
 fedora-coreos-38-20230918-2-0-gcp-x86-64;Fedora, Fedora CoreOS testing, 38.20230918.2.0, x86_64 published on 2023-09-18;10;fedora-coreos-cloud;fedora-coreos-testing;X86_64;2023-09-18T16:26:16.801-07:00;;READY
+fedora-coreos-38-20230918-3-0-gcp-aarch64;Fedora, Fedora CoreOS stable, 38.20230918.3.0, aarch64 published on 2023-10-04;10;fedora-coreos-cloud;fedora-coreos-stable-arm64;ARM64;2023-10-04T01:28:13.674-07:00;;READY
+fedora-coreos-38-20230918-3-0-gcp-x86-64;Fedora, Fedora CoreOS stable, 38.20230918.3.0, x86_64 published on 2023-10-04;10;fedora-coreos-cloud;fedora-coreos-stable;X86_64;2023-10-04T00:44:08.495-07:00;;READY
 fedora-coreos-39-20230916-1-2-gcp-aarch64;Fedora, Fedora CoreOS next, 39.20230916.1.2, aarch64 published on 2023-09-21;10;fedora-coreos-cloud;fedora-coreos-next-arm64;ARM64;2023-09-21T12:29:29.022-07:00;;READY
 fedora-coreos-39-20230916-1-2-gcp-x86-64;Fedora, Fedora CoreOS next, 39.20230916.1.2, x86_64 published on 2023-09-21;10;fedora-coreos-cloud;fedora-coreos-next;X86_64;2023-09-21T11:50:28.187-07:00;;READY
 sql-2019-standard-windows-2019-dc-v20230913;Microsoft, SQL Server 2019 Standard, on Windows Server 2019 Datacenter, x64 built on 20230913;50;windows-sql-cloud;sql-std-2019-win-2019;X86_64;2023-09-13T11:54:48.947-07:00;;READY
