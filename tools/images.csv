@@ -52,8 +52,8 @@ sles-15-sp5-sap-v20230921-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for S
 sles-sap-15-sp4-hardened-v20230828-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP hardened with security features, x86_64, built on 20230828;10;suse-sap-cloud;sles-sap-15-sp4-hardened;X86_64;2023-08-28T12:31:47.213-07:00;;READY
 sles-sap-15-sp5-hardened-v20230921-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP hardened with security features, x86_64, built on 20230921;10;suse-sap-cloud;sles-sap-15-sp5-hardened;X86_64;2023-09-20T19:32:42.755-07:00;;READY
 ubuntu-pro-1604-xenial-v20230710;Canonical, Ubuntu, 16.04 LTS Pro Server, amd64 xenial pro server image built on 2023-07-10, supports Shielded VM features;10;ubuntu-os-pro-cloud;ubuntu-pro-1604-lts;X86_64;2023-07-13T15:27:48.523-07:00;;READY
-ubuntu-pro-1804-bionic-arm64-v20231019;Canonical, Ubuntu, 18.04 LTS Pro Server, arm64 bionic pro server image built on 2023-10-19;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts-arm64;ARM64;2023-10-19T12:03:50.390-07:00;;READY
-ubuntu-pro-1804-bionic-v20231019;Canonical, Ubuntu, 18.04 LTS Pro Server, amd64 bionic pro server image built on 2023-10-19;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts;X86_64;2023-10-19T12:03:49.284-07:00;;READY
+ubuntu-pro-1804-bionic-arm64-v20230921;Canonical, Ubuntu, 18.04 LTS Pro Server, arm64 bionic pro server image built on 2023-09-21;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts-arm64;ARM64;2023-09-20T23:13:19.081-07:00;;READY
+ubuntu-pro-1804-bionic-v20230921;Canonical, Ubuntu, 18.04 LTS Pro Server, amd64 bionic pro server image built on 2023-09-21;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts;X86_64;2023-09-20T23:13:20.213-07:00;;READY
 ubuntu-pro-2004-focal-arm64-v20230920;Canonical, Ubuntu, 20.04 LTS Pro Server, arm64 focal pro server image built on 2023-09-20;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts-arm64;ARM64;2023-09-20T20:21:51.417-07:00;;READY
 ubuntu-pro-2004-focal-v20230920;Canonical, Ubuntu, 20.04 LTS Pro Server, amd64 focal pro server image built on 2023-09-20;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts;X86_64;2023-09-20T20:21:59.061-07:00;;READY
 ubuntu-pro-2204-jammy-arm64-v20230921;Canonical, Ubuntu, 22.04 LTS Pro Server, arm64 jammy pro server image built on 2023-09-21;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts-arm64;ARM64;2023-09-20T21:13:44.078-07:00;;READY
@@ -72,8 +72,8 @@ ubuntu-2004-focal-arm64-v20230918;Canonical, Ubuntu, 20.04 LTS, arm64 focal imag
 ubuntu-2004-focal-v20230918;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2023-09-18;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2023-09-18T17:41:24.217-07:00;;READY
 ubuntu-2204-jammy-arm64-v20230919;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2023-09-19;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2023-09-18T21:29:21.996-07:00;;READY
 ubuntu-2204-jammy-v20230919;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-09-19;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-09-18T21:29:21.104-07:00;;READY
-ubuntu-2304-lunar-amd64-v20231003;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2023-10-03;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2023-10-03T19:06:24.735-07:00;;READY
-ubuntu-2304-lunar-arm64-v20231003;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2023-10-03;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2023-10-03T19:06:22.300-07:00;;READY
+ubuntu-2304-lunar-amd64-v20231020;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2023-10-20;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2023-10-20T19:10:56.234-07:00;;READY
+ubuntu-2304-lunar-arm64-v20231020;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2023-10-20;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2023-10-20T19:10:57.693-07:00;;READY
 ubuntu-2310-mantic-amd64-v20231011;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2023-10-11;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2023-10-12T05:56:07.326-07:00;;READY
 ubuntu-2310-mantic-arm64-v20231011;Canonical, Ubuntu, 23.10, arm64 mantic image built on 2023-10-11;10;ubuntu-os-cloud;ubuntu-2310-arm64;ARM64;2023-10-12T05:56:03.269-07:00;;READY
 windows-server-2016-dc-core-v20231011;Microsoft, Windows Server, 2016 Datacenter Core, Server Core, x64 built on 20231011;32;windows-cloud;windows-2016-core;X86_64;2023-10-11T23:03:45.534-07:00;;READY
@@ -90,8 +90,8 @@ sql-2016-standard-windows-2016-dc-v20231012;Microsoft, SQL Server 2016 Standard,
 cos-stable-109-17800-0-51;Google, Container-Optimized OS, 109-17800.0.51 stable, Kernel: COS-6.1.42 Kubernetes: 1.27.3 Docker: 24.0.5 Family: cos-stable;10;cos-cloud;cos-stable;X86_64;2023-10-11T14:04:26.110-07:00;;READY
 ubuntu-minimal-2004-focal-arm64-v20230919;Canonical, Ubuntu, 20.04 LTS Minimal, arm64 focal minimal image built on 2023-09-19;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts-arm64;ARM64;2023-09-19T00:57:17.558-07:00;;READY
 ubuntu-minimal-2004-focal-v20230919;Canonical, Ubuntu, 20.04 LTS Minimal, amd64 focal minimal image built on 2023-09-19;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts;X86_64;2023-09-19T00:57:18.314-07:00;;READY
-ubuntu-minimal-2204-jammy-arm64-v20231003;Canonical, Ubuntu, 22.04 LTS Minimal, arm64 jammy minimal image built on 2023-10-03;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts-arm64;ARM64;2023-10-03T17:08:42.975-07:00;;READY
-ubuntu-minimal-2204-jammy-v20231003;Canonical, Ubuntu, 22.04 LTS Minimal, amd64 jammy minimal image built on 2023-10-03;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts;X86_64;2023-10-03T17:08:47.715-07:00;;READY
+ubuntu-minimal-2204-jammy-arm64-v20231020;Canonical, Ubuntu, 22.04 LTS Minimal, arm64 jammy minimal image built on 2023-10-20;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts-arm64;ARM64;2023-10-20T17:15:51.300-07:00;;READY
+ubuntu-minimal-2204-jammy-v20231020;Canonical, Ubuntu, 22.04 LTS Minimal, amd64 jammy minimal image built on 2023-10-20;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts;X86_64;2023-10-20T17:15:49.446-07:00;;READY
 sql-2016-standard-windows-2019-dc-v20231012;Microsoft, SQL Server 2016 Standard, on Windows Server 2019 Datacenter, x64 built on 20231012;50;windows-sql-cloud;sql-std-2016-win-2019;X86_64;2023-10-11T23:03:52.251-07:00;;READY
 sql-2016-web-windows-2016-dc-v20231012;Microsoft, SQL Server 2016 Web, on Windows Server 2016 Datacenter, x64 built on 20231012;50;windows-sql-cloud;sql-web-2016-win-2016;X86_64;2023-10-11T23:03:52.175-07:00;;READY
 sql-2016-web-windows-2019-dc-v20231012;Microsoft, SQL Server 2016 Web, on Windows Server 2019 Datacenter, x64 built on 20231012;50;windows-sql-cloud;sql-web-2016-win-2019;X86_64;2023-10-11T23:03:52.630-07:00;;READY
