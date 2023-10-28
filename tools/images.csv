@@ -73,8 +73,8 @@ ubuntu-2204-jammy-arm64-v20231025a;Canonical, Ubuntu, 22.04 LTS, arm64 jammy ima
 ubuntu-2204-jammy-v20231025a;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-10-25;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-10-25T16:17:30.107-07:00;;READY
 ubuntu-2304-lunar-amd64-v20231026;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2023-10-26;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2023-10-26T18:25:51.998-07:00;;READY
 ubuntu-2304-lunar-arm64-v20231026;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2023-10-26;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2023-10-26T18:25:50.220-07:00;;READY
-ubuntu-2310-mantic-amd64-v20231011;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2023-10-11;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2023-10-12T05:56:07.326-07:00;;READY
-ubuntu-2310-mantic-arm64-v20231011;Canonical, Ubuntu, 23.10, arm64 mantic image built on 2023-10-11;10;ubuntu-os-cloud;ubuntu-2310-arm64;ARM64;2023-10-12T05:56:03.269-07:00;;READY
+ubuntu-2310-mantic-amd64-v20231027;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2023-10-27;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2023-10-26T21:53:05.844-07:00;;READY
+ubuntu-2310-mantic-arm64-v20231027;Canonical, Ubuntu, 23.10, arm64 mantic image built on 2023-10-27;10;ubuntu-os-cloud;ubuntu-2310-arm64;ARM64;2023-10-26T21:53:07.697-07:00;;READY
 windows-server-2016-dc-core-v20231011;Microsoft, Windows Server, 2016 Datacenter Core, Server Core, x64 built on 20231011;32;windows-cloud;windows-2016-core;X86_64;2023-10-11T23:03:45.534-07:00;;READY
 windows-server-2016-dc-v20231011;Microsoft, Windows Server, 2016 Datacenter, Server with Desktop Experience, x64 built on 20231011;50;windows-cloud;windows-2016;X86_64;2023-10-11T23:03:44.876-07:00;;READY
 windows-server-2019-dc-core-for-containers-v20231012;Microsoft, Windows Server, 2019 Datacenter Core for Containers, Server Core, x64 built on 20231012;32;windows-cloud;windows-2019-core-for-containers;X86_64;2023-10-11T23:03:45.455-07:00;;READY
@@ -99,8 +99,8 @@ sql-2017-enterprise-windows-2022-dc-v20231012;Microsoft, SQL Server 2017 Enterpr
 ubuntu-minimal-2204-jammy-v20231025;Canonical, Ubuntu, 22.04 LTS Minimal, amd64 jammy minimal image built on 2023-10-25;10;ubuntu-os-cloud;ubuntu-minimal-2204-lts;X86_64;2023-10-25T18:17:12.916-07:00;;READY
 ubuntu-minimal-2304-lunar-amd64-v20231026;Canonical, Ubuntu, 23.04 Minimal, amd64 lunar minimal image built on 2023-10-26;10;ubuntu-os-cloud;ubuntu-minimal-2304-amd64;X86_64;2023-10-26T14:23:51.800-07:00;;READY
 ubuntu-minimal-2304-lunar-arm64-v20231026;Canonical, Ubuntu, 23.04 Minimal, arm64 lunar minimal image built on 2023-10-26;10;ubuntu-os-cloud;ubuntu-minimal-2304-arm64;ARM64;2023-10-26T14:23:49.615-07:00;;READY
-ubuntu-minimal-2310-mantic-amd64-v20231024;Canonical, Ubuntu, 23.10 Minimal, amd64 mantic minimal image built on 2023-10-24;10;ubuntu-os-cloud;ubuntu-minimal-2310-amd64;X86_64;2023-10-24T10:04:33.332-07:00;;READY
-ubuntu-minimal-2310-mantic-arm64-v20231024;Canonical, Ubuntu, 23.10 Minimal, arm64 mantic minimal image built on 2023-10-24;10;ubuntu-os-cloud;ubuntu-minimal-2310-arm64;ARM64;2023-10-24T10:04:32.210-07:00;;READY
+ubuntu-minimal-2310-mantic-amd64-v20231027;Canonical, Ubuntu, 23.10 Minimal, amd64 mantic minimal image built on 2023-10-27;10;ubuntu-os-cloud;ubuntu-minimal-2310-amd64;X86_64;2023-10-27T10:39:33.244-07:00;;READY
+ubuntu-minimal-2310-mantic-arm64-v20231027;Canonical, Ubuntu, 23.10 Minimal, arm64 mantic minimal image built on 2023-10-27;10;ubuntu-os-cloud;ubuntu-minimal-2310-arm64;ARM64;2023-10-27T10:39:33.321-07:00;;READY
 sql-2017-express-windows-2016-dc-v20231012;Microsoft, SQL Server 2017 Express, on Windows Server 2016 Datacenter, x64 built on 20231012;50;windows-sql-cloud;sql-exp-2017-win-2016;X86_64;2023-10-11T23:03:52.989-07:00;;READY
 sql-2017-express-windows-2019-dc-v20231012;Microsoft, SQL Server 2017 Express, on Windows Server 2019 Datacenter, x64 built on 20231012;50;windows-sql-cloud;sql-exp-2017-win-2019;X86_64;2023-10-11T23:03:52.383-07:00;;READY
 sql-2017-standard-windows-2016-dc-v20231012;Microsoft, SQL Server 2017 Standard, on Windows Server 2016 Datacenter, x64 built on 20231012;50;windows-sql-cloud;sql-std-2017-win-2016;X86_64;2023-10-11T23:03:52.600-07:00;;READY
