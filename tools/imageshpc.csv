@@ -1,3 +1,4 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS
 hpc-centos-7-v20230727;Google, HPC CentOS, 7, CentOS-7-based HPC-optimized VM image, x86_64 built on 20230727;20;cloud-hpc-image-public;hpc-centos-7;;2023-07-26T22:10:26.967-07:00;;READY
 hpc-rocky-linux-8-v20230727;Google, HPC Rocky Linux, 8, Rocky-Linux-8-based HPC-optimized VM image, x86_64 built on 20230727;20;cloud-hpc-image-public;hpc-rocky-linux-8;;2023-07-26T22:10:29.468-07:00;;READY
+rocky-linux-8-base-image-v20231111;;20;cloud-hpc-image-public;rocky-linux-8-base-image;;2023-11-10T17:51:44.772-08:00;;READY
