@@ -14,7 +14,7 @@ echo "Stackdriver Monitoring" && \
 perl skus.pl -csv="skus_stackdriver.csv" -id="58CD-E7C3-72CA" && \
 echo "Cloud SQL" && \
 perl skus.pl -csv="skus_sql.csv" -id="9662-B51E-5089" && \
-echo "Merge CSV files" && \
+echo "Merge CSV files to 'skus.csv'" && \
 {
 	cat "skus_compute.csv"
 	cat "skus_networking.csv"
