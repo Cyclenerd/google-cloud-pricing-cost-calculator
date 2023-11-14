@@ -1,17 +1,17 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS
-centos-7-v20231010;CentOS, CentOS, 7, x86_64 built on 20231010;20;centos-cloud;centos-7;X86_64;2023-10-10T14:07:06.629-07:00;;READY
-centos-stream-8-v20231010;CentOS, CentOS, Stream 8, x86_64 built on 20231010;20;centos-cloud;centos-stream-8;X86_64;2023-10-10T14:07:06.674-07:00;;READY
-centos-stream-9-v20231010;CentOS, CentOS, Stream 9, x86_64 built on 20231010;20;centos-cloud;centos-stream-9;X86_64;2023-10-10T14:07:07.042-07:00;;READY
+centos-7-v20231113;CentOS, CentOS, 7, x86_64 built on 20231113;20;centos-cloud;centos-7;X86_64;2023-11-13T15:55:33.520-08:00;;READY
+centos-stream-8-v20231113;CentOS, CentOS, Stream 8, x86_64 built on 20231113;20;centos-cloud;centos-stream-8;X86_64;2023-11-13T15:55:33.645-08:00;;READY
+centos-stream-9-v20231113;CentOS, CentOS, Stream 9, x86_64 built on 20231113;20;centos-cloud;centos-stream-9;X86_64;2023-11-13T15:55:33.550-08:00;;READY
 cos-101-17162-336-20;Google, Container-Optimized OS, 101-17162.336.20 LTS, Kernel: COS-5.15.133 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-101-lts;10;cos-cloud;cos-101-lts;X86_64;2023-11-06T16:34:17.676-08:00;;READY
 cos-105-17412-226-34;Google, Container-Optimized OS, 105-17412.226.34 LTS, Kernel: COS-5.15.133 Kubernetes: 1.25.5 Docker: 23.0.3 Family: cos-105-lts;10;cos-cloud;cos-105-lts;X86_64;2023-11-08T15:31:57.903-08:00;;READY
 cos-109-17800-66-19;Google, Container-Optimized OS, 109-17800.66.19 LTS, Kernel: COS-6.1.58 Kubernetes: 1.27.3 Docker: 24.0.5 Family: cos-109-lts;10;cos-cloud;cos-109-lts;X86_64;2023-11-06T16:34:13.023-08:00;;READY
 cos-97-16919-404-13;Google, Container-Optimized OS, 97-16919.404.13 LTS, Kernel: COS-5.10.197 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-97-lts;10;cos-cloud;cos-97-lts;X86_64;2023-11-06T16:34:06.632-08:00;;READY
 cos-arm64-101-17162-336-20;Google, Container-Optimized OS, 101-17162.336.20 LTS, Kernel: COS-5.15.133 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-arm64-101-lts;10;cos-cloud;cos-arm64-101-lts;ARM64;2023-11-06T16:34:17.611-08:00;;READY
-debian-10-buster-v20231010;Debian, Debian GNU/Linux, 10 (buster), amd64 built on 20231010;10;debian-cloud;debian-10;X86_64;2023-10-10T14:07:07.161-07:00;;READY
-debian-11-bullseye-arm64-v20231010;Debian, Debian GNU/Linux, 11 (bullseye), arm64 built on 20231010;10;debian-cloud;debian-11-arm64;ARM64;2023-10-10T14:07:07.293-07:00;;READY
-debian-11-bullseye-v20231010;Debian, Debian GNU/Linux, 11 (bullseye), amd64 built on 20231010;10;debian-cloud;debian-11;X86_64;2023-10-10T14:07:07.379-07:00;;READY
-debian-12-bookworm-arm64-v20231010;Debian, Debian GNU/Linux, 12 (bookworm), arm64 built on 20231010;10;debian-cloud;debian-12-arm64;ARM64;2023-10-10T14:07:07.254-07:00;;READY
-debian-12-bookworm-v20231010;Debian, Debian GNU/Linux, 12 (bookworm), amd64 built on 20231010;10;debian-cloud;debian-12;X86_64;2023-10-10T14:07:06.984-07:00;;READY
+debian-10-buster-v20231113;Debian, Debian GNU/Linux, 10 (buster), amd64 built on 20231113;10;debian-cloud;debian-10;X86_64;2023-11-13T15:55:34.390-08:00;;READY
+debian-11-bullseye-arm64-v20231113;Debian, Debian GNU/Linux, 11 (bullseye), arm64 built on 20231113;10;debian-cloud;debian-11-arm64;ARM64;2023-11-13T15:55:34.498-08:00;;READY
+debian-11-bullseye-v20231113;Debian, Debian GNU/Linux, 11 (bullseye), amd64 built on 20231113;10;debian-cloud;debian-11;X86_64;2023-11-13T15:55:34.327-08:00;;READY
+debian-12-bookworm-arm64-v20231113;Debian, Debian GNU/Linux, 12 (bookworm), arm64 built on 20231113;10;debian-cloud;debian-12-arm64;ARM64;2023-11-13T15:55:34.391-08:00;;READY
+debian-12-bookworm-v20231113;Debian, Debian GNU/Linux, 12 (bookworm), amd64 built on 20231113;10;debian-cloud;debian-12;X86_64;2023-11-13T15:55:34.499-08:00;;READY
 fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0, x86_64 published on 2021-04-27;10;fedora-cloud;fedora-cloud-34;;2021-05-06T09:33:30.114-07:00;;READY
 fedora-cloud-base-gcp-37-1-7-x86-64;Fedora, Fedora Cloud Base 37, 37-20221105.0, x86_64 published on 2022-11-05;10;fedora-cloud;fedora-cloud-37;;2023-03-15T18:26:27.597-07:00;;READY
 fedora-cloud-base-gcp-38-1-6-x86-64;Fedora, Fedora Cloud Base 38, 38-20230413.1, x86_64 published on 2023-04-13;10;fedora-cloud;fedora-cloud-38;;2023-04-23T22:33:32.441-07:00;;READY
@@ -20,25 +20,25 @@ opensuse-leap-15-4-v20230907-arm64;openSUSE, openSUSE Leap, 15.4 arm64 built on 
 opensuse-leap-15-4-v20230907-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20230907;10;opensuse-cloud;opensuse-leap;X86_64;2023-09-06T19:24:16.324-07:00;;READY
 opensuse-leap-15-5-v20230908-arm64;openSUSE, openSUSE Leap, 15.5 arm64 built on 20230908;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-09-07T19:04:13.856-07:00;;READY
 opensuse-leap-15-5-v20230908-x86-64;openSUSE, openSUSE Leap, 15.5 x86_64 built on 20230908;10;opensuse-cloud;opensuse-leap;X86_64;2023-09-07T19:03:48.060-07:00;;READY
-rhel-7-v20231010;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20231010;20;rhel-cloud;rhel-7;X86_64;2023-10-10T14:07:07.049-07:00;;READY
-rhel-8-v20231010;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20231010;20;rhel-cloud;rhel-8;X86_64;2023-10-10T14:07:06.798-07:00;;READY
-rhel-9-arm64-v20231010;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20231010;20;rhel-cloud;rhel-9-arm64;ARM64;2023-10-10T14:07:07.097-07:00;;READY
-rhel-9-v20231010;Red Hat, Red Hat Enterprise Linux, 9, x86_64 built on 20231010;20;rhel-cloud;rhel-9;X86_64;2023-10-10T14:07:07.049-07:00;;READY
-rhel-7-9-sap-v20231011;Red Hat, Red Hat Enterprise Linux for SAP with HA, 7.9, x86_64 built on 20231011;20;rhel-sap-cloud;rhel-7-9-sap-ha;X86_64;2023-10-11T11:26:22.483-07:00;;READY
-rhel-8-1-sap-v20231010;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.1, x86_64 built on 20231010;20;rhel-sap-cloud;rhel-8-1-sap-ha;X86_64;2023-10-10T14:07:07.368-07:00;;READY
-rhel-8-2-sap-v20231010;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.2, x86_64 built on 20231010;20;rhel-sap-cloud;rhel-8-2-sap-ha;X86_64;2023-10-10T14:07:07.482-07:00;;READY
-rhel-8-4-sap-v20231010;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.4, x86_64 built on 20231010;20;rhel-sap-cloud;rhel-8-4-sap-ha;X86_64;2023-10-10T14:07:07.380-07:00;;READY
-rhel-8-6-sap-v20231010;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.6, x86_64 built on 20231010;20;rhel-sap-cloud;rhel-8-6-sap-ha;X86_64;2023-10-10T14:07:07.384-07:00;;READY
-rhel-8-8-sap-v20231010;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.8, x86_64 built on 20231010;20;rhel-sap-cloud;rhel-8-8-sap-ha;X86_64;2023-10-10T14:07:07.940-07:00;;READY
-rhel-9-0-sap-v20231010;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 9.0, x86_64 built on 20231010;20;rhel-sap-cloud;rhel-9-0-sap-ha;X86_64;2023-10-10T14:07:07.294-07:00;;READY
-rhel-9-2-sap-v20231010;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 9.2, x86_64 built on 20231010;20;rhel-sap-cloud;rhel-9-2-sap-ha;X86_64;2023-10-10T14:07:07.297-07:00;;READY
+rhel-7-v20231113;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20231113;20;rhel-cloud;rhel-7;X86_64;2023-11-13T15:55:33.988-08:00;;READY
+rhel-8-v20231113;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20231113;20;rhel-cloud;rhel-8;X86_64;2023-11-13T15:55:34.169-08:00;;READY
+rhel-9-arm64-v20231113;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20231113;20;rhel-cloud;rhel-9-arm64;ARM64;2023-11-13T15:55:33.958-08:00;;READY
+rhel-9-v20231113;Red Hat, Red Hat Enterprise Linux, 9, x86_64 built on 20231113;20;rhel-cloud;rhel-9;X86_64;2023-11-13T15:55:33.955-08:00;;READY
+rhel-7-9-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA, 7.9, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-7-9-sap-ha;X86_64;2023-11-13T15:55:34.579-08:00;;READY
+rhel-8-1-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.1, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-8-1-sap-ha;X86_64;2023-11-13T15:55:34.596-08:00;;READY
+rhel-8-2-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.2, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-8-2-sap-ha;X86_64;2023-11-13T15:55:34.409-08:00;;READY
+rhel-8-4-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.4, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-8-4-sap-ha;X86_64;2023-11-13T15:55:34.744-08:00;;READY
+rhel-8-6-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.6, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-8-6-sap-ha;X86_64;2023-11-13T15:55:34.679-08:00;;READY
+rhel-8-8-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 8.8, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-8-8-sap-ha;X86_64;2023-11-13T15:55:34.461-08:00;;READY
+rhel-9-0-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 9.0, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-9-0-sap-ha;X86_64;2023-11-13T15:55:34.544-08:00;;READY
+rhel-9-2-sap-v20231113;Red Hat, Red Hat Enterprise Linux for SAP with HA and Update Services, 9.2, x86_64 built on 20231113;20;rhel-sap-cloud;rhel-9-2-sap-ha;X86_64;2023-11-13T15:55:34.678-08:00;;READY
 rocky-linux-8-optimized-gcp-arm64-v20231010;Rocky Linux, Rocky Linux, 8 optimized for GCP, aarch64 built on 20231010;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp-arm64;ARM64;2023-10-10T14:07:06.210-07:00;;READY
-rocky-linux-8-optimized-gcp-v20231010;Rocky Linux, Rocky Linux, 8 optimized for GCP, x86_64 built on 20231010;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp;X86_64;2023-10-10T14:07:06.217-07:00;;READY
-rocky-linux-8-v20231010;Rocky Linux, Rocky Linux, 8, x86_64 built on 20231010;20;rocky-linux-cloud;rocky-linux-8;X86_64;2023-10-10T14:07:06.208-07:00;;READY
-rocky-linux-9-arm64-v20231010;Rocky Linux, Rocky Linux, 9, aarch64 built on 20231010;20;rocky-linux-cloud;rocky-linux-9-arm64;ARM64;2023-10-10T14:07:07.009-07:00;;READY
-rocky-linux-9-optimized-gcp-arm64-v20231010;Rocky Linux, Rocky Linux, 9 optimized for GCP, aarch64 built on 20231010;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp-arm64;ARM64;2023-10-10T14:07:06.208-07:00;;READY
-rocky-linux-9-optimized-gcp-v20231010;Rocky Linux, Rocky Linux, 9 optimized for GCP, x86_64 built on 20231010;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp;X86_64;2023-10-10T14:07:06.396-07:00;;READY
-rocky-linux-9-v20231010;Rocky Linux, Rocky Linux, 9, x86_64 built on 20231010;20;rocky-linux-cloud;rocky-linux-9;X86_64;2023-10-10T14:07:06.250-07:00;;READY
+rocky-linux-8-optimized-gcp-v20231113;Rocky Linux, Rocky Linux, 8 optimized for GCP, x86_64 built on 20231113;20;rocky-linux-cloud;rocky-linux-8-optimized-gcp;X86_64;2023-11-13T15:55:33.542-08:00;;READY
+rocky-linux-8-v20231113;Rocky Linux, Rocky Linux, 8, x86_64 built on 20231113;20;rocky-linux-cloud;rocky-linux-8;X86_64;2023-11-13T15:55:33.444-08:00;;READY
+rocky-linux-9-arm64-v20231113;Rocky Linux, Rocky Linux, 9, aarch64 built on 20231113;20;rocky-linux-cloud;rocky-linux-9-arm64;ARM64;2023-11-13T15:55:33.482-08:00;;READY
+rocky-linux-9-optimized-gcp-arm64-v20231113;Rocky Linux, Rocky Linux, 9 optimized for GCP, aarch64 built on 20231113;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp-arm64;ARM64;2023-11-13T15:55:33.615-08:00;;READY
+rocky-linux-9-optimized-gcp-v20231113;Rocky Linux, Rocky Linux, 9 optimized for GCP, x86_64 built on 20231113;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp;X86_64;2023-11-13T15:55:33.444-08:00;;READY
+rocky-linux-9-v20231113;Rocky Linux, Rocky Linux, 9, x86_64 built on 20231113;20;rocky-linux-cloud;rocky-linux-9;X86_64;2023-11-13T15:55:33.483-08:00;;READY
 sles-12-sp5-v20231108-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20231108;10;suse-cloud;sles-12;X86_64;2023-11-07T18:11:20.449-08:00;;READY
 sles-15-sp5-v20230921-arm64;SUSE, SUSE Linux Enterprise Server 15 SP5, arm64, built on 20230921;10;suse-cloud;sles-15-arm64;ARM64;2023-09-20T19:37:24.381-07:00;;READY
 sles-15-sp5-v20230921-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5, x86_64, built on 20230921;10;suse-cloud;sles-15;X86_64;2023-09-20T19:37:25.491-07:00;;READY
