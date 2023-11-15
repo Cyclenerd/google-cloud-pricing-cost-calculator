@@ -18,8 +18,8 @@ fedora-cloud-base-gcp-38-1-6-x86-64;Fedora, Fedora Cloud Base 38, 38-20230413.1,
 fedora-cloud-base-gcp-39-beta-1-1-x86-64;"Fedora, Fedora Cloud Base 39_Beta, 39-20230912.0, x86_64 published on ";10;fedora-cloud;fedora-cloud-39;;2023-09-28T02:25:19.222-07:00;;READY
 opensuse-leap-15-4-v20230907-arm64;openSUSE, openSUSE Leap, 15.4 arm64 built on 20230907;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-09-06T19:25:42.657-07:00;;READY
 opensuse-leap-15-4-v20230907-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20230907;10;opensuse-cloud;opensuse-leap;X86_64;2023-09-06T19:24:16.324-07:00;;READY
-opensuse-leap-15-5-v20230908-arm64;openSUSE, openSUSE Leap, 15.5 arm64 built on 20230908;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-09-07T19:04:13.856-07:00;;READY
-opensuse-leap-15-5-v20230908-x86-64;openSUSE, openSUSE Leap, 15.5 x86_64 built on 20230908;10;opensuse-cloud;opensuse-leap;X86_64;2023-09-07T19:03:48.060-07:00;;READY
+opensuse-leap-15-5-v20231114-arm64;openSUSE, openSUSE Leap 15.5, arm64 built on 20231114;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-11-14T06:34:11.036-08:00;;READY
+opensuse-leap-15-5-v20231114-x86-64;openSUSE, openSUSE Leap 15.5, x86_64 built on 20231114;10;opensuse-cloud;opensuse-leap;X86_64;2023-11-14T06:31:21.332-08:00;;READY
 rhel-7-v20231113;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20231113;20;rhel-cloud;rhel-7;X86_64;2023-11-13T15:55:33.988-08:00;;READY
 rhel-8-v20231113;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20231113;20;rhel-cloud;rhel-8;X86_64;2023-11-13T15:55:34.169-08:00;;READY
 rhel-9-arm64-v20231113;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20231113;20;rhel-cloud;rhel-9-arm64;ARM64;2023-11-13T15:55:33.958-08:00;;READY
