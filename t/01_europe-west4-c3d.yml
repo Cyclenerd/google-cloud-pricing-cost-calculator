@@ -1,0 +1,66 @@
+region: europe-west4
+project: gcp-gce-c3d
+
+instances:
+# C3D Standard machine types
+  - name: c3d-standard-4
+    type: c3d-standard-4
+  - name: c3d-standard-8
+    type: c3d-standard-8
+  - name: c3d-standard-16
+    type: c3d-standard-16
+  - name: c3d-standard-30
+    type: c3d-standard-30
+  - name: c3d-standard-60
+    type: c3d-standard-60
+  - name: c3d-standard-90
+    type: c3d-standard-90
+  - name: c3d-standard-180
+    type: c3d-standard-180
+  - name: c3d-standard-360
+    type: c3d-standard-360
+# Commitment (CUD)
+  - name: c3d-standard-8-1y
+    type: c3d-standard-8
+    commitment: 1
+  - name: c3d-standard-8-3y
+    type: c3d-standard-8
+    commitment: 3
+# Spot VM
+  - name: c3d-standard-8-spot
+    type: c3d-standard-8
+    spot: true
+# C3D Highmem machine types
+  - name: c3d-highmem-4
+    type: c3d-highmem-4
+  - name: c3d-highmem-8
+    type: c3d-highmem-8
+  - name: c3d-highmem-16
+    type: c3d-highmem-16
+  - name: c3d-highmem-30
+    type: c3d-highmem-30
+  - name: c3d-highmem-60
+    type: c3d-highmem-60
+  - name: c3d-highmem-90
+    type: c3d-highmem-90
+  - name: c3d-highmem-180
+    type: c3d-highmem-180
+  - name: c3d-highmem-360
+    type: c3d-highmem-360
+# C3D Highcpu machine types
+  - name: c3d-highcpu-4
+    type: c3d-highcpu-4
+  - name: c3d-highcpu-8
+    type: c3d-highcpu-8
+  - name: c3d-highcpu-16
+    type: c3d-highcpu-16
+  - name: c3d-highcpu-30
+    type: c3d-highcpu-30
+  - name: c3d-highcpu-60
+    type: c3d-highcpu-60
+  - name: c3d-highcpu-90
+    type: c3d-highcpu-90
+  - name: c3d-highcpu-180
+    type: c3d-highcpu-180
+  - name: c3d-highcpu-360
+    type: c3d-highcpu-360
