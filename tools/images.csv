@@ -69,8 +69,8 @@ cos-beta-109-17800-66-32;Google, Container-Optimized OS, 109-17800.66.32 beta, K
 cos-dev-113-18059-0-0;Google, Container-Optimized OS, 113-18059.0.0 dev, Kernel: COS-6.1.62 Kubernetes: 1.27.4 Docker: 24.0.5 Family: cos-dev;10;cos-cloud;cos-dev;X86_64;2023-11-29T15:16:40.493-08:00;;READY
 ubuntu-2004-focal-arm64-v20231130;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2023-11-30;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2023-11-30T15:32:18.611-08:00;;READY
 ubuntu-2004-focal-v20231130;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2023-11-30;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2023-11-30T15:32:18.190-08:00;;READY
-ubuntu-2204-jammy-arm64-v20231030;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2023-10-30;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2023-10-30T14:16:03.164-07:00;;READY
-ubuntu-2204-jammy-v20231030;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-10-30;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-10-30T14:16:04.178-07:00;;READY
+ubuntu-2204-jammy-arm64-v20231201;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2023-12-01;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2023-11-30T19:47:41.499-08:00;;READY
+ubuntu-2204-jammy-v20231201;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-12-01;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-11-30T19:47:43.784-08:00;;READY
 ubuntu-2304-lunar-amd64-v20231030;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2023-10-30;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2023-10-30T18:26:36.844-07:00;;READY
 ubuntu-2304-lunar-arm64-v20231030;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2023-10-30;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2023-10-30T18:26:38.123-07:00;;READY
 ubuntu-2310-mantic-amd64-v20231031;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2023-10-31;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2023-10-30T21:17:47.573-07:00;;READY
