@@ -15,8 +15,8 @@ fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0
 fedora-cloud-base-gcp-37-1-7-x86-64;Fedora, Fedora Cloud Base 37, 37-20221105.0, x86_64 published on 2022-11-05;10;fedora-cloud;fedora-cloud-37;;2023-03-15T18:26:27.597-07:00;;READY
 fedora-cloud-base-gcp-38-1-6-x86-64;Fedora, Fedora Cloud Base 38, 38-20230413.1, x86_64 published on 2023-04-13;10;fedora-cloud;fedora-cloud-38;;2023-04-23T22:33:32.441-07:00;;READY
 fedora-cloud-base-gcp-39-beta-1-1-x86-64;"Fedora, Fedora Cloud Base 39_Beta, 39-20230912.0, x86_64 published on ";10;fedora-cloud;fedora-cloud-39;;2023-09-28T02:25:19.222-07:00;;READY
-opensuse-leap-15-4-v20230907-arm64;openSUSE, openSUSE Leap, 15.4 arm64 built on 20230907;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-09-06T19:25:42.657-07:00;;READY
-opensuse-leap-15-4-v20230907-x86-64;openSUSE, openSUSE Leap, 15.4 x86_64 built on 20230907;10;opensuse-cloud;opensuse-leap;X86_64;2023-09-06T19:24:16.324-07:00;;READY
+opensuse-leap-15-4-v20231208-arm64;openSUSE, openSUSE Leap 15.4, arm64 built on 20231208;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-12-08T06:53:08.564-08:00;;READY
+opensuse-leap-15-4-v20231208-x86-64;openSUSE, openSUSE Leap 15.4, x86_64 built on 20231208;10;opensuse-cloud;opensuse-leap;X86_64;2023-12-08T07:21:00.897-08:00;;READY
 opensuse-leap-15-5-v20231114-arm64;openSUSE, openSUSE Leap 15.5, arm64 built on 20231114;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-11-14T06:34:11.036-08:00;;READY
 opensuse-leap-15-5-v20231114-x86-64;openSUSE, openSUSE Leap 15.5, x86_64 built on 20231114;10;opensuse-cloud;opensuse-leap;X86_64;2023-11-14T06:31:21.332-08:00;;READY
 rhel-7-v20231116;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20231116;20;rhel-cloud;rhel-7;X86_64;2023-11-15T17:25:22.672-08:00;;READY
@@ -42,7 +42,6 @@ sles-12-sp5-v20231108-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, 
 sles-15-sp5-v20230921-arm64;SUSE, SUSE Linux Enterprise Server 15 SP5, arm64, built on 20230921;10;suse-cloud;sles-15-arm64;ARM64;2023-09-20T19:37:24.381-07:00;;READY
 sles-15-sp5-v20230921-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5, x86_64, built on 20230921;10;suse-cloud;sles-15;X86_64;2023-09-20T19:37:25.491-07:00;;READY
 sles-12-sp5-sap-v20231019-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5 for SAP, x86_64, built on 20231019;10;suse-sap-cloud;sles-12-sp5-sap;X86_64;2023-10-18T19:16:03.450-07:00;;READY
-sles-15-sp1-sap-v20221108-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP1 for SAP, x86_64, built on 20221108, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp1-sap;X86_64;2022-11-08T06:11:21.343-08:00;;READY
 sles-15-sp2-sap-v20221108-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP2 for SAP, x86_64, built on 20221108, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp2-sap;X86_64;2022-11-08T09:06:40.565-08:00;;READY
 sles-15-sp3-sap-v20221108-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP3 for SAP, x86_64, built on 20221108, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp3-sap;X86_64;2022-11-08T09:01:48.247-08:00;;READY
 sles-15-sp4-sap-v20230623-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP, x86_64, built on 20230623, supports Shielded VM features;10;suse-sap-cloud;sles-15-sp4-sap;X86_64;2023-06-22T19:17:39.742-07:00;;READY
