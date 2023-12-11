@@ -15,7 +15,7 @@ jobs:
 
       # https://github.com/marketplace/actions/setup-go-environment
       - name: 🔧 Setup go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version-file: 'gcosts/go.mod'
           cache-dependency-path: 'gcosts/go.sum'
