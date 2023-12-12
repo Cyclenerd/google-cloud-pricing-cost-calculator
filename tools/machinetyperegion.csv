@@ -72,6 +72,7 @@ a2-ultragpu-8g;96;False;1360.00;;us-central1
 a2-ultragpu-8g;96;False;1360.00;;us-east4
 a2-ultragpu-8g;96;False;1360.00;;us-east5
 a2-ultragpu-8g;96;False;1360.00;;us-east7
+a3-highgpu-8g;208;False;1872.00;;us-east7
 c2-standard-16;16;False;64.00;;asia-east1
 c2-standard-16;16;False;64.00;;asia-east2
 c2-standard-16;16;False;64.00;;asia-northeast1
@@ -858,6 +859,7 @@ ct5lp-hightpu-1t;24;False;48.00;;us-central1
 ct5lp-hightpu-1t;24;False;48.00;;us-east1
 ct5lp-hightpu-1t;24;False;48.00;;us-east5
 ct5lp-hightpu-1t;24;False;48.00;;us-east7
+ct5lp-hightpu-1t;24;False;48.00;;us-south1
 ct5lp-hightpu-1t;24;False;48.00;;us-west1
 ct5lp-hightpu-1t;24;False;48.00;;us-west4
 ct5lp-hightpu-4t;112;False;192.00;;asia-southeast1
@@ -866,6 +868,7 @@ ct5lp-hightpu-4t;112;False;192.00;;us-central1
 ct5lp-hightpu-4t;112;False;192.00;;us-east1
 ct5lp-hightpu-4t;112;False;192.00;;us-east5
 ct5lp-hightpu-4t;112;False;192.00;;us-east7
+ct5lp-hightpu-4t;112;False;192.00;;us-south1
 ct5lp-hightpu-4t;112;False;192.00;;us-west1
 ct5lp-hightpu-4t;112;False;192.00;;us-west4
 ct5lp-hightpu-8t;224;False;384.00;;asia-southeast1
@@ -874,6 +877,7 @@ ct5lp-hightpu-8t;224;False;384.00;;us-central1
 ct5lp-hightpu-8t;224;False;384.00;;us-east1
 ct5lp-hightpu-8t;224;False;384.00;;us-east5
 ct5lp-hightpu-8t;224;False;384.00;;us-east7
+ct5lp-hightpu-8t;224;False;384.00;;us-south1
 ct5lp-hightpu-8t;224;False;384.00;;us-west1
 ct5lp-hightpu-8t;224;False;384.00;;us-west4
 e2-highcpu-16;16;False;16.00;;africa-south1
