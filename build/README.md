@@ -18,8 +18,8 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 | `skus.pl`     | Script to export SKUs from the Google Cloud Billing API. |
 | `skus.conf`   | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
 | `skus.csv`    | CSV (semicolon) file with SKU pricing and information exported from the Google Cloud Billing API. |
-| `mapping.pl`  | Script to add the custom mapping IDs from `mapping.csv` to the CSV file with the SKUs (`skus.csv`). |
-| `mapping.csv` | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.pl` to add the custom mapping IDs to the SKUs (`skus.csv`). |
+| `mapping.go`  | Script to add the custom mapping IDs from `mapping.csv` to the CSV file with the SKUs (`skus.csv`). |
+| `mapping.csv` | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.go` to add the custom mapping IDs to the SKUs (`skus.csv`). |
 | `pricing.pl`  | Script to calculate and generate pricing information file `pricing.yml`. |
 | `pricing.yml` | YAML file with calculated pricing information. |
 | `gcp.yml`     | YAML file with Google Cloud Platform information. Is read by the script `pricing.pl` to calculate and generate pricing information file (`pricing.yml`). |
@@ -41,7 +41,7 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
   +-------------------------------+  +----------------+
             \                           /
   +-----------------------------------------------+
-  | » Add custom mapping IDs to SKUs (mapping.pl) |
+  | » Add custom mapping IDs to SKUs (mapping.go) |
   +-----------------------------------------------+
                       ↓
  +----------------------------------+  +-----------------------------+
@@ -131,11 +131,11 @@ Merge CSV files:
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#getting_the_list_of_skus_for_a_service)
 
-### 3️⃣  Add custom mapping IDs to SKUs (`mapping.pl`)
+### 3️⃣  Add custom mapping IDs to SKUs (`mapping.go`)
 
 To make it easier to find the SKUs we add our own mapping (IDs):
 ```bash
-perl mapping.pl -sku="skus.csv"
+go run mapping.go -sku="skus.csv"
 ```
 
 ### 4️⃣  Generate pricing information file (`pricing.pl`)

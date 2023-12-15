@@ -23,7 +23,7 @@ BEGIN {
 }
 
 use utf8;
-binmode(STDOUT, ':encoding(utf8)');
+use open qw/ :std :encoding(utf-8) /;
 use strict;
 use Encode;
 use LWP::UserAgent;

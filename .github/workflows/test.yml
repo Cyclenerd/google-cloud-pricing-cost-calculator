@@ -29,21 +29,31 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'gcosts/go.mod'
-          cache-dependency-path: 'gcosts/go.sum'
+          cache-dependency-path: |
+            'build/go.sum'
+            'gcosts/go.sum'
 
       # Tests Perl scripts
       - name: 🌡️ Test skus.pl
         run: cd build && perl skus.pl --version
-      - name: 🌡️ Test mapping.pl
-        run: cd build && perl mapping.pl --version
       - name: 🌡️ Test pricing.pl
         run: cd build && perl pricing.pl --version
+
+      # https://github.com/marketplace/actions/run-golangci-lint
+      - name: 🌡️ Lint build
+        uses: golangci/golangci-lint-action@v3
+        with:
+          working-directory: build
+
+      - name: 🍳 Build build/mapping
+        run: cd build && make native && ./mapping --version
 
       # https://github.com/marketplace/actions/run-golangci-lint
       - name: 🌡️ Lint gcosts
         uses: golangci/golangci-lint-action@v3
         with:
           working-directory: gcosts
+          skip-cache: true  # first lint action will handle
 
       - name: 🍳 Build gcosts
         run: cd gcosts && make native && ./gcosts --version
