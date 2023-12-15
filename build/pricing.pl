@@ -29,9 +29,9 @@ use App::Options (
 	option => {
 		sku => {
 			required    => 1,
-			default     => 'skus.csv',
-			type        => '/^[a-z0-9_]+\.csv$/',
-			description => "CSV file with SKUs and mapping information (read)"
+			default     => 'skus.db',
+			type        => '/^[a-z0-9_]+\.db$/',
+			description => "SQLite DB file with SKUs and mapping information (read)"
 		},
 		gcp => {
 			required    => 1,
@@ -107,59 +107,16 @@ sub print_header {
 # SKUS
 ###############################################################################
 
-# Open CSV file with SKU information for import (skus.csv)
-my $csv_skus = $App::options{sku};
-if (-r "$csv_skus") { # write
-	$csv_skus =~ s/\.csv$//;
-} else {
-	die "ERROR: Cannot read CSV file '$csv_skus' with SKUs!\n";
-}
-
-# Copy SKUs with mapping from CSV to SQLite in-memory database
-my $csv = DBI->connect("dbi:CSV:", undef, undef, {
-	f_ext        => ".csv/r",
-	csv_sep_char => ";",
-	csv_class    => "Text::CSV_XS",
-	RaiseError   => 1,
-}) or die "ERROR: Cannot connect to CSV $DBI::errstr\n";
-
-my $dbname = ':memory:'; # https://sqlite.org/inmemorydb.html
-my $dbh = DBI->connect("dbi:SQLite:dbname=$dbname","","") or die "ERROR: Cannot connect to in-memory SQLite database $DBI::errstr\n";
-$dbh->do("DROP TABLE IF EXISTS skus");
-my $sql_create_table = qq ~
-	CREATE TABLE skus(
-		ID               INTEGER,
-		MAPPING          TEXT,
-		REGIONS          TEXT,
-		NANOS            TEXT,
-		UNITS            TEXT,
-		UNIT_DESCRIPTION TEXT,
-		SKU_ID           TEXT,
-		SKU_DESCRIPTION  TEXT,
-		PRIMARY KEY('ID' AUTOINCREMENT)
-	)
-~;
-$dbh->do($sql_create_table);
-# Copy only necessary data
-my $select_csv = $csv->prepare("SELECT MAPPING, REGIONS, NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION FROM $csv_skus");
-$select_csv->execute;
-$select_csv->bind_columns(\my ($mapping, $regions, $nanos, $units, $unit_description, $sku_id, $sku_description));
-my @values = ();
-while ($select_csv->fetch) {
-	next if $mapping eq 'TODO'; # skip TODO mapping
-	my $value = "('$mapping', '$regions', '$nanos', '$units', '$unit_description', '$sku_id', '$sku_description')";
-	push(@values, $value);
-}
-# Insert data to SQLite database table
-my $sql_insert = "INSERT INTO skus (MAPPING, REGIONS, NANOS, UNITS, UNIT_DESCRIPTION, SKU_ID, SKU_DESCRIPTION) VALUES";
-$sql_insert .= join(",", @values);
-$sql_insert .= ";\n";
-$dbh->do($sql_insert) or die "ERROR: Cannot insert $DBI::errstr\n";
-
+# Open DB file with SKU information for import (skus.db)
+my $skus_db = $App::options{sku};
+my $dbh = DBI->connect("dbi:SQLite:dbname=$skus_db", "", "") or die "ERROR: Cannot connect to DB $DBI::errstr\n";
 
 ###############################################################################
 # SEARCH MAPPING
 ###############################################################################
+
+my $create_index = "CREATE UNIQUE INDEX IF NOT EXISTS pricing_index ON skus (MAPPING, REGIONS) WHERE MAPPING IS NOT NULL";
+$dbh->do($create_index) or die "ERROR: Cannot create index $DBI::errstr\n";
 
 my $sql_mapping = qq ~
 SELECT

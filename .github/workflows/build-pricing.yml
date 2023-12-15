@@ -28,11 +28,17 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'gcosts/go.mod'
-          cache-dependency-path: 'gcosts/go.sum'
+          cache-dependency-path: |
+            'build/go.sum'
+            'gcosts/go.sum'
 
       # Compile gcosts CLI
       - name: 🍳 Build gcosts
         run: cd gcosts && make native && ./gcosts --version
+
+      # Compile build/mapping CLI
+      - name: 🍳 Build build/mapping
+        run: cd build && make native && ./mapping --version
 
       # Export SKUs
       - name: 📥 Export SKUs
@@ -44,7 +50,7 @@ jobs:
 
       # Add custom mapping IDs to SKUs
       - name: 🔦 Add Mapping
-        run: cd build && perl mapping.pl
+        run: cd build && ./mapping
 
       # Generate pricing informations
       - name: ⏳ Generate Pricing

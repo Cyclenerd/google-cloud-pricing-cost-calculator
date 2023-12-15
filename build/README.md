@@ -17,9 +17,9 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 | `services.pl` | Script to export public services (`serviceId`) from the Cloud Billing Catalog. |
 | `skus.pl`     | Script to export SKUs from the Google Cloud Billing API. |
 | `skus.conf`   | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
-| `skus.csv`    | CSV (semicolon) file with SKU pricing and information exported from the Google Cloud Billing API. |
-| `mapping.pl`  | Script to add the custom mapping IDs from `mapping.csv` to the CSV file with the SKUs (`skus.csv`). |
-| `mapping.csv` | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.pl` to add the custom mapping IDs to the SKUs (`skus.csv`). |
+| `skus.db`     | SQLite DB file with SKU pricing and information exported from the Google Cloud Billing API. |
+| `mapping.go`  | Script to add the custom mapping IDs from `mapping.csv` to the SQLite file with the SKUs (`skus.db`). |
+| `mapping.csv` | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.go` to add the custom mapping IDs to the SKUs (`skus.db`). |
 | `pricing.pl`  | Script to calculate and generate pricing information file `pricing.yml`. |
 | `pricing.yml` | YAML file with calculated pricing information. |
 | `gcp.yml`     | YAML file with Google Cloud Platform information. Is read by the script `pricing.pl` to calculate and generate pricing information file (`pricing.yml`). |
@@ -37,16 +37,16 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
             ↓
   +-------------------------------+  +----------------+
   | SKUs with pricing information |  | Custom mapping |
-  |            skus.csv           |  |  mapping.csv   |
+  |            skus.db            |  |  mapping.csv   |
   +-------------------------------+  +----------------+
             \                           /
   +-----------------------------------------------+
-  | » Add custom mapping IDs to SKUs (mapping.pl) |
+  | » Add custom mapping IDs to SKUs (mapping.go) |
   +-----------------------------------------------+
                       ↓
  +----------------------------------+  +-----------------------------+
  | SKUs pricing with custom mapping |  | Google Cloud Platform info. |
- |               skus.csv           |  |           gcp.yml           |
+ |               skus.db            |  |           gcp.yml           |
  +----------------------------------+  +-----------------------------+
                 \                             /
          +--------------------------------------------------+
@@ -95,64 +95,53 @@ bash skus.sh
 
 [Compute Engine](https://cloud.google.com/compute/):
 ```bash
-perl skus.pl -csv="skus_compute.csv" -id="6F81-5844-456A"
+perl skus.pl -id="6F81-5844-456A"
 ```
 
 Networking:
 ```bash
-perl skus.pl -csv="skus_networking.csv" -id="E505-1604-58F8"
+perl skus.pl -id="E505-1604-58F8"
 ```
 
 [Cloud Storage](https://cloud.google.com/storage/):
 ```bash
-perl skus.pl -csv="skus_storage.csv" -id="95FF-2EF5-5EA1"
+perl skus.pl -id="95FF-2EF5-5EA1"
 ```
 
 [Stackdriver Monitoring](https://cloud.google.com/monitoring/):
 ```bash
-perl skus.pl -csv="skus_stackdriver.csv" -id="58CD-E7C3-72CA"
+perl skus.pl -id="58CD-E7C3-72CA"
 ```
 
 [Cloud SQL](https://cloud.google.com/sql/):
 ```bash
-perl skus.pl -csv="skus_sql.csv" -id="9662-B51E-5089"
-```
-
-Merge CSV files:
-```bash
-{
-  cat "skus_compute.csv"
-  cat "skus_networking.csv"
-  cat "skus_storage.csv"
-  cat "skus_stackdriver.csv"
-  cat "skus_sql.csv"
-} > skus.csv
+perl skus.pl -id="9662-B51E-5089"
 ```
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#getting_the_list_of_skus_for_a_service)
 
-### 3️⃣  Add custom mapping IDs to SKUs (`mapping.pl`)
+### 3️⃣  Add custom mapping IDs to SKUs (`mapping.go`)
 
 To make it easier to find the SKUs we add our own mapping (IDs):
 ```bash
-perl mapping.pl -sku="skus.csv"
+go run mapping.go
 ```
 
 ### 4️⃣  Generate pricing information file (`pricing.pl`)
 
 Generate the YAML file with the Google Cloud Platform pricing informations for all regions:
 ```bash
-perl pricing.pl -sku="skus.csv"
+perl pricing.pl
 ```
 
 Save warning and erros in file `erros.log`:
 ```bash
-perl pricing.pl -sku="skus.csv" 2> erros.log
+perl pricing.pl 2> erros.log
 ```
 
 Generate pricing informations only for region `europe-west4` with mapping details:
 ```bash
-perl pricing.pl -sku="skus.csv" \
+perl pricing.pl \
   -details=1                  \
   -region="europe-west4"      \
   -export="pricing_europe_west4.yml"
@@ -207,6 +196,7 @@ For MS Windows you can download and install [Strawberry Perl](https://strawberry
 
 ### Requirements
 
+* Go 1.21 or newer
 * Perl 5 (`perl`)
 * Perl modules:
 	* [App::Options](https://metacpan.org/pod/App::Options)

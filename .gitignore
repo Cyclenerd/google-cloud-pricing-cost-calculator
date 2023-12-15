@@ -11,7 +11,10 @@ usage/customers/**
 **.dylib
 **.out
 **.test
+**.db
+**.db-journal
 
+build/mapping
 gcosts/gcosts*
 
 # Google Cloud Platform master data
