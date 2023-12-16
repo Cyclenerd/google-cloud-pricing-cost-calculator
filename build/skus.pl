@@ -25,6 +25,7 @@ BEGIN {
 use utf8;
 binmode(STDOUT, ':encoding(utf8)');
 use strict;
+use Time::HiRes;
 use Encode;
 use LWP::UserAgent;
 use HTTP::Request::Common;
@@ -49,6 +50,12 @@ use App::Options (
 			default     => 'skus.csv',
 			description => "CSV file for SKU export"
 		},
+		delay => {
+			required    => 0,
+			type        => '/^\d{1,2}$/',
+			default     => '0',
+			description => "Delay between requests in seconds"
+		},
 	},
 );
 
@@ -57,6 +64,7 @@ my $debug = $App::options{debug_options};
 # Google API
 my $api_key = $App::options{key};
 my $service_id = $App::options{id};
+my $delay = $App::options{delay};
 my $api_url = "https://cloudbilling.googleapis.com/v1/services/$service_id/skus";
 my $api_page_size       = 500;
 my $api_max_next_page   = 50;
@@ -194,6 +202,7 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 	} else {
 		die "\nERROR: Calling Cloud Billing Catalog API\nStatus: $api_status\nContent:\n$api_content\n";
 	}
+	Time::HiRes::sleep($delay);
 }
 
 close $fh;

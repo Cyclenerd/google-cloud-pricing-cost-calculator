@@ -4,16 +4,18 @@
 # Export SKUs to CSV file
 #
 
+DELAY="${API_DELAY:-0}"
+
 echo "Compute Engine" && \
-perl skus.pl -csv="skus_compute.csv" -id="6F81-5844-456A" && \
+perl skus.pl -csv="skus_compute.csv" -id="6F81-5844-456A" -delay="$DELAY" && \
 echo "Networking" && \
-perl skus.pl -csv="skus_networking.csv" -id="E505-1604-58F8" && \
+perl skus.pl -csv="skus_networking.csv" -id="E505-1604-58F8" -delay="$DELAY" && \
 echo "Cloud Storage" && \
-perl skus.pl -csv="skus_storage.csv" -id="95FF-2EF5-5EA1" && \
+perl skus.pl -csv="skus_storage.csv" -id="95FF-2EF5-5EA1" -delay="$DELAY" && \
 echo "Stackdriver Monitoring" && \
-perl skus.pl -csv="skus_stackdriver.csv" -id="58CD-E7C3-72CA" && \
+perl skus.pl -csv="skus_stackdriver.csv" -id="58CD-E7C3-72CA" -delay="$DELAY" && \
 echo "Cloud SQL" && \
-perl skus.pl -csv="skus_sql.csv" -id="9662-B51E-5089" && \
+perl skus.pl -csv="skus_sql.csv" -id="9662-B51E-5089" -delay="$DELAY" && \
 echo "Merge CSV files to 'skus.csv'" && \
 {
 	cat "skus_compute.csv"
