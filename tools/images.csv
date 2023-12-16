@@ -69,8 +69,8 @@ ubuntu-2204-jammy-arm64-v20231213a;Canonical, Ubuntu, 22.04 LTS, arm64 jammy ima
 ubuntu-2204-jammy-v20231213a;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2023-12-13;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2023-12-13T17:02:16.247-08:00;;READY
 ubuntu-2304-lunar-amd64-v20231213;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2023-12-13;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2023-12-13T23:50:36.875-08:00;;READY
 ubuntu-2304-lunar-arm64-v20231213;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2023-12-13;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2023-12-13T23:50:31.502-08:00;;READY
-ubuntu-2310-mantic-amd64-v20231031;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2023-10-31;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2023-10-30T21:17:47.573-07:00;;READY
-ubuntu-2310-mantic-arm64-v20231031;Canonical, Ubuntu, 23.10, arm64 mantic image built on 2023-10-31;10;ubuntu-os-cloud;ubuntu-2310-arm64;ARM64;2023-10-30T21:17:49.606-07:00;;READY
+ubuntu-2310-mantic-amd64-v20231215;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2023-12-15;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2023-12-14T20:08:47.063-08:00;;READY
+ubuntu-2310-mantic-arm64-v20231215;Canonical, Ubuntu, 23.10, arm64 mantic image built on 2023-12-15;10;ubuntu-os-cloud;ubuntu-2310-arm64;ARM64;2023-12-14T20:08:40.699-08:00;;READY
 windows-server-2016-dc-core-v20231213;Microsoft, Windows Server, 2016 Datacenter Core, Server Core, x64 built on 20231213;32;windows-cloud;windows-2016-core;X86_64;2023-12-13T14:49:31.164-08:00;;READY
 windows-server-2016-dc-v20231213;Microsoft, Windows Server, 2016 Datacenter, Server with Desktop Experience, x64 built on 20231213;50;windows-cloud;windows-2016;X86_64;2023-12-13T14:49:31.489-08:00;;READY
 windows-server-2019-dc-core-v20231213;Microsoft, Windows Server, 2019 Datacenter Core, Server Core, x64 built on 20231213;32;windows-cloud;windows-2019-core;X86_64;2023-12-13T14:49:31.655-08:00;;READY
