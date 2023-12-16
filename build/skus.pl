@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright 2022 Nils Knieling. All Rights Reserved.
+# Copyright 2022-2023 Nils Knieling. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +19,12 @@
 #
 
 BEGIN {
-	$VERSION = "1.0.0";
+	$VERSION = "1.1.0";
 }
 
 use utf8;
 binmode(STDOUT, ':encoding(utf8)');
 use strict;
-use Time::HiRes;
 use Encode;
 use LWP::UserAgent;
 use HTTP::Request::Common;
@@ -202,7 +201,7 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 	} else {
 		die "\nERROR: Calling Cloud Billing Catalog API\nStatus: $api_status\nContent:\n$api_content\n";
 	}
-	Time::HiRes::sleep($delay);
+	sleep($delay) if $delay > 0;
 }
 
 close $fh;
