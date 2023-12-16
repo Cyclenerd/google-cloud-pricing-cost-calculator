@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright 2022 Nils Knieling. All Rights Reserved.
+# Copyright 2022-2023 Nils Knieling. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "1.0.0";
+	$VERSION = "1.1.0";
 }
 
 use utf8;
@@ -49,6 +49,12 @@ use App::Options (
 			default     => 'skus.csv',
 			description => "CSV file for SKU export"
 		},
+		delay => {
+			required    => 0,
+			type        => '/^\d{1,2}$/',
+			default     => '0',
+			description => "Delay between requests in seconds"
+		},
 	},
 );
 
@@ -57,6 +63,7 @@ my $debug = $App::options{debug_options};
 # Google API
 my $api_key = $App::options{key};
 my $service_id = $App::options{id};
+my $delay = $App::options{delay};
 my $api_url = "https://cloudbilling.googleapis.com/v1/services/$service_id/skus";
 my $api_page_size       = 500;
 my $api_max_next_page   = 50;
@@ -194,6 +201,7 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 	} else {
 		die "\nERROR: Calling Cloud Billing Catalog API\nStatus: $api_status\nContent:\n$api_content\n";
 	}
+	sleep($delay) if $delay > 0;
 }
 
 close $fh;
