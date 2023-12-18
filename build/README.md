@@ -28,28 +28,27 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 ## Workflow
 
 ```
-                                   +--------------------------+
-                                   | Google Cloud Billing API |
-                                   +--------------------------+
-                                              |
- +------------------------------------------------------------+  +----------------+
- | » Export SKUs and add custom mapping IDs to SKUs (skus.sh) |  | Custom mapping |
- +------------------------------------------------------------+  |  mapping.csv   |
-                                                  \              +----------------+
-                                                   \                   /
-                                       +----------------------------------+  +-----------------------------+
-                                       | SKUs pricing with custom mapping |  | Google Cloud Platform info. |
-                                       |               skus.db            |  |           gcp.yml           |
-                                       +----------------------------------+  +-----------------------------+
-                                                      \                             /
-                                               +--------------------------------------------------+
-                                               | » Generate pricing information file (pricing.pl) |
-                                               +--------------------------------------------------+
-                                                                    ↓
-                                                      +-------------------------------+
-                                                      |  GCP pricing information file |
-                                                      |          pricing.yml          |
-                                                      +-------------------------------+
+ +--------------------------+  +------------------------------+
+ | Google Cloud Billing API |  | Custom mapping (mapping.csv) |
+ +--------------------------+  +------------------------------+
+               ↓                              ↓
+ +------------------------------------------------------------+
+ | » Export SKUs and add custom mapping IDs to SKUs (skus.sh) |
+ +------------------------------------------------------------+
+               ↓
+ +----------------------------------+  +-----------------------------+
+ | SKUs pricing with custom mapping |  | Google Cloud Platform info. |
+ |             (skus.db)            |  |           (gcp.yml)         |
+ +----------------------------------+  +-----------------------------+
+                \                             /
+         +--------------------------------------------------+
+         | » Generate pricing information file (pricing.pl) |
+         +--------------------------------------------------+
+                              ↓
+                +-------------------------------+
+                |  GCP pricing information file |
+                |          (pricing.yml)        |
+                +-------------------------------+
 ```
 
 ### 1️⃣  Enable Google Cloud Billing API
@@ -62,7 +61,7 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 	1. Select **Create credentials**, then select **API key** from the dropdown menu.
 	1. Copy your key and keep it secure.
 
-### 2️⃣  Export SKUs  adn add custom mapping (`skus.sh` and `skus.pl`)
+### 2️⃣  Export SKUs and add custom mapping (`skus.sh` and `skus.pl`)
 
 Export the SKU information of the Google Cloud Billing API to SQLite database (`skus.db`).
 
