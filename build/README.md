@@ -15,13 +15,12 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 | File                 | Short Description |
 |----------------------|-------------------|
 | `services.pl`        | Script to export public services (`serviceId`) from the Cloud Billing Catalog. |
-| `skus.sh`, `skus.pl` | Script to export SKUs from the Google Cloud Billing API. |
+| `skus.sh`, `skus.pl` | Script to export SKUs from the Google Cloud Billing API add the custom mapping IDs from `mapping.csv` to the SKUs (`skus.db`). |
 | `skus.conf`          | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
 | `skus.db`            | SQLite database file with SKU pricing and information exported from the Google Cloud Billing API. |
 | `skus.sql`           | SQL to create the SQLite database `skus.db`. |
-| `mapping.go`         | Script to add the custom mapping IDs from `mapping.csv` to the SQLite file with the SKUs (`skus.db`). |
-| `mapping.csv`        | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.go` to add the custom mapping IDs to the SKUs (`skus.db`). |
-| `mapping.sql`        | SQL to update the SQLite database `skus.db`. Used by `mapping.go`. |
+| `mapping.csv`        | CSV (semicolon) file with custom mapping IDs. Is read by the script `skus.sh` to add the custom mapping IDs to the SKUs (`skus.db`). |
+| `mapping.sql`        | SQL to update the SQLite database `skus.db`. Used by `skus.sh`. |
 | `pricing.pl`         | Script to calculate and generate pricing information file `pricing.yml`. |
 | `pricing.yml`        | YAML file with calculated pricing information. |
 | `gcp.yml`            | YAML file with Google Cloud Platform information. Is read by the script `pricing.pl` to calculate and generate pricing information file (`pricing.yml`). |
@@ -29,36 +28,28 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 ## Workflow
 
 ```
- +--------------------------+
- | Google Cloud Billing API |
- +--------------------------+
-            |
- +-------------------------+
- | » Export SKUs (skus.sh) |
- +-------------------------+
-            ↓
-  +-------------------------------+  +----------------+
-  | SKUs with pricing information |  | Custom mapping |
-  |            skus.db            |  |  mapping.csv   |
-  +-------------------------------+  +----------------+
-            \                           /
-  +-----------------------------------------------+
-  | » Add custom mapping IDs to SKUs (mapping.go) |
-  +-----------------------------------------------+
-                      ↓
- +----------------------------------+  +-----------------------------+
- | SKUs pricing with custom mapping |  | Google Cloud Platform info. |
- |               skus.db            |  |           gcp.yml           |
- +----------------------------------+  +-----------------------------+
-                \                             /
-         +--------------------------------------------------+
-         | » Generate pricing information file (pricing.pl) |
-         +--------------------------------------------------+
-                              ↓
-                +-------------------------------+
-                |  GCP pricing information file |
-                |          pricing.yml          |
-                +-------------------------------+
+                                   +--------------------------+
+                                   | Google Cloud Billing API |
+                                   +--------------------------+
+                                              |
+ +------------------------------------------------------------+  +----------------+
+ | » Export SKUs and add custom mapping IDs to SKUs (skus.sh) |  | Custom mapping |
+ +------------------------------------------------------------+  |  mapping.csv   |
+                                                  \              +----------------+
+                                                   \                   /
+                                       +----------------------------------+  +-----------------------------+
+                                       | SKUs pricing with custom mapping |  | Google Cloud Platform info. |
+                                       |               skus.db            |  |           gcp.yml           |
+                                       +----------------------------------+  +-----------------------------+
+                                                      \                             /
+                                               +--------------------------------------------------+
+                                               | » Generate pricing information file (pricing.pl) |
+                                               +--------------------------------------------------+
+                                                                    ↓
+                                                      +-------------------------------+
+                                                      |  GCP pricing information file |
+                                                      |          pricing.yml          |
+                                                      +-------------------------------+
 ```
 
 ### 1️⃣  Enable Google Cloud Billing API
@@ -71,7 +62,7 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 	1. Select **Create credentials**, then select **API key** from the dropdown menu.
 	1. Copy your key and keep it secure.
 
-### 2️⃣  Export SKUs (`skus.sh` and `skus.pl`)
+### 2️⃣  Export SKUs  adn add custom mapping (`skus.sh` and `skus.pl`)
 
 Export the SKU information of the Google Cloud Billing API to SQLite database (`skus.db`).
 
@@ -96,14 +87,7 @@ bash skus.sh
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#getting_the_list_of_skus_for_a_service)
 
-### 3️⃣  Add custom mapping IDs to SKUs (`mapping.go`)
-
-To make it easier to find the SKUs we add our own mapping (IDs):
-```bash
-go run mapping.go
-```
-
-### 4️⃣  Generate pricing information file (`pricing.pl`)
+### 3️⃣  Generate pricing information file (`pricing.pl`)
 
 Generate the YAML file with the Google Cloud Platform pricing informations for all regions:
 ```bash
@@ -172,7 +156,6 @@ For MS Windows you can download and install [Strawberry Perl](https://strawberry
 
 ### Requirements
 
-* Go 1.21 or newer
 * Perl 5 (`perl`)
 * Perl modules:
 	* [App::Options](https://metacpan.org/pod/App::Options)

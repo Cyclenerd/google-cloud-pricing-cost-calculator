@@ -28,29 +28,19 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'gcosts/go.mod'
-          cache-dependency-path: |
-            'build/go.sum'
-            'gcosts/go.sum'
+          cache-dependency-path: 'gcosts/go.sum'
 
       # Compile gcosts CLI
       - name: 🍳 Build gcosts
         run: cd gcosts && make native && ./gcosts --version
 
-      # Compile build/mapping CLI
-      - name: 🍳 Build build/mapping
-        run: cd build && make native && ./mapping --version
-
-      # Export SKUs
-      - name: 📥 Export SKUs
+      # Export SKUs and do mapping
+      - name: 📥 Export SKUs and do mapping
         env:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd build || exit 9
           bash skus.sh
-
-      # Add custom mapping IDs to SKUs
-      - name: 🔦 Add Mapping
-        run: cd build && ./mapping
 
       # Generate pricing informations
       - name: ⏳ Generate Pricing
