@@ -72,7 +72,7 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 
 ### 2️⃣  Export SKUs (`skus.sh` and `skus.pl`)
 
-Export the SKU information of the Google Cloud Billing API to a more readable CSV file.
+Export the SKU information of the Google Cloud Billing API to SQLite database (`skus.db`).
 You can get all service IDs with the script `servies.pl` in the tool directory.
 
 Store API key in `skus.conf` configuration file:
