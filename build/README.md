@@ -74,7 +74,6 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 ### 2️⃣  Export SKUs (`skus.sh` and `skus.pl`)
 
 Export the SKU information of the Google Cloud Billing API to SQLite database (`skus.db`).
-You can get all service IDs with the script `servies.pl` in the tool directory.
 
 Store API key in `skus.conf` configuration file:
 ```bash
@@ -93,32 +92,7 @@ bash skus.sh
 ```
 
 > **Note**
-> Get identifier (`-id`) for the service (`serviceId`) with script `services.pl`.
-
-[Compute Engine](https://cloud.google.com/compute/):
-```bash
-perl skus.pl -id="6F81-5844-456A"
-```
-
-Networking:
-```bash
-perl skus.pl -id="E505-1604-58F8"
-```
-
-[Cloud Storage](https://cloud.google.com/storage/):
-```bash
-perl skus.pl -id="95FF-2EF5-5EA1"
-```
-
-[Stackdriver Monitoring](https://cloud.google.com/monitoring/):
-```bash
-perl skus.pl -id="58CD-E7C3-72CA"
-```
-
-[Cloud SQL](https://cloud.google.com/sql/):
-```bash
-perl skus.pl -id="9662-B51E-5089"
-```
+> Get identifier (`-id`) for the Google Cloud services (`serviceId`) with script `services.pl`.
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#getting_the_list_of_skus_for_a_service)
 
@@ -166,7 +140,7 @@ Export public services from the Cloud Billing Catalog to a CSV file:
 perl services.pl
 ```
 
-The service ID is needed to export the SKUs wiht the `skus.pl` script in the build directory.
+The service ID is needed to export the SKUs with the `skus.sh` script in the build directory.
 Only needed if you want to integrate the cost informations of a new service.
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#listing_public_services_from_the_catalog)
