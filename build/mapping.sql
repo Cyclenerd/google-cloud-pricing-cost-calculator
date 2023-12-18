@@ -41,3 +41,4 @@ SET "MAPPING" = (
 		"skus"."rowid" = "ranked_mapping"."skus_rowid"
 		AND "ranked_mapping"."rn" = 1
 );
+CREATE INDEX IF NOT EXISTS "pricing_index" ON "skus" ("MAPPING", "REGIONS") WHERE "MAPPING" IS NOT NULL;
