@@ -21,6 +21,7 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 | `skus.sql`           | SQL to create the SQLite database `skus.db`. |
 | `mapping.go`         | Script to add the custom mapping IDs from `mapping.csv` to the SQLite file with the SKUs (`skus.db`). |
 | `mapping.csv`        | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.go` to add the custom mapping IDs to the SKUs (`skus.db`). |
+| `mapping.sql`        | SQL to update the SQLite database `skus.db`. Used by `mapping.go`. |
 | `pricing.pl`         | Script to calculate and generate pricing information file `pricing.yml`. |
 | `pricing.yml`        | YAML file with calculated pricing information. |
 | `gcp.yml`            | YAML file with Google Cloud Platform information. Is read by the script `pricing.pl` to calculate and generate pricing information file (`pricing.yml`). |
