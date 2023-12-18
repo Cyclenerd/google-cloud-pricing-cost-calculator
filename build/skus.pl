@@ -15,17 +15,18 @@
 # limitations under the License.
 
 #
-# Export list of SKUs for a service from the Cloud Billing Catalog to a CSV file
+# Export list of SKUs for a service from the Cloud Billing Catalog to a SQLite DB file
 #
 
 BEGIN {
-	$VERSION = "1.1.0";
+	$VERSION = "2.0.0";
 }
 
 use utf8;
 binmode(STDOUT, ':encoding(utf8)');
 use strict;
 use Encode;
+use DBI;
 use LWP::UserAgent;
 use HTTP::Request::Common;
 use JSON::XS;
@@ -44,10 +45,11 @@ use App::Options (
 			default     => '6F81-5844-456A',
 			description => "Identifier for the service (serviceId)"
 		},
-		csv => {
+		sku => {
 			required    => 1,
-			default     => 'skus.csv',
-			description => "CSV file for SKU export"
+			default     => 'skus.db',
+			type        => '/^[a-z0-9_]+\.db$/',
+			description => "SQLite DB file for SKU export"
 		},
 		delay => {
 			required    => 0,
@@ -69,9 +71,9 @@ my $api_page_size       = 500;
 my $api_max_next_page   = 50;
 my $api_next_page_token = '';
 
-# CSV export
-my $csv_file = $App::options{csv};
-open my $fh, q{>}, "$csv_file" or die "ERROR: Cannot open CSV file '$csv_file' for export!\n";
+# SQLite DB export
+my $skus_db = $App::options{sku};
+my $dbh = DBI->connect("dbi:SQLite:dbname=$skus_db", "", "") or die "ERROR: Cannot connect to CSV $DBI::errstr\n";
 
 # HTTP request
 my $ua = LWP::UserAgent->new;
@@ -79,37 +81,6 @@ my $ua = LWP::UserAgent->new;
 $ua->timeout("15");
 
 # Listing public services from the catalog and output to CSV file
-print $fh join(";", (
-	'SKU_NAME',                    # 'name',
-	'SKU_ID',                      # 'skuId',
-	'MAPPING',                     # --> for mapping
-	'SKU_DESCRIPTION',             # 'description',
-	'SVC_DISPLAY_NAME',            # 'category/serviceDisplayName',
-	'FAMILY',                      # 'category/resourceFamily',
-	'GROUP',                       # 'category/resourceGroup',
-	'USAGE',                       # 'category/usageType',
-	'REGIONS',                     # 'serviceRegions',
-	'TIME',                        # 'pricingInfo/effectiveTime',
-	'SUMMARY',                     # 'pricingInfo/summary',
-	'UNIT',                        # 'pricingInfo/pricingExpression/usageUnit',
-	'UNIT_DESCRIPTION',            # 'pricingInfo/pricingExpression/usageUnitDescription',
-	'BASE_UNIT',                   # 'pricingInfo/pricingExpression/baseUnit',
-	'BASE_UNIT_DESCRIPTION',       # 'pricingInfo/pricingExpression/baseUnitDescription',
-	'BASE_UNIT_CONVERSION_FACTOR', # 'pricingInfo/pricingExpression/baseUnitConversionFactor',
-	'DISPLAY_QUANTITY',            # 'pricingInfo/pricingExpression/displayQuantity',
-	'START_AMOUNT',                # 'pricingInfo/pricingExpression/tieredRates/startUsageAmount',
-	'CURRENCY_CODE',               # 'pricingInfo/pricingExpression/tieredRates/unitPrice/currencyCode',
-	'UNITS',                       # 'pricingInfo/pricingExpression/tieredRates/unitPrice/units',
-	'NANOS',                       # 'pricingInfo/pricingExpression/tieredRates/unitPrice/nanos',
-	'AGGREGATION_LEVEL',           # 'pricingInfo/aggregationInfo/aggregationLevel',
-	'AGGREGATION_INTERVAL',        # 'pricingInfo/aggregationInfo/aggregationInterval',
-	'AGGREGATION_COUNT',           # 'pricingInfo/aggregationInfo/aggregationCount',
-	'CONVERSION_RATE',             # 'pricingInfo/currencyConversionRate',
-	'SERVICE_PROVIDER',            # 'serviceProviderName',
-	# BETA!
-	'GEO_TYPE',    # 'geoTaxonomy/type',
-	'GEO_REGIONS', # 'geoTaxonomy/regions',
-))."\n";
 my $count_skus = 0;
 for (my $i = 1; $i <= $api_max_next_page; $i++) {
 	my $url = "$api_url"."?key=$api_key"."&pageSize=$api_page_size"."&pageToken=$api_next_page_token";
@@ -165,7 +136,44 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 				push @geoTaxonomy_regions, $geo_region;
 			}
 
-			print $fh join(';', (
+			my $insert_query = qq ~
+				INSERT OR REPLACE INTO skus (
+					SKU_NAME,
+					SKU_ID,
+					MAPPING,
+					SKU_DESCRIPTION,
+					SVC_DISPLAY_NAME,
+					FAMILY,
+					\"GROUP\",
+					USAGE,
+					REGIONS,
+					TIME,
+					SUMMARY,
+					UNIT,
+					UNIT_DESCRIPTION,
+					BASE_UNIT,
+					BASE_UNIT_DESCRIPTION,
+					BASE_UNIT_CONVERSION_FACTOR,
+					DISPLAY_QUANTITY,
+					START_AMOUNT,
+					CURRENCY_CODE,
+					UNITS,
+					NANOS,
+					AGGREGATION_LEVEL,
+					AGGREGATION_INTERVAL,
+					AGGREGATION_COUNT,
+					CONVERSION_RATE,
+					SERVICE_PROVIDER,
+					GEO_TYPE,
+					GEO_REGIONS
+				) VALUES (
+					?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+				)
+			~;
+			my $sth = $dbh->prepare($insert_query) or die "ERROR: Cannot prepare statement $DBI::errstr\n";
+
+			# Bind values and execute
+			$sth->execute(
 				$sku->{'name'},
 				$sku->{'skuId'},
 				'TODO',
@@ -195,7 +203,7 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 				# BETA
 				$sku->{'geoTaxonomy'}->{'type'} || '',
 				join(',', @geoTaxonomy_regions),
-			))."\n";
+			) or die "ERROR: Cannot insert SKUs to skus table $DBI::errstr\n";
 		}
 		last unless $api_next_page_token; # last page, end for loop
 	} else {
@@ -204,5 +212,4 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 	sleep($delay) if $delay > 0;
 }
 
-close $fh;
-print "\nOK: $count_skus SKUs successfully exported to CSV file '$csv_file'\n";
+print "\nOK: $count_skus SKUs successfully exported to SQLite DB file '$skus_db'\n\n";

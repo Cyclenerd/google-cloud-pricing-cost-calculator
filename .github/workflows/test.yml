@@ -34,8 +34,6 @@ jobs:
       # Tests Perl scripts
       - name: 🌡️ Test skus.pl
         run: cd build && perl skus.pl --version
-      - name: 🌡️ Test mapping.pl
-        run: cd build && perl mapping.pl --version
       - name: 🌡️ Test pricing.pl
         run: cd build && perl pricing.pl --version
 

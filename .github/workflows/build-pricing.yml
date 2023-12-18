@@ -34,17 +34,13 @@ jobs:
       - name: 🍳 Build gcosts
         run: cd gcosts && make native && ./gcosts --version
 
-      # Export SKUs
-      - name: 📥 Export SKUs
+      # Export SKUs and do mapping
+      - name: 📥 Export SKUs and do mapping
         env:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd build || exit 9
           bash skus.sh
-
-      # Add custom mapping IDs to SKUs
-      - name: 🔦 Add Mapping
-        run: cd build && perl mapping.pl
 
       # Generate pricing informations
       - name: ⏳ Generate Pricing

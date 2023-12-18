@@ -11,6 +11,8 @@ usage/customers/**
 **.dylib
 **.out
 **.test
+**.db
+**.db-journal
 
 gcosts/gcosts*
 
