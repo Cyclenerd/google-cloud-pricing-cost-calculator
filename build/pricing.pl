@@ -115,9 +115,6 @@ my $dbh = DBI->connect("dbi:SQLite:dbname=$skus_db", "", "") or die "ERROR: Cann
 # SEARCH MAPPING
 ###############################################################################
 
-my $create_index = "CREATE UNIQUE INDEX IF NOT EXISTS pricing_index ON skus (MAPPING, REGIONS) WHERE MAPPING IS NOT NULL";
-$dbh->do($create_index) or die "ERROR: Cannot create index $DBI::errstr\n";
-
 my $sql_mapping = qq ~
 SELECT
 	NANOS,
