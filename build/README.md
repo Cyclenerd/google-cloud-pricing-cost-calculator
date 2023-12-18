@@ -12,17 +12,18 @@
 
 Configuration files and scripts for generating the YAML file `pricing.yml` with calculated Google Cloud Platform pricing information:
 
-| File | Short Description |
-|------|-------------------|
-| `services.pl` | Script to export public services (`serviceId`) from the Cloud Billing Catalog. |
-| `skus.pl`     | Script to export SKUs from the Google Cloud Billing API. |
-| `skus.conf`   | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
-| `skus.db`     | SQLite DB file with SKU pricing and information exported from the Google Cloud Billing API. |
-| `mapping.go`  | Script to add the custom mapping IDs from `mapping.csv` to the SQLite file with the SKUs (`skus.db`). |
-| `mapping.csv` | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.go` to add the custom mapping IDs to the SKUs (`skus.db`). |
-| `pricing.pl`  | Script to calculate and generate pricing information file `pricing.yml`. |
-| `pricing.yml` | YAML file with calculated pricing information. |
-| `gcp.yml`     | YAML file with Google Cloud Platform information. Is read by the script `pricing.pl` to calculate and generate pricing information file (`pricing.yml`). |
+| File                 | Short Description |
+|----------------------|-------------------|
+| `services.pl`        | Script to export public services (`serviceId`) from the Cloud Billing Catalog. |
+| `skus.sh`, `skus.pl` | Script to export SKUs from the Google Cloud Billing API. |
+| `skus.conf`          | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
+| `skus.db`            | SQLite database file with SKU pricing and information exported from the Google Cloud Billing API. |
+| `skus.sql`           | SQL to create the SQLite database `skus.db`. |
+| `mapping.go`         | Script to add the custom mapping IDs from `mapping.csv` to the SQLite file with the SKUs (`skus.db`). |
+| `mapping.csv`        | CSV (semicolon) file with custom mapping IDs. Is read by the script `mapping.go` to add the custom mapping IDs to the SKUs (`skus.db`). |
+| `pricing.pl`         | Script to calculate and generate pricing information file `pricing.yml`. |
+| `pricing.yml`        | YAML file with calculated pricing information. |
+| `gcp.yml`            | YAML file with Google Cloud Platform information. Is read by the script `pricing.pl` to calculate and generate pricing information file (`pricing.yml`). |
 
 ## Workflow
 
@@ -32,7 +33,7 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
  +--------------------------+
             |
  +-------------------------+
- | » Export SKUs (skus.pl) |
+ | » Export SKUs (skus.sh) |
  +-------------------------+
             ↓
   +-------------------------------+  +----------------+
@@ -69,7 +70,7 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 	1. Select **Create credentials**, then select **API key** from the dropdown menu.
 	1. Copy your key and keep it secure.
 
-### 2️⃣  Export SKUs (`skus.pl`)
+### 2️⃣  Export SKUs (`skus.sh` and `skus.pl`)
 
 Export the SKU information of the Google Cloud Billing API to a more readable CSV file.
 You can get all service IDs with the script `servies.pl` in the tool directory.
