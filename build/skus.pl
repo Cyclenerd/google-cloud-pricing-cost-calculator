@@ -74,38 +74,6 @@ my $api_next_page_token = '';
 # SQLite DB export
 my $skus_db = $App::options{sku};
 my $dbh = DBI->connect("dbi:SQLite:dbname=$skus_db", "", "") or die "ERROR: Cannot connect to CSV $DBI::errstr\n";
-my $create_table = "CREATE TABLE IF NOT EXISTS skus(
-	SKU_NAME TEXT PRIMARY KEY,        -- 'name',
-	SKU_ID TEXT,                      -- 'skuId',
-	MAPPING TEXT,                     -- --> for mapping
-	SKU_DESCRIPTION TEXT,             -- 'description',
-	SVC_DISPLAY_NAME TEXT,            -- 'category/serviceDisplayName',
-	FAMILY TEXT,                      -- 'category/resourceFamily',
-	\"GROUP\" TEXT,                   -- 'category/resourceGroup',
-	USAGE TEXT,                       -- 'category/usageType',
-	REGIONS TEXT,                     -- 'serviceRegions',
-	TIME TEXT,                        -- 'pricingInfo/effectiveTime',
-	SUMMARY TEXT,                     -- 'pricingInfo/summary',
-	UNIT TEXT,                        -- 'pricingInfo/pricingExpression/usageUnit',
-	UNIT_DESCRIPTION TEXT,            -- 'pricingInfo/pricingExpression/usageUnitDescription',
-	BASE_UNIT TEXT,                   -- 'pricingInfo/pricingExpression/baseUnit',
-	BASE_UNIT_DESCRIPTION TEXT,       -- 'pricingInfo/pricingExpression/baseUnitDescription',
-	BASE_UNIT_CONVERSION_FACTOR TEXT, -- 'pricingInfo/pricingExpression/baseUnitConversionFactor',
-	DISPLAY_QUANTITY TEXT,            -- 'pricingInfo/pricingExpression/displayQuantity',
-	START_AMOUNT TEXT,                -- 'pricingInfo/pricingExpression/tieredRates/startUsageAmount',
-	CURRENCY_CODE TEXT,               -- 'pricingInfo/pricingExpression/tieredRates/unitPrice/currencyCode',
-	UNITS TEXT,                       -- 'pricingInfo/pricingExpression/tieredRates/unitPrice/units',
-	NANOS TEXT,                       -- 'pricingInfo/pricingExpression/tieredRates/unitPrice/nanos',
-	AGGREGATION_LEVEL TEXT,           -- 'pricingInfo/aggregationInfo/aggregationLevel',
-	AGGREGATION_INTERVAL TEXT,        -- 'pricingInfo/aggregationInfo/aggregationInterval',
-	AGGREGATION_COUNT TEXT,           -- 'pricingInfo/aggregationInfo/aggregationCount',
-	CONVERSION_RATE TEXT,             -- 'pricingInfo/currencyConversionRate',
-	SERVICE_PROVIDER TEXT,            -- 'serviceProviderName',
-	-- BETA!
-	GEO_TYPE TEXT,                    -- 'geoTaxonomy/type',
-	GEO_REGIONS TEXT                  -- 'geoTaxonomy/regions',
-)";
-$dbh->do($create_table) or die "ERROR: Cannot create table SKUs $DBI::errstr\n";
 
 # HTTP request
 my $ua = LWP::UserAgent->new;
@@ -244,4 +212,4 @@ for (my $i = 1; $i <= $api_max_next_page; $i++) {
 	sleep($delay) if $delay > 0;
 }
 
-print "\nOK: $count_skus SKUs successfully exported to SQLite DB file '$skus_db'\n";
+print "\nOK: $count_skus SKUs successfully exported to SQLite DB file '$skus_db'\n\n";
