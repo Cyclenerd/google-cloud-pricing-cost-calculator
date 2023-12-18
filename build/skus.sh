@@ -6,6 +6,9 @@
 
 DELAY="${API_DELAY:-0}"
 
+echo "Create SQLite3 database for SKU export..."
+sqlite3 "skus.db" < "skus.sql" || exit 9
+
 echo "Compute Engine" && \
 perl skus.pl -id="6F81-5844-456A" -delay="$DELAY" && \
 echo "Networking" && \
