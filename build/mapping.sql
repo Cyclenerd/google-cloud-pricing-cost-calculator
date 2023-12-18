@@ -1,5 +1,5 @@
 CREATE VIRTUAL TABLE IF NOT EXISTS mapping_csv USING csv(
-	filename = '%s',
+	filename = "mapping.csv",
 	header   = YES,
 	columns  = 6,
 	schema   = "CREATE TABLE mapping_csv(MAPPING, SVC_DISPLAY_NAME, FAMILY, ""GROUP"", SKU_DESCRIPTION, COMMENT)"
