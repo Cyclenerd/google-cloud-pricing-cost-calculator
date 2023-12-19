@@ -5,6 +5,14 @@
 #
 
 DELAY="${API_DELAY:-0}"
+# Read Billing API key from skus.conf
+if [ -e "skus.conf" ]; then
+	BILLING_API_KEY=$(head -n 1 "skus.conf")
+	BILLING_API_KEY="${BILLING_API_KEY//key}"
+	BILLING_API_KEY="${BILLING_API_KEY// }"
+	BILLING_API_KEY="${BILLING_API_KEY//=}"
+	export API_KEY="$BILLING_API_KEY"
+fi
 
 echo "Create SQLite3 database for SKU export..."
 sqlite3 "skus.db" < "skus.sql" || exit 9
