@@ -8,3 +8,7 @@ updates:
     directory: "/gcosts"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "gomod"
+    directory: "/build"
+    schedule:
+      interval: "weekly"
