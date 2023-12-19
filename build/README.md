@@ -60,13 +60,23 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 	1. Select **Create credentials**, then select **API key** from the dropdown menu.
 	1. Copy your key and keep it secure.
 
-### 2️⃣  Export SKUs and add custom mapping (`skus.sh` and `skus.pl`)
+### 2️⃣  Export SKUs and add custom mapping (`skus.sh` and `skus.go`)
+
+Compile `skus` binary:
+```bash
+make native && ./skus --version
+```
 
 Export the SKU information of the Google Cloud Billing API to SQLite database (`skus.db`).
 
-API key should be specified as environment variable `API_KEY`:
+Google Cloud Billing API key should be specified as environment variable `API_KEY`:
 ```bash
 export API_KEY=YOUR-CLOUD-BILLING-API-KEY
+```
+
+Alternatively, the API key can be stored in `skus.conf` configuration file:
+```bash
+echo "key = YOUR-CLOUD-BILLING-API-KEY" > skus.conf
 ```
 
 Run the script `skus.sh` or each step separately:
