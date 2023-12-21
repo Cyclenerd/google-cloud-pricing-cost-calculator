@@ -38,6 +38,7 @@ jobs:
         uses: golangci/golangci-lint-action@v3
         with:
           working-directory: build
+          skip-cache: true  # first lint action will handle
 
       - name: 🍳 Build build/skus
         run: cd build && make native && ./skus --version

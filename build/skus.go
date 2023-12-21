@@ -76,7 +76,8 @@ func main() {
 	if err != nil {
 		log.Fatalf("ERROR: Cannot create transaction: %v\n", err)
 	}
-	defer tx.Rollback()
+	// Defer a rollback in case anything fails.
+	defer tx.Rollback() //nolint:errcheck
 
 	insertQuery, err := tx.Prepare(`
 		INSERT INTO skus (
