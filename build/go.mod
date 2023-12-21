@@ -5,7 +5,7 @@ go 1.21
 require (
 	cloud.google.com/go/billing v1.18.0
 	github.com/mattn/go-sqlite3 v1.14.19
-	golang.org/x/oauth2 v0.13.0
+	golang.org/x/oauth2 v0.15.0
 	google.golang.org/api v0.149.0
 	google.golang.org/grpc v1.60.1
 )
@@ -21,7 +21,7 @@ require (
 	github.com/googleapis/gax-go/v2 v2.12.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.17.0 // indirect
-	golang.org/x/net v0.17.0 // indirect
+	golang.org/x/net v0.19.0 // indirect
 	golang.org/x/sync v0.4.0 // indirect
 	golang.org/x/sys v0.15.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
