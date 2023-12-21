@@ -17,7 +17,7 @@ INSERT INTO "ordered_mapping" ("MAPPING", "SVC_DISPLAY_NAME", "FAMILY", "GROUP",
 
 CREATE INDEX IF NOT EXISTS "mapping_index" ON "skus" ("SVC_DISPLAY_NAME", "FAMILY", "GROUP", "SKU_DESCRIPTION");
 
-WITH "ranked_mapping" AS (
+CREATE TEMPORARY TABLE "ranked_mapping" AS
 	SELECT
 		s."rowid" AS "skus_rowid",
 		m."MAPPING",
@@ -31,8 +31,8 @@ WITH "ranked_mapping" AS (
 		AND s."FAMILY" = m."FAMILY"
 		AND s."GROUP" = m."GROUP"
 		AND s."SKU_DESCRIPTION" LIKE m."SKU_DESCRIPTION"
-	WHERE m."SVC_DISPLAY_NAME" IS NOT NULL
-)
+	WHERE m."SVC_DISPLAY_NAME" IS NOT NULL;
+
 UPDATE "skus"
 SET "MAPPING" = (
 	SELECT "MAPPING"
@@ -41,4 +41,5 @@ SET "MAPPING" = (
 		"skus"."rowid" = "ranked_mapping"."skus_rowid"
 		AND "ranked_mapping"."rn" = 1
 );
+
 CREATE INDEX IF NOT EXISTS "pricing_index" ON "skus" ("MAPPING", "REGIONS") WHERE "MAPPING" IS NOT NULL;

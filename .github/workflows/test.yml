@@ -38,10 +38,20 @@ jobs:
         run: cd build && perl pricing.pl --version
 
       # https://github.com/marketplace/actions/run-golangci-lint
+      - name: 🌡️ Lint build
+        uses: golangci/golangci-lint-action@v3
+        with:
+          working-directory: build
+
+      - name: 🍳 Build build/skus
+        run: cd build && make native && ./skus --version
+
+      # https://github.com/marketplace/actions/run-golangci-lint
       - name: 🌡️ Lint gcosts
         uses: golangci/golangci-lint-action@v3
         with:
           working-directory: gcosts
+          skip-cache: true  # first lint action will handle
 
       - name: 🍳 Build gcosts
         run: cd gcosts && make native && ./gcosts --version

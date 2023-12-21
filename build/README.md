@@ -15,8 +15,7 @@ Configuration files and scripts for generating the YAML file `pricing.yml` with 
 | File                 | Short Description |
 |----------------------|-------------------|
 | `services.pl`        | Script to export public services (`serviceId`) from the Cloud Billing Catalog. |
-| `skus.sh`, `skus.pl` | Script to export SKUs from the Google Cloud Billing API add the custom mapping IDs from `mapping.csv` to the SKUs (`skus.db`). |
-| `skus.conf`          | Configration with your custom and private Google Cloud Billing API key. Is read by the script `skus.pl`. |
+| `skus.sh`, `skus.go` | Script to export SKUs from the Google Cloud Billing API add the custom mapping IDs from `mapping.csv` to the SKUs (`skus.db`). |
 | `skus.db`            | SQLite database file with SKU pricing and information exported from the Google Cloud Billing API. |
 | `skus.sql`           | SQL to create the SQLite database `skus.db`. |
 | `mapping.csv`        | CSV (semicolon) file with custom mapping IDs. Is read by the script `skus.sh` to add the custom mapping IDs to the SKUs (`skus.db`). |
@@ -61,18 +60,23 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 	1. Select **Create credentials**, then select **API key** from the dropdown menu.
 	1. Copy your key and keep it secure.
 
-### 2️⃣  Export SKUs and add custom mapping (`skus.sh` and `skus.pl`)
+### 2️⃣  Export SKUs and add custom mapping (`skus.sh` and `skus.go`)
+
+Compile `skus` binary:
+```bash
+make native && ./skus --version
+```
 
 Export the SKU information of the Google Cloud Billing API to SQLite database (`skus.db`).
 
-Store API key in `skus.conf` configuration file:
-```bash
-echo "key = YOUR-CLOUD-BILLING-API-KEY" > skus.conf
-```
-
-Alternatively, the API key can be specified as environment variable `API_KEY`:
+Google Cloud Billing API key should be specified as environment variable `API_KEY`:
 ```bash
 export API_KEY=YOUR-CLOUD-BILLING-API-KEY
+```
+
+Alternatively, the API key can be stored in `skus.conf` configuration file:
+```bash
+echo "key = YOUR-CLOUD-BILLING-API-KEY" > skus.conf
 ```
 
 Run the script `skus.sh` or each step separately:
