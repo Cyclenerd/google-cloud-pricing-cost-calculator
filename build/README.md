@@ -1,7 +1,7 @@
 # Build pricing information file
 
-[![Bagde: GNU Bash](https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?logo=gnubash&logoColor=white)](#)
-[![Bagde: Perl](https://img.shields.io/badge/Perl-%2339457E.svg?logo=perl&logoColor=white)](#)
+[![Badge: GNU Bash](https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?logo=gnubash&logoColor=white)](#)
+[![Badge: Perl](https://img.shields.io/badge/Perl-%2339457E.svg?logo=perl&logoColor=white)](#)
 [![Build Pricing](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/build-pricing.yml)
 
 | 🤖 Automated |
