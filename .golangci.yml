@@ -1,0 +1,4 @@
+run:
+  # Timeout for analysis
+  # Default: 1m
+  timeout: 5m
