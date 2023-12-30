@@ -15,6 +15,8 @@ fedora-cloud-base-gcp-34-1-2-x86-64;Fedora, Fedora Cloud Base 34, v34.20210423.0
 fedora-cloud-base-gcp-37-1-7-x86-64;Fedora, Fedora Cloud Base 37, 37-20221105.0, x86_64 published on 2022-11-05;10;fedora-cloud;fedora-cloud-37;;2023-03-15T18:26:27.597-07:00;;READY
 fedora-cloud-base-gcp-38-1-6-x86-64;Fedora, Fedora Cloud Base 38, 38-20230413.1, x86_64 published on 2023-04-13;10;fedora-cloud;fedora-cloud-38;;2023-04-23T22:33:32.441-07:00;;READY
 fedora-cloud-base-gcp-39-beta-1-1-x86-64;"Fedora, Fedora Cloud Base 39_Beta, 39-20230912.0, x86_64 published on ";10;fedora-cloud;fedora-cloud-39;;2023-09-28T02:25:19.222-07:00;;READY
+opensuse-leap-15-5-v20231114-arm64;openSUSE, openSUSE Leap 15.5, arm64 built on 20231114;10;opensuse-cloud;opensuse-leap-arm64;ARM64;2023-11-14T06:34:11.036-08:00;;READY
+opensuse-leap-15-5-v20231114-x86-64;openSUSE, openSUSE Leap 15.5, x86_64 built on 20231114;10;opensuse-cloud;opensuse-leap;X86_64;2023-11-14T06:31:21.332-08:00;;READY
 rhel-7-v20231212;Red Hat, Red Hat Enterprise Linux, 7, x86_64 built on 20231212;20;rhel-cloud;rhel-7;X86_64;2023-12-12T13:06:20.516-08:00;;READY
 rhel-8-v20231212;Red Hat, Red Hat Enterprise Linux, 8, x86_64 built on 20231212;20;rhel-cloud;rhel-8;X86_64;2023-12-12T13:06:20.850-08:00;;READY
 rhel-9-arm64-v20231212;Red Hat, Red Hat Enterprise Linux, 9, aarch64 built on 20231212;20;rhel-cloud;rhel-9-arm64;ARM64;2023-12-12T13:06:20.599-08:00;;READY
