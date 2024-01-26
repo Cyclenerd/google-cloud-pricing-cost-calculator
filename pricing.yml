@@ -15,14 +15,21 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Jan 25 03:54:27 2024
-  timestamp: 1706154867
+  generated: Fri Jan 26 10:03:25 2024
+  timestamp: 1706263405
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
     a2-highgpu-1g:
       a100: 1
       cost:
+        africa-south1:
+          hour: 4.80478794
+          hour_spot: 1.441435835
+          month: 3507.4951962
+          month_1y: 2209.6977798
+          month_3y: 1227.64575595
+          month_spot: 1052.24815955
         asia-east1:
           hour: 3.790142
           hour_spot: 1.1020155
@@ -301,6 +308,13 @@ compute:
     a2-highgpu-2g:
       a100: 2
       cost:
+        africa-south1:
+          hour: 9.60957588
+          hour_spot: 2.88287167
+          month: 7014.9903924
+          month_1y: 4419.3955596
+          month_3y: 2455.2915119
+          month_spot: 2104.4963191
         asia-east1:
           hour: 7.580284
           hour_spot: 2.204031
@@ -579,6 +593,13 @@ compute:
     a2-highgpu-4g:
       a100: 4
       cost:
+        africa-south1:
+          hour: 19.21915176
+          hour_spot: 5.76574334
+          month: 14029.9807848
+          month_1y: 8838.7911192
+          month_3y: 4910.5830238
+          month_spot: 4208.9926382
         asia-east1:
           hour: 15.160568
           hour_spot: 4.408062
@@ -857,6 +878,13 @@ compute:
     a2-highgpu-8g:
       a100: 8
       cost:
+        africa-south1:
+          hour: 38.43830352
+          hour_spot: 11.53148668
+          month: 28059.9615696
+          month_1y: 17677.5822384
+          month_3y: 9821.1660476
+          month_spot: 8417.9852764
         asia-east1:
           hour: 30.321136
           hour_spot: 8.816124
@@ -1135,6 +1163,13 @@ compute:
     a2-megagpu-16g:
       a100: 16
       cost:
+        africa-south1:
+          hour: 72.9072768
+          hour_spot: 21.872174
+          month: 53222.312064
+          month_1y: 33529.6631712
+          month_3y: 18628.1644696
+          month_spot: 15966.68702
         asia-east1:
           hour: 57.12848
           hour_spot: 16.7218512
@@ -1413,6 +1448,13 @@ compute:
     a2-ultragpu-1g:
       a100-80gb: 1
       cost:
+        africa-south1:
+          hour: 6.5762346
+          hour_spot: 2.06055375
+          month: 4800.651258
+          month_1y: 4800.651258
+          month_3y: 4800.651258
+          month_spot: 1504.2042375
         asia-east1:
           hour: 5.821568
           hour_spot: 1.7720046
@@ -1691,6 +1733,13 @@ compute:
     a2-ultragpu-2g:
       a100-80gb: 2
       cost:
+        africa-south1:
+          hour: 13.1524692
+          hour_spot: 4.1211075
+          month: 9601.302516
+          month_1y: 9601.302516
+          month_3y: 9601.302516
+          month_spot: 3008.408475
         asia-east1:
           hour: 11.643136
           hour_spot: 3.5440092
@@ -1969,6 +2018,13 @@ compute:
     a2-ultragpu-4g:
       a100-80gb: 4
       cost:
+        africa-south1:
+          hour: 26.3049384
+          hour_spot: 8.242215
+          month: 19202.605032
+          month_1y: 19202.605032
+          month_3y: 19202.605032
+          month_spot: 6016.81695
         asia-east1:
           hour: 23.286272
           hour_spot: 7.0880184
@@ -2247,6 +2303,13 @@ compute:
     a2-ultragpu-8g:
       a100-80gb: 8
       cost:
+        africa-south1:
+          hour: 52.6098768
+          hour_spot: 16.48443
+          month: 38405.210064
+          month_1y: 38405.210064
+          month_3y: 38405.210064
+          month_spot: 12033.6339
         asia-east1:
           hour: 46.572544
           hour_spot: 14.1760368
@@ -2524,6 +2587,13 @@ compute:
       ram: 1360
     c2-standard-16:
       cost:
+        africa-south1:
+          hour: 1.09248352
+          hour_spot: 0.099156864
+          month: 638.16987827392
+          month_1y: 638.16987827392
+          month_3y: 638.16987827392
+          month_spot: 72.38451072
         asia-east1:
           hour: 0.967088
           hour_spot: 0.222288
@@ -2801,6 +2871,13 @@ compute:
       ram: 64
     c2-standard-30:
       cost:
+        africa-south1:
+          hour: 2.0484066
+          hour_spot: 0.18591912
+          month: 1196.5685217636
+          month_1y: 1196.5685217636
+          month_3y: 1196.5685217636
+          month_spot: 135.7209576
         asia-east1:
           hour: 1.81329
           hour_spot: 0.41679
@@ -3078,6 +3155,13 @@ compute:
       ram: 120
     c2-standard-4:
       cost:
+        africa-south1:
+          hour: 0.27312088
+          hour_spot: 0.024789216
+          month: 159.54246956848
+          month_1y: 159.54246956848
+          month_3y: 159.54246956848
+          month_spot: 18.09612768
         asia-east1:
           hour: 0.241772
           hour_spot: 0.055572
@@ -3355,6 +3439,13 @@ compute:
       ram: 16
     c2-standard-60:
       cost:
+        africa-south1:
+          hour: 4.0968132
+          hour_spot: 0.37183824
+          month: 2393.1370435272
+          month_1y: 2393.1370435272
+          month_3y: 2393.1370435272
+          month_spot: 271.4419152
         asia-east1:
           hour: 3.62658
           hour_spot: 0.83358
@@ -3632,6 +3723,13 @@ compute:
       ram: 240
     c2-standard-8:
       cost:
+        africa-south1:
+          hour: 0.54624176
+          hour_spot: 0.049578432
+          month: 319.08493913696
+          month_1y: 319.08493913696
+          month_3y: 319.08493913696
+          month_spot: 36.19225536
         asia-east1:
           hour: 0.483544
           hour_spot: 0.111144
@@ -3909,6 +4007,13 @@ compute:
       ram: 32
     c2d-highcpu-112:
       cost:
+        africa-south1:
+          hour: 5.490816128
+          hour_spot: 1.16391072
+          month: 4008.29577344
+          month_1y: 2525.11622944
+          month_3y: 1803.57785216
+          month_spot: 849.6548256
         asia-east1:
           hour: 4.860688
           hour_spot: 1.449504
@@ -4186,6 +4291,13 @@ compute:
       ram: 224
     c2d-highcpu-16:
       cost:
+        africa-south1:
+          hour: 0.784402304
+          hour_spot: 0.16627296
+          month: 572.61368192
+          month_1y: 360.73088992
+          month_3y: 257.65397888
+          month_spot: 121.3792608
         asia-east1:
           hour: 0.694384
           hour_spot: 0.207072
@@ -4463,6 +4575,13 @@ compute:
       ram: 32
     c2d-highcpu-2:
       cost:
+        africa-south1:
+          hour: 0.098050288
+          hour_spot: 0.02078412
+          month: 71.57671024
+          month_1y: 45.09136124
+          month_3y: 32.20674736
+          month_spot: 15.1724076
         asia-east1:
           hour: 0.086798
           hour_spot: 0.025884
@@ -4740,6 +4859,13 @@ compute:
       ram: 4
     c2d-highcpu-32:
       cost:
+        africa-south1:
+          hour: 1.568804608
+          hour_spot: 0.33254592
+          month: 1145.22736384
+          month_1y: 721.46177984
+          month_3y: 515.30795776
+          month_spot: 242.7585216
         asia-east1:
           hour: 1.388768
           hour_spot: 0.414144
@@ -5017,6 +5143,13 @@ compute:
       ram: 64
     c2d-highcpu-4:
       cost:
+        africa-south1:
+          hour: 0.196100576
+          hour_spot: 0.04156824
+          month: 143.15342048
+          month_1y: 90.18272248
+          month_3y: 64.41349472
+          month_spot: 30.3448152
         asia-east1:
           hour: 0.173596
           hour_spot: 0.051768
@@ -5294,6 +5427,13 @@ compute:
       ram: 8
     c2d-highcpu-56:
       cost:
+        africa-south1:
+          hour: 2.745408064
+          hour_spot: 0.58195536
+          month: 2004.14788672
+          month_1y: 1262.55811472
+          month_3y: 901.78892608
+          month_spot: 424.8274128
         asia-east1:
           hour: 2.430344
           hour_spot: 0.724752
@@ -5571,6 +5711,13 @@ compute:
       ram: 112
     c2d-highcpu-8:
       cost:
+        africa-south1:
+          hour: 0.392201152
+          hour_spot: 0.08313648
+          month: 286.30684096
+          month_1y: 180.36544496
+          month_3y: 128.82698944
+          month_spot: 60.6896304
         asia-east1:
           hour: 0.347192
           hour_spot: 0.103536
@@ -5848,6 +5995,13 @@ compute:
       ram: 16
     c2d-highmem-112:
       cost:
+        africa-south1:
+          hour: 8.970682112
+          hour_spot: 1.901371584
+          month: 6548.59794176
+          month_1y: 4125.39751456
+          month_3y: 2946.36091904
+          month_spot: 1388.00125632
         asia-east1:
           hour: 7.941136
           hour_spot: 2.367456
@@ -6125,6 +6279,13 @@ compute:
       ram: 896
     c2d-highmem-16:
       cost:
+        africa-south1:
+          hour: 1.281526016
+          hour_spot: 0.271624512
+          month: 935.51399168
+          month_1y: 589.34250208
+          month_3y: 420.90870272
+          month_spot: 198.28589376
         asia-east1:
           hour: 1.134448
           hour_spot: 0.338208
@@ -6402,6 +6563,13 @@ compute:
       ram: 128
     c2d-highmem-2:
       cost:
+        africa-south1:
+          hour: 0.160190752
+          hour_spot: 0.033953064
+          month: 116.93924896
+          month_1y: 73.66781276
+          month_3y: 52.61358784
+          month_spot: 24.78573672
         asia-east1:
           hour: 0.141806
           hour_spot: 0.042276
@@ -6679,6 +6847,13 @@ compute:
       ram: 16
     c2d-highmem-32:
       cost:
+        africa-south1:
+          hour: 2.563052032
+          hour_spot: 0.543249024
+          month: 1871.02798336
+          month_1y: 1178.68500416
+          month_3y: 841.81740544
+          month_spot: 396.57178752
         asia-east1:
           hour: 2.268896
           hour_spot: 0.676416
@@ -6956,6 +7131,13 @@ compute:
       ram: 256
     c2d-highmem-4:
       cost:
+        africa-south1:
+          hour: 0.320381504
+          hour_spot: 0.067906128
+          month: 233.87849792
+          month_1y: 147.33562552
+          month_3y: 105.22717568
+          month_spot: 49.57147344
         asia-east1:
           hour: 0.283612
           hour_spot: 0.084552
@@ -7233,6 +7415,13 @@ compute:
       ram: 32
     c2d-highmem-56:
       cost:
+        africa-south1:
+          hour: 4.485341056
+          hour_spot: 0.950685792
+          month: 3274.29897088
+          month_1y: 2062.69875728
+          month_3y: 1473.18045952
+          month_spot: 694.00062816
         asia-east1:
           hour: 3.970568
           hour_spot: 1.183728
@@ -7510,6 +7699,13 @@ compute:
       ram: 448
     c2d-highmem-8:
       cost:
+        africa-south1:
+          hour: 0.640763008
+          hour_spot: 0.135812256
+          month: 467.75699584
+          month_1y: 294.67125104
+          month_3y: 210.45435136
+          month_spot: 99.14294688
         asia-east1:
           hour: 0.567224
           hour_spot: 0.169104
@@ -7787,6 +7983,13 @@ compute:
       ram: 64
     c2d-standard-112:
       cost:
+        africa-south1:
+          hour: 6.650771456
+          hour_spot: 1.409731008
+          month: 4855.06316288
+          month_1y: 3058.54332448
+          month_3y: 2184.50554112
+          month_spot: 1029.10363584
         asia-east1:
           hour: 5.887504
           hour_spot: 1.755488
@@ -8064,6 +8267,13 @@ compute:
       ram: 448
     c2d-standard-16:
       cost:
+        africa-south1:
+          hour: 0.950110208
+          hour_spot: 0.201390144
+          month: 693.58045184
+          month_1y: 436.93476064
+          month_3y: 312.07222016
+          month_spot: 147.01480512
         asia-east1:
           hour: 0.841072
           hour_spot: 0.250784
@@ -8341,6 +8551,13 @@ compute:
       ram: 64
     c2d-standard-2:
       cost:
+        africa-south1:
+          hour: 0.118763776
+          hour_spot: 0.025173768
+          month: 86.69755648
+          month_1y: 54.61684508
+          month_3y: 39.00902752
+          month_spot: 18.37685064
         asia-east1:
           hour: 0.105134
           hour_spot: 0.031348
@@ -8618,6 +8835,13 @@ compute:
       ram: 8
     c2d-standard-32:
       cost:
+        africa-south1:
+          hour: 1.900220416
+          hour_spot: 0.402780288
+          month: 1387.16090368
+          month_1y: 873.86952128
+          month_3y: 624.14444032
+          month_spot: 294.02961024
         asia-east1:
           hour: 1.682144
           hour_spot: 0.501568
@@ -8895,6 +9119,13 @@ compute:
       ram: 128
     c2d-standard-4:
       cost:
+        africa-south1:
+          hour: 0.237527552
+          hour_spot: 0.050347536
+          month: 173.39511296
+          month_1y: 109.23369016
+          month_3y: 78.01805504
+          month_spot: 36.75370128
         asia-east1:
           hour: 0.210268
           hour_spot: 0.062696
@@ -9172,6 +9403,13 @@ compute:
       ram: 16
     c2d-standard-56:
       cost:
+        africa-south1:
+          hour: 3.325385728
+          hour_spot: 0.704865504
+          month: 2427.53158144
+          month_1y: 1529.27166224
+          month_3y: 1092.25277056
+          month_spot: 514.55181792
         asia-east1:
           hour: 2.943752
           hour_spot: 0.877744
@@ -9449,6 +9687,13 @@ compute:
       ram: 224
     c2d-standard-8:
       cost:
+        africa-south1:
+          hour: 0.475055104
+          hour_spot: 0.100695072
+          month: 346.79022592
+          month_1y: 218.46738032
+          month_3y: 156.03611008
+          month_spot: 73.50740256
         asia-east1:
           hour: 0.420536
           hour_spot: 0.125392
@@ -9726,6 +9971,13 @@ compute:
       ram: 32
     c3-highcpu-176:
       cost:
+        africa-south1:
+          hour: 9.92012384
+          hour_spot: 0.900573696
+          month: 7241.6904032
+          month_1y: 4562.10304352
+          month_3y: 3258.35738272
+          month_spot: 657.41879808
         asia-east1:
           hour: 8.78152
           hour_spot: 2.018544
@@ -10003,6 +10255,13 @@ compute:
       ram: 352
     c3-highcpu-22:
       cost:
+        africa-south1:
+          hour: 1.24001548
+          hour_spot: 0.112571712
+          month: 905.2113004
+          month_1y: 570.26288044
+          month_3y: 407.29467284
+          month_spot: 82.17734976
         asia-east1:
           hour: 1.09769
           hour_spot: 0.252318
@@ -10280,6 +10539,13 @@ compute:
       ram: 44
     c3-highcpu-4:
       cost:
+        africa-south1:
+          hour: 0.22545736
+          hour_spot: 0.020467584
+          month: 164.5838728
+          month_1y: 103.68416008
+          month_3y: 74.05357688
+          month_spot: 14.94133632
         asia-east1:
           hour: 0.19958
           hour_spot: 0.045876
@@ -10557,6 +10823,13 @@ compute:
       ram: 8
     c3-highcpu-44:
       cost:
+        africa-south1:
+          hour: 2.48003096
+          hour_spot: 0.225143424
+          month: 1810.4226008
+          month_1y: 1140.52576088
+          month_3y: 814.58934568
+          month_spot: 164.35469952
         asia-east1:
           hour: 2.19538
           hour_spot: 0.504636
@@ -10834,6 +11107,13 @@ compute:
       ram: 88
     c3-highcpu-8:
       cost:
+        africa-south1:
+          hour: 0.45091472
+          hour_spot: 0.040935168
+          month: 329.1677456
+          month_1y: 207.36832016
+          month_3y: 148.10715376
+          month_spot: 29.88267264
         asia-east1:
           hour: 0.39916
           hour_spot: 0.091752
@@ -11111,6 +11391,13 @@ compute:
       ram: 16
     c3-highcpu-88:
       cost:
+        africa-south1:
+          hour: 4.96006192
+          hour_spot: 0.450286848
+          month: 3620.8452016
+          month_1y: 2281.05152176
+          month_3y: 1629.17869136
+          month_spot: 328.70939904
         asia-east1:
           hour: 4.39076
           hour_spot: 1.009272
@@ -11388,6 +11675,13 @@ compute:
       ram: 176
     c3-highmem-176:
       cost:
+        africa-south1:
+          hour: 16.21170848
+          hour_spot: 1.47102912
+          month: 11834.5471904
+          month_1y: 7454.94741728
+          month_3y: 5324.38670368
+          month_spot: 1073.8512576
         asia-east1:
           hour: 14.350864
           hour_spot: 3.298416
@@ -11665,6 +11959,13 @@ compute:
       ram: 1408
     c3-highmem-22:
       cost:
+        africa-south1:
+          hour: 2.02646356
+          hour_spot: 0.18387864
+          month: 1479.3183988
+          month_1y: 931.86842716
+          month_3y: 665.54833796
+          month_spot: 134.2314072
         asia-east1:
           hour: 1.793858
           hour_spot: 0.412302
@@ -11942,6 +12243,13 @@ compute:
       ram: 176
     c3-highmem-4:
       cost:
+        africa-south1:
+          hour: 0.36844792
+          hour_spot: 0.03343248
+          month: 268.9669816
+          month_1y: 169.43062312
+          month_3y: 121.00878872
+          month_spot: 24.4057104
         asia-east1:
           hour: 0.326156
           hour_spot: 0.074964
@@ -12219,6 +12527,13 @@ compute:
       ram: 32
     c3-highmem-44:
       cost:
+        africa-south1:
+          hour: 4.05292712
+          hour_spot: 0.36775728
+          month: 2958.6367976
+          month_1y: 1863.73685432
+          month_3y: 1331.09667592
+          month_spot: 268.4628144
         asia-east1:
           hour: 3.587716
           hour_spot: 0.824604
@@ -12496,6 +12811,13 @@ compute:
       ram: 352
     c3-highmem-8:
       cost:
+        africa-south1:
+          hour: 0.73689584
+          hour_spot: 0.06686496
+          month: 537.9339632
+          month_1y: 338.86124624
+          month_3y: 242.01757744
+          month_spot: 48.8114208
         asia-east1:
           hour: 0.652312
           hour_spot: 0.149928
@@ -12773,6 +13095,13 @@ compute:
       ram: 64
     c3-highmem-88:
       cost:
+        africa-south1:
+          hour: 8.10585424
+          hour_spot: 0.73551456
+          month: 5917.2735952
+          month_1y: 3727.47370864
+          month_3y: 2662.19335184
+          month_spot: 536.9256288
         asia-east1:
           hour: 7.175432
           hour_spot: 1.649208
@@ -13050,6 +13379,13 @@ compute:
       ram: 704
     c3-standard-176:
       cost:
+        africa-south1:
+          hour: 12.01731872
+          hour_spot: 1.090725504
+          month: 8772.6426656
+          month_1y: 5526.38450144
+          month_3y: 3947.03382304
+          month_spot: 796.22961792
         asia-east1:
           hour: 10.637968
           hour_spot: 2.445168
@@ -13327,6 +13663,13 @@ compute:
       ram: 704
     c3-standard-176-lssd:
       cost:
+        africa-south1:
+          hour: 12.01731872
+          hour_spot: 1.090725504
+          month: 8772.6426656
+          month_1y: 5526.38450144
+          month_3y: 3947.03382304
+          month_spot: 796.22961792
         asia-east1:
           hour: 10.637968
           hour_spot: 2.445168
@@ -13604,6 +13947,13 @@ compute:
       ram: 704
     c3-standard-22:
       cost:
+        africa-south1:
+          hour: 1.50216484
+          hour_spot: 0.136340688
+          month: 1096.5803332
+          month_1y: 690.79806268
+          month_3y: 493.37922788
+          month_spot: 99.52870224
         asia-east1:
           hour: 1.329746
           hour_spot: 0.305646
@@ -13881,6 +14231,13 @@ compute:
       ram: 88
     c3-standard-22-lssd:
       cost:
+        africa-south1:
+          hour: 1.50216484
+          hour_spot: 0.136340688
+          month: 1096.5803332
+          month_1y: 690.79806268
+          month_3y: 493.37922788
+          month_spot: 99.52870224
         asia-east1:
           hour: 1.329746
           hour_spot: 0.305646
@@ -14158,6 +14515,13 @@ compute:
       ram: 88
     c3-standard-4:
       cost:
+        africa-south1:
+          hour: 0.27312088
+          hour_spot: 0.024789216
+          month: 199.3782424
+          month_1y: 125.59964776
+          month_3y: 89.70531416
+          month_spot: 18.09612768
         asia-east1:
           hour: 0.241772
           hour_spot: 0.055572
@@ -14435,6 +14799,13 @@ compute:
       ram: 16
     c3-standard-4-lssd:
       cost:
+        africa-south1:
+          hour: 0.27312088
+          hour_spot: 0.024789216
+          month: 199.3782424
+          month_1y: 125.59964776
+          month_3y: 89.70531416
+          month_spot: 18.09612768
         asia-east1:
           hour: 0.241772
           hour_spot: 0.055572
@@ -14712,6 +15083,13 @@ compute:
       ram: 16
     c3-standard-44:
       cost:
+        africa-south1:
+          hour: 3.00432968
+          hour_spot: 0.272681376
+          month: 2193.1606664
+          month_1y: 1381.59612536
+          month_3y: 986.75845576
+          month_spot: 199.05740448
         asia-east1:
           hour: 2.659492
           hour_spot: 0.611292
@@ -14989,6 +15367,13 @@ compute:
       ram: 176
     c3-standard-44-lssd:
       cost:
+        africa-south1:
+          hour: 3.00432968
+          hour_spot: 0.272681376
+          month: 2193.1606664
+          month_1y: 1381.59612536
+          month_3y: 986.75845576
+          month_spot: 199.05740448
         asia-east1:
           hour: 2.659492
           hour_spot: 0.611292
@@ -15266,6 +15651,13 @@ compute:
       ram: 176
     c3-standard-8:
       cost:
+        africa-south1:
+          hour: 0.54624176
+          hour_spot: 0.049578432
+          month: 398.7564848
+          month_1y: 251.19929552
+          month_3y: 179.41062832
+          month_spot: 36.19225536
         asia-east1:
           hour: 0.483544
           hour_spot: 0.111144
@@ -15543,6 +15935,13 @@ compute:
       ram: 32
     c3-standard-8-lssd:
       cost:
+        africa-south1:
+          hour: 0.54624176
+          hour_spot: 0.049578432
+          month: 398.7564848
+          month_1y: 251.19929552
+          month_3y: 179.41062832
+          month_spot: 36.19225536
         asia-east1:
           hour: 0.483544
           hour_spot: 0.111144
@@ -15820,6 +16219,13 @@ compute:
       ram: 32
     c3-standard-88:
       cost:
+        africa-south1:
+          hour: 6.00865936
+          hour_spot: 0.545362752
+          month: 4386.3213328
+          month_1y: 2763.19225072
+          month_3y: 1973.51691152
+          month_spot: 398.11480896
         asia-east1:
           hour: 5.318984
           hour_spot: 1.222584
@@ -16097,6 +16503,13 @@ compute:
       ram: 352
     c3-standard-88-lssd:
       cost:
+        africa-south1:
+          hour: 6.00865936
+          hour_spot: 0.545362752
+          month: 4386.3213328
+          month_1y: 2763.19225072
+          month_3y: 1973.51691152
+          month_spot: 398.11480896
         asia-east1:
           hour: 5.318984
           hour_spot: 1.222584
@@ -16374,6 +16787,13 @@ compute:
       ram: 352
     c3d-highcpu-16:
       cost:
+        africa-south1:
+          hour: 0.784402304
+          hour_spot: 0.313760928
+          month: 572.61368192
+          month_1y: 360.73088992
+          month_3y: 257.65397888
+          month_spot: 229.04547744
         asia-east1:
           hour: 0.694388032
           hour_spot: 0.2777552
@@ -16651,6 +17071,13 @@ compute:
       ram: 32
     c3d-highcpu-180:
       cost:
+        africa-south1:
+          hour: 8.793455688
+          hour_spot: 3.517382346
+          month: 6419.22265224
+          month_1y: 4043.93428584
+          month_3y: 2888.40384216
+          month_spot: 2567.68911258
         asia-east1:
           hour: 7.784360604
           hour_spot: 3.1137441
@@ -16928,6 +17355,13 @@ compute:
       ram: 354
     c3d-highcpu-30:
       cost:
+        africa-south1:
+          hour: 1.465575948
+          hour_spot: 0.586230391
+          month: 1069.87044204
+          month_1y: 673.98904764
+          month_3y: 481.40064036
+          month_spot: 427.94818543
         asia-east1:
           hour: 1.297393434
           hour_spot: 0.51895735
@@ -17205,6 +17639,13 @@ compute:
       ram: 59
     c3d-highcpu-360:
       cost:
+        africa-south1:
+          hour: 17.586911376
+          hour_spot: 7.034764692
+          month: 12838.44530448
+          month_1y: 8087.86857168
+          month_3y: 5776.80768432
+          month_spot: 5135.37822516
         asia-east1:
           hour: 15.568721208
           hour_spot: 6.2274882
@@ -17482,6 +17923,13 @@ compute:
       ram: 708
     c3d-highcpu-4:
       cost:
+        africa-south1:
+          hour: 0.196100576
+          hour_spot: 0.078440232
+          month: 143.15342048
+          month_1y: 90.18272248
+          month_3y: 64.41349472
+          month_spot: 57.26136936
         asia-east1:
           hour: 0.173597008
           hour_spot: 0.0694388
@@ -17759,6 +18207,13 @@ compute:
       ram: 8
     c3d-highcpu-60:
       cost:
+        africa-south1:
+          hour: 2.931151896
+          hour_spot: 1.172460782
+          month: 2139.74088408
+          month_1y: 1347.97809528
+          month_3y: 962.80128072
+          month_spot: 855.89637086
         asia-east1:
           hour: 2.594786868
           hour_spot: 1.0379147
@@ -18036,6 +18491,13 @@ compute:
       ram: 118
     c3d-highcpu-8:
       cost:
+        africa-south1:
+          hour: 0.392201152
+          hour_spot: 0.156880464
+          month: 286.30684096
+          month_1y: 180.36544496
+          month_3y: 128.82698944
+          month_spot: 114.52273872
         asia-east1:
           hour: 0.347194016
           hour_spot: 0.1388776
@@ -18313,6 +18775,13 @@ compute:
       ram: 16
     c3d-highcpu-90:
       cost:
+        africa-south1:
+          hour: 4.396727844
+          hour_spot: 1.758691173
+          month: 3209.61132612
+          month_1y: 2021.96714292
+          month_3y: 1444.20192108
+          month_spot: 1283.84455629
         asia-east1:
           hour: 3.892180302
           hour_spot: 1.55687205
@@ -18590,6 +19059,13 @@ compute:
       ram: 177
     c3d-highmem-16:
       cost:
+        africa-south1:
+          hour: 1.281526016
+          hour_spot: 0.512610432
+          month: 935.51399168
+          month_1y: 589.34250208
+          month_3y: 420.90870272
+          month_spot: 374.20561536
         asia-east1:
           hour: 1.134464128
           hour_spot: 0.4537856
@@ -18867,6 +19343,13 @@ compute:
       ram: 128
     c3d-highmem-180:
       cost:
+        africa-south1:
+          hour: 14.41716768
+          hour_spot: 5.76686736
+          month: 10524.5324064
+          month_1y: 6630.1031484
+          month_3y: 4735.2229056
+          month_spot: 4209.8131728
         asia-east1:
           hour: 12.76272144
           hour_spot: 5.105088
@@ -19144,6 +19627,13 @@ compute:
       ram: 1440
     c3d-highmem-30:
       cost:
+        africa-south1:
+          hour: 2.40286128
+          hour_spot: 0.96114456
+          month: 1754.0887344
+          month_1y: 1105.0171914
+          month_3y: 789.2038176
+          month_spot: 701.6355288
         asia-east1:
           hour: 2.12712024
           hour_spot: 0.850848
@@ -19421,6 +19911,13 @@ compute:
       ram: 240
     c3d-highmem-360:
       cost:
+        africa-south1:
+          hour: 28.83433536
+          hour_spot: 11.53373472
+          month: 21049.0648128
+          month_1y: 13260.2062968
+          month_3y: 9470.4458112
+          month_spot: 8419.6263456
         asia-east1:
           hour: 25.52544288
           hour_spot: 10.210176
@@ -19698,6 +20195,13 @@ compute:
       ram: 2880
     c3d-highmem-4:
       cost:
+        africa-south1:
+          hour: 0.320381504
+          hour_spot: 0.128152608
+          month: 233.87849792
+          month_1y: 147.33562552
+          month_3y: 105.22717568
+          month_spot: 93.55140384
         asia-east1:
           hour: 0.283616032
           hour_spot: 0.1134464
@@ -19975,6 +20479,13 @@ compute:
       ram: 32
     c3d-highmem-60:
       cost:
+        africa-south1:
+          hour: 4.80572256
+          hour_spot: 1.92228912
+          month: 3508.1774688
+          month_1y: 2210.0343828
+          month_3y: 1578.4076352
+          month_spot: 1403.2710576
         asia-east1:
           hour: 4.25424048
           hour_spot: 1.701696
@@ -20252,6 +20763,13 @@ compute:
       ram: 480
     c3d-highmem-8:
       cost:
+        africa-south1:
+          hour: 0.640763008
+          hour_spot: 0.256305216
+          month: 467.75699584
+          month_1y: 294.67125104
+          month_3y: 210.45435136
+          month_spot: 187.10280768
         asia-east1:
           hour: 0.567232064
           hour_spot: 0.2268928
@@ -20529,6 +21047,13 @@ compute:
       ram: 64
     c3d-highmem-90:
       cost:
+        africa-south1:
+          hour: 7.20858384
+          hour_spot: 2.88343368
+          month: 5262.2662032
+          month_1y: 3315.0515742
+          month_3y: 2367.6114528
+          month_spot: 2104.9065864
         asia-east1:
           hour: 6.38136072
           hour_spot: 2.552544
@@ -20806,6 +21331,13 @@ compute:
       ram: 720
     c3d-standard-16:
       cost:
+        africa-south1:
+          hour: 0.950110208
+          hour_spot: 0.380044096
+          month: 693.58045184
+          month_1y: 436.93476064
+          month_3y: 312.07222016
+          month_spot: 277.43219008
         asia-east1:
           hour: 0.841080064
           hour_spot: 0.336432
@@ -21083,6 +21615,13 @@ compute:
       ram: 64
     c3d-standard-16-lssd:
       cost:
+        africa-south1:
+          hour: 0.950110208
+          hour_spot: 0.380044096
+          month: 693.58045184
+          month_1y: 436.93476064
+          month_3y: 312.07222016
+          month_spot: 277.43219008
         asia-east1:
           hour: 0.841080064
           hour_spot: 0.336432
@@ -21360,6 +21899,13 @@ compute:
       ram: 64
     c3d-standard-180:
       cost:
+        africa-south1:
+          hour: 10.68873984
+          hour_spot: 4.27549608
+          month: 7802.7800832
+          month_1y: 4915.5160572
+          month_3y: 3510.8124768
+          month_spot: 3121.1121384
         asia-east1:
           hour: 9.46215072
           hour_spot: 3.78486
@@ -21637,6 +22183,13 @@ compute:
       ram: 720
     c3d-standard-180-lssd:
       cost:
+        africa-south1:
+          hour: 10.68873984
+          hour_spot: 4.27549608
+          month: 7802.7800832
+          month_1y: 4915.5160572
+          month_3y: 3510.8124768
+          month_spot: 3121.1121384
         asia-east1:
           hour: 9.46215072
           hour_spot: 3.78486
@@ -21914,6 +22467,13 @@ compute:
       ram: 720
     c3d-standard-30:
       cost:
+        africa-south1:
+          hour: 1.78145664
+          hour_spot: 0.71258268
+          month: 1300.4633472
+          month_1y: 819.2526762
+          month_3y: 585.1354128
+          month_spot: 520.1853564
         asia-east1:
           hour: 1.57702512
           hour_spot: 0.63081
@@ -22191,6 +22751,13 @@ compute:
       ram: 120
     c3d-standard-30-lssd:
       cost:
+        africa-south1:
+          hour: 1.78145664
+          hour_spot: 0.71258268
+          month: 1300.4633472
+          month_1y: 819.2526762
+          month_3y: 585.1354128
+          month_spot: 520.1853564
         asia-east1:
           hour: 1.57702512
           hour_spot: 0.63081
@@ -22468,6 +23035,13 @@ compute:
       ram: 120
     c3d-standard-360:
       cost:
+        africa-south1:
+          hour: 21.37747968
+          hour_spot: 8.55099216
+          month: 15605.5601664
+          month_1y: 9831.0321144
+          month_3y: 7021.6249536
+          month_spot: 6242.2242768
         asia-east1:
           hour: 18.92430144
           hour_spot: 7.56972
@@ -22745,6 +23319,13 @@ compute:
       ram: 1440
     c3d-standard-360-lssd:
       cost:
+        africa-south1:
+          hour: 21.37747968
+          hour_spot: 8.55099216
+          month: 15605.5601664
+          month_1y: 9831.0321144
+          month_3y: 7021.6249536
+          month_spot: 6242.2242768
         asia-east1:
           hour: 18.92430144
           hour_spot: 7.56972
@@ -23022,6 +23603,13 @@ compute:
       ram: 1440
     c3d-standard-4:
       cost:
+        africa-south1:
+          hour: 0.237527552
+          hour_spot: 0.095011024
+          month: 173.39511296
+          month_1y: 109.23369016
+          month_3y: 78.01805504
+          month_spot: 69.35804752
         asia-east1:
           hour: 0.210270016
           hour_spot: 0.084108
@@ -23299,6 +23887,13 @@ compute:
       ram: 16
     c3d-standard-60:
       cost:
+        africa-south1:
+          hour: 3.56291328
+          hour_spot: 1.42516536
+          month: 2600.9266944
+          month_1y: 1638.5053524
+          month_3y: 1170.2708256
+          month_spot: 1040.3707128
         asia-east1:
           hour: 3.15405024
           hour_spot: 1.26162
@@ -23576,6 +24171,13 @@ compute:
       ram: 240
     c3d-standard-60-lssd:
       cost:
+        africa-south1:
+          hour: 3.56291328
+          hour_spot: 1.42516536
+          month: 2600.9266944
+          month_1y: 1638.5053524
+          month_3y: 1170.2708256
+          month_spot: 1040.3707128
         asia-east1:
           hour: 3.15405024
           hour_spot: 1.26162
@@ -23853,6 +24455,13 @@ compute:
       ram: 240
     c3d-standard-8:
       cost:
+        africa-south1:
+          hour: 0.475055104
+          hour_spot: 0.190022048
+          month: 346.79022592
+          month_1y: 218.46738032
+          month_3y: 156.03611008
+          month_spot: 138.71609504
         asia-east1:
           hour: 0.420540032
           hour_spot: 0.168216
@@ -24130,6 +24739,13 @@ compute:
       ram: 32
     c3d-standard-8-lssd:
       cost:
+        africa-south1:
+          hour: 0.475055104
+          hour_spot: 0.190022048
+          month: 346.79022592
+          month_1y: 218.46738032
+          month_3y: 156.03611008
+          month_spot: 138.71609504
         asia-east1:
           hour: 0.420540032
           hour_spot: 0.168216
@@ -24407,6 +25023,13 @@ compute:
       ram: 32
     c3d-standard-90:
       cost:
+        africa-south1:
+          hour: 5.34436992
+          hour_spot: 2.13774804
+          month: 3901.3900416
+          month_1y: 2457.7580286
+          month_3y: 1755.4062384
+          month_spot: 1560.5560692
         asia-east1:
           hour: 4.73107536
           hour_spot: 1.89243
@@ -24684,6 +25307,13 @@ compute:
       ram: 360
     c3d-standard-90-lssd:
       cost:
+        africa-south1:
+          hour: 5.34436992
+          hour_spot: 2.13774804
+          month: 3901.3900416
+          month_1y: 2457.7580286
+          month_3y: 1755.4062384
+          month_spot: 1560.5560692
         asia-east1:
           hour: 4.73107536
           hour_spot: 1.89243
@@ -24961,6 +25591,13 @@ compute:
       ram: 360
     custom-1-7680-ext:
       cost:
+        africa-south1:
+          hour: 0.08700685
+          hour_spot: 0.01835124
+          month: 44.46050035
+          month_1y: 44.46050035
+          month_3y: 44.46050035
+          month_spot: 13.3964052
         asia-east1:
           hour: 0.077035
           hour_spot: 0.01478
@@ -25239,6 +25876,13 @@ compute:
       type: n1-custom
     custom-2-10240-ext:
       cost:
+        africa-south1:
+          hour: 0.14493686
+          hour_spot: 0.03055488
+          month: 74.06273546
+          month_1y: 74.06273546
+          month_3y: 74.06273546
+          month_spot: 22.3050624
         asia-east1:
           hour: 0.12832
           hour_spot: 0.02462
@@ -25517,6 +26161,13 @@ compute:
       type: n1-custom
     custom-4-30720-ext:
       cost:
+        africa-south1:
+          hour: 0.3480274
+          hour_spot: 0.07340496
+          month: 177.8420014
+          month_1y: 177.8420014
+          month_3y: 177.8420014
+          month_spot: 53.5856208
         asia-east1:
           hour: 0.30814
           hour_spot: 0.05912
@@ -25795,6 +26446,13 @@ compute:
       type: n1-custom
     e2-highcpu-16:
       cost:
+        africa-south1:
+          hour: 0.517656592
+          hour_spot: 0.155296976
+          month: 377.88931216
+          month_1y: 238.07023968
+          month_3y: 170.0501712
+          month_spot: 113.36679248
         asia-east1:
           hour: 0.45824832
           hour_spot: 0.183264
@@ -26072,6 +26730,13 @@ compute:
       ram: 16
     e2-highcpu-2:
       cost:
+        africa-south1:
+          hour: 0.064707074
+          hour_spot: 0.019412122
+          month: 47.23616402
+          month_1y: 29.75877996
+          month_3y: 21.2562714
+          month_spot: 14.17084906
         asia-east1:
           hour: 0.05728104
           hour_spot: 0.022908
@@ -26349,6 +27014,13 @@ compute:
       ram: 2
     e2-highcpu-32:
       cost:
+        africa-south1:
+          hour: 1.035313184
+          hour_spot: 0.310593952
+          month: 755.77862432
+          month_1y: 476.14047936
+          month_3y: 340.1003424
+          month_spot: 226.73358496
         asia-east1:
           hour: 0.91649664
           hour_spot: 0.366528
@@ -26626,6 +27298,13 @@ compute:
       ram: 32
     e2-highcpu-4:
       cost:
+        africa-south1:
+          hour: 0.129414148
+          hour_spot: 0.038824244
+          month: 94.47232804
+          month_1y: 59.51755992
+          month_3y: 42.5125428
+          month_spot: 28.34169812
         asia-east1:
           hour: 0.11456208
           hour_spot: 0.045816
@@ -26903,6 +27582,13 @@ compute:
       ram: 4
     e2-highcpu-8:
       cost:
+        africa-south1:
+          hour: 0.258828296
+          hour_spot: 0.077648488
+          month: 188.94465608
+          month_1y: 119.03511984
+          month_3y: 85.0250856
+          month_spot: 56.68339624
         asia-east1:
           hour: 0.22912416
           hour_spot: 0.091632
@@ -27180,6 +27866,13 @@ compute:
       ram: 8
     e2-highmem-16:
       cost:
+        africa-south1:
+          hour: 0.945942016
+          hour_spot: 0.283782592
+          month: 690.53767168
+          month_1y: 435.03874624
+          month_3y: 310.7419616
+          month_spot: 207.16129216
         asia-east1:
           hour: 0.837384
           hour_spot: 0.334912
@@ -27457,6 +28150,13 @@ compute:
       ram: 128
     e2-highmem-2:
       cost:
+        africa-south1:
+          hour: 0.118242752
+          hour_spot: 0.035472824
+          month: 86.31720896
+          month_1y: 54.37984328
+          month_3y: 38.8427452
+          month_spot: 25.89516152
         asia-east1:
           hour: 0.104673
           hour_spot: 0.041864
@@ -27734,6 +28434,13 @@ compute:
       ram: 16
     e2-highmem-4:
       cost:
+        africa-south1:
+          hour: 0.236485504
+          hour_spot: 0.070945648
+          month: 172.63441792
+          month_1y: 108.75968656
+          month_3y: 77.6854904
+          month_spot: 51.79032304
         asia-east1:
           hour: 0.209346
           hour_spot: 0.083728
@@ -28011,6 +28718,13 @@ compute:
       ram: 32
     e2-highmem-8:
       cost:
+        africa-south1:
+          hour: 0.472971008
+          hour_spot: 0.141891296
+          month: 345.26883584
+          month_1y: 217.51937312
+          month_3y: 155.3709808
+          month_spot: 103.58064608
         asia-east1:
           hour: 0.418692
           hour_spot: 0.167456
@@ -28288,6 +29002,13 @@ compute:
       ram: 64
     e2-medium:
       cost:
+        africa-south1:
+          hour: 0.043825468
+          hour_spot: 0.01314764
+          month: 31.99259164
+          month_1y: 20.15533212
+          month_3y: 14.3966658
+          month_spot: 9.5977772
         asia-east1:
           hour: 0.03879594
           hour_spot: 0.015516
@@ -28565,6 +29286,13 @@ compute:
       ram: 4
     e2-micro:
       cost:
+        africa-south1:
+          hour: 0.010956367
+          hour_spot: 0.00328691
+          month: 7.99814791
+          month_1y: 5.03883303
+          month_3y: 3.59916645
+          month_spot: 2.3994443
         asia-east1:
           hour: 0.009698985
           hour_spot: 0.003879
@@ -28842,6 +29570,13 @@ compute:
       ram: 1
     e2-small:
       cost:
+        africa-south1:
+          hour: 0.021912734
+          hour_spot: 0.00657382
+          month: 15.99629582
+          month_1y: 10.07766606
+          month_3y: 7.1983329
+          month_spot: 4.7988886
         asia-east1:
           hour: 0.01939797
           hour_spot: 0.007758
@@ -29119,6 +29854,13 @@ compute:
       ram: 2
     e2-standard-16:
       cost:
+        africa-south1:
+          hour: 0.701207488
+          hour_spot: 0.21036224
+          month: 511.88146624
+          month_1y: 322.48531392
+          month_3y: 230.3466528
+          month_spot: 153.5644352
         asia-east1:
           hour: 0.62073504
           hour_spot: 0.248256
@@ -29396,6 +30138,13 @@ compute:
       ram: 64
     e2-standard-2:
       cost:
+        africa-south1:
+          hour: 0.087650936
+          hour_spot: 0.02629528
+          month: 63.98518328
+          month_1y: 40.31066424
+          month_3y: 28.7933316
+          month_spot: 19.1955544
         asia-east1:
           hour: 0.07759188
           hour_spot: 0.031032
@@ -29673,6 +30422,13 @@ compute:
       ram: 8
     e2-standard-32:
       cost:
+        africa-south1:
+          hour: 1.402414976
+          hour_spot: 0.42072448
+          month: 1023.76293248
+          month_1y: 644.97062784
+          month_3y: 460.6933056
+          month_spot: 307.1288704
         asia-east1:
           hour: 1.24147008
           hour_spot: 0.496512
@@ -29950,6 +30706,13 @@ compute:
       ram: 128
     e2-standard-4:
       cost:
+        africa-south1:
+          hour: 0.175301872
+          hour_spot: 0.05259056
+          month: 127.97036656
+          month_1y: 80.62132848
+          month_3y: 57.5866632
+          month_spot: 38.3911088
         asia-east1:
           hour: 0.15518376
           hour_spot: 0.062064
@@ -30227,6 +30990,13 @@ compute:
       ram: 16
     e2-standard-8:
       cost:
+        africa-south1:
+          hour: 0.350603744
+          hour_spot: 0.10518112
+          month: 255.94073312
+          month_1y: 161.24265696
+          month_3y: 115.1733264
+          month_spot: 76.7822176
         asia-east1:
           hour: 0.31036752
           hour_spot: 0.124128
@@ -30504,6 +31274,13 @@ compute:
       ram: 32
     f1-micro:
       cost:
+        africa-south1:
+          hour: 0.0099408
+          hour_spot: 0.004578
+          month: 5.0797488
+          month_1y: 5.0797488
+          month_3y: 5.0797488
+          month_spot: 3.34194
         asia-east1:
           hour: 0.009
           hour_spot: 0.0036
@@ -30781,6 +31558,13 @@ compute:
       ram: 0.6
     g1-small:
       cost:
+        africa-south1:
+          hour: 0.0336156
+          hour_spot: 0.009156
+          month: 17.1775716
+          month_1y: 17.1775716
+          month_3y: 17.1775716
+          month_spot: 6.68388
         asia-east1:
           hour: 0.03
           hour_spot: 0.0077
@@ -31058,6 +31842,13 @@ compute:
       ram: 1.7
     g2-standard-12:
       cost:
+        africa-south1:
+          hour: 1.308544504
+          hour_spot: 0.392563388
+          month: 955.23748792
+          month_1y: 601.7997068
+          month_3y: 429.85687044
+          month_spot: 286.57127324
         asia-east1:
           hour: 1.158382064
           hour_spot: 0.3115652
@@ -31336,6 +32127,13 @@ compute:
       ram: 48
     g2-standard-16:
       cost:
+        africa-south1:
+          hour: 1.500548472
+          hour_spot: 0.450164584
+          month: 1095.40038456
+          month_1y: 690.1023464
+          month_3y: 492.93016692
+          month_spot: 328.62014632
         asia-east1:
           hour: 1.328352552
           hour_spot: 0.3505732
@@ -31614,6 +32412,13 @@ compute:
       ram: 64
     g2-standard-24:
       cost:
+        africa-south1:
+          hour: 2.617089008
+          hour_spot: 0.785126776
+          month: 1910.47497584
+          month_1y: 1203.5994136
+          month_3y: 859.71374088
+          month_spot: 573.14254648
         asia-east1:
           hour: 2.316764128
           hour_spot: 0.6231304
@@ -31892,6 +32697,13 @@ compute:
       ram: 96
     g2-standard-32:
       cost:
+        africa-south1:
+          hour: 2.268564344
+          hour_spot: 0.680569368
+          month: 1656.05197112
+          month_1y: 1043.3129048
+          month_3y: 745.22335284
+          month_spot: 496.81563864
         asia-east1:
           hour: 2.008234504
           hour_spot: 0.5066052
@@ -32170,6 +32982,13 @@ compute:
       ram: 128
     g2-standard-4:
       cost:
+        africa-south1:
+          hour: 0.924536568
+          hour_spot: 0.277360996
+          month: 674.91169464
+          month_1y: 425.1944276
+          month_3y: 303.71027748
+          month_spot: 202.47352708
         asia-east1:
           hour: 0.818441088
           hour_spot: 0.2335492
@@ -32448,6 +33267,13 @@ compute:
       ram: 16
     g2-standard-48:
       cost:
+        africa-south1:
+          hour: 5.234178016
+          hour_spot: 1.570253552
+          month: 3820.94995168
+          month_1y: 2407.1988272
+          month_3y: 1719.42748176
+          month_spot: 1146.28509296
         asia-east1:
           hour: 4.633528256
           hour_spot: 1.2462608
@@ -32726,6 +33552,13 @@ compute:
       ram: 192
     g2-standard-8:
       cost:
+        africa-south1:
+          hour: 1.116540536
+          hour_spot: 0.334962192
+          month: 815.07459128
+          month_1y: 513.4970672
+          month_3y: 366.78357396
+          month_spot: 244.52240016
         asia-east1:
           hour: 0.988411576
           hour_spot: 0.2725572
@@ -33004,6 +33837,13 @@ compute:
       ram: 32
     g2-standard-96:
       cost:
+        africa-south1:
+          hour: 10.468356032
+          hour_spot: 3.140507104
+          month: 7641.89990336
+          month_1y: 4814.3976544
+          month_3y: 3438.85496352
+          month_spot: 2292.57018592
         asia-east1:
           hour: 9.267056512
           hour_spot: 2.4925216
@@ -33282,6 +34122,11 @@ compute:
       ram: 384
     h3-standard-88:
       cost:
+        africa-south1:
+          hour: 6.4400688
+          month: 4701.250224
+          month_1y: 3855.9494688
+          month_3y: 2822.4306528
         asia-east1:
           hour: 5.701036528
           month: 4161.75666544
@@ -33481,6 +34326,13 @@ compute:
       ram: 352
     m1-megamem-96:
       cost:
+        africa-south1:
+          hour: 13.93302528
+          hour_spot: 2.945574144
+          month: 7119.77591808
+          month_1y: 6017.66139648
+          month_3y: 3052.24918272
+          month_spot: 2150.26912512
         asia-east1:
           hour: 12.362224
           hour_spot: 2.465408
@@ -33758,6 +34610,13 @@ compute:
       ram: 1433.6
     m1-ultramem-160:
       cost:
+        africa-south1:
+          hour: 32.9254992
+          hour_spot: 6.96421056
+          month: 16824.9300912
+          month_1y: 14224.1368992
+          month_3y: 7212.2120688
+          month_spot: 5083.8737088
         asia-east1:
           hour: 29.21897
           hour_spot: 5.82552
@@ -34035,6 +34894,13 @@ compute:
       ram: 3844
     m1-ultramem-40:
       cost:
+        africa-south1:
+          hour: 8.2313748
+          hour_spot: 1.74105264
+          month: 4206.2325228
+          month_1y: 3556.0342248
+          month_3y: 1803.0530172
+          month_spot: 1270.9684272
         asia-east1:
           hour: 7.3047425
           hour_spot: 1.45638
@@ -34312,6 +35178,13 @@ compute:
       ram: 961
     m1-ultramem-80:
       cost:
+        africa-south1:
+          hour: 16.4627496
+          hour_spot: 3.48210528
+          month: 8412.4650456
+          month_1y: 7112.0684496
+          month_3y: 3606.1060344
+          month_spot: 2541.9368544
         asia-east1:
           hour: 14.609485
           hour_spot: 2.91276
@@ -34589,6 +35462,11 @@ compute:
       ram: 1922
     m2-hypermem-416:
       cost:
+        africa-south1:
+          hour: 87.9729408
+          month: 44954.1727488
+          month_1y: 38802.5587584
+          month_3y: 22225.3141632
         asia-east1:
           hour: 78.06605904
           month: 39891.75616944
@@ -34788,6 +35666,11 @@ compute:
       ram: 8832
     m2-megamem-416:
       cost:
+        africa-south1:
+          hour: 65.781057024
+          month: 33614.120139264
+          month_1y: 29008.583076864
+          month_3y: 16619.801432064
         asia-east1:
           hour: 58.36355984
           month: 29823.77907824
@@ -34987,6 +35870,11 @@ compute:
       ram: 5888
     m2-ultramem-208:
       cost:
+        africa-south1:
+          hour: 55.082412288
+          month: 28147.112679168
+          month_1y: 24298.267219968
+          month_3y: 13915.413447168
         asia-east1:
           hour: 48.88427912
           month: 24979.86663032
@@ -35186,6 +36074,11 @@ compute:
       ram: 5888
     m2-ultramem-416:
       cost:
+        africa-south1:
+          hour: 110.164824576
+          month: 56294.225358336
+          month_1y: 48596.534439936
+          month_3y: 27830.826894336
         asia-east1:
           hour: 97.76855824
           month: 49959.73326064
@@ -35385,6 +36278,13 @@ compute:
       ram: 11776
     m3-megamem-128:
       cost:
+        africa-south1:
+          hour: 18.8477568
+          hour_spot: 3.9846912
+          month: 13758.862464
+          month_1y: 8140.4311296
+          month_3y: 4128.8809344
+          month_spot: 2908.824576
         asia-east1:
           hour: 16.68487584
           hour_spot: 3.52742656
@@ -35662,6 +36562,13 @@ compute:
       ram: 1952
     m3-megamem-64:
       cost:
+        africa-south1:
+          hour: 9.4238784
+          hour_spot: 1.9923456
+          month: 6879.431232
+          month_1y: 4070.2155648
+          month_3y: 2064.4404672
+          month_spot: 1454.412288
         asia-east1:
           hour: 8.34243792
           hour_spot: 1.76371328
@@ -35939,6 +36846,13 @@ compute:
       ram: 976
     m3-ultramem-128:
       cost:
+        africa-south1:
+          hour: 31.8691584
+          hour_spot: 6.74216448
+          month: 23264.485632
+          month_1y: 13769.2511232
+          month_3y: 6980.5678848
+          month_spot: 4921.7800704
         asia-east1:
           hour: 28.21200192
           hour_spot: 5.968465024
@@ -36216,6 +37130,13 @@ compute:
       ram: 3904
     m3-ultramem-32:
       cost:
+        africa-south1:
+          hour: 7.9672896
+          hour_spot: 1.68554112
+          month: 5816.121408
+          month_1y: 3442.3127808
+          month_3y: 1745.1419712
+          month_spot: 1230.4450176
         asia-east1:
           hour: 7.05300048
           hour_spot: 1.492116256
@@ -36493,6 +37414,13 @@ compute:
       ram: 976
     m3-ultramem-64:
       cost:
+        africa-south1:
+          hour: 15.9345792
+          hour_spot: 3.37108224
+          month: 11632.242816
+          month_1y: 6884.6255616
+          month_3y: 3490.2839424
+          month_spot: 2460.8900352
         asia-east1:
           hour: 14.10600096
           hour_spot: 2.984232512
@@ -36770,6 +37698,13 @@ compute:
       ram: 1952
     n1-highcpu-16:
       cost:
+        africa-south1:
+          hour: 0.7413597824
+          hour_spot: 0.1560768384
+          month: 378.8348488064
+          month_1y: 378.8348488064
+          month_3y: 378.8348488064
+          month_spot: 113.936092032
         asia-east1:
           hour: 0.6562784
           hour_spot: 0.1260304
@@ -37047,6 +37982,13 @@ compute:
       ram: 14.4
     n1-highcpu-2:
       cost:
+        africa-south1:
+          hour: 0.0926699728
+          hour_spot: 0.0195096048
+          month: 47.3543561008
+          month_1y: 47.3543561008
+          month_3y: 47.3543561008
+          month_spot: 14.242011504
         asia-east1:
           hour: 0.0820348
           hour_spot: 0.0157538
@@ -37324,6 +38266,13 @@ compute:
       ram: 1.8
     n1-highcpu-32:
       cost:
+        africa-south1:
+          hour: 1.4827195648
+          hour_spot: 0.3121536768
+          month: 757.6696976128
+          month_1y: 757.6696976128
+          month_3y: 757.6696976128
+          month_spot: 227.872184064
         asia-east1:
           hour: 1.3125568
           hour_spot: 0.2520608
@@ -37601,6 +38550,13 @@ compute:
       ram: 28.8
     n1-highcpu-4:
       cost:
+        africa-south1:
+          hour: 0.1853399456
+          hour_spot: 0.0390192096
+          month: 94.7087122016
+          month_1y: 94.7087122016
+          month_3y: 94.7087122016
+          month_spot: 28.484023008
         asia-east1:
           hour: 0.1640696
           hour_spot: 0.0315076
@@ -37878,6 +38834,13 @@ compute:
       ram: 3.6
     n1-highcpu-64:
       cost:
+        africa-south1:
+          hour: 2.9654391296
+          hour_spot: 0.6243073536
+          month: 1515.3393952256
+          month_1y: 1515.3393952256
+          month_3y: 1515.3393952256
+          month_spot: 455.744368128
         asia-east1:
           hour: 2.6251136
           hour_spot: 0.5041216
@@ -38155,6 +39118,13 @@ compute:
       ram: 57.6
     n1-highcpu-8:
       cost:
+        africa-south1:
+          hour: 0.3706798912
+          hour_spot: 0.0780384192
+          month: 189.4174244032
+          month_1y: 189.4174244032
+          month_3y: 189.4174244032
+          month_spot: 56.968046016
         asia-east1:
           hour: 0.3281392
           hour_spot: 0.0630152
@@ -38432,6 +39402,13 @@ compute:
       ram: 7.2
     n1-highcpu-96:
       cost:
+        africa-south1:
+          hour: 4.4481586944
+          hour_spot: 0.9364610304
+          month: 2273.0090928384
+          month_1y: 2273.0090928384
+          month_3y: 2273.0090928384
+          month_spot: 683.616552192
         asia-east1:
           hour: 3.9376704
           hour_spot: 0.7561824
@@ -38709,6 +39686,13 @@ compute:
       ram: 86.4
     n1-highmem-16:
       cost:
+        africa-south1:
+          hour: 1.237922624
+          hour_spot: 0.260616384
+          month: 632.578460864
+          month_1y: 632.578460864
+          month_3y: 632.578460864
+          month_spot: 190.24996032
         asia-east1:
           hour: 1.095856
           hour_spot: 0.210344
@@ -38986,6 +39970,13 @@ compute:
       ram: 104
     n1-highmem-2:
       cost:
+        africa-south1:
+          hour: 0.154740328
+          hour_spot: 0.032577048
+          month: 79.072307608
+          month_1y: 79.072307608
+          month_3y: 79.072307608
+          month_spot: 23.78124504
         asia-east1:
           hour: 0.136982
           hour_spot: 0.026293
@@ -39263,6 +40254,13 @@ compute:
       ram: 13
     n1-highmem-32:
       cost:
+        africa-south1:
+          hour: 2.475845248
+          hour_spot: 0.521232768
+          month: 1265.156921728
+          month_1y: 1265.156921728
+          month_3y: 1265.156921728
+          month_spot: 380.49992064
         asia-east1:
           hour: 2.191712
           hour_spot: 0.420688
@@ -39540,6 +40538,13 @@ compute:
       ram: 208
     n1-highmem-4:
       cost:
+        africa-south1:
+          hour: 0.309480656
+          hour_spot: 0.065154096
+          month: 158.144615216
+          month_1y: 158.144615216
+          month_3y: 158.144615216
+          month_spot: 47.56249008
         asia-east1:
           hour: 0.273964
           hour_spot: 0.052586
@@ -39817,6 +40822,13 @@ compute:
       ram: 26
     n1-highmem-64:
       cost:
+        africa-south1:
+          hour: 4.951690496
+          hour_spot: 1.042465536
+          month: 2530.313843456
+          month_1y: 2530.313843456
+          month_3y: 2530.313843456
+          month_spot: 760.99984128
         asia-east1:
           hour: 4.383424
           hour_spot: 0.841376
@@ -40094,6 +41106,13 @@ compute:
       ram: 416
     n1-highmem-8:
       cost:
+        africa-south1:
+          hour: 0.618961312
+          hour_spot: 0.130308192
+          month: 316.289230432
+          month_1y: 316.289230432
+          month_3y: 316.289230432
+          month_spot: 95.12498016
         asia-east1:
           hour: 0.547928
           hour_spot: 0.105172
@@ -40371,6 +41390,13 @@ compute:
       ram: 52
     n1-highmem-96:
       cost:
+        africa-south1:
+          hour: 7.427535744
+          hour_spot: 1.563698304
+          month: 3795.470765184
+          month_1y: 3795.470765184
+          month_3y: 3795.470765184
+          month_spot: 1141.49976192
         asia-east1:
           hour: 6.575136
           hour_spot: 1.262064
@@ -40648,6 +41674,13 @@ compute:
       ram: 624
     n1-standard-1:
       cost:
+        africa-south1:
+          hour: 0.062129675
+          hour_spot: 0.01308
+          month: 31.748263925
+          month_1y: 31.748263925
+          month_3y: 31.748263925
+          month_spot: 9.5484
         asia-east1:
           hour: 0.0549995
           hour_spot: 0.01055875
@@ -40925,6 +41958,13 @@ compute:
       ram: 3.75
     n1-standard-16:
       cost:
+        africa-south1:
+          hour: 0.9940748
+          hour_spot: 0.20928
+          month: 507.9722228
+          month_1y: 507.9722228
+          month_3y: 507.9722228
+          month_spot: 152.7744
         asia-east1:
           hour: 0.879992
           hour_spot: 0.16894
@@ -41202,6 +42242,13 @@ compute:
       ram: 60
     n1-standard-2:
       cost:
+        africa-south1:
+          hour: 0.12425935
+          hour_spot: 0.02616
+          month: 63.49652785
+          month_1y: 63.49652785
+          month_3y: 63.49652785
+          month_spot: 19.0968
         asia-east1:
           hour: 0.109999
           hour_spot: 0.0211175
@@ -41479,6 +42526,13 @@ compute:
       ram: 7.50
     n1-standard-32:
       cost:
+        africa-south1:
+          hour: 1.9881496
+          hour_spot: 0.41856
+          month: 1015.9444456
+          month_1y: 1015.9444456
+          month_3y: 1015.9444456
+          month_spot: 305.5488
         asia-east1:
           hour: 1.759984
           hour_spot: 0.33788
@@ -41756,6 +42810,13 @@ compute:
       ram: 120
     n1-standard-4:
       cost:
+        africa-south1:
+          hour: 0.2485187
+          hour_spot: 0.05232
+          month: 126.9930557
+          month_1y: 126.9930557
+          month_3y: 126.9930557
+          month_spot: 38.1936
         asia-east1:
           hour: 0.219998
           hour_spot: 0.042235
@@ -42033,6 +43094,13 @@ compute:
       ram: 15
     n1-standard-64:
       cost:
+        africa-south1:
+          hour: 3.9762992
+          hour_spot: 0.83712
+          month: 2031.8888912
+          month_1y: 2031.8888912
+          month_3y: 2031.8888912
+          month_spot: 611.0976
         asia-east1:
           hour: 3.519968
           hour_spot: 0.67576
@@ -42310,6 +43378,13 @@ compute:
       ram: 240
     n1-standard-8:
       cost:
+        africa-south1:
+          hour: 0.4970374
+          hour_spot: 0.10464
+          month: 253.9861114
+          month_1y: 253.9861114
+          month_3y: 253.9861114
+          month_spot: 76.3872
         asia-east1:
           hour: 0.439996
           hour_spot: 0.08447
@@ -42587,6 +43662,13 @@ compute:
       ram: 30
     n1-standard-96:
       cost:
+        africa-south1:
+          hour: 5.9644488
+          hour_spot: 1.25568
+          month: 3047.8333368
+          month_1y: 3047.8333368
+          month_3y: 3047.8333368
+          month_spot: 916.6464
         asia-east1:
           hour: 5.279952
           hour_spot: 1.01364
@@ -42864,6 +43946,13 @@ compute:
       ram: 360
     n2-highcpu-16:
       cost:
+        africa-south1:
+          hour: 0.750226976
+          hour_spot: 0.18152944
+          month: 438.242087122496
+          month_1y: 345.02570496
+          month_3y: 246.45566208
+          month_spot: 132.5164912
         asia-east1:
           hour: 0.664128
           hour_spot: 0.132976
@@ -43141,6 +44230,13 @@ compute:
       ram: 16
     n2-highcpu-2:
       cost:
+        africa-south1:
+          hour: 0.093778372
+          hour_spot: 0.02269118
+          month: 54.780260890312
+          month_1y: 43.12821312
+          month_3y: 30.80695776
+          month_spot: 16.5645614
         asia-east1:
           hour: 0.083016
           hour_spot: 0.016622
@@ -43418,6 +44514,13 @@ compute:
       ram: 2
     n2-highcpu-32:
       cost:
+        africa-south1:
+          hour: 1.500453952
+          hour_spot: 0.36305888
+          month: 876.484174244992
+          month_1y: 690.05140992
+          month_3y: 492.91132416
+          month_spot: 265.0329824
         asia-east1:
           hour: 1.328256
           hour_spot: 0.265952
@@ -43695,6 +44798,13 @@ compute:
       ram: 32
     n2-highcpu-4:
       cost:
+        africa-south1:
+          hour: 0.187556744
+          hour_spot: 0.04538236
+          month: 109.560521780624
+          month_1y: 86.25642624
+          month_3y: 61.61391552
+          month_spot: 33.1291228
         asia-east1:
           hour: 0.166032
           hour_spot: 0.033244
@@ -43972,6 +45082,13 @@ compute:
       ram: 4
     n2-highcpu-48:
       cost:
+        africa-south1:
+          hour: 2.250680928
+          hour_spot: 0.54458832
+          month: 1314.72626136749
+          month_1y: 1035.07711488
+          month_3y: 739.36698624
+          month_spot: 397.5494736
         asia-east1:
           hour: 1.992384
           hour_spot: 0.398928
@@ -44249,6 +45366,13 @@ compute:
       ram: 48
     n2-highcpu-64:
       cost:
+        africa-south1:
+          hour: 3.000907904
+          hour_spot: 0.72611776
+          month: 1752.96834848998
+          month_1y: 1380.10281984
+          month_3y: 985.82264832
+          month_spot: 530.0659648
         asia-east1:
           hour: 2.656512
           hour_spot: 0.531904
@@ -44526,6 +45650,13 @@ compute:
       ram: 64
     n2-highcpu-8:
       cost:
+        africa-south1:
+          hour: 0.375113488
+          hour_spot: 0.09076472
+          month: 219.121043561248
+          month_1y: 172.51285248
+          month_3y: 123.22783104
+          month_spot: 66.2582456
         asia-east1:
           hour: 0.332064
           hour_spot: 0.066488
@@ -44803,6 +45934,13 @@ compute:
       ram: 8
     n2-highcpu-80:
       cost:
+        africa-south1:
+          hour: 3.75113488
+          hour_spot: 0.9076472
+          month: 2191.21043561248
+          month_1y: 1725.1285248
+          month_3y: 1232.2783104
+          month_spot: 662.582456
         asia-east1:
           hour: 3.32064
           hour_spot: 0.66488
@@ -45080,6 +46218,13 @@ compute:
       ram: 80
     n2-highcpu-96:
       cost:
+        africa-south1:
+          hour: 4.501361856
+          hour_spot: 1.08917664
+          month: 2629.45252273498
+          month_1y: 2070.15422976
+          month_3y: 1478.73397248
+          month_spot: 795.0989472
         asia-east1:
           hour: 3.984768
           hour_spot: 0.797856
@@ -45357,6 +46502,13 @@ compute:
       ram: 96
     n2-highmem-128:
       cost:
+        africa-south1:
+          hour: 10.080724864
+          hour_spot: 2.43899072
+          month: 5888.61510640614
+          month_1y: 4635.87805824
+          month_3y: 3311.81288832
+          month_spot: 1780.4632256
         asia-east1:
           hour: 8.92384
           hour_spot: 1.785824
@@ -45634,6 +46786,13 @@ compute:
       ram: 864
     n2-highmem-16:
       cost:
+        africa-south1:
+          hour: 1.370930528
+          hour_spot: 0.33168784
+          month: 800.823584209088
+          month_1y: 630.45411648
+          month_3y: 450.39420864
+          month_spot: 242.1321232
         asia-east1:
           hour: 1.2136
           hour_spot: 0.242848
@@ -45911,6 +47070,13 @@ compute:
       ram: 128
     n2-highmem-2:
       cost:
+        africa-south1:
+          hour: 0.171366316
+          hour_spot: 0.04146098
+          month: 100.102948026136
+          month_1y: 78.80676456
+          month_3y: 56.29927608
+          month_spot: 30.2665154
         asia-east1:
           hour: 0.1517
           hour_spot: 0.030356
@@ -46188,6 +47354,13 @@ compute:
       ram: 16
     n2-highmem-32:
       cost:
+        africa-south1:
+          hour: 2.741861056
+          hour_spot: 0.66337568
+          month: 1601.64716841818
+          month_1y: 1260.90823296
+          month_3y: 900.78841728
+          month_spot: 484.2642464
         asia-east1:
           hour: 2.4272
           hour_spot: 0.485696
@@ -46465,6 +47638,13 @@ compute:
       ram: 256
     n2-highmem-4:
       cost:
+        africa-south1:
+          hour: 0.342732632
+          hour_spot: 0.08292196
+          month: 200.205896052272
+          month_1y: 157.61352912
+          month_3y: 112.59855216
+          month_spot: 60.5330308
         asia-east1:
           hour: 0.3034
           hour_spot: 0.060712
@@ -46742,6 +47922,13 @@ compute:
       ram: 32
     n2-highmem-48:
       cost:
+        africa-south1:
+          hour: 4.112791584
+          hour_spot: 0.99506352
+          month: 2402.47075262726
+          month_1y: 1891.36234944
+          month_3y: 1351.18262592
+          month_spot: 726.3963696
         asia-east1:
           hour: 3.6408
           hour_spot: 0.728544
@@ -47019,6 +48206,13 @@ compute:
       ram: 384
     n2-highmem-64:
       cost:
+        africa-south1:
+          hour: 5.483722112
+          hour_spot: 1.32675136
+          month: 3203.29433683635
+          month_1y: 2521.81646592
+          month_3y: 1801.57683456
+          month_spot: 968.5284928
         asia-east1:
           hour: 4.8544
           hour_spot: 0.971392
@@ -47296,6 +48490,13 @@ compute:
       ram: 512
     n2-highmem-8:
       cost:
+        africa-south1:
+          hour: 0.685465264
+          hour_spot: 0.16584392
+          month: 400.411792104544
+          month_1y: 315.22705824
+          month_3y: 225.19710432
+          month_spot: 121.0660616
         asia-east1:
           hour: 0.6068
           hour_spot: 0.121424
@@ -47573,6 +48774,13 @@ compute:
       ram: 64
     n2-highmem-80:
       cost:
+        africa-south1:
+          hour: 6.85465264
+          hour_spot: 1.6584392
+          month: 4004.11792104544
+          month_1y: 3152.2705824
+          month_3y: 2251.9710432
+          month_spot: 1210.660616
         asia-east1:
           hour: 6.068
           hour_spot: 1.21424
@@ -47850,6 +49058,13 @@ compute:
       ram: 640
     n2-highmem-96:
       cost:
+        africa-south1:
+          hour: 8.225583168
+          hour_spot: 1.99012704
+          month: 4804.94150525453
+          month_1y: 3782.72469888
+          month_3y: 2702.36525184
+          month_spot: 1452.7927392
         asia-east1:
           hour: 7.2816
           hour_spot: 1.457088
@@ -48127,6 +49342,13 @@ compute:
       ram: 768
     n2-standard-128:
       cost:
+        africa-south1:
+          hour: 8.129942272
+          hour_spot: 1.96706432
+          month: 4749.07325841971
+          month_1y: 3738.81733632
+          month_3y: 2670.86317056
+          month_spot: 1435.9569536
         asia-east1:
           hour: 7.196928
           hour_spot: 1.440512
@@ -48404,6 +49626,13 @@ compute:
       ram: 512
     n2-standard-16:
       cost:
+        africa-south1:
+          hour: 1.016242784
+          hour_spot: 0.24588304
+          month: 593.634157302464
+          month_1y: 467.35216704
+          month_3y: 333.85789632
+          month_spot: 179.4946192
         asia-east1:
           hour: 0.899616
           hour_spot: 0.180064
@@ -48681,6 +49910,13 @@ compute:
       ram: 64
     n2-standard-2:
       cost:
+        africa-south1:
+          hour: 0.127030348
+          hour_spot: 0.03073538
+          month: 74.204269662808
+          month_1y: 58.41902088
+          month_3y: 41.73223704
+          month_spot: 22.4368274
         asia-east1:
           hour: 0.112452
           hour_spot: 0.022508
@@ -48958,6 +50194,13 @@ compute:
       ram: 8
     n2-standard-32:
       cost:
+        africa-south1:
+          hour: 2.032485568
+          hour_spot: 0.49176608
+          month: 1187.26831460493
+          month_1y: 934.70433408
+          month_3y: 667.71579264
+          month_spot: 358.9892384
         asia-east1:
           hour: 1.799232
           hour_spot: 0.360128
@@ -49235,6 +50478,13 @@ compute:
       ram: 128
     n2-standard-4:
       cost:
+        africa-south1:
+          hour: 0.254060696
+          hour_spot: 0.06147076
+          month: 148.408539325616
+          month_1y: 116.83804176
+          month_3y: 83.46447408
+          month_spot: 44.8736548
         asia-east1:
           hour: 0.224904
           hour_spot: 0.045016
@@ -49512,6 +50762,13 @@ compute:
       ram: 16
     n2-standard-48:
       cost:
+        africa-south1:
+          hour: 3.048728352
+          hour_spot: 0.73764912
+          month: 1780.90247190739
+          month_1y: 1402.05650112
+          month_3y: 1001.57368896
+          month_spot: 538.4838576
         asia-east1:
           hour: 2.698848
           hour_spot: 0.540192
@@ -49789,6 +51046,13 @@ compute:
       ram: 192
     n2-standard-64:
       cost:
+        africa-south1:
+          hour: 4.064971136
+          hour_spot: 0.98353216
+          month: 2374.53662920986
+          month_1y: 1869.40866816
+          month_3y: 1335.43158528
+          month_spot: 717.9784768
         asia-east1:
           hour: 3.598464
           hour_spot: 0.720256
@@ -50066,6 +51330,13 @@ compute:
       ram: 256
     n2-standard-8:
       cost:
+        africa-south1:
+          hour: 0.508121392
+          hour_spot: 0.12294152
+          month: 296.817078651232
+          month_1y: 233.67608352
+          month_3y: 166.92894816
+          month_spot: 89.7473096
         asia-east1:
           hour: 0.449808
           hour_spot: 0.090032
@@ -50343,6 +51614,13 @@ compute:
       ram: 32
     n2-standard-80:
       cost:
+        africa-south1:
+          hour: 5.08121392
+          hour_spot: 1.2294152
+          month: 2968.17078651232
+          month_1y: 2336.7608352
+          month_3y: 1669.2894816
+          month_spot: 897.473096
         asia-east1:
           hour: 4.49808
           hour_spot: 0.90032
@@ -50620,6 +51898,13 @@ compute:
       ram: 320
     n2-standard-96:
       cost:
+        africa-south1:
+          hour: 6.097456704
+          hour_spot: 1.47529824
+          month: 3561.80494381478
+          month_1y: 2804.11300224
+          month_3y: 2003.14737792
+          month_spot: 1076.9677152
         asia-east1:
           hour: 5.397696
           hour_spot: 1.080384
@@ -50897,6 +52182,13 @@ compute:
       ram: 384
     n2d-highcpu-128:
       cost:
+        africa-south1:
+          hour: 5.221620224
+          hour_spot: 0.787562496
+          month: 3050.1885673687
+          month_1y: 2401.36931584
+          month_3y: 1715.35115008
+          month_spot: 574.92062208
         asia-east1:
           hour: 4.622336
           hour_spot: 1.471872
@@ -51174,6 +52466,13 @@ compute:
       ram: 128
     n2d-highcpu-16:
       cost:
+        africa-south1:
+          hour: 0.652702528
+          hour_spot: 0.098445312
+          month: 381.273570921088
+          month_1y: 300.17116448
+          month_3y: 214.41889376
+          month_spot: 71.86507776
         asia-east1:
           hour: 0.577792
           hour_spot: 0.183984
@@ -51451,6 +52750,13 @@ compute:
       ram: 16
     n2d-highcpu-2:
       cost:
+        africa-south1:
+          hour: 0.081587816
+          hour_spot: 0.012305664
+          month: 47.659196365136
+          month_1y: 37.52139556
+          month_3y: 26.80236172
+          month_spot: 8.98313472
         asia-east1:
           hour: 0.072224
           hour_spot: 0.022998
@@ -51728,6 +53034,13 @@ compute:
       ram: 2
     n2d-highcpu-224:
       cost:
+        africa-south1:
+          hour: 9.137835392
+          hour_spot: 1.378234368
+          month: 5337.82999289523
+          month_1y: 4202.39630272
+          month_3y: 3001.86451264
+          month_spot: 1006.11108864
         asia-east1:
           hour: 8.089088
           hour_spot: 2.575776
@@ -52005,6 +53318,13 @@ compute:
       ram: 224
     n2d-highcpu-32:
       cost:
+        africa-south1:
+          hour: 1.305405056
+          hour_spot: 0.196890624
+          month: 762.547141842176
+          month_1y: 600.34232896
+          month_3y: 428.83778752
+          month_spot: 143.73015552
         asia-east1:
           hour: 1.155584
           hour_spot: 0.367968
@@ -52282,6 +53602,13 @@ compute:
       ram: 32
     n2d-highcpu-4:
       cost:
+        africa-south1:
+          hour: 0.163175632
+          hour_spot: 0.024611328
+          month: 95.318392730272
+          month_1y: 75.04279112
+          month_3y: 53.60472344
+          month_spot: 17.96626944
         asia-east1:
           hour: 0.144448
           hour_spot: 0.045996
@@ -52559,6 +53886,13 @@ compute:
       ram: 4
     n2d-highcpu-48:
       cost:
+        africa-south1:
+          hour: 1.958107584
+          hour_spot: 0.295335936
+          month: 1143.82071276326
+          month_1y: 900.51349344
+          month_3y: 643.25668128
+          month_spot: 215.59523328
         asia-east1:
           hour: 1.733376
           hour_spot: 0.551952
@@ -52836,6 +54170,13 @@ compute:
       ram: 48
     n2d-highcpu-64:
       cost:
+        africa-south1:
+          hour: 2.610810112
+          hour_spot: 0.393781248
+          month: 1525.09428368435
+          month_1y: 1200.68465792
+          month_3y: 857.67557504
+          month_spot: 287.46031104
         asia-east1:
           hour: 2.311168
           hour_spot: 0.735936
@@ -53113,6 +54454,13 @@ compute:
       ram: 64
     n2d-highcpu-8:
       cost:
+        africa-south1:
+          hour: 0.326351264
+          hour_spot: 0.049222656
+          month: 190.636785460544
+          month_1y: 150.08558224
+          month_3y: 107.20944688
+          month_spot: 35.93253888
         asia-east1:
           hour: 0.288896
           hour_spot: 0.091992
@@ -53390,6 +54738,13 @@ compute:
       ram: 8
     n2d-highcpu-80:
       cost:
+        africa-south1:
+          hour: 3.26351264
+          hour_spot: 0.49222656
+          month: 1906.36785460544
+          month_1y: 1500.8558224
+          month_3y: 1072.0944688
+          month_spot: 359.3253888
         asia-east1:
           hour: 2.88896
           hour_spot: 0.91992
@@ -53667,6 +55022,13 @@ compute:
       ram: 80
     n2d-highcpu-96:
       cost:
+        africa-south1:
+          hour: 3.916215168
+          hour_spot: 0.590671872
+          month: 2287.64142552653
+          month_1y: 1801.02698688
+          month_3y: 1286.51336256
+          month_spot: 431.19046656
         asia-east1:
           hour: 3.466752
           hour_spot: 1.103904
@@ -53944,6 +55306,13 @@ compute:
       ram: 96
     n2d-highmem-16:
       cost:
+        africa-south1:
+          hour: 1.192686784
+          hour_spot: 0.179897088
+          month: 696.703214126464
+          month_1y: 548.49067424
+          month_3y: 391.83580448
+          month_spot: 131.32487424
         asia-east1:
           hour: 1.055808
           hour_spot: 0.336192
@@ -54221,6 +55590,13 @@ compute:
       ram: 128
     n2d-highmem-2:
       cost:
+        africa-south1:
+          hour: 0.149085848
+          hour_spot: 0.022487136
+          month: 87.087901765808
+          month_1y: 68.56133428
+          month_3y: 48.97947556
+          month_spot: 16.41560928
         asia-east1:
           hour: 0.131976
           hour_spot: 0.042024
@@ -54498,6 +55874,13 @@ compute:
       ram: 16
     n2d-highmem-32:
       cost:
+        africa-south1:
+          hour: 2.385373568
+          hour_spot: 0.359794176
+          month: 1393.40642825293
+          month_1y: 1096.98134848
+          month_3y: 783.67160896
+          month_spot: 262.64974848
         asia-east1:
           hour: 2.111616
           hour_spot: 0.672384
@@ -54775,6 +56158,13 @@ compute:
       ram: 256
     n2d-highmem-4:
       cost:
+        africa-south1:
+          hour: 0.298171696
+          hour_spot: 0.044974272
+          month: 174.175803531616
+          month_1y: 137.12266856
+          month_3y: 97.95895112
+          month_spot: 32.83121856
         asia-east1:
           hour: 0.263952
           hour_spot: 0.084048
@@ -55052,6 +56442,13 @@ compute:
       ram: 32
     n2d-highmem-48:
       cost:
+        africa-south1:
+          hour: 3.578060352
+          hour_spot: 0.539691264
+          month: 2090.10964237939
+          month_1y: 1645.47202272
+          month_3y: 1175.50741344
+          month_spot: 393.97462272
         asia-east1:
           hour: 3.167424
           hour_spot: 1.008576
@@ -55329,6 +56726,13 @@ compute:
       ram: 384
     n2d-highmem-64:
       cost:
+        africa-south1:
+          hour: 4.770747136
+          hour_spot: 0.719588352
+          month: 2786.81285650586
+          month_1y: 2193.96269696
+          month_3y: 1567.34321792
+          month_spot: 525.29949696
         asia-east1:
           hour: 4.223232
           hour_spot: 1.344768
@@ -55606,6 +57010,13 @@ compute:
       ram: 512
     n2d-highmem-8:
       cost:
+        africa-south1:
+          hour: 0.596343392
+          hour_spot: 0.089948544
+          month: 348.351607063232
+          month_1y: 274.24533712
+          month_3y: 195.91790224
+          month_spot: 65.66243712
         asia-east1:
           hour: 0.527904
           hour_spot: 0.168096
@@ -55883,6 +57294,13 @@ compute:
       ram: 64
     n2d-highmem-80:
       cost:
+        africa-south1:
+          hour: 5.96343392
+          hour_spot: 0.89948544
+          month: 3483.51607063232
+          month_1y: 2742.4533712
+          month_3y: 1959.1790224
+          month_spot: 656.6243712
         asia-east1:
           hour: 5.27904
           hour_spot: 1.68096
@@ -56160,6 +57578,13 @@ compute:
       ram: 640
     n2d-highmem-96:
       cost:
+        africa-south1:
+          hour: 7.156120704
+          hour_spot: 1.079382528
+          month: 4180.21928475878
+          month_1y: 3290.94404544
+          month_3y: 2351.01482688
+          month_spot: 787.94924544
         asia-east1:
           hour: 6.334848
           hour_spot: 2.017152
@@ -56437,6 +57862,13 @@ compute:
       ram: 768
     n2d-standard-128:
       cost:
+        africa-south1:
+          hour: 7.072994816
+          hour_spot: 1.066825728
+          month: 4131.66162978714
+          month_1y: 3252.75049216
+          month_3y: 2323.63770112
+          month_spot: 778.78278144
         asia-east1:
           hour: 6.261248
           hour_spot: 1.993728
@@ -56714,6 +58146,13 @@ compute:
       ram: 512
     n2d-standard-16:
       cost:
+        africa-south1:
+          hour: 0.884124352
+          hour_spot: 0.133353216
+          month: 516.457703723392
+          month_1y: 406.59381152
+          month_3y: 290.45471264
+          month_spot: 97.34784768
         asia-east1:
           hour: 0.782656
           hour_spot: 0.249216
@@ -56991,6 +58430,13 @@ compute:
       ram: 64
     n2d-standard-2:
       cost:
+        africa-south1:
+          hour: 0.110515544
+          hour_spot: 0.016669152
+          month: 64.557212965424
+          month_1y: 50.82422644
+          month_3y: 36.30683908
+          month_spot: 12.16848096
         asia-east1:
           hour: 0.097832
           hour_spot: 0.031152
@@ -57268,6 +58714,13 @@ compute:
       ram: 8
     n2d-standard-224:
       cost:
+        africa-south1:
+          hour: 12.377740928
+          hour_spot: 1.866945024
+          month: 7230.40785212749
+          month_1y: 5692.31336128
+          month_3y: 4066.36597696
+          month_spot: 1362.86986752
         asia-east1:
           hour: 10.957184
           hour_spot: 3.489024
@@ -57545,6 +58998,13 @@ compute:
       ram: 896
     n2d-standard-32:
       cost:
+        africa-south1:
+          hour: 1.768248704
+          hour_spot: 0.266706432
+          month: 1032.91540744678
+          month_1y: 813.18762304
+          month_3y: 580.90942528
+          month_spot: 194.69569536
         asia-east1:
           hour: 1.565312
           hour_spot: 0.498432
@@ -57822,6 +59282,13 @@ compute:
       ram: 128
     n2d-standard-4:
       cost:
+        africa-south1:
+          hour: 0.221031088
+          hour_spot: 0.033338304
+          month: 129.114425930848
+          month_1y: 101.64845288
+          month_3y: 72.61367816
+          month_spot: 24.33696192
         asia-east1:
           hour: 0.195664
           hour_spot: 0.062304
@@ -58099,6 +59566,13 @@ compute:
       ram: 16
     n2d-standard-48:
       cost:
+        africa-south1:
+          hour: 2.652373056
+          hour_spot: 0.400059648
+          month: 1549.37311117018
+          month_1y: 1219.78143456
+          month_3y: 871.36413792
+          month_spot: 292.04354304
         asia-east1:
           hour: 2.347968
           hour_spot: 0.747648
@@ -58376,6 +59850,13 @@ compute:
       ram: 192
     n2d-standard-64:
       cost:
+        africa-south1:
+          hour: 3.536497408
+          hour_spot: 0.533412864
+          month: 2065.83081489357
+          month_1y: 1626.37524608
+          month_3y: 1161.81885056
+          month_spot: 389.39139072
         asia-east1:
           hour: 3.130624
           hour_spot: 0.996864
@@ -58653,6 +60134,13 @@ compute:
       ram: 256
     n2d-standard-8:
       cost:
+        africa-south1:
+          hour: 0.442062176
+          hour_spot: 0.066676608
+          month: 258.228851861696
+          month_1y: 203.29690576
+          month_3y: 145.22735632
+          month_spot: 48.67392384
         asia-east1:
           hour: 0.391328
           hour_spot: 0.124608
@@ -58930,6 +60418,13 @@ compute:
       ram: 32
     n2d-standard-80:
       cost:
+        africa-south1:
+          hour: 4.42062176
+          hour_spot: 0.66676608
+          month: 2582.28851861696
+          month_1y: 2032.9690576
+          month_3y: 1452.2735632
+          month_spot: 486.7392384
         asia-east1:
           hour: 3.91328
           hour_spot: 1.24608
@@ -59207,6 +60702,13 @@ compute:
       ram: 320
     n2d-standard-96:
       cost:
+        africa-south1:
+          hour: 5.304746112
+          hour_spot: 0.800119296
+          month: 3098.74622234035
+          month_1y: 2439.56286912
+          month_3y: 1742.72827584
+          month_spot: 584.08708608
         asia-east1:
           hour: 4.695936
           hour_spot: 1.495296
@@ -59484,6 +60986,11 @@ compute:
       ram: 384
     t2a-standard-1:
       cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
         asia-east1:
           hour: 0
           month: 0
@@ -59693,6 +61200,11 @@ compute:
       ram: 4
     t2a-standard-16:
       cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
         asia-east1:
           hour: 0
           month: 0
@@ -59902,6 +61414,11 @@ compute:
       ram: 64
     t2a-standard-2:
       cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
         asia-east1:
           hour: 0
           month: 0
@@ -60111,6 +61628,11 @@ compute:
       ram: 8
     t2a-standard-32:
       cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
         asia-east1:
           hour: 0
           month: 0
@@ -60320,6 +61842,11 @@ compute:
       ram: 128
     t2a-standard-4:
       cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
         asia-east1:
           hour: 0
           month: 0
@@ -60529,6 +62056,11 @@ compute:
       ram: 16
     t2a-standard-48:
       cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
         asia-east1:
           hour: 0
           month: 0
@@ -60738,6 +62270,11 @@ compute:
       ram: 192
     t2a-standard-8:
       cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
         asia-east1:
           hour: 0
           month: 0
@@ -60947,6 +62484,13 @@ compute:
       ram: 32
     t2d-standard-1:
       cost:
+        africa-south1:
+          hour: 0.055257772
+          hour_spot: 0.008758368
+          month: 40.33817356
+          month_1y: 25.41211322
+          month_3y: 18.15341954
+          month_spot: 6.39360864
         asia-east1:
           hour: 0.048916
           hour_spot: 0.010752
@@ -61224,6 +62768,13 @@ compute:
       ram: 4
     t2d-standard-16:
       cost:
+        africa-south1:
+          hour: 0.884124352
+          hour_spot: 0.140133888
+          month: 645.41077696
+          month_1y: 406.59381152
+          month_3y: 290.45471264
+          month_spot: 102.29773824
         asia-east1:
           hour: 0.782656
           hour_spot: 0.172032
@@ -61501,6 +63052,13 @@ compute:
       ram: 64
     t2d-standard-2:
       cost:
+        africa-south1:
+          hour: 0.110515544
+          hour_spot: 0.017516736
+          month: 80.67634712
+          month_1y: 50.82422644
+          month_3y: 36.30683908
+          month_spot: 12.78721728
         asia-east1:
           hour: 0.097832
           hour_spot: 0.021504
@@ -61778,6 +63336,13 @@ compute:
       ram: 8
     t2d-standard-32:
       cost:
+        africa-south1:
+          hour: 1.768248704
+          hour_spot: 0.280267776
+          month: 1290.82155392
+          month_1y: 813.18762304
+          month_3y: 580.90942528
+          month_spot: 204.59547648
         asia-east1:
           hour: 1.565312
           hour_spot: 0.344064
@@ -62055,6 +63620,13 @@ compute:
       ram: 128
     t2d-standard-4:
       cost:
+        africa-south1:
+          hour: 0.221031088
+          hour_spot: 0.035033472
+          month: 161.35269424
+          month_1y: 101.64845288
+          month_3y: 72.61367816
+          month_spot: 25.57443456
         asia-east1:
           hour: 0.195664
           hour_spot: 0.043008
@@ -62332,6 +63904,13 @@ compute:
       ram: 16
     t2d-standard-48:
       cost:
+        africa-south1:
+          hour: 2.652373056
+          hour_spot: 0.420401664
+          month: 1936.23233088
+          month_1y: 1219.78143456
+          month_3y: 871.36413792
+          month_spot: 306.89321472
         asia-east1:
           hour: 2.347968
           hour_spot: 0.516096
@@ -62609,6 +64188,13 @@ compute:
       ram: 192
     t2d-standard-60:
       cost:
+        africa-south1:
+          hour: 3.31546632
+          hour_spot: 0.52550208
+          month: 2420.2904136
+          month_1y: 1524.7267932
+          month_3y: 1089.2051724
+          month_spot: 383.6165184
         asia-east1:
           hour: 2.93496
           hour_spot: 0.64512
@@ -62886,6 +64472,13 @@ compute:
       ram: 240
     t2d-standard-8:
       cost:
+        africa-south1:
+          hour: 0.442062176
+          hour_spot: 0.070066944
+          month: 322.70538848
+          month_1y: 203.29690576
+          month_3y: 145.22735632
+          month_spot: 51.14886912
         asia-east1:
           hour: 0.391328
           hour_spot: 0.086016
@@ -68475,6 +70068,9 @@ compute:
     ip:
       unused:
         cost:
+          africa-south1:
+            hour: 0.01308
+            month: 9.5484
           asia-east1:
             hour: 0.01
             month: 7.3
@@ -68594,6 +70190,9 @@ compute:
             month: 8.03
       vm:
         cost:
+          africa-south1:
+            hour: 0.004
+            month: 2.92
           asia-east1:
             hour: 0.004
             month: 2.92
@@ -68714,6 +70313,8 @@ compute:
     nat:
       data:
         cost:
+          africa-south1:
+            month: 0.045
           asia-east1:
             month: 0.045
           asia-east2:
@@ -68794,6 +70395,9 @@ compute:
             month: 0.045
       gateway:
         cost:
+          africa-south1:
+            hour: 0.0448
+            month: 32.704
           asia-east1:
             hour: 0.0448
             month: 32.704
@@ -68917,6 +70521,8 @@ compute:
           australia:
             cost:
               0-1:
+                africa-south1:
+                  month: 0.19
                 asia-east1:
                   month: 0.19
                 asia-east2:
@@ -68996,6 +70602,8 @@ compute:
                 us-west4:
                   month: 0.19
               1-10:
+                africa-south1:
+                  month: 0.18
                 asia-east1:
                   month: 0.18
                 asia-east2:
@@ -69075,6 +70683,8 @@ compute:
                 us-west4:
                   month: 0.18
               10n:
+                africa-south1:
+                  month: 0.15
                 asia-east1:
                   month: 0.15
                 asia-east2:
@@ -69156,6 +70766,8 @@ compute:
           china:
             cost:
               0-1:
+                africa-south1:
+                  month: 0.23
                 asia-east1:
                   month: 0.23
                 asia-east2:
@@ -69235,6 +70847,8 @@ compute:
                 us-west4:
                   month: 0.23
               1-10:
+                africa-south1:
+                  month: 0.22
                 asia-east1:
                   month: 0.22
                 asia-east2:
@@ -69314,6 +70928,8 @@ compute:
                 us-west4:
                   month: 0.22
               10n:
+                africa-south1:
+                  month: 0.2
                 asia-east1:
                   month: 0.2
                 asia-east2:
@@ -69394,6 +71010,8 @@ compute:
                   month: 0.2
           cost:
             0-1:
+              africa-south1:
+                month: 0.12
               asia-east1:
                 month: 0.12
               asia-east2:
@@ -69473,6 +71091,8 @@ compute:
               us-west4:
                 month: 0.12
             1-10:
+              africa-south1:
+                month: 0.11
               asia-east1:
                 month: 0.11
               asia-east2:
@@ -69552,6 +71172,8 @@ compute:
               us-west4:
                 month: 0.11
             10n:
+              africa-south1:
+                month: 0.08
               asia-east1:
                 month: 0.08
               asia-east2:
@@ -69633,6 +71255,9 @@ compute:
     vpn:
       tunnel:
         cost:
+          africa-south1:
+            hour: 0.0654
+            month: 47.742
           asia-east1:
             hour: 0.05
             month: 36.5
@@ -69753,6 +71378,8 @@ compute:
   storage:
     balanced:
       cost:
+        africa-south1:
+          month: 0.1308
         asia-east1:
           month: 0.1
         asia-east2:
@@ -69834,6 +71461,8 @@ compute:
       type: pd-balanced
     balanced-replicated:
       cost:
+        africa-south1:
+          month: 0.2616
         asia-east1:
           month: 0.2
         asia-east2:
@@ -69915,6 +71544,8 @@ compute:
       type: pd-balanced
     extreme:
       cost:
+        africa-south1:
+          month: 0.1635
         asia-east1:
           month: 0.125
         asia-east2:
@@ -69996,6 +71627,8 @@ compute:
       type: pd-extreme
     hdd:
       cost:
+        africa-south1:
+          month: 0.05232
         asia-east1:
           month: 0.04
         asia-east2:
@@ -70077,6 +71710,8 @@ compute:
       type: pd-standard
     hdd-replicated:
       cost:
+        africa-south1:
+          month: 0.10464
         asia-east1:
           month: 0.08
         asia-east2:
@@ -70158,6 +71793,8 @@ compute:
       type: pd-standard
     hyperdisk-extreme:
       cost:
+        africa-south1:
+          month: 0.1635
         asia-east1:
           month: 0.145
         asia-east2:
@@ -70239,6 +71876,10 @@ compute:
       type: hyperdisk-extreme
     local:
       cost:
+        africa-south1:
+          month: 0.10464
+          month_1y: 0.0659232
+          month_3y: 0.047088
         asia-east1:
           month: 0.08
           month_1y: 0.0504
@@ -70398,6 +72039,8 @@ compute:
       type: pd-local
     snapshot:
       cost:
+        africa-south1:
+          month: 0.0654
         asia-east1:
           month: 0.05
         asia-east2:
@@ -70485,6 +72128,8 @@ compute:
       type: pd-snapshot
     ssd:
       cost:
+        africa-south1:
+          month: 0.22236
         asia-east1:
           month: 0.17
         asia-east2:
@@ -70566,6 +72211,8 @@ compute:
       type: pd-ssd
     ssd-replicated:
       cost:
+        africa-south1:
+          month: 0.44472
         asia-east1:
           month: 0.34
         asia-east2:
@@ -70662,6 +72309,8 @@ monitoring:
   data:
     cost:
       0-100000:
+        africa-south1:
+          month: 0.258
         asia-east1:
           month: 0.258
         asia-east2:
@@ -70741,6 +72390,8 @@ monitoring:
         us-west4:
           month: 0.258
       100000-250000:
+        africa-south1:
+          month: 0.151
         asia-east1:
           month: 0.151
         asia-east2:
@@ -70820,6 +72471,8 @@ monitoring:
         us-west4:
           month: 0.151
       250000n:
+        africa-south1:
+          month: 0.061
         asia-east1:
           month: 0.061
         asia-east2:
@@ -70906,6 +72559,8 @@ multi-region:
   us-multi:
     description: Data centers in the United States
 region:
+  africa-south1:
+    location: South Africa
   asia-east1:
     location: Taiwan
   asia-east2:
@@ -70988,6 +72643,8 @@ storage:
   bucket:
     archiv:
       cost:
+        africa-south1:
+          month: 0.002499996
         asia-east1:
           month: 0.0015
         asia-east2:
@@ -71084,6 +72741,8 @@ storage:
           month: 0.0024
     coldline:
       cost:
+        africa-south1:
+          month: 0.007
         asia-east1:
           month: 0.005
         asia-east2:
@@ -71180,6 +72839,8 @@ storage:
           month: 0.007
     dra:
       cost:
+        africa-south1:
+          month: 0.025
         asia-east1:
           month: 0.02
         asia-east2:
@@ -71276,6 +72937,8 @@ storage:
           month: 0.02
     nearline:
       cost:
+        africa-south1:
+          month: 0.014
         asia-east1:
           month: 0.01
         asia-east2:
@@ -71372,6 +73035,8 @@ storage:
           month: 0.015
     standard:
       cost:
+        africa-south1:
+          month: 0.025
         asia-east1:
           month: 0.02
         asia-east2:
@@ -71469,6 +73134,8 @@ storage:
   retrieval:
     archiv:
       cost:
+        africa-south1:
+          month: 0.05
         asia-east1:
           month: 0.05
         asia-east2:
@@ -71565,6 +73232,8 @@ storage:
           month: 0.05
     coldline:
       cost:
+        africa-south1:
+          month: 0.02
         asia-east1:
           month: 0.02
         asia-east2:
@@ -71661,6 +73330,8 @@ storage:
           month: 0.02
     nearline:
       cost:
+        africa-south1:
+          month: 0.01
         asia-east1:
           month: 0.01
         asia-east2:
