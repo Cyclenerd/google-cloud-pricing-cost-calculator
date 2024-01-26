@@ -2,6 +2,9 @@
 
 # https://cloud.google.com/storage/docs/locations#location-r
 region:
+  # Africa
+  africa-south1:
+    location: South Africa
   # Asia Pacific
   asia-east1:
     location: Taiwan
