@@ -36,24 +36,24 @@ rocky-linux-9-optimized-gcp-arm64-v20240111;Rocky Linux, Rocky Linux, 9 optimize
 rocky-linux-9-optimized-gcp-v20240111;Rocky Linux, Rocky Linux, 9 optimized for GCP, x86_64 built on 20240111;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp;X86_64;2024-01-11T11:06:00.087-08:00;;READY
 rocky-linux-9-v20240111;Rocky Linux, Rocky Linux, 9, x86_64 built on 20240111;20;rocky-linux-cloud;rocky-linux-9;X86_64;2024-01-11T10:58:06.991-08:00;;READY
 sles-12-sp5-v20231108-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20231108;10;suse-cloud;sles-12;X86_64;2023-11-07T18:11:20.449-08:00;;READY
-sles-15-sp5-v20231214-arm64;SUSE, SUSE Linux Enterprise Server 15 SP5, arm64, built on 20231214;10;suse-cloud;sles-15-arm64;ARM64;2023-12-13T22:44:49.691-08:00;;READY
-sles-15-sp5-v20231214-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5, x86_64, built on 20231214;10;suse-cloud;sles-15;X86_64;2023-12-14T00:49:09.950-08:00;;READY
+sles-15-sp5-v20240126-arm64;SUSE, SUSE Linux Enterprise Server 15 SP5, arm64, built on 20240126;10;suse-cloud;sles-15-arm64;ARM64;2024-01-26T08:50:55.413-08:00;;READY
+sles-15-sp5-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5, x86_64, built on 20240126;10;suse-cloud;sles-15;X86_64;2024-01-26T08:55:51.682-08:00;;READY
 sles-12-sp5-sap-v20240125-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5 for SAP, x86_64, built on 20240125;10;suse-sap-cloud;sles-12-sp5-sap;X86_64;2024-01-24T18:21:20.444-08:00;;READY
 sles-15-sp2-sap-v20231214-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP2 for SAP, x86_64, built on 20231214;10;suse-sap-cloud;sles-15-sp2-sap;X86_64;2023-12-13T22:32:27.750-08:00;;READY
 sles-15-sp3-sap-v20231214-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP3 for SAP, x86_64, built on 20231214;10;suse-sap-cloud;sles-15-sp3-sap;X86_64;2023-12-14T08:36:02.089-08:00;;READY
 sles-15-sp4-sap-v20231214-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP, x86_64, built on 20231214;10;suse-sap-cloud;sles-15-sp4-sap;X86_64;2023-12-13T22:32:34.444-08:00;;READY
-sles-15-sp5-sap-v20231214-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP, x86_64, built on 20231214;10;suse-sap-cloud;sles-15-sp5-sap;X86_64;2023-12-13T23:06:36.512-08:00;;READY
+sles-15-sp5-sap-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP, x86_64, built on 20240126;10;suse-sap-cloud;sles-15-sp5-sap;X86_64;2024-01-26T11:16:20.062-08:00;;READY
 sles-sap-15-sp4-hardened-v20231214-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP hardened with security features, x86_64, built on 20231214;10;suse-sap-cloud;sles-sap-15-sp4-hardened;X86_64;2023-12-14T03:37:01.460-08:00;;READY
-sles-sap-15-sp5-hardened-v20231214-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP hardened with security features, x86_64, built on 20231214;10;suse-sap-cloud;sles-sap-15-sp5-hardened;X86_64;2023-12-14T02:58:28.663-08:00;;READY
-ubuntu-pro-1604-xenial-v20240116;Canonical, Ubuntu, 16.04 LTS Pro Server, amd64 xenial pro server image built on 2024-01-16;10;ubuntu-os-pro-cloud;ubuntu-pro-1604-lts;X86_64;2024-01-16T14:03:21.711-08:00;;READY
+sles-sap-15-sp5-hardened-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP hardened with security features, x86_64, built on 20240126;10;suse-sap-cloud;sles-sap-15-sp5-hardened;X86_64;2024-01-26T11:16:30.130-08:00;;READY
+ubuntu-pro-1604-xenial-v20240126;Canonical, Ubuntu, 16.04 LTS Pro Server, amd64 xenial pro server image built on 2024-01-26;10;ubuntu-os-pro-cloud;ubuntu-pro-1604-lts;X86_64;2024-01-26T02:55:51.086-08:00;;READY
 ubuntu-pro-1804-bionic-arm64-v20240125;Canonical, Ubuntu, 18.04 LTS Pro Server, arm64 bionic pro server image built on 2024-01-25;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts-arm64;ARM64;2024-01-25T08:32:57.304-08:00;;READY
 ubuntu-pro-1804-bionic-v20240125;Canonical, Ubuntu, 18.04 LTS Pro Server, amd64 bionic pro server image built on 2024-01-25;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts;X86_64;2024-01-25T08:32:56.777-08:00;;READY
 ubuntu-pro-2004-focal-arm64-v20240110;Canonical, Ubuntu, 20.04 LTS Pro Server, arm64 focal pro server image built on 2024-01-10;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts-arm64;ARM64;2024-01-10T16:30:44.368-08:00;;READY
 ubuntu-pro-2004-focal-v20240110;Canonical, Ubuntu, 20.04 LTS Pro Server, amd64 focal pro server image built on 2024-01-10;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts;X86_64;2024-01-10T16:30:48.940-08:00;;READY
-ubuntu-pro-2204-jammy-arm64-v20240119a;Canonical, Ubuntu, 22.04 LTS Pro Server, arm64 jammy pro server image built on 2024-01-19;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts-arm64;ARM64;2024-01-19T12:24:01.182-08:00;;READY
-ubuntu-pro-2204-jammy-v20240119a;Canonical, Ubuntu, 22.04 LTS Pro Server, amd64 jammy pro server image built on 2024-01-19;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts;X86_64;2024-01-19T12:23:58.233-08:00;;READY
+ubuntu-pro-2204-jammy-arm64-v20240126;Canonical, Ubuntu, 22.04 LTS Pro Server, arm64 jammy pro server image built on 2024-01-26;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts-arm64;ARM64;2024-01-25T19:47:55.746-08:00;;READY
+ubuntu-pro-2204-jammy-v20240126;Canonical, Ubuntu, 22.04 LTS Pro Server, amd64 jammy pro server image built on 2024-01-26;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts;X86_64;2024-01-25T19:47:59.105-08:00;;READY
 ubuntu-pro-fips-1804-bionic-v20240118;Canonical, Ubuntu, 18.04 LTS Pro FIPS Server, amd64 bionic pro fips server image built on 2024-01-18;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-1804-lts;X86_64;2024-01-18T02:25:39.920-08:00;;READY
-ubuntu-pro-fips-2004-focal-v20240117;Canonical, Ubuntu, 20.04 LTS Pro FIPS Server, amd64 focal pro fips server image built on 2024-01-17;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-2004-lts;X86_64;2024-01-18T02:27:40.586-08:00;;READY
+ubuntu-pro-fips-2004-focal-v20240126;Canonical, Ubuntu, 20.04 LTS Pro FIPS Server, amd64 focal pro fips server image built on 2024-01-26;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-2004-lts;X86_64;2024-01-26T15:15:34.272-08:00;;READY
 sql-2014-enterprise-windows-2016-dc-v20240111;Microsoft, SQL Server 2014 Enterprise, on Windows Server 2016 Datacenter, x64 built on 20240111;50;windows-sql-cloud;sql-ent-2014-win-2016;X86_64;2024-01-11T16:44:48.157-08:00;;READY
 cos-arm64-101-17162-336-47;Google, Container-Optimized OS, 101-17162.336.47 LTS, Kernel: COS-5.15.133 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-arm64-101-lts;10;cos-cloud;cos-arm64-101-lts;ARM64;2024-01-16T15:05:03.830-08:00;;READY
 cos-arm64-105-17412-226-68;Google, Container-Optimized OS, 105-17412.226.68 LTS, Kernel: COS-5.15.133 Kubernetes: 1.25.5 Docker: 23.0.3 Family: cos-arm64-105-lts;10;cos-cloud;cos-arm64-105-lts;ARM64;2024-01-16T15:05:12.532-08:00;;READY
@@ -64,8 +64,8 @@ cos-arm64-stable-109-17800-66-65;Google, Container-Optimized OS, 109-17800.66.65
 cos-beta-109-17800-66-65;Google, Container-Optimized OS, 109-17800.66.65 beta, Kernel: COS-6.1.58 Kubernetes: 1.27.3 Docker: 24.0.5 Family: cos-beta;10;cos-cloud;cos-beta;X86_64;2024-01-22T13:11:49.589-08:00;;READY
 ubuntu-2004-focal-arm64-v20240110;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2024-01-10;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2024-01-10T16:24:07.023-08:00;;READY
 ubuntu-2004-focal-v20240110;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2024-01-10;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2024-01-10T16:24:05.902-08:00;;READY
-ubuntu-2204-jammy-arm64-v20240119a;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2024-01-19;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2024-01-19T12:23:31.445-08:00;;READY
-ubuntu-2204-jammy-v20240119a;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2024-01-19;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2024-01-19T12:23:27.153-08:00;;READY
+ubuntu-2204-jammy-arm64-v20240126;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2024-01-26;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2024-01-25T20:14:47.644-08:00;;READY
+ubuntu-2204-jammy-v20240126;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2024-01-26;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2024-01-25T20:14:46.977-08:00;;READY
 ubuntu-2304-lunar-amd64-v20240109;Canonical, Ubuntu, 23.04, amd64 lunar image built on 2024-01-09;10;ubuntu-os-cloud;ubuntu-2304-amd64;X86_64;2024-01-09T16:45:57.370-08:00;;READY
 ubuntu-2304-lunar-arm64-v20240109;Canonical, Ubuntu, 23.04, arm64 lunar image built on 2024-01-09;10;ubuntu-os-cloud;ubuntu-2304-arm64;ARM64;2024-01-09T16:45:58.402-08:00;;READY
 ubuntu-2310-mantic-amd64-v20240125;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2024-01-25;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2024-01-24T19:48:02.376-08:00;;READY
