@@ -3,7 +3,7 @@ module skus
 go 1.21
 
 require (
-	cloud.google.com/go/billing v1.18.0
+	cloud.google.com/go/billing v1.18.1
 	github.com/mattn/go-sqlite3 v1.14.19
 	golang.org/x/oauth2 v0.16.0
 	google.golang.org/api v0.157.0
@@ -35,8 +35,8 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
-	google.golang.org/genproto v0.0.0-20240102182953-50ed04b92917 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20240102182953-50ed04b92917 // indirect
+	google.golang.org/genproto v0.0.0-20240116215550-a9fa1716bcac // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20240122161410-6c6643bf1457 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240116215550-a9fa1716bcac // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
 )
