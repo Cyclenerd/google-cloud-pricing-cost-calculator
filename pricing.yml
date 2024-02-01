@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Fri Jan 26 10:03:25 2024
-  timestamp: 1706263405
+  generated: Thu Feb  1 03:54:24 2024
+  timestamp: 1706759664
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -72560,7 +72560,7 @@ multi-region:
     description: Data centers in the United States
 region:
   africa-south1:
-    location: South Africa
+    location: Johannesburg
   asia-east1:
     location: Taiwan
   asia-east2:
