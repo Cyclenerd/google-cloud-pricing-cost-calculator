@@ -6,7 +6,7 @@ require (
 	cloud.google.com/go/billing v1.18.2
 	github.com/mattn/go-sqlite3 v1.14.20
 	golang.org/x/oauth2 v0.16.0
-	google.golang.org/api v0.160.0
+	google.golang.org/api v0.161.0
 	google.golang.org/grpc v1.61.0
 )
 
