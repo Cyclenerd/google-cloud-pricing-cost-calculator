@@ -29,9 +29,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'gcosts/go.mod'
-          cache-dependency-path: |
-            'build/go.sum'
-            'gcosts/go.sum'
+          cache-dependency-path: '**/go.sum'
 
       # https://github.com/marketplace/actions/run-golangci-lint
       - name: 🌡️ Lint build

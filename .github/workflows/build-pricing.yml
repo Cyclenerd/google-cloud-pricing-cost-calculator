@@ -28,9 +28,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'gcosts/go.mod'
-          cache-dependency-path: |
-            'build/go.sum'
-            'gcosts/go.sum'
+          cache-dependency-path: '**/go.sum'
 
       # Compile build/skus CLI
       - name: 🍳 Build build/skus
