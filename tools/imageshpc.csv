@@ -1,4 +1,4 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS
 fedora-37-base-image-v20231113;;10;cloud-hpc-image-public;fedora-37-base-image;;2023-11-14T09:01:18.075-08:00;;READY
-hpc-centos-7-v20230727;Google, HPC CentOS, 7, CentOS-7-based HPC-optimized VM image, x86_64 built on 20230727;20;cloud-hpc-image-public;hpc-centos-7;;2023-07-26T22:10:26.967-07:00;;READY
-hpc-rocky-linux-8-v20230727;Google, HPC Rocky Linux, 8, Rocky-Linux-8-based HPC-optimized VM image, x86_64 built on 20230727;20;cloud-hpc-image-public;hpc-rocky-linux-8;;2023-07-26T22:10:29.468-07:00;;READY
+hpc-centos-7-v20240126;Google, HPC CentOS, 7, CentOS-7-based HPC-optimized VM image, x86_64 built on 20240126;20;cloud-hpc-image-public;hpc-centos-7;;2024-02-08T14:19:46.646-08:00;;READY
+hpc-rocky-linux-8-v20240126;Google, HPC Rocky Linux, 8, Rocky-Linux-8-based HPC-optimized VM image, x86_64 built on 20240126;20;cloud-hpc-image-public;hpc-rocky-linux-8;;2024-02-08T14:19:44.637-08:00;;READY
