@@ -34,7 +34,6 @@ rocky-linux-9-arm64-v20240111;Rocky Linux, Rocky Linux, 9, aarch64 built on 2024
 rocky-linux-9-optimized-gcp-arm64-v20240111;Rocky Linux, Rocky Linux, 9 optimized for GCP, aarch64 built on 20240111;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp-arm64;ARM64;2024-01-11T11:12:50.961-08:00;;READY
 rocky-linux-9-optimized-gcp-v20240111;Rocky Linux, Rocky Linux, 9 optimized for GCP, x86_64 built on 20240111;20;rocky-linux-cloud;rocky-linux-9-optimized-gcp;X86_64;2024-01-11T11:06:00.087-08:00;;READY
 rocky-linux-9-v20240111;Rocky Linux, Rocky Linux, 9, x86_64 built on 20240111;20;rocky-linux-cloud;rocky-linux-9;X86_64;2024-01-11T10:58:06.991-08:00;;READY
-sles-12-sp5-v20231108-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20231108;10;suse-cloud;sles-12;X86_64;2023-11-07T18:11:20.449-08:00;;READY
 sles-12-sp5-v20240209-x86-64;SUSE, SUSE Linux Enterprise Server 12 SP5, x86_64, built on 20240209;10;suse-cloud;sles-12;X86_64;2024-02-08T18:20:53.316-08:00;;READY
 sles-15-sp5-v20240126-arm64;SUSE, SUSE Linux Enterprise Server 15 SP5, arm64, built on 20240126;10;suse-cloud;sles-15-arm64;ARM64;2024-01-26T08:50:55.413-08:00;;READY
 sles-15-sp5-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5, x86_64, built on 20240126;10;suse-cloud;sles-15;X86_64;2024-01-26T08:55:51.682-08:00;;READY
@@ -46,14 +45,14 @@ sles-15-sp5-sap-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for S
 sles-sap-15-sp4-hardened-v20240208-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP hardened with security features, x86_64, built on 20240208;10;suse-sap-cloud;sles-sap-15-sp4-hardened;X86_64;2024-02-08T09:56:29.727-08:00;;READY
 sles-sap-15-sp5-hardened-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP hardened with security features, x86_64, built on 20240126;10;suse-sap-cloud;sles-sap-15-sp5-hardened;X86_64;2024-01-26T11:16:30.130-08:00;;READY
 ubuntu-pro-1604-xenial-v20240202;Canonical, Ubuntu, 16.04 LTS Pro Server, amd64 xenial pro server image built on 2024-02-02;10;ubuntu-os-pro-cloud;ubuntu-pro-1604-lts;X86_64;2024-02-02T02:57:42.348-08:00;;READY
-ubuntu-pro-1804-bionic-arm64-v20240202;Canonical, Ubuntu, 18.04 LTS Pro Server, arm64 bionic pro server image built on 2024-02-02;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts-arm64;ARM64;2024-02-01T22:04:38.527-08:00;;READY
-ubuntu-pro-1804-bionic-v20240202;Canonical, Ubuntu, 18.04 LTS Pro Server, amd64 bionic pro server image built on 2024-02-02;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts;X86_64;2024-02-01T22:04:37.724-08:00;;READY
-ubuntu-pro-2004-focal-arm64-v20240206;Canonical, Ubuntu, 20.04 LTS Pro Server, arm64 focal pro server image built on 2024-02-06;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts-arm64;ARM64;2024-02-06T15:30:13.054-08:00;;READY
-ubuntu-pro-2004-focal-v20240206;Canonical, Ubuntu, 20.04 LTS Pro Server, amd64 focal pro server image built on 2024-02-06;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts;X86_64;2024-02-06T15:30:14.057-08:00;;READY
+ubuntu-pro-1804-bionic-arm64-v20240209;Canonical, Ubuntu, 18.04 LTS Pro Server, arm64 bionic pro server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts-arm64;ARM64;2024-02-08T22:05:05.607-08:00;;READY
+ubuntu-pro-1804-bionic-v20240209;Canonical, Ubuntu, 18.04 LTS Pro Server, amd64 bionic pro server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts;X86_64;2024-02-08T22:05:04.201-08:00;;READY
+ubuntu-pro-2004-focal-arm64-v20240209;Canonical, Ubuntu, 20.04 LTS Pro Server, arm64 focal pro server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts-arm64;ARM64;2024-02-09T08:14:07.110-08:00;;READY
+ubuntu-pro-2004-focal-v20240209;Canonical, Ubuntu, 20.04 LTS Pro Server, amd64 focal pro server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts;X86_64;2024-02-09T08:14:22.816-08:00;;READY
 ubuntu-pro-2204-jammy-arm64-v20240208;Canonical, Ubuntu, 22.04 LTS Pro Server, arm64 jammy pro server image built on 2024-02-08;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts-arm64;ARM64;2024-02-08T03:43:31.957-08:00;;READY
 ubuntu-pro-2204-jammy-v20240208;Canonical, Ubuntu, 22.04 LTS Pro Server, amd64 jammy pro server image built on 2024-02-08;10;ubuntu-os-pro-cloud;ubuntu-pro-2204-lts;X86_64;2024-02-08T03:43:29.853-08:00;;READY
 ubuntu-pro-fips-1804-bionic-v20240202;Canonical, Ubuntu, 18.04 LTS Pro FIPS Server, amd64 bionic pro fips server image built on 2024-02-02;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-1804-lts;X86_64;2024-02-02T01:14:18.804-08:00;;READY
-ubuntu-pro-fips-2004-focal-v20240130;Canonical, Ubuntu, 20.04 LTS Pro FIPS Server, amd64 focal pro fips server image built on 2024-01-30;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-2004-lts;X86_64;2024-01-30T15:15:25.900-08:00;;READY
+ubuntu-pro-fips-2004-focal-v20240209;Canonical, Ubuntu, 20.04 LTS Pro FIPS Server, amd64 focal pro fips server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-fips-2004-lts;X86_64;2024-02-09T07:11:30.529-08:00;;READY
 sql-2014-enterprise-windows-2016-dc-v20240111;Microsoft, SQL Server 2014 Enterprise, on Windows Server 2016 Datacenter, x64 built on 20240111;50;windows-sql-cloud;sql-ent-2014-win-2016;X86_64;2024-01-11T16:44:48.157-08:00;;READY
 cos-97-16919-450-7;Google, Container-Optimized OS, 97-16919.450.7 LTS, Kernel: COS-5.10.208 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-97-lts;10;cos-cloud;cos-97-lts;X86_64;2024-02-05T14:33:27.438-08:00;;READY
 cos-arm64-101-17162-386-12;Google, Container-Optimized OS, 101-17162.386.12 LTS, Kernel: COS-5.15.146 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-arm64-101-lts;10;cos-cloud;cos-arm64-101-lts;ARM64;2024-02-05T14:33:14.434-08:00;;READY
@@ -63,8 +62,8 @@ cos-arm64-beta-109-17800-66-81;Google, Container-Optimized OS, 109-17800.66.81 b
 cos-arm64-dev-113-18146-0-0;Google, Container-Optimized OS, 113-18146.0.0 dev, Kernel: COS-6.1.71 Kubernetes: 1.27.4 Docker: 24.0.5 Family: cos-arm64-dev;10;cos-cloud;cos-arm64-dev;ARM64;2024-01-16T15:05:08.055-08:00;;READY
 cos-arm64-stable-109-17800-66-81;Google, Container-Optimized OS, 109-17800.66.81 stable, Kernel: COS-6.1.58 Kubernetes: 1.27.3 Docker: 24.0.5 Family: cos-arm64-stable;10;cos-cloud;cos-arm64-stable;ARM64;2024-02-05T14:33:26.686-08:00;;READY
 cos-beta-109-17800-66-81;Google, Container-Optimized OS, 109-17800.66.81 beta, Kernel: COS-6.1.58 Kubernetes: 1.27.3 Docker: 24.0.5 Family: cos-beta;10;cos-cloud;cos-beta;X86_64;2024-02-05T14:33:19.534-08:00;;READY
-ubuntu-2004-focal-arm64-v20240125;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2024-01-25;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2024-01-26T19:58:16.042-08:00;;READY
-ubuntu-2004-focal-v20240125;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2024-01-25;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2024-01-26T19:58:16.429-08:00;;READY
+ubuntu-2004-focal-arm64-v20240209;Canonical, Ubuntu, 20.04 LTS, arm64 focal image built on 2024-02-09;10;ubuntu-os-cloud;ubuntu-2004-lts-arm64;ARM64;2024-02-09T06:40:29.974-08:00;;READY
+ubuntu-2004-focal-v20240209;Canonical, Ubuntu, 20.04 LTS, amd64 focal image built on 2024-02-09;10;ubuntu-os-cloud;ubuntu-2004-lts;X86_64;2024-02-09T06:40:25.776-08:00;;READY
 ubuntu-2204-jammy-arm64-v20240208;Canonical, Ubuntu, 22.04 LTS, arm64 jammy image built on 2024-02-08;10;ubuntu-os-cloud;ubuntu-2204-lts-arm64;ARM64;2024-02-07T19:41:41.743-08:00;;READY
 ubuntu-2204-jammy-v20240208;Canonical, Ubuntu, 22.04 LTS, amd64 jammy image built on 2024-02-08;10;ubuntu-os-cloud;ubuntu-2204-lts;X86_64;2024-02-07T19:41:52.042-08:00;;READY
 ubuntu-2310-mantic-amd64-v20240125;Canonical, Ubuntu, 23.10, amd64 mantic image built on 2024-01-25;10;ubuntu-os-cloud;ubuntu-2310-amd64;X86_64;2024-01-24T19:48:02.376-08:00;;READY
@@ -80,8 +79,8 @@ sql-2016-enterprise-windows-2019-dc-v20240111;Microsoft, SQL Server 2016 Enterpr
 sql-2016-standard-windows-2016-dc-v20240111;Microsoft, SQL Server 2016 Standard, on Windows Server 2016 Datacenter, x64 built on 20240111;50;windows-sql-cloud;sql-std-2016-win-2016;X86_64;2024-01-11T16:56:08.023-08:00;;READY
 cos-dev-113-18146-0-0;Google, Container-Optimized OS, 113-18146.0.0 dev, Kernel: COS-6.1.71 Kubernetes: 1.27.4 Docker: 24.0.5 Family: cos-dev;10;cos-cloud;cos-dev;X86_64;2024-01-16T15:05:19.977-08:00;;READY
 cos-stable-109-17800-66-81;Google, Container-Optimized OS, 109-17800.66.81 stable, Kernel: COS-6.1.58 Kubernetes: 1.27.3 Docker: 24.0.5 Family: cos-stable;10;cos-cloud;cos-stable;X86_64;2024-02-05T14:33:20.329-08:00;;READY
-ubuntu-minimal-2004-focal-arm64-v20240206;Canonical, Ubuntu, 20.04 LTS Minimal, arm64 focal minimal image built on 2024-02-06;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts-arm64;ARM64;2024-02-05T22:37:42.744-08:00;;READY
-ubuntu-minimal-2004-focal-v20240206;Canonical, Ubuntu, 20.04 LTS Minimal, amd64 focal minimal image built on 2024-02-06;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts;X86_64;2024-02-05T22:37:40.881-08:00;;READY
+ubuntu-minimal-2004-focal-arm64-v20240209a;Canonical, Ubuntu, 20.04 LTS Minimal, arm64 focal minimal image built on 2024-02-09;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts-arm64;ARM64;2024-02-09T05:42:52.404-08:00;;READY
+ubuntu-minimal-2004-focal-v20240209a;Canonical, Ubuntu, 20.04 LTS Minimal, amd64 focal minimal image built on 2024-02-09;10;ubuntu-os-cloud;ubuntu-minimal-2004-lts;X86_64;2024-02-09T05:42:51.540-08:00;;READY
 sql-2016-standard-windows-2019-dc-v20240111;Microsoft, SQL Server 2016 Standard, on Windows Server 2019 Datacenter, x64 built on 20240111;50;windows-sql-cloud;sql-std-2016-win-2019;X86_64;2024-01-11T17:04:35.856-08:00;;READY
 sql-2016-web-windows-2016-dc-v20240111;Microsoft, SQL Server 2016 Web, on Windows Server 2016 Datacenter, x64 built on 20240111;50;windows-sql-cloud;sql-web-2016-win-2016;X86_64;2024-01-11T17:05:25.596-08:00;;READY
 sql-2016-web-windows-2019-dc-v20240111;Microsoft, SQL Server 2016 Web, on Windows Server 2019 Datacenter, x64 built on 20240111;50;windows-sql-cloud;sql-web-2016-win-2019;X86_64;2024-01-11T17:14:29.289-08:00;;READY
