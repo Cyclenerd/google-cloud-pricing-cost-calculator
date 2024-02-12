@@ -45,7 +45,6 @@ if ! git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
 		echo "- [ ] Test cost calculation with new region"
 		echo "- [ ] Build new pricing information file 'pricing.yml'"
 		echo "- [ ] Check and edit [clean_up.sql](https://github.com/Cyclenerd/google-cloud-compute-machine-types/blob/master/instances/clean_up.sql) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
-		echo "- [ ] Run [Open Graph](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/opengraph.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 		echo "- [ ] Run [Build](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/build.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 	} >> "$MY_GITHUB_REGION_BODY"
 	echo "» Create a new incident to notify '$GITHUB_ISSUE_ASSIGNEE'."
@@ -154,7 +153,6 @@ if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPES"; then
 		echo "- [ ] Create a test for machine type in [t/test.sh](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/t/test.sh)"
 		echo "- [ ] Test cost calculation with machine type"
 		echo "- [ ] Build new pricing information file 'pricing.yml'"
-		echo "- [ ] Run [Open Graph](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/opengraph.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 		echo "- [ ] Run [Build](https://github.com/Cyclenerd/google-cloud-compute-machine-types/actions/workflows/build.yml) action in [Cyclenerd/google-cloud-compute-machine-types](https://github.com/Cyclenerd/google-cloud-compute-machine-types)"
 	} > "$MY_GITHUB_MACHINE_TYPES_BODY"
 
