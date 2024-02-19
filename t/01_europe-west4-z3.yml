@@ -1,0 +1,26 @@
+region: europe-west4
+project: gcp-gce-z3
+
+instances:
+  - name: z3-highmem-88
+    type: z3-highmem-88
+    disks:
+      - name: z3-highmem-88-local-disk
+        type: local
+        data: 36.864
+  - name: z3-highmem-176
+    type: z3-highmem-176
+
+# Commitment (CUD)
+  - name: z3-highmem-88-1y
+    type: z3-highmem-88
+    commitment: 1
+  - name: z3-highmem-88-3y
+    type: z3-highmem-88
+    commitment: 3
+  - name: z3-highmem-176-1y
+    type: z3-highmem-176
+    commitment: 1
+  - name: z3-highmem-176-3y
+    type: z3-highmem-176
+    commitment: 3

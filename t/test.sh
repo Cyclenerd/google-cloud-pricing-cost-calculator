@@ -135,9 +135,20 @@ MY_CHECKS=(
 # 01_europe-west4-h3.yml
 	# H3 machine types
 	'h3-standard-88,3773'
-	# C3 Commitment (CUD)
+	# H3 Commitment (CUD)
 	'gcp-gce-h3,europe-west4,vm,h3-standard-88,h3-standard-88-1y,3095'
 	'gcp-gce-h3,europe-west4,vm,h3-standard-88,h3-standard-88-3y,2265'
+
+# 01_europe-west4-z3.yml
+# Lower price compared to the price list because 36TiB Local SSD is not included in our calculation
+	# Z3 machine types
+	'z3-highmem-88,6940'   # 9964
+	'z3-highmem-176,13881' # 16901
+	# Z3 Commitment (CUD)
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-1y,4372'    # 7943
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-3y,3123'    # 5268
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-1y,8745' # 12510
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-3y,6246'  # 8936
 
 # 01_europe-west4-e2.yml
 	# E2 machine types

@@ -947,3 +947,11 @@ compute:
     h3-standard-88:
       cpu: 88
       ram: 352
+
+    # Z3:
+    z3-highmem-88:
+      cpu: 88
+      ram: 704
+    z3-highmem-176:
+      cpu: 176
+      ram: 1408
