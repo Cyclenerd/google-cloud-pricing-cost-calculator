@@ -1,6 +1,6 @@
 NAME;DESCRIPTION;DISK_SIZE_GB;PROJECT;FAMILY;ARCHITECTURE;CREATION;DEPRECATED;STATUS
 centos-7-v20240213;CentOS, CentOS, 7, x86_64 built on 20240213;20;centos-cloud;centos-7;X86_64;2024-02-13T15:13:54.295-08:00;;READY
-centos-stream-8-v20240110;CentOS, CentOS, Stream 8, x86_64 built on 20240110;20;centos-cloud;centos-stream-8;X86_64;2024-01-10T12:05:36.688-08:00;;READY
+centos-stream-8-v20240222;CentOS, CentOS, Stream 8, x86_64 built on 20240222;20;centos-cloud;centos-stream-8;X86_64;2024-02-22T12:44:44.661-08:00;;READY
 centos-stream-9-v20240213;CentOS, CentOS, Stream 9, x86_64 built on 20240213;20;centos-cloud;centos-stream-9;X86_64;2024-02-14T08:38:52.215-08:00;;READY
 cos-101-17162-386-22;Google, Container-Optimized OS, 101-17162.386.22 LTS, Kernel: COS-5.15.146 Kubernetes: 1.23.10 Docker: 20.10.24 Family: cos-101-lts;10;cos-cloud;cos-101-lts;X86_64;2024-02-12T15:52:13.148-08:00;;READY
 cos-105-17412-294-29;Google, Container-Optimized OS, 105-17412.294.29 LTS, Kernel: COS-5.15.146 Kubernetes: 1.25.5 Docker: 23.0.3 Family: cos-105-lts;10;cos-cloud;cos-105-lts;X86_64;2024-02-20T16:48:40.403-08:00;;READY
@@ -44,7 +44,7 @@ sles-15-sp4-sap-v20240208-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for S
 sles-15-sp5-sap-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP, x86_64, built on 20240126;10;suse-sap-cloud;sles-15-sp5-sap;X86_64;2024-01-26T11:16:20.062-08:00;;READY
 sles-sap-15-sp4-hardened-v20240208-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP4 for SAP hardened with security features, x86_64, built on 20240208;10;suse-sap-cloud;sles-sap-15-sp4-hardened;X86_64;2024-02-08T09:56:29.727-08:00;;READY
 sles-sap-15-sp5-hardened-v20240126-x86-64;SUSE, SUSE Linux Enterprise Server 15 SP5 for SAP hardened with security features, x86_64, built on 20240126;10;suse-sap-cloud;sles-sap-15-sp5-hardened;X86_64;2024-01-26T11:16:30.130-08:00;;READY
-ubuntu-pro-1604-xenial-v20240216;Canonical, Ubuntu, 16.04 LTS Pro Server, amd64 xenial pro server image built on 2024-02-16;10;ubuntu-os-pro-cloud;ubuntu-pro-1604-lts;X86_64;2024-02-16T02:57:47.325-08:00;;READY
+ubuntu-pro-1604-xenial-v20240222;Canonical, Ubuntu, 16.04 LTS Pro Server, amd64 xenial pro server image built on 2024-02-22;10;ubuntu-os-pro-cloud;ubuntu-pro-1604-lts;X86_64;2024-02-22T03:19:22.508-08:00;;READY
 ubuntu-pro-1804-bionic-arm64-v20240209;Canonical, Ubuntu, 18.04 LTS Pro Server, arm64 bionic pro server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts-arm64;ARM64;2024-02-08T22:05:05.607-08:00;;READY
 ubuntu-pro-1804-bionic-v20240209;Canonical, Ubuntu, 18.04 LTS Pro Server, amd64 bionic pro server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-1804-lts;X86_64;2024-02-08T22:05:04.201-08:00;;READY
 ubuntu-pro-2004-focal-arm64-v20240209;Canonical, Ubuntu, 20.04 LTS Pro Server, arm64 focal pro server image built on 2024-02-09;10;ubuntu-os-pro-cloud;ubuntu-pro-2004-lts-arm64;ARM64;2024-02-09T08:14:07.110-08:00;;READY
