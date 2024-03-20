@@ -8,6 +8,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts)](https://goreportcard.com/report/github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts)
 [![Badge: CI](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml)
 [![Badge: GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-pricing-cost-calculator)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/blob/master/LICENSE)
+[![Badge: Downloads](https://img.shields.io/github/downloads/Cyclenerd/google-cloud-pricing-cost-calculator/total)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/releases)
 
 | 🏆 Awarded |
 |------------|
