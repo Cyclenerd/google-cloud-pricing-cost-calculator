@@ -796,13 +796,25 @@ compute:
     c3d-highmem-16:
       cpu: 16
       ram: 128
+    c3d-highmem-16-lssd:
+      cpu: 16
+      ram: 128
     c3d-highmem-180:
+      cpu: 180
+      ram: 1440
+    c3d-highmem-180-lssd:
       cpu: 180
       ram: 1440
     c3d-highmem-30:
       cpu: 30
       ram: 240
+    c3d-highmem-30-lssd:
+      cpu: 30
+      ram: 240
     c3d-highmem-360:
+      cpu: 360
+      ram: 2880
+    c3d-highmem-360-lssd:
       cpu: 360
       ram: 2880
     c3d-highmem-4:
@@ -811,10 +823,19 @@ compute:
     c3d-highmem-60:
       cpu: 60
       ram: 480
+    c3d-highmem-60-lssd:
+      cpu: 60
+      ram: 480
     c3d-highmem-8:
       cpu: 8
       ram: 64
+    c3d-highmem-8-lssd:
+      cpu: 8
+      ram: 64
     c3d-highmem-90:
+      cpu: 90
+      ram: 720
+    c3d-highmem-90-lssd:
       cpu: 90
       ram: 720
 
