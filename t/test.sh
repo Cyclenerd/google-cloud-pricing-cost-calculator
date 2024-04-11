@@ -297,7 +297,6 @@ MY_CHECKS=(
 	'n2-highmem-128,4956'
 	'n2-highcpu-2,46'
 	'n2-highcpu-4,92'
-	'n2-highmem-8,337'
 	'n2-highcpu-8,184'
 	'n2-highcpu-16,368'
 	'n2-highcpu-32,737'
@@ -347,6 +346,37 @@ MY_CHECKS=(
 	'gcp-gce-n2d,europe-west4,vm,n2d-standard-8,n2d-standard-8-1y,171'
 	'gcp-gce-n2d,europe-west4,vm,n2d-standard-8,n2d-standard-8-3y,122'
 	'n2d-standard-8-spot,'
+
+# 01_europe-west4-n4.yml
+	# N4 machine types
+	'n4-standard-2,72'
+	'n4-standard-4,145'
+	'n4-standard-8,290'
+	'n4-standard-16,581'
+	'n4-standard-32,1162'
+	'n4-standard-48,1743'
+	'n4-standard-64,2324'
+	'n4-standard-80,2905'
+	'n4-highmem-2,95'
+	'n4-highmem-4,190'
+	'n4-highmem-8,381'
+	'n4-highmem-16,762'
+	'n4-highmem-32,1525'
+	'n4-highmem-48,2288'
+	'n4-highmem-64,3050'
+	'n4-highmem-80,3813'
+	'n4-highcpu-2,61'
+	'n4-highcpu-4,122'
+	'n4-highcpu-8,245'
+	'n4-highcpu-16,490'
+	'n4-highcpu-32,980'
+	'n4-highcpu-48,1471'
+	'n4-highcpu-64,1961'
+	'n4-highcpu-80,2451'
+	# N2 Commitment (CUD)
+	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-1y,183'
+	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-3y,130'
+	'n4-standard-8-spot,'
 
 # 01_europe-west4-sap.yml
 	# SLES for SAP (https://cloud.google.com/products/calculator/#id=9a410d62-97b7-4ae0-baba-2f83ba9e625d)

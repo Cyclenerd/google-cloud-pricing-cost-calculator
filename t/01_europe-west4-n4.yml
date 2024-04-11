@@ -1,0 +1,69 @@
+region: europe-west4
+project: gcp-gce-n4
+
+# General-purpose machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family
+
+instances:
+# N4 standard machine types
+  - name: n4-standard-2
+    type: n4-standard-2
+  - name: n4-standard-4
+    type: n4-standard-4
+  - name: n4-standard-8
+    type: n4-standard-8
+  - name: n4-standard-16
+    type: n4-standard-16
+  - name: n4-standard-32
+    type: n4-standard-32
+  - name: n4-standard-48
+    type: n4-standard-48
+  - name: n4-standard-64
+    type: n4-standard-64
+  - name: n4-standard-80
+    type: n4-standard-80
+# Commitment (CUD)
+  - name: n4-standard-8-1y
+    type: n4-standard-8
+    commitment: 1
+  - name: n4-standard-8-3y
+    type: n4-standard-8
+    commitment: 3
+# Spot VM
+  - name: n4-standard-8-spot
+    type: n4-standard-8
+    spot: true
+# N2 high-memory machine types
+  - name: n4-highmem-2
+    type: n4-highmem-2
+  - name: n4-highmem-4
+    type: n4-highmem-4
+  - name: n4-highmem-8
+    type: n4-highmem-8
+  - name: n4-highmem-16
+    type: n4-highmem-16
+  - name: n4-highmem-32
+    type: n4-highmem-32
+  - name: n4-highmem-48
+    type: n4-highmem-48
+  - name: n4-highmem-64
+    type: n4-highmem-64
+  - name: n4-highmem-80
+    type: n4-highmem-80
+# N2 high-CPU machine types
+  - name: n4-highcpu-2
+    type: n4-highcpu-2
+  - name: n4-highcpu-4
+    type: n4-highcpu-4
+  - name: n4-highcpu-8
+    type: n4-highcpu-8
+  - name: n4-highcpu-16
+    type: n4-highcpu-16
+  - name: n4-highcpu-32
+    type: n4-highcpu-32
+  - name: n4-highcpu-48
+    type: n4-highcpu-48
+  - name: n4-highcpu-64
+    type: n4-highcpu-64
+  - name: n4-highcpu-80
+    type: n4-highcpu-80

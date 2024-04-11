@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright 2022-2023 Nils Knieling. All Rights Reserved.
+# Copyright 2022-2024 Nils Knieling. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "2.2.0";
+	$VERSION = "2.2.1";
 }
 
 use strict;
@@ -733,6 +733,28 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.n2d.3y'}          = $ram;
 			$mappings_spot{'gce.compute.ram.n2d.custom.spot'} = $ram;
 			%sustained_use_discount = %sustained_use_discount_n2 if $add_sud;
+		}
+		# N4 Predefined
+		elsif ($type eq 'n4') {
+			$mappings{     'gce.compute.cpu.n4'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n4.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n4.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.n4.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n4'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n4.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.n4.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.n4.spot'} = $ram;
+		}
+		# N4 Custom
+		elsif ($type eq 'n4-custom') {
+			$mappings{     'gce.compute.cpu.n4.custom'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n4.1y'}          = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n4.3y'}          = $cpu;
+			$mappings_spot{'gce.compute.cpu.n4.custom.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n4.custom'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n4.1y'}          = $ram;
+			$mappings_3y{  'gce.compute.ram.n4.3y'}          = $ram;
+			$mappings_spot{'gce.compute.ram.n4.custom.spot'} = $ram;
 		}
 		# T2D Predefined
 		elsif ($type eq 't2d') {
