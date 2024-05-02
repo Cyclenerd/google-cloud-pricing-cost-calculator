@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Apr 25 03:53:29 2024
-  timestamp: 1714017209
+  generated: Thu May  2 03:53:54 2024
+  timestamp: 1714622034
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -28512,11 +28512,11 @@ compute:
           month_3y: 184.47629104
           month_spot: 122.98419792
         australia-southeast2:
-          hour: 0.56157168
+          hour: 0.477328
           hour_spot: 0.178528
-          month: 409.9473264
-          month_1y: 258.26678176
-          month_3y: 184.4763144
+          month: 348.44944
+          month_1y: 219.5256
+          month_3y: 156.804
           month_spot: 130.32544
         europe-central2:
           hour: 0.50991552
@@ -28796,11 +28796,11 @@ compute:
           month_3y: 23.05953638
           month_spot: 15.37302474
         australia-southeast2:
-          hour: 0.07019646
+          hour: 0.059666
           hour_spot: 0.022316
-          month: 51.2434158
-          month_1y: 32.28334772
-          month_3y: 23.0595393
+          month: 43.55618
+          month_1y: 27.4407
+          month_3y: 19.6005
           month_spot: 16.29068
         europe-central2:
           hour: 0.06373944
@@ -29080,11 +29080,11 @@ compute:
           month_3y: 368.95258208
           month_spot: 245.96839584
         australia-southeast2:
-          hour: 1.12314336
+          hour: 0.954656
           hour_spot: 0.357056
-          month: 819.8946528
-          month_1y: 516.53356352
-          month_3y: 368.9526288
+          month: 696.89888
+          month_1y: 439.0512
+          month_3y: 313.608
           month_spot: 260.65088
         europe-central2:
           hour: 1.01983104
@@ -29364,11 +29364,11 @@ compute:
           month_3y: 46.11907276
           month_spot: 30.74604948
         australia-southeast2:
-          hour: 0.14039292
+          hour: 0.119332
           hour_spot: 0.044632
-          month: 102.4868316
-          month_1y: 64.56669544
-          month_3y: 46.1190786
+          month: 87.11236
+          month_1y: 54.8814
+          month_3y: 39.201
           month_spot: 32.58136
         europe-central2:
           hour: 0.12747888
@@ -29648,11 +29648,11 @@ compute:
           month_3y: 92.23814552
           month_spot: 61.49209896
         australia-southeast2:
-          hour: 0.28078584
+          hour: 0.238664
           hour_spot: 0.089264
-          month: 204.9736632
-          month_1y: 129.13339088
-          month_3y: 92.2381572
+          month: 174.22472
+          month_1y: 109.7628
+          month_3y: 78.402
           month_spot: 65.16272
         europe-central2:
           hour: 0.25495776
@@ -29932,11 +29932,11 @@ compute:
           month_3y: 337.07438144
           month_spot: 224.71628544
         australia-southeast2:
-          hour: 1.02610176
+          hour: 0.872128
           hour_spot: 0.326144
-          month: 749.0542848
-          month_1y: 471.90419008
-          month_3y: 337.0744048
+          month: 636.65344
+          month_1y: 401.11456
+          month_3y: 286.47536
           month_spot: 238.08512
         europe-central2:
           hour: 0.93170976
@@ -30216,11 +30216,11 @@ compute:
           month_3y: 42.13429768
           month_spot: 28.08953568
         australia-southeast2:
-          hour: 0.12826272
+          hour: 0.109016
           hour_spot: 0.040768
-          month: 93.6317856
-          month_1y: 58.98802376
-          month_3y: 42.1343006
+          month: 79.58168
+          month_1y: 50.13932
+          month_3y: 35.80942
           month_spot: 29.76064
         europe-central2:
           hour: 0.11646372
@@ -30500,11 +30500,11 @@ compute:
           month_3y: 84.26859536
           month_spot: 56.17907136
         australia-southeast2:
-          hour: 0.25652544
+          hour: 0.218032
           hour_spot: 0.081536
-          month: 187.2635712
-          month_1y: 117.97604752
-          month_3y: 84.2686012
+          month: 159.16336
+          month_1y: 100.27864
+          month_3y: 71.61884
           month_spot: 59.52128
         europe-central2:
           hour: 0.23292744
@@ -30784,11 +30784,11 @@ compute:
           month_3y: 168.53719072
           month_spot: 112.35814272
         australia-southeast2:
-          hour: 0.51305088
+          hour: 0.436064
           hour_spot: 0.163072
-          month: 374.5271424
-          month_1y: 235.95209504
-          month_3y: 168.5372024
+          month: 318.32672
+          month_1y: 200.55728
+          month_3y: 143.23768
           month_spot: 119.04256
         europe-central2:
           hour: 0.46585488
@@ -31068,11 +31068,11 @@ compute:
           month_3y: 15.61721704
           month_spot: 10.411479
         australia-southeast2:
-          hour: 0.047541
+          hour: 0.040408
           hour_spot: 0.015112
-          month: 34.70493
-          month_1y: 21.86410444
-          month_3y: 15.6172185
+          month: 29.49784
+          month_1y: 18.58434
+          month_3y: 13.27359
           month_spot: 11.03176
         europe-central2:
           hour: 0.04316778
@@ -31352,11 +31352,11 @@ compute:
           month_3y: 3.90430426
           month_spot: 2.60286975
         australia-southeast2:
-          hour: 0.01188525
+          hour: 0.010102
           hour_spot: 0.003778
-          month: 8.6762325
-          month_1y: 5.46602611
-          month_3y: 3.904304625
+          month: 7.37446
+          month_1y: 4.646085
+          month_3y: 3.3183975
           month_spot: 2.75794
         europe-central2:
           hour: 0.010791945
@@ -31636,11 +31636,11 @@ compute:
           month_3y: 7.80860852
           month_spot: 5.2057395
         australia-southeast2:
-          hour: 0.0237705
+          hour: 0.020204
           hour_spot: 0.007556
-          month: 17.352465
-          month_1y: 10.93205222
-          month_3y: 7.80860925
+          month: 14.74892
+          month_1y: 9.29217
+          month_3y: 6.636795
           month_spot: 5.51588
         europe-central2:
           hour: 0.02158389
@@ -31920,11 +31920,11 @@ compute:
           month_3y: 249.87547264
           month_spot: 166.583664
         australia-southeast2:
-          hour: 0.760656
+          hour: 0.646528
           hour_spot: 0.241792
-          month: 555.27888
-          month_1y: 349.82567104
-          month_3y: 249.875496
+          month: 471.96544
+          month_1y: 297.34944
+          month_3y: 212.37744
           month_spot: 176.50816
         europe-central2:
           hour: 0.69068448
@@ -32204,11 +32204,11 @@ compute:
           month_3y: 31.23443408
           month_spot: 20.822958
         australia-southeast2:
-          hour: 0.095082
+          hour: 0.080816
           hour_spot: 0.030224
-          month: 69.40986
-          month_1y: 43.72820888
-          month_3y: 31.234437
+          month: 58.99568
+          month_1y: 37.16868
+          month_3y: 26.54718
           month_spot: 22.06352
         europe-central2:
           hour: 0.08633556
@@ -32488,11 +32488,11 @@ compute:
           month_3y: 499.75094528
           month_spot: 333.167328
         australia-southeast2:
-          hour: 1.521312
+          hour: 1.293056
           hour_spot: 0.483584
-          month: 1110.55776
-          month_1y: 699.65134208
-          month_3y: 499.750992
+          month: 943.93088
+          month_1y: 594.69888
+          month_3y: 424.75488
           month_spot: 353.01632
         europe-central2:
           hour: 1.38136896
@@ -32772,11 +32772,11 @@ compute:
           month_3y: 62.46886816
           month_spot: 41.645916
         australia-southeast2:
-          hour: 0.190164
+          hour: 0.161632
           hour_spot: 0.060448
-          month: 138.81972
-          month_1y: 87.45641776
-          month_3y: 62.468874
+          month: 117.99136
+          month_1y: 74.33736
+          month_3y: 53.09436
           month_spot: 44.12704
         europe-central2:
           hour: 0.17267112
@@ -33056,11 +33056,11 @@ compute:
           month_3y: 124.93773632
           month_spot: 83.291832
         australia-southeast2:
-          hour: 0.380328
+          hour: 0.323264
           hour_spot: 0.120896
-          month: 277.63944
-          month_1y: 174.91283552
-          month_3y: 124.937748
+          month: 235.98272
+          month_1y: 148.67472
+          month_3y: 106.18872
           month_spot: 88.25408
         europe-central2:
           hour: 0.34534224
@@ -46012,11 +46012,11 @@ compute:
           month_3y: 267.472
           month_spot: 136.66768
         australia-southeast2:
-          hour: 0.813872
+          hour: 0.691792
           hour_spot: 0.193232
-          month: 475.420073312
-          month_1y: 374.4608
-          month_3y: 267.472
+          month: 404.107529632
+          month_1y: 318.29168
+          month_3y: 227.3512
           month_spot: 141.05936
         europe-central2:
           hour: 0.739008
@@ -46296,11 +46296,11 @@ compute:
           month_3y: 33.434
           month_spot: 17.08346
         australia-southeast2:
-          hour: 0.101734
+          hour: 0.086474
           hour_spot: 0.024154
-          month: 59.427509164
-          month_1y: 46.8076
-          month_3y: 33.434
+          month: 50.513441204
+          month_1y: 39.78646
+          month_3y: 28.4189
           month_spot: 17.63242
         europe-central2:
           hour: 0.092376
@@ -46580,11 +46580,11 @@ compute:
           month_3y: 534.944
           month_spot: 273.33536
         australia-southeast2:
-          hour: 1.627744
+          hour: 1.383584
           hour_spot: 0.386464
-          month: 950.840146624
-          month_1y: 748.9216
-          month_3y: 534.944
+          month: 808.215059264
+          month_1y: 636.58336
+          month_3y: 454.7024
           month_spot: 282.11872
         europe-central2:
           hour: 1.478016
@@ -46864,11 +46864,11 @@ compute:
           month_3y: 66.868
           month_spot: 34.16692
         australia-southeast2:
-          hour: 0.203468
+          hour: 0.172948
           hour_spot: 0.048308
-          month: 118.855018328
-          month_1y: 93.6152
-          month_3y: 66.868
+          month: 101.026882408
+          month_1y: 79.57292
+          month_3y: 56.8378
           month_spot: 35.26484
         europe-central2:
           hour: 0.184752
@@ -47148,11 +47148,11 @@ compute:
           month_3y: 802.416
           month_spot: 410.00304
         australia-southeast2:
-          hour: 2.441616
+          hour: 2.075376
           hour_spot: 0.579696
-          month: 1426.260219936
-          month_1y: 1123.3824
-          month_3y: 802.416
+          month: 1212.322588896
+          month_1y: 954.87504
+          month_3y: 682.0536
           month_spot: 423.17808
         europe-central2:
           hour: 2.217024
@@ -47432,11 +47432,11 @@ compute:
           month_3y: 1069.888
           month_spot: 546.67072
         australia-southeast2:
-          hour: 3.255488
+          hour: 2.767168
           hour_spot: 0.772928
-          month: 1901.680293248
-          month_1y: 1497.8432
-          month_3y: 1069.888
+          month: 1616.430118528
+          month_1y: 1273.16672
+          month_3y: 909.4048
           month_spot: 564.23744
         europe-central2:
           hour: 2.956032
@@ -47716,11 +47716,11 @@ compute:
           month_3y: 133.736
           month_spot: 68.33384
         australia-southeast2:
-          hour: 0.406936
+          hour: 0.345896
           hour_spot: 0.096616
-          month: 237.710036656
-          month_1y: 187.2304
-          month_3y: 133.736
+          month: 202.053764816
+          month_1y: 159.14584
+          month_3y: 113.6756
           month_spot: 70.52968
         europe-central2:
           hour: 0.369504
@@ -48000,11 +48000,11 @@ compute:
           month_3y: 1337.36
           month_spot: 683.3384
         australia-southeast2:
-          hour: 4.06936
+          hour: 3.45896
           hour_spot: 0.96616
-          month: 2377.10036656
-          month_1y: 1872.304
-          month_3y: 1337.36
+          month: 2020.53764816
+          month_1y: 1591.4584
+          month_3y: 1136.756
           month_spot: 705.2968
         europe-central2:
           hour: 3.69504
@@ -48284,11 +48284,11 @@ compute:
           month_3y: 1604.832
           month_spot: 820.00608
         australia-southeast2:
-          hour: 4.883232
+          hour: 4.150752
           hour_spot: 1.159392
-          month: 2852.520439872
-          month_1y: 2246.7648
-          month_3y: 1604.832
+          month: 2424.645177792
+          month_1y: 1909.75008
+          month_3y: 1364.1072
           month_spot: 846.35616
         europe-central2:
           hour: 4.434048
@@ -48568,11 +48568,11 @@ compute:
           month_3y: 3592.58112
           month_spot: 1834.25056
         australia-southeast2:
-          hour: 10.935072
+          hour: 9.29456
           hour_spot: 2.596128
-          month: 6387.678568512
-          month_1y: 5029.82848
-          month_3y: 3592.58112
+          month: 5429.38004576
+          month_1y: 4275.30048
+          month_3y: 3053.47904
           month_spot: 1895.17344
         europe-central2:
           hour: 9.929152
@@ -48852,11 +48852,11 @@ compute:
           month_3y: 488.55104
           month_spot: 249.41472
         australia-southeast2:
-          hour: 1.487104
+          hour: 1.264
           hour_spot: 0.353056
-          month: 868.685853184
-          month_1y: 684.00416
-          month_3y: 488.55104
+          month: 738.360544
+          month_1y: 581.39536
+          month_3y: 415.23568
           month_spot: 257.73088
         europe-central2:
           hour: 1.350304
@@ -49136,11 +49136,11 @@ compute:
           month_3y: 61.06888
           month_spot: 31.17684
         australia-southeast2:
-          hour: 0.185888
+          hour: 0.158
           hour_spot: 0.044132
-          month: 108.585731648
-          month_1y: 85.50052
-          month_3y: 61.06888
+          month: 92.295068
+          month_1y: 72.67442
+          month_3y: 51.90446
           month_spot: 32.21636
         europe-central2:
           hour: 0.168788
@@ -49420,11 +49420,11 @@ compute:
           month_3y: 977.10208
           month_spot: 498.82944
         australia-southeast2:
-          hour: 2.974208
+          hour: 2.528
           hour_spot: 0.706112
-          month: 1737.371706368
-          month_1y: 1368.00832
-          month_3y: 977.10208
+          month: 1476.721088
+          month_1y: 1162.79072
+          month_3y: 830.47136
           month_spot: 515.46176
         europe-central2:
           hour: 2.700608
@@ -49704,11 +49704,11 @@ compute:
           month_3y: 122.13776
           month_spot: 62.35368
         australia-southeast2:
-          hour: 0.371776
+          hour: 0.316
           hour_spot: 0.088264
-          month: 217.171463296
-          month_1y: 171.00104
-          month_3y: 122.13776
+          month: 184.590136
+          month_1y: 145.34884
+          month_3y: 103.80892
           month_spot: 64.43272
         europe-central2:
           hour: 0.337576
@@ -49988,11 +49988,11 @@ compute:
           month_3y: 1465.65312
           month_spot: 748.24416
         australia-southeast2:
-          hour: 4.461312
+          hour: 3.792
           hour_spot: 1.059168
-          month: 2606.057559552
-          month_1y: 2052.01248
-          month_3y: 1465.65312
+          month: 2215.081632
+          month_1y: 1744.18608
+          month_3y: 1245.70704
           month_spot: 773.19264
         europe-central2:
           hour: 4.050912
@@ -50272,11 +50272,11 @@ compute:
           month_3y: 1954.20416
           month_spot: 997.65888
         australia-southeast2:
-          hour: 5.948416
+          hour: 5.056
           hour_spot: 1.412224
-          month: 3474.743412736
-          month_1y: 2736.01664
-          month_3y: 1954.20416
+          month: 2953.442176
+          month_1y: 2325.58144
+          month_3y: 1660.94272
           month_spot: 1030.92352
         europe-central2:
           hour: 5.401216
@@ -50556,11 +50556,11 @@ compute:
           month_3y: 244.27552
           month_spot: 124.70736
         australia-southeast2:
-          hour: 0.743552
+          hour: 0.632
           hour_spot: 0.176528
-          month: 434.342926592
-          month_1y: 342.00208
-          month_3y: 244.27552
+          month: 369.180272
+          month_1y: 290.69768
+          month_3y: 207.61784
           month_spot: 128.86544
         europe-central2:
           hour: 0.675152
@@ -50840,11 +50840,11 @@ compute:
           month_3y: 2442.7552
           month_spot: 1247.0736
         australia-southeast2:
-          hour: 7.43552
+          hour: 6.32
           hour_spot: 1.76528
-          month: 4343.42926592
-          month_1y: 3420.0208
-          month_3y: 2442.7552
+          month: 3691.80272
+          month_1y: 2906.9768
+          month_3y: 2076.1784
           month_spot: 1288.6544
         europe-central2:
           hour: 6.75152
@@ -51124,11 +51124,11 @@ compute:
           month_3y: 2931.30624
           month_spot: 1496.48832
         australia-southeast2:
-          hour: 8.922624
+          hour: 7.584
           hour_spot: 2.118336
-          month: 5212.115119104
-          month_1y: 4104.02496
-          month_3y: 2931.30624
+          month: 4430.163264
+          month_1y: 3488.37216
+          month_3y: 2491.41408
           month_spot: 1546.38528
         europe-central2:
           hour: 8.101824
@@ -51408,11 +51408,11 @@ compute:
           month_3y: 2897.76128
           month_spot: 1479.90272
         australia-southeast2:
-          hour: 8.8192
+          hour: 7.496192
           hour_spot: 2.093824
-          month: 5151.7004032
-          month_1y: 4056.97792
-          month_3y: 2897.76128
+          month: 4378.870572032
+          month_1y: 3448.4032
+          month_3y: 2462.98496
           month_spot: 1528.49152
         europe-central2:
           hour: 8.007936
@@ -51692,11 +51692,11 @@ compute:
           month_3y: 362.22016
           month_spot: 184.98784
         australia-southeast2:
-          hour: 1.1024
+          hour: 0.937024
           hour_spot: 0.261728
-          month: 643.9625504
-          month_1y: 507.12224
-          month_3y: 362.22016
+          month: 547.358821504
+          month_1y: 431.0504
+          month_3y: 307.87312
           month_spot: 191.06144
         europe-central2:
           hour: 1.000992
@@ -51976,11 +51976,11 @@ compute:
           month_3y: 45.27752
           month_spot: 23.12348
         australia-southeast2:
-          hour: 0.1378
+          hour: 0.117128
           hour_spot: 0.032716
-          month: 80.4953188
-          month_1y: 63.39028
-          month_3y: 45.27752
+          month: 68.419852688
+          month_1y: 53.8813
+          month_3y: 38.48414
           month_spot: 23.88268
         europe-central2:
           hour: 0.125124
@@ -52260,11 +52260,11 @@ compute:
           month_3y: 724.44032
           month_spot: 369.97568
         australia-southeast2:
-          hour: 2.2048
+          hour: 1.874048
           hour_spot: 0.523456
-          month: 1287.9251008
-          month_1y: 1014.24448
-          month_3y: 724.44032
+          month: 1094.717643008
+          month_1y: 862.1008
+          month_3y: 615.74624
           month_spot: 382.12288
         europe-central2:
           hour: 2.001984
@@ -52544,11 +52544,11 @@ compute:
           month_3y: 90.55504
           month_spot: 46.24696
         australia-southeast2:
-          hour: 0.2756
+          hour: 0.234256
           hour_spot: 0.065432
-          month: 160.9906376
-          month_1y: 126.78056
-          month_3y: 90.55504
+          month: 136.839705376
+          month_1y: 107.7626
+          month_3y: 76.96828
           month_spot: 47.76536
         europe-central2:
           hour: 0.250248
@@ -52828,11 +52828,11 @@ compute:
           month_3y: 1086.66048
           month_spot: 554.96352
         australia-southeast2:
-          hour: 3.3072
+          hour: 2.811072
           hour_spot: 0.785184
-          month: 1931.8876512
-          month_1y: 1521.36672
-          month_3y: 1086.66048
+          month: 1642.076464512
+          month_1y: 1293.1512
+          month_3y: 923.61936
           month_spot: 573.18432
         europe-central2:
           hour: 3.002976
@@ -53112,11 +53112,11 @@ compute:
           month_3y: 1448.88064
           month_spot: 739.95136
         australia-southeast2:
-          hour: 4.4096
+          hour: 3.748096
           hour_spot: 1.046912
-          month: 2575.8502016
-          month_1y: 2028.48896
-          month_3y: 1448.88064
+          month: 2189.435286016
+          month_1y: 1724.2016
+          month_3y: 1231.49248
           month_spot: 764.24576
         europe-central2:
           hour: 4.003968
@@ -53396,11 +53396,11 @@ compute:
           month_3y: 181.11008
           month_spot: 92.49392
         australia-southeast2:
-          hour: 0.5512
+          hour: 0.468512
           hour_spot: 0.130864
-          month: 321.9812752
-          month_1y: 253.56112
-          month_3y: 181.11008
+          month: 273.679410752
+          month_1y: 215.5252
+          month_3y: 153.93656
           month_spot: 95.53072
         europe-central2:
           hour: 0.500496
@@ -53680,11 +53680,11 @@ compute:
           month_3y: 1811.1008
           month_spot: 924.9392
         australia-southeast2:
-          hour: 5.512
+          hour: 4.68512
           hour_spot: 1.30864
-          month: 3219.812752
-          month_1y: 2535.6112
-          month_3y: 1811.1008
+          month: 2736.79410752
+          month_1y: 2155.252
+          month_3y: 1539.3656
           month_spot: 955.3072
         europe-central2:
           hour: 5.00496
@@ -53964,11 +53964,11 @@ compute:
           month_3y: 2173.32096
           month_spot: 1109.92704
         australia-southeast2:
-          hour: 6.6144
+          hour: 5.622144
           hour_spot: 1.570368
-          month: 3863.7753024
-          month_1y: 3042.73344
-          month_3y: 2173.32096
+          month: 3284.152929024
+          month_1y: 2586.3024
+          month_3y: 1847.23872
           month_spot: 1146.36864
         europe-central2:
           hour: 6.005952
@@ -54248,11 +54248,11 @@ compute:
           month_3y: 1861.60512
           month_spot: 1145.01376
         australia-southeast2:
-          hour: 5.66464
+          hour: 4.814976
           hour_spot: 1.37174272
-          month: 3308.97679744
-          month_1y: 2606.22848
-          month_3y: 1861.60512
+          month: 2812.648970496
+          month_1y: 2215.27552
+          month_3y: 1582.31296
           month_spot: 1001.3721856
         europe-central2:
           hour: 5.143424
@@ -54532,11 +54532,11 @@ compute:
           month_3y: 232.70064
           month_spot: 143.12672
         australia-southeast2:
-          hour: 0.70808
+          hour: 0.601872
           hour_spot: 0.17146784
-          month: 413.62209968
-          month_1y: 325.77856
-          month_3y: 232.70064
+          month: 351.581121312
+          month_1y: 276.90944
+          month_3y: 197.78912
           month_spot: 125.1715232
         europe-central2:
           hour: 0.642928
@@ -54816,11 +54816,11 @@ compute:
           month_3y: 29.08758
           month_spot: 17.89084
         australia-southeast2:
-          hour: 0.08851
+          hour: 0.075234
           hour_spot: 0.02143348
-          month: 51.70276246
-          month_1y: 40.72232
-          month_3y: 29.08758
+          month: 43.947640164
+          month_1y: 34.61368
+          month_3y: 24.72364
           month_spot: 15.6464404
         europe-central2:
           hour: 0.080366
@@ -55100,11 +55100,11 @@ compute:
           month_3y: 3257.80896
           month_spot: 2003.77408
         australia-southeast2:
-          hour: 9.91312
+          hour: 8.426208
           hour_spot: 2.40054976
-          month: 5790.70939552
-          month_1y: 4560.89984
-          month_3y: 3257.80896
+          month: 4922.135698368
+          month_1y: 3876.73216
+          month_3y: 2769.04768
           month_spot: 1752.4013248
         europe-central2:
           hour: 9.000992
@@ -55384,11 +55384,11 @@ compute:
           month_3y: 465.40128
           month_spot: 286.25344
         australia-southeast2:
-          hour: 1.41616
+          hour: 1.203744
           hour_spot: 0.34293568
-          month: 827.24419936
-          month_1y: 651.55712
-          month_3y: 465.40128
+          month: 703.162242624
+          month_1y: 553.81888
+          month_3y: 395.57824
           month_spot: 250.3430464
         europe-central2:
           hour: 1.285856
@@ -55668,11 +55668,11 @@ compute:
           month_3y: 58.17516
           month_spot: 35.78168
         australia-southeast2:
-          hour: 0.17702
+          hour: 0.150468
           hour_spot: 0.04286696
-          month: 103.40552492
-          month_1y: 81.44464
-          month_3y: 58.17516
+          month: 87.895280328
+          month_1y: 69.22736
+          month_3y: 49.44728
           month_spot: 31.2928808
         europe-central2:
           hour: 0.160732
@@ -55952,11 +55952,11 @@ compute:
           month_3y: 698.10192
           month_spot: 429.38016
         australia-southeast2:
-          hour: 2.12424
+          hour: 1.805616
           hour_spot: 0.51440352
-          month: 1240.86629904
-          month_1y: 977.33568
-          month_3y: 698.10192
+          month: 1054.743363936
+          month_1y: 830.72832
+          month_3y: 593.36736
           month_spot: 375.5145696
         europe-central2:
           hour: 1.928784
@@ -56236,11 +56236,11 @@ compute:
           month_3y: 930.80256
           month_spot: 572.50688
         australia-southeast2:
-          hour: 2.83232
+          hour: 2.407488
           hour_spot: 0.68587136
-          month: 1654.48839872
-          month_1y: 1303.11424
-          month_3y: 930.80256
+          month: 1406.324485248
+          month_1y: 1107.63776
+          month_3y: 791.15648
           month_spot: 500.6860928
         europe-central2:
           hour: 2.571712
@@ -56520,11 +56520,11 @@ compute:
           month_3y: 116.35032
           month_spot: 71.56336
         australia-southeast2:
-          hour: 0.35404
+          hour: 0.300936
           hour_spot: 0.08573392
-          month: 206.81104984
-          month_1y: 162.88928
-          month_3y: 116.35032
+          month: 175.790560656
+          month_1y: 138.45472
+          month_3y: 98.89456
           month_spot: 62.5857616
         europe-central2:
           hour: 0.321464
@@ -56804,11 +56804,11 @@ compute:
           month_3y: 1163.5032
           month_spot: 715.6336
         australia-southeast2:
-          hour: 3.5404
+          hour: 3.00936
           hour_spot: 0.8573392
-          month: 2068.1104984
-          month_1y: 1628.8928
-          month_3y: 1163.5032
+          month: 1757.90560656
+          month_1y: 1384.5472
+          month_3y: 988.9456
           month_spot: 625.857616
         europe-central2:
           hour: 3.21464
@@ -57088,11 +57088,11 @@ compute:
           month_3y: 1396.20384
           month_spot: 858.76032
         australia-southeast2:
-          hour: 4.24848
+          hour: 3.611232
           hour_spot: 1.02880704
-          month: 2481.73259808
-          month_1y: 1954.67136
-          month_3y: 1396.20384
+          month: 2109.486727872
+          month_1y: 1661.45664
+          month_3y: 1186.73472
           month_spot: 751.0291392
         europe-central2:
           hour: 3.857568
@@ -57372,11 +57372,11 @@ compute:
           month_3y: 425.00016
           month_spot: 261.18816
         australia-southeast2:
-          hour: 1.29384
+          hour: 1.099824
           hour_spot: 0.31333152
-          month: 755.79146064
-          month_1y: 595.096
-          month_3y: 425.00016
+          month: 642.457790304
+          month_1y: 505.83744
+          month_3y: 361.22736
           month_spot: 228.7320096
         europe-central2:
           hour: 1.174704
@@ -57656,11 +57656,11 @@ compute:
           month_3y: 53.12502
           month_spot: 32.64852
         australia-southeast2:
-          hour: 0.16173
+          hour: 0.137478
           hour_spot: 0.03916644
-          month: 94.47393258
-          month_1y: 74.387
-          month_3y: 53.12502
+          month: 80.307223788
+          month_1y: 63.22968
+          month_3y: 45.15342
           month_spot: 28.5915012
         europe-central2:
           hour: 0.146838
@@ -57940,11 +57940,11 @@ compute:
           month_3y: 850.00032
           month_spot: 522.37632
         australia-southeast2:
-          hour: 2.58768
+          hour: 2.199648
           hour_spot: 0.62666304
-          month: 1511.58292128
-          month_1y: 1190.192
-          month_3y: 850.00032
+          month: 1284.915580608
+          month_1y: 1011.67488
+          month_3y: 722.45472
           month_spot: 457.4640192
         europe-central2:
           hour: 2.349408
@@ -58224,11 +58224,11 @@ compute:
           month_3y: 106.25004
           month_spot: 65.29704
         australia-southeast2:
-          hour: 0.32346
+          hour: 0.274956
           hour_spot: 0.07833288
-          month: 188.94786516
-          month_1y: 148.774
-          month_3y: 106.25004
+          month: 160.614447576
+          month_1y: 126.45936
+          month_3y: 90.30684
           month_spot: 57.1830024
         europe-central2:
           hour: 0.293676
@@ -58508,11 +58508,11 @@ compute:
           month_3y: 1275.00048
           month_spot: 783.56448
         australia-southeast2:
-          hour: 3.88152
+          hour: 3.299472
           hour_spot: 0.93999456
-          month: 2267.37438192
-          month_1y: 1785.288
-          month_3y: 1275.00048
+          month: 1927.373370912
+          month_1y: 1517.51232
+          month_3y: 1083.68208
           month_spot: 686.1960288
         europe-central2:
           hour: 3.524112
@@ -58792,11 +58792,11 @@ compute:
           month_3y: 1700.00064
           month_spot: 1044.75264
         australia-southeast2:
-          hour: 5.17536
+          hour: 4.399296
           hour_spot: 1.25332608
-          month: 3023.16584256
-          month_1y: 2380.384
-          month_3y: 1700.00064
+          month: 2569.831161216
+          month_1y: 2023.34976
+          month_3y: 1444.90944
           month_spot: 914.9280384
         europe-central2:
           hour: 4.698816
@@ -59076,11 +59076,11 @@ compute:
           month_3y: 212.50008
           month_spot: 130.59408
         australia-southeast2:
-          hour: 0.64692
+          hour: 0.549912
           hour_spot: 0.15666576
-          month: 377.89573032
-          month_1y: 297.548
-          month_3y: 212.50008
+          month: 321.228895152
+          month_1y: 252.91872
+          month_3y: 180.61368
           month_spot: 114.3660048
         europe-central2:
           hour: 0.587352
@@ -59360,11 +59360,11 @@ compute:
           month_3y: 2125.0008
           month_spot: 1305.9408
         australia-southeast2:
-          hour: 6.4692
+          hour: 5.49912
           hour_spot: 1.5666576
-          month: 3778.9573032
-          month_1y: 2975.48
-          month_3y: 2125.0008
+          month: 3212.28895152
+          month_1y: 2529.1872
+          month_3y: 1806.1368
           month_spot: 1143.660048
         europe-central2:
           hour: 5.87352
@@ -59644,11 +59644,11 @@ compute:
           month_3y: 2550.00096
           month_spot: 1567.12896
         australia-southeast2:
-          hour: 7.76304
+          hour: 6.598944
           hour_spot: 1.87998912
-          month: 4534.74876384
-          month_1y: 3570.576
-          month_3y: 2550.00096
+          month: 3854.746741824
+          month_1y: 3035.02464
+          month_3y: 2167.36416
           month_spot: 1372.3920576
         europe-central2:
           hour: 7.048224
@@ -59928,11 +59928,11 @@ compute:
           month_3y: 2520.91776
           month_spot: 1549.79584
         australia-southeast2:
-          hour: 7.67296
+          hour: 6.52224
           hour_spot: 1.85813248
-          month: 4482.12889216
-          month_1y: 3529.60256
-          month_3y: 2520.91776
+          month: 3809.94040704
+          month_1y: 3000.17152
+          month_3y: 2142.67264
           month_spot: 1356.4367104
         europe-central2:
           hour: 6.966656
@@ -60212,11 +60212,11 @@ compute:
           month_3y: 315.11472
           month_spot: 193.72448
         australia-southeast2:
-          hour: 0.95912
+          hour: 0.81528
           hour_spot: 0.23226656
-          month: 560.26611152
-          month_1y: 441.20032
-          month_3y: 315.11472
+          month: 476.24255088
+          month_1y: 375.02144
+          month_3y: 267.83408
           month_spot: 169.5545888
         europe-central2:
           hour: 0.870832
@@ -60496,11 +60496,11 @@ compute:
           month_3y: 39.38934
           month_spot: 24.21556
         australia-southeast2:
-          hour: 0.11989
+          hour: 0.10191
           hour_spot: 0.02903332
-          month: 70.03326394
-          month_1y: 55.15004
-          month_3y: 39.38934
+          month: 59.53031886
+          month_1y: 46.87768
+          month_3y: 33.47926
           month_spot: 21.1943236
         europe-central2:
           hour: 0.108854
@@ -60780,11 +60780,11 @@ compute:
           month_3y: 4411.60608
           month_spot: 2712.14272
         australia-southeast2:
-          hour: 13.42768
+          hour: 11.41392
           hour_spot: 3.25173184
-          month: 7843.72556128
-          month_1y: 6176.80448
-          month_3y: 4411.60608
+          month: 6667.39571232
+          month_1y: 5250.30016
+          month_3y: 3749.67712
           month_spot: 2373.7642432
         europe-central2:
           hour: 12.191648
@@ -61064,11 +61064,11 @@ compute:
           month_3y: 630.22944
           month_spot: 387.44896
         australia-southeast2:
-          hour: 1.91824
+          hour: 1.63056
           hour_spot: 0.46453312
-          month: 1120.53222304
-          month_1y: 882.40064
-          month_3y: 630.22944
+          month: 952.48510176
+          month_1y: 750.04288
+          month_3y: 535.66816
           month_spot: 339.1091776
         europe-central2:
           hour: 1.741664
@@ -61348,11 +61348,11 @@ compute:
           month_3y: 78.77868
           month_spot: 48.43112
         australia-southeast2:
-          hour: 0.23978
+          hour: 0.20382
           hour_spot: 0.05806664
-          month: 140.06652788
-          month_1y: 110.30008
-          month_3y: 78.77868
+          month: 119.06063772
+          month_1y: 93.75536
+          month_3y: 66.95852
           month_spot: 42.3886472
         europe-central2:
           hour: 0.217708
@@ -61632,11 +61632,11 @@ compute:
           month_3y: 945.34416
           month_spot: 581.17344
         australia-southeast2:
-          hour: 2.87736
+          hour: 2.44584
           hour_spot: 0.69679968
-          month: 1680.79833456
-          month_1y: 1323.60096
-          month_3y: 945.34416
+          month: 1428.72765264
+          month_1y: 1125.06432
+          month_3y: 803.50224
           month_spot: 508.6637664
         europe-central2:
           hour: 2.612496
@@ -61916,11 +61916,11 @@ compute:
           month_3y: 1260.45888
           month_spot: 774.89792
         australia-southeast2:
-          hour: 3.83648
+          hour: 3.26112
           hour_spot: 0.92906624
-          month: 2241.06444608
-          month_1y: 1764.80128
-          month_3y: 1260.45888
+          month: 1904.97020352
+          month_1y: 1500.08576
+          month_3y: 1071.33632
           month_spot: 678.2183552
         europe-central2:
           hour: 3.483328
@@ -62200,11 +62200,11 @@ compute:
           month_3y: 157.55736
           month_spot: 96.86224
         australia-southeast2:
-          hour: 0.47956
+          hour: 0.40764
           hour_spot: 0.11613328
-          month: 280.13305576
-          month_1y: 220.60016
-          month_3y: 157.55736
+          month: 238.12127544
+          month_1y: 187.51072
+          month_3y: 133.91704
           month_spot: 84.7772944
         europe-central2:
           hour: 0.435416
@@ -62484,11 +62484,11 @@ compute:
           month_3y: 1575.5736
           month_spot: 968.6224
         australia-southeast2:
-          hour: 4.7956
+          hour: 4.0764
           hour_spot: 1.1613328
-          month: 2801.3305576
-          month_1y: 2206.0016
-          month_3y: 1575.5736
+          month: 2381.2127544
+          month_1y: 1875.1072
+          month_3y: 1339.1704
           month_spot: 847.772944
         europe-central2:
           hour: 4.35416
@@ -62768,11 +62768,11 @@ compute:
           month_3y: 1890.68832
           month_spot: 1162.34688
         australia-southeast2:
-          hour: 5.75472
+          hour: 4.89168
           hour_spot: 1.39359936
-          month: 3361.59666912
-          month_1y: 2647.20192
-          month_3y: 1890.68832
+          month: 2857.45530528
+          month_1y: 2250.12864
+          month_3y: 1607.00448
           month_spot: 1017.3275328
         europe-central2:
           hour: 5.224992
