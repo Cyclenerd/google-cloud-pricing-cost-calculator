@@ -33,7 +33,7 @@ jobs:
 
       # https://github.com/marketplace/actions/run-golangci-lint
       - name: 🌡️ Lint build
-        uses: golangci/golangci-lint-action@v5
+        uses: golangci/golangci-lint-action@v6
         with:
           working-directory: build
           skip-cache: true  # first lint action will handle
@@ -43,7 +43,7 @@ jobs:
 
       # https://github.com/marketplace/actions/run-golangci-lint
       - name: 🌡️ Lint gcosts
-        uses: golangci/golangci-lint-action@v5
+        uses: golangci/golangci-lint-action@v6
         with:
           working-directory: gcosts
           skip-cache: true  # first lint action will handle
