@@ -109,7 +109,7 @@ jobs:
       # Release, upload files
       # https://github.com/softprops/action-gh-release
       - name: ✨ Release
-        uses: softprops/action-gh-release@v2.0.4
+        uses: softprops/action-gh-release@v2.0.5
         with:
           files: |
             pricing.yml
