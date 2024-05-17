@@ -427,6 +427,12 @@ MY_CHECKS=(
 	'a2-ultragpu-1g-1y,3670'
 	'a2-ultragpu-1g-3y,3670'
 
+# 01_us-central1-a3
+	'a3-highgpu-8g,64117'
+	'a3-highgpu-8g-local-disk,489'
+	'a3-highgpu-8g-1y,44507'
+	'a3-highgpu-8g-3y,28154'
+
 # 10_us-central1.yml
 	'vpn-us-central1-tunnel,36.5' # VPN Tunnel
 	'nat-us-central1-gateway,88.234' # NAT Gateway with Data
