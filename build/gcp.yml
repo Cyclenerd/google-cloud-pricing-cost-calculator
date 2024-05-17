@@ -1002,10 +1002,10 @@ compute:
       a100-80gb: 8
 
     # A3:
-    #a3-highgpu-8g:
-    #  cpu: 208
-    #  ram: 1872
-    #  h100-80gb: 8
+    a3-highgpu-8g:
+      cpu: 208
+      ram: 1872
+      h100-80gb: 8
 
     # G2:
     g2-standard-4:

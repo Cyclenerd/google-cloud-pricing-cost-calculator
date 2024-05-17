@@ -1,0 +1,22 @@
+region: us-central1
+project: gcp-gce-a3
+
+# Accelerator-optimized machine type family with NVIDIA H100 80GB GPUs.
+# https://cloud.google.com/compute/docs/accelerator-optimized-machines#a3-vms
+
+instances:
+  - name: a3-highgpu-8g
+    type: a3-highgpu-8g
+    disks:
+      - name: a3-highgpu-8g-local-disk
+        type: local
+        data: 6114
+  - name: a3-highgpu-8g-1y
+    type: a3-highgpu-8g
+    commitment: 1
+  - name: a3-highgpu-8g-3y
+    type: a3-highgpu-8g
+    commitment: 3
+  - name: a3-highgpu-8g-spot
+    type: a3-highgpu-8g
+    spot: true

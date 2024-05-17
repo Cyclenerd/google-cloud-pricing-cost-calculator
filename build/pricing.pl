@@ -600,6 +600,7 @@ foreach my $region (@regions) {
 		my $ram       = $gcp->{'compute'}->{'instance'}->{$machine}->{'ram'}       || '0';
 		my $a100      = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100'}      || '0';
 		my $a100_80gb = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100-80gb'} || '0';
+		my $h100_80gb = $gcp->{'compute'}->{'instance'}->{$machine}->{'h100-80gb'} || '0';
 		my $l4        = $gcp->{'compute'}->{'instance'}->{$machine}->{'l4'}        || '0';
 
 		print "Machine: $machine\n";
@@ -904,6 +905,22 @@ foreach my $region (@regions) {
 			$mappings_1y{  'gce.compute.gpu.a100.80gb.1y'}   = $a100_80gb;
 			$mappings_3y{  'gce.compute.gpu.a100.80gb.3y'}   = $a100_80gb;
 			$mappings_spot{'gce.compute.gpu.a100.80gb.spot'} = $a100_80gb;
+		}
+		# A3
+		elsif ($type eq 'a3') {
+			$mappings{     'gce.compute.cpu.a3'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.a3.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.a3.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.a3.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.a3'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.a3.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.a3.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.a3.spot'} = $ram;
+			# NVIDIA's H100 80GB GPUs
+			$mappings{     'gce.compute.gpu.h100.80gb'}      = $h100_80gb;
+			$mappings_1y{  'gce.compute.gpu.h100.80gb.1y'}   = $h100_80gb;
+			$mappings_3y{  'gce.compute.gpu.h100.80gb.3y'}   = $h100_80gb;
+			$mappings_spot{'gce.compute.gpu.h100.80gb.spot'} = $h100_80gb;
 		}
 		# G2
 		elsif ($type eq 'g2') {
