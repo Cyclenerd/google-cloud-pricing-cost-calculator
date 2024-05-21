@@ -988,24 +988,34 @@ compute:
       cpu: 12
       ram: 170
       a100-80gb: 1
+      # Local SSD is automatically attached to VMs
+      local-ssd: 375
     a2-ultragpu-2g:
       cpu: 24
       ram: 340
       a100-80gb: 2
+      # Local SSD is automatically attached to VMs
+      local-ssd: 750
     a2-ultragpu-4g:
       cpu: 48
       ram: 680
       a100-80gb: 4
+      # Local SSD is automatically attached to VMs
+      local-ssd: 1500
     a2-ultragpu-8g:
       cpu: 96
       ram: 1360
       a100-80gb: 8
+      # Local SSD is automatically attached to VMs
+      local-ssd: 3000
 
     # A3:
     a3-highgpu-8g:
       cpu: 208
       ram: 1872
       h100-80gb: 8
+      # 6 TB of Local SSD is automatically added to VMs created by using the A3 machine type.
+      local-ssd: 6000
 
     # G2:
     g2-standard-4:
@@ -1050,6 +1060,8 @@ compute:
     z3-highmem-88:
       cpu: 88
       ram: 704
+      local-ssd: 36000
     z3-highmem-176:
       cpu: 176
       ram: 1408
+      local-ssd: 36000

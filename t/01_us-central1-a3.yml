@@ -7,10 +7,6 @@ project: gcp-gce-a3
 instances:
   - name: a3-highgpu-8g
     type: a3-highgpu-8g
-    disks:
-      - name: a3-highgpu-8g-local-disk
-        type: local
-        data: 6114
   - name: a3-highgpu-8g-1y
     type: a3-highgpu-8g
     commitment: 1

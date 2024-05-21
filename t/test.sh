@@ -140,15 +140,14 @@ MY_CHECKS=(
 	'gcp-gce-h3,europe-west4,vm,h3-standard-88,h3-standard-88-3y,2265'
 
 # 01_europe-west4-z3.yml
-# Lower price compared to the price list because 36TiB Local SSD is not included in our calculation
 	# Z3 machine types
-	'z3-highmem-88,6940'   # 9964
-	'z3-highmem-176,13881' # 16901
+	'z3-highmem-88,10108'   # 9964
+	'z3-highmem-176,17049' # 16901
 	# Z3 Commitment (CUD)
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-1y,4372'    # 7943
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-3y,3123'    # 5268
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-1y,8745' # 12510
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-3y,6246'  # 8936
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-1y,6368'    # 6760
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-3y,4548'    # 4484
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-1y,10740' # 10647
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-3y,7672'  # 7605
 
 # 01_europe-west4-e2.yml
 	# E2 machine types
@@ -422,16 +421,14 @@ MY_CHECKS=(
 # 01_us-central1-a2-ultragpu
 	# A2 with A100 80GB and local SSD
 	# Pirce list: a2-ultragpu-1g in us-central1 = $3700.22
-	'a2-ultragpu-1g,3670'
-	'a2-ultragpu-1g-local-disk,30'
-	'a2-ultragpu-1g-1y,3670'
-	'a2-ultragpu-1g-3y,3670'
+	'a2-ultragpu-1g,3700'
+	'a2-ultragpu-1g-1y,3700'
+	'a2-ultragpu-1g-3y,3700'
 
 # 01_us-central1-a3
-	'a3-highgpu-8g,64117'
-	'a3-highgpu-8g-local-disk,489'
-	'a3-highgpu-8g-1y,44507'
-	'a3-highgpu-8g-3y,28154'
+	'a3-highgpu-8g,64597'
+	'a3-highgpu-8g-1y,44810' # Price List: $44800
+	'a3-highgpu-8g-3y,28370' # Price List: $28353
 
 # 10_us-central1.yml
 	'vpn-us-central1-tunnel,36.5' # VPN Tunnel
