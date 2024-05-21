@@ -557,6 +557,35 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 				}
 			}
 			$sth->finish;
+			print "Check Spot:\n";
+			my $spot_found = 0;
+			my $mapping_spot = "$mapping".'.spot';
+			$sth->execute($mapping_spot, '%'."$region".'%'); # Search SKU(s)
+			while ($sth->fetch) {
+				if (&check_region($region, $regions)) {
+					&mapping_found($mapping_spot, $region, $regions, $value, $nanos, $units, $unit_description, $sku_id, $sku_description);
+					# Check duplicate entries for mapping and region
+					if ($spot_found) {
+						die "ERROR: Duplicate entry. Already found spot price for this mapping '$mapping_spot' in region '$region'!\n"
+					} else {
+						$mapping_spot = 1;
+						my $cost = &calc_cost($value, $units, $nanos);
+						&add_gcp_compute_storage_cost('month_spot', $disk, $region, $cost);
+						&add_gcp_compute_storage_details(
+							$disk,
+							$region,
+							$mapping_spot,
+							$sku_id,
+							$value,
+							$nanos,
+							$units,
+							$unit_description,
+							$sku_description
+						) if ($export_details);
+					}
+				}
+			}
+			$sth->finish;
 		} else {
 			warn "WARNING: '$mapping' not found in region '$region'!\n";
 		}
@@ -598,6 +627,7 @@ foreach my $region (@regions) {
 		# CPU and RAM
 		my $cpu       = $gcp->{'compute'}->{'instance'}->{$machine}->{'cpu'}       || '0';
 		my $ram       = $gcp->{'compute'}->{'instance'}->{$machine}->{'ram'}       || '0';
+		my $local_ssd = $gcp->{'compute'}->{'instance'}->{$machine}->{'local-ssd'} || '0';
 		my $a100      = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100'}      || '0';
 		my $a100_80gb = $gcp->{'compute'}->{'instance'}->{$machine}->{'a100-80gb'} || '0';
 		my $h100_80gb = $gcp->{'compute'}->{'instance'}->{$machine}->{'h100-80gb'} || '0';
@@ -943,6 +973,14 @@ foreach my $region (@regions) {
 			die "ERROR: No mapping for machine family '$type'!"
 		}
 
+		# Add price for bundled local SSD (local-ssd)
+		my $costs_local_ssd_month      = $gcp->{'compute'}->{'storage'}->{'local'}->{'cost'}->{$region}->{'month'}      * $local_ssd || 0;
+		my $costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
+		my $costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
+		my $costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
+		my $costs_local_ssd_hour       = $costs_local_ssd_month      / $hours_month || 0;
+		my $costs_local_ssd_hour_spot  = $costs_local_ssd_month_spot / $hours_month || 0;
+
 		my $costs = 0;
 		foreach my $mapping (keys %mappings) {
 			print "MAPPING: '$mapping' in region '$region'\n";
@@ -1041,8 +1079,8 @@ foreach my $region (@regions) {
 			$costs_with_sustained_use_discount_for_upgrade_100 += ($upgrade_costs * $hours_discount) * $sustained_use_discount{$usage_level};
 		}
 
-		my $costs_month = $costs_with_sustained_use_discount_100+$costs_with_sustained_use_discount_for_upgrade_100;
-		&add_gcp_compute_instance_cost('hour', $machine, $region, $costs+$upgrade_costs);
+		&add_gcp_compute_instance_cost('hour', $machine, $region, $costs+$upgrade_costs+$costs_local_ssd_hour);
+		my $costs_month = $costs_with_sustained_use_discount_100+$costs_with_sustained_use_discount_for_upgrade_100+$costs_local_ssd_month;
 		&add_gcp_compute_instance_cost('month', $machine, $region, $costs_month);
 
 		my $costs_1y = 0;
@@ -1093,7 +1131,7 @@ foreach my $region (@regions) {
 				warn "WARNING: '$mapping' not found in region '$region'!\n";
 			}
 		}
-		my $costs_month_1y = $costs_1y*$hours_month;
+		my $costs_month_1y = ($costs_1y*$hours_month) + $costs_with_sustained_use_discount_for_upgrade_100 + $costs_local_ssd_month_1y;
 		# 2022-10-18:
 		# For committed use discounts pricing on the A2 ultra machine series, connect with your sales account team.
 		if ($machine =~ m/a2-ultragpu/) {
@@ -1111,7 +1149,7 @@ foreach my $region (@regions) {
 			'month_1y',
 			$machine,
 			$region,
-			$costs_month_1y+$costs_with_sustained_use_discount_for_upgrade_100
+			$costs_month_1y
 		);
 
 		my $costs_3y = 0;
@@ -1162,7 +1200,7 @@ foreach my $region (@regions) {
 				warn "WARNING: '$mapping' not found in region '$region'!\n";
 			}
 		}
-		my $costs_month_3y = $costs_3y*$hours_month;
+		my $costs_month_3y = ($costs_3y*$hours_month) + $costs_with_sustained_use_discount_for_upgrade_100 + $costs_local_ssd_month_3y;
 		# 2022-10-18:
 		# For committed use discounts pricing on the A2 ultra machine series, connect with your sales account team.
 		if ($machine =~ m/a2-ultragpu/) {
@@ -1180,7 +1218,7 @@ foreach my $region (@regions) {
 			'month_3y',
 			$machine,
 			$region,
-			$costs_month_3y+$costs_with_sustained_use_discount_for_upgrade_100
+			$costs_month_3y
 		);
 
 		# Spot VMs
@@ -1233,6 +1271,7 @@ foreach my $region (@regions) {
 			}
 		}
 		if ($costs_spot > 0) {
+			$costs_spot = $costs_spot+$costs_local_ssd_hour_spot;
 			&add_gcp_compute_instance_cost('hour_spot',  $machine, $region, $costs_spot);
 			&add_gcp_compute_instance_cost('month_spot', $machine, $region, $costs_spot*$hours_month);
 		}
