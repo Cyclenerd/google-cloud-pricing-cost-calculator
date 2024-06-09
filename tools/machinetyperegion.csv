@@ -6194,6 +6194,9 @@ t2d-standard-8;8;False;32.00;;us-west2
 t2d-standard-8;8;False;32.00;;us-west3
 t2d-standard-8;8;False;32.00;;us-west4
 t2d-standard-8;8;False;32.00;;us-west8
+x4-megamem-1440-metal;1440;False;24576.00;;us-central1
+x4-megamem-1920-metal;1920;False;32768.00;;us-central1
+x4-megamem-960-metal;960;False;16384.00;;us-central1
 z3-highmem-176;176;False;1408.00;;asia-southeast1
 z3-highmem-176;176;False;1408.00;;europe-west4
 z3-highmem-176;176;False;1408.00;;us-central1
