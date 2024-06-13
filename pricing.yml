@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu May 30 03:54:02 2024
-  timestamp: 1717041242
+  generated: Thu Jun 13 14:56:21 2024
+  timestamp: 1718290581
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -1569,7 +1569,7 @@ compute:
           month_spot: 2160.7894982
         europe-west12:
           hour: 6.53505044849315
-          hour_spot: 2.48502224315069
+          hour_spot: 2.48502224315068
           month: 4770.5868274
           month_1y: 4770.5868274
           month_3y: 4770.5868274
@@ -2190,7 +2190,7 @@ compute:
           month_spot: 6535.3839616
         me-central1:
           hour: 24.6343571873973
-          hour_spot: 9.32986567835616
+          hour_spot: 9.32986567835617
           month: 17983.0807468
           month_1y: 17983.0807468
           month_3y: 17983.0807468
@@ -2642,7 +2642,7 @@ compute:
           month_spot: 47513.43523472
         asia-south2:
           hour: 106.28463949589
-          hour_spot: 74.9179775785205
+          hour_spot: 74.9179775785206
           month: 77587.786832
           month_1y: 53821.0578672
           month_3y: 34076.16910768
@@ -2838,7 +2838,7 @@ compute:
           month_spot: 40054.716
         us-south1:
           hour: 104.418201402959
-          hour_spot: 73.6108654025205
+          hour_spot: 73.6108654025206
           month: 76225.28702416
           month_1y: 52875.89632144
           month_3y: 33477.776556
@@ -36402,204 +36402,284 @@ compute:
       cost:
         africa-south1:
           hour: 6.4400688
+          hour_spot: 2.704806192
           month: 4701.250224
           month_1y: 3855.9494688
           month_3y: 2822.4306528
+          month_spot: 1974.50852016
         asia-east1:
           hour: 5.701036528
+          hour_spot: 2.394415232
           month: 4161.75666544
           month_1y: 3413.45843872
           month_3y: 2498.54143792
+          month_spot: 1747.92311936
         asia-east2:
           hour: 6.887624128
+          hour_spot: 2.892777184
           month: 5027.96561344
           month_1y: 4123.92007632
           month_3y: 3018.57644352
+          month_spot: 2111.72734432
         asia-northeast1:
           hour: 6.322886944
+          hour_spot: 2.655589904
           month: 4615.70746912
           month_1y: 3785.78744016
           month_3y: 2771.07424176
+          month_spot: 1938.58062992
         asia-northeast2:
           hour: 6.322886944
+          hour_spot: 2.655589904
           month: 4615.70746912
           month_1y: 3785.78744016
           month_3y: 2771.07424176
+          month_spot: 1938.58062992
         asia-northeast3:
           hour: 6.322886944
+          hour_spot: 2.655589904
           month: 4615.70746912
           month_1y: 3785.78744016
           month_3y: 2771.07424176
+          month_spot: 1938.58062992
         asia-south1:
           hour: 5.120544
+          hour_spot: 2.150610176
           month: 3737.99712
           month_1y: 3065.892544
           month_3y: 2244.134464
+          month_spot: 1569.94542848
         asia-south2:
           hour: 5.913735872
+          hour_spot: 2.483748256
           month: 4317.02718656
           month_1y: 3540.81128368
           month_3y: 2591.75971648
+          month_spot: 1813.13622688
         asia-southeast1:
           hour: 6.074245584
+          hour_spot: 2.551161712
           month: 4434.19927632
           month_1y: 3636.91509456
           month_3y: 2662.10457216
+          month_spot: 1862.34804976
         asia-southeast2:
           hour: 6.620765184
+          hour_spot: 2.780697392
           month: 4833.15858432
           month_1y: 3964.14016416
           month_3y: 2901.62276976
+          month_spot: 2029.90909616
         australia-southeast1:
           hour: 6.1545
+          hour_spot: 2.584868
           month: 4492.785
           month_1y: 3684.967
           month_3y: 2697.277
+          month_spot: 1886.95364
         australia-southeast2:
           hour: 6.40068
+          hour_spot: 2.68826272
           month: 4672.4964
           month_1y: 3832.36568
           month_3y: 2805.16808
+          month_spot: 1962.4317856
         europe-central2:
           hour: 6.343565888
+          hour_spot: 2.664275328
           month: 4630.80309824
           month_1y: 3798.16931472
           month_3y: 2780.13747792
+          month_spot: 1944.92098944
         europe-north1:
           hour: 5.421375872
+          hour_spot: 2.276958816
           month: 3957.60438656
           month_1y: 3246.01392368
           month_3y: 2375.97755648
+          month_spot: 1662.17993568
         europe-southwest1:
           hour: 5.809848
+          hour_spot: 2.440115392
           month: 4241.18904
           month_1y: 3478.608848
           month_3y: 2546.229488
+          month_spot: 1781.28423616
         europe-west1:
           hour: 5.421375872
+          hour_spot: 2.276958816
           month: 3957.60438656
           month_1y: 3246.01392368
           month_3y: 2375.97755648
+          month_spot: 1662.17993568
         europe-west10:
           hour: 7.582344
+          hour_spot: 3.184557376
           month: 5535.11112
           month_1y: 4539.879344
           month_3y: 3323.045264
+          month_spot: 2324.72688448
         europe-west12:
           hour: 6.351444
+          hour_spot: 2.667583776
           month: 4636.55412
           month_1y: 3802.885944
           month_3y: 2783.589864
+          month_spot: 1947.33615648
         europe-west2:
           hour: 5.612904
+          hour_spot: 2.357399616
           month: 4097.41992
           month_1y: 3360.689904
           month_3y: 2459.916624
+          month_spot: 1720.90171968
         europe-west3:
           hour: 5.809848
+          hour_spot: 2.440115392
           month: 4241.18904
           month_1y: 3478.608848
           month_3y: 2546.229488
+          month_spot: 1781.28423616
         europe-west4:
           hour: 5.16978
+          hour_spot: 2.17128912
           month: 3773.9394
           month_1y: 3095.37228
           month_3y: 2265.71268
+          month_spot: 1585.0410576
         europe-west6:
           hour: 6.887624128
+          hour_spot: 2.892777184
           month: 5027.96561344
           month_1y: 4123.92007632
           month_3y: 3018.57644352
+          month_spot: 2111.72734432
         europe-west8:
           hour: 5.711376
+          hour_spot: 2.398757504
           month: 4169.30448
           month_1y: 3419.649376
           month_3y: 2503.073056
+          month_spot: 1751.09297792
         europe-west9:
           hour: 5.711376
+          hour_spot: 2.398757504
           month: 4169.30448
           month_1y: 3419.649376
           month_3y: 2503.073056
+          month_spot: 1751.09297792
         me-central1:
           hour: 5.982174
+          hour_spot: 2.512491696
           month: 4366.98702
           month_1y: 3581.787924
           month_3y: 2621.753244
+          month_spot: 1834.11893808
         me-central2:
           hour: 7.87776
+          hour_spot: 3.30863104
           month: 5750.7648
           month_1y: 4716.75776
           month_3y: 3452.51456
+          month_spot: 2415.3006592
         me-west1:
           hour: 5.41596
+          hour_spot: 2.27468384
           month: 3953.6508
           month_1y: 3242.77096
           month_3y: 2373.60376
+          month_spot: 1660.5192032
         northamerica-northeast1:
           hour: 5.421375872
+          hour_spot: 2.276958816
           month: 3957.60438656
           month_1y: 3246.01392368
           month_3y: 2375.97755648
+          month_spot: 1662.17993568
         northamerica-northeast2:
           hour: 5.421375872
+          hour_spot: 2.276958816
           month: 3957.60438656
           month_1y: 3246.01392368
           month_3y: 2375.97755648
+          month_spot: 1662.17993568
         southamerica-east1:
           hour: 7.818184528
+          hour_spot: 3.283609824
           month: 5707.27470544
           month_1y: 4681.08708672
           month_3y: 3426.40472592
+          month_spot: 2397.03517152
         southamerica-west1:
           hour: 7.040748
+          hour_spot: 2.957088992
           month: 5139.74604
           month_1y: 4215.602248
           month_3y: 3085.684888
+          month_spot: 2158.67496416
         us-central1:
           hour: 4.9236
+          hour_spot: 2.0678944
           month: 3594.228
           month_1y: 2947.9736
           month_3y: 2157.8216
+          month_spot: 1509.562912
         us-east1:
           hour: 4.9236
+          hour_spot: 2.0678944
           month: 3594.228
           month_1y: 2947.9736
           month_3y: 2157.8216
+          month_spot: 1509.562912
         us-east4:
           hour: 4.9236
+          hour_spot: 2.0678944
           month: 3594.228
           month_1y: 2947.9736
           month_3y: 2157.8216
+          month_spot: 1509.562912
         us-east5:
           hour: 5.545450416
+          hour_spot: 2.329069072
           month: 4048.17880368
           month_1y: 3320.30260144
           month_3y: 2430.35440384
+          month_spot: 1700.22042256
         us-south1:
           hour: 5.809848
+          hour_spot: 2.440115392
           month: 4241.18904
           month_1y: 3478.608848
           month_3y: 2546.229488
+          month_spot: 1781.28423616
         us-west1:
           hour: 4.9236
+          hour_spot: 2.0678944
           month: 3594.228
           month_1y: 2947.9736
           month_3y: 2157.8216
+          month_spot: 1509.562912
         us-west2:
           hour: 5.918659472
+          hour_spot: 2.485815552
           month: 4320.62141456
           month_1y: 3543.75925728
           month_3y: 2593.91753808
+          month_spot: 1814.64535296
         us-west3:
           hour: 5.918659472
+          hour_spot: 2.485815552
           month: 4320.62141456
           month_1y: 3543.75925728
           month_3y: 2593.91753808
+          month_spot: 1814.64535296
         us-west4:
           hour: 5.545450416
+          hour_spot: 2.329069072
           month: 4048.17880368
           month_1y: 3320.30260144
           month_3y: 2430.35440384
+          month_spot: 1700.22042256
       cpu: 88
       ram: 352
     m1-megamem-96:
