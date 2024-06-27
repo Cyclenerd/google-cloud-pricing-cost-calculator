@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Jun 20 03:53:34 2024
-  timestamp: 1718855614
+  generated: Thu Jun 27 03:53:56 2024
+  timestamp: 1719460436
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -2253,7 +2253,7 @@ compute:
           month_spot: 5956.2076
         us-east4:
           hour: 22.8309299178082
-          hour_spot: 8.08149534246576
+          hour_spot: 8.08149534246575
           month: 16666.57884
           month_1y: 16666.57884
           month_3y: 16666.57884
@@ -2838,7 +2838,7 @@ compute:
           month_spot: 40054.716
         us-south1:
           hour: 104.418201402959
-          hour_spot: 73.6108654025206
+          hour_spot: 73.6108654025205
           month: 76225.28702416
           month_1y: 52875.89632144
           month_3y: 33477.776556
