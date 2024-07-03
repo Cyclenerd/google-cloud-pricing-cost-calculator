@@ -1,6 +1,7 @@
 NAME;VALID_DISK_SIZES,DESCRIPTION
 hyperdisk-balanced;4GB-65536GB;Hyperdisk Balanced Persistent Disk
 hyperdisk-extreme;64GB-65536GB;Hyperdisk Extreme Persistent Disk
+hyperdisk-ml;4GB-65536GB;Hyperdisk ML Persistent Disk
 hyperdisk-throughput;2048GB-32768GB;Hyperdisk Throughput Persistent Disk
 local-ssd;375GB-375GB;Local SSD
 pd-balanced;10GB-65536GB;Balanced Persistent Disk
