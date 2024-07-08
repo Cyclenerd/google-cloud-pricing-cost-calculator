@@ -1345,42 +1345,58 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 	if ($type eq 'f1') {
 		$sles_mapping     = 'gce.os.sles.f1';
 		$sles_sap_mapping = 'gce.os.sles.sap.f1';
-		$rhel_mapping     = 'gce.os.rhel.cpu.1.4';
-		$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.4';
+		$rhel_mapping     = 'gce.os.rhel.cpu.1.8';
+		$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.8';
 		$windows_mapping  = 'gce.os.windows.f1';
 	}
 	# G1 Predefined
 	elsif ($type eq 'g1') {
 		$sles_mapping     = 'gce.os.sles.g1';
 		$sles_sap_mapping = 'gce.os.sles.sap.g1';
-		$rhel_mapping     = 'gce.os.rhel.cpu.1.4';
-		$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.4';
+		$rhel_mapping     = 'gce.os.rhel.cpu.1.8';
+		$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.8';
 		$windows_mapping  = 'gce.os.windows.g1';
 	}
 	# CPU
 	else {
-		# VM with 5 (6) or more VCPU
-		if ($cpu >= 5) {
+		# VM with 128 or more vCPU
+		if ($cpu >= 128) {
 			$sles_mapping     = 'gce.os.sles.cpu';
 			$sles_sap_mapping = 'gce.os.sles.sap.cpu.6.n';
-			$rhel_mapping     = 'gce.os.rhel.cpu.6.n';
-			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.6.n';
+			$rhel_mapping     = 'gce.os.rhel.cpu.128.n';
+			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.128.n';
 			$windows_mapping  = 'gce.os.windows.cpu';
 		}
-		# VM with 4 VCPU
+		# VM with 9 or more vCPU
+		elsif ($cpu >= 9) {
+			$sles_mapping     = 'gce.os.sles.cpu';
+			$sles_sap_mapping = 'gce.os.sles.sap.cpu.6.n';
+			$rhel_mapping     = 'gce.os.rhel.cpu.9.127';
+			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.9.127';
+			$windows_mapping  = 'gce.os.windows.cpu';
+		}
+		# VM with 5 or more vCPU
+		elsif ($cpu >= 5) {
+			$sles_mapping     = 'gce.os.sles.cpu';
+			$sles_sap_mapping = 'gce.os.sles.sap.cpu.6.n';
+			$rhel_mapping     = 'gce.os.rhel.cpu.1.8';
+			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.8';
+			$windows_mapping  = 'gce.os.windows.cpu';
+		}
+		# VM with 4 or more vCPU
 		elsif ($cpu >= 4) {
 			$sles_mapping     = 'gce.os.sles.cpu';
 			$sles_sap_mapping = 'gce.os.sles.sap.cpu.4';
-			$rhel_mapping     = 'gce.os.rhel.cpu.1.4';
-			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.4';
+			$rhel_mapping     = 'gce.os.rhel.cpu.1.8';
+			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.8';
 			$windows_mapping  = 'gce.os.windows.cpu';
 		}
 		# VM with 1 to 3 VCPU
 		else {
 			$sles_mapping     = 'gce.os.sles.cpu';
 			$sles_sap_mapping = 'gce.os.sles.sap.cpu.1.3';
-			$rhel_mapping     = 'gce.os.rhel.cpu.1.4';
-			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.4';
+			$rhel_mapping     = 'gce.os.rhel.cpu.1.8';
+			$rhel_sap_mapping = 'gce.os.rhel.sap.cpu.1.8';
 			$windows_mapping  = 'gce.os.windows.cpu';
 		}
 	}
@@ -1393,8 +1409,14 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 		my $region  = '%';
 		if    ($os eq 'sles')     { $mapping = $sles_mapping; }
 		elsif ($os eq 'sles-sap') { $mapping = $sles_sap_mapping; }
-		elsif ($os eq 'rhel')     { $mapping = $rhel_mapping; }
-		elsif ($os eq 'rhel-sap') { $mapping = $rhel_sap_mapping; }
+		elsif ($os eq 'rhel')     {
+			$mapping = $rhel_mapping;
+			$value   = $cpu; # license per vCPU (core/hour)
+		}
+		elsif ($os eq 'rhel-sap') {
+			$mapping = $rhel_sap_mapping;
+			$value   = $cpu; # license per vCPU (core/hour)
+		}
 		elsif ($os eq 'windows')  {
 			$mapping = $windows_mapping;
 			$value   = $cpu; # license per vCPU (core/hour)

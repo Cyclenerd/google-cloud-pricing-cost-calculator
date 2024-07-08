@@ -386,9 +386,9 @@ MY_CHECKS=(
 	'disk,snapshot,snapshot-n1-standard-16-sles-sap-boot,5.3'
 	'disk,snapshot,snapshot-n1-standard-16-sles-sap-data,10'
 	'eur4,bucket,nearline-dual,bucket-n1-standard-16-sles-sap,22.5'
-	# RHEL for SAP (https://cloud.google.com/products/calculator/#id=a41b2496-c124-4db8-9e30-0a5fcfbe9466)
+	# RHEL for SAP (https://cloud.google.com/compute/disks-image-pricing#rhel_images)
 	'vm,n1-standard-16,n1-standard-16-rhel-sap,274'
-	'rhel-sap,n1-standard-16,n1-standard-16-rhel-sap,124'
+	'rhel-sap,n1-standard-16,n1-standard-16-rhel-sap,189'
 	# Windows (https://cloud.google.com/products/calculator/#id=e23e3861-35f2-4550-9ce4-74585f3d23c1)
 	'vm,n1-standard-16,n1-standard-16-windows,274'
 	'windows,n1-standard-16,n1-standard-16-windows,537'
