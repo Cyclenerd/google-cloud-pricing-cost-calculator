@@ -494,6 +494,83 @@ compute:
       cpu: 80
       ram: 160
 
+    # C4:
+    # C4 standard
+    c4-standard-2:
+      cpu: 2
+      ram: 7
+    c4-standard-4:
+      cpu: 4
+      ram: 15
+    c4-standard-8:
+      cpu: 8
+      ram: 30
+    c4-standard-16:
+      cpu: 16
+      ram: 60
+    c4-standard-32:
+      cpu: 32
+      ram: 120
+    c4-standard-48:
+      cpu: 48
+      ram: 180
+    c4-standard-96:
+      cpu: 96
+      ram: 360
+    c4-standard-192:
+      cpu: 192
+      ram: 720
+    # C4 high-memory
+    c4-highmem-2:
+      cpu: 2
+      ram: 15
+    c4-highmem-4:
+      cpu: 4
+      ram: 31
+    c4-highmem-8:
+      cpu: 8
+      ram: 62
+    c4-highmem-16:
+      cpu: 16
+      ram: 124
+    c4-highmem-32:
+      cpu: 32
+      ram: 248
+    c4-highmem-48:
+      cpu: 48
+      ram: 372
+    c4-highmem-96:
+      cpu: 96
+      ram: 744
+    c4-highmem-192:
+      cpu: 192
+      ram: 1448
+     # C4 high-cpu
+    c4-highcpu-2:
+      cpu: 2
+      ram: 4
+    c4-highcpu-4:
+      cpu: 4
+      ram: 18
+    c4-highcpu-8:
+      cpu: 8
+      ram: 16
+    c4-highcpu-16:
+      cpu: 16
+      ram: 32
+    c4-highcpu-32:
+      cpu: 32
+      ram: 64
+    c4-highcpu-48:
+      cpu: 48
+      ram: 96
+    c4-highcpu-96:
+      cpu: 96
+      ram: 192
+    c4-highcpu-192:
+      cpu: 192
+      ram: 384
+
     # T2D:
     # T2D standard
     t2d-standard-1:

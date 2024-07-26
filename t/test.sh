@@ -372,10 +372,42 @@ MY_CHECKS=(
 	'n4-highcpu-48,1471'
 	'n4-highcpu-64,1961'
 	'n4-highcpu-80,2451'
-	# N2 Commitment (CUD)
+	# N4 Commitment (CUD)
 	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-1y,183'
 	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-3y,130'
 	'n4-standard-8-spot,'
+
+
+# 01_europe-west4-c4.yml
+	# C4 machine types
+	'c4-standard-2,72'
+	'c4-standard-4,145'
+	'c4-standard-8,290'
+	'c4-standard-16,581'
+	'c4-standard-32,1162'
+	'c4-standard-48,1743'
+	'c4-standard-96,2324'
+	'c4-standard-192,2905'
+	'c4-highmem-2,95'
+	'c4-highmem-4,190'
+	'c4-highmem-8,381'
+	'c4-highmem-16,762'
+	'c4-highmem-32,1525'
+	'c4-highmem-48,2288'
+	'c4-highmem-96,3050'
+	'c4-highmem-192,3813'
+	'c4-highcpu-2,61'
+	'c4-highcpu-4,122'
+	'c4-highcpu-8,245'
+	'c4-highcpu-16,490'
+	'c4-highcpu-32,980'
+	'c4-highcpu-48,1471'
+	'c4-highcpu-96,1961'
+	'c4-highcpu-192,2451'
+	# C4 Commitment (CUD)
+	'gcp-gce-c4,europe-west4,vm,c4-standard-8,c4-standard-8-1y,183'
+	'gcp-gce-c4,europe-west4,vm,c4-standard-8,c4-standard-8-3y,130'
+	'c4-standard-8-spot,'
 
 # 01_europe-west4-sap.yml
 	# SLES for SAP (https://cloud.google.com/products/calculator/#id=9a410d62-97b7-4ae0-baba-2f83ba9e625d)

@@ -787,6 +787,28 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.n4.3y'}          = $ram;
 			$mappings_spot{'gce.compute.ram.n4.custom.spot'} = $ram;
 		}
+		# C4 Predefined
+		elsif ($type eq 'c4') {
+			$mappings{     'gce.compute.cpu.c4'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.c4.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.c4.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.c4.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.c4'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.c4.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.c4.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.c4.spot'} = $ram;
+		}
+		# C4 Custom
+		elsif ($type eq 'c4-custom') {
+			$mappings{     'gce.compute.cpu.c4.custom'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.c4.1y'}          = $cpu;
+			$mappings_3y{  'gce.compute.cpu.c4.3y'}          = $cpu;
+			$mappings_spot{'gce.compute.cpu.c4.custom.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.c4.custom'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.c4.1y'}          = $ram;
+			$mappings_3y{  'gce.compute.ram.c4.3y'}          = $ram;
+			$mappings_spot{'gce.compute.ram.c4.custom.spot'} = $ram;
+		}
 		# T2D Predefined
 		elsif ($type eq 't2d') {
 			$mappings{     'gce.compute.cpu.t2d'}      = $cpu;
