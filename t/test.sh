@@ -132,6 +132,41 @@ MY_CHECKS=(
 	'gcp-gce-c3d,europe-west4,vm,c3d-standard-8,c3d-standard-8-3y,125'
 	'c3d-standard-8-spot,'
 
+# 01_europe-west4-c4.yml
+	# C4 machine types
+	'c4-standard-2,74'
+	'c4-standard-4,151'
+	'c4-standard-8,303'
+	'c4-standard-16,606'
+	'c4-standard-32,1212'
+	'c4-standard-48,1818'
+	'c4-standard-96,3636'
+	'c4-standard-192,7272'
+	'c4-highmem-2,98'
+	'c4-highmem-4,199'
+	'c4-highmem-8,399'
+	'c4-highmem-16,799'
+	'c4-highmem-32,1598'
+	'c4-highmem-48,2397'
+	'c4-highmem-96,4795'
+	'c4-highmem-192,9590'
+	'c4-highcpu-2,65'
+	'c4-highcpu-4,130'
+	'c4-highcpu-8,260'
+	'c4-highcpu-16,521'
+	'c4-highcpu-32,1043'
+	'c4-highcpu-48,1564'
+	'c4-highcpu-96,3129'
+	'c4-highcpu-192,6258'
+	# C3D Commitment (CUD)
+	'gcp-gce-c4,europe-west4,vm,c4-standard-8,c4-standard-8-1y,190'
+	'gcp-gce-c4,europe-west4,vm,c4-standard-8,c4-standard-8-3y,136'
+	'gcp-gce-c4,europe-west4,vm,c4-highmem-8,c4-highmem-8-1y,251'
+	'gcp-gce-c4,europe-west4,vm,c4-highmem-8,c4-highmem-8-3y,179'
+	'gcp-gce-c4,europe-west4,vm,c4-highcpu-8,c4-highcpu-8-1y,164'
+	'gcp-gce-c4,europe-west4,vm,c4-highcpu-8,c4-highcpu-8-3y,117'
+	'c4-standard-8-spot,'
+
 # 01_europe-west4-h3.yml
 	# H3 machine types
 	'h3-standard-88,3773'

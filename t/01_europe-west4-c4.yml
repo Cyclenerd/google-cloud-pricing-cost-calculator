@@ -1,0 +1,81 @@
+region: europe-west4
+project: gcp-gce-c4
+
+instances:
+  - name: c4-standard-2
+    type: c4-standard-2
+  - name: c4-standard-4
+    type: c4-standard-4
+  - name: c4-standard-8
+    type: c4-standard-8
+  - name: c4-standard-16
+    type: c4-standard-16
+  - name: c4-standard-32
+    type: c4-standard-32
+  - name: c4-standard-48
+    type: c4-standard-48
+  - name: c4-standard-96
+    type: c4-standard-96
+  - name: c4-standard-192
+    type: c4-standard-192
+  - name: c4-highcpu-2
+    type: c4-highcpu-2
+  - name: c4-highcpu-4
+    type: c4-highcpu-4
+  - name: c4-highcpu-8
+    type: c4-highcpu-8
+  - name: c4-highcpu-16
+    type: c4-highcpu-16
+  - name: c4-highcpu-32
+    type: c4-highcpu-32
+  - name: c4-highcpu-48
+    type: c4-highcpu-48
+  - name: c4-highcpu-96
+    type: c4-highcpu-96
+  - name: c4-highcpu-192
+    type: c4-highcpu-192
+  - name: c4-highmem-2
+    type: c4-highmem-2
+  - name: c4-highmem-4
+    type: c4-highmem-4
+  - name: c4-highmem-8
+    type: c4-highmem-8
+  - name: c4-highmem-16
+    type: c4-highmem-16
+  - name: c4-highmem-32
+    type: c4-highmem-32
+  - name: c4-highmem-48
+    type: c4-highmem-48
+  - name: c4-highmem-96
+    type: c4-highmem-96
+  - name: c4-highmem-192
+    type: c4-highmem-192
+# Commitment (CUD)
+  - name: c4-standard-8-1y
+    type: c4-standard-8
+    commitment: 1
+  - name: c4-standard-8-3y
+    type: c4-standard-8
+    commitment: 3
+  - name: c4-highmem-8-1y
+    type: c4-highmem-8
+    commitment: 1
+  - name: c4-highmem-8-3y
+    type: c4-highmem-8
+    commitment: 3
+  - name: c4-highcpu-8-1y
+    type: c4-highcpu-8
+    commitment: 1
+  - name: c4-highcpu-8-3y
+    type: c4-highcpu-8
+    commitment: 3
+# Spot VM
+  - name: c4-standard-8-spot
+    type: c4-standard-8
+    spot: true
+  - name: c4-highmem-8-spot
+    type: c4-highmem-8
+    spot: true
+  - name: c4-highcpu-8-spot
+    type: c4-highcpu-8
+    spot: true

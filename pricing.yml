@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Jul 25 03:53:51 2024
-  timestamp: 1721879631
+  generated: Fri Jul 26 13:47:04 2024
+  timestamp: 1722001624
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -1569,7 +1569,7 @@ compute:
           month_spot: 2160.7894982
         europe-west12:
           hour: 6.53505044849315
-          hour_spot: 2.48502224315068
+          hour_spot: 2.48502224315069
           month: 4770.5868274
           month_1y: 4770.5868274
           month_3y: 4770.5868274
@@ -2253,7 +2253,7 @@ compute:
           month_spot: 5956.2076
         us-east4:
           hour: 22.8309299178082
-          hour_spot: 8.98829534246575
+          hour_spot: 8.98829534246576
           month: 16666.57884
           month_1y: 16666.57884
           month_3y: 16666.57884
@@ -2705,7 +2705,7 @@ compute:
           month_spot: 39165.9848
         europe-west10:
           hour: 136.274618707726
-          hour_spot: 95.9162724635617
+          hour_spot: 95.9162724635616
           month: 99480.47165664
           month_1y: 69007.55385664
           month_3y: 43691.34000288
@@ -27866,6 +27866,5142 @@ compute:
           month_3y: 1511.555301
           month_spot: 1343.7723492
       cpu: 90
+      ram: 360
+    c4-highcpu-16:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.7144368
+          hour_spot: 0.285768
+          month: 521.538864
+          month_1y: 328.577088
+          month_3y: 234.696168
+          month_spot: 208.61064
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.680416
+          hour_spot: 0.27216
+          month: 496.70368
+          month_1y: 312.93056
+          month_3y: 223.52016
+          month_spot: 198.6768
+        us-east1:
+          hour: 0.680416
+          hour_spot: 0.27216
+          month: 496.70368
+          month_1y: 312.93056
+          month_3y: 223.52016
+          month_spot: 198.6768
+        us-east4:
+          hour: 0.680416
+          hour_spot: 0.27216
+          month: 496.70368
+          month_1y: 312.93056
+          month_3y: 223.52016
+          month_spot: 198.6768
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.680416
+          hour_spot: 0.27216
+          month: 496.70368
+          month_1y: 312.93056
+          month_3y: 223.52016
+          month_spot: 198.6768
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 16
+      ram: 32
+    c4-highcpu-192:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 8.5732416
+          hour_spot: 3.429216
+          month: 6258.466368
+          month_1y: 3942.925056
+          month_3y: 2816.354016
+          month_spot: 2503.32768
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 8.164992
+          hour_spot: 3.26592
+          month: 5960.44416
+          month_1y: 3755.16672
+          month_3y: 2682.24192
+          month_spot: 2384.1216
+        us-east1:
+          hour: 8.164992
+          hour_spot: 3.26592
+          month: 5960.44416
+          month_1y: 3755.16672
+          month_3y: 2682.24192
+          month_spot: 2384.1216
+        us-east4:
+          hour: 8.164992
+          hour_spot: 3.26592
+          month: 5960.44416
+          month_1y: 3755.16672
+          month_3y: 2682.24192
+          month_spot: 2384.1216
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 8.164992
+          hour_spot: 3.26592
+          month: 5960.44416
+          month_1y: 3755.16672
+          month_3y: 2682.24192
+          month_spot: 2384.1216
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 192
+      ram: 384
+    c4-highcpu-2:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.0893046
+          hour_spot: 0.035721
+          month: 65.192358
+          month_1y: 41.072136
+          month_3y: 29.337021
+          month_spot: 26.07633
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.085052
+          hour_spot: 0.03402
+          month: 62.08796
+          month_1y: 39.11632
+          month_3y: 27.94002
+          month_spot: 24.8346
+        us-east1:
+          hour: 0.085052
+          hour_spot: 0.03402
+          month: 62.08796
+          month_1y: 39.11632
+          month_3y: 27.94002
+          month_spot: 24.8346
+        us-east4:
+          hour: 0.085052
+          hour_spot: 0.03402
+          month: 62.08796
+          month_1y: 39.11632
+          month_3y: 27.94002
+          month_spot: 24.8346
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.085052
+          hour_spot: 0.03402
+          month: 62.08796
+          month_1y: 39.11632
+          month_3y: 27.94002
+          month_spot: 24.8346
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 2
+      ram: 4
+    c4-highcpu-32:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 1.4288736
+          hour_spot: 0.571536
+          month: 1043.077728
+          month_1y: 657.154176
+          month_3y: 469.392336
+          month_spot: 417.22128
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 1.360832
+          hour_spot: 0.54432
+          month: 993.40736
+          month_1y: 625.86112
+          month_3y: 447.04032
+          month_spot: 397.3536
+        us-east1:
+          hour: 1.360832
+          hour_spot: 0.54432
+          month: 993.40736
+          month_1y: 625.86112
+          month_3y: 447.04032
+          month_spot: 397.3536
+        us-east4:
+          hour: 1.360832
+          hour_spot: 0.54432
+          month: 993.40736
+          month_1y: 625.86112
+          month_3y: 447.04032
+          month_spot: 397.3536
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 1.360832
+          hour_spot: 0.54432
+          month: 993.40736
+          month_1y: 625.86112
+          month_3y: 447.04032
+          month_spot: 397.3536
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 32
+      ram: 64
+    c4-highcpu-4:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.1786092
+          hour_spot: 0.071442
+          month: 130.384716
+          month_1y: 82.144272
+          month_3y: 58.674042
+          month_spot: 52.15266
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.170104
+          hour_spot: 0.06804
+          month: 124.17592
+          month_1y: 78.23264
+          month_3y: 55.88004
+          month_spot: 49.6692
+        us-east1:
+          hour: 0.170104
+          hour_spot: 0.06804
+          month: 124.17592
+          month_1y: 78.23264
+          month_3y: 55.88004
+          month_spot: 49.6692
+        us-east4:
+          hour: 0.170104
+          hour_spot: 0.06804
+          month: 124.17592
+          month_1y: 78.23264
+          month_3y: 55.88004
+          month_spot: 49.6692
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.170104
+          hour_spot: 0.06804
+          month: 124.17592
+          month_1y: 78.23264
+          month_3y: 55.88004
+          month_spot: 49.6692
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 4
+      ram: 8
+    c4-highcpu-48:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 2.1433104
+          hour_spot: 0.857304
+          month: 1564.616592
+          month_1y: 985.731264
+          month_3y: 704.088504
+          month_spot: 625.83192
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 2.041248
+          hour_spot: 0.81648
+          month: 1490.11104
+          month_1y: 938.79168
+          month_3y: 670.56048
+          month_spot: 596.0304
+        us-east1:
+          hour: 2.041248
+          hour_spot: 0.81648
+          month: 1490.11104
+          month_1y: 938.79168
+          month_3y: 670.56048
+          month_spot: 596.0304
+        us-east4:
+          hour: 2.041248
+          hour_spot: 0.81648
+          month: 1490.11104
+          month_1y: 938.79168
+          month_3y: 670.56048
+          month_spot: 596.0304
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 2.041248
+          hour_spot: 0.81648
+          month: 1490.11104
+          month_1y: 938.79168
+          month_3y: 670.56048
+          month_spot: 596.0304
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 48
+      ram: 96
+    c4-highcpu-8:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.3572184
+          hour_spot: 0.142884
+          month: 260.769432
+          month_1y: 164.288544
+          month_3y: 117.348084
+          month_spot: 104.30532
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.340208
+          hour_spot: 0.13608
+          month: 248.35184
+          month_1y: 156.46528
+          month_3y: 111.76008
+          month_spot: 99.3384
+        us-east1:
+          hour: 0.340208
+          hour_spot: 0.13608
+          month: 248.35184
+          month_1y: 156.46528
+          month_3y: 111.76008
+          month_spot: 99.3384
+        us-east4:
+          hour: 0.340208
+          hour_spot: 0.13608
+          month: 248.35184
+          month_1y: 156.46528
+          month_3y: 111.76008
+          month_spot: 99.3384
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.340208
+          hour_spot: 0.13608
+          month: 248.35184
+          month_1y: 156.46528
+          month_3y: 111.76008
+          month_spot: 99.3384
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 8
+      ram: 16
+    c4-highcpu-96:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 4.2866208
+          hour_spot: 1.714608
+          month: 3129.233184
+          month_1y: 1971.462528
+          month_3y: 1408.177008
+          month_spot: 1251.66384
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 4.082496
+          hour_spot: 1.63296
+          month: 2980.22208
+          month_1y: 1877.58336
+          month_3y: 1341.12096
+          month_spot: 1192.0608
+        us-east1:
+          hour: 4.082496
+          hour_spot: 1.63296
+          month: 2980.22208
+          month_1y: 1877.58336
+          month_3y: 1341.12096
+          month_spot: 1192.0608
+        us-east4:
+          hour: 4.082496
+          hour_spot: 1.63296
+          month: 2980.22208
+          month_1y: 1877.58336
+          month_3y: 1341.12096
+          month_spot: 1192.0608
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 4.082496
+          hour_spot: 1.63296
+          month: 2980.22208
+          month_1y: 1877.58336
+          month_3y: 1341.12096
+          month_spot: 1192.0608
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 96
+      ram: 192
+    c4-highmem-16:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 1.0948476
+          hour_spot: 0.437913
+          month: 799.238748
+          month_1y: 503.532246
+          month_3y: 359.654064
+          month_spot: 319.67649
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 1.042712
+          hour_spot: 0.41706
+          month: 761.17976
+          month_1y: 479.55452
+          month_3y: 342.52768
+          month_spot: 304.4538
+        us-east1:
+          hour: 1.042712
+          hour_spot: 0.41706
+          month: 761.17976
+          month_1y: 479.55452
+          month_3y: 342.52768
+          month_spot: 304.4538
+        us-east4:
+          hour: 1.042712
+          hour_spot: 0.41706
+          month: 761.17976
+          month_1y: 479.55452
+          month_3y: 342.52768
+          month_spot: 304.4538
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 1.042712
+          hour_spot: 0.41706
+          month: 761.17976
+          month_1y: 479.55452
+          month_3y: 342.52768
+          month_spot: 304.4538
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 16
+      ram: 124
+    c4-highmem-192:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 13.1381712
+          hour_spot: 5.254956
+          month: 9590.864976
+          month_1y: 6042.386952
+          month_3y: 4315.848768
+          month_spot: 3836.11788
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 12.512544
+          hour_spot: 5.00472
+          month: 9134.15712
+          month_1y: 5754.65424
+          month_3y: 4110.33216
+          month_spot: 3653.4456
+        us-east1:
+          hour: 12.512544
+          hour_spot: 5.00472
+          month: 9134.15712
+          month_1y: 5754.65424
+          month_3y: 4110.33216
+          month_spot: 3653.4456
+        us-east4:
+          hour: 12.512544
+          hour_spot: 5.00472
+          month: 9134.15712
+          month_1y: 5754.65424
+          month_3y: 4110.33216
+          month_spot: 3653.4456
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 12.512544
+          hour_spot: 5.00472
+          month: 9134.15712
+          month_1y: 5754.65424
+          month_3y: 4110.33216
+          month_spot: 3653.4456
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 192
+      ram: 1488
+    c4-highmem-2:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.1347885
+          hour_spot: 0.05391225
+          month: 98.395605
+          month_1y: 61.9906875
+          month_3y: 44.277639
+          month_spot: 39.3559425
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.12837
+          hour_spot: 0.051345
+          month: 93.7101
+          month_1y: 59.03875
+          month_3y: 42.16918
+          month_spot: 37.48185
+        us-east1:
+          hour: 0.12837
+          hour_spot: 0.051345
+          month: 93.7101
+          month_1y: 59.03875
+          month_3y: 42.16918
+          month_spot: 37.48185
+        us-east4:
+          hour: 0.12837
+          hour_spot: 0.051345
+          month: 93.7101
+          month_1y: 59.03875
+          month_3y: 42.16918
+          month_spot: 37.48185
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.12837
+          hour_spot: 0.051345
+          month: 93.7101
+          month_1y: 59.03875
+          month_3y: 42.16918
+          month_spot: 37.48185
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 2
+      ram: 15
+    c4-highmem-32:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 2.1896952
+          hour_spot: 0.875826
+          month: 1598.477496
+          month_1y: 1007.064492
+          month_3y: 719.308128
+          month_spot: 639.35298
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 2.085424
+          hour_spot: 0.83412
+          month: 1522.35952
+          month_1y: 959.10904
+          month_3y: 685.05536
+          month_spot: 608.9076
+        us-east1:
+          hour: 2.085424
+          hour_spot: 0.83412
+          month: 1522.35952
+          month_1y: 959.10904
+          month_3y: 685.05536
+          month_spot: 608.9076
+        us-east4:
+          hour: 2.085424
+          hour_spot: 0.83412
+          month: 1522.35952
+          month_1y: 959.10904
+          month_3y: 685.05536
+          month_spot: 608.9076
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 2.085424
+          hour_spot: 0.83412
+          month: 1522.35952
+          month_1y: 959.10904
+          month_3y: 685.05536
+          month_spot: 608.9076
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 32
+      ram: 248
+    c4-highmem-4:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.2737119
+          hour_spot: 0.10947825
+          month: 199.809687
+          month_1y: 125.8830615
+          month_3y: 89.913516
+          month_spot: 79.9191225
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.260678
+          hour_spot: 0.104265
+          month: 190.29494
+          month_1y: 119.88863
+          month_3y: 85.63192
+          month_spot: 76.11345
+        us-east1:
+          hour: 0.260678
+          hour_spot: 0.104265
+          month: 190.29494
+          month_1y: 119.88863
+          month_3y: 85.63192
+          month_spot: 76.11345
+        us-east4:
+          hour: 0.260678
+          hour_spot: 0.104265
+          month: 190.29494
+          month_1y: 119.88863
+          month_3y: 85.63192
+          month_spot: 76.11345
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.260678
+          hour_spot: 0.104265
+          month: 190.29494
+          month_1y: 119.88863
+          month_3y: 85.63192
+          month_spot: 76.11345
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 4
+      ram: 31
+    c4-highmem-48:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 3.2845428
+          hour_spot: 1.313739
+          month: 2397.716244
+          month_1y: 1510.596738
+          month_3y: 1078.962192
+          month_spot: 959.02947
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 3.128136
+          hour_spot: 1.25118
+          month: 2283.53928
+          month_1y: 1438.66356
+          month_3y: 1027.58304
+          month_spot: 913.3614
+        us-east1:
+          hour: 3.128136
+          hour_spot: 1.25118
+          month: 2283.53928
+          month_1y: 1438.66356
+          month_3y: 1027.58304
+          month_spot: 913.3614
+        us-east4:
+          hour: 3.128136
+          hour_spot: 1.25118
+          month: 2283.53928
+          month_1y: 1438.66356
+          month_3y: 1027.58304
+          month_spot: 913.3614
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 3.128136
+          hour_spot: 1.25118
+          month: 2283.53928
+          month_1y: 1438.66356
+          month_3y: 1027.58304
+          month_spot: 913.3614
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 48
+      ram: 372
+    c4-highmem-8:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.5474238
+          hour_spot: 0.2189565
+          month: 399.619374
+          month_1y: 251.766123
+          month_3y: 179.827032
+          month_spot: 159.838245
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.521356
+          hour_spot: 0.20853
+          month: 380.58988
+          month_1y: 239.77726
+          month_3y: 171.26384
+          month_spot: 152.2269
+        us-east1:
+          hour: 0.521356
+          hour_spot: 0.20853
+          month: 380.58988
+          month_1y: 239.77726
+          month_3y: 171.26384
+          month_spot: 152.2269
+        us-east4:
+          hour: 0.521356
+          hour_spot: 0.20853
+          month: 380.58988
+          month_1y: 239.77726
+          month_3y: 171.26384
+          month_spot: 152.2269
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.521356
+          hour_spot: 0.20853
+          month: 380.58988
+          month_1y: 239.77726
+          month_3y: 171.26384
+          month_spot: 152.2269
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 8
+      ram: 62
+    c4-highmem-96:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 6.5690856
+          hour_spot: 2.627478
+          month: 4795.432488
+          month_1y: 3021.193476
+          month_3y: 2157.924384
+          month_spot: 1918.05894
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 6.256272
+          hour_spot: 2.50236
+          month: 4567.07856
+          month_1y: 2877.32712
+          month_3y: 2055.16608
+          month_spot: 1826.7228
+        us-east1:
+          hour: 6.256272
+          hour_spot: 2.50236
+          month: 4567.07856
+          month_1y: 2877.32712
+          month_3y: 2055.16608
+          month_spot: 1826.7228
+        us-east4:
+          hour: 6.256272
+          hour_spot: 2.50236
+          month: 4567.07856
+          month_1y: 2877.32712
+          month_3y: 2055.16608
+          month_spot: 1826.7228
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 6.256272
+          hour_spot: 2.50236
+          month: 4567.07856
+          month_1y: 2877.32712
+          month_3y: 2055.16608
+          month_spot: 1826.7228
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 96
+      ram: 744
+    c4-standard-16:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.830214
+          hour_spot: 0.332073
+          month: 606.05622
+          month_1y: 381.82431
+          month_3y: 272.726832
+          month_spot: 242.41329
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.79068
+          hour_spot: 0.31626
+          month: 577.1964
+          month_1y: 363.6422
+          month_3y: 259.73984
+          month_spot: 230.8698
+        us-east1:
+          hour: 0.79068
+          hour_spot: 0.31626
+          month: 577.1964
+          month_1y: 363.6422
+          month_3y: 259.73984
+          month_spot: 230.8698
+        us-east4:
+          hour: 0.79068
+          hour_spot: 0.31626
+          month: 577.1964
+          month_1y: 363.6422
+          month_3y: 259.73984
+          month_spot: 230.8698
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.79068
+          hour_spot: 0.31626
+          month: 577.1964
+          month_1y: 363.6422
+          month_3y: 259.73984
+          month_spot: 230.8698
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 16
+      ram: 60
+    c4-standard-192:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 9.962568
+          hour_spot: 3.984876
+          month: 7272.67464
+          month_1y: 4581.89172
+          month_3y: 3272.721984
+          month_spot: 2908.95948
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 9.48816
+          hour_spot: 3.79512
+          month: 6926.3568
+          month_1y: 4363.7064
+          month_3y: 3116.87808
+          month_spot: 2770.4376
+        us-east1:
+          hour: 9.48816
+          hour_spot: 3.79512
+          month: 6926.3568
+          month_1y: 4363.7064
+          month_3y: 3116.87808
+          month_spot: 2770.4376
+        us-east4:
+          hour: 9.48816
+          hour_spot: 3.79512
+          month: 6926.3568
+          month_1y: 4363.7064
+          month_3y: 3116.87808
+          month_spot: 2770.4376
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 9.48816
+          hour_spot: 3.79512
+          month: 6926.3568
+          month_1y: 4363.7064
+          month_3y: 3116.87808
+          month_spot: 2770.4376
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 192
+      ram: 720
+    c4-standard-2:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.1017093
+          hour_spot: 0.04068225
+          month: 74.247789
+          month_1y: 46.7771955
+          month_3y: 33.411735
+          month_spot: 29.6980425
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.096866
+          hour_spot: 0.038745
+          month: 70.71218
+          month_1y: 44.54971
+          month_3y: 31.8207
+          month_spot: 28.28385
+        us-east1:
+          hour: 0.096866
+          hour_spot: 0.038745
+          month: 70.71218
+          month_1y: 44.54971
+          month_3y: 31.8207
+          month_spot: 28.28385
+        us-east4:
+          hour: 0.096866
+          hour_spot: 0.038745
+          month: 70.71218
+          month_1y: 44.54971
+          month_3y: 31.8207
+          month_spot: 28.28385
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.096866
+          hour_spot: 0.038745
+          month: 70.71218
+          month_1y: 44.54971
+          month_3y: 31.8207
+          month_spot: 28.28385
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 2
+      ram: 7
+    c4-standard-32:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 1.660428
+          hour_spot: 0.664146
+          month: 1212.11244
+          month_1y: 763.64862
+          month_3y: 545.453664
+          month_spot: 484.82658
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 1.58136
+          hour_spot: 0.63252
+          month: 1154.3928
+          month_1y: 727.2844
+          month_3y: 519.47968
+          month_spot: 461.7396
+        us-east1:
+          hour: 1.58136
+          hour_spot: 0.63252
+          month: 1154.3928
+          month_1y: 727.2844
+          month_3y: 519.47968
+          month_spot: 461.7396
+        us-east4:
+          hour: 1.58136
+          hour_spot: 0.63252
+          month: 1154.3928
+          month_1y: 727.2844
+          month_3y: 519.47968
+          month_spot: 461.7396
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 1.58136
+          hour_spot: 0.63252
+          month: 1154.3928
+          month_1y: 727.2844
+          month_3y: 519.47968
+          month_spot: 461.7396
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 32
+      ram: 120
+    c4-standard-4:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.2075535
+          hour_spot: 0.08301825
+          month: 151.514055
+          month_1y: 95.4560775
+          month_3y: 68.181708
+          month_spot: 60.6033225
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.19767
+          hour_spot: 0.079065
+          month: 144.2991
+          month_1y: 90.91055
+          month_3y: 64.93496
+          month_spot: 57.71745
+        us-east1:
+          hour: 0.19767
+          hour_spot: 0.079065
+          month: 144.2991
+          month_1y: 90.91055
+          month_3y: 64.93496
+          month_spot: 57.71745
+        us-east4:
+          hour: 0.19767
+          hour_spot: 0.079065
+          month: 144.2991
+          month_1y: 90.91055
+          month_3y: 64.93496
+          month_spot: 57.71745
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.19767
+          hour_spot: 0.079065
+          month: 144.2991
+          month_1y: 90.91055
+          month_3y: 64.93496
+          month_spot: 57.71745
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 4
+      ram: 15
+    c4-standard-48:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 2.490642
+          hour_spot: 0.996219
+          month: 1818.16866
+          month_1y: 1145.47293
+          month_3y: 818.180496
+          month_spot: 727.23987
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 2.37204
+          hour_spot: 0.94878
+          month: 1731.5892
+          month_1y: 1090.9266
+          month_3y: 779.21952
+          month_spot: 692.6094
+        us-east1:
+          hour: 2.37204
+          hour_spot: 0.94878
+          month: 1731.5892
+          month_1y: 1090.9266
+          month_3y: 779.21952
+          month_spot: 692.6094
+        us-east4:
+          hour: 2.37204
+          hour_spot: 0.94878
+          month: 1731.5892
+          month_1y: 1090.9266
+          month_3y: 779.21952
+          month_spot: 692.6094
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 2.37204
+          hour_spot: 0.94878
+          month: 1731.5892
+          month_1y: 1090.9266
+          month_3y: 779.21952
+          month_spot: 692.6094
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 48
+      ram: 180
+    c4-standard-8:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 0.415107
+          hour_spot: 0.1660365
+          month: 303.02811
+          month_1y: 190.912155
+          month_3y: 136.363416
+          month_spot: 121.206645
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 0.39534
+          hour_spot: 0.15813
+          month: 288.5982
+          month_1y: 181.8211
+          month_3y: 129.86992
+          month_spot: 115.4349
+        us-east1:
+          hour: 0.39534
+          hour_spot: 0.15813
+          month: 288.5982
+          month_1y: 181.8211
+          month_3y: 129.86992
+          month_spot: 115.4349
+        us-east4:
+          hour: 0.39534
+          hour_spot: 0.15813
+          month: 288.5982
+          month_1y: 181.8211
+          month_3y: 129.86992
+          month_spot: 115.4349
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 0.39534
+          hour_spot: 0.15813
+          month: 288.5982
+          month_1y: 181.8211
+          month_3y: 129.86992
+          month_spot: 115.4349
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 8
+      ram: 30
+    c4-standard-96:
+      cost:
+        africa-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-east2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-northeast3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-south2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        asia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        australia-southeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-north1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-southwest1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west10:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west12:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west4:
+          hour: 4.981284
+          hour_spot: 1.992438
+          month: 3636.33732
+          month_1y: 2290.94586
+          month_3y: 1636.360992
+          month_spot: 1454.47974
+        europe-west6:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west8:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        europe-west9:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-central2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        me-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        northamerica-northeast2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-east1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        southamerica-west1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-central1:
+          hour: 4.74408
+          hour_spot: 1.89756
+          month: 3463.1784
+          month_1y: 2181.8532
+          month_3y: 1558.43904
+          month_spot: 1385.2188
+        us-east1:
+          hour: 4.74408
+          hour_spot: 1.89756
+          month: 3463.1784
+          month_1y: 2181.8532
+          month_3y: 1558.43904
+          month_spot: 1385.2188
+        us-east4:
+          hour: 4.74408
+          hour_spot: 1.89756
+          month: 3463.1784
+          month_1y: 2181.8532
+          month_3y: 1558.43904
+          month_spot: 1385.2188
+        us-east5:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-south1:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west1:
+          hour: 4.74408
+          hour_spot: 1.89756
+          month: 3463.1784
+          month_1y: 2181.8532
+          month_3y: 1558.43904
+          month_spot: 1385.2188
+        us-west2:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west3:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+        us-west4:
+          hour: 0
+          month: 0
+          month_1y: 0
+          month_3y: 0
+      cpu: 96
       ram: 360
     custom-1-7680-ext:
       cost:
@@ -74825,6 +79961,462 @@ compute:
         windows:
           hour: 4.14
           month: 3022.2
+    c4-highcpu-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    c4-highcpu-192:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 8.832
+          month: 6447.36
+    c4-highcpu-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    c4-highcpu-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    c4-highcpu-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    c4-highcpu-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    c4-highcpu-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    c4-highcpu-96:
+      cost:
+        rhel:
+          hour: 1.0368
+          month: 756.864
+        rhel-sap:
+          hour: 1.56
+          month: 1138.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
+    c4-highmem-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    c4-highmem-192:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 8.832
+          month: 6447.36
+    c4-highmem-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    c4-highmem-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    c4-highmem-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    c4-highmem-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    c4-highmem-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    c4-highmem-96:
+      cost:
+        rhel:
+          hour: 1.0368
+          month: 756.864
+        rhel-sap:
+          hour: 1.56
+          month: 1138.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
+    c4-standard-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    c4-standard-192:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 8.832
+          month: 6447.36
+    c4-standard-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    c4-standard-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    c4-standard-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    c4-standard-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    c4-standard-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    c4-standard-96:
+      cost:
+        rhel:
+          hour: 1.0368
+          month: 756.864
+        rhel-sap:
+          hour: 1.56
+          month: 1138.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
     custom-1-7680-ext:
       cost:
         rhel:
