@@ -16,6 +16,8 @@ instances:
     type: c3-standard-88
   - name: c3-standard-176
     type: c3-standard-176
+  - name: c3-standard-192-metal
+    type: c3-standard-192-metal
   - name: c3-highmem-4
     type: c3-highmem-4
   - name: c3-highmem-8
@@ -28,6 +30,8 @@ instances:
     type: c3-highmem-88
   - name: c3-highmem-176
     type: c3-highmem-176
+  - name: c3-highmem-192-metal
+    type: c3-highmem-192-metal
   - name: c3-highcpu-4
     type: c3-highcpu-4
   - name: c3-highcpu-8
@@ -40,6 +44,8 @@ instances:
     type: c3-highcpu-88
   - name: c3-highcpu-176
     type: c3-highcpu-176
+  - name: c3-highcpu-192-metal
+    type: c3-highcpu-192-metal
 # Commitment (CUD)
   - name: c3-standard-8-1y
     type: c3-standard-8

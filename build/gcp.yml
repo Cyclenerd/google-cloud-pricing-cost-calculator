@@ -763,6 +763,9 @@ compute:
     c3-standard-176-lssd:
       cpu: 176
       ram: 704
+    c3-standard-192-metal:
+      cpu: 192
+      ram: 768
     c3-highmem-4:
       cpu: 4
       ram: 32
@@ -781,6 +784,9 @@ compute:
     c3-highmem-176:
       cpu: 176
       ram: 1408
+    c3-highmem-192-metal:
+      cpu: 192
+      ram: 1536
     c3-highcpu-4:
       cpu: 4
       ram: 8
@@ -799,6 +805,9 @@ compute:
     c3-highcpu-176:
       cpu: 176
       ram: 352
+    c3-highcpu-192-metal:
+      cpu: 192
+      ram: 512
 
     # C3D
     c3d-standard-16-lssd:
