@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Aug  8 09:08:36 2024
-  timestamp: 1723108116
+  generated: Thu Aug 15 03:54:30 2024
+  timestamp: 1723694070
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -1757,7 +1757,7 @@ compute:
           month_spot: 3730.014436
         asia-northeast1:
           hour: 13.0130213150685
-          hour_spot: 5.23751452054794
+          hour_spot: 5.23751452054795
           month: 9499.50556
           month_1y: 9499.50556
           month_3y: 9499.50556
@@ -28762,10 +28762,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.839429312
+          hour_spot: 0.335763776
+          month: 612.78339776
+          month_1y: 386.0624272
+          month_3y: 275.75676416
+          month_spot: 245.10755648
         asia-southeast2:
           hour: 0
           month: 0
@@ -28797,10 +28799,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.749206144
+          hour_spot: 0.299675456
+          month: 546.92048512
+          month_1y: 344.56780224
+          month_3y: 246.11801664
+          month_spot: 218.76308288
         europe-west10:
           hour: 0
           month: 0
@@ -28976,10 +28980,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 10.073151744
+          hour_spot: 4.029165312
+          month: 7353.40077312
+          month_1y: 4632.7491264
+          month_3y: 3309.08116992
+          month_spot: 2941.29067776
         asia-southeast2:
           hour: 0
           month: 0
@@ -29011,10 +29017,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 8.990473728
+          hour_spot: 3.596105472
+          month: 6563.04582144
+          month_1y: 4134.81362688
+          month_3y: 2953.41619968
+          month_spot: 2625.15699456
         europe-west10:
           hour: 0
           month: 0
@@ -29190,10 +29198,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.104928664
+          hour_spot: 0.041970472
+          month: 76.59792472
+          month_1y: 48.2578034
+          month_3y: 34.46959552
+          month_spot: 30.63844456
         asia-southeast2:
           hour: 0
           month: 0
@@ -29225,10 +29235,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.093650768
+          hour_spot: 0.037459432
+          month: 68.36506064
+          month_1y: 43.07097528
+          month_3y: 30.76475208
+          month_spot: 27.34538536
         europe-west10:
           hour: 0
           month: 0
@@ -29404,10 +29416,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 1.678858624
+          hour_spot: 0.671527552
+          month: 1225.56679552
+          month_1y: 772.1248544
+          month_3y: 551.51352832
+          month_spot: 490.21511296
         asia-southeast2:
           hour: 0
           month: 0
@@ -29439,10 +29453,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 1.498412288
+          hour_spot: 0.599350912
+          month: 1093.84097024
+          month_1y: 689.13560448
+          month_3y: 492.23603328
+          month_spot: 437.52616576
         europe-west10:
           hour: 0
           month: 0
@@ -29618,10 +29634,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.209857328
+          hour_spot: 0.083940944
+          month: 153.19584944
+          month_1y: 96.5156068
+          month_3y: 68.93919104
+          month_spot: 61.27688912
         asia-southeast2:
           hour: 0
           month: 0
@@ -29653,10 +29671,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.187301536
+          hour_spot: 0.074918864
+          month: 136.73012128
+          month_1y: 86.14195056
+          month_3y: 61.52950416
+          month_spot: 54.69077072
         europe-west10:
           hour: 0
           month: 0
@@ -29832,10 +29852,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 2.518287936
+          hour_spot: 1.007291328
+          month: 1838.35019328
+          month_1y: 1158.1872816
+          month_3y: 827.27029248
+          month_spot: 735.32266944
         asia-southeast2:
           hour: 0
           month: 0
@@ -29867,10 +29889,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 2.247618432
+          hour_spot: 0.899026368
+          month: 1640.76145536
+          month_1y: 1033.70340672
+          month_3y: 738.35404992
+          month_spot: 656.28924864
         europe-west10:
           hour: 0
           month: 0
@@ -30046,10 +30070,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.419714656
+          hour_spot: 0.167881888
+          month: 306.39169888
+          month_1y: 193.0312136
+          month_3y: 137.87838208
+          month_spot: 122.55377824
         asia-southeast2:
           hour: 0
           month: 0
@@ -30081,10 +30107,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.374603072
+          hour_spot: 0.149837728
+          month: 273.46024256
+          month_1y: 172.28390112
+          month_3y: 123.05900832
+          month_spot: 109.38154144
         europe-west10:
           hour: 0
           month: 0
@@ -30260,10 +30288,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 5.036575872
+          hour_spot: 2.014582656
+          month: 3676.70038656
+          month_1y: 2316.3745632
+          month_3y: 1654.54058496
+          month_spot: 1470.64533888
         asia-southeast2:
           hour: 0
           month: 0
@@ -30295,10 +30325,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 4.495236864
+          hour_spot: 1.798052736
+          month: 3281.52291072
+          month_1y: 2067.40681344
+          month_3y: 1476.70809984
+          month_spot: 1312.57849728
         europe-west10:
           hour: 0
           month: 0
@@ -30474,10 +30506,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 1.286393924
+          hour_spot: 0.514526952
+          month: 939.06756452
+          month_1y: 591.6264268
+          month_3y: 422.57631472
+          month_spot: 375.60467496
         asia-southeast2:
           hour: 0
           month: 0
@@ -30509,10 +30543,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 1.148130288
+          hour_spot: 0.459224892
+          month: 838.13511024
+          month_1y: 528.03743788
+          month_3y: 377.15718348
+          month_spot: 335.23417116
         europe-west10:
           hour: 0
           month: 0
@@ -30688,10 +30724,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 15.436727088
+          hour_spot: 6.174323424
+          month: 11268.81077424
+          month_1y: 7099.5171216
+          month_3y: 5070.91577664
+          month_spot: 4507.25609952
         asia-southeast2:
           hour: 0
           month: 0
@@ -30723,10 +30761,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 13.777563456
+          hour_spot: 5.510698704
+          month: 10057.62132288
+          month_1y: 6336.44925456
+          month_3y: 4525.88620176
+          month_spot: 4022.81005392
         europe-west10:
           hour: 0
           month: 0
@@ -30902,10 +30942,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.158370085
+          hour_spot: 0.06334433
+          month: 115.61016205
+          month_1y: 72.8361077
+          month_3y: 52.024107
+          month_spot: 46.2413609
         asia-southeast2:
           hour: 0
           month: 0
@@ -30937,10 +30979,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.14134822
+          hour_spot: 0.056535995
+          month: 103.1842006
+          month_1y: 65.00756215
+          month_3y: 46.43247855
+          month_spot: 41.27127635
         europe-west10:
           hour: 0
           month: 0
@@ -31116,10 +31160,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 2.572787848
+          hour_spot: 1.029053904
+          month: 1878.13512904
+          month_1y: 1183.2528536
+          month_3y: 845.15262944
+          month_spot: 751.20934992
         asia-southeast2:
           hour: 0
           month: 0
@@ -31151,10 +31197,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 2.296260576
+          hour_spot: 0.918449784
+          month: 1676.27022048
+          month_1y: 1056.07487576
+          month_3y: 754.31436696
+          month_spot: 670.46834232
         europe-west10:
           hour: 0
           month: 0
@@ -31330,10 +31378,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.321598481
+          hour_spot: 0.128631738
+          month: 234.76689113
+          month_1y: 147.9066067
+          month_3y: 105.64407868
+          month_spot: 93.90116874
         asia-southeast2:
           hour: 0
           month: 0
@@ -31365,10 +31415,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.287032572
+          hour_spot: 0.114806223
+          month: 209.53377756
+          month_1y: 132.00935947
+          month_3y: 94.28929587
+          month_spot: 83.80854279
         europe-west10:
           hour: 0
           month: 0
@@ -31544,10 +31596,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 3.859181772
+          hour_spot: 1.543580856
+          month: 2817.20269356
+          month_1y: 1774.8792804
+          month_3y: 1267.72894416
+          month_spot: 1126.81402488
         asia-southeast2:
           hour: 0
           month: 0
@@ -31579,10 +31633,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 3.444390864
+          hour_spot: 1.377674676
+          month: 2514.40533072
+          month_1y: 1584.11231364
+          month_3y: 1131.47155044
+          month_spot: 1005.70251348
         europe-west10:
           hour: 0
           month: 0
@@ -31758,10 +31814,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.643196962
+          hour_spot: 0.257263476
+          month: 469.53378226
+          month_1y: 295.8132134
+          month_3y: 211.28815736
+          month_spot: 187.80233748
         asia-southeast2:
           hour: 0
           month: 0
@@ -31793,10 +31851,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.574065144
+          hour_spot: 0.229612446
+          month: 419.06755512
+          month_1y: 264.01871894
+          month_3y: 188.57859174
+          month_spot: 167.61708558
         europe-west10:
           hour: 0
           month: 0
@@ -31972,10 +32032,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 7.718363544
+          hour_spot: 3.087161712
+          month: 5634.40538712
+          month_1y: 3549.7585608
+          month_3y: 2535.45788832
+          month_spot: 2253.62804976
         asia-southeast2:
           hour: 0
           month: 0
@@ -32007,10 +32069,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 6.888781728
+          hour_spot: 2.755349352
+          month: 5028.81066144
+          month_1y: 3168.22462728
+          month_3y: 2262.94310088
+          month_spot: 2011.40502696
         europe-west10:
           hour: 0
           month: 0
@@ -32186,10 +32250,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.97546202
+          hour_spot: 0.39016996
+          month: 712.0872746
+          month_1y: 448.6253836
+          month_3y: 320.4409752
+          month_spot: 284.8240708
         asia-southeast2:
           hour: 0
           month: 0
@@ -32221,10 +32287,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.87061784
+          hour_spot: 0.34823398
+          month: 635.5510232
+          month_1y: 400.406387
+          month_3y: 285.9995022
+          month_spot: 254.2108054
         europe-west10:
           hour: 0
           month: 0
@@ -32400,10 +32468,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 11.70554424
+          hour_spot: 4.68203952
+          month: 8545.0472952
+          month_1y: 5383.5046032
+          month_3y: 3845.2917024
+          month_spot: 3417.8888496
         asia-southeast2:
           hour: 0
           month: 0
@@ -32435,10 +32505,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 10.44741408
+          hour_spot: 4.17880776
+          month: 7626.6122784
+          month_1y: 4804.876644
+          month_3y: 3431.9940264
+          month_spot: 3050.5296648
         europe-west10:
           hour: 0
           month: 0
@@ -32614,10 +32686,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.119503597
+          hour_spot: 0.047799706
+          month: 87.23762581
+          month_1y: 54.9609773
+          month_3y: 39.25718956
+          month_spot: 34.89378538
         asia-southeast2:
           hour: 0
           month: 0
@@ -32649,10 +32723,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.106659164
+          hour_spot: 0.042662131
+          month: 77.86118972
+          month_1y: 49.05368079
+          month_3y: 35.03776839
+          month_spot: 31.14335563
         europe-west10:
           hour: 0
           month: 0
@@ -32828,10 +32904,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 1.95092404
+          hour_spot: 0.78033992
+          month: 1424.1745492
+          month_1y: 897.2507672
+          month_3y: 640.8819504
+          month_spot: 569.6481416
         asia-southeast2:
           hour: 0
           month: 0
@@ -32863,10 +32941,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 1.74123568
+          hour_spot: 0.69646796
+          month: 1271.1020464
+          month_1y: 800.812774
+          month_3y: 571.9990044
+          month_spot: 508.4216108
         europe-west10:
           hour: 0
           month: 0
@@ -33042,10 +33122,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.243865505
+          hour_spot: 0.09754249
+          month: 178.02181865
+          month_1y: 112.1563459
+          month_3y: 80.1102438
+          month_spot: 71.2060177
         asia-southeast2:
           hour: 0
           month: 0
@@ -33077,10 +33159,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.21765446
+          hour_spot: 0.087058495
+          month: 158.8877558
+          month_1y: 100.10159675
+          month_3y: 71.49987555
+          month_spot: 63.55270135
         europe-west10:
           hour: 0
           month: 0
@@ -33256,10 +33340,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 2.92638606
+          hour_spot: 1.17050988
+          month: 2136.2618238
+          month_1y: 1345.8761508
+          month_3y: 961.3229256
+          month_spot: 854.4722124
         asia-southeast2:
           hour: 0
           month: 0
@@ -33291,10 +33377,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 2.61185352
+          hour_spot: 1.04470194
+          month: 1906.6530696
+          month_1y: 1201.219161
+          month_3y: 857.9985066
+          month_spot: 762.6324162
         europe-west10:
           hour: 0
           month: 0
@@ -33470,10 +33558,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.48773101
+          hour_spot: 0.19508498
+          month: 356.0436373
+          month_1y: 224.3126918
+          month_3y: 160.2204876
+          month_spot: 142.4120354
         asia-southeast2:
           hour: 0
           month: 0
@@ -33505,10 +33595,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 0.43530892
+          hour_spot: 0.17411699
+          month: 317.7755116
+          month_1y: 200.2031935
+          month_3y: 142.9997511
+          month_spot: 127.1054027
         europe-west10:
           hour: 0
           month: 0
@@ -33684,10 +33776,12 @@ compute:
           month_1y: 0
           month_3y: 0
         asia-southeast1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 5.85277212
+          hour_spot: 2.34101976
+          month: 4272.5236476
+          month_1y: 2691.7523016
+          month_3y: 1922.6458512
+          month_spot: 1708.9444248
         asia-southeast2:
           hour: 0
           month: 0
@@ -33719,10 +33813,12 @@ compute:
           month_1y: 0
           month_3y: 0
         europe-west1:
-          hour: 0
-          month: 0
-          month_1y: 0
-          month_3y: 0
+          hour: 5.22370704
+          hour_spot: 2.08940388
+          month: 3813.3061392
+          month_1y: 2402.438322
+          month_3y: 1715.9970132
+          month_spot: 1525.2648324
         europe-west10:
           hour: 0
           month: 0
