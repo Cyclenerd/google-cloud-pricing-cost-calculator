@@ -1101,6 +1101,12 @@ compute:
       h100-80gb: 8
       # 6 TB of Local SSD is automatically added to VMs created by using the A3 machine type.
       local-ssd: 6000
+    a3-megagpu-8g:
+      cpu: 208
+      ram: 1872
+      h100-80gb-mega: 8
+      # 6 TB of Local SSD is automatically added to VMs created by using the A3 machine type.
+      local-ssd: 6000
 
     # G2:
     g2-standard-4:

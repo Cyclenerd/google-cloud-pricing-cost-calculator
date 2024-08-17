@@ -1,4 +1,4 @@
-region: us-central1
+region: europe-west4
 project: gcp-gce-a3
 
 # Accelerator-optimized machine type family with NVIDIA H100 80GB GPUs.
@@ -15,4 +15,15 @@ instances:
     commitment: 3
   - name: a3-highgpu-8g-spot
     type: a3-highgpu-8g
+    spot: true
+  - name: a3-megagpu-8g
+    type: a3-megagpu-8g
+  - name: a3-megagpu-8g-1y
+    type: a3-megagpu-8g
+    commitment: 1
+  - name: a3-megagpu-8g-3y
+    type: a3-megagpu-8g
+    commitment: 3
+  - name: a3-megagpu-8g-spot
+    type: a3-megagpu-8g
     spot: true

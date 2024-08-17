@@ -39,6 +39,11 @@ MY_CHECKS=(
 	'gcp-gce-a2,europe-west4,vm,a2-highgpu-8g,a2-highgpu-8g-3y,7661'  # Google Cloud Pricing Calculator: $7661.01, Price List: $7661.79
 	'a2-highgpu-8g-spot,'
 
+# 01_europe-west4-a3
+	'a3-highgpu-8g,82154'
+	'a3-highgpu-8g-1y,56991'
+	'a3-highgpu-8g-3y,36078'
+
 # 01_europe-west4-c2.yml
 	# C2 machine types
 	'c2-standard-4,134'
@@ -465,11 +470,6 @@ MY_CHECKS=(
 	'a2-ultragpu-1g,3700'
 	'a2-ultragpu-1g-1y,3700'
 	'a2-ultragpu-1g-3y,3700'
-
-# 01_us-central1-a3
-	'a3-highgpu-8g,64597'
-	'a3-highgpu-8g-1y,44810' # Price List: $44800
-	'a3-highgpu-8g-3y,28370' # Price List: $28353
 
 # 10_us-central1.yml
 	'vpn-us-central1-tunnel,36.5' # VPN Tunnel
