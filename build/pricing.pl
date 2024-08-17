@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "2.2.1";
+	$VERSION = "2.3.0";
 }
 
 use strict;
@@ -669,6 +669,15 @@ foreach my $region (@regions) {
 		# Mapping for upgrades without commitments like M2 upgrade but with sustained use discount
 		my %mapping_upgrades;
 
+		# Save if a mapping of CPU, RAM or GPU was not found in region.
+		# For example, the CPU of the instance may be available but not the GPU.
+		# The price would then be calculated without a GPU and would be far too low.
+		# With this variable, we could then set the price to zero at the end.
+		my $mapping_not_found        = 0;
+		my $cud_1y_mapping_not_found = 0;
+		my $cud_3y_mapping_not_found = 0;
+		my $spot_mapping_not_found   = 0;
+
 		# E2 Predefined
 		if ($type eq 'e2') {
 			$mappings{     'gce.compute.cpu.e2'}      = $cpu;
@@ -938,15 +947,19 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.a2.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.a2.spot'} = $ram;
 			# NVIDIA's Ampere A100 40GB GPUs
-			$mappings{     'gce.compute.gpu.a100'}      = $a100;
-			$mappings_1y{  'gce.compute.gpu.a100.1y'}   = $a100;
-			$mappings_3y{  'gce.compute.gpu.a100.3y'}   = $a100;
-			$mappings_spot{'gce.compute.gpu.a100.spot'} = $a100;
+			if ($a100) {
+				$mappings{     'gce.compute.gpu.a100'}      = $a100;
+				$mappings_1y{  'gce.compute.gpu.a100.1y'}   = $a100;
+				$mappings_3y{  'gce.compute.gpu.a100.3y'}   = $a100;
+				$mappings_spot{'gce.compute.gpu.a100.spot'} = $a100;
+			}
 			# NVIDIA's Ampere A100 80GB HBM2e GPUs
-			$mappings{     'gce.compute.gpu.a100.80gb'}      = $a100_80gb;
-			$mappings_1y{  'gce.compute.gpu.a100.80gb.1y'}   = $a100_80gb;
-			$mappings_3y{  'gce.compute.gpu.a100.80gb.3y'}   = $a100_80gb;
-			$mappings_spot{'gce.compute.gpu.a100.80gb.spot'} = $a100_80gb;
+			if ($a100_80gb) {
+				$mappings{     'gce.compute.gpu.a100.80gb'}      = $a100_80gb;
+				$mappings_1y{  'gce.compute.gpu.a100.80gb.1y'}   = $a100_80gb;
+				$mappings_3y{  'gce.compute.gpu.a100.80gb.3y'}   = $a100_80gb;
+				$mappings_spot{'gce.compute.gpu.a100.80gb.spot'} = $a100_80gb;
+			}
 		}
 		# A3
 		elsif ($type eq 'a3') {
@@ -959,15 +972,19 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.a3.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.a3.spot'} = $ram;
 			# NVIDIA's H100 80GB GPUs
-			$mappings{     'gce.compute.gpu.h100.80gb'}      = $h100_80gb;
-			$mappings_1y{  'gce.compute.gpu.h100.80gb.1y'}   = $h100_80gb;
-			$mappings_3y{  'gce.compute.gpu.h100.80gb.3y'}   = $h100_80gb;
-			$mappings_spot{'gce.compute.gpu.h100.80gb.spot'} = $h100_80gb;
+			if ($h100_80gb) {
+				$mappings{     'gce.compute.gpu.h100.80gb'}      = $h100_80gb;
+				$mappings_1y{  'gce.compute.gpu.h100.80gb.1y'}   = $h100_80gb;
+				$mappings_3y{  'gce.compute.gpu.h100.80gb.3y'}   = $h100_80gb;
+				$mappings_spot{'gce.compute.gpu.h100.80gb.spot'} = $h100_80gb;
+			}
 			# NVIDIA's H100 80GB Mega GPUs
-			$mappings{     'gce.compute.gpu.h100.80gb.mega'}      = $h100_80gb_mega;
-			$mappings_1y{  'gce.compute.gpu.h100.80gb.mega.1y'}   = $h100_80gb_mega;
-			$mappings_3y{  'gce.compute.gpu.h100.80gb.mega.3y'}   = $h100_80gb_mega;
-			$mappings_spot{'gce.compute.gpu.h100.80gb.mega.spot'} = $h100_80gb_mega;
+			if ($h100_80gb_mega) {
+				$mappings{     'gce.compute.gpu.h100.80gb.mega'}      = $h100_80gb_mega;
+				$mappings_1y{  'gce.compute.gpu.h100.80gb.mega.1y'}   = $h100_80gb_mega;
+				$mappings_3y{  'gce.compute.gpu.h100.80gb.mega.3y'}   = $h100_80gb_mega;
+				$mappings_spot{'gce.compute.gpu.h100.80gb.mega.spot'} = $h100_80gb_mega;
+			}
 		}
 		# G2
 		elsif ($type eq 'g2') {
@@ -980,10 +997,12 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.g2.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.g2.spot'} = $ram;
 			# NVIDIA's L4 GPUs
-			$mappings{     'gce.compute.gpu.l4'}      = $l4;
-			$mappings_1y{  'gce.compute.gpu.l4.1y'}   = $l4;
-			$mappings_3y{  'gce.compute.gpu.l4.3y'}   = $l4;
-			$mappings_spot{'gce.compute.gpu.l4.spot'} = $l4;
+			if ($l4) {
+				$mappings{     'gce.compute.gpu.l4'}      = $l4;
+				$mappings_1y{  'gce.compute.gpu.l4.1y'}   = $l4;
+				$mappings_3y{  'gce.compute.gpu.l4.3y'}   = $l4;
+				$mappings_spot{'gce.compute.gpu.l4.spot'} = $l4;
+			}
 		}
 		# Unknown family
 		else {
@@ -999,6 +1018,7 @@ foreach my $region (@regions) {
 		my $costs_local_ssd_hour_spot  = $costs_local_ssd_month_spot / $hours_month || 0;
 
 		my $costs = 0;
+		print "Check GCE mappings:\n";
 		foreach my $mapping (keys %mappings) {
 			print "MAPPING: '$mapping' in region '$region'\n";
 			my $value = $mappings{$mapping} || '0';
@@ -1032,10 +1052,12 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found in region '$region'!\n";
+				warn "WARNING: GCE '$mapping' not found in region '$region'!\n";
+				$mapping_not_found = 1;
 			}
 		}
 		my $upgrade_costs = 0;
+		print "Check GCE upgrade mappings:\n";
 		foreach my $mapping (keys %mapping_upgrades) {
 			print "Upgrade mapping: '$mapping'\n";
 			my $value = $mapping_upgrades{$mapping} || '0';
@@ -1079,7 +1101,7 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found in region '$region'!\n";
+				warn "WARNING: GCE upgrade '$mapping' not found in region '$region'!\n";
 			}
 		}
 		# Calculate sustained use discount
@@ -1095,13 +1117,16 @@ foreach my $region (@regions) {
 		foreach my $usage_level (keys %sustained_use_discount) {
 			$costs_with_sustained_use_discount_for_upgrade_100 += ($upgrade_costs * $hours_discount) * $sustained_use_discount{$usage_level};
 		}
-
-		&add_gcp_compute_instance_cost('hour', $machine, $region, $costs+$upgrade_costs+$costs_local_ssd_hour);
 		my $costs_month = $costs_with_sustained_use_discount_100+$costs_with_sustained_use_discount_for_upgrade_100+$costs_local_ssd_month;
-		&add_gcp_compute_instance_cost('month', $machine, $region, $costs_month);
+
+		# Only save if _all_ mappings (CPU, RAM, GPU) in the region have been found
+		if (!$mapping_not_found) {
+			&add_gcp_compute_instance_cost('hour', $machine, $region, $costs+$upgrade_costs+$costs_local_ssd_hour);
+			&add_gcp_compute_instance_cost('month', $machine, $region, $costs_month);
+		}
 
 		my $costs_1y = 0;
-		print "Check 1 Year Commitment:\n";
+		print "Check GCE 1 year commitment mappings:\n";
 		foreach my $mapping (keys %mappings_1y) {
 			print "1Y Mapping: '$mapping'\n";
 			my $value = $mappings_1y{$mapping} || '0';
@@ -1145,7 +1170,8 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found in region '$region'!\n";
+				warn "WARNING: GCE 1Y CUD '$mapping' not found in region '$region'!\n";
+				$cud_1y_mapping_not_found = 1;
 			}
 		}
 		my $costs_month_1y = ($costs_1y*$hours_month) + $costs_with_sustained_use_discount_for_upgrade_100 + $costs_local_ssd_month_1y;
@@ -1153,7 +1179,7 @@ foreach my $region (@regions) {
 		# For committed use discounts pricing on the A2 ultra machine series, connect with your sales account team.
 		if ($machine =~ m/a2-ultragpu/) {
 			print "INFO: No public committed use discounts for A2 ultra machine series. Reset calculated price.";
-			$costs_month_1y = $costs_month;
+			$cud_1y_mapping_not_found = 1;
 		}
 		# No price for commitment found (i.e. NANOS = 0), use price per month (with SUD)
 		if ($costs_month_1y <= 0.0001) {
@@ -1162,15 +1188,14 @@ foreach my $region (@regions) {
 			}
 			$costs_month_1y = $costs_month;
 		}
-		&add_gcp_compute_instance_cost(
-			'month_1y',
-			$machine,
-			$region,
-			$costs_month_1y
-		);
+
+		# Only save if _all_ mappings (CPU, RAM, GPU) in the region have been found
+		if (!$cud_1y_mapping_not_found) {
+			&add_gcp_compute_instance_cost('month_1y', $machine, $region, $costs_month_1y);
+		}
 
 		my $costs_3y = 0;
-		print "Check 3 Year Commitment:\n";
+		print "Check GCE 3 year commitment mappings:\n";
 		foreach my $mapping (keys %mappings_3y) {
 			print "3Y Mapping: '$mapping'\n";
 			my $value = $mappings_3y{$mapping} || '0';
@@ -1214,7 +1239,8 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found in region '$region'!\n";
+				warn "WARNING: GCE 3Y CUD '$mapping' not found in region '$region'!\n";
+				$cud_3y_mapping_not_found = 1;
 			}
 		}
 		my $costs_month_3y = ($costs_3y*$hours_month) + $costs_with_sustained_use_discount_for_upgrade_100 + $costs_local_ssd_month_3y;
@@ -1222,7 +1248,7 @@ foreach my $region (@regions) {
 		# For committed use discounts pricing on the A2 ultra machine series, connect with your sales account team.
 		if ($machine =~ m/a2-ultragpu/) {
 			print "INFO: No public committed use discounts for A2 ultra machine series. Reset calculated price.";
-			$costs_month_3y = $costs_month;
+			$cud_3y_mapping_not_found = 1;
 		}
 		# No price for commitment found, use price per month (with CUD)
 		if ($costs_month_3y <= 0.0001) {
@@ -1231,16 +1257,15 @@ foreach my $region (@regions) {
 			}
 			$costs_month_3y = $costs_month_1y;
 		}
-		&add_gcp_compute_instance_cost(
-			'month_3y',
-			$machine,
-			$region,
-			$costs_month_3y
-		);
+
+		# Only save if _all_ mappings (CPU, RAM, GPU) in the region have been found
+		if (!$cud_3y_mapping_not_found) {
+			&add_gcp_compute_instance_cost('month_3y', $machine, $region, $costs_month_3y);
+		}
 
 		# Spot VMs
 		my $costs_spot = 0;
-		print "Check Spot VM:\n";
+		print "Check GCE spot VM mappings:\n";
 		foreach my $mapping (keys %mappings_spot) {
 			print "Spot VM Mapping: '$mapping'\n";
 			my $value = $mappings_spot{$mapping} || '0';
@@ -1284,10 +1309,13 @@ foreach my $region (@regions) {
 			}
 			$sth->finish;
 			unless ($found) {
-				warn "WARNING: '$mapping' not found in region '$region'!\n";
+				warn "WARNING: GCE spot VM '$mapping' not found in region '$region'!\n";
+				$spot_mapping_not_found = 1;
 			}
 		}
-		if ($costs_spot > 0) {
+
+		# Only save if _all_ mappings (CPU, RAM, GPU) in the region have been found
+		if ($costs_spot > 0 && !$spot_mapping_not_found) {
 			$costs_spot = $costs_spot+$costs_local_ssd_hour_spot;
 			&add_gcp_compute_instance_cost('hour_spot',  $machine, $region, $costs_spot);
 			&add_gcp_compute_instance_cost('month_spot', $machine, $region, $costs_spot*$hours_month);
@@ -1881,7 +1909,7 @@ foreach my $region (@regions) {
 
 # Add copyright information to YAML pricing export
 $gcp->{'about'}->{'copyright'} = qq ~
-Copyright 2022-2023 Nils Knieling. All Rights Reserved.
+Copyright 2022-2024 Nils Knieling. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -43,6 +43,9 @@ MY_CHECKS=(
 	'a3-highgpu-8g,82154'
 	'a3-highgpu-8g-1y,56991'
 	'a3-highgpu-8g-3y,36078'
+	'a3-megagpu-8g,86312' # 2024/08/17: Price not in the public price list
+	'a3-megagpu-8g-1y,59381' # 2024/08/17: Price not in the public price list
+	'a3-megagpu-8g-3y,37589' # 2024/08/17: Price not in the public price list
 
 # 01_europe-west4-c2.yml
 	# C2 machine types
