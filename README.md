@@ -3,7 +3,7 @@
 [![Badge: Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?logo=google-cloud&logoColor=white)](#readme)
 [![Badge: Linux](https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black)](#-quick-start)
 [![Badge: macOS](https://img.shields.io/badge/macOS-000000.svg?logo=apple&logoColor=white)](#-quick-start)
-[![Badge: Windows](https://img.shields.io/badge/Windows-008080.svg?logo=windows95&logoColor=white)](#-quick-start)
+[![Badge: Windows](https://img.shields.io/badge/Windows-008080.svg?logoColor=white)](#-quick-start)
 [![Badge: Go](https://img.shields.io/badge/Go-%2300ADD8.svg?logo=go&logoColor=white)](#readme)
 [![Go Report Card](https://goreportcard.com/badge/github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts)](https://goreportcard.com/report/github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts)
 [![Badge: CI](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/actions/workflows/test.yml)
