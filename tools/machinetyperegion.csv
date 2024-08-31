@@ -1344,6 +1344,12 @@ c4-standard-96;96;False;360.00;;us-central1
 c4-standard-96;96;False;360.00;;us-east1
 c4-standard-96;96;False;360.00;;us-east4
 c4-standard-96;96;False;360.00;;us-east7
+ct3-hightpu-4t;96;False;340.00;;europe-west4
+ct3-hightpu-4t;96;False;340.00;;us-central1
+ct3-hightpu-4t;96;False;340.00;;us-east1
+ct3p-hightpu-4t;48;False;340.00;;europe-west4
+ct3p-hightpu-4t;48;False;340.00;;us-central1
+ct3p-hightpu-4t;48;False;340.00;;us-east1
 ct4p-hightpu-4t;240;False;407.00;;us-central2
 ct5l-hightpu-1t;24;False;48.00;;europe-west4
 ct5l-hightpu-1t;24;False;48.00;;us-central1
@@ -2170,6 +2176,7 @@ g2-standard-12;12;False;48.00;;europe-west2
 g2-standard-12;12;False;48.00;;europe-west3
 g2-standard-12;12;False;48.00;;europe-west4
 g2-standard-12;12;False;48.00;;europe-west6
+g2-standard-12;12;False;48.00;;me-central2
 g2-standard-12;12;False;48.00;;northamerica-northeast2
 g2-standard-12;12;False;48.00;;us-central1
 g2-standard-12;12;False;48.00;;us-east1
@@ -2187,6 +2194,7 @@ g2-standard-16;16;False;64.00;;europe-west2
 g2-standard-16;16;False;64.00;;europe-west3
 g2-standard-16;16;False;64.00;;europe-west4
 g2-standard-16;16;False;64.00;;europe-west6
+g2-standard-16;16;False;64.00;;me-central2
 g2-standard-16;16;False;64.00;;northamerica-northeast2
 g2-standard-16;16;False;64.00;;us-central1
 g2-standard-16;16;False;64.00;;us-east1
@@ -2204,6 +2212,7 @@ g2-standard-24;24;False;96.00;;europe-west2
 g2-standard-24;24;False;96.00;;europe-west3
 g2-standard-24;24;False;96.00;;europe-west4
 g2-standard-24;24;False;96.00;;europe-west6
+g2-standard-24;24;False;96.00;;me-central2
 g2-standard-24;24;False;96.00;;northamerica-northeast2
 g2-standard-24;24;False;96.00;;us-central1
 g2-standard-24;24;False;96.00;;us-east1
@@ -2221,6 +2230,7 @@ g2-standard-32;32;False;128.00;;europe-west2
 g2-standard-32;32;False;128.00;;europe-west3
 g2-standard-32;32;False;128.00;;europe-west4
 g2-standard-32;32;False;128.00;;europe-west6
+g2-standard-32;32;False;128.00;;me-central2
 g2-standard-32;32;False;128.00;;northamerica-northeast2
 g2-standard-32;32;False;128.00;;us-central1
 g2-standard-32;32;False;128.00;;us-east1
@@ -2238,6 +2248,7 @@ g2-standard-48;48;False;192.00;;europe-west2
 g2-standard-48;48;False;192.00;;europe-west3
 g2-standard-48;48;False;192.00;;europe-west4
 g2-standard-48;48;False;192.00;;europe-west6
+g2-standard-48;48;False;192.00;;me-central2
 g2-standard-48;48;False;192.00;;northamerica-northeast2
 g2-standard-48;48;False;192.00;;us-central1
 g2-standard-48;48;False;192.00;;us-east1
@@ -2255,6 +2266,7 @@ g2-standard-4;4;False;16.00;;europe-west2
 g2-standard-4;4;False;16.00;;europe-west3
 g2-standard-4;4;False;16.00;;europe-west4
 g2-standard-4;4;False;16.00;;europe-west6
+g2-standard-4;4;False;16.00;;me-central2
 g2-standard-4;4;False;16.00;;northamerica-northeast2
 g2-standard-4;4;False;16.00;;us-central1
 g2-standard-4;4;False;16.00;;us-east1
@@ -2272,6 +2284,7 @@ g2-standard-8;8;False;32.00;;europe-west2
 g2-standard-8;8;False;32.00;;europe-west3
 g2-standard-8;8;False;32.00;;europe-west4
 g2-standard-8;8;False;32.00;;europe-west6
+g2-standard-8;8;False;32.00;;me-central2
 g2-standard-8;8;False;32.00;;northamerica-northeast2
 g2-standard-8;8;False;32.00;;us-central1
 g2-standard-8;8;False;32.00;;us-east1
@@ -2289,6 +2302,7 @@ g2-standard-96;96;False;384.00;;europe-west2
 g2-standard-96;96;False;384.00;;europe-west3
 g2-standard-96;96;False;384.00;;europe-west4
 g2-standard-96;96;False;384.00;;europe-west6
+g2-standard-96;96;False;384.00;;me-central2
 g2-standard-96;96;False;384.00;;northamerica-northeast2
 g2-standard-96;96;False;384.00;;us-central1
 g2-standard-96;96;False;384.00;;us-east1
