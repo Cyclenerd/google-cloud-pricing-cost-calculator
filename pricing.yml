@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Oct  3 03:53:59 2024
-  timestamp: 1727927639
+  generated: Thu Oct 10 03:53:37 2024
+  timestamp: 1728532417
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -2420,7 +2420,7 @@ compute:
           month_spot: 9445.82636972
         me-west1:
           hour: 12.8002559872329
-          hour_spot: 8.95184271473973
+          hour_spot: 8.95184271473972
           month: 9344.18687068
           month_1y: 6452.44579676
           month_3y: 4108.912056
@@ -2573,7 +2573,7 @@ compute:
           month_spot: 12240.15880868
         asia-south2:
           hour: 27.1629406958904
-          hour_spot: 19.1135354905205
+          hour_spot: 19.1135354905206
           month: 19828.946708
           month_1y: 13727.4244668
           month_3y: 8713.44227692
@@ -2698,7 +2698,7 @@ compute:
           month_3y: 8814.5213562
           month_spot: 14000.8282884
         me-central2:
-          hour: 36.1850395065206
+          hour: 36.1850395065205
           hour_spot: 25.3291133416986
           month: 26415.07883976
           month_1y: 18286.90712724
@@ -2830,21 +2830,21 @@ compute:
           month_3y: 19995.41368256
           month_spot: 31913.8318856
         asia-northeast1:
-          hour: 63.749092576548
+          hour: 63.7490925765479
           hour_spot: 44.9576366923836
           month: 46536.83758088
           month_1y: 32263.04928448
           month_3y: 20440.86080888
           month_spot: 32819.07478544
         asia-northeast2:
-          hour: 57.252020576548
+          hour: 57.2520205765479
           hour_spot: 40.3752606923836
           month: 41793.97502088
           month_1y: 28971.50264448
           month_3y: 18359.12564888
           month_spot: 29473.94030544
         asia-northeast3:
-          hour: 57.2520205765479
+          hour: 57.252020576548
           hour_spot: 40.3316990485479
           month: 41793.97502088
           month_1y: 28971.50264448
@@ -2956,7 +2956,7 @@ compute:
           month_3y: 18157.90037056
           month_spot: 22792.24736
         europe-west6:
-          hour: 62.2891949845479
+          hour: 62.289194984548
           hour_spot: 43.884427240548
           month: 45471.11233872
           month_1y: 31524.01733904
@@ -3033,7 +3033,7 @@ compute:
           month_3y: 14293.49910696
           month_spot: 17967.93528
         us-east1:
-          hour: 44.5737670745753
+          hour: 44.5737670745754
           hour_spot: 24.6136099726027
           month: 32538.84996444
           month_1y: 22556.24033232
@@ -3341,7 +3341,7 @@ compute:
           month_spot: 40046.916
         us-south1:
           hour: 104.418201402959
-          hour_spot: 73.6108654025206
+          hour_spot: 73.6108654025205
           month: 76225.28702416
           month_1y: 52875.89632144
           month_3y: 33477.776556
