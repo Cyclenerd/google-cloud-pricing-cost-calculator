@@ -1,0 +1,87 @@
+region: europe-west4
+project: gcp-gce-c4a
+
+instances:
+  - name: c4a-standard-1
+    type: c4a-standard-1
+  - name: c4a-standard-2
+    type: c4a-standard-2
+  - name: c4a-standard-4
+    type: c4a-standard-4
+  - name: c4a-standard-8
+    type: c4a-standard-8
+  - name: c4a-standard-16
+    type: c4a-standard-16
+  - name: c4a-standard-32
+    type: c4a-standard-32
+  - name: c4a-standard-48
+    type: c4a-standard-48
+  - name: c4a-standard-64
+    type: c4a-standard-64
+  - name: c4a-standard-72
+    type: c4a-standard-72
+  - name: c4a-highcpu-1
+    type: c4a-highcpu-1
+  - name: c4a-highcpu-2
+    type: c4a-highcpu-2
+  - name: c4a-highcpu-4
+    type: c4a-highcpu-4
+  - name: c4a-highcpu-8
+    type: c4a-highcpu-8
+  - name: c4a-highcpu-16
+    type: c4a-highcpu-16
+  - name: c4a-highcpu-32
+    type: c4a-highcpu-32
+  - name: c4a-highcpu-48
+    type: c4a-highcpu-48
+  - name: c4a-highcpu-64
+    type: c4a-highcpu-64
+  - name: c4a-highcpu-72
+    type: c4a-highcpu-72
+  - name: c4a-highmem-1
+    type: c4a-highmem-1
+  - name: c4a-highmem-2
+    type: c4a-highmem-2
+  - name: c4a-highmem-4
+    type: c4a-highmem-4
+  - name: c4a-highmem-8
+    type: c4a-highmem-8
+  - name: c4a-highmem-16
+    type: c4a-highmem-16
+  - name: c4a-highmem-32
+    type: c4a-highmem-32
+  - name: c4a-highmem-48
+    type: c4a-highmem-48
+  - name: c4a-highmem-64
+    type: c4a-highmem-64
+  - name: c4a-highmem-72
+    type: c4a-highmem-72
+# Commitment (CUD)
+  - name: c4a-standard-8-1y
+    type: c4a-standard-8
+    commitment: 1
+  - name: c4a-standard-8-3y
+    type: c4a-standard-8
+    commitment: 3
+  - name: c4a-highmem-8-1y
+    type: c4a-highmem-8
+    commitment: 1
+  - name: c4a-highmem-8-3y
+    type: c4a-highmem-8
+    commitment: 3
+  - name: c4a-highcpu-8-1y
+    type: c4a-highcpu-8
+    commitment: 1
+  - name: c4a-highcpu-8-3y
+    type: c4a-highcpu-8
+    commitment: 3
+# Spot VM
+  - name: c4a-standard-8-spot
+    type: c4a-standard-8
+    spot: true
+  - name: c4a-highmem-8-spot
+    type: c4a-highmem-8
+    spot: true
+  - name: c4a-highcpu-8-spot
+    type: c4a-highcpu-8
+    spot: true

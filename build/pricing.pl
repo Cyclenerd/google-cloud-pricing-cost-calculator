@@ -19,7 +19,7 @@
 #
 
 BEGIN {
-	$VERSION = "2.3.0";
+	$VERSION = "2.3.1";
 }
 
 use strict;
@@ -875,6 +875,17 @@ foreach my $region (@regions) {
 			$mappings_1y{  'gce.compute.ram.c4.1y'}   = $ram;
 			$mappings_3y{  'gce.compute.ram.c4.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.c4.spot'} = $ram;
+		}
+		# C4A
+		elsif ($type eq 'c4a') {
+			$mappings{     'gce.compute.cpu.c4a'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.c4a.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.c4a.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.c4a.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.c4a'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.c4a.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.c4a.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.c4a.spot'} = $ram;
 		}
 		# H3
 		elsif ($type eq 'h3') {

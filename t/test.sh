@@ -172,7 +172,7 @@ MY_CHECKS=(
 	'c4-highcpu-48,1564'
 	'c4-highcpu-96,3129'
 	'c4-highcpu-192,6258'
-	# C3D Commitment (CUD)
+	# C4 Commitment (CUD)
 	'gcp-gce-c4,europe-west4,vm,c4-standard-8,c4-standard-8-1y,190'
 	'gcp-gce-c4,europe-west4,vm,c4-standard-8,c4-standard-8-3y,136'
 	'gcp-gce-c4,europe-west4,vm,c4-highmem-8,c4-highmem-8-1y,251'
@@ -180,6 +180,47 @@ MY_CHECKS=(
 	'gcp-gce-c4,europe-west4,vm,c4-highcpu-8,c4-highcpu-8-1y,164'
 	'gcp-gce-c4,europe-west4,vm,c4-highcpu-8,c4-highcpu-8-3y,117'
 	'c4-standard-8-spot,'
+
+# 01_europe-west4-c4a.yml
+	# C4A machine types
+	'c4a-standard-1,34'
+	'c4a-standard-2,68''
+	'c4a-standard-4,137'
+	'c4a-standard-8,275''
+	'c4a-standard-16,550'
+	'c4a-standard-32,1101'
+	'c4a-standard-48,1651'
+	'c4a-standard-64,2202'
+	'c4a-standard-72,2477'
+	'c4a-highmem-1,45'
+	'c4a-highmem-2,90'
+	'c4a-highmem-4,180'
+	'c4a-highmem-8,361'
+	'c4a-highmem-16,722'
+	'c4a-highmem-32,1445'
+	'c4a-highmem-48,2168'
+	'c4a-highmem-64,2891'
+	'c4a-highmem-72,3252'
+	'c4a-highcpu-1,29'
+	'c4a-highcpu-2,58'
+	'c4a-highcpu-4,116'
+	'c4a-highcpu-8,232'
+	'c4a-highcpu-16,464'
+	'c4a-highcpu-32,929'
+	'c4a-highcpu-48,1393'
+	'c4a-highcpu-64,1858'
+	'c4a-highcpu-72,2090'
+	# C4A Commitment (CUD)
+	'gcp-gce-c4a,europe-west4,vm,c4a-standard-8,c4a-standard-8-1y,181'
+	'gcp-gce-c4a,europe-west4,vm,c4a-standard-8,c4a-standard-8-3y,123'
+	'gcp-gce-c4a,europe-west4,vm,c4a-highmem-8,c4a-highmem-8-1y,238'
+	'gcp-gce-c4a,europe-west4,vm,c4a-highmem-8,c4a-highmem-8-3y,162'
+	'gcp-gce-c4a,europe-west4,vm,c4a-highcpu-8,c4a-highcpu-8-1y,153'
+	'gcp-gce-c4a,europe-west4,vm,c4a-highcpu-8,c4a-highcpu-8-3y,104.'
+	# Spot
+	'c4a-standard-8-spot,'
+	'c4a-highmem-8-spot,'
+	'c4a-highcpu-8-spot,'
 
 # 01_europe-west4-h3.yml
 	# H3 machine types
