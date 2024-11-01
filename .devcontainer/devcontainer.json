@@ -1,0 +1,28 @@
+{
+	"name": "gcosts",
+	"image": "ghcr.io/cyclenerd/cloud-tools-container:dev",
+	"forwardPorts": [
+		8080
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"EditorConfig.EditorConfig",
+				"qwtel.sqlite-viewer",  // https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer
+				"golang.Go"
+			]
+		}
+	},
+	"onCreateCommand": "sudo apt update && sudo apt install -y libapp-options-perl libwww-perl libjson-xs-perl libyaml-libyaml-perl libdbd-csv-perl libdbd-sqlite3-perl sqlite3",
+	"postCreateCommand": "figlet 'gcosts' && devcontainer-info",
+	// Podman specific settings
+	"remoteUser": "vscode",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"workspaceFolder": "/workspace",
+	"runArgs": [
+		"--userns=keep-id"  // Causes issue with uid mappings on host, which we need for git to work properly - files are owned by random uids due to the uid mapping
+	],
+	"containerEnv": {
+		"HOME": "/home/vscode"
+	}
+}

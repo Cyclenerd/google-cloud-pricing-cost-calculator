@@ -5,11 +5,12 @@ tasks:
       curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/cloud.google.gpg
       sudo apt-get update -y
       sudo apt-get install -y \
+        golang-go             \
         google-cloud-cli      \
-        golang                \
         libapp-options-perl   \
-        libwww-perl           \
-        libjson-xs-perl       \
-        libyaml-libyaml-perl  \
         libdbd-csv-perl       \
-        libdbd-sqlite3-perl
+        libdbd-sqlite3-perl   \
+        libjson-xs-perl       \
+        libwww-perl           \
+        libyaml-libyaml-perl  \
+        sqlite3

@@ -62,7 +62,7 @@ More help: <https://cloud.google.com/billing/v1/how-tos/catalog-api>
 
 ### 2️⃣  Export SKUs and add custom mapping (`skus.sh` and `skus.go`)
 
-Compile `skus` binary:
+Compile `skus` binary (more help in the section [Development](https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/tree/master/build#development)):
 ```bash
 make native && ./skus --version
 ```
@@ -149,15 +149,65 @@ In your usage file you can then use the machine type `n1-custom-24-108`.
 
 ## Development
 
-If you want to modify the Perl scripts and create the price information yourself,
+If you want to modify the scripts and create the price information yourself,
 the following requirements are needed.
+
+### Gitpod
+
+If you don't want to install all the tools locally yourself, you can use a [Gitpod](https://www.gitpod.io/).
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator)
 
-Perl 5 is already installed on many Linux (Debian/Ubuntu, RedHat, SUSE) and UNIX (macOS, FreeBSD) operating systems.
-For MS Windows you can download and install [Strawberry Perl](https://strawberryperl.com/).
+### Development Containers
+
+If you don't want to install all the tools locally yourself, you can also use a [Dev Container](https://containers.dev/).
+
+To get started, you'll need these tools:
+
+* [Visual Studio Code](https://code.visualstudio.com/): A popular code editor.
+* [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack): This extension allows you to work directly inside containers.
+* [Podman](https://podman.io/) or [Docker](https://www.docker.com/products/docker-desktop/): Containerization tools for running your development environment.
+
+Try it out with the `Dev Containers: Reopen in Container` command:
+
+![Screenshot: VS Code Dev Cointainer](../img/dev-containers-reopen.png)
 
 ### Requirements
+
+A Bash shell `bash`, `gcloud`, `perl` and `go` are needed.
+
+#### Google Cloud CLI
+
+Use package manager (recommended) or follow [official guide](https://cloud.google.com/sdk/docs/install).
+
+<details>
+<summary><b>Debian/Ubuntu</b></summary>
+
+Package:
+```shell
+sudo apt install apt-transport-https ca-certificates gnupg curl
+curl -fsSL "https://packages.cloud.google.com/apt/doc/apt-key.gpg" | sudo gpg --dearmor -o "/usr/share/keyrings/cloud.google.gpg"
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a "/etc/apt/sources.list.d/google-cloud-sdk.list"
+sudo apt update
+sudo apt install google-cloud-cli
+```
+
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+Homebrew package:
+```bash
+brew install --cask google-cloud-sdk
+```
+
+</details>
+
+#### Perl
+
+Perl 5 is already installed on many Linux (Debian/Ubuntu, RedHat, SUSE) and UNIX (macOS, FreeBSD) operating systems.
+For MS Windows you can download and install [Strawberry Perl](https://strawberryperl.com/).
 
 * Perl 5 (`perl`)
 * Perl modules:
@@ -180,7 +230,8 @@ sudo apt install \
 	libjson-xs-perl \
 	libyaml-libyaml-perl \
 	libdbd-csv-perl \
-	libdbd-sqlite3-perl
+	libdbd-sqlite3-perl \
+	sqlite3
 ```
 </details>
 
@@ -203,6 +254,34 @@ cpanm --installdeps .
 Execute `pricing.pl`:
 ```bash
 perl pricing.pl --help
+```
+
+#### Go Programming Language
+
+Use package manager (recommended) or follow [official guide](https://go.dev/learn/).
+
+<details>
+<summary><b>Debian/Ubuntu</b></summary>
+
+Packages:
+```bash
+sudo apt update && \
+sudo apt install golang-go
+```
+</details>
+
+<details>
+<summary><b>macOS</b></summary>
+
+Homebrew packages:
+```bash
+brew install go
+```
+</details>
+
+Compile `skus` binary:
+```bash
+make native && ./skus --version
 ```
 
 ## Special curls
