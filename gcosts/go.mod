@@ -1,6 +1,6 @@
 module github.com/Cyclenerd/google-cloud-pricing-cost-calculator/gcosts
 
-go 1.21
+go 1.23.3
 
 require (
 	github.com/pterm/pterm v0.12.79

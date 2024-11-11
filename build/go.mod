@@ -1,7 +1,6 @@
 module skus
 
-go 1.21
-toolchain go1.22.9
+go 1.23.3
 
 require (
 	cloud.google.com/go/billing v1.19.2
