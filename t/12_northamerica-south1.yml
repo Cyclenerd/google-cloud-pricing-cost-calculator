@@ -1,0 +1,6 @@
+region: northamerica-south1
+project: northamerica-south1
+
+instances:
+  - name: e2-standard-8
+    type: e2-standard-8
