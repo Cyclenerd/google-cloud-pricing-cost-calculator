@@ -72,6 +72,16 @@ a2-ultragpu-8g;96;False;1360.00;;us-central1
 a2-ultragpu-8g;96;False;1360.00;;us-east4
 a2-ultragpu-8g;96;False;1360.00;;us-east5
 a2-ultragpu-8g;96;False;1360.00;;us-east7
+a3-edgegpu-8g-nolssd;208;False;1872.00;;asia-south1
+a3-edgegpu-8g-nolssd;208;False;1872.00;;asia-southeast1
+a3-edgegpu-8g-nolssd;208;False;1872.00;;europe-west9
+a3-edgegpu-8g-nolssd;208;False;1872.00;;us-west1
+a3-edgegpu-8g-nolssd;208;False;1872.00;;us-west4
+a3-edgegpu-8g;208;False;1872.00;;asia-south1
+a3-edgegpu-8g;208;False;1872.00;;asia-southeast1
+a3-edgegpu-8g;208;False;1872.00;;europe-west9
+a3-edgegpu-8g;208;False;1872.00;;us-west1
+a3-edgegpu-8g;208;False;1872.00;;us-west4
 a3-highgpu-1g;26;False;234.00;;asia-northeast1
 a3-highgpu-1g;26;False;234.00;;asia-southeast1
 a3-highgpu-1g;26;False;234.00;;australia-southeast1
