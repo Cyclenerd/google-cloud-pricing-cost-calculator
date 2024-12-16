@@ -7,7 +7,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.24
 	golang.org/x/oauth2 v0.24.0
 	google.golang.org/api v0.210.0
-	google.golang.org/grpc v1.68.1
+	google.golang.org/grpc v1.69.0
 )
 
 require (
@@ -25,9 +25,9 @@ require (
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.54.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.54.0 // indirect
-	go.opentelemetry.io/otel v1.29.0 // indirect
-	go.opentelemetry.io/otel/metric v1.29.0 // indirect
-	go.opentelemetry.io/otel/trace v1.29.0 // indirect
+	go.opentelemetry.io/otel v1.31.0 // indirect
+	go.opentelemetry.io/otel/metric v1.31.0 // indirect
+	go.opentelemetry.io/otel/trace v1.31.0 // indirect
 	golang.org/x/crypto v0.29.0 // indirect
 	golang.org/x/net v0.31.0 // indirect
 	golang.org/x/sync v0.9.0 // indirect
