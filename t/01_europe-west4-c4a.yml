@@ -10,6 +10,8 @@ instances:
     type: c4a-standard-4
   - name: c4a-standard-8
     type: c4a-standard-8
+  - name: c4a-standard-8-lssd
+    type: c4a-standard-8-lssd
   - name: c4a-standard-16
     type: c4a-standard-16
   - name: c4a-standard-32

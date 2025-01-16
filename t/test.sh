@@ -187,6 +187,7 @@ MY_CHECKS=(
 	'c4a-standard-2,68''
 	'c4a-standard-4,137'
 	'c4a-standard-8,275''
+	'c4a-standard-8-lssd,275'
 	'c4a-standard-16,550'
 	'c4a-standard-32,1101'
 	'c4a-standard-48,1651'

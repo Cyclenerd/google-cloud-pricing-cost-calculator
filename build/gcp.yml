@@ -1088,6 +1088,50 @@ compute:
       cpu: 72
       ram: 576
 
+    c4a-standard-4-lssd:
+      cpu: 4
+      ram: 16
+    c4a-standard-8-lssd:
+      cpu: 8
+      ram: 32
+    c4a-standard-16-lssd:
+      cpu: 16
+      ram: 64.00
+    c4a-standard-32-lssd:
+      cpu: 32
+      ram: 128
+    c4a-standard-48-lssd:
+      cpu: 48
+      ram: 192
+    c4a-standard-64-lssd:
+      cpu: 64
+      ram: 256
+    c4a-standard-72-lssd:
+      cpu: 72
+      ram: 288
+
+    c4a-highmem-4-lssd:
+      cpu: 4
+      ram: 32
+    c4a-highmem-8-lssd:
+      cpu: 8
+      ram: 64
+    c4a-highmem-16-lssd:
+      cpu: 16
+      ram: 128
+    c4a-highmem-32-lssd:
+      cpu: 32
+      ram: 256
+    c4a-highmem-48-lssd:
+      cpu: 48
+      ram: 384
+    c4a-highmem-64-lssd:
+      cpu: 64
+      ram: 512
+    c4a-highmem-72-lssd:
+      cpu: 72
+      ram: 576
+
     # M1:
     m1-ultramem-40:
       cpu: 40
