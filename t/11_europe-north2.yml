@@ -1,0 +1,6 @@
+region: europe-north2
+project: europe-north2
+
+instances:
+  - name: n4-standard-8
+    type: n4-standard-8
