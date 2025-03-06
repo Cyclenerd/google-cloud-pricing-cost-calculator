@@ -3738,6 +3738,7 @@ m2-hypermem-416;416;False;8832.00;;asia-south1
 m2-hypermem-416;416;False;8832.00;;asia-south2
 m2-hypermem-416;416;False;8832.00;;asia-southeast1
 m2-hypermem-416;416;False;8832.00;;australia-southeast1
+m2-hypermem-416;416;False;8832.00;;europe-southwest1
 m2-hypermem-416;416;False;8832.00;;europe-west1
 m2-hypermem-416;416;False;8832.00;;europe-west2
 m2-hypermem-416;416;False;8832.00;;europe-west3
@@ -3760,6 +3761,7 @@ m2-megamem-416;416;False;5888.00;;asia-south1
 m2-megamem-416;416;False;5888.00;;asia-south2
 m2-megamem-416;416;False;5888.00;;asia-southeast1
 m2-megamem-416;416;False;5888.00;;australia-southeast1
+m2-megamem-416;416;False;5888.00;;europe-southwest1
 m2-megamem-416;416;False;5888.00;;europe-west1
 m2-megamem-416;416;False;5888.00;;europe-west2
 m2-megamem-416;416;False;5888.00;;europe-west3
@@ -3782,6 +3784,7 @@ m2-ultramem-208;208;False;5888.00;;asia-south1
 m2-ultramem-208;208;False;5888.00;;asia-south2
 m2-ultramem-208;208;False;5888.00;;asia-southeast1
 m2-ultramem-208;208;False;5888.00;;australia-southeast1
+m2-ultramem-208;208;False;5888.00;;europe-southwest1
 m2-ultramem-208;208;False;5888.00;;europe-west1
 m2-ultramem-208;208;False;5888.00;;europe-west2
 m2-ultramem-208;208;False;5888.00;;europe-west3
@@ -3804,6 +3807,7 @@ m2-ultramem-416;416;False;11776.00;;asia-south1
 m2-ultramem-416;416;False;11776.00;;asia-south2
 m2-ultramem-416;416;False;11776.00;;asia-southeast1
 m2-ultramem-416;416;False;11776.00;;australia-southeast1
+m2-ultramem-416;416;False;11776.00;;europe-southwest1
 m2-ultramem-416;416;False;11776.00;;europe-west1
 m2-ultramem-416;416;False;11776.00;;europe-west2
 m2-ultramem-416;416;False;11776.00;;europe-west3
@@ -3979,6 +3983,11 @@ m3-ultramem-64;64;False;1952.00;;us-east4
 m3-ultramem-64;64;False;1952.00;;us-east7
 m3-ultramem-64;64;False;1952.00;;us-west1
 m3-ultramem-64;64;False;1952.00;;us-west4
+m4-megamem-112;112;False;1488.00;;europe-west4
+m4-megamem-224;224;False;2976.00;;europe-west4
+m4-megamem-56;56;False;744.00;;europe-west4
+m4-ultramem-112;112;False;2976.00;;europe-west4
+m4-ultramem-56;56;False;1488.00;;europe-west4
 n1-highcpu-16;16;False;14.40;;asia-east1
 n1-highcpu-16;16;False;14.40;;asia-east2
 n1-highcpu-16;16;False;14.40;;asia-northeast1
