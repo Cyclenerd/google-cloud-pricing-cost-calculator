@@ -947,6 +947,18 @@ foreach my $region (@regions) {
 			$mappings_spot{'gce.compute.ram.m3.spot'} = $ram;
 			# M3 machine types do not offer sustained use discounts.
 		}
+		# M4
+		elsif ($type eq 'm4') {
+			$mappings{     'gce.compute.cpu.m4'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.m4.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.m4.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.m4.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.m4'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.m4.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.m4.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.m4.spot'} = $ram;
+			# M3 machine types do not offer sustained use discounts.
+		}
 		# A2
 		elsif ($type eq 'a2') {
 			$mappings{     'gce.compute.cpu.a2'}      = $cpu;

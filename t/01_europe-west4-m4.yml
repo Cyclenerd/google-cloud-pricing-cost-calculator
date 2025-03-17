@@ -1,0 +1,58 @@
+region: europe-west4
+project: gcp-gce-m4
+
+# Memory-optimized machine type family
+# https://cloud.google.com/compute/docs/memory-optimized-machines#m4_machine_types
+
+instances:
+# M3 machine types
+  - name: m4-ultramem-56
+    type: m4-ultramem-56
+  - name: m4-ultramem-112
+    type: m4-ultramem-112
+  - name: m4-megamem-56
+    type: m4-megamem-56
+  - name: m4-megamem-112
+    type: m4-megamem-112
+  - name: m4-megamem-224
+    type: m4-megamem-224
+# Commitment (CUD)
+# m4-ultramem-56
+  - name: m4-ultramem-56-1y
+    type: m4-ultramem-56
+    commitment: 1
+  - name: m4-ultramem-56-3y
+    type: m4-ultramem-56
+    commitment: 3
+# m4-ultramem-112
+  - name: m4-ultramem-112-1y
+    type: m4-ultramem-112
+    commitment: 1
+  - name: m4-ultramem-112-3y
+    type: m4-ultramem-112
+    commitment: 3
+# m4-megamem-56
+  - name: m4-megamem-56-1y
+    type: m4-megamem-56
+    commitment: 1
+  - name: m4-megamem-56-3y
+    type: m4-megamem-56
+    commitment: 3
+# m4-megamem-112
+  - name: m4-megamem-112-1y
+    type: m4-megamem-112
+    commitment: 1
+  - name: m4-megamem-112-3y
+    type: m4-megamem-112
+    commitment: 3
+# m4-megamem-224
+  - name: m4-megamem-224-1y
+    type: m4-megamem-224
+    commitment: 1
+  - name: m4-megamem-224-3y
+    type: m4-megamem-224
+    commitment: 3
+# Spot VM
+  - name: m4-ultramem-56-spot
+    type: m4-ultramem-56
+    spot: true

@@ -329,6 +329,25 @@ MY_CHECKS=(
 	'gcp-gce-m3,europe-west4,vm,m3-megamem-128,m3-megamem-128-1y,6541'
 	'gcp-gce-m3,europe-west4,vm,m3-megamem-128,m3-megamem-128-3y,3317'
 
+# 01_europe-west4-m4.yml
+	# M4 machine types
+	'm4-ultramem-56,6510'
+	'm4-ultramem-112,13021'
+	'm4-megamem-56,3681'
+	'm4-megamem-112,7362'
+	'm4-megamem-224,14725'
+	'm4-ultramem-56-1y,3841'
+	'm4-ultramem-56-3y,1953'
+	'm4-ultramem-112-1y,7682'
+	'm4-ultramem-112-3y,3906'
+	'm4-megamem-56-1y,2172'
+	'm4-megamem-56-3y,1104'
+	'm4-megamem-112-1y,4344'
+	'm4-megamem-112-3y,2208'
+	'm4-megamem-224-1y,8688'
+	'm4-megamem-224-3y,4417'
+	'm4-ultramem-56-spot,'
+
 # 01_europe-west4-n1.yml
 	# N1 machine types
 	'n1-standard-1,26'

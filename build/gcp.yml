@@ -1179,6 +1179,23 @@ compute:
       cpu: 128
       ram: 1952
 
+    # M4
+    m4-ultramem-56:
+      cpu: 56
+      ram: 1488
+    m4-ultramem-112:
+      cpu: 112
+      ram: 2976
+    m4-megamem-56:
+      cpu: 56
+      ram: 744
+    m4-megamem-112:
+      cpu: 112
+      ram: 1488
+    m4-megamem-224:
+      cpu: 224
+      ram: 2976
+
     # A2:
     a2-highgpu-1g:
       cpu: 12
