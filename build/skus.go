@@ -59,7 +59,12 @@ func main() {
 	if err != nil {
 		log.Fatalf("ERROR: Cannot open SQLite3 database '%s' with SKUs: %v\n", *skuFile, err)
 	}
-	defer db.Close()
+	defer func() {
+		if err := db.Close(); err != nil {
+			// Handle the error appropriately. For example, you could log it.
+			log.Printf("Error closing database: %v", err)
+		}
+	}()
 
 	apiKey := os.Getenv("API_KEY")
 
@@ -70,7 +75,12 @@ func main() {
 	if err != nil {
 		log.Fatalf("ERROR: Cannot create Google Cloud Billing client: %v\n", err)
 	}
-	defer c.Close()
+	defer func() {
+		if err := c.Close(); err != nil {
+			// Handle the error appropriately. For example, you could log it.
+			log.Printf("Error closing connection: %v", err)
+		}
+	}()
 
 	tx, err := db.BeginTx(ctx, nil)
 	if err != nil {
