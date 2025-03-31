@@ -88,7 +88,7 @@ func returnStorageBucketName(defaultName string, inputName string) string {
 func CalcStorageBucket(pricingYml StructPricing, inputName string, inputStorageClass string, inputStorageData float32, inputStorageRetrieval float32, inputRegion string, inputDiscount float32) float32 {
 	name := returnStorageBucketName("", inputName)
 	discount, discountText := returnDiscount(inputDiscount)
-	var price float32 = (Month(CostStorageBucket(pricingYml, inputStorageClass, inputRegion)) * inputStorageData) * discount
+	price := (Month(CostStorageBucket(pricingYml, inputStorageClass, inputRegion)) * inputStorageData) * discount
 	pterm.Info.Printf("Price '%s' '%.2f' GiB per month: $%.2f %s\n", name, inputStorageData, price, discountText)
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{
@@ -104,7 +104,7 @@ func CalcStorageBucket(pricingYml StructPricing, inputName string, inputStorageC
 		})
 	}
 	if inputStorageRetrieval > 0 {
-		var retrieval_fee float32 = (Month(CostStorageRetrieval(pricingYml, inputStorageClass, inputRegion)) * inputStorageRetrieval) * discount
+		retrieval_fee := (Month(CostStorageRetrieval(pricingYml, inputStorageClass, inputRegion)) * inputStorageRetrieval) * discount
 		pterm.Info.Printf("Retrieval fee '%s' '%.2f' GiB per month: $%.2f %s\n", name, inputStorageData, price, discountText)
 		if retrieval_fee > 0 {
 			LineItems = append(LineItems, LineItem{

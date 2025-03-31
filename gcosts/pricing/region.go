@@ -16,15 +16,16 @@ limitations under the License.
 package pricing
 
 import (
-	"github.com/pterm/pterm"
 	"os"
+
+	"github.com/pterm/pterm"
 )
 
 func CheckRegion(pricingYml StructPricing, inputRegion string) bool {
 	_, regionOk := pricingYml.Region[inputRegion]
 	_, dualRegionOk := pricingYml.DualRegion[inputRegion]
 	_, multiRegionOk := pricingYml.MultiRegion[inputRegion]
-	var found bool = false
+	found := false
 	if regionOk {
 		pterm.Success.Printf("Google Cloud region '%s' found.\n", inputRegion)
 		found = true

@@ -16,8 +16,9 @@ limitations under the License.
 package pricing
 
 import (
-	"github.com/pterm/pterm"
 	"os"
+
+	"github.com/pterm/pterm"
 )
 
 // Google Compute Engine instance
@@ -66,20 +67,17 @@ func returnComputeInstanceTerminated(inputValue bool) bool {
 
 func returnComputeInstanceCommitment(inputValue int) int {
 	var outputValue int
-	if inputValue > 0 {
-		if inputValue == 1 {
-			outputValue = inputValue
-			pterm.Info.Println("GCE instance commitment: 1 year")
-		} else if inputValue == 3 {
-			outputValue = inputValue
-			pterm.Info.Println("GCE instance commitment: 3 years")
-		} else {
-			outputValue = 0
-			pterm.Warning.Printf("Invalid GCE instance commitment: '%v'\n", inputValue)
-			pterm.Info.Println("GCE instance commitment: no")
-		}
-	} else {
+	switch inputValue {
+	case 1:
+		outputValue = inputValue
+		pterm.Info.Println("GCE instance commitment: 1 year")
+	case 3:
+		outputValue = inputValue
+		pterm.Info.Println("GCE instance commitment: 3 years")
+	default:
 		outputValue = 0
+		pterm.Warning.Printf("Invalid GCE instance commitment: '%v'\n", inputValue)
+		pterm.Info.Println("GCE instance commitment: no")
 	}
 	return outputValue
 }
@@ -182,7 +180,7 @@ func returnComputeDiskName(defaultName string, inputName string) string {
 func CalcComputeDisk(pricingYml StructPricing, inputName string, inputStorageType string, inputStorageData float32, inputRegion string, inputDiscount float32) float32 {
 	name := returnComputeDiskName("", inputName)
 	discount, discountText := returnDiscount(inputDiscount)
-	var price float32 = (Month(CostComputeDisk(pricingYml, inputStorageType, inputRegion)) * inputStorageData) * discount
+	price := (Month(CostComputeDisk(pricingYml, inputStorageType, inputRegion)) * inputStorageData) * discount
 	pterm.Info.Printf("Price '%s' '%.2f' GiB per month: $%.2f %s\n", name, inputStorageData, price, discountText)
 	if price > 0 {
 		LineItems = append(LineItems, LineItem{

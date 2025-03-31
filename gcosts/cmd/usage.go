@@ -54,8 +54,8 @@ var usageCmd = &cobra.Command{
 			pricing.Project = defaultProject
 
 			// Calc pricing of resources
-			var disks []usage.Disk = usageYml.Disks
-			var buckets []usage.Bucket = usageYml.Buckets
+			disks := usageYml.Disks
+			buckets := usageYml.Buckets
 			if len(usageYml.Monitoring) > 0 {
 				pterm.DefaultSection.WithLevel(3).Println("🚦 Monitoring")
 				for _, monitoring := range usageYml.Monitoring {

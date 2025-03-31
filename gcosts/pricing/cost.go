@@ -18,8 +18,9 @@ package pricing
 import (
 	"encoding/csv"
 	"fmt"
-	"github.com/pterm/pterm"
 	"os"
+
+	"github.com/pterm/pterm"
 )
 
 var File string
@@ -50,7 +51,7 @@ func Hour(cost Cost) float32 {
 }
 
 func HourSpot(cost Cost) float32 {
-	var hour float32 = cost.HourSpot
+	hour := cost.HourSpot
 	if !(hour > 0) {
 		pterm.Warning.Println("Spot price per hour not found! Apply normal hour price.")
 		hour = Hour(cost)
@@ -59,7 +60,7 @@ func HourSpot(cost Cost) float32 {
 }
 
 func Month(cost Cost) float32 {
-	var month float32 = cost.Month
+	month := cost.Month
 	if !(month > 0) {
 		pterm.Error.Println("Price per month not found!")
 		os.Exit(1)
@@ -68,7 +69,7 @@ func Month(cost Cost) float32 {
 }
 
 func Month1Y(cost Cost) float32 {
-	var month float32 = cost.Month1Y
+	month := cost.Month1Y
 	if !(month > 0) {
 		pterm.Warning.Println("1Y CUD price per month not found! Apply normal monthly price.")
 		month = Month(cost)
@@ -77,7 +78,7 @@ func Month1Y(cost Cost) float32 {
 }
 
 func Month3Y(cost Cost) float32 {
-	var month float32 = cost.Month3Y
+	month := cost.Month3Y
 	if !(month > 0) {
 		pterm.Warning.Println("3Y CUD price per month not found! Apply normal monthly price.")
 		month = Month(cost)
@@ -86,7 +87,7 @@ func Month3Y(cost Cost) float32 {
 }
 
 func MonthSpot(cost Cost) float32 {
-	var month float32 = cost.MonthSpot
+	month := cost.MonthSpot
 	if !(month > 0) {
 		pterm.Warning.Println("Spot price per month not found! Apply normal monthly price.")
 		month = Month(cost)
