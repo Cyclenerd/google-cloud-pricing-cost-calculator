@@ -1,6 +1,7 @@
 module skus
 
 go 1.23.3
+
 toolchain go1.24.1
 
 require (
@@ -8,7 +9,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.24
 	golang.org/x/oauth2 v0.28.0
 	google.golang.org/api v0.228.0
-	google.golang.org/grpc v1.71.0
+	google.golang.org/grpc v1.71.1
 )
 
 require (
