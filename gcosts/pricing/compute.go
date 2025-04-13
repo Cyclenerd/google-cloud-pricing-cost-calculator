@@ -68,6 +68,8 @@ func returnComputeInstanceTerminated(inputValue bool) bool {
 func returnComputeInstanceCommitment(inputValue int) int {
 	var outputValue int
 	switch inputValue {
+	case 0:
+		outputValue = 0
 	case 1:
 		outputValue = inputValue
 		pterm.Info.Println("GCE instance commitment: 1 year")
