@@ -40,6 +40,9 @@ MY_CHECKS=(
 	'a2-highgpu-8g-spot,'
 
 # 01_europe-west4-a3
+	'a3-highgpu-1g,10269'
+	'a3-highgpu-2g,20538'
+	'a3-highgpu-4g,41077'
 	'a3-highgpu-8g,82154'
 	'a3-highgpu-8g-1y,56991'
 	'a3-highgpu-8g-3y,36078'

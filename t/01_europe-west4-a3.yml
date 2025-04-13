@@ -5,6 +5,12 @@ project: gcp-gce-a3
 # https://cloud.google.com/compute/docs/accelerator-optimized-machines#a3-vms
 
 instances:
+  - name: a3-highgpu-1g
+    type: a3-highgpu-1g
+  - name: a3-highgpu-2g
+    type: a3-highgpu-2g
+  - name: a3-highgpu-4g
+    type: a3-highgpu-4g
   - name: a3-highgpu-8g
     type: a3-highgpu-8g
   - name: a3-highgpu-8g-1y
