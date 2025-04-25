@@ -3013,6 +3013,7 @@ ct5l-hightpu-4t;112;False;192.00;;europe-west4
 ct5l-hightpu-4t;112;False;192.00;;us-central1
 ct5l-hightpu-8t;224;False;384.00;;europe-west4
 ct5l-hightpu-8t;224;False;384.00;;us-central1
+ct5lp-hightpu-1t;24;False;48.00;;asia-east1
 ct5lp-hightpu-1t;24;False;48.00;;asia-southeast1
 ct5lp-hightpu-1t;24;False;48.00;;europe-west1
 ct5lp-hightpu-1t;24;False;48.00;;europe-west4
@@ -3023,6 +3024,7 @@ ct5lp-hightpu-1t;24;False;48.00;;us-east7
 ct5lp-hightpu-1t;24;False;48.00;;us-south1
 ct5lp-hightpu-1t;24;False;48.00;;us-west1
 ct5lp-hightpu-1t;24;False;48.00;;us-west4
+ct5lp-hightpu-4t;112;False;192.00;;asia-east1
 ct5lp-hightpu-4t;112;False;192.00;;asia-southeast1
 ct5lp-hightpu-4t;112;False;192.00;;europe-west1
 ct5lp-hightpu-4t;112;False;192.00;;europe-west4
@@ -3033,6 +3035,7 @@ ct5lp-hightpu-4t;112;False;192.00;;us-east7
 ct5lp-hightpu-4t;112;False;192.00;;us-south1
 ct5lp-hightpu-4t;112;False;192.00;;us-west1
 ct5lp-hightpu-4t;112;False;192.00;;us-west4
+ct5lp-hightpu-8t;224;False;384.00;;asia-east1
 ct5lp-hightpu-8t;224;False;384.00;;asia-southeast1
 ct5lp-hightpu-8t;224;False;384.00;;europe-west1
 ct5lp-hightpu-8t;224;False;384.00;;europe-west4
@@ -4420,6 +4423,8 @@ m4-megamem-224;224;False;2976.00;;europe-west4
 m4-megamem-224;224;False;2976.00;;us-central1
 m4-megamem-224;224;False;2976.00;;us-east4
 m4-megamem-224;224;False;2976.00;;us-east7
+m4-megamem-28;28;False;372.00;;us-central1
+m4-megamem-28;28;False;372.00;;us-east4
 m4-megamem-56;56;False;744.00;;europe-west3
 m4-megamem-56;56;False;744.00;;europe-west4
 m4-megamem-56;56;False;744.00;;us-central1
@@ -4430,6 +4435,9 @@ m4-ultramem-112;112;False;2976.00;;europe-west4
 m4-ultramem-112;112;False;2976.00;;us-central1
 m4-ultramem-112;112;False;2976.00;;us-east4
 m4-ultramem-112;112;False;2976.00;;us-east7
+m4-ultramem-224;224;False;5952.00;;europe-west4
+m4-ultramem-224;224;False;5952.00;;us-central1
+m4-ultramem-224;224;False;5952.00;;us-east4
 m4-ultramem-56;56;False;1488.00;;europe-west3
 m4-ultramem-56;56;False;1488.00;;europe-west4
 m4-ultramem-56;56;False;1488.00;;us-central1
