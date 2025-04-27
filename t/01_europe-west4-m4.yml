@@ -10,6 +10,10 @@ instances:
     type: m4-ultramem-56
   - name: m4-ultramem-112
     type: m4-ultramem-112
+  - name: m4-ultramem-224
+    type: m4-ultramem-224
+  - name: m4-megamem-28
+    type: m4-megamem-28
   - name: m4-megamem-56
     type: m4-megamem-56
   - name: m4-megamem-112

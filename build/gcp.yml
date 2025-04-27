@@ -1186,6 +1186,12 @@ compute:
     m4-ultramem-112:
       cpu: 112
       ram: 2976
+    m4-ultramem-224:
+      cpu: 224
+      ram: 5952
+    m4-megamem-28:
+      cpu: 28
+      ram: 372
     m4-megamem-56:
       cpu: 56
       ram: 744
