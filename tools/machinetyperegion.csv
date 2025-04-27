@@ -180,12 +180,14 @@ a3-ultragpu-8g-nolssd;224;False;2952.00;;us-central1
 a3-ultragpu-8g-nolssd;224;False;2952.00;;us-east4
 a3-ultragpu-8g-nolssd;224;False;2952.00;;us-east5
 a3-ultragpu-8g-nolssd;224;False;2952.00;;us-east7
+a3-ultragpu-8g-nolssd;224;False;2952.00;;us-south1
 a3-ultragpu-8g-nolssd;224;False;2952.00;;us-west1
 a3-ultragpu-8g;224;False;2952.00;;europe-west1
 a3-ultragpu-8g;224;False;2952.00;;us-central1
 a3-ultragpu-8g;224;False;2952.00;;us-east4
 a3-ultragpu-8g;224;False;2952.00;;us-east5
 a3-ultragpu-8g;224;False;2952.00;;us-east7
+a3-ultragpu-8g;224;False;2952.00;;us-south1
 a3-ultragpu-8g;224;False;2952.00;;us-west1
 a4-highgpu-8g;224;False;3968.00;;us-central1
 a4-highgpu-8g;224;False;3968.00;;us-east4
@@ -4427,6 +4429,7 @@ m4-megamem-28;28;False;372.00;;europe-west3
 m4-megamem-28;28;False;372.00;;europe-west4
 m4-megamem-28;28;False;372.00;;us-central1
 m4-megamem-28;28;False;372.00;;us-east4
+m4-megamem-28;28;False;372.00;;us-east7
 m4-megamem-56;56;False;744.00;;europe-west3
 m4-megamem-56;56;False;744.00;;europe-west4
 m4-megamem-56;56;False;744.00;;us-central1
@@ -4441,6 +4444,7 @@ m4-ultramem-224;224;False;5952.00;;europe-west3
 m4-ultramem-224;224;False;5952.00;;europe-west4
 m4-ultramem-224;224;False;5952.00;;us-central1
 m4-ultramem-224;224;False;5952.00;;us-east4
+m4-ultramem-224;224;False;5952.00;;us-east7
 m4-ultramem-56;56;False;1488.00;;europe-west3
 m4-ultramem-56;56;False;1488.00;;europe-west4
 m4-ultramem-56;56;False;1488.00;;us-central1
