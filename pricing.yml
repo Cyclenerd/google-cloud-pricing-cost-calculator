@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Apr 24 03:58:19 2025
-  timestamp: 1745467099
+  generated: Sun Apr 27 08:26:18 2025
+  timestamp: 1745742378
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -1997,7 +1997,7 @@ compute:
           month_spot: 6706.0248
         us-east5:
           hour: 22.2596595616438
-          hour_spot: 7.19755342465753
+          hour_spot: 7.19755342465754
           month: 16249.55148
           month_spot: 5254.214
         us-south1:
@@ -2007,7 +2007,7 @@ compute:
           month_spot: 6644.0791288
         us-west1:
           hour: 20.2751915616438
-          hour_spot: 8.10001041095891
+          hour_spot: 8.1000104109589
           month: 14800.88984
           month_spot: 5913.0076
         us-west2:
@@ -2308,7 +2308,7 @@ compute:
           month_spot: 7630.07738604
         australia-southeast1:
           hour: 13.8347833541096
-          hour_spot: 9.71474095975343
+          hour_spot: 9.71474095975342
           month: 10099.3918485
           month_1y: 7005.35553674
           month_3y: 4435.66838588
@@ -2336,7 +2336,7 @@ compute:
           month_spot: 6246.68865902
         europe-southwest1:
           hour: 13.0522751753699
-          hour_spot: 9.17033077805479
+          hour_spot: 9.1703307780548
           month: 9528.16087802
           month_1y: 6609.48704018
           month_3y: 4184.7220695
@@ -2594,7 +2594,7 @@ compute:
           month_spot: 15260.15477208
         australia-southeast1:
           hour: 27.6695667082192
-          hour_spot: 19.4294819195069
+          hour_spot: 19.4294819195068
           month: 20198.783697
           month_1y: 14010.71107348
           month_3y: 8871.33677176
@@ -3145,7 +3145,7 @@ compute:
           month_spot: 47226.63523472
         asia-south2:
           hour: 106.28463949589
-          hour_spot: 74.6738679894795
+          hour_spot: 74.6738679894794
           month: 77587.786832
           month_1y: 53821.0578672
           month_3y: 34076.16910768
@@ -3208,7 +3208,7 @@ compute:
           month_spot: 28403.29088
         europe-west10:
           hour: 136.274618707726
-          hour_spot: 95.9162724635617
+          hour_spot: 95.9162724635616
           month: 99480.47165664
           month_1y: 69007.55385664
           month_3y: 43691.34000288
@@ -3341,7 +3341,7 @@ compute:
           month_spot: 13187.8688
         us-south1:
           hour: 104.418201402959
-          hour_spot: 73.6108654025205
+          hour_spot: 73.6108654025206
           month: 76225.28702416
           month_1y: 52875.89632144
           month_3y: 33477.776556
@@ -39249,6 +39249,1386 @@ compute:
           month_spot: 104.7696
       cpu: 8
       ram: 32
+    c4d-highcpu-16:
+      cost:
+        asia-southeast1:
+          hour: 0.730072
+          hour_spot: 0.3120326
+          month: 532.95256
+          month_1y: 335.735322
+          month_3y: 239.813176
+          month_spot: 227.783798
+        europe-west4:
+          hour: 0.621366
+          hour_spot: 0.2655688
+          month: 453.59718
+          month_1y: 285.743462
+          month_3y: 204.112818
+          month_spot: 193.865224
+        us-central1:
+          hour: 0.591778
+          hour_spot: 0.2529232
+          month: 431.99794
+          month_1y: 272.137284
+          month_3y: 194.39316
+          month_spot: 184.633936
+        us-east1:
+          hour: 0.591778
+          hour_spot: 0.2529232
+          month: 431.99794
+          month_1y: 272.137284
+          month_3y: 194.39316
+          month_spot: 184.633936
+        us-east4:
+          hour: 0.591778
+          hour_spot: 0.2529232
+          month: 431.99794
+          month_1y: 272.137284
+          month_3y: 194.39316
+          month_spot: 184.633936
+        us-west1:
+          hour: 0.591778
+          hour_spot: 0.2529232
+          month: 431.99794
+          month_1y: 272.137284
+          month_3y: 194.39316
+          month_spot: 184.633936
+      cpu: 16
+      ram: 30
+    c4d-highcpu-192:
+      cost:
+        asia-southeast1:
+          hour: 8.760864
+          hour_spot: 3.7443912
+          month: 6395.43072
+          month_1y: 4028.823864
+          month_3y: 2877.758112
+          month_spot: 2733.405576
+        europe-west4:
+          hour: 7.456392
+          hour_spot: 3.1868256
+          month: 5443.16616
+          month_1y: 3428.921544
+          month_3y: 2449.353816
+          month_spot: 2326.382688
+        us-central1:
+          hour: 7.101336
+          hour_spot: 3.0350784
+          month: 5183.97528
+          month_1y: 3265.647408
+          month_3y: 2332.71792
+          month_spot: 2215.607232
+        us-east1:
+          hour: 7.101336
+          hour_spot: 3.0350784
+          month: 5183.97528
+          month_1y: 3265.647408
+          month_3y: 2332.71792
+          month_spot: 2215.607232
+        us-east4:
+          hour: 7.101336
+          hour_spot: 3.0350784
+          month: 5183.97528
+          month_1y: 3265.647408
+          month_3y: 2332.71792
+          month_spot: 2215.607232
+        us-west1:
+          hour: 7.101336
+          hour_spot: 3.0350784
+          month: 5183.97528
+          month_1y: 3265.647408
+          month_3y: 2332.71792
+          month_spot: 2215.607232
+      cpu: 192
+      ram: 360
+    c4d-highcpu-2:
+      cost:
+        asia-southeast1:
+          hour: 0.087596
+          hour_spot: 0.0376339
+          month: 63.94508
+          month_1y: 40.282203
+          month_3y: 28.773242
+          month_spot: 27.472747
+        europe-west4:
+          hour: 0.074553
+          hour_spot: 0.03203
+          month: 54.42369
+          month_1y: 34.284085
+          month_3y: 24.489675
+          month_spot: 23.3819
+        us-central1:
+          hour: 0.071003
+          hour_spot: 0.0305048
+          month: 51.83219
+          month_1y: 32.651586
+          month_3y: 23.3235
+          month_spot: 22.268504
+        us-east1:
+          hour: 0.071003
+          hour_spot: 0.0305048
+          month: 51.83219
+          month_1y: 32.651586
+          month_3y: 23.3235
+          month_spot: 22.268504
+        us-east4:
+          hour: 0.071003
+          hour_spot: 0.0305048
+          month: 51.83219
+          month_1y: 32.651586
+          month_3y: 23.3235
+          month_spot: 22.268504
+        us-west1:
+          hour: 0.071003
+          hour_spot: 0.0305048
+          month: 51.83219
+          month_1y: 32.651586
+          month_3y: 23.3235
+          month_spot: 22.268504
+      cpu: 2
+      ram: 3
+    c4d-highcpu-32:
+      cost:
+        asia-southeast1:
+          hour: 1.460144
+          hour_spot: 0.6240652
+          month: 1065.90512
+          month_1y: 671.470644
+          month_3y: 479.626352
+          month_spot: 455.567596
+        europe-west4:
+          hour: 1.242732
+          hour_spot: 0.5311376
+          month: 907.19436
+          month_1y: 571.486924
+          month_3y: 408.225636
+          month_spot: 387.730448
+        us-central1:
+          hour: 1.183556
+          hour_spot: 0.5058464
+          month: 863.99588
+          month_1y: 544.274568
+          month_3y: 388.78632
+          month_spot: 369.267872
+        us-east1:
+          hour: 1.183556
+          hour_spot: 0.5058464
+          month: 863.99588
+          month_1y: 544.274568
+          month_3y: 388.78632
+          month_spot: 369.267872
+        us-east4:
+          hour: 1.183556
+          hour_spot: 0.5058464
+          month: 863.99588
+          month_1y: 544.274568
+          month_3y: 388.78632
+          month_spot: 369.267872
+        us-west1:
+          hour: 1.183556
+          hour_spot: 0.5058464
+          month: 863.99588
+          month_1y: 544.274568
+          month_3y: 388.78632
+          month_spot: 369.267872
+      cpu: 32
+      ram: 60
+    c4d-highcpu-384:
+      cost:
+        asia-southeast1:
+          hour: 17.521728
+          hour_spot: 7.4887824
+          month: 12790.86144
+          month_1y: 8057.647728
+          month_3y: 5755.516224
+          month_spot: 5466.811152
+        europe-west4:
+          hour: 14.912784
+          hour_spot: 6.3736512
+          month: 10886.33232
+          month_1y: 6857.843088
+          month_3y: 4898.707632
+          month_spot: 4652.765376
+        us-central1:
+          hour: 14.202672
+          hour_spot: 6.0701568
+          month: 10367.95056
+          month_1y: 6531.294816
+          month_3y: 4665.43584
+          month_spot: 4431.214464
+        us-east1:
+          hour: 14.202672
+          hour_spot: 6.0701568
+          month: 10367.95056
+          month_1y: 6531.294816
+          month_3y: 4665.43584
+          month_spot: 4431.214464
+        us-east4:
+          hour: 14.202672
+          hour_spot: 6.0701568
+          month: 10367.95056
+          month_1y: 6531.294816
+          month_3y: 4665.43584
+          month_spot: 4431.214464
+        us-west1:
+          hour: 14.202672
+          hour_spot: 6.0701568
+          month: 10367.95056
+          month_1y: 6531.294816
+          month_3y: 4665.43584
+          month_spot: 4431.214464
+      cpu: 384
+      ram: 720
+    c4d-highcpu-4:
+      cost:
+        asia-southeast1:
+          hour: 0.180076
+          hour_spot: 0.0770947
+          month: 131.45548
+          month_1y: 82.810689
+          month_3y: 59.151024
+          month_spot: 56.279131
+        europe-west4:
+          hour: 0.153263
+          hour_spot: 0.0656148
+          month: 111.88199
+          month_1y: 70.479967
+          month_3y: 50.345253
+          month_spot: 47.898804
+        us-central1:
+          hour: 0.145965
+          hour_spot: 0.0624904
+          month: 106.55445
+          month_1y: 67.123938
+          month_3y: 47.94786
+          month_spot: 45.617992
+        us-east1:
+          hour: 0.145965
+          hour_spot: 0.0624904
+          month: 106.55445
+          month_1y: 67.123938
+          month_3y: 47.94786
+          month_spot: 45.617992
+        us-east4:
+          hour: 0.145965
+          hour_spot: 0.0624904
+          month: 106.55445
+          month_1y: 67.123938
+          month_3y: 47.94786
+          month_spot: 45.617992
+        us-west1:
+          hour: 0.145965
+          hour_spot: 0.0624904
+          month: 106.55445
+          month_1y: 67.123938
+          month_3y: 47.94786
+          month_spot: 45.617992
+      cpu: 4
+      ram: 7
+    c4d-highcpu-48:
+      cost:
+        asia-southeast1:
+          hour: 2.190216
+          hour_spot: 0.9360978
+          month: 1598.85768
+          month_1y: 1007.205966
+          month_3y: 719.439528
+          month_spot: 683.351394
+        europe-west4:
+          hour: 1.864098
+          hour_spot: 0.7967064
+          month: 1360.79154
+          month_1y: 857.230386
+          month_3y: 612.338454
+          month_spot: 581.595672
+        us-central1:
+          hour: 1.775334
+          hour_spot: 0.7587696
+          month: 1295.99382
+          month_1y: 816.411852
+          month_3y: 583.17948
+          month_spot: 553.901808
+        us-east1:
+          hour: 1.775334
+          hour_spot: 0.7587696
+          month: 1295.99382
+          month_1y: 816.411852
+          month_3y: 583.17948
+          month_spot: 553.901808
+        us-east4:
+          hour: 1.775334
+          hour_spot: 0.7587696
+          month: 1295.99382
+          month_1y: 816.411852
+          month_3y: 583.17948
+          month_spot: 553.901808
+        us-west1:
+          hour: 1.775334
+          hour_spot: 0.7587696
+          month: 1295.99382
+          month_1y: 816.411852
+          month_3y: 583.17948
+          month_spot: 553.901808
+      cpu: 48
+      ram: 90
+    c4d-highcpu-64:
+      cost:
+        asia-southeast1:
+          hour: 2.920288
+          hour_spot: 1.2481304
+          month: 2131.81024
+          month_1y: 1342.941288
+          month_3y: 959.252704
+          month_spot: 911.135192
+        europe-west4:
+          hour: 2.485464
+          hour_spot: 1.0622752
+          month: 1814.38872
+          month_1y: 1142.973848
+          month_3y: 816.451272
+          month_spot: 775.460896
+        us-central1:
+          hour: 2.367112
+          hour_spot: 1.0116928
+          month: 1727.99176
+          month_1y: 1088.549136
+          month_3y: 777.57264
+          month_spot: 738.535744
+        us-east1:
+          hour: 2.367112
+          hour_spot: 1.0116928
+          month: 1727.99176
+          month_1y: 1088.549136
+          month_3y: 777.57264
+          month_spot: 738.535744
+        us-east4:
+          hour: 2.367112
+          hour_spot: 1.0116928
+          month: 1727.99176
+          month_1y: 1088.549136
+          month_3y: 777.57264
+          month_spot: 738.535744
+        us-west1:
+          hour: 2.367112
+          hour_spot: 1.0116928
+          month: 1727.99176
+          month_1y: 1088.549136
+          month_3y: 777.57264
+          month_spot: 738.535744
+      cpu: 64
+      ram: 120
+    c4d-highcpu-8:
+      cost:
+        asia-southeast1:
+          hour: 0.365036
+          hour_spot: 0.1560163
+          month: 266.47628
+          month_1y: 167.867661
+          month_3y: 119.906588
+          month_spot: 113.891899
+        europe-west4:
+          hour: 0.310683
+          hour_spot: 0.1327844
+          month: 226.79859
+          month_1y: 142.871731
+          month_3y: 102.056409
+          month_spot: 96.932612
+        us-central1:
+          hour: 0.295889
+          hour_spot: 0.1264616
+          month: 215.99897
+          month_1y: 136.068642
+          month_3y: 97.19658
+          month_spot: 92.316968
+        us-east1:
+          hour: 0.295889
+          hour_spot: 0.1264616
+          month: 215.99897
+          month_1y: 136.068642
+          month_3y: 97.19658
+          month_spot: 92.316968
+        us-east4:
+          hour: 0.295889
+          hour_spot: 0.1264616
+          month: 215.99897
+          month_1y: 136.068642
+          month_3y: 97.19658
+          month_spot: 92.316968
+        us-west1:
+          hour: 0.295889
+          hour_spot: 0.1264616
+          month: 215.99897
+          month_1y: 136.068642
+          month_3y: 97.19658
+          month_spot: 92.316968
+      cpu: 8
+      ram: 15
+    c4d-highcpu-96:
+      cost:
+        asia-southeast1:
+          hour: 4.380432
+          hour_spot: 1.8721956
+          month: 3197.71536
+          month_1y: 2014.411932
+          month_3y: 1438.879056
+          month_spot: 1366.702788
+        europe-west4:
+          hour: 3.728196
+          hour_spot: 1.5934128
+          month: 2721.58308
+          month_1y: 1714.460772
+          month_3y: 1224.676908
+          month_spot: 1163.191344
+        us-central1:
+          hour: 3.550668
+          hour_spot: 1.5175392
+          month: 2591.98764
+          month_1y: 1632.823704
+          month_3y: 1166.35896
+          month_spot: 1107.803616
+        us-east1:
+          hour: 3.550668
+          hour_spot: 1.5175392
+          month: 2591.98764
+          month_1y: 1632.823704
+          month_3y: 1166.35896
+          month_spot: 1107.803616
+        us-east4:
+          hour: 3.550668
+          hour_spot: 1.5175392
+          month: 2591.98764
+          month_1y: 1632.823704
+          month_3y: 1166.35896
+          month_spot: 1107.803616
+        us-west1:
+          hour: 3.550668
+          hour_spot: 1.5175392
+          month: 2591.98764
+          month_1y: 1632.823704
+          month_3y: 1166.35896
+          month_spot: 1107.803616
+      cpu: 96
+      ram: 180
+    c4d-highmem-16:
+      cost:
+        asia-southeast1:
+          hour: 1.198936
+          hour_spot: 0.487415
+          month: 875.22328
+          month_1y: 551.37849
+          month_3y: 393.849016
+          month_spot: 355.81295
+        europe-west4:
+          hour: 1.020438
+          hour_spot: 0.4148296
+          month: 744.91974
+          month_1y: 469.275974
+          month_3y: 335.239506
+          month_spot: 302.825608
+        us-central1:
+          hour: 0.971842
+          hour_spot: 0.39508
+          month: 709.44466
+          month_1y: 446.93082
+          month_3y: 319.27572
+          month_spot: 288.4084
+        us-east1:
+          hour: 0.971842
+          hour_spot: 0.39508
+          month: 709.44466
+          month_1y: 446.93082
+          month_3y: 319.27572
+          month_spot: 288.4084
+        us-east4:
+          hour: 0.971842
+          hour_spot: 0.39508
+          month: 709.44466
+          month_1y: 446.93082
+          month_3y: 319.27572
+          month_spot: 288.4084
+        us-west1:
+          hour: 0.971842
+          hour_spot: 0.39508
+          month: 709.44466
+          month_1y: 446.93082
+          month_3y: 319.27572
+          month_spot: 288.4084
+      cpu: 16
+      ram: 126
+    c4d-highmem-192:
+      cost:
+        asia-southeast1:
+          hour: 14.387232
+          hour_spot: 5.84898
+          month: 10502.67936
+          month_1y: 6616.54188
+          month_3y: 4726.188192
+          month_spot: 4269.7554
+        europe-west4:
+          hour: 12.245256
+          hour_spot: 4.9779552
+          month: 8939.03688
+          month_1y: 5631.311688
+          month_3y: 4022.874072
+          month_spot: 3633.907296
+        us-central1:
+          hour: 11.662104
+          hour_spot: 4.74096
+          month: 8513.33592
+          month_1y: 5363.16984
+          month_3y: 3831.30864
+          month_spot: 3460.9008
+        us-east1:
+          hour: 11.662104
+          hour_spot: 4.74096
+          month: 8513.33592
+          month_1y: 5363.16984
+          month_3y: 3831.30864
+          month_spot: 3460.9008
+        us-east4:
+          hour: 11.662104
+          hour_spot: 4.74096
+          month: 8513.33592
+          month_1y: 5363.16984
+          month_3y: 3831.30864
+          month_spot: 3460.9008
+        us-west1:
+          hour: 11.662104
+          hour_spot: 4.74096
+          month: 8513.33592
+          month_1y: 5363.16984
+          month_3y: 3831.30864
+          month_spot: 3460.9008
+      cpu: 192
+      ram: 1512
+    c4d-highmem-2:
+      cost:
+        asia-southeast1:
+          hour: 0.146204
+          hour_spot: 0.0595567
+          month: 106.72892
+          month_1y: 67.237599
+          month_3y: 48.027722
+          month_spot: 43.476391
+        europe-west4:
+          hour: 0.124437
+          hour_spot: 0.0506876
+          month: 90.83901
+          month_1y: 57.225649
+          month_3y: 40.880511
+          month_spot: 37.001948
+        us-central1:
+          hour: 0.118511
+          hour_spot: 0.0482744
+          month: 86.51303
+          month_1y: 54.500778
+          month_3y: 38.93382
+          month_spot: 35.240312
+        us-east1:
+          hour: 0.118511
+          hour_spot: 0.0482744
+          month: 86.51303
+          month_1y: 54.500778
+          month_3y: 38.93382
+          month_spot: 35.240312
+        us-east4:
+          hour: 0.118511
+          hour_spot: 0.0482744
+          month: 86.51303
+          month_1y: 54.500778
+          month_3y: 38.93382
+          month_spot: 35.240312
+        us-west1:
+          hour: 0.118511
+          hour_spot: 0.0482744
+          month: 86.51303
+          month_1y: 54.500778
+          month_3y: 38.93382
+          month_spot: 35.240312
+      cpu: 2
+      ram: 15
+    c4d-highmem-32:
+      cost:
+        asia-southeast1:
+          hour: 2.397872
+          hour_spot: 0.97483
+          month: 1750.44656
+          month_1y: 1102.75698
+          month_3y: 787.698032
+          month_spot: 711.6259
+        europe-west4:
+          hour: 2.040876
+          hour_spot: 0.8296592
+          month: 1489.83948
+          month_1y: 938.551948
+          month_3y: 670.479012
+          month_spot: 605.651216
+        us-central1:
+          hour: 1.943684
+          hour_spot: 0.79016
+          month: 1418.88932
+          month_1y: 893.86164
+          month_3y: 638.55144
+          month_spot: 576.8168
+        us-east1:
+          hour: 1.943684
+          hour_spot: 0.79016
+          month: 1418.88932
+          month_1y: 893.86164
+          month_3y: 638.55144
+          month_spot: 576.8168
+        us-east4:
+          hour: 1.943684
+          hour_spot: 0.79016
+          month: 1418.88932
+          month_1y: 893.86164
+          month_3y: 638.55144
+          month_spot: 576.8168
+        us-west1:
+          hour: 1.943684
+          hour_spot: 0.79016
+          month: 1418.88932
+          month_1y: 893.86164
+          month_3y: 638.55144
+          month_spot: 576.8168
+      cpu: 32
+      ram: 252
+    c4d-highmem-384:
+      cost:
+        asia-southeast1:
+          hour: 28.774464
+          hour_spot: 11.69796
+          month: 21005.35872
+          month_1y: 13233.08376
+          month_3y: 9452.376384
+          month_spot: 8539.5108
+        europe-west4:
+          hour: 24.490512
+          hour_spot: 9.9559104
+          month: 17878.07376
+          month_1y: 11262.623376
+          month_3y: 8045.748144
+          month_spot: 7267.814592
+        us-central1:
+          hour: 23.324208
+          hour_spot: 9.48192
+          month: 17026.67184
+          month_1y: 10726.33968
+          month_3y: 7662.61728
+          month_spot: 6921.8016
+        us-east1:
+          hour: 23.324208
+          hour_spot: 9.48192
+          month: 17026.67184
+          month_1y: 10726.33968
+          month_3y: 7662.61728
+          month_spot: 6921.8016
+        us-east4:
+          hour: 23.324208
+          hour_spot: 9.48192
+          month: 17026.67184
+          month_1y: 10726.33968
+          month_3y: 7662.61728
+          month_spot: 6921.8016
+        us-west1:
+          hour: 23.324208
+          hour_spot: 9.48192
+          month: 17026.67184
+          month_1y: 10726.33968
+          month_3y: 7662.61728
+          month_spot: 6921.8016
+      cpu: 384
+      ram: 3024
+    c4d-highmem-4:
+      cost:
+        asia-southeast1:
+          hour: 0.297292
+          hour_spot: 0.1209403
+          month: 217.02316
+          month_1y: 136.721481
+          month_3y: 97.659984
+          month_spot: 88.286419
+        europe-west4:
+          hour: 0.253031
+          hour_spot: 0.10293
+          month: 184.71263
+          month_1y: 116.363095
+          month_3y: 83.126925
+          month_spot: 75.1389
+        us-central1:
+          hour: 0.240981
+          hour_spot: 0.0980296
+          month: 175.91613
+          month_1y: 110.822322
+          month_3y: 79.1685
+          month_spot: 71.561608
+        us-east1:
+          hour: 0.240981
+          hour_spot: 0.0980296
+          month: 175.91613
+          month_1y: 110.822322
+          month_3y: 79.1685
+          month_spot: 71.561608
+        us-east4:
+          hour: 0.240981
+          hour_spot: 0.0980296
+          month: 175.91613
+          month_1y: 110.822322
+          month_3y: 79.1685
+          month_spot: 71.561608
+        us-west1:
+          hour: 0.240981
+          hour_spot: 0.0980296
+          month: 175.91613
+          month_1y: 110.822322
+          month_3y: 79.1685
+          month_spot: 71.561608
+      cpu: 4
+      ram: 31
+    c4d-highmem-48:
+      cost:
+        asia-southeast1:
+          hour: 3.596808
+          hour_spot: 1.462245
+          month: 2625.66984
+          month_1y: 1654.13547
+          month_3y: 1181.547048
+          month_spot: 1067.43885
+        europe-west4:
+          hour: 3.061314
+          hour_spot: 1.2444888
+          month: 2234.75922
+          month_1y: 1407.827922
+          month_3y: 1005.718518
+          month_spot: 908.476824
+        us-central1:
+          hour: 2.915526
+          hour_spot: 1.18524
+          month: 2128.33398
+          month_1y: 1340.79246
+          month_3y: 957.82716
+          month_spot: 865.2252
+        us-east1:
+          hour: 2.915526
+          hour_spot: 1.18524
+          month: 2128.33398
+          month_1y: 1340.79246
+          month_3y: 957.82716
+          month_spot: 865.2252
+        us-east4:
+          hour: 2.915526
+          hour_spot: 1.18524
+          month: 2128.33398
+          month_1y: 1340.79246
+          month_3y: 957.82716
+          month_spot: 865.2252
+        us-west1:
+          hour: 2.915526
+          hour_spot: 1.18524
+          month: 2128.33398
+          month_1y: 1340.79246
+          month_3y: 957.82716
+          month_spot: 865.2252
+      cpu: 48
+      ram: 378
+    c4d-highmem-64:
+      cost:
+        asia-southeast1:
+          hour: 4.795744
+          hour_spot: 1.94966
+          month: 3500.89312
+          month_1y: 2205.51396
+          month_3y: 1575.396064
+          month_spot: 1423.2518
+        europe-west4:
+          hour: 4.081752
+          hour_spot: 1.6593184
+          month: 2979.67896
+          month_1y: 1877.103896
+          month_3y: 1340.958024
+          month_spot: 1211.302432
+        us-central1:
+          hour: 3.887368
+          hour_spot: 1.58032
+          month: 2837.77864
+          month_1y: 1787.72328
+          month_3y: 1277.10288
+          month_spot: 1153.6336
+        us-east1:
+          hour: 3.887368
+          hour_spot: 1.58032
+          month: 2837.77864
+          month_1y: 1787.72328
+          month_3y: 1277.10288
+          month_spot: 1153.6336
+        us-east4:
+          hour: 3.887368
+          hour_spot: 1.58032
+          month: 2837.77864
+          month_1y: 1787.72328
+          month_3y: 1277.10288
+          month_spot: 1153.6336
+        us-west1:
+          hour: 3.887368
+          hour_spot: 1.58032
+          month: 2837.77864
+          month_1y: 1787.72328
+          month_3y: 1277.10288
+          month_spot: 1153.6336
+      cpu: 64
+      ram: 504
+    c4d-highmem-8:
+      cost:
+        asia-southeast1:
+          hour: 0.599468
+          hour_spot: 0.2437075
+          month: 437.61164
+          month_1y: 275.689245
+          month_3y: 196.924508
+          month_spot: 177.906475
+        europe-west4:
+          hour: 0.510219
+          hour_spot: 0.2074148
+          month: 372.45987
+          month_1y: 234.637987
+          month_3y: 167.619753
+          month_spot: 151.412804
+        us-central1:
+          hour: 0.485921
+          hour_spot: 0.19754
+          month: 354.72233
+          month_1y: 223.46541
+          month_3y: 159.63786
+          month_spot: 144.2042
+        us-east1:
+          hour: 0.485921
+          hour_spot: 0.19754
+          month: 354.72233
+          month_1y: 223.46541
+          month_3y: 159.63786
+          month_spot: 144.2042
+        us-east4:
+          hour: 0.485921
+          hour_spot: 0.19754
+          month: 354.72233
+          month_1y: 223.46541
+          month_3y: 159.63786
+          month_spot: 144.2042
+        us-west1:
+          hour: 0.485921
+          hour_spot: 0.19754
+          month: 354.72233
+          month_1y: 223.46541
+          month_3y: 159.63786
+          month_spot: 144.2042
+      cpu: 8
+      ram: 63
+    c4d-highmem-96:
+      cost:
+        asia-southeast1:
+          hour: 7.193616
+          hour_spot: 2.92449
+          month: 5251.33968
+          month_1y: 3308.27094
+          month_3y: 2363.094096
+          month_spot: 2134.8777
+        europe-west4:
+          hour: 6.122628
+          hour_spot: 2.4889776
+          month: 4469.51844
+          month_1y: 2815.655844
+          month_3y: 2011.437036
+          month_spot: 1816.953648
+        us-central1:
+          hour: 5.831052
+          hour_spot: 2.37048
+          month: 4256.66796
+          month_1y: 2681.58492
+          month_3y: 1915.65432
+          month_spot: 1730.4504
+        us-east1:
+          hour: 5.831052
+          hour_spot: 2.37048
+          month: 4256.66796
+          month_1y: 2681.58492
+          month_3y: 1915.65432
+          month_spot: 1730.4504
+        us-east4:
+          hour: 5.831052
+          hour_spot: 2.37048
+          month: 4256.66796
+          month_1y: 2681.58492
+          month_3y: 1915.65432
+          month_spot: 1730.4504
+        us-west1:
+          hour: 5.831052
+          hour_spot: 2.37048
+          month: 4256.66796
+          month_1y: 2681.58492
+          month_3y: 1915.65432
+          month_spot: 1730.4504
+      cpu: 96
+      ram: 756
+    c4d-standard-16:
+      cost:
+        asia-southeast1:
+          hour: 0.88636
+          hour_spot: 0.3704934
+          month: 647.0428
+          month_1y: 407.616378
+          month_3y: 291.158456
+          month_spot: 270.460182
+        europe-west4:
+          hour: 0.75439
+          hour_spot: 0.3153224
+          month: 550.7047
+          month_1y: 346.920966
+          month_3y: 247.821714
+          month_spot: 230.185352
+        us-central1:
+          hour: 0.718466
+          hour_spot: 0.3003088
+          month: 524.48018
+          month_1y: 330.401796
+          month_3y: 236.02068
+          month_spot: 219.225424
+        us-east1:
+          hour: 0.718466
+          hour_spot: 0.3003088
+          month: 524.48018
+          month_1y: 330.401796
+          month_3y: 236.02068
+          month_spot: 219.225424
+        us-east4:
+          hour: 0.718466
+          hour_spot: 0.3003088
+          month: 524.48018
+          month_1y: 330.401796
+          month_3y: 236.02068
+          month_spot: 219.225424
+        us-west1:
+          hour: 0.718466
+          hour_spot: 0.3003088
+          month: 524.48018
+          month_1y: 330.401796
+          month_3y: 236.02068
+          month_spot: 219.225424
+      cpu: 16
+      ram: 62
+    c4d-standard-192:
+      cost:
+        asia-southeast1:
+          hour: 10.63632
+          hour_spot: 4.4459208
+          month: 7764.5136
+          month_1y: 4891.396536
+          month_3y: 3493.901472
+          month_spot: 3245.522184
+        europe-west4:
+          hour: 9.05268
+          hour_spot: 3.7838688
+          month: 6608.4564
+          month_1y: 4163.051592
+          month_3y: 2973.860568
+          month_spot: 2762.224224
+        us-central1:
+          hour: 8.621592
+          hour_spot: 3.6037056
+          month: 6293.76216
+          month_1y: 3964.821552
+          month_3y: 2832.24816
+          month_spot: 2630.705088
+        us-east1:
+          hour: 8.621592
+          hour_spot: 3.6037056
+          month: 6293.76216
+          month_1y: 3964.821552
+          month_3y: 2832.24816
+          month_spot: 2630.705088
+        us-east4:
+          hour: 8.621592
+          hour_spot: 3.6037056
+          month: 6293.76216
+          month_1y: 3964.821552
+          month_3y: 2832.24816
+          month_spot: 2630.705088
+        us-west1:
+          hour: 8.621592
+          hour_spot: 3.6037056
+          month: 6293.76216
+          month_1y: 3964.821552
+          month_3y: 2832.24816
+          month_spot: 2630.705088
+      cpu: 192
+      ram: 744
+    c4d-standard-2:
+      cost:
+        asia-southeast1:
+          hour: 0.107132
+          hour_spot: 0.0449415
+          month: 78.20636
+          month_1y: 49.267335
+          month_3y: 35.191402
+          month_spot: 32.807295
+        europe-west4:
+          hour: 0.091181
+          hour_spot: 0.0382492
+          month: 66.56213
+          month_1y: 41.931273
+          month_3y: 29.953287
+          month_spot: 27.921916
+        us-central1:
+          hour: 0.086839
+          hour_spot: 0.036428
+          month: 63.39247
+          month_1y: 39.93465
+          month_3y: 28.52694
+          month_spot: 26.59244
+        us-east1:
+          hour: 0.086839
+          hour_spot: 0.036428
+          month: 63.39247
+          month_1y: 39.93465
+          month_3y: 28.52694
+          month_spot: 26.59244
+        us-east4:
+          hour: 0.086839
+          hour_spot: 0.036428
+          month: 63.39247
+          month_1y: 39.93465
+          month_3y: 28.52694
+          month_spot: 26.59244
+        us-west1:
+          hour: 0.086839
+          hour_spot: 0.036428
+          month: 63.39247
+          month_1y: 39.93465
+          month_3y: 28.52694
+          month_spot: 26.59244
+      cpu: 2
+      ram: 7
+    c4d-standard-32:
+      cost:
+        asia-southeast1:
+          hour: 1.77272
+          hour_spot: 0.7409868
+          month: 1294.0856
+          month_1y: 815.232756
+          month_3y: 582.316912
+          month_spot: 540.920364
+        europe-west4:
+          hour: 1.50878
+          hour_spot: 0.6306448
+          month: 1101.4094
+          month_1y: 693.841932
+          month_3y: 495.643428
+          month_spot: 460.370704
+        us-central1:
+          hour: 1.436932
+          hour_spot: 0.6006176
+          month: 1048.96036
+          month_1y: 660.803592
+          month_3y: 472.04136
+          month_spot: 438.450848
+        us-east1:
+          hour: 1.436932
+          hour_spot: 0.6006176
+          month: 1048.96036
+          month_1y: 660.803592
+          month_3y: 472.04136
+          month_spot: 438.450848
+        us-east4:
+          hour: 1.436932
+          hour_spot: 0.6006176
+          month: 1048.96036
+          month_1y: 660.803592
+          month_3y: 472.04136
+          month_spot: 438.450848
+        us-west1:
+          hour: 1.436932
+          hour_spot: 0.6006176
+          month: 1048.96036
+          month_1y: 660.803592
+          month_3y: 472.04136
+          month_spot: 438.450848
+      cpu: 32
+      ram: 124
+    c4d-standard-384:
+      cost:
+        asia-southeast1:
+          hour: 21.27264
+          hour_spot: 8.8918416
+          month: 15529.0272
+          month_1y: 9782.793072
+          month_3y: 6987.802944
+          month_spot: 6491.044368
+        europe-west4:
+          hour: 18.10536
+          hour_spot: 7.5677376
+          month: 13216.9128
+          month_1y: 8326.103184
+          month_3y: 5947.721136
+          month_spot: 5524.448448
+        us-central1:
+          hour: 17.243184
+          hour_spot: 7.2074112
+          month: 12587.52432
+          month_1y: 7929.643104
+          month_3y: 5664.49632
+          month_spot: 5261.410176
+        us-east1:
+          hour: 17.243184
+          hour_spot: 7.2074112
+          month: 12587.52432
+          month_1y: 7929.643104
+          month_3y: 5664.49632
+          month_spot: 5261.410176
+        us-east4:
+          hour: 17.243184
+          hour_spot: 7.2074112
+          month: 12587.52432
+          month_1y: 7929.643104
+          month_3y: 5664.49632
+          month_spot: 5261.410176
+        us-west1:
+          hour: 17.243184
+          hour_spot: 7.2074112
+          month: 12587.52432
+          month_1y: 7929.643104
+          month_3y: 5664.49632
+          month_spot: 5261.410176
+      cpu: 384
+      ram: 1488
+    c4d-standard-4:
+      cost:
+        asia-southeast1:
+          hour: 0.219148
+          hour_spot: 0.0917099
+          month: 159.97804
+          month_1y: 100.780953
+          month_3y: 71.987344
+          month_spot: 66.948227
+        europe-west4:
+          hour: 0.186519
+          hour_spot: 0.0780532
+          month: 136.15887
+          month_1y: 85.774343
+          month_3y: 61.272477
+          month_spot: 56.978836
+        us-central1:
+          hour: 0.177637
+          hour_spot: 0.0743368
+          month: 129.67501
+          month_1y: 81.690066
+          month_3y: 58.35474
+          month_spot: 54.265864
+        us-east1:
+          hour: 0.177637
+          hour_spot: 0.0743368
+          month: 129.67501
+          month_1y: 81.690066
+          month_3y: 58.35474
+          month_spot: 54.265864
+        us-east4:
+          hour: 0.177637
+          hour_spot: 0.0743368
+          month: 129.67501
+          month_1y: 81.690066
+          month_3y: 58.35474
+          month_spot: 54.265864
+        us-west1:
+          hour: 0.177637
+          hour_spot: 0.0743368
+          month: 129.67501
+          month_1y: 81.690066
+          month_3y: 58.35474
+          month_spot: 54.265864
+      cpu: 4
+      ram: 15
+    c4d-standard-48:
+      cost:
+        asia-southeast1:
+          hour: 2.65908
+          hour_spot: 1.1114802
+          month: 1941.1284
+          month_1y: 1222.849134
+          month_3y: 873.475368
+          month_spot: 811.380546
+        europe-west4:
+          hour: 2.26317
+          hour_spot: 0.9459672
+          month: 1652.1141
+          month_1y: 1040.762898
+          month_3y: 743.465142
+          month_spot: 690.556056
+        us-central1:
+          hour: 2.155398
+          hour_spot: 0.9009264
+          month: 1573.44054
+          month_1y: 991.205388
+          month_3y: 708.06204
+          month_spot: 657.676272
+        us-east1:
+          hour: 2.155398
+          hour_spot: 0.9009264
+          month: 1573.44054
+          month_1y: 991.205388
+          month_3y: 708.06204
+          month_spot: 657.676272
+        us-east4:
+          hour: 2.155398
+          hour_spot: 0.9009264
+          month: 1573.44054
+          month_1y: 991.205388
+          month_3y: 708.06204
+          month_spot: 657.676272
+        us-west1:
+          hour: 2.155398
+          hour_spot: 0.9009264
+          month: 1573.44054
+          month_1y: 991.205388
+          month_3y: 708.06204
+          month_spot: 657.676272
+      cpu: 48
+      ram: 186
+    c4d-standard-64:
+      cost:
+        asia-southeast1:
+          hour: 3.54544
+          hour_spot: 1.4819736
+          month: 2588.1712
+          month_1y: 1630.465512
+          month_3y: 1164.633824
+          month_spot: 1081.840728
+        europe-west4:
+          hour: 3.01756
+          hour_spot: 1.2612896
+          month: 2202.8188
+          month_1y: 1387.683864
+          month_3y: 991.286856
+          month_spot: 920.741408
+        us-central1:
+          hour: 2.873864
+          hour_spot: 1.2012352
+          month: 2097.92072
+          month_1y: 1321.607184
+          month_3y: 944.08272
+          month_spot: 876.901696
+        us-east1:
+          hour: 2.873864
+          hour_spot: 1.2012352
+          month: 2097.92072
+          month_1y: 1321.607184
+          month_3y: 944.08272
+          month_spot: 876.901696
+        us-east4:
+          hour: 2.873864
+          hour_spot: 1.2012352
+          month: 2097.92072
+          month_1y: 1321.607184
+          month_3y: 944.08272
+          month_spot: 876.901696
+        us-west1:
+          hour: 2.873864
+          hour_spot: 1.2012352
+          month: 2097.92072
+          month_1y: 1321.607184
+          month_3y: 944.08272
+          month_spot: 876.901696
+      cpu: 64
+      ram: 248
+    c4d-standard-8:
+      cost:
+        asia-southeast1:
+          hour: 0.44318
+          hour_spot: 0.1852467
+          month: 323.5214
+          month_1y: 203.808189
+          month_3y: 145.579228
+          month_spot: 135.230091
+        europe-west4:
+          hour: 0.377195
+          hour_spot: 0.1576612
+          month: 275.35235
+          month_1y: 173.460483
+          month_3y: 123.910857
+          month_spot: 115.092676
+        us-central1:
+          hour: 0.359233
+          hour_spot: 0.1501544
+          month: 262.24009
+          month_1y: 165.200898
+          month_3y: 118.01034
+          month_spot: 109.612712
+        us-east1:
+          hour: 0.359233
+          hour_spot: 0.1501544
+          month: 262.24009
+          month_1y: 165.200898
+          month_3y: 118.01034
+          month_spot: 109.612712
+        us-east4:
+          hour: 0.359233
+          hour_spot: 0.1501544
+          month: 262.24009
+          month_1y: 165.200898
+          month_3y: 118.01034
+          month_spot: 109.612712
+        us-west1:
+          hour: 0.359233
+          hour_spot: 0.1501544
+          month: 262.24009
+          month_1y: 165.200898
+          month_3y: 118.01034
+          month_spot: 109.612712
+      cpu: 8
+      ram: 31
+    c4d-standard-96:
+      cost:
+        asia-southeast1:
+          hour: 5.31816
+          hour_spot: 2.2229604
+          month: 3882.2568
+          month_1y: 2445.698268
+          month_3y: 1746.950736
+          month_spot: 1622.761092
+        europe-west4:
+          hour: 4.52634
+          hour_spot: 1.8919344
+          month: 3304.2282
+          month_1y: 2081.525796
+          month_3y: 1486.930284
+          month_spot: 1381.112112
+        us-central1:
+          hour: 4.310796
+          hour_spot: 1.8018528
+          month: 3146.88108
+          month_1y: 1982.410776
+          month_3y: 1416.12408
+          month_spot: 1315.352544
+        us-east1:
+          hour: 4.310796
+          hour_spot: 1.8018528
+          month: 3146.88108
+          month_1y: 1982.410776
+          month_3y: 1416.12408
+          month_spot: 1315.352544
+        us-east4:
+          hour: 4.310796
+          hour_spot: 1.8018528
+          month: 3146.88108
+          month_1y: 1982.410776
+          month_3y: 1416.12408
+          month_spot: 1315.352544
+        us-west1:
+          hour: 4.310796
+          hour_spot: 1.8018528
+          month: 3146.88108
+          month_1y: 1982.410776
+          month_3y: 1416.12408
+          month_spot: 1315.352544
+      cpu: 96
+      ram: 372
     custom-1-7680-ext:
       cost:
         africa-south1:
@@ -52332,6 +53712,304 @@ compute:
           month_spot: 5166.853568
       cpu: 224
       ram: 2976
+    m4-megamem-28:
+      cost:
+        africa-south1:
+          hour: 2.9624468
+          hour_spot: 1.1855384
+          month: 2162.586164
+          month_1y: 1276.52472
+          month_3y: 649.046796
+          month_spot: 865.443032
+        asia-east1:
+          hour: 2.8312992
+          hour_spot: 1.1324464
+          month: 2066.848416
+          month_1y: 1219.386744
+          month_3y: 620.054116
+          month_spot: 826.685872
+        asia-east2:
+          hour: 3.427042
+          hour_spot: 1.3713404
+          month: 2501.74066
+          month_1y: 1476.599616
+          month_3y: 750.792736
+          month_spot: 1001.078492
+        asia-northeast1:
+          hour: 3.2084636
+          hour_spot: 1.2828652
+          month: 2342.178428
+          month_1y: 1381.315344
+          month_3y: 702.381764
+          month_spot: 936.491596
+        asia-northeast2:
+          hour: 3.2084636
+          hour_spot: 1.2828652
+          month: 2342.178428
+          month_1y: 1381.315344
+          month_3y: 702.381764
+          month_spot: 936.491596
+        asia-northeast3:
+          hour: 3.2084636
+          hour_spot: 1.2828652
+          month: 2342.178428
+          month_1y: 1381.315344
+          month_3y: 702.381764
+          month_spot: 936.491596
+        asia-south1:
+          hour: 2.2781916
+          hour_spot: 0.9112612
+          month: 1663.079868
+          month_1y: 981.219864
+          month_3y: 498.914996
+          month_spot: 665.220676
+        asia-south2:
+          hour: 2.2781916
+          hour_spot: 0.9112612
+          month: 1663.079868
+          month_1y: 981.219864
+          month_3y: 498.914996
+          month_spot: 665.220676
+        asia-southeast1:
+          hour: 2.8753852
+          hour_spot: 1.1501552
+          month: 2099.031196
+          month_1y: 1238.432736
+          month_3y: 629.709972
+          month_spot: 839.613296
+        asia-southeast2:
+          hour: 3.2084636
+          hour_spot: 1.2828652
+          month: 2342.178428
+          month_1y: 1381.315344
+          month_3y: 702.381764
+          month_spot: 936.491596
+        australia-southeast1:
+          hour: 2.8753852
+          hour_spot: 1.1501552
+          month: 2099.031196
+          month_1y: 1238.432736
+          month_3y: 629.709972
+          month_spot: 839.613296
+        australia-southeast2:
+          hour: 2.8750132
+          hour_spot: 1.1500064
+          month: 2098.759636
+          month_1y: 1238.432736
+          month_3y: 629.628504
+          month_spot: 839.504672
+        europe-central2:
+          hour: 3.1647468
+          hour_spot: 1.2651564
+          month: 2310.265164
+          month_1y: 1362.269352
+          month_3y: 692.807376
+          month_spot: 923.564172
+        europe-north1:
+          hour: 2.6527148
+          hour_spot: 1.0616828
+          month: 1936.481804
+          month_1y: 1143.177664
+          month_3y: 581.215488
+          month_spot: 775.028444
+        europe-north2:
+          hour: 2.6527148
+          hour_spot: 1.0616828
+          month: 1936.481804
+          month_1y: 1143.177664
+          month_3y: 581.215488
+          month_spot: 775.028444
+        europe-southwest1:
+          hour: 2.6542028
+          hour_spot: 1.0616828
+          month: 1937.568044
+          month_1y: 1143.177664
+          month_3y: 581.2698
+          month_spot: 775.028444
+        europe-west1:
+          hour: 3.0965704
+          hour_spot: 1.2386304
+          month: 2260.496392
+          month_1y: 1333.687808
+          month_3y: 678.1481
+          month_spot: 904.200192
+        europe-west10:
+          hour: 2.6527148
+          hour_spot: 1.0616828
+          month: 1936.481804
+          month_1y: 1143.177664
+          month_3y: 581.215488
+          month_spot: 775.028444
+        europe-west12:
+          hour: 2.763864
+          hour_spot: 1.1059204
+          month: 2017.62072
+          month_1y: 1190.8052
+          month_3y: 605.557776
+          month_spot: 807.321892
+        europe-west2:
+          hour: 2.6764332
+          hour_spot: 1.0705372
+          month: 1953.796236
+          month_1y: 1152.68606
+          month_3y: 586.13744
+          month_spot: 781.492156
+        europe-west3:
+          hour: 2.5214928
+          hour_spot: 1.0085908
+          month: 1840.689744
+          month_1y: 1086.012532
+          month_3y: 552.195652
+          month_spot: 736.271284
+        europe-west4:
+          hour: 2.5214928
+          hour_spot: 1.0085908
+          month: 1840.689744
+          month_1y: 1086.012532
+          month_3y: 552.195652
+          month_spot: 736.271284
+        europe-west6:
+          hour: 3.4070436
+          hour_spot: 1.362486
+          month: 2487.141828
+          month_1y: 1467.06202
+          month_3y: 745.870784
+          month_spot: 994.61478
+        europe-west8:
+          hour: 2.6527148
+          hour_spot: 1.0616828
+          month: 1936.481804
+          month_1y: 1143.177664
+          month_3y: 581.215488
+          month_spot: 775.028444
+        europe-west9:
+          hour: 2.7875824
+          hour_spot: 1.1147748
+          month: 2034.935152
+          month_1y: 1200.313596
+          month_3y: 610.208168
+          month_spot: 813.785604
+        me-central1:
+          hour: 2.7438656
+          hour_spot: 1.0970632
+          month: 2003.021888
+          month_1y: 1181.267604
+          month_3y: 600.63378
+          month_spot: 800.856136
+        me-central2:
+          hour: 3.5381912
+          hour_spot: 1.4155752
+          month: 2582.879576
+          month_1y: 1524.227152
+          month_3y: 775.135024
+          month_spot: 1033.369896
+        me-west1:
+          hour: 2.91873
+          hour_spot: 1.167864
+          month: 2130.6729
+          month_1y: 1257.478728
+          month_3y: 639.472408
+          month_spot: 852.54072
+        northamerica-northeast1:
+          hour: 2.4341336
+          hour_spot: 0.9732076
+          month: 1776.917528
+          month_1y: 1047.893392
+          month_3y: 532.804516
+          month_spot: 710.441548
+        northamerica-northeast2:
+          hour: 2.4341336
+          hour_spot: 0.9732076
+          month: 1776.917528
+          month_1y: 1047.893392
+          month_3y: 532.804516
+          month_spot: 710.441548
+        northamerica-south1:
+          hour: 2.4341336
+          hour_spot: 0.9732076
+          month: 1776.917528
+          month_1y: 1047.893392
+          month_3y: 532.804516
+          month_spot: 710.441548
+        southamerica-east1:
+          hour: 4.091894
+          hour_spot: 1.6367604
+          month: 2987.08262
+          month_1y: 1762.394032
+          month_3y: 896.138364
+          month_spot: 1194.835092
+        southamerica-west1:
+          hour: 3.1647468
+          hour_spot: 1.2651564
+          month: 2310.265164
+          month_1y: 1362.269352
+          month_3y: 692.807376
+          month_spot: 923.564172
+        us-central1:
+          hour: 2.2118352
+          hour_spot: 0.8847352
+          month: 1614.639696
+          month_1y: 952.63832
+          month_3y: 484.3915
+          month_spot: 645.856696
+        us-east1:
+          hour: 2.2118352
+          hour_spot: 0.8847352
+          month: 1614.639696
+          month_1y: 952.63832
+          month_3y: 484.3915
+          month_spot: 645.856696
+        us-east4:
+          hour: 2.2118352
+          hour_spot: 0.8847352
+          month: 1614.639696
+          month_1y: 952.63832
+          month_3y: 484.3915
+          month_spot: 645.856696
+        us-east5:
+          hour: 2.2118352
+          hour_spot: 0.8847352
+          month: 1614.639696
+          month_1y: 952.63832
+          month_3y: 484.3915
+          month_spot: 645.856696
+        us-south1:
+          hour: 2.608998
+          hour_spot: 1.043974
+          month: 1904.56854
+          month_1y: 1124.104516
+          month_3y: 571.6411
+          month_spot: 762.10102
+        us-west1:
+          hour: 2.2118352
+          hour_spot: 0.8847352
+          month: 1614.639696
+          month_1y: 952.63832
+          month_3y: 484.3915
+          month_spot: 645.856696
+        us-west2:
+          hour: 2.8750132
+          hour_spot: 1.1501552
+          month: 2098.759636
+          month_1y: 1238.432736
+          month_3y: 629.628504
+          month_spot: 839.613296
+        us-west3:
+          hour: 2.6527148
+          hour_spot: 1.0616828
+          month: 1936.481804
+          month_1y: 1143.177664
+          month_3y: 581.215488
+          month_spot: 775.028444
+        us-west4:
+          hour: 2.2118352
+          hour_spot: 0.8847352
+          month: 1614.639696
+          month_1y: 952.63832
+          month_3y: 484.3915
+          month_spot: 645.856696
+      cpu: 28
+      ram: 372
     m4-megamem-56:
       cost:
         africa-south1:
@@ -52928,6 +54606,304 @@ compute:
           month_spot: 4569.073504
       cpu: 112
       ram: 2976
+    m4-ultramem-224:
+      cost:
+        africa-south1:
+          hour: 41.9126944
+          hour_spot: 16.7740192
+          month: 30596.266912
+          month_1y: 18061.368
+          month_3y: 9183.220128
+          month_spot: 12245.034016
+        asia-east1:
+          hour: 40.0599936
+          hour_spot: 16.022816
+          month: 29243.795328
+          month_1y: 17252.974176
+          month_3y: 8773.135328
+          month_spot: 11696.65568
+        asia-east2:
+          hour: 48.486416
+          hour_spot: 19.4029216
+          month: 35395.08368
+          month_1y: 20892.242592
+          month_3y: 10622.861888
+          month_spot: 14164.132768
+        asia-northeast1:
+          hour: 45.3985888
+          hour_spot: 18.1511072
+          month: 33140.969824
+          month_1y: 19544.05056
+          month_3y: 9937.944352
+          month_spot: 13250.308256
+        asia-northeast2:
+          hour: 45.3985888
+          hour_spot: 18.1511072
+          month: 33140.969824
+          month_1y: 19544.05056
+          month_3y: 9937.944352
+          month_spot: 13250.308256
+        asia-northeast3:
+          hour: 45.3985888
+          hour_spot: 18.1511072
+          month: 33140.969824
+          month_1y: 19544.05056
+          month_3y: 9937.944352
+          month_spot: 13250.308256
+        asia-south1:
+          hour: 32.2338624
+          hour_spot: 12.8933024
+          month: 23530.719552
+          month_1y: 13883.170368
+          month_3y: 7059.078976
+          month_spot: 9412.110752
+        asia-south2:
+          hour: 32.2338624
+          hour_spot: 12.8933024
+          month: 23530.719552
+          month_1y: 13883.170368
+          month_3y: 7059.078976
+          month_spot: 9412.110752
+        asia-southeast1:
+          hour: 40.6834976
+          hour_spot: 16.273408
+          month: 29698.953248
+          month_1y: 17522.438784
+          month_3y: 8909.69088
+          month_spot: 11879.58784
+        asia-southeast2:
+          hour: 45.3985888
+          hour_spot: 18.1511072
+          month: 33140.969824
+          month_1y: 19544.05056
+          month_3y: 9937.944352
+          month_spot: 13250.308256
+        australia-southeast1:
+          hour: 40.6834976
+          hour_spot: 16.273408
+          month: 29698.953248
+          month_1y: 17522.438784
+          month_3y: 8909.69088
+          month_spot: 11879.58784
+        australia-southeast2:
+          hour: 40.6775456
+          hour_spot: 16.2710272
+          month: 29694.608288
+          month_1y: 17522.438784
+          month_3y: 8908.387392
+          month_spot: 11877.849856
+        europe-central2:
+          hour: 44.7810144
+          hour_spot: 17.9005152
+          month: 32690.140512
+          month_1y: 19274.585952
+          month_3y: 9802.692288
+          month_spot: 13067.376096
+        europe-north1:
+          hour: 37.5301984
+          hour_spot: 15.021616
+          month: 27397.044832
+          month_1y: 16174.6976
+          month_3y: 8223.453504
+          month_spot: 10965.77968
+        europe-north2:
+          hour: 37.5301984
+          hour_spot: 15.021616
+          month: 27397.044832
+          month_1y: 16174.6976
+          month_3y: 8223.453504
+          month_spot: 10965.77968
+        europe-southwest1:
+          hour: 37.5540064
+          hour_spot: 15.021616
+          month: 27414.424672
+          month_1y: 16174.6976
+          month_3y: 8224.322496
+          month_spot: 10965.77968
+        europe-west1:
+          hour: 43.8130112
+          hour_spot: 17.5252224
+          month: 31983.498176
+          month_1y: 18870.179968
+          month_3y: 9595.042912
+          month_spot: 12793.412352
+        europe-west10:
+          hour: 37.5301984
+          hour_spot: 15.021616
+          month: 27397.044832
+          month_1y: 16174.6976
+          month_3y: 8223.453504
+          month_spot: 10965.77968
+        europe-west12:
+          hour: 39.103872
+          hour_spot: 15.6475232
+          month: 28545.82656
+          month_1y: 16848.568192
+          month_3y: 8568.092928
+          month_spot: 11422.691936
+        europe-west2:
+          hour: 37.8687456
+          hour_spot: 15.146912
+          month: 27644.184288
+          month_1y: 16309.20448
+          month_3y: 8293.24384
+          month_spot: 11057.24576
+        europe-west3:
+          hour: 35.6763072
+          hour_spot: 14.2704128
+          month: 26043.704256
+          month_1y: 15365.86928
+          month_3y: 7812.934208
+          month_spot: 10417.401344
+        europe-west4:
+          hour: 35.6763072
+          hour_spot: 14.2704128
+          month: 26043.704256
+          month_1y: 15365.86928
+          month_3y: 7812.934208
+          month_spot: 10417.401344
+        europe-west6:
+          hour: 48.2073888
+          hour_spot: 19.2776256
+          month: 35191.393824
+          month_1y: 20757.284864
+          month_3y: 10553.071552
+          month_spot: 14072.666688
+        europe-west8:
+          hour: 37.5301984
+          hour_spot: 15.021616
+          month: 27397.044832
+          month_1y: 16174.6976
+          month_3y: 8223.453504
+          month_spot: 10965.77968
+        europe-west9:
+          hour: 39.4424192
+          hour_spot: 15.7728192
+          month: 28792.966016
+          month_1y: 16983.075072
+          month_3y: 8633.538304
+          month_spot: 11514.158016
+        me-central1:
+          hour: 38.8248448
+          hour_spot: 15.5222048
+          month: 28342.136704
+          month_1y: 16713.610464
+          month_3y: 8498.28624
+          month_spot: 11331.209504
+        me-central2:
+          hour: 50.0600896
+          hour_spot: 20.0288064
+          month: 36543.865408
+          month_1y: 21566.113184
+          month_3y: 10967.501312
+          month_spot: 14621.028672
+        me-west1:
+          hour: 41.29512
+          hour_spot: 16.524
+          month: 30145.4376
+          month_1y: 17791.903392
+          month_3y: 9047.968064
+          month_spot: 12062.52
+        northamerica-northeast1:
+          hour: 34.4423488
+          hour_spot: 13.7698016
+          month: 25142.914624
+          month_1y: 14826.505568
+          month_3y: 7538.535968
+          month_spot: 10051.955168
+        northamerica-northeast2:
+          hour: 34.4423488
+          hour_spot: 13.7698016
+          month: 25142.914624
+          month_1y: 14826.505568
+          month_3y: 7538.535968
+          month_spot: 10051.955168
+        northamerica-south1:
+          hour: 34.4423488
+          hour_spot: 13.7698016
+          month: 25142.914624
+          month_1y: 14826.505568
+          month_3y: 7538.535968
+          month_spot: 10051.955168
+        southamerica-east1:
+          hour: 57.895744
+          hour_spot: 23.15832
+          month: 42263.89312
+          month_1y: 24935.916992
+          month_3y: 12679.385184
+          month_spot: 16905.5736
+        southamerica-west1:
+          hour: 44.7810144
+          hour_spot: 17.9005152
+          month: 32690.140512
+          month_1y: 19274.585952
+          month_3y: 9802.692288
+          month_spot: 13067.376096
+        us-central1:
+          hour: 31.2950016
+          hour_spot: 12.5180096
+          month: 22845.351168
+          month_1y: 13478.764384
+          month_3y: 6853.60208
+          month_spot: 9138.147008
+        us-east1:
+          hour: 31.2950016
+          hour_spot: 12.5180096
+          month: 22845.351168
+          month_1y: 13478.764384
+          month_3y: 6853.60208
+          month_spot: 9138.147008
+        us-east4:
+          hour: 31.2950016
+          hour_spot: 12.5180096
+          month: 22845.351168
+          month_1y: 13478.764384
+          month_3y: 6853.60208
+          month_spot: 9138.147008
+        us-east5:
+          hour: 31.2950016
+          hour_spot: 12.5180096
+          month: 22845.351168
+          month_1y: 13478.764384
+          month_3y: 6853.60208
+          month_spot: 9138.147008
+        us-south1:
+          hour: 36.912624
+          hour_spot: 14.771024
+          month: 26946.21552
+          month_1y: 15904.798496
+          month_3y: 8088.20144
+          month_spot: 10782.84752
+        us-west1:
+          hour: 31.2950016
+          hour_spot: 12.5180096
+          month: 22845.351168
+          month_1y: 13478.764384
+          month_3y: 6853.60208
+          month_spot: 9138.147008
+        us-west2:
+          hour: 40.6775456
+          hour_spot: 16.273408
+          month: 29694.608288
+          month_1y: 17522.438784
+          month_3y: 8908.387392
+          month_spot: 11879.58784
+        us-west3:
+          hour: 37.5301984
+          hour_spot: 15.021616
+          month: 27397.044832
+          month_1y: 16174.6976
+          month_3y: 8223.453504
+          month_spot: 10965.77968
+        us-west4:
+          hour: 31.2950016
+          hour_spot: 12.5180096
+          month: 22845.351168
+          month_1y: 13478.764384
+          month_3y: 6853.60208
+          month_spot: 9138.147008
+      cpu: 224
+      ram: 5952
     m4-ultramem-56:
       cost:
         africa-south1:
@@ -86226,6 +88202,576 @@ compute:
         windows:
           hour: 0.368
           month: 268.64
+    c4d-highcpu-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    c4d-highcpu-192:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 8.832
+          month: 6447.36
+    c4d-highcpu-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    c4d-highcpu-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    c4d-highcpu-384:
+      cost:
+        rhel:
+          hour: 3.6864
+          month: 2691.072
+        rhel-sap:
+          hour: 5.76
+          month: 4204.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 17.664
+          month: 12894.72
+    c4d-highcpu-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    c4d-highcpu-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    c4d-highcpu-64:
+      cost:
+        rhel:
+          hour: 0.6912
+          month: 504.576
+        rhel-sap:
+          hour: 1.04
+          month: 759.2
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.944
+          month: 2149.12
+    c4d-highcpu-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    c4d-highcpu-96:
+      cost:
+        rhel:
+          hour: 1.0368
+          month: 756.864
+        rhel-sap:
+          hour: 1.56
+          month: 1138.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
+    c4d-highmem-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    c4d-highmem-192:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 8.832
+          month: 6447.36
+    c4d-highmem-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    c4d-highmem-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    c4d-highmem-384:
+      cost:
+        rhel:
+          hour: 3.6864
+          month: 2691.072
+        rhel-sap:
+          hour: 5.76
+          month: 4204.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 17.664
+          month: 12894.72
+    c4d-highmem-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    c4d-highmem-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    c4d-highmem-64:
+      cost:
+        rhel:
+          hour: 0.6912
+          month: 504.576
+        rhel-sap:
+          hour: 1.04
+          month: 759.2
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.944
+          month: 2149.12
+    c4d-highmem-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    c4d-highmem-96:
+      cost:
+        rhel:
+          hour: 1.0368
+          month: 756.864
+        rhel-sap:
+          hour: 1.56
+          month: 1138.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
+    c4d-standard-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    c4d-standard-192:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 8.832
+          month: 6447.36
+    c4d-standard-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    c4d-standard-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    c4d-standard-384:
+      cost:
+        rhel:
+          hour: 3.6864
+          month: 2691.072
+        rhel-sap:
+          hour: 5.76
+          month: 4204.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 17.664
+          month: 12894.72
+    c4d-standard-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    c4d-standard-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    c4d-standard-64:
+      cost:
+        rhel:
+          hour: 0.6912
+          month: 504.576
+        rhel-sap:
+          hour: 1.04
+          month: 759.2
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.944
+          month: 2149.12
+    c4d-standard-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    c4d-standard-96:
+      cost:
+        rhel:
+          hour: 1.0368
+          month: 756.864
+        rhel-sap:
+          hour: 1.56
+          month: 1138.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
     custom-1-7680-ext:
       cost:
         rhel:
@@ -87096,6 +89642,25 @@ compute:
         windows:
           hour: 10.304
           month: 7521.92
+    m4-megamem-28:
+      cost:
+        rhel:
+          hour: 0.3024
+          month: 220.752
+        rhel-sap:
+          hour: 0.455
+          month: 332.15
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.288
+          month: 940.24
     m4-megamem-56:
       cost:
         rhel:
@@ -87134,6 +89699,25 @@ compute:
         windows:
           hour: 5.152
           month: 3760.96
+    m4-ultramem-224:
+      cost:
+        rhel:
+          hour: 2.1504
+          month: 1569.792
+        rhel-sap:
+          hour: 3.36
+          month: 2452.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 10.304
+          month: 7521.92
     m4-ultramem-56:
       cost:
         rhel:

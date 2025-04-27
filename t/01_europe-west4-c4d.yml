@@ -1,0 +1,77 @@
+region: europe-west4
+project: gcp-gce-c4d
+
+instances:
+  - name: c4d-standard-2
+    type: c4d-standard-2
+  - name: c4d-standard-4
+    type: c4d-standard-4
+  - name: c4d-standard-8
+    type: c4d-standard-8
+  - name: c4d-standard-16
+    type: c4d-standard-16
+  - name: c4d-standard-32
+    type: c4d-standard-32
+  - name: c4d-standard-48
+    type: c4d-standard-48
+  - name: c4d-standard-64
+    type: c4d-standard-64
+  - name: c4d-standard-96
+    type: c4d-standard-96
+  - name: c4d-standard-192
+    type: c4d-standard-192
+  - name: c4d-standard-384
+    type: c4d-standard-384
+# Commitment (CUD)
+  - name: c4d-standard-8-1y
+    type: c4d-standard-8
+    commitment: 1
+  - name: c4d-standard-8-3y
+    type: c4d-standard-8
+    commitment: 3
+# Spot VM
+  - name: c4d-standard-8-spot
+    type: c4d-standard-8
+    spot: true
+
+  - name: c4d-highmem-2
+    type: c4d-highmem-2
+  - name: c4d-highmem-4
+    type: c4d-highmem-4
+  - name: c4d-highmem-8
+    type: c4d-highmem-8
+  - name: c4d-highmem-16
+    type: c4d-highmem-16
+  - name: c4d-highmem-32
+    type: c4d-highmem-32
+  - name: c4d-highmem-48
+    type: c4d-highmem-48
+  - name: c4d-highmem-64
+    type: c4d-highmem-64
+  - name: c4d-highmem-96
+    type: c4d-highmem-96
+  - name: c4d-highmem-192
+    type: c4d-highmem-192
+  - name: c4d-highmem-384
+    type: c4d-highmem-384
+
+  - name: c4d-highcpu-2
+    type: c4d-highcpu-2
+  - name: c4d-highcpu-4
+    type: c4d-highcpu-4
+  - name: c4d-highcpu-8
+    type: c4d-highcpu-8
+  - name: c4d-highcpu-16
+    type: c4d-highcpu-16
+  - name: c4d-highcpu-32
+    type: c4d-highcpu-32
+  - name: c4d-highcpu-48
+    type: c4d-highcpu-48
+  - name: c4d-highcpu-64
+    type: c4d-highcpu-64
+  - name: c4d-highcpu-96
+    type: c4d-highcpu-96
+  - name: c4d-highcpu-192
+    type: c4d-highcpu-192
+  - name: c4d-highcpu-384
+    type: c4d-highcpu-384

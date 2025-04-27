@@ -1134,6 +1134,98 @@ compute:
       cpu: 72
       ram: 576
 
+    # C4D:
+    c4d-highcpu-16:
+      cpu: 16
+      ram: 30
+    c4d-highcpu-192:
+      cpu: 192
+      ram: 360
+    c4d-highcpu-2:
+      cpu: 2
+      ram: 3
+    c4d-highcpu-32:
+      cpu: 32
+      ram: 60
+    c4d-highcpu-384:
+      cpu: 384
+      ram: 720
+    c4d-highcpu-48:
+      cpu: 48
+      ram: 90
+    c4d-highcpu-4:
+      cpu: 4
+      ram: 7
+    c4d-highcpu-64:
+      cpu: 64
+      ram: 120
+    c4d-highcpu-8:
+      cpu: 8
+      ram: 15
+    c4d-highcpu-96:
+      cpu: 96
+      ram: 180
+    c4d-highmem-16:
+      cpu: 16
+      ram: 126
+    c4d-highmem-192:
+      cpu: 192
+      ram: 1512
+    c4d-highmem-2:
+      cpu: 2
+      ram: 15
+    c4d-highmem-32:
+      cpu: 32
+      ram: 252
+    c4d-highmem-384:
+      cpu: 384
+      ram: 3024
+    c4d-highmem-48:
+      cpu: 48
+      ram: 378
+    c4d-highmem-4:
+      cpu: 4
+      ram: 31
+    c4d-highmem-64:
+      cpu: 64
+      ram: 504
+    c4d-highmem-8:
+      cpu: 8
+      ram: 63
+    c4d-highmem-96:
+      cpu: 96
+      ram: 756
+    c4d-standard-16:
+      cpu: 16
+      ram: 62
+    c4d-standard-192:
+      cpu: 192
+      ram: 744
+    c4d-standard-2:
+      cpu: 2
+      ram: 7
+    c4d-standard-32:
+      cpu: 32
+      ram: 124
+    c4d-standard-384:
+      cpu: 384
+      ram: 1488
+    c4d-standard-48:
+      cpu: 48
+      ram: 186
+    c4d-standard-4:
+      cpu: 4
+      ram: 15
+    c4d-standard-64:
+      cpu: 64
+      ram: 248
+    c4d-standard-8:
+      cpu: 8
+      ram: 31
+    c4d-standard-96:
+      cpu: 96
+      ram: 372
+
     # M1:
     m1-ultramem-40:
       cpu: 40
