@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Copyright 2022-2024 Nils Knieling. All Rights Reserved.
+# Copyright 2022-2025 Nils Knieling. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1943,7 +1943,7 @@ foreach my $region (@regions) {
 
 # Add copyright information to YAML pricing export
 $gcp->{'about'}->{'copyright'} = qq ~
-Copyright 2022-2024 Nils Knieling. All Rights Reserved.
+Copyright 2022-2025 Nils Knieling. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
