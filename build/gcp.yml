@@ -1226,6 +1226,55 @@ compute:
       cpu: 96
       ram: 372
 
+    c4d-standard-16-lssd:
+      cpu: 16
+      ram: 62
+    c4d-standard-192-lssd:
+      cpu: 192
+      ram: 744
+    c4d-standard-32-lssd:
+      cpu: 32
+      ram: 124
+    c4d-standard-384-lssd:
+      cpu: 384
+      ram: 1488
+    c4d-standard-48-lssd:
+      cpu: 48
+      ram: 186
+    c4d-standard-64-lssd:
+      cpu: 64
+      ram: 248
+    c4d-standard-8-lssd:
+      cpu: 8
+      ram: 31
+    c4d-standard-96-lssd:
+      cpu: 96
+      ram: 372
+    c4d-highmem-16-lssd:
+      cpu: 16
+      ram: 126
+    c4d-highmem-192-lssd:
+      cpu: 192
+      ram: 1512
+    c4d-highmem-32-lssd:
+      cpu: 32
+      ram: 252
+    c4d-highmem-384-lssd:
+      cpu: 384
+      ram: 3024
+    c4d-highmem-48-lssd:
+      cpu: 48
+      ram: 378
+    c4d-highmem-64-lssd:
+      cpu: 64
+      ram: 504
+    c4d-highmem-8-lssd:
+      cpu: 8
+      ram: 63
+    c4d-highmem-96-lssd:
+      cpu: 96
+      ram: 756
+
     # M1:
     m1-ultramem-40:
       cpu: 40
