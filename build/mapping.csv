@@ -59,8 +59,8 @@ gce.compute.cpu.m3.1y,Compute Engine,Compute,CPU,Commitment v1: M3 Memory-optimi
 gce.compute.cpu.m3.3y,Compute Engine,Compute,CPU,Commitment v1: M3 Memory-optimized%3 Year%,
 gce.compute.cpu.m3.spot,Compute Engine,Compute,CPU,Spot Preemptible M3 Memory-optimized Instance%,
 gce.compute.cpu.m4,Compute Engine,Compute,CPU,M4 Instance%,
-gce.compute.cpu.m4.1y,Compute Engine,Compute,CPU,Commitment v1: M4%1 Year,
-gce.compute.cpu.m4.3y,Compute Engine,Compute,CPU,Commitment v1: M4%3 Year%,
+gce.compute.cpu.m4.1y,Compute Engine,Compute,CPU,Commitment v1: M4 Cpu%1 Year,Do not map M4Ultramem224 
+gce.compute.cpu.m4.3y,Compute Engine,Compute,CPU,Commitment v1: M4 Cpu%3 Year%,Do not map M4Ultramem224 
 gce.compute.cpu.m4.spot,Compute Engine,Compute,CPU,Spot Preemptible M4 Instance%,
 gce.compute.cpu.memory.optimized,Compute Engine,Compute,CPU,Memory-optimized Instance%,
 gce.compute.cpu.memory.optimized.1y,Compute Engine,Compute,CPU,Commitment v1: Memory-optimized%1 Year,
@@ -157,8 +157,8 @@ gce.compute.ram.m3.1y,Compute Engine,Compute,RAM,Commitment v1: M3 Memory-optimi
 gce.compute.ram.m3.3y,Compute Engine,Compute,RAM,Commitment v1: M3 Memory-optimized%3 Year%,
 gce.compute.ram.m3.spot,Compute Engine,Compute,RAM,Spot Preemptible M3 Memory-optimized Instance%,
 gce.compute.ram.m4,Compute Engine,Compute,RAM,M4 Instance%,
-gce.compute.ram.m4.1y,Compute Engine,Compute,RAM,Commitment v1: M4%1 Year,
-gce.compute.ram.m4.3y,Compute Engine,Compute,RAM,Commitment v1: M4%3 Year%,
+gce.compute.ram.m4.1y,Compute Engine,Compute,RAM,Commitment v1: M4 Ram%1 Year,Do not map M4Ultramem224
+gce.compute.ram.m4.3y,Compute Engine,Compute,RAM,Commitment v1: M4 Ram%3 Year%,Do not map M4Ultramem224
 gce.compute.ram.m4.spot,Compute Engine,Compute,RAM,Spot Preemptible M4 Instance%,
 gce.compute.ram.memory.optimized,Compute Engine,Compute,RAM,Memory-optimized Instance%,
 gce.compute.ram.memory.optimized.1y,Compute Engine,Compute,RAM,Commitment v1: Memory-optimized%1 Year,
