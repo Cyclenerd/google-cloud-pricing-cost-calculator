@@ -1,26 +1,29 @@
 region: europe-west4
 project: gcp-gce-z3
 
+# Starting in June 2025, the Z3 machine types will have new names.
+# The allocated resources will remain the same.
+
 instances:
   - name: z3-highmem-88
-    type: z3-highmem-88
+    type: z3-highmem-88-highlssd
     disks:
       - name: z3-highmem-88-local-disk
         type: local
         data: 36.864
   - name: z3-highmem-176
-    type: z3-highmem-176
+    type: z3-highmem-176-standardlssd
 
 # Commitment (CUD)
   - name: z3-highmem-88-1y
-    type: z3-highmem-88
+    type: z3-highmem-88-highlssd
     commitment: 1
   - name: z3-highmem-88-3y
-    type: z3-highmem-88
+    type: z3-highmem-88-highlssd
     commitment: 3
   - name: z3-highmem-176-1y
-    type: z3-highmem-176
+    type: z3-highmem-176-standardlssd
     commitment: 1
   - name: z3-highmem-176-3y
-    type: z3-highmem-176
+    type: z3-highmem-176-standardlssd
     commitment: 3

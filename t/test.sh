@@ -272,13 +272,13 @@ MY_CHECKS=(
 
 # 01_europe-west4-z3.yml
 	# Z3 machine types
-	'z3-highmem-88,10108'   # 9964
+	'z3-highmem-88,10108'  # 9964
 	'z3-highmem-176,17049' # 16901
 	# Z3 Commitment (CUD)
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-1y,6368'    # 6760
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-88,z3-highmem-88-3y,4548'    # 4484
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-1y,10740' # 10647
-	'gcp-gce-z3,europe-west4,vm,z3-highmem-176,z3-highmem-176-3y,7672'  # 7605
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-88-highlssd,z3-highmem-88-1y,6368'        # 6760
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-88-highlssd,z3-highmem-88-3y,4548'        # 4484
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-176-standardlssd,z3-highmem-176-1y,10740' # 10647
+	'gcp-gce-z3,europe-west4,vm,z3-highmem-176-standardlssd,z3-highmem-176-3y,7672'  # 7605
 
 # 01_europe-west4-e2.yml
 	# E2 machine types

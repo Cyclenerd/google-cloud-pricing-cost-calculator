@@ -942,6 +942,9 @@ compute:
     c4-standard-16:
       cpu: 16
       ram: 60
+    c4-standard-24:
+      cpu: 24
+      ram: 90
     c4-standard-32:
       cpu: 32
       ram: 120
@@ -967,6 +970,9 @@ compute:
     c4-highcpu-16:
       cpu: 16
       ram: 32
+    c4-highcpu-24:
+      cpu: 24
+      ram: 48
     c4-highcpu-32:
       cpu: 32
       ram: 64
@@ -992,6 +998,9 @@ compute:
     c4-highmem-16:
       cpu: 16
       ram: 124
+    c4-highmem-24:
+      cpu: 24
+      ram: 186
     c4-highmem-32:
       cpu: 32
       ram: 248
@@ -1004,6 +1013,13 @@ compute:
     c4-highmem-192:
       cpu: 192
       ram: 1488
+
+    c4-standard-24-lssd:
+      cpu: 24
+      ram: 90
+    c4-highmem-24-lssd:
+      cpu: 24
+      ram: 186
 
     # C4A (Google Axion Processor)
     c4a-standard-1:
@@ -1275,6 +1291,16 @@ compute:
       cpu: 96
       ram: 756
 
+    c4d-highcpu-384-metal:
+      cpu: 384
+      ram: 768
+    c4d-highmem-384-metal:
+      cpu: 384
+      ram: 3072
+    c4d-standard-384-metal:
+      cpu: 384
+      ram: 1536
+
     # M1:
     m1-ultramem-40:
       cpu: 40
@@ -1463,11 +1489,13 @@ compute:
       ram: 352
 
     # Z3:
-    z3-highmem-88:
+    # Starting in June 2025, the Z3 machine types will have new names.
+    # The allocated resources will remain the same.
+    z3-highmem-88-highlssd:
       cpu: 88
       ram: 704
       local-ssd: 36000
-    z3-highmem-176:
+    z3-highmem-176-standardlssd:
       cpu: 176
       ram: 1408
       local-ssd: 36000
