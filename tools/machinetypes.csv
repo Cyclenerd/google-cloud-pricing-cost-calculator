@@ -421,5 +421,6 @@ x4-megamem-1920-metal;1920;False;32768.00;;
 x4-megamem-960-metal;960;False;16384.00;;
 z3-highmem-176-standardlssd;176;False;1408.00;;
 z3-highmem-176;176;False;1408.00;DEPRECATED;
+z3-highmem-192-highlssd-metal;192;False;1536.00;;
 z3-highmem-88-highlssd;88;False;704.00;;
 z3-highmem-88;88;False;704.00;DEPRECATED;
