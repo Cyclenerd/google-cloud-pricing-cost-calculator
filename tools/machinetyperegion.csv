@@ -196,6 +196,7 @@ a3-ultragpu-8g;224;False;2952.00;;us-east7
 a3-ultragpu-8g;224;False;2952.00;;us-south1
 a3-ultragpu-8g;224;False;2952.00;;us-west1
 a4-highgpu-8g;224;False;3968.00;;asia-northeast1
+a4-highgpu-8g;224;False;3968.00;;asia-southeast1
 a4-highgpu-8g;224;False;3968.00;;us-central1
 a4-highgpu-8g;224;False;3968.00;;us-east1
 a4-highgpu-8g;224;False;3968.00;;us-east4
@@ -9771,7 +9772,14 @@ z3-highmem-176;176;False;1408.00;DEPRECATED;us-east5
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-east7
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-south1
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-west1
+z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-west1
+z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-west2
 z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-west4
+z3-highmem-192-highlssd-metal;192;False;1536.00;;northamerica-northeast2
+z3-highmem-192-highlssd-metal;192;False;1536.00;;us-central1
+z3-highmem-192-highlssd-metal;192;False;1536.00;;us-east4
+z3-highmem-192-highlssd-metal;192;False;1536.00;;us-east7
+z3-highmem-192-highlssd-metal;192;False;1536.00;;us-west2
 z3-highmem-88-highlssd;88;False;704.00;;asia-northeast1
 z3-highmem-88-highlssd;88;False;704.00;;asia-south1
 z3-highmem-88-highlssd;88;False;704.00;;asia-southeast1
