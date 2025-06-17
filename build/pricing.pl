@@ -454,7 +454,7 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 		# Zonal extreme PD
 		elsif ($disk eq 'extreme')             { $mapping = 'gce.storage.ssd.extreme'; }
 		# Zonal extreme PD
-		elsif ($disk eq 'extreme-iops')             { $mapping = 'gce.storage.ssd.extreme.iops'; }
+		elsif ($disk eq 'extreme-iops')        { $mapping = 'gce.storage.ssd.extreme.iops'; }
 		# Hyperdisk Extreme
 		elsif ($disk eq 'hyperdisk-extreme')   { $mapping = 'gce.storage.hyperdisk.extreme'; }
 		# Regional standard PD
