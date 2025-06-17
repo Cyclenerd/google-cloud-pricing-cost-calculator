@@ -156,6 +156,8 @@ compute:
       type: pd-balanced
     extreme:
       type: pd-extreme
+    extreme-iops:
+      type: pd-extreme-iops
     # Hyperdisk
     hyperdisk-extreme:
       type: hyperdisk-extreme
