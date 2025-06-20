@@ -6,5 +6,6 @@ hyperdisk-throughput;2048GB-32768GB;Hyperdisk Throughput Persistent Disk
 local-ssd;375GB-375GB;Local SSD
 pd-balanced;10GB-65536GB;Balanced Persistent Disk
 pd-extreme;500GB-65536GB;Extreme Persistent Disk
+pd-extreme-iops;500GB-65536GB;Extreme IOPS Persistent Disk
 pd-ssd;10GB-65536GB;SSD Persistent Disk
 pd-standard;10GB-65536GB;Standard Persistent Disk
