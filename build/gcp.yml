@@ -1569,6 +1569,42 @@ compute:
     # Z3:
     # Starting in June 2025, the Z3 machine types will have new names.
     # The allocated resources will remain the same.
+    z3-highmem-14-standardlssd:
+      cpu: 14
+      ram: 112
+      local-ssd: 3000
+    z3-highmem-16-highlssd:
+      cpu: 16
+      ram: 128
+      local-ssd: 6000
+    z3-highmem-22-highlssd:
+      cpu: 22
+      ram: 176
+      local-ssd: 9000
+    z3-highmem-22-standardlssd:
+      cpu: 22
+      ram: 176
+      local-ssd: 6000
+    z3-highmem-32-highlssd:
+      cpu: 32
+      ram: 256
+      local-ssd: 12000
+    z3-highmem-44-highlssd:
+      cpu: 44
+      ram: 352
+      local-ssd: 18000
+    z3-highmem-44-standardlssd:
+      cpu: 44
+      ram: 352
+      local-ssd: 9000
+    z3-highmem-8-highlssd:
+      cpu: 8
+      ram: 64
+      local-ssd: 3000
+    z3-highmem-88-standardlssd:
+      cpu: 88
+      ram: 704.00
+      local-ssd: 18000
     z3-highmem-88-highlssd:
       cpu: 88
       ram: 704
@@ -1577,3 +1613,8 @@ compute:
       cpu: 176
       ram: 1408
       local-ssd: 36000
+
+    z3-highmem-192-highlssd-metal:
+      cpu: 192
+      ram: 1536
+      local-ssd: 72000
