@@ -930,96 +930,174 @@ compute:
       ram: 720
 
     # C4:
-    c4-standard-2:
-      cpu: 2
-      ram: 7
-    c4-standard-4:
-      cpu: 4
-      ram: 15
-    c4-standard-8:
-      cpu: 8
-      ram: 30
-    c4-standard-16:
-      cpu: 16
-      ram: 60
-    c4-standard-24:
-      cpu: 24
-      ram: 90
-    c4-standard-32:
-      cpu: 32
-      ram: 120
-    c4-standard-48:
-      cpu: 48
-      ram: 180
-    c4-standard-96:
-      cpu: 96
-      ram: 360
-    c4-standard-192:
-      cpu: 192
-      ram: 720
-
-    c4-highcpu-2:
-      cpu: 2
-      ram: 4
-    c4-highcpu-4:
-      cpu: 4
-      ram: 8
-    c4-highcpu-8:
-      cpu: 8
-      ram: 16
+    c4-highcpu-144:
+      cpu: 144
+      ram: 288.00
     c4-highcpu-16:
       cpu: 16
       ram: 32
-    c4-highcpu-24:
-      cpu: 24
-      ram: 48
-    c4-highcpu-32:
-      cpu: 32
-      ram: 64
-    c4-highcpu-48:
-      cpu: 48
-      ram: 96
-    c4-highcpu-96:
-      cpu: 96
-      ram: 192
     c4-highcpu-192:
       cpu: 192
       ram: 384
-
-    c4-highmem-2:
+    c4-highcpu-2:
       cpu: 2
-      ram: 15
-    c4-highmem-4:
+      ram: 4
+    c4-highcpu-24:
+      cpu: 24
+      ram: 48
+    c4-highcpu-288:
+      cpu: 288
+      ram: 576.00
+    c4-highcpu-288-metal:
+      cpu: 288
+      ram: 576.00
+    c4-highcpu-32:
+      cpu: 32
+      ram: 64
+    c4-highcpu-4:
       cpu: 4
-      ram: 31
-    c4-highmem-8:
+      ram: 8
+    c4-highcpu-48:
+      cpu: 48
+      ram: 96
+    c4-highcpu-8:
       cpu: 8
-      ram: 62
+      ram: 16
+    c4-highcpu-96:
+      cpu: 96
+      ram: 192
+    c4-highmem-144:
+      cpu: 144
+      ram: 1116.00
+    c4-highmem-144-lssd:
+      cpu: 144
+      ram: 1116.00
     c4-highmem-16:
       cpu: 16
       ram: 124
-    c4-highmem-24:
-      cpu: 24
-      ram: 186
-    c4-highmem-32:
-      cpu: 32
-      ram: 248
-    c4-highmem-48:
-      cpu: 48
-      ram: 372
-    c4-highmem-96:
-      cpu: 96
-      ram: 744
+    c4-highmem-16-lssd:
+      cpu: 16
+      ram: 124.00
     c4-highmem-192:
       cpu: 192
       ram: 1488
-
-    c4-standard-24-lssd:
+    c4-highmem-192-lssd:
+      cpu: 192
+      ram: 1488
+    c4-highmem-2:
+      cpu: 2
+      ram: 15
+    c4-highmem-24:
       cpu: 24
-      ram: 90
+      ram: 186
     c4-highmem-24-lssd:
       cpu: 24
       ram: 186
+    c4-highmem-288:
+      cpu: 288
+      ram: 2232.00
+    c4-highmem-288-lssd:
+      cpu: 288
+      ram: 2232.00
+    c4-highmem-288-metal:
+      cpu: 288
+      ram: 2232.00
+    c4-highmem-32:
+      cpu: 32
+      ram: 248
+    c4-highmem-32-lssd:
+      cpu: 32
+      ram: 248.00
+    c4-highmem-4:
+      cpu: 4
+      ram: 31
+    c4-highmem-4-lssd:
+      cpu: 4
+      ram: 31.00
+    c4-highmem-48:
+      cpu: 48
+      ram: 372
+    c4-highmem-48-lssd:
+      cpu: 48
+      ram: 372.00
+    c4-highmem-8:
+      cpu: 8
+      ram: 62
+    c4-highmem-8-lssd:
+      cpu: 8
+      ram: 62.00
+    c4-highmem-96:
+      cpu: 96
+      ram: 744
+    c4-highmem-96-lssd:
+      cpu: 96
+      ram: 744.00
+    c4-standard-144:
+      cpu: 144
+      ram: 540.00
+    c4-standard-144-lssd:
+      cpu: 144
+      ram: 540.00
+    c4-standard-16:
+      cpu: 16
+      ram: 60
+    c4-standard-16-lssd:
+      cpu: 16
+      ram: 60.00
+    c4-standard-192:
+      cpu: 192
+      ram: 720
+    c4-standard-192-lssd:
+      cpu: 192
+      ram: 720.00
+    c4-standard-2:
+      cpu: 2
+      ram: 7
+    c4-standard-24:
+      cpu: 24
+      ram: 90
+    c4-standard-24-lssd:
+      cpu: 24
+      ram: 90
+    c4-standard-288:
+      cpu: 288
+      ram: 1080.00
+    c4-standard-288-lssd:
+      cpu: 288
+      ram: 1080.00
+    c4-standard-288-metal:
+      cpu: 288
+      ram: 1080.00
+    c4-standard-32:
+      cpu: 32
+      ram: 120
+    c4-standard-32-lssd:
+      cpu: 32
+      ram: 120.00
+    c4-standard-4:
+      cpu: 4
+      ram: 15
+    c4-standard-4-lssd:
+      cpu: 4
+      ram: 15.00
+    c4-standard-48:
+      cpu: 48
+      ram: 180
+    c4-standard-48-lssd:
+      cpu: 48
+      ram: 180.00
+    c4-standard-8:
+      cpu: 8
+      ram: 30
+    c4-standard-8-lssd:
+      cpu: 8
+      ram: 30.00
+    c4-standard-96:
+      cpu: 96
+      ram: 360
+    c4-standard-96-lssd:
+      cpu: 96
+      ram: 360.00
 
     # C4A (Google Axion Processor)
     c4a-standard-1:
