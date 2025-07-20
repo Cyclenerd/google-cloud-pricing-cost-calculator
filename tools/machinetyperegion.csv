@@ -3435,7 +3435,6 @@ c4d-highcpu-32;32;False;60.00;;us-east4
 c4d-highcpu-32;32;False;60.00;;us-east7
 c4d-highcpu-32;32;False;60.00;;us-west1
 c4d-highcpu-32;32;False;60.00;;us-west4
-c4d-highcpu-384-metal;384;False;768.00;;europe-west4
 c4d-highcpu-384;384;False;720.00;;asia-northeast1
 c4d-highcpu-384;384;False;720.00;;asia-south1
 c4d-highcpu-384;384;False;720.00;;asia-southeast1
@@ -3594,7 +3593,6 @@ c4d-highmem-384-lssd;384;False;3024.00;;us-central1
 c4d-highmem-384-lssd;384;False;3024.00;;us-east1
 c4d-highmem-384-lssd;384;False;3024.00;;us-east4
 c4d-highmem-384-lssd;384;False;3024.00;;us-east7
-c4d-highmem-384-metal;384;False;3072.00;;europe-west4
 c4d-highmem-384;384;False;3024.00;;asia-northeast1
 c4d-highmem-384;384;False;3024.00;;asia-south1
 c4d-highmem-384;384;False;3024.00;;asia-southeast1
@@ -3781,7 +3779,6 @@ c4d-standard-384-lssd;384;False;1488.00;;us-central1
 c4d-standard-384-lssd;384;False;1488.00;;us-east1
 c4d-standard-384-lssd;384;False;1488.00;;us-east4
 c4d-standard-384-lssd;384;False;1488.00;;us-east7
-c4d-standard-384-metal;384;False;1536.00;;europe-west4
 c4d-standard-384;384;False;1488.00;;asia-northeast1
 c4d-standard-384;384;False;1488.00;;asia-south1
 c4d-standard-384;384;False;1488.00;;asia-southeast1
