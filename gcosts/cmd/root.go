@@ -16,10 +16,15 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/spf13/cobra"
+	"fmt"
+	"io"
+	"net/http"
 	"os"
 	"path/filepath"
+	"time"
+
+	"github.com/pterm/pterm"
+	"github.com/spf13/cobra"
 )
 
 var version string = "v?.?.?"
@@ -41,6 +46,11 @@ More help: <https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator>`,
 	// PersistentPreRun: children of this command will inherit and execute.
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		pterm.DefaultHeader.WithFullWidth().Println("💸 gcosts - Google Cloud Platform Pricing and Cost Calculator")
+
+		// Handle pricing file download if requested
+		if downloadPricing {
+			inputPricing = ensurePricingFile()
+		}
 	},
 	// PersistentPostRun: children of this command will inherit and execute after PostRun.
 	/*PersistentPostRun: func(cmd *cobra.Command, args []string) {
@@ -67,6 +77,81 @@ var inputStorageClass string
 var inputDiskType string
 var inputMachineType string
 var inputOperatingSystem string
+
+// Download-related variables
+var downloadPricing bool
+var pricingFileURL string
+var forceRedownload bool
+
+// getCachedPricingPath returns the path for the cached pricing file
+func getCachedPricingPath() string {
+	year, week := time.Now().ISOWeek()
+	return fmt.Sprintf("/tmp/pricing_%d%02d", year, week)
+}
+
+// downloadPricingFile downloads the pricing file from the given URL and saves it to the specified path
+func downloadPricingFile(url, filepath string) error {
+	pterm.Info.Printf("Downloading pricing file from: %s\n", url)
+
+	resp, err := http.Get(url)
+	if err != nil {
+		return fmt.Errorf("failed to download pricing file: %w", err)
+	}
+	defer func() {
+		if closeErr := resp.Body.Close(); closeErr != nil {
+			pterm.Warning.Printf("Failed to close response body: %v\n", closeErr)
+		}
+	}()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("failed to download pricing file: HTTP %d", resp.StatusCode)
+	}
+
+	file, err := os.Create(filepath)
+	if err != nil {
+		return fmt.Errorf("failed to create pricing file: %w", err)
+	}
+	defer func() {
+		if closeErr := file.Close(); closeErr != nil {
+			pterm.Warning.Printf("Failed to close file: %v\n", closeErr)
+		}
+	}()
+
+	_, err = io.Copy(file, resp.Body)
+	if err != nil {
+		return fmt.Errorf("failed to write pricing file: %w", err)
+	}
+
+	pterm.Success.Printf("Pricing file downloaded successfully to: %s\n", filepath)
+	return nil
+}
+
+// ensurePricingFile ensures the pricing file is available, downloading it if necessary
+func ensurePricingFile() string {
+	if !downloadPricing {
+		return inputPricing
+	}
+
+	cachedPath := getCachedPricingPath()
+
+	// Check if file exists and we're not forcing redownload
+	if !forceRedownload {
+		if _, err := os.Stat(cachedPath); err == nil {
+			pterm.Info.Printf("Using cached pricing file: %s\n", cachedPath)
+			return cachedPath
+		}
+	}
+
+	// Download the file
+	err := downloadPricingFile(pricingFileURL, cachedPath)
+	if err != nil {
+		pterm.Error.Printf("Failed to download pricing file: %v\n", err)
+		pterm.Warning.Println("Falling back to default pricing file")
+		return inputPricing
+	}
+
+	return cachedPath
+}
 
 // Execute adds all child commands to the root command and sets flags appropriately.
 // This is called by main.main(). It only needs to happen once to the rootCmd.
@@ -96,4 +181,9 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 	rootCmd.PersistentFlags().StringVarP(&inputPricing, "pricing", "p", defaultPricing, "YAML file with GCP pricing informations")
+
+	// Download-related flags
+	rootCmd.PersistentFlags().BoolVarP(&downloadPricing, "download", "d", false, "Download and cache pricing file automatically")
+	rootCmd.PersistentFlags().StringVar(&pricingFileURL, "pricing-file-url", "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml", "URL for pricing file if different than default")
+	rootCmd.PersistentFlags().BoolVar(&forceRedownload, "force-redownload", false, "Force redownload of pricing file even if it exists")
 }
