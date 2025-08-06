@@ -86,7 +86,8 @@ var forceRedownload bool
 // getCachedPricingPath returns the path for the cached pricing file
 func getCachedPricingPath() string {
 	year, week := time.Now().ISOWeek()
-	return fmt.Sprintf("/tmp/pricing_%d%02d", year, week)
+	filename := fmt.Sprintf("pricing_%d%02d", year, week)
+	return filepath.Join(os.TempDir(), filename)
 }
 
 // downloadPricingFile downloads the pricing file from the given URL and saves it to the specified path
