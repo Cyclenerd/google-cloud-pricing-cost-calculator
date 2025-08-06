@@ -183,7 +183,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVarP(&inputPricing, "pricing", "p", defaultPricing, "YAML file with GCP pricing informations")
 
 	// Download-related flags
-	rootCmd.PersistentFlags().BoolVarP(&downloadPricing, "download", false, "Download and cache pricing file automatically")
+	rootCmd.PersistentFlags().BoolVar(&downloadPricing, "download", false, "Download and cache pricing file automatically")
 	rootCmd.PersistentFlags().StringVar(&pricingFileURL, "pricing-file-url", "https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/raw/master/pricing.yml", "URL for pricing file if different than default")
 	rootCmd.PersistentFlags().BoolVar(&forceRedownload, "force-redownload", false, "Force redownload of pricing file even if it exists")
 }
