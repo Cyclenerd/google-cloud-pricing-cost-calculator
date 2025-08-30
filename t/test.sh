@@ -582,16 +582,16 @@ MY_CHECKS=(
 	'us-central1,vm,n2-standard-8,n2-standard-8,226' # Google Cloud Pricing Calculator: $226.92
 
 # Regions
-	'europe-central2,vm,n2-standard-8,n2-standard-8,292'    # Google Cloud Pricing Calculator: $292.36
+	'europe-central2,vm,n2-standard-8,n2-standard-8,274'    # Google Cloud Pricing Calculator: $292.36
 	'europe-north1,vm,n2-standard-8,n2-standard-8,249'      # Google Cloud Pricing Calculator: $249.84
 	'europe-north2,vm,n4-standard-8,n4-standard-8,290'      # Google Cloud Pricing Calculator: $290.570952
 	'europe-southwest1,vm,n2-standard-8,n2-standard-8,267'  # Google Cloud Pricing Calculator: $268
 	'europe-west1,vm,n2-standard-8,n2-standard-8,249'       # Google Cloud Pricing Calculator: $249.63
-	'europe-west10,vm,n2-standard-8,n2-standard-8,349'      # Google Cloud Pricing Calculator: $349.46
+	'europe-west10,vm,n2-standard-8,n2-standard-8,292'      # Google Cloud Pricing Calculator: $349.46
 	'europe-west12,vm,n2-standard-8,n2-standard-8,292'      # Google Cloud Pricing Calculator: $292.73
 	'europe-west2,vm,n2-standard-8,n2-standard-8,292'       # Google Cloud Pricing Calculator: $292.36
 	'europe-west3,vm,n2-standard-8,n2-standard-8,292'       # Google Cloud Pricing Calculator: $292.36
-	'europe-west6,vm,n2-standard-8,n2-standard-8,317'       # Google Cloud Pricing Calculator: $317.44
+	'europe-west6,vm,n2-standard-8,n2-standard-8,297'       # Google Cloud Pricing Calculator: $317.44
 	'europe-west8,vm,n2-standard-8,n2-standard-8,263'       # Google Cloud Pricing Calculator: $263.17
 	'europe-west9,vm,n2-standard-8,n2-standard-8,263'       # Google Cloud Pricing Calculator: $263.17
 	'me-central1,vm,n2-standard-8,n2-standard-8,275'        # Google Cloud Pricing Calculator: $275.71
