@@ -1446,6 +1446,15 @@ compute:
     m4-megamem-224:
       cpu: 224
       ram: 2976
+    m4-hypermem-16:
+      cpu: 16
+      ram: 248
+    m4-hypermem-32:
+      cpu: 32
+      ram: 496
+    m4-hypermem-64:
+      cpu: 64
+      ram: 992
 
     # A2:
     a2-highgpu-1g:
