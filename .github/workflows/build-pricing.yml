@@ -27,7 +27,7 @@ jobs:
       - name: 🔧 Setup go
         uses: actions/setup-go@v6
         with:
-          go-version-file: 'gcosts/go.mod'
+          go-version-file: 'build/go.mod'
           cache-dependency-path: '**/go.sum'
 
       # Compile build/skus CLI
