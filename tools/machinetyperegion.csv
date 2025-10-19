@@ -875,6 +875,7 @@ c3-highcpu-176;176;False;352.00;;europe-west3
 c3-highcpu-176;176;False;352.00;;europe-west4
 c3-highcpu-176;176;False;352.00;;me-central2
 c3-highcpu-176;176;False;352.00;;northamerica-northeast1
+c3-highcpu-176;176;False;352.00;;southamerica-east1
 c3-highcpu-176;176;False;352.00;;us-central1
 c3-highcpu-176;176;False;352.00;;us-east1
 c3-highcpu-176;176;False;352.00;;us-east4
@@ -903,6 +904,7 @@ c3-highcpu-22;22;False;44.00;;europe-west3
 c3-highcpu-22;22;False;44.00;;europe-west4
 c3-highcpu-22;22;False;44.00;;me-central2
 c3-highcpu-22;22;False;44.00;;northamerica-northeast1
+c3-highcpu-22;22;False;44.00;;southamerica-east1
 c3-highcpu-22;22;False;44.00;;us-central1
 c3-highcpu-22;22;False;44.00;;us-east1
 c3-highcpu-22;22;False;44.00;;us-east4
@@ -922,6 +924,7 @@ c3-highcpu-44;44;False;88.00;;europe-west3
 c3-highcpu-44;44;False;88.00;;europe-west4
 c3-highcpu-44;44;False;88.00;;me-central2
 c3-highcpu-44;44;False;88.00;;northamerica-northeast1
+c3-highcpu-44;44;False;88.00;;southamerica-east1
 c3-highcpu-44;44;False;88.00;;us-central1
 c3-highcpu-44;44;False;88.00;;us-east1
 c3-highcpu-44;44;False;88.00;;us-east4
@@ -941,6 +944,7 @@ c3-highcpu-4;4;False;8.00;;europe-west3
 c3-highcpu-4;4;False;8.00;;europe-west4
 c3-highcpu-4;4;False;8.00;;me-central2
 c3-highcpu-4;4;False;8.00;;northamerica-northeast1
+c3-highcpu-4;4;False;8.00;;southamerica-east1
 c3-highcpu-4;4;False;8.00;;us-central1
 c3-highcpu-4;4;False;8.00;;us-east1
 c3-highcpu-4;4;False;8.00;;us-east4
@@ -960,6 +964,7 @@ c3-highcpu-88;88;False;176.00;;europe-west3
 c3-highcpu-88;88;False;176.00;;europe-west4
 c3-highcpu-88;88;False;176.00;;me-central2
 c3-highcpu-88;88;False;176.00;;northamerica-northeast1
+c3-highcpu-88;88;False;176.00;;southamerica-east1
 c3-highcpu-88;88;False;176.00;;us-central1
 c3-highcpu-88;88;False;176.00;;us-east1
 c3-highcpu-88;88;False;176.00;;us-east4
@@ -979,6 +984,7 @@ c3-highcpu-8;8;False;16.00;;europe-west3
 c3-highcpu-8;8;False;16.00;;europe-west4
 c3-highcpu-8;8;False;16.00;;me-central2
 c3-highcpu-8;8;False;16.00;;northamerica-northeast1
+c3-highcpu-8;8;False;16.00;;southamerica-east1
 c3-highcpu-8;8;False;16.00;;us-central1
 c3-highcpu-8;8;False;16.00;;us-east1
 c3-highcpu-8;8;False;16.00;;us-east4
@@ -11679,6 +11685,7 @@ z3-highmem-176;176;False;1408.00;DEPRECATED;us-east5
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-east7
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-south1
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-west1
+z3-highmem-192-highlssd-metal;192;False;1536.00;;asia-east1
 z3-highmem-192-highlssd-metal;192;False;1536.00;;asia-southeast1
 z3-highmem-192-highlssd-metal;192;False;1536.00;;australia-southeast2
 z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-west1
