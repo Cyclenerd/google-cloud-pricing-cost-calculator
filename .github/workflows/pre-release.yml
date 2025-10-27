@@ -56,7 +56,7 @@ jobs:
       # Download binaries
       # https://github.com/marketplace/actions/download-a-build-artifact
       - name: 📥 Download
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: gcosts-artifact
       # Test binary
@@ -71,7 +71,7 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v5
       - name: 📥 Download
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: gcosts-artifact
       # Test binary
@@ -86,7 +86,7 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v5
       - name: 📥 Download
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: gcosts-artifact
       # Test binary
