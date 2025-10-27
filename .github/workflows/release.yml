@@ -41,7 +41,7 @@ jobs:
       # Upload binaries
       # https://github.com/marketplace/actions/upload-a-build-artifact
       - name: 📤 Upload
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: gcosts-artifact
           path: gcosts/gcosts-*
