@@ -7,7 +7,7 @@ toolchain go1.24.1
 require (
 	cloud.google.com/go/billing v1.21.0
 	github.com/mattn/go-sqlite3 v1.14.32
-	golang.org/x/oauth2 v0.32.0
+	golang.org/x/oauth2 v0.33.0
 	google.golang.org/api v0.254.0
 	google.golang.org/grpc v1.76.0
 )
