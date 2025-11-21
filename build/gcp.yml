@@ -505,6 +505,88 @@ compute:
       cpu: 80
       ram: 160
 
+    n4d-highcpu-16:
+      cpu: 16
+      ram: 32
+    n4d-highcpu-2:
+      cpu: 2
+      ram: 4
+    n4d-highcpu-32:
+      cpu: 32
+      ram: 64
+    n4d-highcpu-4:
+      cpu: 4
+      ram: 8
+    n4d-highcpu-48:
+      cpu: 48
+      ram: 96
+    n4d-highcpu-64:
+      cpu: 64
+      ram: 128
+    n4d-highcpu-8:
+      cpu: 8
+      ram: 16
+    n4d-highcpu-80:
+      cpu: 80
+      ram: 160
+    n4d-highcpu-96:
+      cpu: 96
+      ram: 192
+    n4d-highmem-16:
+      cpu: 16
+      ram: 128
+    n4d-highmem-2:
+      cpu: 2
+      ram: 16
+    n4d-highmem-32:
+      cpu: 32
+      ram: 256
+    n4d-highmem-4:
+      cpu: 4
+      ram: 32
+    n4d-highmem-48:
+      cpu: 48
+      ram: 384
+    n4d-highmem-64:
+      cpu: 64
+      ram: 512
+    n4d-highmem-8:
+      cpu: 8
+      ram: 64
+    n4d-highmem-80:
+      cpu: 80
+      ram: 640
+    n4d-highmem-96:
+      cpu: 96
+      ram: 768
+    n4d-standard-16:
+      cpu: 16
+      ram: 64
+    n4d-standard-2:
+      cpu: 2
+      ram: 8
+    n4d-standard-32:
+      cpu: 32
+      ram: 128
+    n4d-standard-4:
+      cpu: 4
+      ram: 16
+    n4d-standard-48:
+      cpu: 48
+      ram: 192
+    n4d-standard-64:
+      cpu: 64
+      ram: 256
+    n4d-standard-8:
+      cpu: 8
+      ram: 32
+    n4d-standard-80:
+      cpu: 80
+      ram: 320
+    n4d-standard-96:
+      cpu: 96
+      ram: 384
+
     # T2D:
     # T2D standard
     t2d-standard-1:

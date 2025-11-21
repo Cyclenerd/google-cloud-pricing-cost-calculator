@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 # Copyright 2022-2025 Nils Knieling. All Rights Reserved.
 #
@@ -800,6 +800,28 @@ foreach my $region (@regions) {
 			$mappings_1y{  'gce.compute.ram.n4.1y'}          = $ram;
 			$mappings_3y{  'gce.compute.ram.n4.3y'}          = $ram;
 			$mappings_spot{'gce.compute.ram.n4.custom.spot'} = $ram;
+		}
+		# N4D Predefined
+		elsif ($type eq 'n4d') {
+			$mappings{     'gce.compute.cpu.n4d'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n4d.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n4d.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.n4d.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n4d'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n4d.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.n4d.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.n4d.spot'} = $ram;
+		}
+		# N4D Custom
+		elsif ($type eq 'n4d-custom') {
+			$mappings{     'gce.compute.cpu.n4d.custom'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n4d.1y'}          = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n4d.3y'}          = $cpu;
+			$mappings_spot{'gce.compute.cpu.n4d.custom.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n4d.custom'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n4d.1y'}          = $ram;
+			$mappings_3y{  'gce.compute.ram.n4d.3y'}          = $ram;
+			$mappings_spot{'gce.compute.ram.n4d.custom.spot'} = $ram;
 		}
 		# T2D Predefined
 		elsif ($type eq 't2d') {

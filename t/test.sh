@@ -528,10 +528,44 @@ MY_CHECKS=(
 	'n4-highcpu-48,1408' # higher, list price 1399
 	'n4-highcpu-64,1877'
 	'n4-highcpu-80,2346'
-	# N2 Commitment (CUD)
+	# N4 Commitment (CUD)
 	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-1y,175'
 	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-3y,128'
 	'n4-standard-8-spot,'
+
+# 01_europe-west4-n4d.yml
+	# N4D machine types
+	'n4d-standard-2,64'
+	'n4d-standard-4,129'
+	'n4d-standard-8,259'
+	'n4d-standard-16,519'
+	'n4d-standard-32,1039'
+	'n4d-standard-48,1558'
+	'n4d-standard-64,2078'
+	'n4d-standard-80,2597'
+	'n4d-standard-96,3117'
+	'n4d-highmem-2,85'
+	'n4d-highmem-4,170'
+	'n4d-highmem-8,341'
+	'n4d-highmem-16,682'
+	'n4d-highmem-32,1364'
+	'n4d-highmem-48,2046'
+	'n4d-highmem-64,2728'
+	'n4d-highmem-80,3410'
+	'n4d-highmem-96,4093'
+	'n4d-highcpu-2,54'
+	'n4d-highcpu-4,109'
+	'n4d-highcpu-8,219'
+	'n4d-highcpu-16,438'
+	'n4d-highcpu-32,876'
+	'n4d-highcpu-48,1314'
+	'n4d-highcpu-64,1753'
+	'n4d-highcpu-80,2191'
+	'n4d-highcpu-96,2629'
+	# N4D Commitment (CUD)
+	'gcp-gce-n4d,europe-west4,vm,n4d-standard-8,n4d-standard-8-1y,163'
+	'gcp-gce-n4d,europe-west4,vm,n4d-standard-8,n4d-standard-8-3y,116'
+	'n4d-standard-8-spot,'
 
 # 01_europe-west4-sap.yml
 	# SLES for SAP (https://cloud.google.com/products/calculator/#id=9a410d62-97b7-4ae0-baba-2f83ba9e625d)
