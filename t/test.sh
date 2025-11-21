@@ -183,14 +183,15 @@ MY_CHECKS=(
 	'gcp-gce-c4,europe-west4,vm,c4-highcpu-8,c4-highcpu-8-1y,164'
 	'gcp-gce-c4,europe-west4,vm,c4-highcpu-8,c4-highcpu-8-3y,117'
 	'c4-standard-8-spot,'
+	# C4 local SSD
+	'c4-standard-8-lssd,366'
 
 # 01_europe-west4-c4a.yml
 	# C4A machine types
 	'c4a-standard-1,34'
-	'c4a-standard-2,68''
+	'c4a-standard-2,68'
 	'c4a-standard-4,137'
-	'c4a-standard-8,275''
-	'c4a-standard-8-lssd,275'
+	'c4a-standard-8,275'
 	'c4a-standard-16,550'
 	'c4a-standard-32,1101'
 	'c4a-standard-48,1651'
@@ -225,6 +226,8 @@ MY_CHECKS=(
 	'c4a-standard-8-spot,'
 	'c4a-highmem-8-spot,'
 	'c4a-highcpu-8-spot,'
+	# C4A local SSD
+	'c4a-standard-8-lssd,369'
 
 # 01_europe-west4-c4d.yml
 	# C4D machine types
@@ -263,6 +266,8 @@ MY_CHECKS=(
 	'c4d-standard-8-spot'
 	'c4d-standard-8,283'
 	'c4d-standard-96,3403'
+	# C4D local SSD
+	'c4d-standard-8-lssd,346'
 
 # 01_europe-west4-h3.yml
 	# H3 machine types
@@ -499,33 +504,33 @@ MY_CHECKS=(
 
 # 01_europe-west4-n4.yml
 	# N4 machine types
-	'n4-standard-2,72'
-	'n4-standard-4,145'
-	'n4-standard-8,290'
-	'n4-standard-16,581'
-	'n4-standard-32,1162'
-	'n4-standard-48,1743'
-	'n4-standard-64,2324'
-	'n4-standard-80,2905'
-	'n4-highmem-2,95'
-	'n4-highmem-4,190'
-	'n4-highmem-8,381'
-	'n4-highmem-16,762'
-	'n4-highmem-32,1525'
-	'n4-highmem-48,2288'
-	'n4-highmem-64,3050'
-	'n4-highmem-80,3813'
-	'n4-highcpu-2,61'
-	'n4-highcpu-4,122'
-	'n4-highcpu-8,245'
-	'n4-highcpu-16,490'
-	'n4-highcpu-32,980'
-	'n4-highcpu-48,1471'
-	'n4-highcpu-64,1961'
-	'n4-highcpu-80,2451'
+	'n4-standard-2,69'
+	'n4-standard-4,139'
+	'n4-standard-8,278'
+	'n4-standard-16,556'
+	'n4-standard-32,1112'
+	'n4-standard-48,1668'
+	'n4-standard-64,2224'
+	'n4-standard-80,2780'
+	'n4-highmem-2,91'
+	'n4-highmem-4,182'
+	'n4-highmem-8,364'
+	'n4-highmem-16,729'
+	'n4-highmem-32,1459'
+	'n4-highmem-48,2189'
+	'n4-highmem-64,2919'
+	'n4-highmem-80,3649'
+	'n4-highcpu-2,58'
+	'n4-highcpu-4,117'
+	'n4-highcpu-8,234'
+	'n4-highcpu-16,469'
+	'n4-highcpu-32,938'
+	'n4-highcpu-48,1408' # higher, list price 1399
+	'n4-highcpu-64,1877'
+	'n4-highcpu-80,2346'
 	# N2 Commitment (CUD)
-	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-1y,183'
-	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-3y,130'
+	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-1y,175'
+	'gcp-gce-n4,europe-west4,vm,n4-standard-8,n4-standard-8-3y,128'
 	'n4-standard-8-spot,'
 
 # 01_europe-west4-sap.yml
@@ -584,7 +589,7 @@ MY_CHECKS=(
 # Regions
 	'europe-central2,vm,n2-standard-8,n2-standard-8,274'    # Google Cloud Pricing Calculator: $292.36
 	'europe-north1,vm,n2-standard-8,n2-standard-8,249'      # Google Cloud Pricing Calculator: $249.84
-	'europe-north2,vm,n4-standard-8,n4-standard-8,290'      # Google Cloud Pricing Calculator: $290.570952
+	'europe-north2,vm,n4-standard-8,n4-standard-8,278'      # Google Cloud Pricing Calculator: $278.0862
 	'europe-southwest1,vm,n2-standard-8,n2-standard-8,267'  # Google Cloud Pricing Calculator: $268
 	'europe-west1,vm,n2-standard-8,n2-standard-8,249'       # Google Cloud Pricing Calculator: $249.63
 	'europe-west10,vm,n2-standard-8,n2-standard-8,292'      # Google Cloud Pricing Calculator: $349.46

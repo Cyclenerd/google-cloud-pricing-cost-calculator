@@ -168,6 +168,13 @@ compute:
       type: pd-balanced
     snapshot:
       type: pd-snapshot
+    # Local SSD for C4, C4A, C4D
+    local-c4:
+      type: included-lssd-c4
+    local-c4a:
+      type: included-lssd-c4a
+    local-c4d:
+      type: included-lssd-c4d
 
   # Virtual machine instances
   # VM instance pricing : https://cloud.google.com/compute/vm-instance-pricing
@@ -972,18 +979,21 @@ compute:
     c4-highmem-144-lssd:
       cpu: 144
       ram: 1116.00
+      local-ssd: 9000
     c4-highmem-16:
       cpu: 16
       ram: 124
     c4-highmem-16-lssd:
       cpu: 16
       ram: 124.00
+      local-ssd: 750
     c4-highmem-192:
       cpu: 192
       ram: 1488
     c4-highmem-192-lssd:
       cpu: 192
       ram: 1488
+      local-ssd: 12000
     c4-highmem-2:
       cpu: 2
       ram: 15
@@ -993,12 +1003,14 @@ compute:
     c4-highmem-24-lssd:
       cpu: 24
       ram: 186
+      local-ssd: 1500
     c4-highmem-288:
       cpu: 288
       ram: 2232.00
     c4-highmem-288-lssd:
       cpu: 288
       ram: 2232.00
+      local-ssd: 18000
     c4-highmem-288-metal:
       cpu: 288
       ram: 2232.00
@@ -1008,48 +1020,56 @@ compute:
     c4-highmem-32-lssd:
       cpu: 32
       ram: 248.00
+      local-ssd: 1875
     c4-highmem-4:
       cpu: 4
       ram: 31
     c4-highmem-4-lssd:
       cpu: 4
       ram: 31.00
+      local-ssd: 375
     c4-highmem-48:
       cpu: 48
       ram: 372
     c4-highmem-48-lssd:
       cpu: 48
       ram: 372.00
+      local-ssd: 3000
     c4-highmem-8:
       cpu: 8
       ram: 62
     c4-highmem-8-lssd:
       cpu: 8
       ram: 62.00
+      local-ssd: 375
     c4-highmem-96:
       cpu: 96
       ram: 744
     c4-highmem-96-lssd:
       cpu: 96
       ram: 744.00
+      local-ssd: 6000
     c4-standard-144:
       cpu: 144
       ram: 540.00
     c4-standard-144-lssd:
       cpu: 144
       ram: 540.00
+      local-ssd: 9000
     c4-standard-16:
       cpu: 16
       ram: 60
     c4-standard-16-lssd:
       cpu: 16
       ram: 60.00
+      local-ssd: 750
     c4-standard-192:
       cpu: 192
       ram: 720
     c4-standard-192-lssd:
       cpu: 192
       ram: 720.00
+      local-ssd: 12000
     c4-standard-2:
       cpu: 2
       ram: 7
@@ -1059,12 +1079,14 @@ compute:
     c4-standard-24-lssd:
       cpu: 24
       ram: 90
+      local-ssd: 1500
     c4-standard-288:
       cpu: 288
       ram: 1080.00
     c4-standard-288-lssd:
       cpu: 288
       ram: 1080.00
+      local-ssd: 18000
     c4-standard-288-metal:
       cpu: 288
       ram: 1080.00
@@ -1074,30 +1096,35 @@ compute:
     c4-standard-32-lssd:
       cpu: 32
       ram: 120.00
+      local-ssd: 1875
     c4-standard-4:
       cpu: 4
       ram: 15
     c4-standard-4-lssd:
       cpu: 4
       ram: 15.00
+      local-ssd: 375
     c4-standard-48:
       cpu: 48
       ram: 180
     c4-standard-48-lssd:
       cpu: 48
       ram: 180.00
+      local-ssd: 3000
     c4-standard-8:
       cpu: 8
       ram: 30
     c4-standard-8-lssd:
       cpu: 8
       ram: 30.00
+      local-ssd: 375
     c4-standard-96:
       cpu: 96
       ram: 360
     c4-standard-96-lssd:
       cpu: 96
       ram: 360.00
+      local-ssd: 6000
 
     # C4A (Google Axion Processor)
     c4a-standard-1:
@@ -1187,46 +1214,60 @@ compute:
     c4a-standard-4-lssd:
       cpu: 4
       ram: 16
+      local-ssd: 375
     c4a-standard-8-lssd:
       cpu: 8
       ram: 32
+      local-ssd: 750
     c4a-standard-16-lssd:
       cpu: 16
       ram: 64.00
+      local-ssd: 1500
     c4a-standard-32-lssd:
       cpu: 32
       ram: 128
+      local-ssd: 2250
     c4a-standard-48-lssd:
       cpu: 48
       ram: 192
+      local-ssd: 3750
     c4a-standard-64-lssd:
       cpu: 64
       ram: 256
+      local-ssd: 5250
     c4a-standard-72-lssd:
       cpu: 72
       ram: 288
+      local-ssd: 6000
 
     c4a-highmem-4-lssd:
       cpu: 4
       ram: 32
+      local-ssd: 375
     c4a-highmem-8-lssd:
       cpu: 8
       ram: 64
+      local-ssd: 750
     c4a-highmem-16-lssd:
       cpu: 16
       ram: 128
+      local-ssd: 1500
     c4a-highmem-32-lssd:
       cpu: 32
       ram: 256
+      local-ssd: 2250
     c4a-highmem-48-lssd:
       cpu: 48
       ram: 384
+      local-ssd: 3750
     c4a-highmem-64-lssd:
       cpu: 64
       ram: 512
+      local-ssd: 5250
     c4a-highmem-72-lssd:
       cpu: 72
       ram: 576
+      local-ssd: 6000
 
     # C4D:
     c4d-highcpu-16:
@@ -1323,51 +1364,67 @@ compute:
     c4d-standard-16-lssd:
       cpu: 16
       ram: 62
+      local-ssd: 375
     c4d-standard-192-lssd:
       cpu: 192
       ram: 744
+      local-ssd: 6000
     c4d-standard-32-lssd:
       cpu: 32
       ram: 124
+      local-ssd: 750
     c4d-standard-384-lssd:
       cpu: 384
       ram: 1488
+      local-ssd: 12000
     c4d-standard-48-lssd:
       cpu: 48
       ram: 186
+      local-ssd: 1500
     c4d-standard-64-lssd:
       cpu: 64
       ram: 248
+      local-ssd: 2250
     c4d-standard-8-lssd:
       cpu: 8
       ram: 31
+      local-ssd: 375
     c4d-standard-96-lssd:
       cpu: 96
       ram: 372
+      local-ssd: 3000
     c4d-highmem-16-lssd:
       cpu: 16
       ram: 126
+      local-ssd: 3000
     c4d-highmem-192-lssd:
       cpu: 192
       ram: 1512
+      local-ssd: 6000
     c4d-highmem-32-lssd:
       cpu: 32
       ram: 252
+      local-ssd: 750
     c4d-highmem-384-lssd:
       cpu: 384
       ram: 3024
+      local-ssd: 12000
     c4d-highmem-48-lssd:
       cpu: 48
       ram: 378
+      local-ssd: 1500
     c4d-highmem-64-lssd:
       cpu: 64
       ram: 504
+      local-ssd: 2250
     c4d-highmem-8-lssd:
       cpu: 8
       ram: 63
+      local-ssd: 2250
     c4d-highmem-96-lssd:
       cpu: 96
       ram: 756
+      local-ssd: 3000
 
     c4d-highcpu-384-metal:
       cpu: 384

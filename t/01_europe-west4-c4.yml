@@ -79,3 +79,7 @@ instances:
   - name: c4-highcpu-8-spot
     type: c4-highcpu-8
     spot: true
+
+# Local SSD
+  - name: c4-standard-8-lssd
+    type: c4-standard-8-lssd

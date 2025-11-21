@@ -463,6 +463,10 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 		elsif ($disk eq 'balanced-replicated') { $mapping = 'gce.storage.ssd.balanced.replicated'; }
 		# Snapshot
 		elsif ($disk eq 'snapshot')            { $mapping = 'gce.storage.snapshot'; }
+		# Local SSD for C4, C4A and C4D
+		elsif ($disk eq 'local-c4')            { $mapping = 'gce.storage.ssd.local.c4'; }
+		elsif ($disk eq 'local-c4a')           { $mapping = 'gce.storage.ssd.local.c4a'; }
+		elsif ($disk eq 'local-c4d')           { $mapping = 'gce.storage.ssd.local.c4d'; }
 		# Unknown storage type
 		else { die "ERROR: No mapping for disk '$disk'!\n"; }
 		print "MAPPING: '$mapping' in region '$region'\n";
@@ -1048,6 +1052,25 @@ foreach my $region (@regions) {
 		my $costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
 		my $costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
 		my $costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
+		# Overwirte local SSD for C4, C4A, C4D
+		if ($type eq 'c4') {
+			$costs_local_ssd_month      = $gcp->{'compute'}->{'storage'}->{'local-c4'}->{'cost'}->{$region}->{'month'}      * $local_ssd || 0;
+			$costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local-c4'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local-c4'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local-c4'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
+		}
+		if ($type eq 'c4a') {
+			$costs_local_ssd_month      = $gcp->{'compute'}->{'storage'}->{'local-c4a'}->{'cost'}->{$region}->{'month'}      * $local_ssd || 0;
+			$costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local-c4a'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local-c4a'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local-c4a'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
+		}
+		if ($type eq 'c4d') {
+			$costs_local_ssd_month      = $gcp->{'compute'}->{'storage'}->{'local-c4d'}->{'cost'}->{$region}->{'month'}      * $local_ssd || 0;
+			$costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local-c4d'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local-c4d'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local-c4d'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
+		}
 		my $costs_local_ssd_hour       = $costs_local_ssd_month      / $hours_month || 0;
 		my $costs_local_ssd_hour_spot  = $costs_local_ssd_month_spot / $hours_month || 0;
 

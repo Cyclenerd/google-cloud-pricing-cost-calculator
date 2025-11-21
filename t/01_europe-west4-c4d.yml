@@ -8,8 +8,6 @@ instances:
     type: c4d-standard-4
   - name: c4d-standard-8
     type: c4d-standard-8
-  - name: c4d-standard-8-lssd
-    type: c4d-standard-8-lssd
   - name: c4d-standard-16
     type: c4d-standard-16
   - name: c4d-standard-32
@@ -77,3 +75,7 @@ instances:
     type: c4d-highcpu-192
   - name: c4d-highcpu-384
     type: c4d-highcpu-384
+
+# Local SSD
+  - name: c4d-standard-8-lssd
+    type: c4d-standard-8-lssd

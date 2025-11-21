@@ -10,8 +10,6 @@ instances:
     type: c4a-standard-4
   - name: c4a-standard-8
     type: c4a-standard-8
-  - name: c4a-standard-8-lssd
-    type: c4a-standard-8-lssd
   - name: c4a-standard-16
     type: c4a-standard-16
   - name: c4a-standard-32
@@ -87,3 +85,6 @@ instances:
   - name: c4a-highcpu-8-spot
     type: c4a-highcpu-8
     spot: true
+# Local SSD
+  - name: c4a-standard-8-lssd
+    type: c4a-standard-8-lssd
