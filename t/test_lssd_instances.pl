@@ -49,9 +49,9 @@ for my $instance_name (keys %{$instances}) {
 	# A set amount of Local SSD disks are added to the C3 VM when you use the -lssd machine type.
 	# This is the only way to include Local SSD storage with a C3 VM.
 	if (
-		$instance_name =~ /-lssd$/ &&
-		$instance_name !~ /^c3d-/ &&
-		$instance_name !~ /^c3-/
+		$instance_name =~ /-lssd/ &&
+		$instance_name !~ /c3d-/ &&
+		$instance_name !~ /c3-/
 	) {
 		push @lssd_instances, {
 		name => $instance_name,

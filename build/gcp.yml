@@ -1011,6 +1011,10 @@ compute:
       cpu: 288
       ram: 2232.00
       local-ssd: 18000
+    c4-highmem-288-lssd-metal:
+      cpu: 288
+      ram: 2232.00
+      local-ssd: 18000
     c4-highmem-288-metal:
       cpu: 288
       ram: 2232.00
@@ -1084,6 +1088,10 @@ compute:
       cpu: 288
       ram: 1080.00
     c4-standard-288-lssd:
+      cpu: 288
+      ram: 1080.00
+      local-ssd: 18000
+    c4-standard-288-lssd-metal:
       cpu: 288
       ram: 1080.00
       local-ssd: 18000
