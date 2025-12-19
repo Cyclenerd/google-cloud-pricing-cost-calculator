@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu Dec 18 04:21:06 2025
-  timestamp: 1766031666
+  generated: Fri Dec 19 12:57:15 2025
+  timestamp: 1766149035
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -1761,7 +1761,7 @@ compute:
           month_spot: 2433.90116
         northamerica-northeast2:
           hour: 11.1618369589041
-          hour_spot: 4.10206849315069
+          hour_spot: 4.10206849315068
           month: 8148.14098
           month_spot: 2994.51
         southamerica-east1:
@@ -1947,7 +1947,7 @@ compute:
           month_spot: 5515.8772
         me-central1:
           hour: 24.6343571873973
-          hour_spot: 8.01623758684931
+          hour_spot: 8.01623758684932
           month: 17983.0807468
           month_spot: 5851.8534384
         me-central2:
@@ -2677,7 +2677,7 @@ compute:
           month_3y: 9916.70684128
           month_spot: 4072.95796
         europe-west8:
-          hour: 25.6621022835069
+          hour: 25.6621022835068
           hour_spot: 4.64951802739726
           month: 18733.33466696
           month_1y: 12994.92373824
@@ -50420,6 +50420,156 @@ compute:
       cpu: 8
       local-ssd: 750
       ram: 64
+    c4a-highmem-96-metal:
+      cost:
+        asia-east1:
+          hour: 6.55167648
+          hour_spot: 2.287104
+          month: 4782.7238304
+          month_1y: 3152.5081536
+          month_3y: 2152.7924256
+          month_spot: 1669.58592
+        asia-northeast1:
+          hour: 7.26631008
+          hour_spot: 2.90237184
+          month: 5304.4063584
+          month_1y: 3496.371792
+          month_3y: 2387.6129856
+          month_spot: 2118.7314432
+        asia-south1:
+          hour: 5.884224
+          hour_spot: 1.822272
+          month: 4295.48352
+          month_1y: 2831.30208
+          month_3y: 1933.78752
+          month_spot: 1330.25856
+        asia-southeast1:
+          hour: 6.9805728
+          hour_spot: 2.787648
+          month: 5095.818144
+          month_1y: 3358.8832416
+          month_3y: 2293.7247072
+          month_spot: 2034.98304
+        australia-southeast2:
+          hour: 7.3536
+          hour_spot: 2.496576
+          month: 5368.128
+          month_1y: 3537.6384
+          month_3y: 2414.9568
+          month_spot: 1822.50048
+        europe-central2:
+          month_1y: 3294.3213408
+          month_3y: 2249.652096
+        europe-north1:
+          hour: 6.23028768
+          hour_spot: 1.920576
+          month: 4548.1100064
+          month_1y: 2997.8633184
+          month_3y: 2047.190976
+          month_spot: 1402.02048
+        europe-north2:
+          hour: 5.941248
+          hour_spot: 2.37312
+          month: 4337.11104
+          month_1y: 2859.05376
+          month_3y: 1952.7792
+          month_spot: 1732.3776
+        europe-southwest1:
+          hour: 6.676896
+          hour_spot: 2.666592
+          month: 4874.13408
+          month_1y: 3212.8176
+          month_3y: 2193.64416
+          month_spot: 1946.61216
+        europe-west1:
+          hour: 6.23028768
+          hour_spot: 2.488896
+          month: 4548.1100064
+          month_1y: 2997.8633184
+          month_3y: 2047.190976
+          month_spot: 1816.89408
+        europe-west2:
+          hour: 6.450048
+          hour_spot: 2.530944
+          month: 4708.53504
+          month_1y: 3103.56288
+          month_3y: 2119.07904
+          month_spot: 1847.58912
+        europe-west3:
+          hour: 6.676896
+          hour_spot: 2.199744
+          month: 4874.13408
+          month_1y: 3212.8176
+          month_3y: 2193.64416
+          month_spot: 1605.81312
+        europe-west4:
+          hour: 5.941248
+          hour_spot: 1.426752
+          month: 4337.11104
+          month_1y: 2859.05376
+          month_3y: 1952.7792
+          month_spot: 1041.52896
+        me-central2:
+          month_1y: 4358.2752
+          month_3y: 2975.5968
+        northamerica-south1:
+          hour: 6.16752
+          hour_spot: 2.093376
+          month: 4502.2896
+          month_1y: 2967.67776
+          month_3y: 2026.43328
+          month_spot: 1528.16448
+        us-central1:
+          hour: 5.65824
+          hour_spot: 1.766592
+          month: 4130.5152
+          month_1y: 2722.608
+          month_3y: 1859.2224
+          month_spot: 1289.61216
+        us-east1:
+          hour: 5.65824
+          hour_spot: 1.766592
+          month: 4130.5152
+          month_1y: 2722.608
+          month_3y: 1859.2224
+          month_spot: 1289.61216
+        us-east4:
+          hour: 5.65824
+          hour_spot: 1.684224
+          month: 4130.5152
+          month_1y: 2722.608
+          month_3y: 1859.2224
+          month_spot: 1229.48352
+        us-east5:
+          hour: 5.65824
+          hour_spot: 2.25984
+          month: 4130.5152
+          month_1y: 2722.608
+          month_3y: 1731.1497984
+          month_spot: 1649.6832
+        us-west1:
+          hour: 5.65824
+          hour_spot: 1.766592
+          month: 4130.5152
+          month_1y: 2722.608
+          month_3y: 1859.2224
+          month_spot: 1289.61216
+        us-west2:
+          hour: 6.80176992
+          hour_spot: 2.71655328
+          month: 4965.2920416
+          month_1y: 3272.8467264
+          month_3y: 2234.9724384
+          month_spot: 1983.0838944
+        us-west4:
+          hour: 6.3728736
+          hour_spot: 2.5452576
+          month: 4652.197728
+          month_1y: 3066.4716384
+          month_3y: 2094.0401568
+          month_spot: 1858.038048
+      cpu: 96
+      ram: 768
     c4a-standard-1:
       cost:
         asia-east1:
@@ -102202,6 +102352,78 @@ compute:
           month_spot: 1246.743056
       cpu: 80
       ram: 320
+    n4a-highcpu-1:
+      cpu: 1
+      ram: 2
+    n4a-highcpu-16:
+      cpu: 16
+      ram: 32
+    n4a-highcpu-2:
+      cpu: 2
+      ram: 4
+    n4a-highcpu-32:
+      cpu: 32
+      ram: 64
+    n4a-highcpu-4:
+      cpu: 4
+      ram: 8
+    n4a-highcpu-48:
+      cpu: 48
+      ram: 96
+    n4a-highcpu-64:
+      cpu: 64
+      ram: 128
+    n4a-highcpu-8:
+      cpu: 8
+      ram: 16
+    n4a-highmem-1:
+      cpu: 1
+      ram: 8
+    n4a-highmem-16:
+      cpu: 16
+      ram: 128
+    n4a-highmem-2:
+      cpu: 2
+      ram: 16
+    n4a-highmem-32:
+      cpu: 32
+      ram: 256
+    n4a-highmem-4:
+      cpu: 4
+      ram: 32
+    n4a-highmem-48:
+      cpu: 48
+      ram: 384
+    n4a-highmem-64:
+      cpu: 64
+      ram: 512
+    n4a-highmem-8:
+      cpu: 8
+      ram: 64
+    n4a-standard-1:
+      cpu: 1
+      ram: 4
+    n4a-standard-16:
+      cpu: 16
+      ram: 64
+    n4a-standard-2:
+      cpu: 2
+      ram: 8
+    n4a-standard-32:
+      cpu: 32
+      ram: 128
+    n4a-standard-4:
+      cpu: 4
+      ram: 16
+    n4a-standard-48:
+      cpu: 48
+      ram: 192
+    n4a-standard-64:
+      cpu: 64
+      ram: 256
+    n4a-standard-8:
+      cpu: 8
+      ram: 32
     n4d-highcpu-16:
       cost:
         africa-south1:
@@ -119149,6 +119371,25 @@ compute:
         windows:
           hour: 0.368
           month: 268.64
+    c4a-highmem-96-metal:
+      cost:
+        rhel:
+          hour: 1.0368
+          month: 756.864
+        rhel-sap:
+          hour: 1.56
+          month: 1138.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 4.416
+          month: 3223.68
     c4a-standard-1:
       cost:
         rhel:
@@ -123420,6 +123661,462 @@ compute:
         windows:
           hour: 3.68
           month: 2686.4
+    n4a-highcpu-1:
+      cost:
+        rhel:
+          hour: 0.0144
+          month: 10.512
+        rhel-sap:
+          hour: 0.0225
+          month: 16.425
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.046
+          month: 33.58
+    n4a-highcpu-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    n4a-highcpu-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    n4a-highcpu-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    n4a-highcpu-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    n4a-highcpu-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    n4a-highcpu-64:
+      cost:
+        rhel:
+          hour: 0.6912
+          month: 504.576
+        rhel-sap:
+          hour: 1.04
+          month: 759.2
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.944
+          month: 2149.12
+    n4a-highcpu-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    n4a-highmem-1:
+      cost:
+        rhel:
+          hour: 0.0144
+          month: 10.512
+        rhel-sap:
+          hour: 0.0225
+          month: 16.425
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.046
+          month: 33.58
+    n4a-highmem-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    n4a-highmem-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    n4a-highmem-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    n4a-highmem-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    n4a-highmem-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    n4a-highmem-64:
+      cost:
+        rhel:
+          hour: 0.6912
+          month: 504.576
+        rhel-sap:
+          hour: 1.04
+          month: 759.2
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.944
+          month: 2149.12
+    n4a-highmem-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
+    n4a-standard-1:
+      cost:
+        rhel:
+          hour: 0.0144
+          month: 10.512
+        rhel-sap:
+          hour: 0.0225
+          month: 16.425
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.046
+          month: 33.58
+    n4a-standard-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.736
+          month: 537.28
+    n4a-standard-2:
+      cost:
+        rhel:
+          hour: 0.0288
+          month: 21.024
+        rhel-sap:
+          hour: 0.045
+          month: 32.85
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.17
+          month: 124.1
+          month_1y: 50.005
+          month_3y: 44.7198
+        windows:
+          hour: 0.092
+          month: 67.16
+    n4a-standard-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 1.472
+          month: 1074.56
+    n4a-standard-4:
+      cost:
+        rhel:
+          hour: 0.0576
+          month: 42.048
+        rhel-sap:
+          hour: 0.09
+          month: 65.7
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.34
+          month: 248.2
+          month_1y: 100.01
+          month_3y: 89.425
+        windows:
+          hour: 0.184
+          month: 134.32
+    n4a-standard-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.208
+          month: 1611.84
+    n4a-standard-64:
+      cost:
+        rhel:
+          hour: 0.6912
+          month: 504.576
+        rhel-sap:
+          hour: 1.04
+          month: 759.2
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 2.944
+          month: 2149.12
+    n4a-standard-8:
+      cost:
+        rhel:
+          hour: 0.1152
+          month: 84.096
+        rhel-sap:
+          hour: 0.18
+          month: 131.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+        windows:
+          hour: 0.368
+          month: 268.64
     n4d-highcpu-16:
       cost:
         rhel:

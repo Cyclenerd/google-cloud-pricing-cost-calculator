@@ -505,6 +505,79 @@ compute:
       cpu: 80
       ram: 160
 
+    n4a-highcpu-1:
+      cpu: 1
+      ram: 2
+    n4a-highcpu-16:
+      cpu: 16
+      ram: 32
+    n4a-highcpu-2:
+      cpu: 2
+      ram: 4
+    n4a-highcpu-32:
+      cpu: 32
+      ram: 64
+    n4a-highcpu-4:
+      cpu: 4
+      ram: 8
+    n4a-highcpu-48:
+      cpu: 48
+      ram: 96
+    n4a-highcpu-64:
+      cpu: 64
+      ram: 128
+    n4a-highcpu-8:
+      cpu: 8
+      ram: 16
+    n4a-highmem-1:
+      cpu: 1
+      ram: 8
+    n4a-highmem-16:
+      cpu: 16
+      ram: 128
+    n4a-highmem-2:
+      cpu: 2
+      ram: 16
+    n4a-highmem-32:
+      cpu: 32
+      ram: 256
+    n4a-highmem-4:
+      cpu: 4
+      ram: 32
+    n4a-highmem-48:
+      cpu: 48
+      ram: 384
+    n4a-highmem-64:
+      cpu: 64
+      ram: 512
+    n4a-highmem-8:
+      cpu: 8
+      ram: 64
+    n4a-standard-1:
+      cpu: 1
+      ram: 4
+    n4a-standard-16:
+      cpu: 16
+      ram: 64
+    n4a-standard-2:
+      cpu: 2
+      ram: 8
+    n4a-standard-32:
+      cpu: 32
+      ram: 128
+    n4a-standard-4:
+      cpu: 4
+      ram: 16
+    n4a-standard-48:
+      cpu: 48
+      ram: 192
+    n4a-standard-64:
+      cpu: 64
+      ram: 256
+    n4a-standard-8:
+      cpu: 8
+      ram: 32
+
     n4d-highcpu-16:
       cpu: 16
       ram: 32
@@ -1300,6 +1373,9 @@ compute:
     c4a-highmem-72:
       cpu: 72
       ram: 576
+    c4a-highmem-96-metal:
+      cpu: 96
+      ram: 768
 
     c4a-standard-4-lssd:
       cpu: 4

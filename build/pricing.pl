@@ -801,6 +801,17 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.n4.3y'}          = $ram;
 			$mappings_spot{'gce.compute.ram.n4.custom.spot'} = $ram;
 		}
+		# N4A Predefined
+		elsif ($type eq 'n4a') {
+			$mappings{     'gce.compute.cpu.n4a'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.n4a.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.n4a.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.n4a.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.n4a'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.n4a.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.n4a.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.n4a.spot'} = $ram;
+		}
 		# N4D Predefined
 		elsif ($type eq 'n4d') {
 			$mappings{     'gce.compute.cpu.n4d'}      = $cpu;
