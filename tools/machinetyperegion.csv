@@ -1873,6 +1873,7 @@ c4-highcpu-144;144;False;288.00;;asia-northeast3
 c4-highcpu-144;144;False;288.00;;asia-south1
 c4-highcpu-144;144;False;288.00;;asia-south2
 c4-highcpu-144;144;False;288.00;;asia-southeast1
+c4-highcpu-144;144;False;288.00;;australia-southeast1
 c4-highcpu-144;144;False;288.00;;australia-southeast2
 c4-highcpu-144;144;False;288.00;;europe-north2
 c4-highcpu-144;144;False;288.00;;europe-southwest1
@@ -3103,6 +3104,7 @@ c4-standard-16;16;False;60.00;;europe-west9
 c4-standard-16;16;False;60.00;;me-central1
 c4-standard-16;16;False;60.00;;me-central2
 c4-standard-16;16;False;60.00;;me-west1
+c4-standard-16;16;False;60.00;;northamerica-northeast1
 c4-standard-16;16;False;60.00;;northamerica-northeast2
 c4-standard-16;16;False;60.00;;northamerica-south1
 c4-standard-16;16;False;60.00;;southamerica-east1
@@ -3240,6 +3242,7 @@ c4-standard-24;24;False;90.00;;europe-west9
 c4-standard-24;24;False;90.00;;me-central1
 c4-standard-24;24;False;90.00;;me-central2
 c4-standard-24;24;False;90.00;;me-west1
+c4-standard-24;24;False;90.00;;northamerica-northeast1
 c4-standard-24;24;False;90.00;;northamerica-northeast2
 c4-standard-24;24;False;90.00;;northamerica-south1
 c4-standard-24;24;False;90.00;;southamerica-east1
@@ -3357,6 +3360,7 @@ c4-standard-2;2;False;7.00;;europe-west9
 c4-standard-2;2;False;7.00;;me-central1
 c4-standard-2;2;False;7.00;;me-central2
 c4-standard-2;2;False;7.00;;me-west1
+c4-standard-2;2;False;7.00;;northamerica-northeast1
 c4-standard-2;2;False;7.00;;northamerica-northeast2
 c4-standard-2;2;False;7.00;;northamerica-south1
 c4-standard-2;2;False;7.00;;southamerica-east1
@@ -3426,6 +3430,7 @@ c4-standard-32;32;False;120.00;;europe-west9
 c4-standard-32;32;False;120.00;;me-central1
 c4-standard-32;32;False;120.00;;me-central2
 c4-standard-32;32;False;120.00;;me-west1
+c4-standard-32;32;False;120.00;;northamerica-northeast1
 c4-standard-32;32;False;120.00;;northamerica-northeast2
 c4-standard-32;32;False;120.00;;northamerica-south1
 c4-standard-32;32;False;120.00;;southamerica-east1
@@ -3525,6 +3530,7 @@ c4-standard-48;48;False;180.00;;europe-west9
 c4-standard-48;48;False;180.00;;me-central1
 c4-standard-48;48;False;180.00;;me-central2
 c4-standard-48;48;False;180.00;;me-west1
+c4-standard-48;48;False;180.00;;northamerica-northeast1
 c4-standard-48;48;False;180.00;;northamerica-northeast2
 c4-standard-48;48;False;180.00;;northamerica-south1
 c4-standard-48;48;False;180.00;;southamerica-east1
@@ -3564,6 +3570,7 @@ c4-standard-4;4;False;15.00;;europe-west9
 c4-standard-4;4;False;15.00;;me-central1
 c4-standard-4;4;False;15.00;;me-central2
 c4-standard-4;4;False;15.00;;me-west1
+c4-standard-4;4;False;15.00;;northamerica-northeast1
 c4-standard-4;4;False;15.00;;northamerica-northeast2
 c4-standard-4;4;False;15.00;;northamerica-south1
 c4-standard-4;4;False;15.00;;southamerica-east1
@@ -3633,6 +3640,7 @@ c4-standard-8;8;False;30.00;;europe-west9
 c4-standard-8;8;False;30.00;;me-central1
 c4-standard-8;8;False;30.00;;me-central2
 c4-standard-8;8;False;30.00;;me-west1
+c4-standard-8;8;False;30.00;;northamerica-northeast1
 c4-standard-8;8;False;30.00;;northamerica-northeast2
 c4-standard-8;8;False;30.00;;northamerica-south1
 c4-standard-8;8;False;30.00;;southamerica-east1
@@ -6015,6 +6023,7 @@ g4-standard-384;384;False;1440.00;;us-east1
 g4-standard-384;384;False;1440.00;;us-east4
 g4-standard-384;384;False;1440.00;;us-east5
 g4-standard-384;384;False;1440.00;;us-south1
+g4-standard-384;384;False;1440.00;;us-west1
 g4-standard-384;384;False;1440.00;;us-west3
 g4-standard-384;384;False;1440.00;;us-west4
 g4-standard-48;48;False;180.00;;asia-east1
@@ -6047,6 +6056,7 @@ h3-standard-88;88;False;352.00;;us-central1
 h4d-highmem-192-lssd;192;False;1488.00;;asia-southeast1
 h4d-highmem-192-lssd;192;False;1488.00;;europe-west4
 h4d-highmem-192-lssd;192;False;1488.00;;us-central1
+h4d-highmem-192-lssd;192;False;1488.00;;us-west4
 h4d-highmem-192;192;False;1488.00;;asia-southeast1
 h4d-highmem-192;192;False;1488.00;;europe-west4
 h4d-highmem-192;192;False;1488.00;;us-central1
@@ -6054,6 +6064,7 @@ h4d-highmem-192;192;False;1488.00;;us-west4
 h4d-standard-192;192;False;720.00;;asia-southeast1
 h4d-standard-192;192;False;720.00;;europe-west4
 h4d-standard-192;192;False;720.00;;us-central1
+h4d-standard-192;192;False;720.00;;us-west4
 m1-megamem-96;96;False;1433.60;;asia-east1
 m1-megamem-96;96;False;1433.60;;asia-northeast1
 m1-megamem-96;96;False;1433.60;;asia-south1
