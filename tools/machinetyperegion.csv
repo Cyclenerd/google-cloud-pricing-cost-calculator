@@ -2018,6 +2018,7 @@ c4-highcpu-288;288;False;576.00;;asia-northeast3
 c4-highcpu-288;288;False;576.00;;asia-south1
 c4-highcpu-288;288;False;576.00;;asia-south2
 c4-highcpu-288;288;False;576.00;;asia-southeast1
+c4-highcpu-288;288;False;576.00;;australia-southeast1
 c4-highcpu-288;288;False;576.00;;australia-southeast2
 c4-highcpu-288;288;False;576.00;;europe-north2
 c4-highcpu-288;288;False;576.00;;europe-southwest1
@@ -2306,6 +2307,7 @@ c4-highmem-144;144;False;1116.00;;asia-northeast3
 c4-highmem-144;144;False;1116.00;;asia-south1
 c4-highmem-144;144;False;1116.00;;asia-south2
 c4-highmem-144;144;False;1116.00;;asia-southeast1
+c4-highmem-144;144;False;1116.00;;australia-southeast1
 c4-highmem-144;144;False;1116.00;;australia-southeast2
 c4-highmem-144;144;False;1116.00;;europe-north2
 c4-highmem-144;144;False;1116.00;;europe-southwest1
@@ -2436,6 +2438,7 @@ c4-highmem-192;192;False;1488.00;;asia-south1
 c4-highmem-192;192;False;1488.00;;asia-south2
 c4-highmem-192;192;False;1488.00;;asia-southeast1
 c4-highmem-192;192;False;1488.00;;asia-southeast2
+c4-highmem-192;192;False;1488.00;;australia-southeast1
 c4-highmem-192;192;False;1488.00;;australia-southeast2
 c4-highmem-192;192;False;1488.00;;europe-central2
 c4-highmem-192;192;False;1488.00;;europe-north1
@@ -2592,6 +2595,7 @@ c4-highmem-288;288;False;2232.00;;asia-northeast3
 c4-highmem-288;288;False;2232.00;;asia-south1
 c4-highmem-288;288;False;2232.00;;asia-south2
 c4-highmem-288;288;False;2232.00;;asia-southeast1
+c4-highmem-288;288;False;2232.00;;australia-southeast1
 c4-highmem-288;288;False;2232.00;;australia-southeast2
 c4-highmem-288;288;False;2232.00;;europe-north2
 c4-highmem-288;288;False;2232.00;;europe-southwest1
@@ -2790,6 +2794,7 @@ c4-highmem-48;48;False;372.00;;asia-south1
 c4-highmem-48;48;False;372.00;;asia-south2
 c4-highmem-48;48;False;372.00;;asia-southeast1
 c4-highmem-48;48;False;372.00;;asia-southeast2
+c4-highmem-48;48;False;372.00;;australia-southeast1
 c4-highmem-48;48;False;372.00;;australia-southeast2
 c4-highmem-48;48;False;372.00;;europe-central2
 c4-highmem-48;48;False;372.00;;europe-north1
@@ -2963,6 +2968,7 @@ c4-highmem-96;96;False;744.00;;asia-south1
 c4-highmem-96;96;False;744.00;;asia-south2
 c4-highmem-96;96;False;744.00;;asia-southeast1
 c4-highmem-96;96;False;744.00;;asia-southeast2
+c4-highmem-96;96;False;744.00;;australia-southeast1
 c4-highmem-96;96;False;744.00;;australia-southeast2
 c4-highmem-96;96;False;744.00;;europe-central2
 c4-highmem-96;96;False;744.00;;europe-north1
@@ -3028,6 +3034,7 @@ c4-standard-144;144;False;540.00;;asia-northeast3
 c4-standard-144;144;False;540.00;;asia-south1
 c4-standard-144;144;False;540.00;;asia-south2
 c4-standard-144;144;False;540.00;;asia-southeast1
+c4-standard-144;144;False;540.00;;australia-southeast1
 c4-standard-144;144;False;540.00;;australia-southeast2
 c4-standard-144;144;False;540.00;;europe-north2
 c4-standard-144;144;False;540.00;;europe-southwest1
@@ -3160,6 +3167,7 @@ c4-standard-192;192;False;720.00;;asia-south1
 c4-standard-192;192;False;720.00;;asia-south2
 c4-standard-192;192;False;720.00;;asia-southeast1
 c4-standard-192;192;False;720.00;;asia-southeast2
+c4-standard-192;192;False;720.00;;australia-southeast1
 c4-standard-192;192;False;720.00;;australia-southeast2
 c4-standard-192;192;False;720.00;;europe-central2
 c4-standard-192;192;False;720.00;;europe-north1
@@ -3314,6 +3322,7 @@ c4-standard-288;288;False;1080.00;;asia-northeast3
 c4-standard-288;288;False;1080.00;;asia-south1
 c4-standard-288;288;False;1080.00;;asia-south2
 c4-standard-288;288;False;1080.00;;asia-southeast1
+c4-standard-288;288;False;1080.00;;australia-southeast1
 c4-standard-288;288;False;1080.00;;australia-southeast2
 c4-standard-288;288;False;1080.00;;europe-north2
 c4-standard-288;288;False;1080.00;;europe-southwest1
@@ -3696,6 +3705,7 @@ c4-standard-96;96;False;360.00;;asia-south1
 c4-standard-96;96;False;360.00;;asia-south2
 c4-standard-96;96;False;360.00;;asia-southeast1
 c4-standard-96;96;False;360.00;;asia-southeast2
+c4-standard-96;96;False;360.00;;australia-southeast1
 c4-standard-96;96;False;360.00;;australia-southeast2
 c4-standard-96;96;False;360.00;;europe-central2
 c4-standard-96;96;False;360.00;;europe-north1
