@@ -2,5 +2,5 @@ region: africa-south1
 project: africa-south1
 
 instances:
-  - name: n2-standard-8
-    type: n2-standard-8
+  - name: n4-standard-8
+    type: n4-standard-8

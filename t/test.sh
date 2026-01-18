@@ -645,8 +645,11 @@ MY_CHECKS=(
 	'us-west2,vm,n2-standard-8,n2-standard-8,272'           # Google Cloud Pricing Calculator: $272.57
 	'us-west3,vm,n2-standard-8,n2-standard-8,272'           # Google Cloud Pricing Calculator: $272.57
 	'us-west4,vm,n2-standard-8,n2-standard-8,255'           # Google Cloud Pricing Calculator: $279.52, Price List: $255.5 (2022-03-29)
-	'africa-south1,vm,n2-standard-8,n2-standard-8,296'
 	'northamerica-south1,vm,e2-standard-8,e2-standard-8,213'
+	# The list price for n2-standard-8 in africa-south is much higher than calculated with verified SKUs.
+	# Is there an error in the Google price list?
+	# n4-standard-8 is correct. Change to n4-standard-8 therefore.
+	'africa-south1,vm,n4-standard-8,n4-standard-8,291'
 )
 
 MY_TESTS=0
