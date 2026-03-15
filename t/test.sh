@@ -651,6 +651,8 @@ MY_CHECKS=(
 	# Is there an error in the Google price list?
 	# n4-standard-8 is correct. Change to n4-standard-8 therefore.
 	'africa-south1,vm,n4-standard-8,n4-standard-8,291'
+	'asia-southeast3,vm,c4-standard-8,c4-standard-8,303'
+
 )
 
 MY_TESTS=0

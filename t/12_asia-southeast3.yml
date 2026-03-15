@@ -1,0 +1,6 @@
+region: asia-southeast3
+project: asia-southeast3
+
+instances:
+  - name: c4-standard-8
+    type: c4-standard-8
