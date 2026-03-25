@@ -383,6 +383,7 @@ MY_CHECKS=(
 	'm4-megamem-56,3681'
 	'm4-megamem-112,7362'
 	'm4-megamem-224,14725'
+	'm4-ultramem-224,34505'
 	'm4-ultramem-56-1y,3841'
 	'm4-ultramem-56-3y,1953'
 	'm4-ultramem-112-1y,7682'
@@ -393,6 +394,8 @@ MY_CHECKS=(
 	'm4-megamem-112-3y,2208'
 	'm4-megamem-224-1y,8688'
 	'm4-megamem-224-3y,4417'
+	'm4-ultramem-224-1y,20358'
+	'm4-ultramem-224-3y,10351'
 	'm4-ultramem-56-spot,'
 
 # 01_europe-west4-n1.yml

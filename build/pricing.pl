@@ -995,6 +995,17 @@ foreach my $region (@regions) {
 			$mappings_spot{'gce.compute.ram.m3.spot'} = $ram;
 			# M3 machine types do not offer sustained use discounts.
 		}
+		# m4-ultramem-224; https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator/issues/440
+		elsif ($machine eq 'm4-ultramem-224') {
+			$mappings{     'gce.compute.cpu.m4-ultramem-224'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.m4-ultramem-224.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.m4-ultramem-224.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.m4-ultramem-224.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.m4-ultramem-224'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.m4-ultramem-224.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.m4-ultramem-224.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.m4-ultramem-224.spot'} = $ram;
+		}
 		# M4
 		elsif ($type eq 'm4') {
 			$mappings{     'gce.compute.cpu.m4'}      = $cpu;
@@ -1005,7 +1016,7 @@ foreach my $region (@regions) {
 			$mappings_1y{  'gce.compute.ram.m4.1y'}   = $ram;
 			$mappings_3y{  'gce.compute.ram.m4.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.m4.spot'} = $ram;
-			# M3 machine types do not offer sustained use discounts.
+			# M4 machine types do not offer sustained use discounts.
 		}
 		# A2
 		elsif ($type eq 'a2') {

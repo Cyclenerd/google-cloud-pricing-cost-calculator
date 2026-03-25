@@ -56,6 +56,13 @@ instances:
   - name: m4-megamem-224-3y
     type: m4-megamem-224
     commitment: 3
+# m4-ultramem-224
+  - name: m4-ultramem-224-1y
+    type: m4-ultramem-224
+    commitment: 1
+  - name: m4-ultramem-224-3y
+    type: m4-ultramem-224
+    commitment: 3
 # Spot VM
   - name: m4-ultramem-56-spot
     type: m4-ultramem-56
