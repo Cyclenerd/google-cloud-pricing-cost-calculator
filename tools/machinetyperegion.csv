@@ -6569,8 +6569,6 @@ g2-standard-96;96;False;384.00;;us-east1
 g2-standard-96;96;False;384.00;;us-east4
 g2-standard-96;96;False;384.00;;us-west1
 g2-standard-96;96;False;384.00;;us-west4
-g4-standard-12;12;False;45.00;;asia-south1
-g4-standard-12;12;False;45.00;;europe-west2
 g4-standard-192;192;False;720.00;;asia-east1
 g4-standard-192;192;False;720.00;;asia-south1
 g4-standard-192;192;False;720.00;;asia-south2
@@ -6590,8 +6588,6 @@ g4-standard-192;192;False;720.00;;us-south1
 g4-standard-192;192;False;720.00;;us-west1
 g4-standard-192;192;False;720.00;;us-west3
 g4-standard-192;192;False;720.00;;us-west4
-g4-standard-24;24;False;90.00;;asia-south1
-g4-standard-24;24;False;90.00;;europe-west2
 g4-standard-384;384;False;1440.00;;asia-east1
 g4-standard-384;384;False;1440.00;;asia-south1
 g4-standard-384;384;False;1440.00;;asia-south2
@@ -6629,8 +6625,6 @@ g4-standard-48;48;False;180.00;;us-south1
 g4-standard-48;48;False;180.00;;us-west1
 g4-standard-48;48;False;180.00;;us-west3
 g4-standard-48;48;False;180.00;;us-west4
-g4-standard-6;6;False;22.00;;asia-south1
-g4-standard-6;6;False;22.00;;europe-west2
 g4-standard-96;96;False;360.00;;asia-east1
 g4-standard-96;96;False;360.00;;asia-south1
 g4-standard-96;96;False;360.00;;asia-south2
@@ -12256,6 +12250,7 @@ t2d-standard-8;8;False;32.00;;us-west1
 t2d-standard-8;8;False;32.00;;us-west2
 t2d-standard-8;8;False;32.00;;us-west3
 t2d-standard-8;8;False;32.00;;us-west4
+tpu7x-standard-1t;56;False;240.00;;europe-west2
 tpu7x-standard-4t;224;False;960.00;;europe-west2
 tpu7x-standard-4t;224;False;960.00;;us-central1
 x4-1440-24t-metal;1440;False;24576.00;;asia-south1
