@@ -3,7 +3,7 @@ module skus
 go 1.25.0
 
 require (
-	cloud.google.com/go/billing v1.23.0
+	cloud.google.com/go/billing v1.24.0
 	github.com/mattn/go-sqlite3 v1.14.42
 	golang.org/x/oauth2 v0.36.0
 	google.golang.org/api v0.276.0
