@@ -1086,6 +1086,17 @@ foreach my $region (@regions) {
 				$mappings_spot{'gce.compute.gpu.l4.spot'} = $l4;
 			}
 		}
+		# G4
+		elsif ($type eq 'g4') {
+			$mappings{     'gce.compute.cpu.g4'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.g4.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.g4.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.g4.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.g4'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.g4.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.g4.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.g4.spot'} = $ram;
+		}
 		# Unknown family
 		else {
 			die "ERROR: No mapping for machine family '$type'!"
