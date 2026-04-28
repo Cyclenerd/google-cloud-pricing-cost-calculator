@@ -637,6 +637,7 @@ foreach my $region (@regions) {
 		my $h100_80gb      = $gcp->{'compute'}->{'instance'}->{$machine}->{'h100-80gb'}      || '0';
 		my $h100_80gb_mega = $gcp->{'compute'}->{'instance'}->{$machine}->{'h100-80gb-mega'} || '0';
 		my $l4             = $gcp->{'compute'}->{'instance'}->{$machine}->{'l4'}             || '0';
+		my $rtx6000        = $gcp->{'compute'}->{'instance'}->{$machine}->{'rtx6000'}        || '0';
 
 		print "Machine: $machine\n";
 		print "Type: $type\n";
@@ -1096,6 +1097,13 @@ foreach my $region (@regions) {
 			$mappings_1y{  'gce.compute.ram.g4.1y'}   = $ram;
 			$mappings_3y{  'gce.compute.ram.g4.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.g4.spot'} = $ram;
+			# NVIDIA RTX PRO 6000 GPUs
+			if ($rtx6000) {
+				$mappings{     'gce.compute.gpu.rtx6000'}      = $rtx6000;
+				$mappings_1y{  'gce.compute.gpu.rtx6000.1y'}   = $rtx6000;
+				$mappings_3y{  'gce.compute.gpu.rtx6000.3y'}   = $rtx6000;
+				$mappings_spot{'gce.compute.gpu.rtx6000.spot'} = $rtx6000;
+			}
 		}
 		# Unknown family
 		else {
