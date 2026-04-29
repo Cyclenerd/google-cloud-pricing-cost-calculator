@@ -1,0 +1,27 @@
+region: europe-west4
+project: gcp-gce-g4
+
+# Accelerator-optimized machine type family
+# https://cloud.google.com/compute/vm-instance-pricing#accelerator-optimized
+
+instances:
+# G2 standard machine types (total cost)
+  - name: g4-standard-48
+    type: g4-standard-48
+  - name: g4-standard-96
+    type: g4-standard-96
+  - name: g4-standard-192
+    type: g4-standard-192
+  - name: g4-standard-384
+    type: g4-standard-384
+# Commitment (CUD)
+  - name: g4-standard-384-1y
+    type: g4-standard-384
+    commitment: 1
+  - name: g4-standard-384-3y
+    type: g4-standard-384
+    commitment: 3
+# Spot VM
+  - name: g4-standard-384-spot
+    type: g4-standard-384
+    spot: true

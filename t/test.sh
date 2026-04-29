@@ -326,6 +326,17 @@ MY_CHECKS=(
 	'gcp-gce-g2,europe-west4,vm,g2-standard-8,g2-standard-8-3y,294'
 	'g2-standard-8-spot,'
 
+# 01_europe-west4-g4.yml
+	# G4 machine types
+	'g4-standard-48,3613'
+	'g4-standard-96,7226'
+	'g4-standard-192,14453'
+	'g4-standard-384,28907'
+	# G2 Commitment (CUD)
+	'gcp-gce-g4,europe-west4,vm,g4-standard-384,g4-standard-384-1y,19946'
+	'gcp-gce-g4,europe-west4,vm,g4-standard-384,g4-standard-384-3y,12715'
+	'g4-standard-384-spot,'
+
 # 01_europe-west4-m1.yml
 	# M1 machine types
 	'm1-ultramem-40,3381' # Google Cloud Pricing Calculator: $3381.02, Price List: $3380.776
