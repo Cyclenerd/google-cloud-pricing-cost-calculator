@@ -637,6 +637,7 @@ foreach my $region (@regions) {
 		my $h100_80gb      = $gcp->{'compute'}->{'instance'}->{$machine}->{'h100-80gb'}      || '0';
 		my $h100_80gb_mega = $gcp->{'compute'}->{'instance'}->{$machine}->{'h100-80gb-mega'} || '0';
 		my $l4             = $gcp->{'compute'}->{'instance'}->{$machine}->{'l4'}             || '0';
+		my $rtx6000        = $gcp->{'compute'}->{'instance'}->{$machine}->{'rtx6000'}        || '0';
 
 		print "Machine: $machine\n";
 		print "Type: $type\n";
@@ -1084,6 +1085,24 @@ foreach my $region (@regions) {
 				$mappings_1y{  'gce.compute.gpu.l4.1y'}   = $l4;
 				$mappings_3y{  'gce.compute.gpu.l4.3y'}   = $l4;
 				$mappings_spot{'gce.compute.gpu.l4.spot'} = $l4;
+			}
+		}
+		# G4
+		elsif ($type eq 'g4') {
+			$mappings{     'gce.compute.cpu.g4'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.g4.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.g4.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.g4.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.g4'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.g4.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.g4.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.g4.spot'} = $ram;
+			# NVIDIA RTX PRO 6000 GPUs
+			if ($rtx6000) {
+				$mappings{     'gce.compute.gpu.rtx6000'}      = $rtx6000;
+				$mappings_1y{  'gce.compute.gpu.rtx6000.1y'}   = $rtx6000;
+				$mappings_3y{  'gce.compute.gpu.rtx6000.3y'}   = $rtx6000;
+				$mappings_spot{'gce.compute.gpu.rtx6000.spot'} = $rtx6000;
 			}
 		}
 		# Unknown family

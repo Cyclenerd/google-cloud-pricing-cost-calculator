@@ -1795,6 +1795,36 @@ compute:
       ram: 384
       l4: 8
 
+    # G4:
+    g4-standard-6:
+      cpu: 6
+      ram: 22
+      rtx6000: 0.125
+    g4-standard-12:
+      cpu: 12
+      ram: 45
+      rtx6000: 0.25
+    g4-standard-24:
+      cpu: 24
+      ram: 90
+      rtx6000: 0.5
+    g4-standard-48:
+      cpu: 48
+      ram: 180
+      rtx6000: 1
+    g4-standard-96:
+      cpu: 96
+      ram: 360
+      rtx6000: 2
+    g4-standard-192:
+      cpu: 192
+      ram: 720
+      rtx6000: 4
+    g4-standard-384:
+      cpu: 384
+      ram: 1440
+      rtx6000: 8
+
     # H3:
     h3-standard-88:
       cpu: 88
