@@ -87,7 +87,7 @@ MY_CHECKS=(
 	# C3 machine types
 	'c3-standard-4,154'
 	'c3-standard-8,309'
-	'c3-standard-8-lssd,309'
+	'c3-standard-8-lssd,375'
 	'c3-standard-22,849'
 	'c3-standard-44,1699'
 	'c3-standard-88,3399'
@@ -122,6 +122,7 @@ MY_CHECKS=(
 	# C3D machine types
 	'c3d-standard-4,139'
 	'c3d-standard-8,278'
+	'c3d-standard-8-lssd,311'
 	'c3d-standard-16,556'
 	'c3d-standard-30,1043'
 	'c3d-standard-60,2087'

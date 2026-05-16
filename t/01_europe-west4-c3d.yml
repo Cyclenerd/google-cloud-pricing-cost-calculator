@@ -7,6 +7,8 @@ instances:
     type: c3d-standard-4
   - name: c3d-standard-8
     type: c3d-standard-8
+  - name: c3d-standard-8-lssd
+    type: c3d-standard-8-lssd
   - name: c3d-standard-16
     type: c3d-standard-16
   - name: c3d-standard-30
