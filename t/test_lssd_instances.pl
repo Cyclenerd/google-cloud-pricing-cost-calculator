@@ -37,22 +37,12 @@ my @lssd_instances;
 my $instances = $data->{compute}{instance};
 
 for my $instance_name (keys %{$instances}) {
-	# C3D
-	# https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3d_disks
-	# To use Local SSD with C3D, create your VM using the -lssd variant of the C3D machine types.
-	# Selecting this machine type creates a VM of the specified size with Local SSD partitions attached.
-	# You must use a machine type that ends in -lssd to use Local SSD with your C3D VM;
-	# you can't attach Local SSD volumes separately.
-
-	# C3
-	# https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3_disks
-	# A set amount of Local SSD disks are added to the C3 VM when you use the -lssd machine type.
-	# This is the only way to include Local SSD storage with a C3 VM.
-	if (
-		$instance_name =~ /-lssd/ &&
-		$instance_name !~ /c3d-/ &&
-		$instance_name !~ /c3-/
-	) {
+	# All machine types that end in -lssd bundle Local SSD partitions (375 GiB each).
+	# - C3:  https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3_disks
+	# - C3D: https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3d_disks
+	# - C4 / C4A / C4D: same page, #c4_disks / #c4a_disks / #c4d_disks
+	# - Z3:  https://docs.cloud.google.com/compute/docs/storage-optimized-machines
+	if ($instance_name =~ /-lssd/) {
 		push @lssd_instances, {
 		name => $instance_name,
 		data => $instances->{$instance_name}
