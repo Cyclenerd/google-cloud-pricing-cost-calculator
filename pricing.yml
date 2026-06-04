@@ -15,8 +15,8 @@ about:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-  generated: Thu May 28 07:43:40 2026
-  timestamp: 1779954220
+  generated: Thu Jun  4 08:08:36 2026
+  timestamp: 1780560516
   url: https://github.com/Cyclenerd/google-cloud-pricing-cost-calculator
 compute:
   instance:
@@ -1515,7 +1515,7 @@ compute:
           month_spot: 764.0527
         europe-west4:
           hour: 5.58091847945206
-          hour_spot: 2.57134150684931
+          hour_spot: 2.57134150684932
           month: 4074.07049
           month_spot: 1877.0793
         europe-west6:
@@ -2123,7 +2123,7 @@ compute:
           month_spot: 12348.9856
         europe-west2:
           hour: 52.2149845479452
-          hour_spot: 7.84241643835617
+          hour_spot: 7.84241643835616
           month: 38116.93872
           month_spot: 5724.964
         europe-west3:
@@ -3054,7 +3054,7 @@ compute:
           month_3y: 15963.48823408
           month_spot: 10681.02096
         us-south1:
-          hour: 52.2091007014794
+          hour: 52.2091007014795
           hour_spot: 16.0852730958904
           month: 38112.64351208
           month_1y: 26437.94816072
@@ -69404,6 +69404,13 @@ compute:
       ram: 384
     g4-standard-12:
       cost:
+        asia-east1:
+          hour: 1.46247725
+          hour_spot: 0.585415
+          month: 1067.6083925
+          month_1y: 736.66125
+          month_3y: 469.6245125
+          month_spot: 427.35295
         asia-south1:
           hour: 1.4623975
           hour_spot: 0.55618
@@ -69535,6 +69542,13 @@ compute:
       rtx6000: 0.25
     g4-standard-192:
       cost:
+        asia-east1:
+          hour: 23.399636
+          hour_spot: 9.36664
+          month: 17081.73428
+          month_1y: 11786.58
+          month_3y: 7513.9922
+          month_spot: 6837.6472
         asia-south1:
           hour: 23.39836
           hour_spot: 8.89888
@@ -69666,6 +69680,13 @@ compute:
       rtx6000: 4
     g4-standard-24:
       cost:
+        asia-east1:
+          hour: 2.9249545
+          hour_spot: 1.17083
+          month: 2135.216785
+          month_1y: 1473.3225
+          month_3y: 939.249025
+          month_spot: 854.7059
         asia-south1:
           hour: 2.924795
           hour_spot: 1.11236
@@ -69797,6 +69818,13 @@ compute:
       rtx6000: 0.5
     g4-standard-384:
       cost:
+        asia-east1:
+          hour: 46.799272
+          hour_spot: 18.73328
+          month: 34163.46856
+          month_1y: 23573.16
+          month_3y: 15027.9844
+          month_spot: 13675.2944
         asia-south1:
           hour: 46.79672
           hour_spot: 17.79776
@@ -69928,6 +69956,13 @@ compute:
       rtx6000: 8
     g4-standard-48:
       cost:
+        asia-east1:
+          hour: 5.849909
+          hour_spot: 2.34166
+          month: 4270.43357
+          month_1y: 2946.645
+          month_3y: 1878.49805
+          month_spot: 1709.4118
         asia-south1:
           hour: 5.84959
           hour_spot: 2.22472
@@ -70059,6 +70094,13 @@ compute:
       rtx6000: 1
     g4-standard-6:
       cost:
+        asia-east1:
+          hour: 0.727423125
+          hour_spot: 0.2911775
+          month: 531.01888125
+          month_1y: 366.4089
+          month_3y: 233.58804625
+          month_spot: 212.559575
         asia-south1:
           hour: 0.72738375
           hour_spot: 0.2766365
@@ -70190,6 +70232,13 @@ compute:
       rtx6000: 0.125
     g4-standard-96:
       cost:
+        asia-east1:
+          hour: 11.699818
+          hour_spot: 4.68332
+          month: 8540.86714
+          month_1y: 5893.29
+          month_3y: 3756.9961
+          month_spot: 3418.8236
         asia-south1:
           hour: 11.69918
           hour_spot: 4.44944
