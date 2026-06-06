@@ -7119,6 +7119,7 @@ g4-standard-384;384;False;1440.00;;europe-west10
 g4-standard-384;384;False;1440.00;;europe-west2
 g4-standard-384;384;False;1440.00;;europe-west4
 g4-standard-384;384;False;1440.00;;europe-west8
+g4-standard-384;384;False;1440.00;;me-central2
 g4-standard-384;384;False;1440.00;;us-central1
 g4-standard-384;384;False;1440.00;;us-east1
 g4-standard-384;384;False;1440.00;;us-east4
@@ -12999,6 +13000,7 @@ z3-highmem-176;176;False;1408.00;DEPRECATED;us-east5
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-south1
 z3-highmem-176;176;False;1408.00;DEPRECATED;us-west1
 z3-highmem-192-highlssd-metal;192;False;1536.00;;asia-east1
+z3-highmem-192-highlssd-metal;192;False;1536.00;;asia-northeast1
 z3-highmem-192-highlssd-metal;192;False;1536.00;;asia-southeast1
 z3-highmem-192-highlssd-metal;192;False;1536.00;;australia-southeast2
 z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-north2
