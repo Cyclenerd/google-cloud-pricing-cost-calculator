@@ -53,41 +53,15 @@ if ! git diff --exit-code "$CSV_GCLOUD_REGIONS"; then
 	git add "$CSV_GCLOUD_REGIONS"
 	((MY_CHANGES++));
 fi
-MY_GITHUB_MACHINE_TYPE_REGION_BODY="/tmp/machinetyperegion.txt"
+
 if ! git diff --exit-code "$CSV_GCLOUD_MACHINE_TYPE_REGION"; then
 	echo "'$CSV_GCLOUD_MACHINE_TYPE_REGION' changed!"
-	{
-		echo "Machine type in region '$CSV_GCLOUD_MACHINE_TYPE_REGION' changed"
-		echo ""
-		echo "Added:"
-		git diff --color=always "$CSV_GCLOUD_MACHINE_TYPE_REGION" | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/'
-		echo ""
-		echo "Deleted:"
-		git diff --color=always "$CSV_GCLOUD_MACHINE_TYPE_REGION" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
-	} > "$MY_GITHUB_MACHINE_TYPE_REGION_BODY"
-
-	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_REGION'."
-	gh issue comment "$GITHUB_ISSUE_ID_REGION" -F "$MY_GITHUB_MACHINE_TYPE_REGION_BODY"
-
 	git add "$CSV_GCLOUD_MACHINE_TYPE_REGION"
 	((MY_CHANGES++));
 fi
-MY_GITHUB_ACCELERATOR_TYPE_REGION_BODY="/tmp/acceleratortyperegion.txt"
+
 if ! git diff --exit-code "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION"; then
 	echo "'$CSV_GCLOUD_ACCELERATOR_TYPE_REGION' changed!"
-	{
-		echo "Accelerator type in region '$CSV_GCLOUD_ACCELERATOR_TYPE_REGION' changed"
-		echo ""
-		echo "Added:"
-		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION" | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/'
-		echo ""
-		echo "Deleted:"
-		git diff --color=always "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION" | perl -wlne 'print $1 if /^\e\[31m-(.*)\e\[m$/'
-	} > "$MY_GITHUB_ACCELERATOR_TYPE_REGION_BODY"
-
-	echo "» Create a new comment to incident '$GITHUB_ISSUE_ID_REGION'."
-	gh issue comment "$GITHUB_ISSUE_ID_REGION" -F "$MY_GITHUB_ACCELERATOR_TYPE_REGION_BODY"
-
 	git add "$CSV_GCLOUD_ACCELERATOR_TYPE_REGION"
 	((MY_CHANGES++));
 fi
