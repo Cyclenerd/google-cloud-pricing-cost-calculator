@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: 🛎️ Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       
       # Configure Workload Identity Federation via a credentials file.
       - id: auth
