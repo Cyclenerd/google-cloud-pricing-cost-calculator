@@ -7,7 +7,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.47
 	golang.org/x/oauth2 v0.36.0
 	google.golang.org/api v0.286.0
-	google.golang.org/grpc v1.81.1
+	google.golang.org/grpc v1.82.0
 )
 
 require (
@@ -35,7 +35,7 @@ require (
 	golang.org/x/text v0.38.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
 	google.golang.org/genproto v0.0.0-20260319201613-d00831a3d3e7 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20260401024825-9d38bb4040a9 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20260414002931-afd174a4e478 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260610212136-7ab31c22f7ad // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 )
