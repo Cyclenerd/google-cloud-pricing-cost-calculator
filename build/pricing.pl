@@ -936,6 +936,17 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.c4d.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.c4d.spot'} = $ram;
 		}
+		# C4N
+		elsif ($type eq 'c4n') {
+			$mappings{     'gce.compute.cpu.c4n'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.c4n.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.c4n.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.c4n.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.c4n'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.c4n.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.c4n.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.c4n.spot'} = $ram;
+		}
 		# H3
 		elsif ($type eq 'h3') {
 			$mappings{     'gce.compute.cpu.h3'}      = $cpu;
@@ -1017,6 +1028,18 @@ foreach my $region (@regions) {
 			$mappings_1y{  'gce.compute.ram.m4.1y'}   = $ram;
 			$mappings_3y{  'gce.compute.ram.m4.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.m4.spot'} = $ram;
+			# M4 machine types do not offer sustained use discounts.
+		}
+		# M4N
+		elsif ($type eq 'm4n') {
+			$mappings{     'gce.compute.cpu.m4n'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.m4n.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.m4n.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.m4n.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.m4n'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.m4n.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.m4n.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.m4n.spot'} = $ram;
 			# M4 machine types do not offer sustained use discounts.
 		}
 		# A2

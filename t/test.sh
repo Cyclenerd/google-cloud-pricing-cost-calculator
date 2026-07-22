@@ -27,6 +27,15 @@ MY_CHECKS=(
 	'default-project-id,europe-west4,disk,hdd,disk-hdd,90'
 	'default-project-id,europe-west4,disk,hyperdisk-extreme,disk-hyperdisk-extreme,134'
 
+# 01_europe-west2-c4n.yml
+	# C4N machine types
+	'c4n-highcpu-8,452'
+	# C4N Commitment (CUD)
+	'c4n-highcpu-8,c4n-highcpu-8-1y,285'
+	'c4n-highcpu-8,c4n-highcpu-8-3y,181'
+	# Spot
+	'c4n-highcpu-8,c4n-highcpu-8-spot,'
+
 # 01_europe-west4-a2.yml
 	# A2 machine types
 	'a2-highgpu-1g,2736'   # Google Cloud Pricing Calculator: $2736.02, Price List: $2739.74

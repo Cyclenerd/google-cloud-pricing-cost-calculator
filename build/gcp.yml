@@ -1624,6 +1624,80 @@ compute:
       cpu: 384
       ram: 1536
 
+    # C4N:
+    c4n-highcpu-16:
+      cpu: 16
+      ram: 32
+    c4n-highcpu-192:
+      cpu: 192
+      ram: 384
+    c4n-highcpu-2:
+      cpu: 2
+      ram: 4
+    c4n-highcpu-24:
+      cpu: 24
+      ram: 48
+    c4n-highcpu-4:
+      cpu: 4
+      ram: 8
+    c4n-highcpu-48:
+      cpu: 48
+      ram: 96
+    c4n-highcpu-8:
+      cpu: 8
+      ram: 16
+    c4n-highcpu-96:
+      cpu: 96
+      ram: 192
+    c4n-highmem-16:
+      cpu: 16
+      ram: 124
+    c4n-highmem-192:
+      cpu: 192
+      ram: 1488
+    c4n-highmem-2:
+      cpu: 2
+      ram: 15
+    c4n-highmem-24:
+      cpu: 24
+      ram: 186
+    c4n-highmem-4:
+      cpu: 4
+      ram: 31
+    c4n-highmem-48:
+      cpu: 48
+      ram: 372
+    c4n-highmem-8:
+      cpu: 8
+      ram: 62
+    c4n-highmem-96:
+      cpu: 96
+      ram: 744
+    c4n-standard-16:
+      cpu: 16
+      ram: 60
+    c4n-standard-192:
+      cpu: 192
+      ram: 720
+    c4n-standard-2:
+      cpu: 2
+      ram: 7
+    c4n-standard-24:
+      cpu: 24
+      ram: 90
+    c4n-standard-4:
+      cpu: 4
+      ram: 15
+    c4n-standard-48:
+      cpu: 48
+      ram: 180
+    c4n-standard-8:
+      cpu: 8
+      ram: 30
+    c4n-standard-96:
+      cpu: 96
+      ram: 360
+
     # M1:
     m1-ultramem-40:
       cpu: 40
@@ -1700,6 +1774,32 @@ compute:
     m4-hypermem-64:
       cpu: 64
       ram: 992
+
+    # M4N:
+    m4n-hypermem-16:
+      cpu: 16
+      ram: 248
+    m4n-hypermem-32:
+      cpu: 32
+      ram: 496
+    m4n-hypermem-64:
+      cpu: 64
+      ram: 992
+    m4n-megamem-112:
+      cpu: 112
+      ram: 1488
+    m4n-megamem-28:
+      cpu: 28
+      ram: 372
+    m4n-megamem-56:
+      cpu: 56
+      ram: 744
+    m4n-ultramem-112:
+      cpu: 112
+      ram: 2976
+    m4n-ultramem-56:
+      cpu: 56
+      ram: 1488
 
     # A2:
     a2-highgpu-1g:
