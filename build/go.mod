@@ -4,7 +4,7 @@ go 1.25.8
 
 require (
 	cloud.google.com/go/billing v1.26.0
-	github.com/mattn/go-sqlite3 v1.14.48
+	github.com/mattn/go-sqlite3 v1.14.49
 	golang.org/x/oauth2 v0.36.0
 	google.golang.org/api v0.290.0
 	google.golang.org/grpc v1.83.0
