@@ -68,6 +68,7 @@ nvidia-h100-80gb;asia-south1
 nvidia-h100-80gb;asia-south2
 nvidia-h100-80gb;asia-southeast1
 nvidia-h100-80gb;australia-southeast1
+nvidia-h100-80gb;australia-southeast2
 nvidia-h100-80gb;europe-north1
 nvidia-h100-80gb;europe-west1
 nvidia-h100-80gb;europe-west2
@@ -87,6 +88,7 @@ nvidia-h100-mega-80gb;asia-south1
 nvidia-h100-mega-80gb;asia-south2
 nvidia-h100-mega-80gb;asia-southeast1
 nvidia-h100-mega-80gb;australia-southeast1
+nvidia-h100-mega-80gb;australia-southeast2
 nvidia-h100-mega-80gb;europe-north1
 nvidia-h100-mega-80gb;europe-west1
 nvidia-h100-mega-80gb;europe-west2
@@ -145,6 +147,7 @@ nvidia-l4;us-east4
 nvidia-l4;us-west1
 nvidia-l4;us-west4
 nvidia-rtx-pro-6000-vws;asia-east1
+nvidia-rtx-pro-6000-vws;asia-northeast1
 nvidia-rtx-pro-6000-vws;asia-south1
 nvidia-rtx-pro-6000-vws;asia-south2
 nvidia-rtx-pro-6000-vws;asia-southeast1
@@ -166,6 +169,7 @@ nvidia-rtx-pro-6000-vws;us-west1
 nvidia-rtx-pro-6000-vws;us-west3
 nvidia-rtx-pro-6000-vws;us-west4
 nvidia-rtx-pro-6000;asia-east1
+nvidia-rtx-pro-6000;asia-northeast1
 nvidia-rtx-pro-6000;asia-south1
 nvidia-rtx-pro-6000;asia-south2
 nvidia-rtx-pro-6000;asia-southeast1
