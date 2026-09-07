@@ -1,12 +1,12 @@
 module skus
 
-go 1.25.8
+go 1.26.0
 
 require (
 	cloud.google.com/go/billing v1.26.0
 	github.com/mattn/go-sqlite3 v1.14.50
 	golang.org/x/oauth2 v0.36.0
-	google.golang.org/api v0.294.0
+	google.golang.org/api v0.297.0
 	google.golang.org/grpc v1.83.2
 )
 
