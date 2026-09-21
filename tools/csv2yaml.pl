@@ -15,16 +15,28 @@ GetOptions(
     'help|h'     => \$help,
 ) or die "Error in command line arguments\n";
 
-if ($help || !$input_file) {
+if ($help) {
     print_usage();
     exit 0;
 }
 
-# Read CSV file
-open my $fh, '<', $input_file or die "Cannot open $input_file: $!\n";
+# If no input file specified, read from STDIN
+if (!$input_file || $input_file eq '-') {
+    $input_file = '<STDIN>';
+}
+
+# Read CSV file or STDIN
+my $fh;
+if ($input_file eq '<STDIN>') {
+    $fh = \*STDIN;
+} else {
+    open $fh, '<', $input_file or die "Cannot open $input_file: $!\n";
+}
 
 my @lines = <$fh>;
-close $fh;
+if ($input_file ne '<STDIN>') {
+    close $fh;
+}
 
 # Check if first line is a header
 my $start_line = 0;
@@ -117,7 +129,8 @@ for my $i ($start_line .. $#lines) {
 my @sorted_names = sort keys %instances;
 
 # Generate YAML output
-my $yaml_output = "# Generated from CSV file: $input_file\n";
+my $source_label = ($input_file eq '<STDIN>') ? 'STDIN' : "CSV file: $input_file";
+my $yaml_output = "# Generated from $source_label\n";
 $yaml_output .= "# Total instances: " . scalar(@sorted_names) . "\n\n";
 $yaml_output .= "compute:\n";
 $yaml_output .= "  instance:\n";
@@ -141,23 +154,41 @@ if ($output_file) {
 
 sub print_usage {
     print <<'USAGE';
-Usage: csv2yaml.pl -i <input.csv> [-o <output.yml>]
+Usage: csv2yaml.pl [-i <input.csv>] [-o <output.yml>]
+       csv2yaml.pl < <input.csv>
+       cat input.csv | csv2yaml.pl
 
 Convert Google Compute machine types CSV file to YAML format.
 
 Options:
-    -i, --input <file>   Input CSV file (required)
+    -i, --input <file>   Input CSV file (optional)
                          Format: NAME;CPUS;SHARED_CPU;MEMORY_GB;DEPRECATED;ZONE
                          Header line is optional and will be auto-detected
+                         If not specified or set to '-', reads from STDIN
     
     -o, --output <file>  Output YAML file (optional)
                          If not specified, outputs to STDOUT
     
     -h, --help           Show this help message
 
-Example:
+Examples:
+    # Read from file, write to file
     csv2yaml.pl -i tools/machinetypes.csv -o output.yml
+    
+    # Read from file, output to STDOUT
     csv2yaml.pl -i machinetypes.csv > instances.yml
+    
+    # Read from STDIN with pipe
+    cat machinetypes.csv | csv2yaml.pl
+    
+    # Read from STDIN with redirect
+    csv2yaml.pl < machinetypes.csv
+    
+    # Copy & paste from clipboard (Unix/Linux)
+    xclip -selection clipboard -o | csv2yaml.pl
+    
+    # Copy & paste from clipboard (macOS)
+    pbpaste | csv2yaml.pl
 
 Notes:
     - Deprecated instances are automatically skipped
