@@ -467,6 +467,10 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 		elsif ($disk eq 'local-c4')            { $mapping = 'gce.storage.ssd.local.c4'; }
 		elsif ($disk eq 'local-c4a')           { $mapping = 'gce.storage.ssd.local.c4a'; }
 		elsif ($disk eq 'local-c4d')           { $mapping = 'gce.storage.ssd.local.c4d'; }
+		# Z4D highmem with highlssd or standardlssd
+		elsif ($disk eq 'local-z4d-highmem-highlssd')     { $mapping = 'gce.storage.ssd.local.z4d.highmem.highlssd'; }
+		elsif ($disk eq 'local-z4d-highmem-standardlssd') { $mapping = 'gce.storage.ssd.local.z4d.highmem.standardlssd'; }
+
 		# Unknown storage type
 		else { die "ERROR: No mapping for disk '$disk'!\n"; }
 		print "MAPPING: '$mapping' in region '$region'\n";
@@ -969,6 +973,28 @@ foreach my $region (@regions) {
 			$mappings_3y{  'gce.compute.ram.z3.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.z3.spot'} = $ram;
 		}
+		# Z4D highmem with highlssd
+		elsif ($type eq 'z4d' && $machine =~ /-highmem/ && $machine =~ /-highlssd/) {
+			$mappings{     'gce.compute.cpu.z4d.highmem.highlssd'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.z4d.highmem.highlssd.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.z4d.highmem.highlssd.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.z4d.highmem.highlssd.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.z4d.highmem.highlssd'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.z4d.highmem.highlssd.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.z4d.highmem.highlssd.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.z4d.highmem.highlssd.spot'} = $ram;
+		}
+		# Z4D highmem with standardlssd
+		elsif ($type eq 'z4d' && $machine =~ /-highmem/ && $machine =~ /-standardlssd/) {
+			$mappings{     'gce.compute.cpu.z4d.highmem.standardlssd'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.z4d.highmem.standardlssd.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.z4d.highmem.standardlssd.3y'}   = $cpu;
+			$mappings_spot{'gce.compute.cpu.z4d.highmem.standardlssd.spot'} = $cpu;
+			$mappings{     'gce.compute.ram.z4d.highmem.standardlssd'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.z4d.highmem.standardlssd.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.z4d.highmem.standardlssd.3y'}   = $ram;
+			$mappings_spot{'gce.compute.ram.z4d.highmem.standardlssd.spot'} = $ram;
+		}
 		# M1
 		elsif ($type eq 'm1') {
 			$mappings{     'gce.compute.cpu.memory.optimized'}      = $cpu;
@@ -1156,6 +1182,18 @@ foreach my $region (@regions) {
 			$costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local-c4d'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
 			$costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local-c4d'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
 			$costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local-c4d'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
+		}
+		if ($type eq 'z4d' && $machine =~ /-highmem/ && $machine =~ /-highlssd/) {
+			$costs_local_ssd_month      = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-highlssd'}->{'cost'}->{$region}->{'month'}      * $local_ssd || 0;
+			$costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-highlssd'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-highlssd'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-highlssd'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
+		}
+		if ($type eq 'z4d' && $machine =~ /-highmem/ && $machine =~ /-standardlssd/) {
+			$costs_local_ssd_month      = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-standardlssd'}->{'cost'}->{$region}->{'month'}      * $local_ssd || 0;
+			$costs_local_ssd_month_1y   = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-standardlssd'}->{'cost'}->{$region}->{'month_1y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_3y   = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-standardlssd'}->{'cost'}->{$region}->{'month_3y'}   * $local_ssd || 0;
+			$costs_local_ssd_month_spot = $gcp->{'compute'}->{'storage'}->{'local-z4d-highmem-standardlssd'}->{'cost'}->{$region}->{'month_spot'} * $local_ssd || 0;
 		}
 		my $costs_local_ssd_hour       = $costs_local_ssd_month      / $hours_month || 0;
 		my $costs_local_ssd_hour_spot  = $costs_local_ssd_month_spot / $hours_month || 0;

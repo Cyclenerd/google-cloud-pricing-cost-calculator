@@ -1,0 +1,24 @@
+region: us-central1
+project: gcp-gce-z4d-highmem
+
+# https://cloud.google.com/products/compute/pricing/storage-optimized#z4d-highmem-with-standardlssd
+
+instances:
+  # Z4D highmem with standardlssd
+  - name: z4d-highmem-16-standardlssd
+    type: z4d-highmem-16-standardlssd
+  - name: z4d-highmem-16-standardlssd-1y
+    type: z4d-highmem-16-standardlssd
+    commitment: 1
+  - name: z4d-highmem-16-standardlssd-3y
+    type: z4d-highmem-16-standardlssd
+    commitment: 3
+  # Z4D highmem with highlssd
+  - name: z4d-highmem-16-highlssd
+    type: z4d-highmem-16-highlssd
+  - name: z4d-highmem-16-highlssd-1y
+    type: z4d-highmem-16-highlssd
+    commitment: 1
+  - name: z4d-highmem-16-highlssd-3y
+    type: z4d-highmem-16-highlssd
+    commitment: 3

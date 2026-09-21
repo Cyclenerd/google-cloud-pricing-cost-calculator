@@ -640,6 +640,14 @@ MY_CHECKS=(
 	'a2-ultragpu-1g-1y,3700'
 	'a2-ultragpu-1g-3y,3700'
 
+# 01_us-central1-z4d-highmem
+	'z4d-highmem-16-standardlssd,1565'
+	'z4d-highmem-16-standardlssd-1y,1064'
+	'z4d-highmem-16-standardlssd-3y,688'
+	'z4d-highmem-16-highlssd,1845'
+	'z4d-highmem-16-highlssd-1y,1255'
+	'z4d-highmem-16-highlssd-3y,812'
+
 # 10_us-central1.yml
 	'vpn-us-central1-tunnel,36.5' # VPN Tunnel
 	'nat-us-central1-gateway,88.234' # NAT Gateway with Data

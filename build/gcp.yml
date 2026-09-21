@@ -170,13 +170,17 @@ compute:
       type: pd-balanced
     snapshot:
       type: pd-snapshot
-    # Local SSD for C4, C4A, C4D
+    # Local SSD for C4, C4A, C4D, Z4D
     local-c4:
       type: included-lssd-c4
     local-c4a:
       type: included-lssd-c4a
     local-c4d:
       type: included-lssd-c4d
+    local-z4d-highmem-highlssd:
+      type: included-lssd-z4d-highmem-standardlssd
+    local-z4d-highmem-standardlssd:
+      type: included-lssd-z4d-highmem-standardlssd
 
   # Virtual machine instances
   # VM instance pricing : https://cloud.google.com/compute/vm-instance-pricing
@@ -1697,6 +1701,119 @@ compute:
     c4n-standard-96:
       cpu: 96
       ram: 360
+
+    c4n-highmem-16-lssd:
+      cpu: 16
+      ram: 124
+      local-ssd: 750
+    c4n-highmem-192-lssd:
+      cpu: 192
+      ram: 1488
+      local-ssd: 12000
+    c4n-highmem-24-lssd:
+      cpu: 24
+      ram: 186
+      local-ssd: 1500
+    c4n-highmem-4-lssd:
+      cpu: 4
+      ram: 31
+      local-ssd: 375
+    c4n-highmem-48-lssd:
+      cpu: 48
+      ram: 372
+      local-ssd: 3000
+    c4n-highmem-8-lssd:
+      cpu: 8
+      ram: 62
+      local-ssd: 375
+    c4n-highmem-96-lssd:
+      cpu: 96
+      ram: 744
+      local-ssd: 6000
+    c4n-standard-16-lssd:
+      cpu: 16
+      ram: 60
+      local-ssd: 750
+    c4n-standard-192-lssd:
+      cpu: 192
+      ram: 720
+      local-ssd: 12000
+    c4n-standard-24-lssd:
+      cpu: 24
+      ram: 90
+      local-ssd: 1500
+    c4n-standard-4-lssd:
+      cpu: 4
+      ram: 15
+      local-ssd: 375
+    c4n-standard-48-lssd:
+      cpu: 48
+      ram: 180
+      local-ssd: 3000
+    c4n-standard-8-lssd:
+      cpu: 8
+      ram: 30
+      local-ssd: 375
+    c4n-standard-96-lssd:
+      cpu: 96
+      ram: 360
+      local-ssd: 6000
+    z4d-highmem-16-highlssd:
+      cpu: 16
+      ram: 126
+      local-ssd: 7000
+    z4d-highmem-16-standardlssd:
+      cpu: 16
+      ram: 126
+      local-ssd: 3500
+    z4d-highmem-192-highlssd:
+      cpu: 192
+      ram: 1512
+      local-ssd: 84000
+    z4d-highmem-192-standardlssd:
+      cpu: 192
+      ram: 1512
+      local-ssd: 42000
+    z4d-highmem-32-highlssd:
+      cpu: 32
+      ram: 252
+      local-ssd: 14000
+    z4d-highmem-32-standardlssd:
+      cpu: 32
+      ram: 252
+      local-ssd: 7000
+    z4d-highmem-384-standardlssd:
+      cpu: 384
+      ram: 3024
+      local-ssd: 84000
+    z4d-highmem-48-highlssd:
+      cpu: 48
+      ram: 378
+      local-ssd: 21000
+    z4d-highmem-48-standardlssd:
+      cpu: 48
+      ram: 378
+      local-ssd: 10500
+    z4d-highmem-64-highlssd:
+      cpu: 64
+      ram: 504
+      local-ssd: 28000
+    z4d-highmem-64-standardlssd:
+      cpu: 64
+      ram: 504
+      local-ssd: 14000
+    z4d-highmem-8-highlssd:
+      cpu: 8
+      ram: 63
+      local-ssd: 3500
+    z4d-highmem-96-highlssd:
+      cpu: 96
+      ram: 756
+      local-ssd: 42000
+    z4d-highmem-96-standardlssd:
+      cpu: 96
+      ram: 756
+      local-ssd: 21000
 
     # M1:
     m1-ultramem-40:
