@@ -200,6 +200,7 @@ a3-ultragpu-8g;224;False;2952.00;;us-east5
 a3-ultragpu-8g;224;False;2952.00;;us-south1
 a3-ultragpu-8g;224;False;2952.00;;us-west1
 a4-highgpu-8g;224;False;3968.00;;asia-northeast1
+a4-highgpu-8g;224;False;3968.00;;asia-south2
 a4-highgpu-8g;224;False;3968.00;;asia-southeast1
 a4-highgpu-8g;224;False;3968.00;;europe-north1
 a4-highgpu-8g;224;False;3968.00;;europe-west1
@@ -1377,6 +1378,7 @@ c3-standard-176;176;False;704.00;;us-west1
 c3-standard-176;176;False;704.00;;us-west2
 c3-standard-176;176;False;704.00;;us-west3
 c3-standard-176;176;False;704.00;;us-west4
+c3-standard-192-metal;192;False;768.00;;asia-northeast1
 c3-standard-192-metal;192;False;768.00;;asia-southeast1
 c3-standard-192-metal;192;False;768.00;;europe-west1
 c3-standard-192-metal;192;False;768.00;;europe-west4
@@ -5963,7 +5965,6 @@ c4d-highmem-384-lssd;384;False;3024.00;;us-west3
 c4d-highmem-384-lssd;384;False;3024.00;;us-west4
 c4d-highmem-384-metal;384;False;3072.00;;asia-southeast1
 c4d-highmem-384-metal;384;False;3072.00;;europe-west4
-c4d-highmem-384-metal;384;False;3072.00;;us-central1
 c4d-highmem-384-metal;384;False;3072.00;;us-east4
 c4d-highmem-384;384;False;3024.00;;africa-south1
 c4d-highmem-384;384;False;3024.00;;asia-east1
@@ -13825,11 +13826,9 @@ t2d-standard-8;8;False;32.00;;us-west4
 tpu7x-standard-1t;56;False;240.00;;europe-west2
 tpu7x-standard-1t;56;False;240.00;;us-central1
 tpu7x-standard-1t;56;False;240.00;;us-east1
-tpu7x-standard-1t;56;False;240.00;;us-east5
 tpu7x-standard-4t;224;False;960.00;;europe-west2
 tpu7x-standard-4t;224;False;960.00;;us-central1
 tpu7x-standard-4t;224;False;960.00;;us-east1
-tpu7x-standard-4t;224;False;960.00;;us-east5
 x4-1440-24t-metal;1440;False;24576.00;;asia-south1
 x4-1440-24t-metal;1440;False;24576.00;;asia-south2
 x4-1440-24t-metal;1440;False;24576.00;;europe-west1
@@ -14001,7 +14000,7 @@ z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-west3
 z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-west4
 z3-highmem-192-highlssd-metal;192;False;1536.00;;europe-west8
 z3-highmem-192-highlssd-metal;192;False;1536.00;;me-central1
-z3-highmem-192-highlssd-metal;192;False;1536.00;;northamerica-northeast1
+z3-highmem-192-highlssd-metal;192;False;1536.00;;me-central2
 z3-highmem-192-highlssd-metal;192;False;1536.00;;northamerica-northeast2
 z3-highmem-192-highlssd-metal;192;False;1536.00;;southamerica-east1
 z3-highmem-192-highlssd-metal;192;False;1536.00;;southamerica-west1
