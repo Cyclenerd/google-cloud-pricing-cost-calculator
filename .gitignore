@@ -39,7 +39,5 @@ gcosts/gcosts*
 !/usage/example.yml
 # GitHub Actions
 !.github/**/*.yml
-# Gitpod
-!/.gitpod.yml
 # GolangCI-Lint
 !/.golangci.yml
