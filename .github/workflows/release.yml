@@ -9,7 +9,7 @@ jobs:
   build:
     name: Build
     # https://github.com/actions/virtual-environments/
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-26.04
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v7
@@ -50,7 +50,7 @@ jobs:
   test-linux:
     name: Test Linux
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v7
@@ -97,7 +97,7 @@ jobs:
   release:
     name: Release
     needs: [test-linux, test-macos, test-windows]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v7

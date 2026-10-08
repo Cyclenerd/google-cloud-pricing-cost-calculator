@@ -8,7 +8,7 @@ on:
 jobs:
   check-changes:
     name: Google Compute Engine API changes
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     # Add "id-token" for Google Authentication
     permissions:
