@@ -14011,6 +14011,7 @@ x4-megamem-960-metal;960;False;16384.00;;europe-west8
 x4-megamem-960-metal;960;False;16384.00;;us-central1
 x4-megamem-960-metal;960;False;16384.00;;us-east4
 x4-megamem-960-metal;960;False;16384.00;;us-west4
+x5-2064-48t-metal;2064;False;49152.00;;us-east4
 z3-highmem-14-standardlssd;14;False;112.00;;asia-northeast1
 z3-highmem-14-standardlssd;14;False;112.00;;asia-south1
 z3-highmem-14-standardlssd;14;False;112.00;;asia-southeast1
@@ -14286,6 +14287,7 @@ z4d-highmem-32-highlssd;32;False;252.00;;us-east5
 z4d-highmem-32-standardlssd;32;False;252.00;;us-central1
 z4d-highmem-32-standardlssd;32;False;252.00;;us-east4
 z4d-highmem-32-standardlssd;32;False;252.00;;us-east5
+z4d-highmem-384-standardlssd-metal;384;False;3072.00;;us-east4
 z4d-highmem-384-standardlssd;384;False;3024.00;;us-central1
 z4d-highmem-384-standardlssd;384;False;3024.00;;us-east4
 z4d-highmem-384-standardlssd;384;False;3024.00;;us-east5
