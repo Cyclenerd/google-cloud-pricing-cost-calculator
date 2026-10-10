@@ -7782,6 +7782,7 @@ g4-standard-384;384;False;1440.00;;asia-south1
 g4-standard-384;384;False;1440.00;;asia-south2
 g4-standard-384;384;False;1440.00;;asia-southeast1
 g4-standard-384;384;False;1440.00;;asia-southeast2
+g4-standard-384;384;False;1440.00;;australia-southeast2
 g4-standard-384;384;False;1440.00;;europe-north1
 g4-standard-384;384;False;1440.00;;europe-west1
 g4-standard-384;384;False;1440.00;;europe-west10
@@ -13916,6 +13917,10 @@ t2d-standard-8;8;False;32.00;;us-west1
 t2d-standard-8;8;False;32.00;;us-west2
 t2d-standard-8;8;False;32.00;;us-west3
 t2d-standard-8;8;False;32.00;;us-west4
+tpu7-standard-1t;56;False;116.00;;europe-west2
+tpu7-standard-1t;56;False;116.00;;us-south1
+tpu7-standard-4t;224;False;464.00;;europe-west2
+tpu7-standard-4t;224;False;464.00;;us-south1
 tpu7x-standard-1t;56;False;240.00;;europe-west2
 tpu7x-standard-1t;56;False;240.00;;us-central1
 tpu7x-standard-1t;56;False;240.00;;us-east1
