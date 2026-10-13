@@ -1182,6 +1182,7 @@ c3-highcpu-8;8;False;16.00;;us-west1
 c3-highcpu-8;8;False;16.00;;us-west2
 c3-highcpu-8;8;False;16.00;;us-west3
 c3-highcpu-8;8;False;16.00;;us-west4
+c3-highmem-176;176;False;1408.00;;asia-east1
 c3-highmem-176;176;False;1408.00;;asia-northeast1
 c3-highmem-176;176;False;1408.00;;asia-south1
 c3-highmem-176;176;False;1408.00;;asia-south2
@@ -1219,6 +1220,7 @@ c3-highmem-192-metal;192;False;1536.00;;us-east1
 c3-highmem-192-metal;192;False;1536.00;;us-east4
 c3-highmem-192-metal;192;False;1536.00;;us-east5
 c3-highmem-192-metal;192;False;1536.00;;us-west1
+c3-highmem-22;22;False;176.00;;asia-east1
 c3-highmem-22;22;False;176.00;;asia-northeast1
 c3-highmem-22;22;False;176.00;;asia-south1
 c3-highmem-22;22;False;176.00;;asia-south2
@@ -1243,6 +1245,7 @@ c3-highmem-22;22;False;176.00;;us-west1
 c3-highmem-22;22;False;176.00;;us-west2
 c3-highmem-22;22;False;176.00;;us-west3
 c3-highmem-22;22;False;176.00;;us-west4
+c3-highmem-44;44;False;352.00;;asia-east1
 c3-highmem-44;44;False;352.00;;asia-northeast1
 c3-highmem-44;44;False;352.00;;asia-south1
 c3-highmem-44;44;False;352.00;;asia-south2
@@ -1267,6 +1270,7 @@ c3-highmem-44;44;False;352.00;;us-west1
 c3-highmem-44;44;False;352.00;;us-west2
 c3-highmem-44;44;False;352.00;;us-west3
 c3-highmem-44;44;False;352.00;;us-west4
+c3-highmem-4;4;False;32.00;;asia-east1
 c3-highmem-4;4;False;32.00;;asia-northeast1
 c3-highmem-4;4;False;32.00;;asia-south1
 c3-highmem-4;4;False;32.00;;asia-south2
@@ -1291,6 +1295,7 @@ c3-highmem-4;4;False;32.00;;us-west1
 c3-highmem-4;4;False;32.00;;us-west2
 c3-highmem-4;4;False;32.00;;us-west3
 c3-highmem-4;4;False;32.00;;us-west4
+c3-highmem-88;88;False;704.00;;asia-east1
 c3-highmem-88;88;False;704.00;;asia-northeast1
 c3-highmem-88;88;False;704.00;;asia-south1
 c3-highmem-88;88;False;704.00;;asia-south2
@@ -1315,6 +1320,7 @@ c3-highmem-88;88;False;704.00;;us-west1
 c3-highmem-88;88;False;704.00;;us-west2
 c3-highmem-88;88;False;704.00;;us-west3
 c3-highmem-88;88;False;704.00;;us-west4
+c3-highmem-8;8;False;64.00;;asia-east1
 c3-highmem-8;8;False;64.00;;asia-northeast1
 c3-highmem-8;8;False;64.00;;asia-south1
 c3-highmem-8;8;False;64.00;;asia-south2
@@ -7805,6 +7811,7 @@ g4-standard-384;384;False;1440.00;;asia-south1
 g4-standard-384;384;False;1440.00;;asia-south2
 g4-standard-384;384;False;1440.00;;asia-southeast1
 g4-standard-384;384;False;1440.00;;asia-southeast2
+g4-standard-384;384;False;1440.00;;australia-southeast2
 g4-standard-384;384;False;1440.00;;europe-north1
 g4-standard-384;384;False;1440.00;;europe-west1
 g4-standard-384;384;False;1440.00;;europe-west10
@@ -13941,10 +13948,8 @@ t2d-standard-8;8;False;32.00;;us-west3
 t2d-standard-8;8;False;32.00;;us-west4
 tpu7-standard-1t;56;False;116.00;;europe-west2
 tpu7-standard-1t;56;False;116.00;;us-central1
-tpu7-standard-1t;56;False;116.00;;us-south1
 tpu7-standard-4t;224;False;464.00;;europe-west2
 tpu7-standard-4t;224;False;464.00;;us-central1
-tpu7-standard-4t;224;False;464.00;;us-south1
 tpu7x-standard-1t;56;False;240.00;;europe-west2
 tpu7x-standard-1t;56;False;240.00;;us-central1
 tpu7x-standard-1t;56;False;240.00;;us-east1
@@ -14041,11 +14046,16 @@ x4-megamem-960-metal;960;False;16384.00;;us-central1
 x4-megamem-960-metal;960;False;16384.00;;us-east4
 x4-megamem-960-metal;960;False;16384.00;;us-west4
 x5-1376-24t-metal;1376;False;24576.00;;africa-south1
+x5-1376-24t-metal;1376;False;24576.00;;us-central1
 x5-1376-32t-metal;1376;False;32768.00;;africa-south1
+x5-1376-32t-metal;1376;False;32768.00;;us-central1
 x5-2064-48t-metal;2064;False;49152.00;;africa-south1
+x5-2064-48t-metal;2064;False;49152.00;;us-central1
 x5-2064-48t-metal;2064;False;49152.00;;us-east4
 x5-688-12t-metal;688;False;12288.00;;africa-south1
+x5-688-12t-metal;688;False;12288.00;;us-central1
 x5-688-16t-metal;688;False;16384.00;;africa-south1
+x5-688-16t-metal;688;False;16384.00;;us-central1
 z3-highmem-14-standardlssd;14;False;112.00;;asia-northeast1
 z3-highmem-14-standardlssd;14;False;112.00;;asia-south1
 z3-highmem-14-standardlssd;14;False;112.00;;asia-southeast1
@@ -14323,6 +14333,7 @@ z4d-highmem-32-standardlssd;32;False;252.00;;us-east4
 z4d-highmem-32-standardlssd;32;False;252.00;;us-east5
 z4d-highmem-384-standardlssd-metal;384;False;3072.00;;us-central1
 z4d-highmem-384-standardlssd-metal;384;False;3072.00;;us-east4
+z4d-highmem-384-standardlssd-metal;384;False;3072.00;;us-east5
 z4d-highmem-384-standardlssd;384;False;3024.00;;us-central1
 z4d-highmem-384-standardlssd;384;False;3024.00;;us-east4
 z4d-highmem-384-standardlssd;384;False;3024.00;;us-east5
