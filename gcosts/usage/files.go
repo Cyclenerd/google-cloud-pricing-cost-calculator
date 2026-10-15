@@ -34,7 +34,7 @@ func ReadDir(dir string) []string {
 			continue
 		}
 		name := file.Name()
-		if strings.Contains(name, ".yml") {
+		if strings.HasSuffix(name, ".yml") {
 			pterm.Success.Printf("YAML usage file '%s' found.\n", name)
 			files = append(files, name)
 		}
