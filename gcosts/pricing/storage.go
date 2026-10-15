@@ -105,7 +105,7 @@ func CalcStorageBucket(pricingYml StructPricing, inputName string, inputStorageC
 	}
 	if inputStorageRetrieval > 0 {
 		retrieval_fee := (Month(CostStorageRetrieval(pricingYml, inputStorageClass, inputRegion)) * inputStorageRetrieval) * discount
-		pterm.Info.Printf("Retrieval fee '%s' '%.2f' GiB per month: $%.2f %s\n", name, inputStorageData, price, discountText)
+		pterm.Info.Printf("Retrieval fee '%s' '%.2f' GiB per month: $%.2f %s\n", name, inputStorageRetrieval, retrieval_fee, discountText)
 		if retrieval_fee > 0 {
 			LineItems = append(LineItems, LineItem{
 				File:     File,

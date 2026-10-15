@@ -129,7 +129,7 @@ func CalcComputeNetworkNatGateway(pricingYml StructPricing, inputName string, in
 	// Data
 	costComputeNetworkNatData := CostComputeNetworkNatData(pricingYml, inputRegion)
 	priceComputeNetworkNatData := (Month(costComputeNetworkNatData) * inputData) * discount
-	pterm.Info.Printf("Price '%s' %.2f MiB NAT data per month: $%.2f %s\n", name, inputData, priceComputeNetworkNatData, discountText)
+	pterm.Info.Printf("Price '%s' %.2f GiB NAT data per month: $%.2f %s\n", name, inputData, priceComputeNetworkNatData, discountText)
 	// Sum
 	price := priceComputeNetworkNatGateway + priceComputeNetworkNatData
 	pterm.Info.Printf("Price '%s' NAT total per month: $%.2f %s\n", name, price, discountText)
