@@ -1,0 +1,25 @@
+region: us-central1
+project: gcp-gce-z4m
+
+# https://cloud.google.com/products/compute/pricing/storage-optimized
+# Includes mandatory Titanium SSD storage.
+instances:
+  - name: z4m-highmem-16
+    type: z4m-highmem-16
+  - name: z4m-highmem-32
+    type: z4m-highmem-32
+  - name: z4m-highmem-48
+    type: z4m-highmem-48
+  - name: z4m-highmem-192
+    type: z4m-highmem-192
+  - name: z4m-highmem-192-metal
+    type: z4m-highmem-192-metal
+  - name: z4m-highmem-16-1y
+    type: z4m-highmem-16
+    commitment: 1
+  - name: z4m-highmem-16-3y
+    type: z4m-highmem-16
+    commitment: 3
+  - name: z4m-highmem-16-spot
+    type: z4m-highmem-16
+    spot: true

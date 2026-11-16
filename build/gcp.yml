@@ -170,7 +170,7 @@ compute:
       type: pd-balanced
     snapshot:
       type: pd-snapshot
-    # Local SSD for C4, C4A, C4D, Z4D
+    # Local SSD for C4, C4A, C4D, Z4D, Z4M
     local-c4:
       type: included-lssd-c4
     local-c4a:
@@ -181,6 +181,9 @@ compute:
       type: included-lssd-z4d-highmem-standardlssd
     local-z4d-highmem-standardlssd:
       type: included-lssd-z4d-highmem-standardlssd
+
+    local-z4m:
+      type: included-lssd-z4m
 
   # Virtual machine instances
   # VM instance pricing : https://cloud.google.com/compute/vm-instance-pricing
@@ -1814,6 +1817,28 @@ compute:
       cpu: 96
       ram: 756
       local-ssd: 21000
+
+    # Z4M: https://cloud.google.com/compute/docs/storage-optimized-machines#z4m_machine_types
+    z4m-highmem-16:
+      cpu: 16
+      ram: 122
+      local-ssd: 14000
+    z4m-highmem-32:
+      cpu: 32
+      ram: 244
+      local-ssd: 28000
+    z4m-highmem-48:
+      cpu: 48
+      ram: 366
+      local-ssd: 42000
+    z4m-highmem-192:
+      cpu: 192
+      ram: 1488
+      local-ssd: 168000
+    z4m-highmem-192-metal:
+      cpu: 192
+      ram: 1536
+      local-ssd: 168000
 
     # M1:
     m1-ultramem-40:
