@@ -648,6 +648,16 @@ MY_CHECKS=(
 	'z4d-highmem-16-highlssd-1y,1255'
 	'z4d-highmem-16-highlssd-3y,812'
 
+# 01_us-central1-z4m.yml (includes mandatory Titanium SSD)
+	'z4m-highmem-16,2399'
+	'z4m-highmem-32,4799'
+	'z4m-highmem-48,7198'
+	'z4m-highmem-192,28864'
+	'z4m-highmem-192-metal,29002'
+	'z4m-highmem-16-1y,1631'
+	'z4m-highmem-16-3y,1055'
+	'z4m-highmem-16-spot,959'
+
 # 10_us-central1.yml
 	'vpn-us-central1-tunnel,36.5' # VPN Tunnel
 	'nat-us-central1-gateway,88.234' # NAT Gateway with Data

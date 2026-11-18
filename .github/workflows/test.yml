@@ -23,7 +23,11 @@ jobs:
             libjson-xs-perl      \
             libyaml-libyaml-perl \
             libdbd-csv-perl      \
-            libdbd-sqlite3-perl
+            libdbd-sqlite3-perl \
+            sqlite3
+
+      - name: 🌡️ Test Z4M pricing generation offline
+        run: perl t/z4m.t
 
       # https://github.com/marketplace/actions/setup-go-environment
       - name: 🔧 Setup go

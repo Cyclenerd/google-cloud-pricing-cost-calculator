@@ -132,6 +132,31 @@ Only needed if you want to integrate the cost informations of a new service.
 
 » [Google Cloud Billing Documentation](https://cloud.google.com/billing/v1/how-tos/catalog-api#listing_public_services_from_the_catalog)
 
+## Z4M storage-optimized instances
+
+Z4M prices include the mandatory Titanium SSD capacity in `gcp.yml`.
+CPU, RAM and Z4M-specific SSD SKUs are required for each purchase model;
+incomplete totals are omitted. Z4M has no sustained use discount, Windows
+support, or Spot pricing for bare metal.
+
+The Z4M entries in the checked-in `pricing.yml` were generated from the
+[public SKU catalog](https://cloud.google.com/__/json/searchskus?currency=USD&filter=Z4M)
+on 2026-11-16 for `europe-north1`, `us-central1`, and `us-east4`, with
+shared Linux license SKUs. Unrelated pricing entries were preserved.
+This targeted update is not a full Billing API export or a claim of availability
+in every zone. The regular pricing workflow continues to refresh prices.
+
+Run the offline generator regression tests from the repository root
+(requires the Perl dependencies above and `sqlite3`):
+
+```bash
+perl t/z4m.t
+```
+
+The test uses a public Iowa SKU price snapshot in `t/z4m_skus.csv`,
+including sole-tenancy SKUs that must not match. Shared monitoring and license
+records in the test are synthetic dependencies, not published pricing.
+
 ## Custom machine types
 
 Own machine types can be defined as type `n1-custom`, `n2-custom` and `n2d-custom` in `gcp.yml`.

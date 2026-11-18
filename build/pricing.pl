@@ -471,6 +471,9 @@ foreach my $disk (keys %{ $gcp->{'compute'}->{'storage'} }) {
 		elsif ($disk eq 'local-z4d-highmem-highlssd')     { $mapping = 'gce.storage.ssd.local.z4d.highmem.highlssd'; }
 		elsif ($disk eq 'local-z4d-highmem-standardlssd') { $mapping = 'gce.storage.ssd.local.z4d.highmem.standardlssd'; }
 
+		# Z4M Titanium SSD
+		elsif ($disk eq 'local-z4m') { $mapping = 'gce.storage.ssd.local.z4m'; }
+
 		# Unknown storage type
 		else { die "ERROR: No mapping for disk '$disk'!\n"; }
 		print "MAPPING: '$mapping' in region '$region'\n";
@@ -994,6 +997,28 @@ foreach my $region (@regions) {
 			$mappings_1y{  'gce.compute.ram.z4d.highmem.standardlssd.1y'}   = $ram;
 			$mappings_3y{  'gce.compute.ram.z4d.highmem.standardlssd.3y'}   = $ram;
 			$mappings_spot{'gce.compute.ram.z4d.highmem.standardlssd.spot'} = $ram;
+		}
+		# Z4M (no sustained use discounts)
+		elsif ($type eq 'z4m') {
+			$mappings{     'gce.compute.cpu.z4m'}      = $cpu;
+			$mappings_1y{  'gce.compute.cpu.z4m.1y'}   = $cpu;
+			$mappings_3y{  'gce.compute.cpu.z4m.3y'}   = $cpu;
+			$mappings{     'gce.compute.ram.z4m'}      = $ram;
+			$mappings_1y{  'gce.compute.ram.z4m.1y'}   = $ram;
+			$mappings_3y{  'gce.compute.ram.z4m.3y'}   = $ram;
+			# Mandatory SSD is billed per GiB-month. Include it in the mapping
+			# checks so missing SSD prices suppress the corresponding total.
+			my $ssd_per_hour = $local_ssd / $hours_month;
+			$mappings{     'gce.storage.ssd.local.z4m'}    = $ssd_per_hour;
+			$mappings_1y{  'gce.storage.ssd.local.z4m.1y'} = $ssd_per_hour;
+			$mappings_3y{  'gce.storage.ssd.local.z4m.3y'} = $ssd_per_hour;
+			if ($machine !~ /-metal$/) {
+				$mappings_spot{'gce.compute.cpu.z4m.spot'}       = $cpu;
+				$mappings_spot{'gce.compute.ram.z4m.spot'}       = $ram;
+				$mappings_spot{'gce.storage.ssd.local.z4m.spot'} = $ssd_per_hour;
+			}
+			# Already included above; do not add generic Local SSD a second time.
+			$local_ssd = 0;
 		}
 		# M1
 		elsif ($type eq 'm1') {
@@ -1629,6 +1654,8 @@ foreach my $machine (keys %{ $gcp->{'compute'}->{'instance'} }) {
 
 	# Operating systems
 	foreach my $os (@operating_systems) {
+		# Z4M does not support Windows images.
+		next if ($type eq 'z4m' && $os eq 'windows');
 		my $costs   = 0;
 		my $value   = '1';
 		my $mapping = '';

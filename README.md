@@ -52,7 +52,7 @@ Resources that `gcosts` supports, and Google charges for:
 	- [x] `C2`, `C2D` and `H3` compute optimized machine series 
 	- [x] `M1`, `M2`, `M3`, `M4` and `M4N` memory optimized machine series 
 	- [x] `C4N` and `M4N` network-optimized machine series 
-	- [x] `Z3` and `Z4D` storage-optimized machine series 
+	- [x] `Z3`, `Z4D` and `Z4M` storage-optimized machine series
 	- [x] `C3`, `C3D`, `C4`, `C4A`, `C4D`, `E2`, `N1`, `N2`, `N2D`, `N4`, `N4A`, `N4D`, `T2D` and `T2A` general purpose machine series 
 - [x] Sustained use discounts (SUD) are applied to monthly costs
 - [x] Spot provisioning model (Spot VM) is supported

@@ -138858,6 +138858,130 @@ compute:
       cpu: 96
       local-ssd: 21000
       ram: 756
+    z4m-highmem-16:
+      cost:
+        europe-north1:
+          hour: 3.61943297808219
+          hour_spot: 1.44778025479452
+          month: 2642.186074
+          month_1y: 1796.682498
+          month_3y: 1162.563606
+          month_spot: 1056.879586
+        us-central1:
+          hour: 3.28710997260274
+          hour_spot: 1.3148439890411
+          month: 2399.59028
+          month_1y: 1631.717828
+          month_3y: 1055.817942
+          month_spot: 959.836112
+        us-east4:
+          hour: 3.28710997260274
+          hour_spot: 1.3148439890411
+          month: 2399.59028
+          month_1y: 1631.717828
+          month_3y: 1055.817942
+          month_spot: 959.836112
+      cpu: 16
+      local-ssd: 14000
+      ram: 122
+    z4m-highmem-192:
+      cost:
+        europe-north1:
+          hour: 43.5372621369863
+          hour_spot: 17.4149910575342
+          month: 31782.20136
+          month_1y: 21611.847696
+          month_3y: 13984.18968
+          month_spot: 12712.943472
+        us-central1:
+          hour: 39.5398316712329
+          hour_spot: 15.8159326684932
+          month: 28864.07712
+          month_1y: 19627.528992
+          month_3y: 12700.172208
+          month_spot: 11545.630848
+        us-east4:
+          hour: 39.5398316712329
+          hour_spot: 15.8159326684932
+          month: 28864.07712
+          month_1y: 19627.528992
+          month_3y: 12700.172208
+          month_spot: 11545.630848
+      cpu: 192
+      local-ssd: 168000
+      ram: 1488
+    z4m-highmem-192-metal:
+      cost:
+        europe-north1:
+          hour: 43.7453949369863
+          month: 31934.138304
+          month_1y: 21715.163136
+          month_3y: 14051.042496
+        us-central1:
+          hour: 39.7288556712329
+          month: 29002.06464
+          month_1y: 19721.359104
+          month_3y: 12760.886016
+        us-east4:
+          hour: 39.7288556712329
+          month: 29002.06464
+          month_1y: 19721.359104
+          month_3y: 12760.886016
+      cpu: 192
+      local-ssd: 168000
+      ram: 1536
+    z4m-highmem-32:
+      cost:
+        europe-north1:
+          hour: 7.23886595616438
+          hour_spot: 2.89556050958904
+          month: 5284.372148
+          month_1y: 3593.364996
+          month_3y: 2325.127212
+          month_spot: 2113.759172
+        us-central1:
+          hour: 6.57421994520548
+          hour_spot: 2.62968797808219
+          month: 4799.18056
+          month_1y: 3263.435656
+          month_3y: 2111.635884
+          month_spot: 1919.672224
+        us-east4:
+          hour: 6.57421994520548
+          hour_spot: 2.62968797808219
+          month: 4799.18056
+          month_1y: 3263.435656
+          month_3y: 2111.635884
+          month_spot: 1919.672224
+      cpu: 32
+      local-ssd: 28000
+      ram: 244
+    z4m-highmem-48:
+      cost:
+        europe-north1:
+          hour: 10.8582989342466
+          hour_spot: 4.34334076438356
+          month: 7926.558222
+          month_1y: 5390.047494
+          month_3y: 3487.690818
+          month_spot: 3170.638758
+        us-central1:
+          hour: 9.86132991780822
+          hour_spot: 3.94453196712329
+          month: 7198.77084
+          month_1y: 4895.153484
+          month_3y: 3167.453826
+          month_spot: 2879.508336
+        us-east4:
+          hour: 9.86132991780822
+          hour_spot: 3.94453196712329
+          month: 7198.77084
+          month_1y: 4895.153484
+          month_3y: 3167.453826
+          month_spot: 2879.508336
+      cpu: 48
+      local-ssd: 42000
+      ram: 366
   license:
     a2-highgpu-1g:
       cost:
@@ -149476,6 +149600,86 @@ compute:
         windows:
           hour: 4.416
           month: 3223.68
+    z4m-highmem-16:
+      cost:
+        rhel:
+          hour: 0.1728
+          month: 126.144
+        rhel-sap:
+          hour: 0.26
+          month: 189.8
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+    z4m-highmem-192:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+    z4m-highmem-192-metal:
+      cost:
+        rhel:
+          hour: 1.8432
+          month: 1345.536
+        rhel-sap:
+          hour: 2.88
+          month: 2102.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+    z4m-highmem-32:
+      cost:
+        rhel:
+          hour: 0.3456
+          month: 252.288
+        rhel-sap:
+          hour: 0.52
+          month: 379.6
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
+    z4m-highmem-48:
+      cost:
+        rhel:
+          hour: 0.5184
+          month: 378.432
+        rhel-sap:
+          hour: 0.78
+          month: 569.4
+        sles:
+          hour: 0.11
+          month: 80.3
+        sles-sap:
+          hour: 0.41
+          month: 299.3
+          month_1y: 119.939
+          month_3y: 107.748
   network:
     ip:
       unused:
@@ -152355,6 +152559,24 @@ compute:
         us-west3: {}
         us-west4: {}
       type: included-lssd-z4d-highmem-standardlssd
+    local-z4m:
+      cost:
+        europe-north1:
+          month: 0.1293132
+          month_1y: 0.087933
+          month_3y: 0.0568978
+          month_spot: 0.0517253
+        us-central1:
+          month: 0.11744
+          month_1y: 0.0798592
+          month_3y: 0.0516736
+          month_spot: 0.046976
+        us-east4:
+          month: 0.11744
+          month_1y: 0.0798592
+          month_3y: 0.0516736
+          month_spot: 0.046976
+      type: included-lssd-z4m
     snapshot:
       cost:
         africa-south1:
